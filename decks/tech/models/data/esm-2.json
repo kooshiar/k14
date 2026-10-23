@@ -1,0 +1,107 @@
+{
+ "slug": "esm-2",
+ "name": "ESM-2",
+ "what": "Predicts residue embeddings from protein sequence",
+ "input": {
+  "label": "Protein sequence, 15% masked",
+  "size": "N aa · 1,024 crops"
+ },
+ "blocks": [
+  {
+   "name": "Transformer",
+   "dims": "6 × 320"
+  }
+ ],
+ "params": "8M",
+ "loop": null,
+ "output": {
+  "label": "Residue embeddings + logits",
+  "size": "N × 320"
+ },
+ "who": {
+  "org": "Meta AI · FAIR",
+  "year": "2022",
+  "versions": "ESM-1b 2019 → ESM-2 2022 → ESM3 2024",
+  "license": "Open · MIT code and weights"
+ },
+ "ideas": [
+  "Masked LM on UniRef",
+  "Attention maps show contacts",
+  "Structure emerges with scale",
+  "Embeddings replace MSA",
+  "617M metagenome structures"
+ ],
+ "train": {
+  "hardware": "n/a",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "500K updates · 2M tokens/batch",
+  "data": "43M UniRef50 clusters · 138M seqs",
+  "epochs": "~65M unique sequences seen"
+ },
+ "results": [
+  "Perplexity 6.37 at 15B vs 10.45 at 8M",
+  "ESMFold CAMEO TM 0.83 vs AF2 0.88"
+ ],
+ "speed": "ESMFold 14.2 s · 384 aa · V100",
+ "limit": "Single sequence; below AF2 accuracy",
+ "sources": [
+  "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v3.full",
+  "https://www.science.org/doi/10.1126/science.ade2574",
+  "https://github.com/facebookresearch/esm",
+  "https://huggingface.co/facebook/esm2_t33_650M_UR50D"
+ ],
+ "ready": true,
+ "sizes": [
+  {
+   "name": "8M",
+   "params": "8M",
+   "dims": {
+    "Transformer": "6 × 320"
+   },
+   "out": "N × 320"
+  },
+  {
+   "name": "35M",
+   "params": "35M",
+   "dims": {
+    "Transformer": "12 × 480"
+   },
+   "out": "N × 480"
+  },
+  {
+   "name": "150M",
+   "params": "150M",
+   "dims": {
+    "Transformer": "30 × 640"
+   },
+   "out": "N × 640"
+  },
+  {
+   "name": "650M",
+   "params": "650M",
+   "dims": {
+    "Transformer": "33 × 1280"
+   },
+   "out": "N × 1280"
+  },
+  {
+   "name": "3B",
+   "params": "3B",
+   "dims": {
+    "Transformer": "36 × 2560"
+   },
+   "out": "N × 2560"
+  },
+  {
+   "name": "15B",
+   "params": "15B",
+   "dims": {
+    "Transformer": "48 × 5120"
+   },
+   "out": "N × 5120"
+  }
+ ],
+ "size_default": 3,
+ "type": "Transformer"
+}

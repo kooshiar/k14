@@ -1,0 +1,1390 @@
+[
+ {
+  "key": "cork",
+  "title_problem": "2\u20135% of the world's wine is spoiled by cork taint",
+  "p_problem": "TCA gives wine a musty smell at about 4 ng/L and masks fruit aromas. Losses may exceed $1 billion a year.",
+  "tiles_problem": [
+   [
+    "Wine corked",
+    "2\u20135%",
+    "of world wine"
+   ],
+   [
+    "Smell threshold",
+    "4 ng/L",
+    "TCA in wine"
+   ],
+   [
+    "Yearly loss",
+    ">$1B",
+    "wine industry"
+   ]
+  ],
+  "market_title": "Wine fining agents: a $748M market in 2024",
+  "tiles_market": [
+   [
+    "Market 2024",
+    "$748M",
+    "wine fining agents"
+   ],
+   [
+    "Our share a year",
+    "$2\u20137M",
+    "tainted-lot treatment"
+   ],
+   [
+    "First buyers",
+    "Wineries",
+    "with tainted lots"
+   ]
+  ],
+  "options_title": "Today's TCA fixes strip aroma or spread taint",
+  "options": [
+   [
+    "Blending with clean wine",
+    "Small wineries",
+    "Taints more wine"
+   ],
+   [
+    "Carbon and polymer fining",
+    "Fining-agent makers",
+    "Low selectivity, hits aroma"
+   ],
+   [
+    "Depth filter sheets",
+    "Filtrox",
+    "Loses esters, costly sheets"
+   ],
+   [
+    "Food film (polyethylene)",
+    "Research, home use",
+    "Also absorbs some esters"
+   ],
+   [
+    "Designed selective binder",
+    "Us",
+    "Takes TCA, keeps aroma"
+   ]
+  ],
+  "deck_name": "TCA Trap",
+  "timeline_goal": "a TCA trap tested on tainted wine",
+  "steps": [
+   "Screen binders against TCA",
+   "Test spiked wine, aroma panel",
+   "Pilot on tainted winery lots"
+  ],
+  "sources": [
+   "https://doi.org/10.48130/fia-0024-0011",
+   "https://www.northwestwinereport.com/2023/02/how-big-of-issue-is-cork-taint-really.html",
+   "https://www.gminsights.com/industry-analysis/wine-fining-agent-market"
+  ]
+ },
+ {
+  "key": "pfas",
+  "title_problem": "6\u201310% of US water systems must cut PFOA below 4 ppt",
+  "p_problem": "EPA set 4 ppt limits for PFOA and PFOS in 2024; compliance is now due 2031. PFAS is in at least 45% of US tap water.",
+  "tiles_problem": [
+   [
+    "PFOA limit",
+    "4 ppt",
+    "EPA, April 2024"
+   ],
+   [
+    "Systems to act",
+    "6\u201310%",
+    "of 66,000 US systems"
+   ],
+   [
+    "Utility cost",
+    "$3.8B/yr",
+    "AWWA estimate"
+   ]
+  ],
+  "market_title": "PFAS filtration: a $2.1B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$2.13B",
+    "PFAS filtration"
+   ],
+   [
+    "Our share a year",
+    "$5\u201320M",
+    "media for small utilities"
+   ],
+   [
+    "First buyers",
+    "Small utilities",
+    "over the 4 ppt limit"
+   ]
+  ],
+  "options_title": "Today's PFAS filters miss short chains or cost more",
+  "options": [
+   [
+    "Granular activated carbon",
+    "Calgon Carbon",
+    "Weak on short-chain PFAS"
+   ],
+   [
+    "Single-use ion exchange resin",
+    "Resin suppliers",
+    "Costly media, 6\u201318 month life"
+   ],
+   [
+    "Reverse osmosis, nanofiltration",
+    "Membrane suppliers",
+    "Highest capital and energy cost"
+   ],
+   [
+    "Designed selective binder",
+    "Us",
+    "Grabs PFOA, ignores other ions"
+   ]
+  ],
+  "deck_name": "PFOA Trap",
+  "timeline_goal": "a PFOA binder tested on real tap water",
+  "steps": [
+   "Screen binders for PFOA uptake",
+   "Test against GAC in tap water",
+   "Pilot column at small utility"
+  ],
+  "sources": [
+   "https://www.epa.gov/newsreleases/biden-harris-administration-finalizes-first-ever-national-drinking-water-standard",
+   "https://www.carriermanagement.com/news/2024/04/10/261002.htm",
+   "https://www.klgates.com/EPA-Provides-Update-on-PFAS-Drinking-Water-Standards-5-20-2025",
+   "https://www.ngwa.org/detail/news/2023/07/07/usgs-report-estimates-pfas-in-45-percent-of-u.s.-tap-water",
+   "https://prnewswire.co.uk/news-releases/pfas-filtration-market-worth-2-99-billion-by-2030--exclusive-report-by-marketsandmarkets-302436941.html",
+   "https://www.waterworld.com/drinking-water/treatment/article/14293065/treatment-and-funding-options-for-removing-pfas-from-drinking-water"
+  ]
+ },
+ {
+  "key": "lithium",
+  "title_problem": "Brine ponds take 18\u201324 months and lose up to 60% of lithium",
+  "p_problem": "Brine holds far more magnesium and sodium than lithium. Uyuni has 19 parts magnesium per lithium; about 10 is the usual economic limit.",
+  "tiles_problem": [
+   [
+    "Pond time",
+    "18\u201324 mo",
+    "per batch"
+   ],
+   [
+    "Pond recovery",
+    "40\u201360%",
+    "of lithium in brine"
+   ],
+   [
+    "Mg:Li at Uyuni",
+    "19:1",
+    "limit ~10:1"
+   ]
+  ],
+  "market_title": "Direct lithium extraction: $2.5B invested in 2023",
+  "tiles_market": [
+   [
+    "DLE spend 2023",
+    "$2.5B",
+    ">$15B by 2030"
+   ],
+   [
+    "Our share a year",
+    "$5\u201315M",
+    "sorbent supply"
+   ],
+   [
+    "First buyers",
+    "Brine producers",
+    "high-magnesium salars"
+   ]
+  ],
+  "options_title": "Current lithium methods are slow or need easy brine",
+  "options": [
+   [
+    "Evaporation ponds",
+    "Salar producers",
+    "Slow, 40\u201360% recovery"
+   ],
+   [
+    "Adsorbents",
+    "27 of 57 DLE projects",
+    "Need >40 \u00b0C, extra steps"
+   ],
+   [
+    "Ion exchange resins",
+    "8 of 57 DLE projects",
+    "Large acid use"
+   ],
+   [
+    "Membranes",
+    "3 of 57 DLE projects",
+    "Need low-sodium brine"
+   ],
+   [
+    "Designed selective binder",
+    "Us",
+    "Lithium only, rejects Mg, Na"
+   ]
+  ],
+  "deck_name": "Lithium Sieve",
+  "timeline_goal": "a lithium sorbent tested on real brine",
+  "steps": [
+   "Screen Li over Na, Mg",
+   "Cycle tests in synthetic brine",
+   "Pilot column on salar brine"
+  ],
+  "sources": [
+   "https://www.deloitte.com/content/dam/assets-shared/docs/collections/2023/gx-greenspace-tech-research-direct-lithium-extraction-new.pdf",
+   "https://futuremarketsinc.com/the-global-direct-lithium-extraction-dle-market-2025-2035",
+   "https://stockhead.com.au/resources/bolivian-lithium-brines-emerging-from-the-shadows-cast-by-chile-and-argentina"
+  ]
+ },
+ {
+  "key": "potassium",
+  "title_problem": "High potassium: 32% leave hospital off heart and kidney drugs",
+  "p_problem": "High potassium can trigger dangerous heart rhythms. Doctors often stop protective RAAS drugs instead; stopping was linked to 37% worse survival.",
+  "tiles_problem": [
+   [
+    "Hospital patients",
+    "16.8%",
+    "have high potassium"
+   ],
+   [
+    "RAAS drugs stopped",
+    "32%",
+    "by discharge"
+   ],
+   [
+    "Survival if stopped",
+    "37% worse",
+    "UK cohort, 2024"
+   ]
+  ],
+  "market_title": "Hyperkalemia drugs: a $1.42B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$1.42B",
+    "hyperkalemia drugs"
+   ],
+   [
+    "Our share a year",
+    "$15\u201340M",
+    "after approval"
+   ],
+   [
+    "First buyers",
+    "Nephrologists",
+    "CKD and dialysis"
+   ]
+  ],
+  "options_title": "Current binders bring sodium, gut problems or magnesium loss",
+  "options": [
+   [
+    "Sodium polystyrene sulfonate",
+    "Generic, 60+ years",
+    "Poorly tolerated, gut injury"
+   ],
+   [
+    "Patiromer (Veltassa)",
+    "CSL Vifor",
+    "Binds magnesium, GI upset"
+   ],
+   [
+    "Sodium zirconium cyclosilicate (Lokelma)",
+    "AstraZeneca, $517M in 9M 2025",
+    "80 mg sodium/g, edema"
+   ],
+   [
+    "Stop RAAS drugs, cut diet",
+    "Doctors",
+    "Loses heart, kidney protection"
+   ],
+   [
+    "Designed selective binder",
+    "Us",
+    "Binds potassium only, no sodium"
+   ]
+  ],
+  "deck_name": "K Binder",
+  "timeline_goal": "a potassium binder tested in animal models",
+  "steps": [
+   "Screen K over Na, Mg, Ca",
+   "Test in simulated gut fluid",
+   "Rodent potassium-lowering study"
+  ],
+  "sources": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11663150/",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11802687/",
+   "https://www.towardshealthcare.com/insights/hyperkalemia-drugs-market-sizing",
+   "https://www.sec.gov/Archives/edgar/data/901832/000165495425012630/a4030g.htm"
+  ]
+ },
+ {
+  "key": "co2",
+  "title_problem": "Air capture costs $400\u2013990 a tonne, and water competes with CO\u2082",
+  "p_problem": "Air holds about 400 ppm CO\u2082 and much more water. Sorbents take up water, which cuts CO\u2082 selectivity and adds regeneration energy.",
+  "tiles_problem": [
+   [
+    "CO\u2082 in air",
+    "400 ppm",
+    "0.04% of air"
+   ],
+   [
+    "Water uptake",
+    ">50 wt%",
+    "plain silica sorbent, 95% RH"
+   ],
+   [
+    "DAC price",
+    "$400\u2013990/t",
+    "2023 offtake prices"
+   ]
+  ],
+  "market_title": "Direct air capture: a $114M market in 2024",
+  "tiles_market": [
+   [
+    "Market 2024",
+    "$114M",
+    "$2.0B by 2030"
+   ],
+   [
+    "Our share a year",
+    "$1\u20133M",
+    "sorbent for pilots"
+   ],
+   [
+    "First buyers",
+    "DAC builders",
+    "solid-sorbent plants"
+   ]
+  ],
+  "options_title": "Today's air capture burns heat or fights water",
+  "options": [
+   [
+    "Amine solid sorbents",
+    "Climeworks",
+    "Water uptake adds energy"
+   ],
+   [
+    "KOH liquid with calciner",
+    "1PointFive (Occidental)",
+    "Gas-fired high-heat step"
+   ],
+   [
+    "Limestone looping",
+    "Heirloom",
+    "$990/t offtake price"
+   ],
+   [
+    "Designed selective binder",
+    "Us",
+    "Takes CO\u2082, ignores water"
+   ]
+  ],
+  "deck_name": "Humid CO\u2082 Trap",
+  "timeline_goal": "a CO\u2082 sorbent tested in humid air",
+  "steps": [
+   "Screen sorbents at 400 ppm",
+   "Cycle tests at 60\u201380% humidity",
+   "Bench unit on outdoor air"
+  ],
+  "sources": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC12314860/",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11969556/",
+   "https://payneinstitute.mines.edu/dacs-recent-cost-curve-signals/",
+   "https://www.psmarketresearch.com/market-analysis/direct-air-capture-market",
+   "https://www.1pointfive.com/technology"
+  ]
+ },
+ {
+  "key": "ethylene",
+  "title_problem": "25% of fruit and vegetables are lost before reaching stores",
+  "p_problem": "Fruit releases ethylene, which speeds ripening and softening even at 10\u2013100 ppb. Losses from harvest to retail reached 25.4% in 2023.",
+  "tiles_problem": [
+   [
+    "Fruit & veg lost",
+    "25.4%",
+    "harvest to retail, 2023"
+   ],
+   [
+    "Harmful ethylene",
+    "10\u2013100 ppb",
+    "speeds ripening"
+   ],
+   [
+    "All food lost",
+    "13.3%",
+    "after harvest, 2023"
+   ]
+  ],
+  "market_title": "Ripening control: a $154M market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$154M",
+    "1-MCP ripening control"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "sachets and liners"
+   ],
+   [
+    "First buyers",
+    "Fruit shippers",
+    "cold storage, containers"
+   ]
+  ],
+  "options_title": "Today's ethylene traps are toxic, short-lived or room-only",
+  "options": [
+   [
+    "Potassium permanganate sachets",
+    "Packaging suppliers",
+    "Toxic, can't touch fruit"
+   ],
+   [
+    "1-MCP (SmartFresh)",
+    "AgroFresh",
+    "Sealed-room gas treatment"
+   ],
+   [
+    "Platinum catalysts",
+    "On sale since 2015",
+    "Fail at 0 \u00b0C within 2 h"
+   ],
+   [
+    "Designed selective binder",
+    "Us",
+    "Holds ethylene at ppb, cold"
+   ]
+  ],
+  "deck_name": "Ethylene Trap",
+  "timeline_goal": "an ethylene trap tested on stored fruit",
+  "steps": [
+   "Screen binders at ppb ethylene",
+   "Test at 0 \u00b0C, high humidity",
+   "Shelf-life trial on bananas"
+  ],
+  "sources": [
+   "https://www.fao.org/sustainable-development-goals-data-portal/data/indicators/1231-global-food-losses",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC13639747/",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10199933/",
+   "https://www.imarcgroup.com/ethylene-absorber-market"
+  ]
+ },
+ {
+  "key": "rareearth",
+  "title_problem": "China refines about 90% of the world's rare earths",
+  "p_problem": "Nd and La/Ce behave almost alike, so solvent extraction plants need hundreds of mixer stages. In 2025 the US imported 67% of its rare-earth compounds and metals.",
+  "tiles_problem": [
+   [
+    "China refining share",
+    "~90%",
+    "IEA, 2025"
+   ],
+   [
+    "US import reliance",
+    "67%",
+    "USGS, 2025"
+   ],
+   [
+    "DoD NdPr price floor",
+    "$110/kg",
+    "vs $69 market"
+   ]
+  ],
+  "market_title": "NdPr oxide: a $4.9B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$4.9B",
+    "NdPr oxide, global"
+   ],
+   [
+    "Our share a year",
+    "$3\u20137M",
+    "license, 1\u20132 plants"
+   ],
+   [
+    "First buyers",
+    "MP, Energy Fuels",
+    "then Ucore, Lynas"
+   ]
+  ],
+  "options_title": "Today's fixes speed up tanks, not the chemistry",
+  "options": [
+   [
+    "P507-type solvent extraction",
+    "China, Lynas, MP",
+    "Hundreds of mixer stages"
+   ],
+   [
+    "Faster SX columns",
+    "Ucore",
+    "Same chemistry, same selectivity"
+   ],
+   [
+    "Designed extractant ligand",
+    "Us",
+    "Picks Nd, fewer stages"
+   ]
+  ],
+  "deck_name": "Rare-Earth Separator",
+  "title_solution": "We design an extractant that picks neodymium over lanthanum and cerium",
+  "timeline_goal": "a mixer-settler pilot on real liquor with fewer stages for NdPr",
+  "steps": [
+   "Screen ligands for Nd over La/Ce",
+   "Shake-flask tests of separation factor",
+   "Mixer-settler pilot on real plant liquor"
+  ],
+  "sources": []
+ },
+ {
+  "key": "plastic",
+  "title_problem": "The US recycles only 5\u20136% of its plastic waste",
+  "p_problem": "27 million tons of US plastic went to landfill in 2018. Brightmark's Indiana pyrolysis plant ran at 5% of capacity and went bankrupt in 2025.",
+  "tiles_problem": [
+   [
+    "US plastic recycled",
+    "5\u20136%",
+    "2021 estimate"
+   ],
+   [
+    "Plastic landfilled",
+    "27M tons",
+    "per year, EPA 2018"
+   ],
+   [
+    "Brightmark plant output",
+    "5%",
+    "of capacity, 2025"
+   ]
+  ],
+  "market_title": "Chemical recycling: a $4.0B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$4.0B",
+    "chemical recycling, global"
+   ],
+   [
+    "Our share a year",
+    "$2\u20135M",
+    "catalyst, 2\u20133 plants"
+   ],
+   [
+    "First buyers",
+    "ExxonMobil, Nexus",
+    "US pyrolysis plants"
+   ]
+  ],
+  "options_title": "Today's options make wax, gas, or die on chlorine",
+  "options": [
+   [
+    "Heat-only pyrolysis",
+    "Brightmark, Nexus Circular",
+    "Waxy, low-value oil"
+   ],
+   [
+    "Zeolite (FCC) catalysts",
+    "Grace, BASF",
+    "Coke, too much gas"
+   ],
+   [
+    "Ru or Pt catalysts",
+    "DOE labs, universities",
+    "Methane, chlorine poisoning"
+   ],
+   [
+    "Designed alloy catalyst",
+    "Us",
+    "Fuel-range, chlorine-tolerant"
+   ]
+  ],
+  "deck_name": "Plastic-to-Fuel Catalyst",
+  "title_solution": "We design a catalyst that cuts plastic chains into fuel, not gas",
+  "timeline_goal": "a pilot on sorted waste: fuel yield, low methane, survives chlorine",
+  "steps": [
+   "Screen alloys for chain cutting and chlorine",
+   "Bench reactor tests on mixed plastic",
+   "Pilot run on real sorted waste"
+  ],
+  "sources": []
+ },
+ {
+  "key": "gold",
+  "title_problem": "US discards 7.2 million tonnes of e-waste a year",
+  "p_problem": "Only 22% of the world's e-waste is formally recycled, leaving $62B of metals unrecovered in 2022. Gold leach liquors carry far more copper and zinc than gold.",
+  "tiles_problem": [
+   [
+    "US e-waste",
+    "7.2 Mt",
+    "2022, #2 globally"
+   ],
+   [
+    "Gold in e-waste",
+    "$15B",
+    "world, 2022"
+   ],
+   [
+    "Formally recycled",
+    "22%",
+    "world, 2022"
+   ]
+  ],
+  "market_title": "E-waste precious metals: an $11.1B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$11.1B",
+    "N. America $2.45B"
+   ],
+   [
+    "Our share a year",
+    "$5\u201320M",
+    "binder sales, licenses"
+   ],
+   [
+    "First buyers",
+    "US e-scrap processors",
+    "Sims, Sipi, Mint"
+   ]
+  ],
+  "options_title": "Today's gold recovery is toxic, costly or unselective",
+  "options": [
+   [
+    "Cyanide leach",
+    "Gold mines, refiners",
+    "Toxic, eaten by copper"
+   ],
+   [
+    "Aqua regia + solvent",
+    "Precious-metal refiners",
+    "Acid fumes, solvent loss"
+   ],
+   [
+    "Smelting",
+    "Aurubis (Georgia)",
+    "Needs $800M plant"
+   ],
+   [
+    "Designed gold binder",
+    "Us",
+    "Grabs gold, skips copper"
+   ]
+  ],
+  "deck_name": "Gold Catcher",
+  "title_solution": "We design a gold binder that pulls gold from copper-rich leach liquor",
+  "timeline_goal": "gold capture from real circuit-board leach liquor with copper and zinc present",
+  "steps": [
+   "Screen gold binders with AI physics models",
+   "Make top 10 binders in partner lab",
+   "Test gold uptake on real board leach"
+  ],
+  "sources": []
+ },
+ {
+  "key": "tmah",
+  "title_problem": "TSMC aims to reuse 24,000 tonnes of toxic developer a year",
+  "p_problem": "TMAH chip developer kills through the skin: Taiwan recorded 3 deaths at 25% strength. Most spent TMAH is destroyed in fab wastewater plants, not reused.",
+  "tiles_problem": [
+   [
+    "TSMC reuse target",
+    "24,000 t",
+    "fresh TMAH, yearly"
+   ],
+   [
+    "Skin-contact deaths",
+    "3",
+    "Taiwan, 25% TMAH"
+   ],
+   [
+    "TSMC Arizona",
+    "$165B",
+    "6 fabs planned"
+   ]
+  ],
+  "market_title": "Electronic-grade TMAH: a $1.3B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$1.3B",
+    "electronic grade, world"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "on-site recovery units"
+   ],
+   [
+    "First buyers",
+    "US chip fabs",
+    "TSMC, Intel, Samsung"
+   ]
+  ],
+  "options_title": "Fabs destroy TMAH or ship it abroad to recycle",
+  "options": [
+   [
+    "Bio-treat or burn",
+    "Fab wastewater plants",
+    "TMAH lost, ammonia load"
+   ],
+   [
+    "Ion exchange resin",
+    "Organo",
+    "Acid regen, salty waste"
+   ],
+   [
+    "Electrolysis recycling",
+    "SACHEM, Nagase (Japan)",
+    "Plants in Asia only"
+   ],
+   [
+    "Designed TMAH binder",
+    "Us",
+    "On-site, TMAH only"
+   ]
+  ],
+  "deck_name": "TMAH Recovery",
+  "title_solution": "We design a binder that pulls TMAH from fab rinse water for reuse",
+  "timeline_goal": "TMAH capture and release from real fab rinse water at reuse purity",
+  "steps": [
+   "Screen binders for TMAH over other ions",
+   "Make top binders, measure uptake",
+   "Test on fab rinse water samples"
+  ],
+  "sources": []
+ },
+ {
+  "key": "cesium",
+  "title_problem": "Hanford holds 56 million gallons of tank waste; cleanup up to $589B",
+  "p_problem": "Cs-137 must come out first, but sodium outnumbers cesium about 10,000 to 1. Hanford's cesium unit runs 5 gallons a minute on single-use media.",
+  "tiles_problem": [
+   [
+    "Hanford tank waste",
+    "56M gal",
+    "177 tanks"
+   ],
+   [
+    "Cleanup cost",
+    "$364\u2013589B",
+    "DOE, 2025"
+   ],
+   [
+    "Sodium vs cesium",
+    "10,000x",
+    "in tank liquid"
+   ]
+  ],
+  "market_title": "US nuclear cleanup: an $8.5B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$8.5B",
+    "DOE cleanup budget"
+   ],
+   [
+    "Our share a year",
+    "$5\u201320M",
+    "media, licenses, tests"
+   ],
+   [
+    "First buyers",
+    "Hanford, Savannah River",
+    "H2C, SRMC contractors"
+   ]
+  ],
+  "options_title": "Cesium removal today is slow, single-use or huge",
+  "options": [
+   [
+    "Solvent extraction (CSSX)",
+    "Savannah River SWPF",
+    "$2.3B plant"
+   ],
+   [
+    "Silicotitanate (CST)",
+    "Hanford TSCR, Honeywell UOP",
+    "Single use, 5 gal/min"
+   ],
+   [
+    "Designed cesium binder",
+    "Us",
+    "Reusable, fast, sodium-blind"
+   ]
+  ],
+  "deck_name": "Cesium Catcher",
+  "title_solution": "We design a cesium binder that ignores sodium and can be reused",
+  "timeline_goal": "cesium uptake from simulated Hanford tank liquid with 10,000x sodium",
+  "steps": [
+   "Screen cesium binders against sodium, potassium",
+   "Make top binders, measure selectivity",
+   "Test on simulated tank liquid"
+  ],
+  "sources": []
+ },
+ {
+  "key": "sulfur",
+  "title_problem": "At 10 ppm sulfur, one stubborn molecule is nearly all that's left",
+  "p_problem": "US caps diesel at 15 ppm sulfur and ship fuel near US coasts at 0.1%. Hydrotreaters need 320\u2013425\u00b0C hydrogen and still struggle with 4,6-DMDBT.",
+  "tiles_problem": [
+   [
+    "US diesel cap",
+    "15 ppm",
+    "sulfur, since 2006"
+   ],
+   [
+    "US road diesel",
+    "123M gal",
+    "per day, 2025"
+   ],
+   [
+    "Coastal ship fuel",
+    "0.1%",
+    "sulfur cap"
+   ]
+  ],
+  "market_title": "Desulfurization catalysts: a $3.3B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$3.3B",
+    "HDS catalysts, world"
+   ],
+   [
+    "Our share a year",
+    "$10\u201330M",
+    "polishing sorbent sales"
+   ],
+   [
+    "First buyers",
+    "US refiners",
+    "Valero, Marathon, Phillips 66"
+   ]
+  ],
+  "options_title": "Hydrogen-heavy processes still miss the hardest sulfur",
+  "options": [
+   [
+    "Hydrotreating (HDS)",
+    "Topsoe, Shell, Albemarle",
+    "Hot H2, slow on 4,6-DMDBT"
+   ],
+   [
+    "Hot sorbent (S Zorb)",
+    "Sinopec",
+    "Gasoline only, needs H2"
+   ],
+   [
+    "Designed sulfur trap",
+    "Us",
+    "Room temp, grabs 4,6-DMDBT"
+   ]
+  ],
+  "deck_name": "Sulfur Trap",
+  "title_solution": "We design a sorbent that traps 4,6-DMDBT from diesel at room temperature",
+  "timeline_goal": "4,6-DMDBT removal from real hydrotreated diesel to below 10 ppm sulfur",
+  "steps": [
+   "Screen sorbents for 4,6-DMDBT over aromatics",
+   "Make top sorbents, measure capacity",
+   "Test on real refinery diesel"
+  ],
+  "sources": []
+ },
+ {
+  "key": "phosphate",
+  "title_problem": "US phosphate output is stuck; imports now 16% of supply",
+  "p_problem": "Florida ore is thinning and US phosphate recycling is zero. Wastewater plants strip phosphorus with iron or alum, locking it in sludge instead of fertilizer.",
+  "tiles_problem": [
+   [
+    "Net imports",
+    "16%",
+    "of US use, 2025"
+   ],
+   [
+    "Phosphate recycled",
+    "None",
+    "USGS, 2025"
+   ],
+   [
+    "Morocco reserves",
+    "68%",
+    "of world total"
+   ]
+  ],
+  "market_title": "Phosphorus recovery: a $1.7B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$1.7B",
+    "N. America 27%"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "sorbent sales, licenses"
+   ],
+   [
+    "First buyers",
+    "Large US utilities",
+    "Chicago MWRD, DC Water"
+   ]
+  ],
+  "options_title": "Phosphorus removal today wastes it or works narrowly",
+  "options": [
+   [
+    "Iron or alum salts",
+    "Kemira",
+    "Sludge, phosphorus lost"
+   ],
+   [
+    "Struvite crystals",
+    "Ostara",
+    "Rich side streams only"
+   ],
+   [
+    "Lanthanum clay",
+    "Phoslock",
+    "Single use, lakes"
+   ],
+   [
+    "Designed phosphate catcher",
+    "Us",
+    "Reusable, makes fertilizer"
+   ]
+  ],
+  "deck_name": "Phosphate Catcher",
+  "title_solution": "We design a reusable sorbent that pulls phosphate from wastewater for fertilizer",
+  "timeline_goal": "phosphate capture and release from real treatment-plant effluent near 1 mg/L",
+  "steps": [
+   "Screen phosphate binders against sulfate, carbonate",
+   "Make top sorbents, measure uptake",
+   "Test on real plant effluent"
+  ],
+  "sources": []
+ },
+ {
+  "key": "xenon",
+  "title_problem": "Air holds 0.087 ppm xenon, so it costs up to $12,000/kg",
+  "p_problem": "Xenon comes only as a by-product of large oxygen plants. Korea's import price jumped 83% in early 2022; SpaceX moved Starlink thrusters to argon.",
+  "tiles_problem": [
+   [
+    "Xenon in air",
+    "0.087 ppm",
+    "by-product only"
+   ],
+   [
+    "Xenon price",
+    "$5\u201312k/kg",
+    "argon: $7\u201315/kg"
+   ],
+   [
+    "2022 price jump",
+    "+83%",
+    "Korea imports, 2 months"
+   ]
+  ],
+  "market_title": "Xenon gas: a $286M market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$286M",
+    "N. America 35%+"
+   ],
+   [
+    "Our share a year",
+    "$2\u20138M",
+    "sorbent, capture units"
+   ],
+   [
+    "First buyers",
+    "Gas firms, fabs",
+    "Linde, Air Products"
+   ]
+  ],
+  "options_title": "Xenon comes only from giant cryogenic air plants",
+  "options": [
+   [
+    "Cryogenic distillation",
+    "Linde, Air Liquide",
+    "Giant plants only"
+   ],
+   [
+    "MOF sorbents",
+    "PNNL (SBMOF-1)",
+    "Lab stage only"
+   ],
+   [
+    "Designed xenon cage",
+    "Us",
+    "Small units, xenon only"
+   ]
+  ],
+  "deck_name": "Xenon Catcher",
+  "title_solution": "We design a cage molecule that catches xenon from air-plant or fab gas",
+  "timeline_goal": "xenon-over-krypton capture from a dilute gas mix in a packed column",
+  "steps": [
+   "Screen cage molecules for xenon over krypton",
+   "Make top cages, measure uptake",
+   "Test on dilute Xe/Kr gas mix"
+  ],
+  "sources": []
+ },
+ {
+  "key": "chalco",
+  "title_problem": "US imports 57% of its copper; most ore resists cheap leaching",
+  "p_problem": "Chalcopyrite holds about 70% of copper but its surface seals up in heaps, so it goes to smelters. The US has two, and exported 340,000 t of concentrate in 2025.",
+  "tiles_problem": [
+   [
+    "US import reliance",
+    "57%",
+    "share of use, 2025"
+   ],
+   [
+    "US copper smelters",
+    "2",
+    "Utah and Arizona"
+   ],
+   [
+    "Concentrate exported",
+    "340 kt",
+    "US, 2025"
+   ]
+  ],
+  "market_title": "Copper in Freeport's leach piles: $187B at 2025 prices",
+  "tiles_market": [
+   [
+    "Copper in piles",
+    "$187B",
+    "Freeport, 39B lb"
+   ],
+   [
+    "Our share a year",
+    "$10\u201330M",
+    "fee per extra pound"
+   ],
+   [
+    "First buyers",
+    "Freeport, Capstone",
+    "Arizona leach mines"
+   ]
+  ],
+  "options_title": "Today's options: few smelters, locked or unproven leaching",
+  "options": [
+   [
+    "Smelting",
+    "Rio Tinto, Freeport",
+    "Only two US smelters"
+   ],
+   [
+    "Jetti catalyst",
+    "Jetti Resources",
+    "Patented, single supplier"
+   ],
+   [
+    "Nuton bioleach",
+    "Rio Tinto",
+    "Still in 4-year demo"
+   ],
+   [
+    "Designed leach booster",
+    "Us",
+    "Stable, microbe-safe, cheaper"
+   ]
+  ],
+  "deck_name": "Copper Leach Booster",
+  "title_solution": "We design a leach additive that keeps chalcopyrite dissolving in heaps",
+  "timeline_goal": "a field heap test with one Arizona miner",
+  "steps": [
+   "Screen additive molecules with physics models",
+   "Column leach tests on Arizona ore",
+   "Heap pilot with a US miner"
+  ],
+  "sources": []
+ },
+ {
+  "key": "ammonium",
+  "title_problem": "Aeration uses 25\u201360% of US sewage plant power",
+  "p_problem": "US sewage plants use about 30 TWh a year. Ammonium-based aeration control cuts aeration energy 5\u201345%, but today's probes also read potassium and drift.",
+  "tiles_problem": [
+   [
+    "Plant power use",
+    "30 TWh/yr",
+    "US wastewater"
+   ],
+   [
+    "Aeration share",
+    "25\u201360%",
+    "of plant energy"
+   ],
+   [
+    "Ammonium over potassium",
+    "only 10\u201320\u00d7",
+    "nonactin binder"
+   ]
+  ],
+  "market_title": "Ammonium sensors: a $290M market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$290M",
+    "N. America 36%"
+   ],
+   [
+    "Our share a year",
+    "$2\u20136M",
+    "binder license fees"
+   ],
+   [
+    "First buyers",
+    "Probe makers",
+    "Hach, YSI, In-Situ"
+   ]
+  ],
+  "options_title": "Today's ammonium probes confuse potassium; analyzers cost more",
+  "options": [
+   [
+    "Nonactin ammonium probes",
+    "Hach, YSI, Endress+Hauser",
+    "Potassium skews, probes drift"
+   ],
+   [
+    "Wet-chemistry analyzers",
+    "Hach",
+    "Costly, reagents, upkeep"
+   ],
+   [
+    "Gas-sensing ammonia electrodes",
+    "Lab instrument makers",
+    "Needs caustic reagent"
+   ],
+   [
+    "Designed sensor binder",
+    "Us",
+    "Ignores potassium, holds calibration"
+   ]
+  ],
+  "deck_name": "Ammonium Sensor Binder",
+  "title_solution": "We design an ammonium binder that ignores potassium, for steadier probes",
+  "timeline_goal": "an ammonium probe tested in real sewage with high potassium",
+  "steps": [
+   "Screen binders, ammonium over potassium",
+   "Build probe membranes, test drift",
+   "Side-by-side test at a US plant"
+  ],
+  "sources": []
+ },
+ {
+  "key": "psensor",
+  "title_problem": "Tracking phosphate takes a $29,000 analyzer; no simple probe exists",
+  "p_problem": "1,279 large US sewage plants have phosphorus limits. They rely on wet-chemistry analyzers that need reagents and upkeep; no reagent-free phosphate probe is sold.",
+  "tiles_problem": [
+   [
+    "Plants with P limits",
+    "1,279",
+    "large US plants"
+   ],
+   [
+    "Analyzer price",
+    "$29,366",
+    "Phosphax sc, 2026"
+   ],
+   [
+    "Phosphate probes sold",
+    "None",
+    "no commercial electrode"
+   ]
+  ],
+  "market_title": "Phosphate analyzers: a $0.6B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$0.6B",
+    "N. America 38%"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "binder licenses"
+   ],
+   [
+    "First buyers",
+    "Analyzer makers",
+    "Hach, Xylem, E+H"
+   ]
+  ],
+  "options_title": "Phosphate monitoring today means costly analyzers or lab delays",
+  "options": [
+   [
+    "Wet-chemistry analyzers",
+    "Hach Phosphax, NP6000sc",
+    "~$29k, reagents, upkeep"
+   ],
+   [
+    "Grab samples, lab tests",
+    "Plant staff, labs",
+    "Hours late, no control"
+   ],
+   [
+    "Research phosphate electrodes",
+    "University labs",
+    "Weak, short-lived, interference"
+   ],
+   [
+    "Designed sensor binder",
+    "Us",
+    "Reagent-free phosphate probe"
+   ]
+  ],
+  "deck_name": "Phosphate Sensor Binder",
+  "title_solution": "We design a phosphate binder for the first reagent-free phosphate probe",
+  "timeline_goal": "a phosphate probe tested against an analyzer on plant effluent",
+  "steps": [
+   "Screen binders against sulfate, chloride, nitrate",
+   "Build probe membranes, test life",
+   "Side-by-side with analyzer at plant"
+  ],
+  "sources": []
+ },
+ {
+  "key": "magrec",
+  "title_problem": "Under 1% of rare-earth magnets get recycled today",
+  "p_problem": "Magnet scrap is 64% iron and 31% rare earths. Acid leaching dissolves both, so iron ends up in precipitates and solvents, adding cleanup steps.",
+  "tiles_problem": [
+   [
+    "US import reliance",
+    "67%",
+    "rare earths, 2025"
+   ],
+   [
+    "Magnets recycled",
+    "<1%",
+    "of rare earths"
+   ],
+   [
+    "Iron in scrap",
+    "64%",
+    "by weight"
+   ]
+  ],
+  "market_title": "Rare-earth recycling: a $0.59B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$0.59B",
+    "62% from magnets"
+   ],
+   [
+    "Our share a year",
+    "$2\u20136M",
+    "license, 3\u20135 plants"
+   ],
+   [
+    "First buyers",
+    "US magnet recyclers",
+    "Cyclic, REEcycle, Ionic"
+   ]
+  ],
+  "options_title": "Today's methods fight iron at every step",
+  "options": [
+   [
+    "Leach to mixed oxide",
+    "Cyclic Materials",
+    "Mixed oxide, needs refining"
+   ],
+   [
+    "Solvent extraction",
+    "Ionic Rare Earths",
+    "Many stages, opens 2028"
+   ],
+   [
+    "Magnet-to-magnet",
+    "Noveon Magnetics",
+    "Needs clean, sorted magnets"
+   ],
+   [
+    "Designed extractant",
+    "Us",
+    "Picks Nd, Dy over iron"
+   ]
+  ],
+  "deck_name": "Magnet Recycling Extractant",
+  "title_solution": "We design a molecule that pulls Nd, Pr, Dy from iron-rich scrap",
+  "timeline_goal": "selective Nd, Pr, Dy recovery from real magnet leach liquor at a US recycler",
+  "steps": [
+   "Screen molecules with AI physics models",
+   "Make top 10, test on lab leach",
+   "Test best one on recycler liquor"
+  ],
+  "sources": []
+ },
+ {
+  "key": "reecoal",
+  "title_problem": "US coal ash holds up to 11 million tons of rare earths",
+  "p_problem": "Rare earths are only 0.03\u20130.06% of US fly ash; the rest is mostly silica, aluminum, iron and calcium. Pulling trace metals from that bulk is costly.",
+  "tiles_problem": [
+   [
+    "Coal ash stored",
+    "1.9B tons",
+    "US, recoverable"
+   ],
+   [
+    "Rare earths in ash",
+    "337\u2013591 ppm",
+    "by US basin"
+   ],
+   [
+    "US import reliance",
+    "67%",
+    "rare earths, 2025"
+   ]
+  ],
+  "market_title": "Magnet rare earths: a $9.7B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$9.7B",
+    "magnet rare earth oxides"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "license, coal REE plants"
+   ],
+   [
+    "First buyers",
+    "Coal REE pilots",
+    "WVU, Ramaco, CONSOL"
+   ]
+  ],
+  "options_title": "Current methods spend acid on unwanted metals",
+  "options": [
+   [
+    "Acid leach + solvent extraction",
+    "WVU (A34 plant)",
+    "Costly at trace levels"
+   ],
+   [
+    "Targeted leach (TREE)",
+    "NETL, Wyoming pilot",
+    "Pilot stage, not proven"
+   ],
+   [
+    "Mine REE-rich coal",
+    "Ramaco (Brook Mine)",
+    "Commercial only by 2031"
+   ],
+   [
+    "Designed extractant",
+    "Us",
+    "Grabs REE, skips aluminum"
+   ]
+  ],
+  "deck_name": "Rare Earths from Coal Waste",
+  "title_solution": "We design a molecule that grabs rare earths from coal waste, not aluminum",
+  "timeline_goal": "selective rare earth capture from real mine-drainage and fly-ash leach at a US pilot",
+  "steps": [
+   "Screen molecules for REE over Al, Fe, Ca",
+   "Make top 10, test on lab leach",
+   "Test best one on pilot-site liquor"
+  ],
+  "sources": []
+ }
+]

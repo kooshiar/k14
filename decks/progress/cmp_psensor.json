@@ -1,0 +1,171 @@
+{
+ "title": null,
+ "rows": [
+  "Picks phosphate over sulfate and nitrate",
+  "Picks phosphate over chloride",
+  "Fast, reversible reading",
+  "Stays in the sensor membrane",
+  "Catches phosphate",
+  "Safe to handle",
+  "Cost per sensor",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  3,
+  1,
+  1,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Tren tris(phenylurea)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    50,
+    100,
+    100,
+    0,
+    100,
+    32,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 54,
+   "price": 3.28
+  },
+  {
+   "label": "Quaternary ammonium (resin site)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    63,
+    0,
+    65,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 16,
+   "price": 2.12
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    0,
+    50,
+    100,
+    34,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 11,
+   "price": 1.19
+  },
+  {
+   "label": "Design A",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    0,
+    100,
+    33,
+    null,
+    29,
+    65,
+    65
+   ],
+   "overall": 59,
+   "price": 3.18
+  },
+  {
+   "label": "L2-9",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    40,
+    30,
+    29,
+    null,
+    30,
+    65,
+    35
+   ],
+   "overall": 65,
+   "price": 3.25
+  },
+  {
+   "label": "L4-19",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    67,
+    65,
+    31,
+    null,
+    31,
+    65,
+    50
+   ],
+   "overall": 72,
+   "price": 3.18
+  },
+  {
+   "label": "L5-18",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    15,
+    100,
+    100,
+    0,
+    100,
+    31,
+    null,
+    44,
+    65,
+    65
+   ],
+   "overall": 49,
+   "price": 3.28
+  }
+ ]
+}

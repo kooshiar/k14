@@ -1,0 +1,181 @@
+{
+ "title": null,
+ "rows": [
+  "Picks cesium over sodium",
+  "Picks cesium over potassium",
+  "Catches cesium",
+  "Strips with dilute acid",
+  "Stays in the solvent",
+  "Cost per m\u00b3 of waste",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Calix[4]arene-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    0,
+    100,
+    100,
+    40,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 24,
+   "price": 2.78
+  },
+  {
+   "label": "18-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    50,
+    100,
+    3,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 20,
+   "price": 2.56
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    42,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 13,
+   "price": 3.36
+  },
+  {
+   "label": "Dibenzo-18-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    98,
+    46,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 12,
+   "price": 2.83
+  },
+  {
+   "label": "Design C",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    89,
+    37,
+    100,
+    55,
+    54,
+    null,
+    25,
+    50,
+    40
+   ],
+   "overall": 59,
+   "price": 2.05
+  },
+  {
+   "label": "L2-6",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    0,
+    86,
+    100,
+    100,
+    39,
+    null,
+    43,
+    50,
+    40
+   ],
+   "overall": 42,
+   "price": 2.77
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    0,
+    100,
+    0,
+    33,
+    null,
+    29,
+    50,
+    40
+   ],
+   "overall": 23,
+   "price": 2.9
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    92,
+    0,
+    57,
+    100,
+    100,
+    40,
+    null,
+    46,
+    50,
+    40
+   ],
+   "overall": 40,
+   "price": 2.76
+  }
+ ]
+}

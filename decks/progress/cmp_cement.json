@@ -1,0 +1,127 @@
+{
+ "title": null,
+ "rows": [
+  "Early strength",
+  "Doesn\u2019t slow setting",
+  "Safe on site",
+  "Cost per tonne of cement",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  3,
+  1,
+  3,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "DEIPA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    100,
+    100,
+    48,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 69,
+   "price": 1.54
+  },
+  {
+   "label": "TEA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 32,
+   "price": 1.45
+  },
+  {
+   "label": "TIPA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    100,
+    100,
+    45,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 31,
+   "price": 1.76
+  },
+  {
+   "label": "DIPA-butanol",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    84,
+    100,
+    100,
+    40,
+    72,
+    84,
+    50,
+    45
+   ],
+   "overall": 70,
+   "price": 2.53
+  },
+  {
+   "label": "L2-17",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    42,
+    100,
+    75,
+    50,
+    45
+   ],
+   "overall": 73,
+   "price": 2.41
+  },
+  {
+   "label": "L4-9",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    88,
+    100,
+    100,
+    48,
+    null,
+    61,
+    50,
+    45
+   ],
+   "overall": 70,
+   "price": 1.9
+  }
+ ]
+}

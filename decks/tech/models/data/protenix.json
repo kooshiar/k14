@@ -1,0 +1,70 @@
+{
+ "slug": "protenix",
+ "name": "Protenix",
+ "what": "Predicts all-atom complexes; open AF3 rebuild",
+ "input": {
+  "label": "Biomolecules + MSA + templates",
+  "size": "up to 768-token crops"
+ },
+ "blocks": [
+  {
+   "name": "MSA module",
+   "dims": "4 × 64 / 128"
+  },
+  {
+   "name": "Pairformer",
+   "dims": "48 × 384 / 128"
+  },
+  {
+   "name": "Diffusion module",
+   "dims": "24 × 768"
+  },
+  {
+   "name": "Confidence",
+   "dims": "4 × 384 / 128"
+  }
+ ],
+ "params": "368M · v1 weights",
+ "loop": "× 4 recycles · 200 diffusion steps",
+ "output": {
+  "label": "All-atom xyz + confidence",
+  "size": "5 samples per seed"
+ },
+ "who": {
+  "org": "ByteDance Seed",
+  "year": "2026",
+  "versions": "v0.2 2024 → Mini 2025 → v1, v2 2026",
+  "license": "Open · Apache 2.0; v2 weights closed"
+ },
+ "ideas": [
+  "First open model past AF3",
+  "Matched AF3 data cutoff, size",
+  "More seeds at inference",
+  "RNA MSA, protein templates",
+  "13M MGnify distillation set",
+  "PXMeter benchmark released"
+ ],
+ "train": {
+  "hardware": "256 GPUs",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "Crops 384 / 640 / 768",
+  "data": "PDB ≤2021 + 13M MGnify distilled",
+  "epochs": "n/a"
+ },
+ "results": [
+  "FoldBench lDDT 0.8874 vs AF3 0.8843",
+  "Ab-antigen DockQ 50.1% vs AF3 47.9%"
+ ],
+ "speed": "n/a",
+ "limit": "v2 weights closed; needs MSA search",
+ "sources": [
+  "https://github.com/bytedance/Protenix",
+  "https://github.com/bytedance/Protenix/blob/main/docs/PTX_V1_Technical_Report_202602042356.pdf",
+  "https://github.com/bytedance/Protenix/blob/main/configs/configs_base.py",
+  "https://arxiv.org/abs/2507.11839",
+  "https://protenix-server.com"
+ ],
+ "ready": true,
+ "type": "Transformer + diffusion"
+}

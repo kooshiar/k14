@@ -1,0 +1,70 @@
+{
+ "slug": "boltz-2",
+ "name": "Boltz-2",
+ "what": "Predicts complex structure and binding affinity",
+ "input": {
+  "label": "Biomolecules + MSA + templates",
+  "size": "768 crops · 1,024 MSA"
+ },
+ "blocks": [
+  {
+   "name": "MSA module",
+   "dims": "4 × 64 / 128"
+  },
+  {
+   "name": "Pairformer",
+   "dims": "64 × 384 / 128"
+  },
+  {
+   "name": "Diffusion module",
+   "dims": "24 × 768"
+  },
+  {
+   "name": "Affinity heads",
+   "dims": "8 + 4 × 128"
+  }
+ ],
+ "params": "521M + 9M affinity",
+ "loop": "× 3 recycles · 200 diffusion steps",
+ "output": {
+  "label": "All-atom xyz + affinity",
+  "size": "Pose + log IC50"
+ },
+ "who": {
+  "org": "MIT + Recursion",
+  "year": "2025",
+  "versions": "Boltz-1 2024 → Boltz-2 2025 → BoltzGen",
+  "license": "Open · MIT code and weights"
+ },
+ "ideas": [
+  "Structure + affinity in one",
+  "Trained on millions of assays",
+  "MD ensembles, not just crystals",
+  "Method and template conditioning",
+  "Steering enforces physical poses",
+  "bf16 + trifast attention"
+ ],
+ "train": {
+  "hardware": "n/a",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "1.2M binders + 200k HTS",
+  "data": "PDB ≤2023 + MD + distillation",
+  "epochs": "n/a"
+ },
+ "results": [
+  "FEP+ 4-target Pearson 0.66",
+  "MF-PCBA EF 18.4 at 0.5%"
+ ],
+ "speed": ">1,000× faster than FEP",
+ "limit": "Affinity varies strongly by assay",
+ "sources": [
+  "https://doi.org/10.1101/2025.06.14.659707",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC12262699/",
+  "https://boltz.com/boltz2",
+  "https://github.com/jwohlwend/boltz",
+  "https://huggingface.co/boltz-community/boltz-2"
+ ],
+ "ready": true,
+ "type": "Transformer + diffusion"
+}

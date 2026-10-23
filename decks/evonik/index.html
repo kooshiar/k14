@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evonik Paths</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --page:#E9EBEF; --navbg:#FFFFFF; --navln:#DDE1E7; --navtx:#3A3F4A;
+  --bg:#FFFFFF; --ink:#0B0D12; --body:#5B6170; --acc:#2F6BFF;
+  --card:#0E1016; --surf:#161922; --bd:#262A35; --ctx:#E3E8F2; --cmut:#8C95A6; --cacc:#7FB0FF; --band:#1C2A47; --bandln:#2F4677; --ln:#3A4152;
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--page:#14161A;--navbg:#1E2127;--navln:#2C3038;--navtx:#D5D9E0;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#14161A;--navbg:#1E2127;--navln:#2C3038;--navtx:#D5D9E0;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--page);font-family:var(--sans);margin:0;overflow:hidden}
+.stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px 16px 72px}
+.slide{width:min(100%,calc((100vh - 88px)*16/9));aspect-ratio:16/9;container-type:inline-size;overflow:hidden;position:relative;
+  display:none;grid-template-columns:6% 34% 6% 48% 6%;align-items:center;background:var(--bg);border-radius:6px;
+  box-shadow:0 1px 2px rgba(0,0,0,.06),0 10px 40px rgba(0,0,0,.08)}
+.slide.on{display:grid}
+.txt{grid-column:2;display:flex;flex-direction:column;gap:2.2cqw}
+.txt h2{margin:0;font:600 3.5cqw/1.08 var(--sans);letter-spacing:-.035em;color:var(--ink);text-wrap:balance}
+.txt h2 .n{color:var(--acc)}
+.txt p{margin:0;font:400 1.45cqw/1.55 var(--sans);color:var(--body);text-wrap:pretty}
+.vis{grid-column:4;min-width:0;background:var(--card);border-radius:10px;padding:3.4cqw}
+.lb,.vis td,.vis th{font:400 .95cqw/1.35 var(--mono);letter-spacing:.01em;color:var(--ctx)}
+.m{color:var(--cmut)!important}
+.a{color:var(--cacc)!important}
+.hd{font:600 1.5cqw/1.15 var(--sans);letter-spacing:-.02em;color:var(--ctx)}
+
+/* p1 paths */
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1cqw;position:relative}
+.path{background:var(--surf);border:1px solid var(--bd);border-radius:6px;padding:1.6cqw 1.4cqw;display:flex;flex-direction:column;gap:1.1cqw;position:relative}
+.path.main{background:var(--band);border-color:var(--bandln)}
+.path .no{font:500 .95cqw/1 var(--mono);color:var(--cacc)}
+.path .big{font:600 2.4cqw/1 var(--sans);letter-spacing:-.03em;color:var(--cacc);margin-top:.6cqw}
+.path + .path::before{content:"";position:absolute;left:-1.1cqw;top:50%;width:1.1cqw;height:1px;background:var(--ln)}
+
+/* p2 / p4 tables */
+.tb{width:100%;border-collapse:collapse}
+.tb th{text-align:left;font-weight:400;color:var(--cmut);padding:0 1.6cqw 1cqw 0;border-bottom:1px solid var(--bd);white-space:nowrap}
+.tb td{padding:1.25cqw 1.6cqw 1.25cqw 0;border-bottom:1px solid var(--bd);vertical-align:top}
+.tb tr:last-child td{border-bottom:0}
+.tb td:last-child,.tb th:last-child{padding-right:0}
+.tb .nm{font:500 1.15cqw/1.25 var(--sans);color:var(--ctx);letter-spacing:-.01em;white-space:nowrap}
+.tb .sc{font:600 2.2cqw/1 var(--sans);letter-spacing:-.03em;color:var(--cacc)}
+.tb .sc.o{color:var(--cmut)}
+.tb td.r,.tb th.r{text-align:right}
+.tb .grp td{padding:1.6cqw 0 .5cqw;border-bottom:0;color:var(--cmut)}
+.tb .grp:first-child td{padding-top:0}
+.ppl td{padding-top:.75cqw;padding-bottom:.75cqw}
+.ppl .grp td{padding:1.3cqw 0 .3cqw}
+
+/* p3 timeline */
+.tl{display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+.tl::before{content:"";position:absolute;left:10%;right:10%;top:1.6cqw;height:1px;background:var(--ln)}
+.st{display:flex;flex-direction:column;align-items:center;gap:1.3cqw;text-align:center;padding:0 .4cqw}
+.st .c{width:3.2cqw;height:3.2cqw;border-radius:50%;background:var(--surf);border:1px solid var(--ln);display:grid;place-items:center;position:relative;z-index:1;font:500 .95cqw/1 var(--mono);color:var(--ctx)}
+.st.end .c{background:var(--cacc);border-color:var(--cacc);color:var(--card)}
+.st .hd{font-size:1.25cqw}
+
+/* nav */
+.nav{position:fixed;right:20px;bottom:18px;display:flex;align-items:center;gap:8px;z-index:5}
+.nav button{width:38px;height:38px;border-radius:8px;border:1px solid var(--navln);background:var(--navbg);color:var(--navtx);font:500 16px/1 var(--mono);cursor:pointer;display:grid;place-items:center}
+.nav button:disabled{opacity:.35;cursor:default}
+.nav span{font:500 13px/1 var(--mono);color:var(--navtx);min-width:60px;text-align:center;font-variant-numeric:tabular-nums}
+@media (max-width:700px){.stage{padding:16px 16px 72px}}
+</style>
+</head>
+<body>
+<div class="stage">
+
+<!-- 1 · big picture -->
+<section class="slide on">
+  <div class="txt">
+    <h2>Two ways to work with Evonik</h2>
+    <p>€418M a year on R&amp;D. A €400M venture fund with 50+ startup and fund investments since 2012.</p>
+  </div>
+  <div class="vis">
+    <div class="paths" style="grid-template-columns:repeat(2,1fr)">
+      <div class="path main">
+        <div class="no">1</div>
+        <div class="hd">Spinoff</div>
+        <div class="lb m">We build it together as a new company. Evonik Venture Capital joins the round.</div>
+        <div class="big">≤ €15M</div>
+      </div>
+      <div class="path">
+        <div class="no">2</div>
+        <div class="hd">License</div>
+        <div class="lb m">We design for Evonik. Evonik owns the product.</div>
+        <div class="big">Cash + royalty</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · fit -->
+<section class="slide">
+  <div class="txt">
+    <h2><span class="n">2</span> spinoffs match products Evonik sells</h2>
+    <p>Both beat today's best compound in our physics-AI design runs.</p>
+  </div>
+  <div class="vis">
+    <table class="tb">
+      <tr><th>Spinoff</th><th>Evonik line</th><th class="r">Ours</th><th class="r">Best today</th></tr>
+      <tr>
+        <td><div class="nm">Rebar corrosion inhibitor</div></td>
+        <td>Smart Effects<br><span class="m">Protectosil CIT</span></td>
+        <td class="r"><span class="sc">72</span></td>
+        <td class="r"><span class="sc o">51</span><br><span class="m">benzotriazole</span></td>
+      </tr>
+      <tr>
+        <td><div class="nm">Biogas siloxane catcher</div></td>
+        <td>High Performance Polymers<br><span class="m">SEPURAN Green membranes</span></td>
+        <td class="r"><span class="sc">85</span></td>
+        <td class="r"><span class="sc o">53</span><br><span class="m">resorcinarene</span></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- 3 · sequence -->
+<section class="slide">
+  <div class="txt">
+    <h2>Lab test first, then the investment</h2>
+    <p>Evonik Venture Capital invests where a business line already sees value.</p>
+  </div>
+  <div class="vis">
+    <div class="tl">
+      <div class="st"><div class="c">0m</div><div class="hd">Intro</div><div class="lb m">Fund + Smart Effects</div></div>
+      <div class="st"><div class="c">1m</div><div class="hd">Test plan</div><div class="lb m">Evonik specs</div></div>
+      <div class="st"><div class="c">3m</div><div class="hd">Lab test</div><div class="lb m">Rebar inhibitor</div></div>
+      <div class="st"><div class="c">6m</div><div class="hd">Results</div><div class="lb m">Go / no-go</div></div>
+      <div class="st end"><div class="c">9m</div><div class="hd">Round</div><div class="lb a">Fund invests</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · people -->
+<section class="slide">
+  <div class="txt">
+    <h2><span class="n">8</span> people to contact</h2>
+    <p>Start with the fund's US director and the Smart Effects head.</p>
+  </div>
+  <div class="vis">
+    <table class="tb ppl">
+      <tr class="grp"><td colspan="2">Spinoff · Evonik Venture Capital</td></tr>
+      <tr><td class="nm">Lutz Stoeber</td><td>Investment Director, North America</td></tr>
+      <tr><td class="nm">Bernhard Mohr</td><td>Managing Director</td></tr>
+      <tr class="grp"><td colspan="2">License · business lines</td></tr>
+      <tr><td class="nm">Emmanuel Auer</td><td>Head of Smart Effects</td></tr>
+      <tr><td class="nm">Goetz Baumgarten</td><td>Head of Membranes &amp; Fibers</td></tr>
+      <tr class="grp"><td colspan="2">License · Innovation Factory</td></tr>
+      <tr><td class="nm">Axel Kobus</td><td>Head of Innovation Factory</td></tr>
+      <tr><td class="nm">Christian Eilbracht</td><td>Chief Innovation Officer</td></tr>
+      <tr class="grp"><td colspan="2">Sponsors</td></tr>
+      <tr><td class="nm">Lauren Kjeldsen</td><td>Board member: innovation, Americas</td></tr>
+      <tr><td class="nm">Elias Lacerda</td><td>President, Americas</td></tr>
+    </table>
+  </div>
+</section>
+
+</div>
+<div class="nav"><button id="pv" aria-label="Previous">←</button><span id="pg"></span><button id="nx" aria-label="Next">→</button></div>
+<script>
+const S=[...document.querySelectorAll('.slide')];let i=0;
+try{const h=parseInt(location.hash.slice(1));if(h>=1&&h<=S.length)i=h-1}catch(e){}
+function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,k)=>s.classList.toggle('on',k===i));
+  document.getElementById('pg').textContent=(i+1)+' / '+S.length;pv.disabled=i===0;nx.disabled=i===S.length-1;history.replaceState(null,'','#'+(i+1))}
+const pv=document.getElementById('pv'),nx=document.getElementById('nx');
+pv.onclick=()=>go(i-1);nx.onclick=()=>go(i+1);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')go(i+1);if(e.key==='ArrowLeft')go(i-1)});
+go(i);
+</script>
+</body>
+</html>

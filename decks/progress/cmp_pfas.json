@@ -1,0 +1,111 @@
+{
+ "title": null,
+ "rows": [
+  "Picks PFAS over natural organics",
+  "Catches ppt PFAS",
+  "Safe for drinking water",
+  "Stays in the filter",
+  "Cost per m\u00b3 of water",
+  "US supply"
+ ],
+ "weights": [
+  3,
+  2,
+  3,
+  2,
+  2,
+  1
+ ],
+ "options": [
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    44,
+    50,
+    100,
+    100,
+    27,
+    5
+   ],
+   "overall": 48,
+   "price": 3.4
+  },
+  {
+   "label": "Quaternary ammonium (resin site)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    65,
+    63,
+    50,
+    null
+   ],
+   "overall": 29,
+   "price": 2.12
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    0,
+    34,
+    100
+   ],
+   "overall": 7,
+   "price": 1.19
+  },
+  {
+   "label": "Design C",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    73,
+    100,
+    100,
+    100,
+    35,
+    null
+   ],
+   "overall": 78,
+   "price": 2.88
+  },
+  {
+   "label": "L3-3",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    28,
+    null
+   ],
+   "overall": 81,
+   "price": 2.92
+  },
+  {
+   "label": "L4-19",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    29,
+    null
+   ],
+   "overall": 81,
+   "price": 2.83
+  }
+ ]
+}

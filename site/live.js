@@ -1,0 +1,291 @@
+// Live 3D stage for the machine films: plays the saved trajectory, rotates with the mouse, labels follow the parts.
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
+import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
+import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+import { MarchingCubes } from 'three/addons/objects/MarchingCubes.js';
+import { COLORS } from './films.js';
+
+const DUR = 20;
+const mat = (hex) => new THREE.MeshPhysicalMaterial({ color:hex, roughness:.4, metalness:0, clearcoat:.3, clearcoatRoughness:.3,
+  sheen:.12, sheenColor:new THREE.Color('#FFD9EA'), sheenRoughness:.7 });
+const glow = (hex) => new THREE.MeshBasicMaterial({ color:hex, toneMapped:false });
+// render looks for ball films (opts.look): ball = scale on the atom radius, stick = bond radius in Å,
+// hollow = see-through balls with a bright rim, surface = that group drawn as one smooth molecular surface
+export const LOOKS = { thin:{ ball:.55, stick:.05 }, fine:{ ball:.32, stick:.032 }, licorice:{ ballAbs:.085, stick:.085 },
+  hollow:{ ball:1, stick:.04, hollow:true }, surface:{ ball:.5, stick:.05, surface:'guest' },
+  // target as a surface; the machine either with small see-through balls, or flat (unlit) small balls on narrow bonds
+  surfaceHollow:{ ball:.58, stick:.04, hollow:true, surface:'guest' }, surfaceFlat:{ ball:.4, stick:.04, flat:true, surface:'guest' },
+  surfaceHollowSee:{ ball:.58, stick:.04, hollow:true, surface:'guest', see:.62 },
+  surfaceHollowArmA:{ ball:.58, stick:.04, hollow:true, surface:'guest', whiteArm:0 }, surfaceHollowArmB:{ ball:.58, stick:.04, hollow:true, surface:'guest', whiteArm:1 }, surfaceFlatSee:{ ball:.4, stick:.04, flat:true, surface:'guest', see:.62 } };   // see = surface opacity
+const flat = (hex) => new THREE.MeshBasicMaterial({ color:hex });
+const rim = (hex) => new THREE.ShaderMaterial({ transparent:true, depthWrite:false,
+  uniforms:{ color:{ value:new THREE.Color(hex) } },
+  vertexShader:`varying vec3 vN; varying vec3 vV;
+    void main(){ vec4 mv = modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+      vN = normalize(normalMatrix * mat3(instanceMatrix) * normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`,
+  fragmentShader:`uniform vec3 color; varying vec3 vN; varying vec3 vV;
+    void main(){ float f = pow(1.0 - abs(dot(normalize(vN), normalize(vV))), 2.2); gl_FragColor = vec4(color, .06 + .9 * f); }` });
+
+export class Stage {
+  constructor(host, overlay, opts = {}){
+    this.host = host; this.ov = overlay; this.opts = opts;
+    const R = this.renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true, preserveDrawingBuffer:!!opts.capture });
+    R.setPixelRatio(Math.min(devicePixelRatio, 2)); R.toneMapping = THREE.NeutralToneMapping; R.toneMappingExposure = .95;
+    R.outputColorSpace = THREE.SRGBColorSpace; R.setClearColor(0x000000, 0);
+    host.appendChild(R.domElement);
+    this.scene = new THREE.Scene();
+    const pm = new THREE.PMREMGenerator(R); this.scene.environment = pm.fromScene(new RoomEnvironment(), .04).texture; this.scene.environmentIntensity = .18;
+    this.camera = new THREE.PerspectiveCamera(20, 1, .01, 5000); this.scene.add(this.camera);
+    // lights ride with the camera so every angle gets the same look as the films
+    const L = (c, i, p) => { const l = new THREE.DirectionalLight(c, i); l.position.set(...p); this.camera.add(l); l.target.position.set(0, 0, -1); this.camera.add(l.target); };
+    L('#FFF1E6', 2.4, [-1.2, 1.0, .6]); L('#6F95FF', 2.6, [1.2, .5, -1.4]); L('#FFC9E2', .55, [1.0, -.5, .5]);
+    this.scene.add(new THREE.HemisphereLight('#2E3A5C', '#0B0E16', .7));
+    this.controls = new OrbitControls(this.camera, R.domElement);
+    Object.assign(this.controls, { enableDamping:true, dampingFactor:.08, enableZoom:false, enablePan:false, rotateSpeed:.7 });
+    this.controls.addEventListener('start', () => { this.touched = performance.now(); });
+    this.composer = new EffectComposer(R);
+    this.composer.addPass(new RenderPass(this.scene, this.camera));
+    if (!opts.noAO){ this.ao = new GTAOPass(this.scene, this.camera, 10, 10); this.ao.updateGtaoMaterial({ radius:.25, distanceExponent:1, thickness:1, scale:1.2 }); this.composer.addPass(this.ao); }
+    this.composer.addPass(new OutputPass());
+    this.t0 = performance.now(); this.root = null;
+    new ResizeObserver(() => this.resize()).observe(host); this.resize();
+    const tick = () => { this.frame(); requestAnimationFrame(tick); }; if (!opts.capture) requestAnimationFrame(tick);
+  }
+  resize(){
+    const w = this.host.clientWidth, h = this.host.clientHeight; if (!w || !h) return;
+    this.renderer.setSize(w, h, false); this.composer.setSize(w, h); this.camera.aspect = w / h;
+    if (this.ready && this.hull) this.frameCamera(false);
+    this.camera.updateProjectionMatrix();
+  }
+
+  async load(film){
+    this.ready = false; this.film = film; this.A = this.B = null; this.tetMesh = this.trails = this.boxLine = this.arrow = this.rotor = this.flow = null; this.sticks = []; this.balls = []; this.mc = null;
+    const base = `live/${film.id}/`, sc = this.sc = await fetch(base + 'scene.json').then(r => r.json());
+    if (this.root){ this.scene.remove(this.root); this.root.traverse(o => { o.geometry?.dispose(); }); }
+    this.root = new THREE.Group(); this.scene.add(this.root);
+    this.up = sc.up;
+    if (film.style === 'surface') await this.buildSurface(base); else await this.buildBalls(base);
+    this.frameCamera(true);
+    this.t0 = performance.now(); this.ready = true; this.frame(true);
+  }
+  // data coords -> three (y up)
+  v(x, y, z, out){ return this.up === 'z' ? out.set(x, z, -y) : out.set(x, y, z); }
+
+  async buildBalls(base){
+    const sc = this.sc, n = sc.n;
+    // look.whiteArm: one arm of the machine (film.arms[i]) drawn in white, as its own group
+    const wa = (LOOKS[this.opts.look] || {}).whiteArm;
+    if (wa != null && this.film.arms && sc.groups.machine){ const arm = new Set(this.film.arms[wa]);
+      sc.groups = { ...sc.groups, machine:sc.groups.machine.filter(a => !arm.has(a)), arm:[...arm] };
+      this.film = { ...this.film, groups:{ ...this.film.groups, arm:'snow' } }; }
+    const f = this.film;
+    const dyn = new Int16Array(await fetch(base + 'dyn.bin').then(r => r.arrayBuffer()));
+    const sta = sc.static.length ? new Float32Array(await fetch(base + 'static.bin').then(r => r.arrayBuffer())) : null;
+    this.dyn = dyn; this.nd = sc.dyn.length;
+    this.P = new Float32Array(n * 3);                       // current positions, three coords
+    if (sta) sc.static.forEach((a, k) => { const v = this.v(sta[3*k], sta[3*k+1], sta[3*k+2], new THREE.Vector3()); this.P.set([v.x, v.y, v.z], 3 * a); });
+    this.gid = new Int32Array(n).fill(-1); const names = Object.keys(f.groups);
+    names.forEach((g, k) => sc.groups[g].forEach(a => this.gid[a] = k));
+    const sph = new THREE.SphereGeometry(1, 28, 20), cyl = new THREE.CylinderGeometry(1, 1, 1, 14, 1, true);
+    const look = this.look = LOOKS[this.opts.look] || {};
+    this.balls = names.map((g, k) => { const idx = sc.groups[g]; const m = new THREE.InstancedMesh(sph, (look.hollow ? rim : look.flat ? flat : mat)(COLORS[f.groups[g]]), idx.length);
+      m.userData.idx = idx; this.root.add(m); return m; });
+    // half bonds per group
+    const halves = names.map(() => []);
+    for (const [a, b] of sc.bonds){ if (this.gid[a] >= 0) halves[this.gid[a]].push([a, b]); if (this.gid[b] >= 0) halves[this.gid[b]].push([b, a]); }
+    this.sticks = f.stick ? names.map((g, k) => { const m = new THREE.InstancedMesh(cyl, (look.flat ? flat : mat)(COLORS[f.groups[g]]), Math.max(1, halves[k].length));
+      m.userData.h = halves[k]; m.count = halves[k].length; this.root.add(m); return m; }) : [];
+    if (f.tets){
+      const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(sc.tets.length * 12 * 3), 3));
+      this.tetMesh = new THREE.Mesh(g, mat(COLORS.pearl)); this.root.add(this.tetMesh);
+    }
+    if (f.trails){
+      this.trailMat = new LineMaterial({ color:COLORS.blue, linewidth:2.5, transparent:true, opacity:.75, worldUnits:false });
+      this.trails = new LineSegments2(new LineSegmentsGeometry(), this.trailMat); this.root.add(this.trails);
+    }
+    if (f.box){
+      this.boxLine = new THREE.LineLoop(new THREE.BufferGeometry().setAttribute('position', new THREE.BufferAttribute(new Float32Array(12), 3)),
+        new THREE.LineBasicMaterial({ color:'#E6E8EF', transparent:true, opacity:.55 }));
+      this.root.add(this.boxLine);
+    }
+    if (f.arrow){
+      const a = new THREE.Group(), m = glow(COLORS.orange);
+      const shaft = new THREE.Mesh(new THREE.CylinderGeometry(.35, .35, 14, 16), m); shaft.rotation.z = -Math.PI / 2; a.add(shaft);
+      const head = new THREE.Mesh(new THREE.ConeGeometry(1, 2.6, 20), m); head.rotation.z = -Math.PI / 2; head.position.x = 8; a.add(head);
+      this.arrow = a; this.root.add(a);
+    }
+    // MOF: pick one CO2 that ends inside the crystal and one N2 that ends outside, for the callouts
+    if (this.film.id === 'mof'){
+      const last = this.posAt(sc.frames - 1, new Float32Array(n * 3)), xs = sc.groups.frame.map(a => last[3*a]);
+      const lo = Math.min(...xs), hi = Math.max(...xs), cx = a => last[3*a];
+      const co2 = sc.groups.co2.filter((a, i) => i % 3 === 2).find(a => cx(a) > lo + 4 && cx(a) < hi - 4 && last[3*a+1] > 0);
+      const n2 = sc.groups.n2.filter((a, i) => i % 2 === 0).find(a => (cx(a) > hi + 8 || cx(a) < lo - 8) && Math.abs(last[3*a+1]) < 12);
+      sc.anchors.co2 = [co2]; sc.anchors.n2 = [n2];
+      this.film = { ...this.film, labels:[...this.film.labels, { at:'co2', text:['CO₂', 'trapped in a pore'] }, { at:'n2', text:['N₂', 'stays in the gas'] }] };
+    }
+    if (look.surface && sc.groups[look.surface]){       // that group as one smooth surface (metaballs on its atoms)
+      const k = names.indexOf(look.surface); if (!look.see){ if (this.balls[k]) this.balls[k].visible = false; if (this.sticks[k]) this.sticks[k].visible = false; }   // see-through: its atoms show inside
+      const b = new THREE.Box3(), p = new Float32Array(n * 3), v = new THREE.Vector3();
+      for (let fr = 0; fr < sc.frames; fr += 10){ this.posAt(fr, p); for (const a of sc.groups[look.surface]) b.expandByPoint(v.set(p[3*a], p[3*a+1], p[3*a+2])); }
+      const c = b.getCenter(new THREE.Vector3()), half = Math.max(...b.getSize(new THREE.Vector3()).toArray()) / 2 + 3.5;
+      const m = mat(COLORS[f.groups[look.surface]]); m.roughness = .55; m.clearcoat = .15; if (look.see){ m.transparent = true; m.opacity = look.see; }
+      this.mc = new MarchingCubes(64, m, false, false, 60000); this.mc.isolation = 80;
+      this.mc.position.copy(c); this.mc.scale.setScalar(half); this.mc.userData = { c, half, idx:sc.groups[look.surface] }; this.root.add(this.mc);
+    }
+    this.hull = this.ballHull();
+  }
+  posAt(k, out){                                            // frame k into out (three coords), static atoms too
+    const sc = this.sc, o = k * this.nd * 3, t = new THREE.Vector3();
+    if (out !== this.P) out.set(this.P);
+    sc.dyn.forEach((a, j) => { this.v(this.dyn[o + 3*j] / 100, this.dyn[o + 3*j+1] / 100, this.dyn[o + 3*j+2] / 100, t); out[3*a] = t.x; out[3*a+1] = t.y; out[3*a+2] = t.z; });
+    return out;
+  }
+  ballHull(){
+    const b = new THREE.Box3(), p = new Float32Array(this.sc.n * 3), v = new THREE.Vector3();
+    for (let k = 0; k < this.sc.frames; k += 15){ this.posAt(k, p); for (let i = 0; i < this.sc.n; i++) b.expandByPoint(v.set(p[3*i], p[3*i+1], p[3*i+2])); }
+    return b.expandByScalar(Math.max(...this.sc.radius));
+  }
+
+  async buildSurface(base){
+    const gltf = await new GLTFLoader().loadAsync(base + 'atp.glb'), sc = this.sc;
+    const col = { stalk:'blue', ring_a:'blue', ring_b:'sky', alpha:'pearl', beta:'pink', stator:'lilac' };
+    this.rotor = new THREE.Group(); this.rotor.matrixAutoUpdate = false; this.root.add(this.rotor);
+    gltf.scene.traverse(o => { if (!o.isMesh) return; const name = o.name.replace(/\.\d+$/, '');
+      const m = new THREE.Mesh(o.geometry, mat(COLORS[col[name] || 'pearl'])); (['stalk', 'ring_a', 'ring_b'].includes(name) ? this.rotor : this.root).add(m); });
+    // proton flow: orange arc around the c-ring
+    const R = sc.ring_radius, c = sc.ring_center, g = glow(COLORS.orange);
+    this.flow = new THREE.Group(); this.flow.position.set(c[0], c[1], c[2]);
+    const arc = new THREE.Mesh(new THREE.TorusGeometry(R, .075, 12, 140, 4.9), g); arc.rotation.x = Math.PI / 2; this.flow.add(arc);
+    const head = new THREE.Mesh(new THREE.ConeGeometry(.28, .6, 20), g); const a = 4.9;
+    head.position.set(R * Math.cos(a), 0, R * Math.sin(a));
+    head.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), new THREE.Vector3(-Math.sin(a), 0, Math.cos(a))); this.flow.add(head);
+    this.root.add(this.flow);
+    this.hull = new THREE.Box3().setFromObject(this.root);
+  }
+
+  frameCamera(reset){
+    const f = this.film.view, c = this.hull.getCenter(new THREE.Vector3()), s = this.hull.getSize(new THREE.Vector3());
+    const ext = Math.max(s.x, s.y, s.z), vfov = THREE.MathUtils.degToRad(this.camera.fov), asp = this.camera.aspect;
+    const fill = this.opts.fill ? this.opts.fill(f.fill) : f.fill;
+    const d = Math.max(ext / fill / 2 / Math.tan(vfov / 2), ext / fill / 2 / Math.tan(vfov / 2) / Math.min(1, asp));
+    this.controls.target.copy(c);
+    if (reset){ const yw = THREE.MathUtils.degToRad(f.yaw), el = THREE.MathUtils.degToRad(f.elev);
+      this.camera.position.copy(c).add(new THREE.Vector3(Math.cos(el) * Math.sin(yw), Math.sin(el), Math.cos(el) * Math.cos(yw)).multiplyScalar(d)); }
+    else { const dir = this.camera.position.clone().sub(c).normalize(); this.camera.position.copy(c).addScaledVector(dir, d); }
+    this.camera.near = d / 50; this.camera.far = d * 10; this.camera.updateProjectionMatrix(); this.controls.update();
+  }
+
+  time(){ return (((this.pausedAt ?? performance.now()) - this.t0) / 1000) % DUR; }
+  pause(on){                                       // freeze the story in place; rotating by mouse still works
+    if (on && this.pausedAt == null) this.pausedAt = performance.now();
+    if (!on && this.pausedAt != null){ this.t0 += performance.now() - this.pausedAt; this.pausedAt = null; }
+  }
+  frame(force){
+    if (!this.ready) return;
+    const v = this.opts.capture ? this.vCapture : this.time(), sc = this.sc, F = sc.frames, x = v / DUR * (F - 1), k0 = Math.floor(x), k1 = Math.min(F - 1, k0 + 1), w = x - k0;
+    this.k = Math.round(x);
+    if (this.film.style === 'balls') this.updateBalls(k0, k1, w); else this.updateSurface(k0, k1, w);
+    this.controls.update();
+    this.composer.render();
+    this.drawOverlay(v);
+    if (this.onFrame) this.onFrame(v, this.k);
+  }
+  updateBalls(k0, k1, w){
+    const n = this.sc.n, A = this.A || (this.A = new Float32Array(n * 3)), B = this.B || (this.B = new Float32Array(n * 3));
+    this.posAt(k0, A); this.posAt(k1, B); const P = this.P;
+    for (let i = 0; i < n; i++){                          // blend, but never across a periodic wrap
+      const jump = Math.abs(B[3*i] - A[3*i]) + Math.abs(B[3*i+1] - A[3*i+1]) + Math.abs(B[3*i+2] - A[3*i+2]) > 6;
+      for (let k = 0; k < 3; k++) P[3*i+k] = jump ? (w < .5 ? A[3*i+k] : B[3*i+k]) : A[3*i+k] + (B[3*i+k] - A[3*i+k]) * w; }
+    const M = new THREE.Matrix4(), q = new THREE.Quaternion(), s = new THREE.Vector3(), p = new THREE.Vector3(), up = new THREE.Vector3(0, 1, 0), d = new THREE.Vector3();
+    const rad = this.sc.radius;
+    const lk = this.look || {};
+    for (const m of this.balls){ m.userData.idx.forEach((a, j) => { const r = lk.ballAbs || rad[a] * (lk.ball || 1); m.setMatrixAt(j, M.compose(p.set(P[3*a], P[3*a+1], P[3*a+2]), q.identity(), s.set(r, r, r))); }); m.instanceMatrix.needsUpdate = true; }
+    const sr = lk.stick || this.film.stick;
+    for (const m of this.sticks){ m.userData.h.forEach(([a, b], j) => {
+      const ax = P[3*a], ay = P[3*a+1], az = P[3*a+2], mx = (ax + P[3*b]) / 2, my = (ay + P[3*b+1]) / 2, mz = (az + P[3*b+2]) / 2;
+      d.set(mx - ax, my - ay, mz - az); const L = d.length(); q.setFromUnitVectors(up, d.normalize());
+      m.setMatrixAt(j, M.compose(p.set((ax + mx) / 2, (ay + my) / 2, (az + mz) / 2), q, s.set(sr, L, sr))); }); m.instanceMatrix.needsUpdate = true; }
+    if (this.mc){ const { c, half, idx } = this.mc.userData; this.mc.reset();
+      for (const a of idx){ const r = (rad[a] < .4 ? 1.15 : 1.6) / (2 * half);   // ~van der Waals radius, H smaller
+        this.mc.addBall((P[3*a] - c.x) / (2 * half) + .5, (P[3*a+1] - c.y) / (2 * half) + .5, (P[3*a+2] - c.z) / (2 * half) + .5, 140 * r * r, 60); }
+      this.mc.update(); }
+    if (this.tetMesh){
+      const arr = this.tetMesh.geometry.attributes.position.array; let o = 0;
+      for (const t of this.sc.tets) for (const [a, b, c] of [[0, 1, 2], [0, 1, 3], [0, 2, 3], [1, 2, 3]]) for (const i of [t[a], t[b], t[c]]){ arr[o++] = P[3*i]; arr[o++] = P[3*i+1]; arr[o++] = P[3*i+2]; }
+      // wind every face outward from its tetrahedron centre
+      for (let f = 0; f < arr.length; f += 9){ const ti = Math.floor(f / 36), t = this.sc.tets[ti];
+        const cx = (P[3*t[0]] + P[3*t[1]] + P[3*t[2]] + P[3*t[3]]) / 4, cy = (P[3*t[0]+1] + P[3*t[1]+1] + P[3*t[2]+1] + P[3*t[3]+1]) / 4, cz = (P[3*t[0]+2] + P[3*t[1]+2] + P[3*t[2]+2] + P[3*t[3]+2]) / 4;
+        const e1 = [arr[f+3] - arr[f], arr[f+4] - arr[f+1], arr[f+5] - arr[f+2]], e2 = [arr[f+6] - arr[f], arr[f+7] - arr[f+1], arr[f+8] - arr[f+2]];
+        const nx = e1[1]*e2[2] - e1[2]*e2[1], ny = e1[2]*e2[0] - e1[0]*e2[2], nz = e1[0]*e2[1] - e1[1]*e2[0];
+        if (nx * (arr[f] - cx) + ny * (arr[f+1] - cy) + nz * (arr[f+2] - cz) < 0) for (let k = 0; k < 3; k++){ const t1 = arr[f+3+k]; arr[f+3+k] = arr[f+6+k]; arr[f+6+k] = t1; } }
+      this.tetMesh.geometry.attributes.position.needsUpdate = true; this.tetMesh.geometry.computeVertexNormals();
+    }
+    if (this.trails){
+      const seg = [], hist = 36, tmp = new Float32Array(this.sc.n * 3), L2 = 100;
+      for (const a of this.sc.movers){ let prev = null;
+        for (let k = Math.max(0, this.k - hist); k <= this.k; k++){ this.posAt(k, tmp); const cur = [tmp[3*a], tmp[3*a+1], tmp[3*a+2]];
+          if (prev && (cur[0]-prev[0])**2 + (cur[1]-prev[1])**2 + (cur[2]-prev[2])**2 < L2) seg.push(...prev, ...cur); prev = cur; } }
+      if (seg.length){ this.trails.geometry.dispose(); this.trails.geometry = new LineSegmentsGeometry().setPositions(seg); this.trails.visible = this.sc.story.t_ps[this.k] > 6; }
+      this.trailMat.resolution.set(this.host.clientWidth, this.host.clientHeight);
+    }
+    if (this.film.switch){ const sw = this.film.switch, k = this.sc.story[sw.key][this.k], g = Object.keys(this.film.groups).indexOf(sw.group);
+      const c = new THREE.Color(COLORS[sw.a]).lerp(new THREE.Color(COLORS[sw.b]), k); this.balls[g].material.color.copy(c); if (this.sticks[g]) this.sticks[g].material.color.copy(c); }
+    if (this.boxLine){ const c = this.sc.story.box[this.k], arr = this.boxLine.geometry.attributes.position.array, t = new THREE.Vector3();
+      c.forEach((p, i) => { this.v(p[0], p[1], p[2], t); arr[3*i] = t.x; arr[3*i+1] = t.y; arr[3*i+2] = t.z; }); this.boxLine.geometry.attributes.position.needsUpdate = true; }
+    if (this.arrow){ const on = this.sc.story[this.film.arrow.on][this.k]; this.arrow.visible = on;
+      const h = this.hull, c = h.getCenter(new THREE.Vector3()); this.arrow.position.set(c.x, h.min.y - 3.5, h.max.z + 2); }
+  }
+  updateSurface(k0, k1, w){
+    const M = this.sc.rotor_matrix, a = new THREE.Matrix4().fromArray(M[k0]), b = new THREE.Matrix4().fromArray(M[k1]);
+    const pa = new THREE.Vector3(), qa = new THREE.Quaternion(), sa = new THREE.Vector3(), pb = new THREE.Vector3(), qb = new THREE.Quaternion();
+    a.decompose(pa, qa, sa); b.decompose(pb, qb, sa); qa.slerp(qb, w); pa.lerp(pb, w);
+    this.rotor.matrix.compose(pa, qa, new THREE.Vector3(1, 1, 1)); this.rotor.matrixWorldNeedsUpdate = true;
+    const s = this.sc.story; this.flow.visible = s.torque_on[this.k]; this.flow.rotation.y = -THREE.MathUtils.degToRad(s.rotor_deg[this.k]);
+  }
+
+  anchor(name){                                             // screen position of a labelled part
+    const v = new THREE.Vector3();
+    if (this.film.style === 'surface'){ const p = this.sc.anchor_pos[name][this.k]; v.set(p[0], p[1], p[2]); }
+    else { const idx = this.sc.anchors[name]; if (!idx || idx[0] == null) return null; 
+      let x = 0, y = 0, z = 0; for (const a of idx){ x += this.P[3*a]; y += this.P[3*a+1]; z += this.P[3*a+2]; } v.set(x / idx.length, y / idx.length, z / idx.length); }
+    v.project(this.camera); return [(v.x + 1) / 2 * this.host.clientWidth, (1 - v.y) / 2 * this.host.clientHeight];
+  }
+  drawOverlay(v){
+    if (!this.ov) return;
+    const f = this.film, s = this.sc.story, k = this.k, W = this.host.clientWidth, X = W - (this.opts.labelInset || 230);
+    let svg = '';
+    const rows = (W < 640 || this.opts.minimal ? [] : f.labels).map(L => ({ L, a:this.anchor(L.at) })).filter(r => r.a).map(r => ({ ...r, y:r.a[1] })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < rows.length; i++) rows[i].y = Math.max(rows[i].y, rows[i - 1].y + 62);
+    for (const { L, a, y } of rows){
+      svg += `<circle cx="${a[0]}" cy="${a[1]}" r="3" fill="#E6E8EF"/><polyline points="${a[0]},${a[1]} ${X - 22},${y} ${X - 6},${y}" fill="none" stroke="rgba(230,232,239,.55)" stroke-width="1"/>` +
+        `<text class="lab" x="${X}" y="${y - 3}">${L.text[0]}</text><text class="lab sub" x="${X}" y="${y + 14}">${L.text[1]}</text>`;
+    }
+    if (f.burst && s[f.burst.on][k]){ const a = this.anchor(f.burst.at), age = Math.max(0, s[f.burst.age][k]);
+      // incoming light: a wave travelling into the axle, arrow at the molecule
+      const ux = -.76, uy = -.65, px = -uy, py = ux, L0 = 26, L1 = 190, ph = v * 9, op = Math.min(1, age * 4 + .35);
+      let pts = '';
+      for (let d = L1; d >= L0 + 10; d -= 3){ const w = 7 * Math.sin(d / 9 + ph) * Math.min(1, (L1 - d) / 30); pts += `${a[0] + ux * d + px * w},${a[1] + uy * d + py * w} `; }
+      const tx = a[0] + ux * L0, ty = a[1] + uy * L0, h = 15, ang = Math.atan2(-uy, -ux);
+      svg += `<polyline points="${pts}${tx + ux * 10},${ty + uy * 10}" fill="none" stroke="#FF6B1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="${op}"/>` +
+        `<path d="M${tx},${ty} L${tx - h * Math.cos(ang - .45)},${ty - h * Math.sin(ang - .45)} L${tx - h * Math.cos(ang + .45)},${ty - h * Math.sin(ang + .45)} Z" fill="#FF6B1A" opacity="${op}"/>`;
+      if (!this.opts.minimal) svg += `<text class="lab" x="${a[0] + ux * L1 - 20}" y="${a[1] + uy * L1 - 12}" style="fill:#FF6B1A">${f.burst.label}</text>`; }
+    if (f.pull && s.pulling[k]){ const A = this.anchor('end_a'), B = this.anchor('end_b'), L = Math.hypot(B[0] - A[0], B[1] - A[1]) || 1, ux = (B[0] - A[0]) / L, uy = (B[1] - A[1]) / L;
+      const ar = (x, y, dx, dy) => { const x2 = x + dx * 70, y2 = y + dy * 70, a = Math.atan2(dy, dx), h = 12;
+        return `<line x1="${x + dx * 14}" y1="${y + dy * 14}" x2="${x2 - dx * 8}" y2="${y2 - dy * 8}" stroke="#FF6B1A" stroke-width="3.5" stroke-linecap="round"/><path d="M${x2},${y2} L${x2 - h * Math.cos(a - .45)},${y2 - h * Math.sin(a - .45)} L${x2 - h * Math.cos(a + .45)},${y2 - h * Math.sin(a + .45)} Z" fill="#FF6B1A"/>`; };
+      svg += ar(A[0], A[1], -ux, -uy) + ar(B[0], B[1], ux, uy); }
+    if (f.arrow && this.arrow?.visible && !this.opts.minimal){ const p = this.arrow.position.clone().add(new THREE.Vector3(9, 0, 0)).project(this.camera);
+      svg += `<text class="lab" x="${(p.x + 1) / 2 * W + 14}" y="${(1 - p.y) / 2 * this.host.clientHeight + 5}" style="fill:#FF6B1A">${f.arrow.label}</text>`; }
+    if (f.style === 'surface' && this.flow.visible && !this.opts.minimal){ const a = this.anchor('ring'); svg += `<text class="lab" x="${a[0] - 230}" y="${a[1] + 110}" style="fill:#FF6B1A">Proton flow</text>`; }
+    this.ov.svg.innerHTML = svg;
+    this.ov.steps?.forEach((el, i) => el.classList.toggle('on', i === s.part[k]));
+    if (this.ov.read) this.ov.read.innerHTML = f.readout(s, k).join('<br>');
+  }
+}

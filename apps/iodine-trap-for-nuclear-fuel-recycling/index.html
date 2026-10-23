@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K14 · Iodine trap for nuclear fuel recycling</title>
+<meta name="description" content="Capture radioactive iodine gas released when spent nuclear fuel is recycled">
+<script async src="/site/analytics.js?v=1"></script>
+<script type="module" src="/site/auth.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site/frame.css">
+<link rel="icon" href="/site/favicon.svg">
+<link rel="stylesheet" href="/apps/app.css?v=2">
+</head>
+<body>
+<header class="site"><div class="bar"><nav class="wrap"><a class="logo" href="/"><img src="/site/mark.svg" alt="">K14</a><div class="tabs"><a href="/apps/" class="on">Apps</a><a href="/tech/">Tech</a></div><a data-cta href="/contact/">Contact</a></nav></div></header>
+<main class="wrap app">
+  <div class="fold nosol">
+    <div class="b ttl"><div class="crumb"><a href="/apps/">Apps</a> / <a href="/apps/energy/">Energy</a></div><h1>Iodine trap for nuclear fuel recycling</h1></div>
+    <figure class="b mol" data-k="iodine"><canvas aria-label="I₂ inside a MOF-5 cage"></canvas></figure>
+    <div class="b"><h3>Why</h3><p><b>Capture radioactive iodine gas released when spent nuclear fuel is recycled.</b></p></div>
+    <div class="b"><h3>Business</h3><p><b>Orano, national labs, reprocessing plants</b></p><p>Sorbent license to reprocessing plants. ~$0.5–2M/yr</p></div>
+    
+    <div class="b prog"><h3>Progress</h3><ol class="trk"><li class="done"><i></i><span>Problem researched</span></li><li class="now"><i></i><span>Designs completed</span></li><li class=""><i></i><span>Scored vs today’s best</span></li><li class=""><i></i><span>Lab tested</span></li><li class=""><i></i><span>Partner pilot</span></li></ol><a class="btn" href="/contact/?about=iodine-trap-for-nuclear-fuel-recycling">Work with us on this <span>&rarr;</span></a></div>
+  </div>
+  <nav class="pn"><a href="/apps/tmah-recovery-for-chip-fabs/">&larr; TMAH recovery</a><a href="/apps/hydrogen-storage-material-for-trucks/">Hydrogen storage &rarr;</a></nav>
+</main>
+<footer class="site"><div class="wrap"><span class="logo"><img src="/site/mark.svg" alt="">K14</span><span>© 2026</span></div></footer>
+<script type="module">
+import { setup } from '/site/appmols.js?v=5';
+const f = document.querySelector('.mol'), v = setup({ dataset:{ k:f.dataset.k }, scale:.95, look:'dark', drag:true, querySelector:() => f.querySelector('canvas') });
+v.active(true); let last = performance.now();
+(function loop(t){ v.tick(t - last); last = t; requestAnimationFrame(loop); })(last);
+addEventListener('resize', () => v.draw());
+// left / right arrow keys step through the applications
+const pn = document.querySelectorAll('.pn a');
+addEventListener('keydown', e => { if (e.altKey || e.metaKey || e.ctrlKey || /input|textarea/i.test(e.target.tagName)) return;
+  if (e.key === 'ArrowLeft') location.href = pn[0].href; if (e.key === 'ArrowRight') location.href = pn[1].href; });
+</script>
+</body>
+</html>

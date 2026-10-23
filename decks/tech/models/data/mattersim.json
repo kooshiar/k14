@@ -1,0 +1,67 @@
+{
+ "slug": "mattersim",
+ "name": "MatterSim",
+ "what": "Predicts energy, forces, stress to 5000 K, 1000 GPa",
+ "input": {
+  "label": "Atom types + positions + cell",
+  "size": "N atoms · 5 Å cutoff"
+ },
+ "blocks": [
+  {
+   "name": "3-body basis",
+   "dims": "n 4 × l 4"
+  },
+  {
+   "name": "M3GNet blocks",
+   "dims": "4 × 256"
+  },
+  {
+   "name": "Energy readout",
+   "dims": "2 × 256"
+  }
+ ],
+ "params": "4.5M",
+ "loop": null,
+ "output": {
+  "label": "Energy + forces + stress",
+  "size": "1 + 3N + 3×3"
+ },
+ "who": {
+  "org": "Microsoft Research AI4Science",
+  "year": "2024",
+  "versions": "arXiv 2024 → open 1M/5M 2024",
+  "license": "Open · MIT code + weights",
+  "sizes": "1M · 5M open · 182M paper"
+ },
+ "ideas": [
+  "Samples to 5000 K, 1000 GPa",
+  "Active learning on doubt",
+  "Three-body message passing",
+  "Graphormer variant for scale",
+  "Fine-tune on ~3% of data",
+  "Forces by autograd"
+ ],
+ "train": {
+  "hardware": "8 × A100 · 64 × A100",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "6M used · 17M total",
+  "data": "Materials Project, Alexandria, own DFT",
+  "epochs": "200 · M3GNet"
+ },
+ "results": [
+  "MPF-TP MAE 36 meV/atom, 10× better",
+  "Matbench F1 0.83 Graphormer"
+ ],
+ "speed": "18.8 steps/s · 1k atoms · H200",
+ "limit": "Open release is small model",
+ "sources": [
+  "https://arxiv.org/abs/2405.04967",
+  "https://github.com/microsoft/mattersim",
+  "https://github.com/microsoft/mattersim/blob/main/MODEL_CARD.md",
+  "https://github.com/janosh/matbench-discovery/blob/main/models/mattersim/mattersim-v1-5m.yml",
+  "https://arxiv.org/abs/2504.06231"
+ ],
+ "ready": true,
+ "type": "GNN"
+}

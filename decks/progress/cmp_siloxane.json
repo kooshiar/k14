@@ -1,0 +1,181 @@
+{
+ "title": null,
+ "rows": [
+  "Works in wet biogas",
+  "Catches trace siloxane",
+  "Leaves the fuel gas alone",
+  "Frees up for reuse",
+  "Doesn\u2019t evaporate",
+  "Cost per m\u00b3 of gas",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Resorcin[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    18,
+    50,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 57,
+   "price": 3.22
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    25,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 30,
+   "price": 1.19
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 15,
+   "price": 3.36
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    23,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 15,
+   "price": 3.4
+  },
+  {
+   "label": "Design G",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    96,
+    100,
+    100,
+    53,
+    100,
+    55,
+    null,
+    54,
+    50,
+    35
+   ],
+   "overall": 69,
+   "price": 2.53
+  },
+  {
+   "label": "L2-5",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    91,
+    100,
+    100,
+    88,
+    100,
+    52,
+    null,
+    56,
+    50,
+    35
+   ],
+   "overall": 73,
+   "price": 2.7
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    0,
+    100,
+    42,
+    null,
+    58,
+    50,
+    50
+   ],
+   "overall": 41,
+   "price": 2.78
+  },
+  {
+   "label": "L5-15",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    60,
+    23,
+    100,
+    100,
+    100,
+    46,
+    null,
+    83,
+    50,
+    35
+   ],
+   "overall": 58,
+   "price": 3.61
+  }
+ ]
+}

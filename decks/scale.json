@@ -1,0 +1,1052 @@
+{
+ "_model": "At-scale cost and ease for every option on the comparison slides, ours and products sold today, on the same basis.\n    python3 scale_cost.py            -> scale.json (+ calibration printout vs market prices)\n\nModel (both sides assumed made at commodity scale with an optimized route):\n  raw   = sum(feedstock price x moles x MW) / MW_product            (USD/kg, stoichiometric)\n  cost  = K x raw / 0.9^(steps-1) + 0.15 x (steps-1)                 (90% yield per extra step, $0.15/kg per extra step)\n  ease  = 100 - 20 x (steps-1) - 15 x hazardous                     (hazardous: EO/PO under pressure, CS2/H2S, azide, diazonium)\nK is fitted so the model matches market prices of the high-volume products sold today (median ratio).\nFeedstock prices: China domestic bulk, Oct 2026 (research agent, guidechem/SunSirs etc.). Low-volume feedstocks are re-priced\nat large volume too (AT_SCALE), so every part of every route is on the same footing.",
+ "K": 1.17,
+ "by_name": {
+  "urea": {
+   "cost": 0.25,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 0.4,
+   "feed_est": false,
+   "us": 100
+  },
+  "melamine": {
+   "cost": 1.34,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 0.87,
+   "feed_est": false,
+   "us": 100
+  },
+  "dicyandiamide": {
+   "cost": 1.36,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": 1.5,
+   "feed_est": false,
+   "us": 0
+  },
+  "2-methylpiperazine": {
+   "cost": 2.89,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 23,
+   "feed_est": false,
+   "us": 100
+  },
+  "aminomethyl acetate": {
+   "cost": 2.06,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "design:cc(=o)ocnc(n)=s": {
+   "cost": 2.13,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 55
+  },
+  "tea": {
+   "cost": 1.45,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 0.95,
+   "feed_est": false,
+   "us": 100
+  },
+  "tipa": {
+   "cost": 1.76,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.2,
+   "feed_est": false,
+   "us": 100
+  },
+  "deipa": {
+   "cost": 1.54,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.24,
+   "feed_est": false,
+   "us": 100
+  },
+  "mdea": {
+   "cost": 1.36,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.75,
+   "feed_est": false,
+   "us": 100
+  },
+  "edipa": {
+   "cost": 1.68,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "theed": {
+   "cost": 1.76,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 7.6,
+   "feed_est": false,
+   "us": 100
+  },
+  "thped": {
+   "cost": 1.97,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 3.7,
+   "feed_est": false,
+   "us": 100
+  },
+  "dea-glycidol": {
+   "cost": 2.18,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "dipa-glycidol": {
+   "cost": 3.15,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "tea-glycidol": {
+   "cost": 2.53,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "dea-butanol": {
+   "cost": 1.62,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 49
+  },
+  "dipa-butanol": {
+   "cost": 2.53,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 72
+  },
+  "mipa-diglycidol": {
+   "cost": 3.15,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "deipa-methyl": {
+   "cost": 2.08,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 56
+  },
+  "design b": {
+   "cost": 3.44,
+   "ease": 45,
+   "steps": 3,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 74
+  },
+  "design:ccc(o)cn(cc(o)c(c)o)cc(o)c(c)o": {
+   "cost": 2.52,
+   "ease": 45,
+   "steps": 3,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 9
+  },
+  "design:o=c([o-])ccn(cc(o)co)cc(o)co": {
+   "cost": 2.92,
+   "ease": 60,
+   "steps": 3,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "n-methylglucamine": {
+   "cost": 0.68,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "sorbitol": {
+   "cost": 0.6,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "mannitol": {
+   "cost": 0.82,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "catechol": {
+   "cost": 1.38,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "design:ccc[n+](c)(c)cn(ccc[n+](c)(c)c)c[c@h](o)[c@@h](o)[c@h](o)[c@h](o)co": {
+   "cost": 2.14,
+   "ease": 25,
+   "steps": 4,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 74
+  },
+  "design:ccc[n+](c)(c)cn(ccc[n+](c)(c)c)c[c@@h](o)[c@@h](o)[c@h](o)[c@h](o)co": {
+   "cost": 2.14,
+   "ease": 25,
+   "steps": 4,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 74
+  },
+  "design:oc[c@@h](o)[c@@h](o)[c@@h](o)[c@@h](o)[c@@h](o)[c@@h](o)co": {
+   "cost": 1.49,
+   "ease": 25,
+   "steps": 4,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "beta-cyclodextrin": {
+   "cost": 1.19,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "calix[4]arene": {
+   "cost": 3.36,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "resorcin[4]arene": {
+   "cost": 3.22,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "pillar[5]arene (ome)": {
+   "cost": 3.4,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 5
+  },
+  "design:o=c(nccnccnc(=o)nc1cccnc1)nc1ccncc1": {
+   "cost": 3.45,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 35
+  },
+  "design:o=c(ncc1ccc(cnc(=o)nc2cccc3ccccc23)cc1)nc1ccc2ccccc2c1": {
+   "cost": 3.36,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 4
+  },
+  "design:o=c(nc1ccccc1)nc1ccc2ccccc2c1nc(=o)nc1ccccc1": {
+   "cost": 3.73,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 42
+  },
+  "mbt": {
+   "cost": 2.33,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.9,
+   "feed_est": false,
+   "us": 100
+  },
+  "benzotriazole": {
+   "cost": 2.2,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 4.9,
+   "feed_est": false,
+   "us": 27
+  },
+  "mea": {
+   "cost": 1.26,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.35,
+   "feed_est": false,
+   "us": 100
+  },
+  "dmea": {
+   "cost": 1.22,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 2.1,
+   "feed_est": false,
+   "us": 100
+  },
+  "thiophenol": {
+   "cost": 1.45,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 8.5,
+   "feed_est": false,
+   "us": 100
+  },
+  "2-thiocresol": {
+   "cost": 4.92,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 8
+  },
+  "mbt anion": {
+   "cost": 2.92,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 3.0,
+   "feed_est": false,
+   "us": 100
+  },
+  "tolyltriazole": {
+   "cost": 2.25,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 6.5,
+   "feed_est": true,
+   "us": 24
+  },
+  "5-carboxybenzotriazole": {
+   "cost": 3.71,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 12
+  },
+  "2-mercaptobenzimidazole": {
+   "cost": 2.03,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 6.2,
+   "feed_est": false,
+   "us": 37
+  },
+  "2-mercaptobenzoxazole": {
+   "cost": 2.05,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 37
+  },
+  "bts-succinic acid": {
+   "cost": 2.57,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 20,
+   "feed_est": false,
+   "us": 100
+  },
+  "aminotriazole": {
+   "cost": 2.8,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 25,
+   "feed_est": false,
+   "us": 64
+  },
+  "thiourea": {
+   "cost": 1.33,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.33,
+   "feed_est": false,
+   "us": 44
+  },
+  "amino-mercapto-thiadiazole": {
+   "cost": 2.9,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 73
+  },
+  "mercapto-methyltetrazole": {
+   "cost": 3.34,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 0
+  },
+  "2-mercaptopyrimidine": {
+   "cost": 7.91,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": true,
+   "us": 0
+  },
+  "hydroxyethyl-mbt": {
+   "cost": 3.1,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "mbt-acetic acid": {
+   "cost": 2.85,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "6-amino-mbt": {
+   "cost": 2.2,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 37
+  },
+  "benzimidazole": {
+   "cost": 1.75,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 0
+  }
+ },
+ "by_smiles": {
+  "NC(N)=O": {
+   "cost": 0.25,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 0.4,
+   "feed_est": false,
+   "us": 100
+  },
+  "Nc1nc(N)nc(N)n1": {
+   "cost": 1.34,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 0.87,
+   "feed_est": false,
+   "us": 100
+  },
+  "NC(N)=NC#N": {
+   "cost": 1.36,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": 1.5,
+   "feed_est": false,
+   "us": 0
+  },
+  "CC1CNCCN1": {
+   "cost": 2.89,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 23,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(=O)OCN": {
+   "cost": 2.06,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(=O)OCNC(N)=S": {
+   "cost": 2.13,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 55
+  },
+  "OCCN(CCO)CCO": {
+   "cost": 1.45,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 0.95,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(O)CN(CC(C)O)CC(C)O": {
+   "cost": 1.76,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.2,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(O)CN(CCO)CCO": {
+   "cost": 1.54,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.24,
+   "feed_est": false,
+   "us": 100
+  },
+  "CN(CCO)CCO": {
+   "cost": 1.36,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.75,
+   "feed_est": false,
+   "us": 100
+  },
+  "CCN(CC(C)O)CC(C)O": {
+   "cost": 1.68,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "OCCN(CCO)CCN(CCO)CCO": {
+   "cost": 1.76,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 7.6,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(O)CN(CC(C)O)CCN(CC(C)O)CC(C)O": {
+   "cost": 1.97,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 3.7,
+   "feed_est": false,
+   "us": 100
+  },
+  "OCC(O)CN(CCO)CCO": {
+   "cost": 2.18,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(O)CN(CC(C)O)CC(O)CO": {
+   "cost": 3.15,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "OCC(O)CN(CC(O)CO)CCO": {
+   "cost": 2.53,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "CCC(O)CN(CCO)CCO": {
+   "cost": 1.62,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 49
+  },
+  "CCC(O)CN(CC(C)O)CC(C)O": {
+   "cost": 2.53,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 72
+  },
+  "OCC(O)CN(CC(C)O)CC(O)CO": {
+   "cost": 3.15,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC(O)CN(CCO)CC(C)(C)O": {
+   "cost": 2.08,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 56
+  },
+  "CCC(O)CN(CC(C)O)CC(O)CO": {
+   "cost": 3.44,
+   "ease": 45,
+   "steps": 3,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 74
+  },
+  "CCC(O)CN(CC(O)C(C)O)CC(O)C(C)O": {
+   "cost": 2.52,
+   "ease": 45,
+   "steps": 3,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 9
+  },
+  "O=C([O-])CCN(CC(O)CO)CC(O)CO": {
+   "cost": 2.92,
+   "ease": 60,
+   "steps": 3,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "CNC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO": {
+   "cost": 0.68,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO": {
+   "cost": 0.6,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CO": {
+   "cost": 0.82,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "Oc1ccccc1O": {
+   "cost": 1.38,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "CCC[N+](C)(C)CN(CCC[N+](C)(C)C)C[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO": {
+   "cost": 2.14,
+   "ease": 25,
+   "steps": 4,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 74
+  },
+  "CCC[N+](C)(C)CN(CCC[N+](C)(C)C)C[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CO": {
+   "cost": 2.14,
+   "ease": 25,
+   "steps": 4,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 74
+  },
+  "OC[C@@H](O)[C@@H](O)[C@@H](O)[C@@H](O)[C@@H](O)[C@@H](O)CO": {
+   "cost": 1.49,
+   "ease": 25,
+   "steps": 4,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "OC[C@H]1O[C@@H]2O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]1[C@H](O)[C@H]2O": {
+   "cost": 1.19,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "Oc1c2cccc1Cc1cccc(c1O)Cc1cccc(c1O)Cc1cccc(c1O)C2": {
+   "cost": 3.36,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "CC1c2cc(C(C)c3cc(C(C)c4cc(C(C)c5cc1c(O)cc5O)c(O)cc4O)c(O)cc3O)c(O)cc2O": {
+   "cost": 3.22,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "COc1cc2c(OC)cc1Cc1cc(OC)c(Cc3cc(OC)c(Cc4cc(OC)c(Cc5cc(OC)c(C2)cc5OC)cc4OC)cc3OC)cc1OC": {
+   "cost": 3.4,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 5
+  },
+  "O=C(NCCNCCNC(=O)Nc1cccnc1)Nc1ccncc1": {
+   "cost": 3.45,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 35
+  },
+  "O=C(NCc1ccc(CNC(=O)Nc2cccc3ccccc23)cc1)Nc1ccc2ccccc2c1": {
+   "cost": 3.36,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 4
+  },
+  "O=C(Nc1ccccc1)Nc1ccc2ccccc2c1NC(=O)Nc1ccccc1": {
+   "cost": 3.73,
+   "ease": 80,
+   "steps": 2,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 42
+  },
+  "Sc1nc2ccccc2s1": {
+   "cost": 2.33,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.9,
+   "feed_est": false,
+   "us": 100
+  },
+  "c1ccc2[nH]nnc2c1": {
+   "cost": 2.2,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 4.9,
+   "feed_est": false,
+   "us": 27
+  },
+  "NCCO": {
+   "cost": 1.26,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.35,
+   "feed_est": false,
+   "us": 100
+  },
+  "CN(C)CCO": {
+   "cost": 1.22,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 2.1,
+   "feed_est": false,
+   "us": 100
+  },
+  "Sc1ccccc1": {
+   "cost": 1.45,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 8.5,
+   "feed_est": false,
+   "us": 100
+  },
+  "Cc1ccccc1S": {
+   "cost": 4.92,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 8
+  },
+  "[S-]c1nc2ccccc2s1": {
+   "cost": 2.92,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 3.0,
+   "feed_est": false,
+   "us": 100
+  },
+  "Cc1ccc2[nH]nnc2c1": {
+   "cost": 2.25,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 6.5,
+   "feed_est": true,
+   "us": 24
+  },
+  "OC(=O)c1ccc2[nH]nnc2c1": {
+   "cost": 3.71,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 12
+  },
+  "Sc1nc2ccccc2[nH]1": {
+   "cost": 2.03,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 6.2,
+   "feed_est": false,
+   "us": 37
+  },
+  "Sc1nc2ccccc2o1": {
+   "cost": 2.05,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 37
+  },
+  "OC(=O)CC(Sc1nc2ccccc2s1)C(=O)O": {
+   "cost": 2.57,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 20,
+   "feed_est": false,
+   "us": 100
+  },
+  "Nc1nc[nH]n1": {
+   "cost": 2.8,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": 25,
+   "feed_est": false,
+   "us": 64
+  },
+  "NC(N)=S": {
+   "cost": 1.33,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": 1.33,
+   "feed_est": false,
+   "us": 44
+  },
+  "Nc1nnc(S)s1": {
+   "cost": 2.9,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 73
+  },
+  "Cn1nnnc1S": {
+   "cost": 3.34,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 0
+  },
+  "Sc1ncccn1": {
+   "cost": 7.91,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": true,
+   "us": 0
+  },
+  "OCCSc1nc2ccccc2s1": {
+   "cost": 3.1,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 100
+  },
+  "OC(=O)CSc1nc2ccccc2s1": {
+   "cost": 2.85,
+   "ease": 65,
+   "steps": 2,
+   "hazardous": true,
+   "market": null,
+   "feed_est": false,
+   "us": 100
+  },
+  "Nc1ccc2nc(S)sc2c1": {
+   "cost": 2.2,
+   "ease": 85,
+   "steps": 1,
+   "hazardous": true,
+   "market": null,
+   "feed_est": true,
+   "us": 37
+  },
+  "c1ccc2[nH]cnc2c1": {
+   "cost": 1.75,
+   "ease": 100,
+   "steps": 1,
+   "hazardous": false,
+   "market": null,
+   "feed_est": false,
+   "us": 0
+  }
+ }
+}

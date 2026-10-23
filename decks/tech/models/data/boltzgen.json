@@ -1,0 +1,66 @@
+{
+ "slug": "boltzgen",
+ "name": "BoltzGen",
+ "what": "Designs binders for any biomolecular target",
+ "input": {
+  "label": "Target structure + design spec",
+  "size": "512-residue design crops"
+ },
+ "blocks": [
+  {
+   "name": "MSA module",
+   "dims": "4 × 64 / 128"
+  },
+  {
+   "name": "Pairformer",
+   "dims": "64 × 384 / 128"
+  },
+  {
+   "name": "Diffusion module",
+   "dims": "24 × 768"
+  }
+ ],
+ "params": "496M",
+ "loop": "× 300 denoising evals",
+ "output": {
+  "label": "All-atom binder + complex",
+  "size": "14 atoms per residue"
+ },
+ "who": {
+  "org": "MIT + Boltz, NVIDIA, UCSF",
+  "year": "2025",
+  "versions": "Boltz-1 2024 → Boltz-2 → BoltzGen 2025",
+  "license": "Open · MIT weights, code, data"
+ },
+ "ideas": [
+  "Design and folding in one",
+  "Virtual atoms set residue type",
+  "Spec: sites, bonds, structure",
+  "Refold with Boltz-2 to filter",
+  "BoltzIF inverse folding",
+  "60k designs per target"
+ ],
+ "train": {
+  "hardware": "n/a",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "n/a",
+  "data": "PDB + AFDB + self-distillation",
+  "epochs": "n/a"
+ },
+ "results": [
+  "nM nanobodies for 6 of 9 targets",
+  "Protein binders same 66% hit rate"
+ ],
+ "speed": "Seconds per design · 1 A100",
+ "limit": "Small molecules only 50-250 uM",
+ "sources": [
+  "https://doi.org/10.1101/2025.11.20.689494",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC12697729/",
+  "https://github.com/HannesStark/boltzgen",
+  "https://huggingface.co/boltzgen/boltzgen-1",
+  "https://jclinic.mit.edu/boltzgen/"
+ ],
+ "ready": true,
+ "type": "Transformer + diffusion"
+}

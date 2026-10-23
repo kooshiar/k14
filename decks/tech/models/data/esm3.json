@@ -1,0 +1,67 @@
+{
+ "slug": "esm3",
+ "name": "ESM3",
+ "what": "Generates sequence, structure, function jointly",
+ "input": {
+  "label": "Masked seq/structure/function",
+  "size": "N residues × 5 tracks"
+ },
+ "blocks": [
+  {
+   "name": "Structure VQ-VAE",
+   "dims": "2 × 1024 / 30 × 1280"
+  },
+  {
+   "name": "Geometric attn",
+   "dims": "1 × 1536"
+  },
+  {
+   "name": "Transformer",
+   "dims": "48 × 1536"
+  }
+ ],
+ "params": "1.4B",
+ "loop": "× ~20 decoding steps",
+ "output": {
+  "label": "Seq + structure + function",
+  "size": "N residues, all tracks"
+ },
+ "who": {
+  "org": "EvolutionaryScale",
+  "year": "2024",
+  "versions": "ESM-2 2022 → ESM3 2024 → ESM C 2024",
+  "license": "1.4B open · MIT; larger closed",
+  "sizes": "1.4B open · 7B, 98B API"
+ },
+ "ideas": [
+  "One model, three modalities",
+  "Masked generation, all tracks",
+  "Structure as 4,096 codes",
+  "Geometric attention on coords",
+  "Prompt with partial structure",
+  "Iterative decoding"
+ ],
+ "train": {
+  "hardware": "n/a",
+  "time": "n/a",
+  "compute": ">1 × 10^24 FLOPs · 98B",
+  "samples": "2.78B proteins · 771B tokens",
+  "data": "3.15B seqs · 236M structures",
+  "epochs": "n/a"
+ },
+ "results": [
+  "esmGFP 58% identity to nearest FP",
+  "~500M years of evolution equivalent"
+ ],
+ "speed": "n/a",
+ "limit": "Only 1.4B open; 98B API-only",
+ "sources": [
+  "https://www.science.org/doi/10.1126/science.ads0018",
+  "https://www.biorxiv.org/content/10.1101/2024.07.01.600583v2",
+  "https://www.evolutionaryscale.ai/blog/esm3-release",
+  "https://huggingface.co/EvolutionaryScale/esm3-sm-open-v1",
+  "https://github.com/evolutionaryscale/esm/blob/main/esm/pretrained.py"
+ ],
+ "ready": true,
+ "type": "Transformer"
+}

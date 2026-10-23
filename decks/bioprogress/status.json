@@ -1,0 +1,181 @@
+{
+ "updated": "2026-10-23 14:34",
+ "rows": [
+  {
+   "key": "pdscav",
+   "name": "Palladium scavenger",
+   "sub": "drug purification",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": -49.79,
+    "dG": -49.79,
+    "smiles": "CC(C)P(c1ccccc1)c1ccccc1"
+   }
+  },
+  {
+   "key": "nitrite",
+   "name": "Nitrite scavenger",
+   "sub": "stops nitrosamines",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 0,
+   "phase4_stage": "nothing to do",
+   "state": "done",
+   "best": {
+    "score": -35.93,
+    "dG": -35.93,
+    "smiles": "CN(C)CCN"
+   }
+  },
+  {
+   "key": "ironmedia",
+   "name": "Iron carrier",
+   "sub": "CHO cell media",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": -142.19,
+    "dG": -142.19,
+    "smiles": "Cc1c(O)c(=O)ccn1CCCO"
+   }
+  },
+  {
+   "key": "tfaswap",
+   "name": "TFA trap",
+   "sub": "peptide salt swap",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": 16.55,
+    "dG": -133.78,
+    "smiles": "O=S(=O)([O-])Oc1c2cc(Br)cc1Cc1cc(Br)cc(c1OS(=O)(=O)[O-])Cc1cc(Br)cc(c1OS(=O)(=O)[O-])Cc1cc(Br)cc(c1OS(=O)(=O)[O-])C2"
+   }
+  },
+  {
+   "key": "endotox",
+   "name": "Endotoxin binder",
+   "sub": "protein purification",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": -21.59,
+    "dG": -36.19,
+    "smiles": "NC(=O)C[C@H](NC(=O)[C@@H]([NH3+])CC(N)=O)C(=O)NCC(=O)[O-]"
+   }
+  },
+  {
+   "key": "chiral",
+   "name": "Chiral selector",
+   "sub": "enantiomer columns",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": -11.66,
+    "dG": -270.82,
+    "smiles": "Cc1cc2c(OS(=O)(=O)[O-])c(c1)Cc1cc(C)cc(c1OS(=O)(=O)[O-])Cc1cc(C)cc(c1OS(=O)(=O)[O-])Cc1cc(C)cc(c1OS(=O)(=O)[O-])C2"
+   }
+  },
+  {
+   "key": "cryo",
+   "name": "DMSO-free cryoprotectant",
+   "sub": "cell freezing",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 0,
+   "phase3_stage": "nothing to do",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": 2.16,
+    "dG": 2.86,
+    "smiles": "O=C([O-])[C@@H]1CCC[NH2+]1"
+   }
+  },
+  {
+   "key": "abcap",
+   "name": "Antibody capture ligand",
+   "sub": "protein A stand-in",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 100,
+   "phase3_stage": "done",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": 4.54,
+    "dG": -7.47,
+    "smiles": "O=C([O-])c1ccc(Nc2ncnc(Sc3ccccc3)n2)cc1"
+   }
+  },
+  {
+   "key": "vaxstab",
+   "name": "Vaccine stabiliser",
+   "sub": "no freezer needed",
+   "phase1": 100,
+   "phase1_stage": "done",
+   "phase2": 100,
+   "phase2_stage": "done",
+   "phase3": 0,
+   "phase3_stage": "nothing to do",
+   "phase4": 100,
+   "phase4_stage": "done",
+   "state": "done",
+   "best": {
+    "score": -5.12,
+    "dG": 0.35,
+    "smiles": "CCCCN(CCCC)C[C@H](O)[C@H](O)[C@H](O)CO"
+   }
+  }
+ ],
+ "phase1": 100,
+ "phase2": 100,
+ "phase3": 78,
+ "phase4": 89,
+ "done": true
+}

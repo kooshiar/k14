@@ -1,0 +1,344 @@
+{
+ "pdscav": {
+  "score": [
+   "80",
+   "vs 22, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "CDMO batch",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats thiourea resin",
+   "Score 80 vs 22",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "CDMO batch",
+   [
+    "1 US API plant",
+    "One-pass removal"
+   ]
+  ],
+  "partner": "Scavenger maker partner",
+  "scale": "Plant-scale supply"
+ },
+ "nitrite": {
+  "score": [
+   "71",
+   "vs 62, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    140
+   ],
+   [
+    "Tablet study",
+    90
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats glycine",
+   "Score 71 vs 62",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Tablet study",
+   [
+    "1 generic maker",
+    "Accelerated storage"
+   ]
+  ],
+  "partner": "Excipient maker partner",
+  "scale": "Excipient-grade supply"
+ },
+ "ironmedia": {
+  "score": [
+   "75",
+   "vs 62, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    160
+   ],
+   [
+    "Media trial",
+    90
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats 8-hydroxyquinoline",
+   "Score 75 vs 62",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Media trial",
+   [
+    "1 media maker",
+    "CHO titer vs citrate"
+   ]
+  ],
+  "partner": "Media maker partner",
+  "scale": "Media-grade supply"
+ },
+ "tfaswap": {
+  "score": [
+   "69",
+   "vs 39, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Peptide batch",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats tren tris(phenylurea)",
+   "Score 69 vs 39",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Peptide batch",
+   [
+    "1 peptide CDMO",
+    "TFA under 1%"
+   ]
+  ],
+  "partner": "Peptide CDMO partner",
+  "scale": "Resin-scale supply"
+ },
+ "endotox": {
+  "score": [
+   "86",
+   "vs 26, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Column trial",
+    90
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats protamine fragment (Arg dipeptide)",
+   "Score 86 vs 26",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Column trial",
+   [
+    "1 resin maker",
+    "Clearance and recovery"
+   ]
+  ],
+  "partner": "Resin maker partner",
+  "scale": "Resin-line licence"
+ },
+ "chiral": {
+  "score": [
+   "77",
+   "vs 33, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    140
+   ],
+   [
+    "Column trial",
+    90
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats 18-crown-6 tetracarboxylic acid",
+   "Score 77 vs 33",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Column trial",
+   [
+    "1 column maker",
+    "Resolution on real drugs"
+   ]
+  ],
+  "partner": "Column maker partner",
+  "scale": "Phase-line licence"
+ },
+ "cryo": {
+  "score": [
+   "40",
+   "vs 62, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Freezing trial",
+    90
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats proline",
+   "Score 40 vs 62",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Freezing trial",
+   [
+    "1 cell therapy site",
+    "Thaw viability vs DMSO"
+   ]
+  ],
+  "partner": "Cryo media partner",
+  "scale": "Kit-scale supply"
+ },
+ "abcap": {
+  "score": [
+   "IgG picked",
+   "over cell protein"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    140
+   ],
+   [
+    "Resin grafting",
+    110
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Capture ligands designed",
+   "Screened vs cell protein, buffer",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "CHO harvest run",
+   [
+    "1 antibody CDMO",
+    "purity over 95%"
+   ]
+  ],
+  "partner": "Antibody CDMO partner",
+  "scale": "Resin-scale supply"
+ },
+ "vaxstab": {
+  "score": [
+   "Beats water",
+   "to the protein"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Stability study",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Stabilisers designed",
+   "Screened vs bulk water",
+   "Injection-grade classes only"
+  ],
+  "pilot": [
+   "Warm storage test",
+   [
+    "1 vaccine maker",
+    "4 weeks at 40 \u00b0C"
+   ]
+  ],
+  "partner": "Vaccine maker partner",
+  "scale": "Excipient-scale supply"
+ }
+}

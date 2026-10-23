@@ -1,0 +1,65 @@
+{
+ "slug": "orb-v3",
+ "name": "Orb v3",
+ "what": "Predicts energy, forces, stress at high speed",
+ "input": {
+  "label": "Atom types + positions",
+  "size": "up to 100k atoms · 1 GPU"
+ },
+ "blocks": [
+  {
+   "name": "Edge encoder",
+   "dims": "8 RBF · lmax 3"
+  },
+  {
+   "name": "GNS messages",
+   "dims": "5 × 512"
+  },
+  {
+   "name": "Output heads",
+   "dims": ""
+  }
+ ],
+ "params": "~25.5M",
+ "loop": null,
+ "output": {
+  "label": "Energy, forces, stress, trust",
+  "size": "1 + 3N + 3×3"
+ },
+ "who": {
+  "org": "Orbital Materials",
+  "year": "2025",
+  "versions": "v1 2024 → v2 2024 → v3 2025",
+  "license": "Open · Apache 2.0"
+ },
+ "ideas": [
+  "No built-in equivariance",
+  "Direct or conservative forces",
+  "Equigrad learned invariance",
+  "Neighbor cap of 20",
+  "Distill conservative to direct",
+  "Per-atom confidence"
+ ],
+ "train": {
+  "hardware": "8 × H100",
+  "time": "~125 h",
+  "compute": "~1,000 H100-h",
+  "samples": "~55M AIMD structures",
+  "data": "OMat24, MPtrj, Alexandria",
+  "epochs": "n/a"
+ },
+ "results": [
+  "Matbench F1 0.906 vs 0.85 MACE",
+  "κSRME 0.210 vs 0.412 MACE-MPA"
+ ],
+ "speed": "216 steps/s · 1k atoms · H200",
+ "limit": "Direct heads lose conservation",
+ "sources": [
+  "https://arxiv.org/abs/2504.06231",
+  "https://github.com/orbital-materials/orb-models",
+  "https://orbitalmaterials.com/post/orb-v3-atomistic-simulation-at-scale",
+  "https://github.com/janosh/matbench-discovery/blob/main/models/orb/orb-v3.yml"
+ ],
+ "ready": true,
+ "type": "GNN"
+}

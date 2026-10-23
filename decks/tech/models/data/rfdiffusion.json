@@ -1,0 +1,65 @@
+{
+ "slug": "rfdiffusion",
+ "name": "RFdiffusion",
+ "what": "Generates protein backbones from design constraints",
+ "input": {
+  "label": "Noised frames + contig spec",
+  "size": "up to ~600 aa"
+ },
+ "blocks": [
+  {
+   "name": "Extra MSA blocks",
+   "dims": "4 × 64 / 128"
+  },
+  {
+   "name": "3-track blocks",
+   "dims": "32 × 256 / 128"
+  },
+  {
+   "name": "SE(3) refinement",
+   "dims": "4 × 32"
+  }
+ ],
+ "params": "n/a",
+ "loop": "× 200 diffusion steps",
+ "output": {
+  "label": "Backbone frames, no sequence",
+  "size": "N × Cα + rotation"
+ },
+ "who": {
+  "org": "UW IPD · Baker lab",
+  "year": "2023",
+  "versions": "RoseTTAFold 2021 → RFdiffusion 2023",
+  "license": "Open · BSD, code and weights"
+ },
+ "ideas": [
+  "RoseTTAFold as denoiser",
+  "Frame diffusion on Cα",
+  "Self-conditioning across steps",
+  "MSE loss, not FAPE",
+  "Hotspot and symmetry input"
+ ],
+ "train": {
+  "hardware": "8 × A100",
+  "time": "~3 days",
+  "compute": "n/a",
+  "samples": "25,600 per epoch · 384 aa crops",
+  "data": "PDB + AF2 models pLDDT > 0.758",
+  "epochs": "5 from RF weights"
+ },
+ "results": [
+  "Binder hit rate 19% in lab",
+  "Motif scaffolding 23/25 solved"
+ ],
+ "speed": "~11 s per 100 aa · A4000",
+ "limit": "Backbone only; no ligands",
+ "sources": [
+  "https://www.nature.com/articles/s41586-023-06415-8",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10468394",
+  "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-023-06415-8/MediaObjects/41586_2023_6415_MOESM1_ESM.pdf",
+  "https://github.com/RosettaCommons/RFdiffusion",
+  "https://www.ipd.uw.edu/2022/12/a-diffusion-model-for-protein-design"
+ ],
+ "ready": true,
+ "type": "RoseTTAFold + diffusion"
+}

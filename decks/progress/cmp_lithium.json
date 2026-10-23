@@ -1,0 +1,143 @@
+{
+ "title": null,
+ "rows": [
+  "Picks lithium over sodium",
+  "Picks lithium over magnesium",
+  "Catches lithium",
+  "Acid strip frees it for reuse",
+  "Stays in the sorbent",
+  "Cost per tonne of lithium",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  1,
+  2,
+  2,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "12-crown-4",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    50,
+    0,
+    100,
+    2,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 31,
+   "price": 2.19
+  },
+  {
+   "label": "15-crown-5",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    50,
+    100,
+    3,
+    47,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 12,
+   "price": 2.39
+  },
+  {
+   "label": "18-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    3,
+    44,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 9,
+   "price": 2.56
+  },
+  {
+   "label": "Dimethoxypillar(5)arene",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    0,
+    100,
+    0,
+    100,
+    100,
+    31,
+    null,
+    26,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 3.01
+  },
+  {
+   "label": "L2-52",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    0,
+    100,
+    85,
+    27,
+    null,
+    26,
+    50,
+    35
+   ],
+   "overall": 47,
+   "price": 2.86
+  },
+  {
+   "label": "L4-5",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    0,
+    100,
+    0,
+    100,
+    100,
+    32,
+    null,
+    26,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 2.8
+  }
+ ]
+}

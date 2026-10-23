@@ -1,0 +1,65 @@
+{
+ "slug": "reinvent4",
+ "name": "REINVENT 4",
+ "what": "Generates molecules under scoring objectives",
+ "input": {
+  "label": "SMILES scaffold or seed",
+  "size": "token sequence"
+ },
+ "blocks": [
+  {
+   "name": "Reinvent RNN",
+   "dims": "3 × 512"
+  },
+  {
+   "name": "Lib / LinkInvent",
+   "dims": "3 × 512"
+  },
+  {
+   "name": "Mol2Mol",
+   "dims": "6 + 6 × 256"
+  }
+ ],
+ "params": "n/a",
+ "loop": "Sample → score → update",
+ "output": {
+  "label": "SMILES + scores",
+  "size": "batch per epoch"
+ },
+ "who": {
+  "org": "AstraZeneca MolecularAI",
+  "year": "2024",
+  "versions": "v1 2017 → v2 → v3 → v4 2024",
+  "license": "Open · Apache 2.0"
+ },
+ "ideas": [
+  "Four generators, one RL engine",
+  "SMILES token by token",
+  "Scoring parts as reward",
+  "Transfer and curriculum learning",
+  "Scaffold hop and linking"
+ ],
+ "train": {
+  "hardware": "1 GPU · 8 GiB",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "Mol2Mol prior >200B pairs",
+  "data": "ChEMBL 25–28 + PubChem",
+  "epochs": "n/a"
+ },
+ "results": [
+  "PDK1 hit rate 1.9% of 6,400",
+  "Transfer learning lifts it to 3.5%"
+ ],
+ "speed": "n/a",
+ "limit": "2D only; reward hacking",
+ "sources": [
+  "https://doi.org/10.1186/s13321-024-00812-5",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10882833/",
+  "https://github.com/MolecularAI/REINVENT4",
+  "https://raw.githubusercontent.com/MolecularAI/REINVENT4/main/reinvent/models/reinvent/models/rnn.py",
+  "https://raw.githubusercontent.com/MolecularAI/REINVENT4/main/reinvent/models/transformer/core/network/encode_decode/model.py"
+ ],
+ "ready": true,
+ "type": "RNN + Transformer"
+}

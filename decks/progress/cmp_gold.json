@@ -1,0 +1,191 @@
+{
+ "title": null,
+ "rows": [
+  "Picks gold over copper and zinc",
+  "Works in strong chloride leach",
+  "Catches gold",
+  "Lets go of gold for refining",
+  "Stays in the oil phase",
+  "No cyanide, safe to handle",
+  "Cost per ounce recovered",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Quaternary ammonium (resin site)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    37,
+    0,
+    100,
+    63,
+    65,
+    44,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 36,
+   "price": 2.12
+  },
+  {
+   "label": "Dibutyl carbitol",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    35,
+    0,
+    100,
+    88,
+    100,
+    38,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 19,
+   "price": 2.45
+  },
+  {
+   "label": "MIBK",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    0,
+    100,
+    54,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 19,
+   "price": 1.82
+  },
+  {
+   "label": "Alpha-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    50,
+    100,
+    0,
+    100,
+    22,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 2.5
+  },
+  {
+   "label": "L2-19",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    59,
+    68,
+    65,
+    40,
+    null,
+    34,
+    55,
+    35
+   ],
+   "overall": 64,
+   "price": 2.27
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    0,
+    100,
+    100,
+    22,
+    null,
+    28,
+    55,
+    50
+   ],
+   "overall": 39,
+   "price": 3.44
+  },
+  {
+   "label": "L5-15",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    80,
+    100,
+    73,
+    65,
+    43,
+    null,
+    40,
+    55,
+    35
+   ],
+   "overall": 69,
+   "price": 2.18
+  },
+  {
+   "label": "L5-15",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    80,
+    100,
+    73,
+    65,
+    43,
+    null,
+    40,
+    55,
+    35
+   ],
+   "overall": 69,
+   "price": 2.18
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "slug": "mattergen",
+ "name": "MatterGen",
+ "what": "Generates stable crystals from noise, property-steered",
+ "input": {
+  "label": "Noise + property target",
+  "size": "≤ 20 atoms per cell"
+ },
+ "blocks": [
+  {
+   "name": "GemNet-dT score",
+   "dims": "4 × 512"
+  },
+  {
+   "name": "Property adapters",
+   "dims": "1 per layer × 4"
+  }
+ ],
+ "params": "46.8M",
+ "loop": "× 1,000 diffusion steps",
+ "output": {
+  "label": "Atom types + coords + lattice",
+  "size": "3N + 3×3"
+ },
+ "who": {
+  "org": "Microsoft Research AI4Science",
+  "year": "2025",
+  "versions": "arXiv 2023 → Nature + code 2025",
+  "license": "Open · MIT code + weights"
+ },
+ "ideas": [
+  "Joint atoms, coords, lattice",
+  "Periodic wrapped noise",
+  "Discrete diffusion for types",
+  "Adapters for property tuning",
+  "Classifier-free guidance",
+  "Equivariant GemNet score"
+ ],
+ "train": {
+  "hardware": "8 × A100",
+  "time": "~6 min per epoch",
+  "compute": "n/a",
+  "samples": "607,684 structures",
+  "data": "Alex-MP-20",
+  "epochs": "1.74M steps × batch 512"
+ },
+ "results": [
+  "SUN rate 38.6% vs 2× lower prior",
+  "RMSD 0.021 Å vs 10× worse prior"
+ ],
+ "speed": "~2 h per 1,000 structures · V100",
+ "limit": "Max 20 atoms per cell",
+ "sources": [
+  "https://www.nature.com/articles/s41586-025-08628-5",
+  "https://arxiv.org/abs/2312.03687",
+  "https://github.com/microsoft/mattergen",
+  "https://huggingface.co/microsoft/mattergen",
+  "https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/"
+ ],
+ "ready": true,
+ "type": "Equiv. GNN + diffusion"
+}

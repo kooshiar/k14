@@ -1,0 +1,171 @@
+{
+ "title": null,
+ "rows": [
+  "Catches boron",
+  "Stays in the resin",
+  "Acid wash frees it for reuse",
+  "Safe for drinking water",
+  "Cost per m\u00b3 of water",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  3,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Catechol",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    37,
+    100,
+    100,
+    46,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 66,
+   "price": 1.38
+  },
+  {
+   "label": "Sorbitol",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    42,
+    0,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 42,
+   "price": 0.6
+  },
+  {
+   "label": "N-methylglucamine",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    48,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 22,
+   "price": 0.68
+  },
+  {
+   "label": "Mannitol",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 22,
+   "price": 0.82
+  },
+  {
+   "label": "Design B",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    30,
+    94,
+    65,
+    40,
+    null,
+    34,
+    50,
+    35
+   ],
+   "overall": 55,
+   "price": 2.03
+  },
+  {
+   "label": "L2-13",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    78,
+    46,
+    100,
+    100,
+    37,
+    100,
+    32,
+    50,
+    50
+   ],
+   "overall": 63,
+   "price": 2.43
+  },
+  {
+   "label": "L4-2",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    19,
+    66,
+    100,
+    37,
+    null,
+    33,
+    50,
+    50
+   ],
+   "overall": 54,
+   "price": 2.2
+  },
+  {
+   "label": "L5-2",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    97,
+    0,
+    100,
+    100,
+    42,
+    null,
+    42,
+    50,
+    50
+   ],
+   "overall": 41,
+   "price": 1.18
+  }
+ ]
+}

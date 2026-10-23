@@ -1,0 +1,151 @@
+{
+ "title": null,
+ "rows": [
+  "Picks phosphate over sulfate",
+  "Picks phosphate over chloride, bicarbonate",
+  "Catches phosphate",
+  "Releases phosphate as fertilizer",
+  "Stays in the filter",
+  "Safe to discharge",
+  "Cost per m\u00b3 of wastewater",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Quaternary ammonium (resin site)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    0,
+    100,
+    63,
+    65,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 25,
+   "price": 2.12
+  },
+  {
+   "label": "Tren tris(phenylurea)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    0,
+    100,
+    100,
+    100,
+    32,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 3.28
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    38,
+    50,
+    100,
+    0,
+    100,
+    34,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 1.19
+  },
+  {
+   "label": "Design B",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    41,
+    0,
+    100,
+    100,
+    100,
+    27,
+    null,
+    0,
+    30,
+    50
+   ],
+   "overall": 25,
+   "price": 3.48
+  },
+  {
+   "label": "L3-3",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    0,
+    100,
+    100,
+    65,
+    30,
+    null,
+    0,
+    30,
+    35
+   ],
+   "overall": 27,
+   "price": 3.23
+  },
+  {
+   "label": "L4-7",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    39,
+    0,
+    0,
+    100,
+    100,
+    100,
+    33,
+    null,
+    0,
+    30,
+    50
+   ],
+   "overall": 15,
+   "price": 3.13
+  }
+ ]
+}

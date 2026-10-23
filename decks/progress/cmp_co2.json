@@ -1,0 +1,162 @@
+{
+ "title": null,
+ "rows": [
+  "Works in wet flue gas",
+  "Picks CO\u2082 over nitrogen",
+  "Catches CO\u2082",
+  "Low heat to release CO\u2082",
+  "Doesn\u2019t evaporate",
+  "Cost per tonne of CO\u2082",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  3,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    50,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 34,
+   "price": 1.19
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    1,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 27,
+   "price": 3.36
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 12,
+   "price": 3.4
+  },
+  {
+   "label": "L2-17",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    84,
+    100,
+    41,
+    5,
+    0,
+    40,
+    55
+   ],
+   "overall": 41,
+   "price": 3.84
+  },
+  {
+   "label": "L4-30",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    99,
+    19,
+    91,
+    100,
+    100,
+    46,
+    null,
+    0,
+    40,
+    55
+   ],
+   "overall": 39,
+   "price": 2.81
+  },
+  {
+   "label": "L5-14",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    31,
+    12,
+    80,
+    100,
+    100,
+    41,
+    null,
+    0,
+    40,
+    55
+   ],
+   "overall": 30,
+   "price": 3.84
+  },
+  {
+   "label": "L5-14",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    31,
+    12,
+    80,
+    100,
+    100,
+    41,
+    null,
+    0,
+    40,
+    55
+   ],
+   "overall": 30,
+   "price": 3.84
+  }
+ ]
+}

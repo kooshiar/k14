@@ -1,0 +1,64 @@
+{
+ "slug": "chai-1",
+ "name": "Chai-1",
+ "what": "Predicts all-atom complexes, MSA optional",
+ "input": {
+  "label": "Biomolecules + optional MSA",
+  "size": "≤ 2,048 tokens"
+ },
+ "blocks": [
+  {
+   "name": "ESM-2 3B, frozen",
+   "dims": "36 × 2560"
+  },
+  {
+   "name": "Pairformer",
+   "dims": "48 × 384 / 256"
+  },
+  {
+   "name": "Diffusion",
+   "dims": "16 × 768"
+  }
+ ],
+ "params": "~316M",
+ "loop": "× 3 recycles · 200 diffusion steps",
+ "output": {
+  "label": "All-atom xyz + confidence",
+  "size": "5 structures per input"
+ },
+ "who": {
+  "org": "Chai Discovery",
+  "year": "2024",
+  "versions": "Chai-1 2024 → Chai-1r → Chai-2 2025",
+  "license": "Open · Apache 2.0 code and weights"
+ },
+ "ideas": [
+  "ESM-2 embeddings replace MSA",
+  "Pocket and contact restraints",
+  "Epitope hints double Ab accuracy",
+  "One model, one data cutoff",
+  "AF3-style pair-bias attention"
+ ],
+ "train": {
+  "hardware": "128 × A100",
+  "time": "30 d",
+  "compute": "n/a",
+  "samples": "batch 128",
+  "data": "PDB ≤2021 + AFDB distillation",
+  "epochs": "n/a"
+ },
+ "results": [
+  "PoseBusters 77% vs AF3 76%",
+  "DockQ 69.8% vs AF-M 2.3 67.7%"
+ ],
+ "speed": "n/a",
+ "limit": "2,048-token cap; weak antibody poses",
+ "sources": [
+  "https://www.biorxiv.org/content/10.1101/2024.10.10.615955",
+  "https://www.chaidiscovery.com/blog/introducing-chai-1",
+  "https://github.com/chaidiscovery/chai-lab",
+  "https://github.com/chaidiscovery/chai-lab/blob/main/chai_lab/utils/paths.py"
+ ],
+ "ready": true,
+ "type": "Transformer + diffusion"
+}

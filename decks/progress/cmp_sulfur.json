@@ -1,0 +1,171 @@
+{
+ "title": null,
+ "rows": [
+  "Picks sulfur over aromatics",
+  "Catches the hardest sulfur",
+  "Frees up for reuse",
+  "Doesn\u2019t wash into the fuel",
+  "Cost per tonne of fuel",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  3,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    23,
+    50,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 56,
+   "price": 1.19
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    35,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 49,
+   "price": 3.4
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    31,
+    12,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 45,
+   "price": 3.36
+  },
+  {
+   "label": "Resorcin[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    26,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 27,
+   "price": 3.22
+  },
+  {
+   "label": "L2-21",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    90,
+    100,
+    67,
+    100,
+    50,
+    null,
+    28,
+    35,
+    25
+   ],
+   "overall": 61,
+   "price": 2.81
+  },
+  {
+   "label": "L4-26",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    66,
+    100,
+    44,
+    null,
+    34,
+    35,
+    40
+   ],
+   "overall": 64,
+   "price": 2.82
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    73,
+    100,
+    43,
+    null,
+    35,
+    35,
+    40
+   ],
+   "overall": 65,
+   "price": 2.93
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    73,
+    100,
+    43,
+    null,
+    35,
+    35,
+    40
+   ],
+   "overall": 65,
+   "price": 2.93
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "title": null,
+ "rows": [
+  "Picks rare earths over aluminum",
+  "Picks rare earths over calcium, iron",
+  "Catches trace rare earths",
+  "Releases them for refining",
+  "Stays in the sorbent",
+  "Safe to discharge",
+  "Cost per kg of oxide",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "EDTA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    50,
+    100,
+    0,
+    100,
+    35,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 24,
+   "price": 2.21
+  },
+  {
+   "label": "TODGA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    0,
+    100,
+    100,
+    100,
+    23,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 20,
+   "price": 3.35
+  },
+  {
+   "label": "D2EHPA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    100,
+    33,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 2.39
+  },
+  {
+   "label": "Aminomethylphosphonic acid resin site",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    0,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 9,
+   "price": 1.52
+  },
+  {
+   "label": "Design A",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    0,
+    100,
+    100,
+    100,
+    26,
+    null,
+    32,
+    50,
+    45
+   ],
+   "overall": 42,
+   "price": 3.05
+  },
+  {
+   "label": "L2-40",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    0,
+    100,
+    100,
+    100,
+    25,
+    null,
+    31,
+    50,
+    45
+   ],
+   "overall": 42,
+   "price": 3.1
+  },
+  {
+   "label": "L4-6",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    0,
+    100,
+    100,
+    25,
+    null,
+    31,
+    50,
+    45
+   ],
+   "overall": 42,
+   "price": 3.11
+  },
+  {
+   "label": "L5-5",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    43,
+    0,
+    100,
+    100,
+    100,
+    24,
+    null,
+    50,
+    50,
+    45
+   ],
+   "overall": 40,
+   "price": 3.3
+  }
+ ]
+}

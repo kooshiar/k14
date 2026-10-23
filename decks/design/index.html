@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<base href="/site/">
+<title>Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site/frame.css">
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }</script>
+<style>
+  /* Design ideas for the site. Each concept opens with a separator page, then one option per page. */
+  html, body{height:100%}
+  body{overflow:hidden}
+  /* the hero exactly as on the homepage (same grid, title and stage), then the cream page below it */
+  .hero{background:var(--bg); color:var(--txt); overflow:hidden}
+  .hero .top{display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:40px; padding-top:8px; padding-bottom:4px; position:relative; overflow:hidden}
+  h1{margin:0; font-weight:500; font-size:clamp(38px, 4vw, 56px); line-height:1.02; letter-spacing:-.035em}
+  .stage{position:relative; height:256px}
+  #gl{position:absolute; inset:-36px -60px; cursor:grab} #gl:active{cursor:grabbing} #gl canvas{display:block; width:100%; height:100%}
+  [hidden]{display:none !important}
+  /* separator page: the concept name alone */
+  .sep{position:fixed; inset:0 0 64px; display:grid; place-items:center; font-weight:500; font-size:clamp(32px, 4vw, 52px); letter-spacing:-.03em; color:var(--ink)}
+  /* apps under the hero. Colour pages: 10 tiles in one row. Tile pages: the homepage row (size and rows vary) */
+  .apps{padding-block:26px 0}
+  .apps h2{margin:0 0 12px; font-weight:500; font-size:24px; letter-spacing:-.02em}
+  .row10{display:grid; grid-template-columns:repeat(10, minmax(0, 1fr)); gap:14px}
+  .row10 canvas{display:block; width:100%; aspect-ratio:1; border-radius:18px; background:var(--bg)}
+  .row10 b{display:block; margin-top:7px; font-weight:500; font-size:12px; line-height:1.25; letter-spacing:-.005em; color:var(--ink)}
+  .rowbox{position:relative; width:fit-content; max-width:100%}   /* More sits on the last tile of the first row */
+  .more{position:absolute; right:8px; top:8px; z-index:2; padding:6px 12px; border-radius:99px; background:var(--ink); box-shadow:0 0 0 1.5px var(--page); color:#fff;
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; text-decoration:none}
+  .rowh{display:grid; grid-auto-flow:column; grid-auto-columns:var(--t); gap:20px; overflow:hidden; padding-top:2px}
+  .rowh.two{grid-template-rows:repeat(2, auto); row-gap:18px}
+  .rowh .card{display:block; color:var(--ink); text-decoration:none}
+  .rowh canvas{display:block; width:var(--t); height:var(--t); border-radius:calc(var(--t) * .23); background:var(--bg)}
+  .rowh .card div{padding:9px 2px 0}
+  .rowh b{display:block; font-weight:500; font-size:13.5px; line-height:1.25; letter-spacing:-.005em}
+  .rowh small{display:block; margin-top:3px; font-family:var(--mono); font-size:9.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--mute)}
+  /* app page mockups (one sample app, five layouts) */
+  .mock{position:fixed; inset:0 0 64px; overflow:auto; padding-block:28px 40px}
+  .mock h1{margin:6px 0 12px; font-weight:500; font-size:clamp(26px, 2.6vw, 34px); line-height:1.1; letter-spacing:-.025em; color:var(--ink)}
+  .mock h3{margin:0 0 8px; font-family:var(--mono); font-weight:500; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute)}
+  .mock h4{margin:14px 0 6px; font-weight:500; font-size:13px; color:var(--ink)}
+  .mock p{margin:0; font-size:15px; line-height:1.5; color:var(--ink2)} .mock p b{color:var(--ink); font-weight:500}
+  .crumb{font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--mute)}
+  .lvs{display:flex; gap:8px; flex-wrap:wrap}
+  .lv{font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:99px; border:1.5px solid var(--ink); color:var(--ink)}
+  .tile{margin:0} .tile canvas{display:block; width:100%; aspect-ratio:1; border-radius:22%; background:var(--bg)}
+  .trk{list-style:none; margin:4px 0 14px; padding:0; display:grid; grid-template-columns:repeat(5, 1fr); position:relative}
+  .trk li{display:flex; flex-direction:column; align-items:center; gap:7px; text-align:center; position:relative; font-size:11.5px; color:var(--mute)}
+  .trk li::before{content:""; position:absolute; top:6px; left:-50%; width:100%; height:2px; background:var(--rule); z-index:0} .trk li:first-child::before{display:none}
+  .trk li.done::before, .trk li.now::before{background:var(--blue)}
+  .trk i{width:14px; height:14px; border-radius:99px; background:var(--page); border:2px solid var(--rule); z-index:1}
+  .trk li.done i{background:var(--blue); border-color:var(--blue)} .trk li.now i{border-color:var(--blue); box-shadow:0 0 0 4px rgba(63,127,44,.18)}
+  .trk li.done span, .trk li.now span{color:var(--ink)}
+  .sc{display:flex; flex-direction:column; gap:7px; margin:6px 0 4px}
+  .sc div{display:grid; grid-template-columns:90px 1fr 34px; align-items:center; gap:10px; font-size:13px; color:var(--ink)}
+  .sc b{height:10px; border-radius:99px; background:linear-gradient(90deg, var(--blue) var(--w), var(--rule) var(--w))} .sc .t b{background:linear-gradient(90deg, #9AA3B2 var(--w), var(--rule) var(--w))}
+  .sc em{font-style:normal; font-weight:600; text-align:right} .sc .t em{color:var(--mute); font-weight:500}
+  .wins{list-style:none; margin:0; padding:0} .wins li{display:flex; justify-content:space-between; gap:12px; min-width:0; padding:7px 0; border-top:1px solid var(--rule); font-size:13.5px; color:var(--ink)}
+  .wins li span{flex:1; min-width:0} .wins em{font-style:normal; font-family:var(--mono); font-size:12.5px; color:var(--blue); white-space:nowrap}
+  .cta{display:flex; justify-content:space-between; align-items:center; margin-top:24px; padding:20px 24px; border-radius:14px; background:var(--blue); color:#fff;
+    font-weight:500; font-size:19px; letter-spacing:-.01em; text-decoration:none} .cta span{font-size:22px} .cta:hover{background:#2F6A20}
+  .v1{display:grid; grid-template-columns:minmax(0, 1.2fr) minmax(0, .8fr); gap:56px; align-items:start}
+  .v1 .why{margin:18px 0 22px} .v1 h3{margin-top:22px} .v1 dl{display:grid; grid-template-columns:90px 1fr; gap:6px 12px; margin:0; font-size:14px} .v1 dt{color:var(--mute)} .v1 dd{margin:0; color:var(--ink)}
+  .v1 .side{position:sticky; top:0}
+  .v2{margin-top:-28px} .v2 .band{background:var(--bg); color:var(--txt); padding-block:28px 32px}
+  .v2 .bin{display:grid; grid-template-columns:1fr 260px; gap:48px; align-items:center} .v2 h1{color:var(--txt)} .v2 .crumb{color:var(--dim)}
+  .v2 .lv{border-color:rgba(236,237,238,.5); color:var(--txt)} .v2 .why{margin-top:16px; color:var(--txt2); font-size:17px}
+  .v2 .tile canvas{border-radius:0; background:none}
+  .v2 .cols{display:grid; grid-template-columns:repeat(3, 1fr); gap:36px; padding-top:32px} .v2 .cols p{font-size:14px}
+  .v2 .big, .v5 .big{display:flex; align-items:baseline; gap:10px; margin-top:4px} .v2 .big b, .v5 .big b{font-size:44px; font-weight:600; letter-spacing:-.03em; color:var(--blue)} .v2 .big span, .v5 .big span{font-size:13px; color:var(--mute)}
+  .wint{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:28px}
+  .wint div{border:1px solid var(--rule); border-radius:12px; padding:16px 18px; background:#fff; display:flex; flex-direction:column; gap:2px}
+  .wint b{font-size:30px; font-weight:600; letter-spacing:-.03em; color:var(--blue)} .wint span{font-size:13px; font-weight:500; color:var(--ink)} .wint em{font-style:normal; font-size:12px; color:var(--mute); margin-top:4px}
+  .v3 .head{display:flex; gap:20px; align-items:center} .v3 .head .tile{width:110px; flex:none}
+  .v3 .board{display:grid; grid-template-columns:auto auto auto 1fr; align-items:end; gap:22px; margin-top:26px; padding:22px 26px; border-radius:16px; background:#fff; border:1px solid var(--rule)}
+  .v3 .board b{display:block; font-size:72px; font-weight:600; line-height:.9; letter-spacing:-.04em} .v3 .us b{color:var(--blue)} .v3 .them b{color:#9AA3B2}
+  .v3 .board span{font-size:13px; color:var(--mute)} .v3 .vs{font-size:18px; color:var(--mute); padding-bottom:22px} .v3 .board p{justify-self:end; text-align:right; font-size:13px; max-width:200px}
+  .v3 .rows{display:grid; grid-template-columns:90px 1fr; gap:12px 20px; margin:26px 0 0; font-size:14px} .v3 dt{color:var(--mute); font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; padding-top:3px} .v3 dd{margin:0; color:var(--ink2)} .v3 dd b{color:var(--ink); font-weight:500}
+  .v4 .head{display:flex; justify-content:space-between; gap:28px; align-items:center} .v4 .head .tile{width:150px; flex:none}
+  .v4 .story{list-style:none; margin:26px 0 0; padding:0}
+  .v4 .story > li{display:grid; grid-template-columns:44px 110px 1fr; gap:16px; padding:18px 0; border-top:1px solid var(--rule); align-items:start}
+  .v4 .story > li > *{min-width:0}
+  .v4 .story i{font-style:normal; font-family:var(--mono); font-size:13px; color:var(--blue); padding-top:2px} .v4 .story h3{margin:2px 0 0}
+  .v4 .next .cta{margin-top:14px}
+  .v5 .bento{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+  .v5 .b{background:#fff; border:1px solid var(--rule); border-radius:16px; padding:18px 20px; display:flex; flex-direction:column; gap:8px}
+  .v5 .ttl{grid-column:1 / 3} .v5 .mol{grid-row:1 / 3; grid-column:3; padding:0; overflow:hidden; background:var(--bg); border:0} .v5 .mol .tile canvas{border-radius:0}
+  .v5 .b p{font-size:14px}
+  .v5 .go{grid-column:1 / -1; flex-direction:row; justify-content:space-between; align-items:center; background:var(--bg); border:0; color:var(--txt); text-decoration:none; font-size:22px; font-weight:500; padding:24px 28px}
+  .v5 .go b{font-size:28px; color:var(--sky)} .v5 .go:hover{background:#000}
+  /* page 1 gallery: 4 columns, newest concept first */
+  .gal{position:fixed; inset:0 0 64px; overflow:auto; padding:28px 0}
+  .gg{max-width:1200px; margin:0 auto; padding:0 28px; display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:18px}
+  .gi{display:flex; flex-direction:column; gap:10px; color:var(--ink); text-decoration:none}
+  .gi b{font-weight:500; font-size:15px; letter-spacing:-.01em} .gi:hover b{color:var(--blue)}
+  .pic{aspect-ratio:4 / 3; border-radius:16px; overflow:hidden; position:relative; background:var(--bg); border:1px solid var(--rule); transition:transform .2s}
+  .gi:hover .pic{transform:translateY(-3px)}
+  .pic.page{background:var(--page)} .pic.page .shrink{position:absolute; left:0; top:0; width:1100px; transform:scale(var(--k, .24)); transform-origin:0 0; pointer-events:none}
+  .pic.page .shrink .wrap{padding:0 22px}
+  .pic.tiles{display:flex; align-items:flex-end; justify-content:center; gap:10%; padding:0 8% 20%}
+  .pic.tiles i{width:calc(var(--z) / 104 * 26%); aspect-ratio:1; border-radius:22%; background:#22252B; border:1px solid rgba(236,237,238,.12); overflow:hidden}
+  .pic.tiles canvas, .pic.colors canvas{display:block; width:100%; height:100%}
+  .pic.prog{display:grid; grid-template-columns:repeat(3, 1fr); gap:8%; align-items:center; padding:0 8%}
+  .pic.prog .tw{aspect-ratio:1; border-radius:22%; background:#22252B; overflow:hidden} .pic.prog canvas{display:block; width:100%; height:100%}
+  .pic.colors{display:grid; grid-template-columns:repeat(5, 1fr); align-items:center; padding:0 4%}
+  .pic.colors canvas{aspect-ratio:1; height:auto}
+  .pic.hero .gl{position:absolute; inset:-8% -4%} .pic.hero .gl canvas{display:block; width:100%; height:100%}
+  @media (max-width:900px){ .gg{grid-template-columns:1fr 1fr} }
+  /* one fold: the whole page fits the screen under the top bar, button included */
+  .mock.fit{padding-block:18px}
+  .fold{display:grid; gap:12px; align-content:start}
+  .fold .b{background:#fff; border:1px solid var(--rule); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:6px}
+  .fold h1{margin:4px 0 10px; font-size:clamp(24px, 2.4vw, 32px)} .fold p{font-size:14px; line-height:1.45}
+  .fold .mol{padding:0; overflow:hidden; background:var(--bg); border:0; min-height:220px; position:relative} .fold .mol .tile{position:absolute; inset:0} .fold .mol .tile canvas{width:100%; height:100%; aspect-ratio:auto; border-radius:0}
+  .f8 .rc .mol{aspect-ratio:1}
+  .fold .trk{margin:6px 0 4px} .fold .prog .btn{margin-top:12px}
+  .nums{display:grid; grid-template-columns:repeat(4, 1fr); flex:1}
+  .nums > div{display:flex; flex-direction:column; justify-content:center; gap:2px; padding:4px 16px} .nums > div:first-child{padding-left:0} .nums > div + div{border-left:1px solid var(--rule)}
+  .nums b{font-size:34px; font-weight:600; letter-spacing:-.03em; line-height:1.05; color:var(--blue)} .nums b small{font-size:18px; font-weight:500; color:var(--mute)}
+  .nums span{font-size:14px; font-weight:500; color:var(--ink)} .nums em{font-style:normal; font-size:12px; line-height:1.35; color:var(--mute); margin-top:3px}
+  .btn{display:inline-flex; align-self:flex-start; align-items:center; gap:10px; padding:13px 22px; border-radius:99px; background:var(--blue); color:#fff;
+    font-weight:500; font-size:15px; text-decoration:none; box-shadow:0 6px 18px rgba(63,127,44,.28); white-space:nowrap} .btn span{font-size:18px} .btn:hover{background:#2F6A20}
+  .f6{grid-template-columns:1fr 1fr 1fr}
+  .f6 .ttl{grid-column:1 / 3} .f6 .mol{grid-column:3; grid-row:1 / 3} .f6 .sol{grid-column:1 / 3}
+  .f7{grid-template-columns:1fr 1fr 1fr}
+  .f7 .ttl{grid-column:1 / -1; flex-direction:row; justify-content:space-between; align-items:center} .f7 .ttl .btn{align-self:center}
+  .f7 .sol{grid-column:1 / -1} .f7 .sh{display:flex; justify-content:space-between; align-items:flex-start; gap:24px} .f7 .sh .trk{width:420px; margin:0}
+  .f8{grid-template-columns:1.6fr 1fr}
+  .f8 .lc, .f8 .rc{display:grid; gap:12px; min-height:0} .f8 .lc, .f8 .rc{align-content:start}
+  .f8 .two{display:grid; grid-template-columns:1fr 1fr; gap:12px} .f8 .nums{grid-template-columns:1fr 1fr; row-gap:14px} .f8 .nums > div:nth-child(3){border-left:0; padding-left:0}
+  .f8 .rc .btn{justify-self:start}
+  @media (max-width:900px){ .mock.fit .fold{height:auto; grid-template-columns:1fr} .fold > *{grid-column:auto !important; grid-row:auto !important} .nums{grid-template-columns:1fr 1fr} .f8 .two{grid-template-columns:1fr} .fold .mol{height:260px} }
+  @media (max-width:900px){ .v1, .v2 .bin, .v2 .cols, .wint, .v5 .bento{grid-template-columns:1fr} .v5 .ttl, .v5 .mol{grid-column:auto; grid-row:auto} .v3 .board{grid-template-columns:auto auto auto} .v3 .board p{display:none} .v4 .story > li{grid-template-columns:36px 1fr} .v4 .story > li > div, .v4 .story > li > p{grid-column:2} }
+  /* progress marks on app tiles: steps done = researched (1), designed (2), beats today's best (3) of 5 */
+  .tw{position:relative; display:block}
+  .pill{position:absolute; left:6px; top:6px; font-style:normal; font-family:var(--mono); font-size:8.5px; letter-spacing:.04em; text-transform:uppercase;
+    padding:3px 6px; border-radius:99px; background:rgba(236,237,238,.14); color:var(--txt2)}
+  .pill.s2{background:rgba(236,237,238,.24); color:var(--txt)} .pill.s3{background:var(--sky); color:#14200F}
+  .seg{position:absolute; left:10%; right:10%; bottom:8px; display:grid; grid-template-columns:repeat(5, 1fr); gap:3px}
+  .seg i{height:3px; border-radius:2px; background:rgba(236,237,238,.18)} .seg i.on{background:var(--sky)}
+  .dots{display:flex; gap:3px; margin-top:6px} .dots i{width:7px; height:7px; border-radius:99px; background:var(--rule)} .dots i.on{background:var(--blue)}
+  .w{font-weight:500} .w.s1{color:var(--mute)} .w.s2{color:var(--ink)} .w.s3{color:var(--blue)}
+  /* investor deck cover: one 16:9 dark slide, four ways to set the K14 mark apart from the title */
+  .cov{position:fixed; inset:0 0 64px; display:grid; place-items:center; padding:20px}
+  .cv{position:relative; width:min(92vw, calc((100vh - 120px) * 16 / 9)); aspect-ratio:16/9; container-type:inline-size; background:var(--bg); color:var(--txt); border-radius:10px; overflow:hidden; box-shadow:0 10px 40px rgba(0,0,0,.12)}
+  .cv .in{position:absolute; inset:0; padding:0 6%; display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:3cqw}
+  .cv h1{font-size:5.6cqw; color:var(--txt); white-space:nowrap} .cv h1 span{color:inherit}
+  .cv .brand{display:flex; align-items:center; gap:1.2cqw}
+  .cv .brand img{display:block; width:4cqw; height:4cqw}
+  .cv .brand b{font-weight:600; font-size:2.6cqw; letter-spacing:-.01em}
+  .cv .cgl{position:relative; height:30cqw} .cv .cgl > div{position:absolute; inset:-4cqw -6cqw} .cv .cgl canvas{display:block; width:100%; height:100%}
+  .cv .ft{display:none}
+  /* A · corner mark: small mark, K14 in spaced mono, pinned top-left; the title owns the middle */
+  .cv.c1 .brand{position:absolute; top:4.5cqw; left:6%; gap:1cqw} .cv.c1 .brand img{width:3cqw; height:3cqw}
+  .cv.c1 .brand b{font-family:var(--mono); font-weight:500; font-size:1.5cqw; letter-spacing:.24em; color:var(--txt2)}
+  /* B · brand first: K14 big in green, the line under it smaller and lighter */
+  .cv.c2 .brand{gap:2cqw; margin-bottom:3.4cqw} .cv.c2 .brand img{width:9cqw; height:9cqw}
+  .cv.c2 .brand b{font-size:9cqw; font-weight:600; letter-spacing:-.04em; color:var(--sky); line-height:1}
+  .cv.c2 h1{font-size:3.4cqw; font-weight:400; color:var(--txt2); letter-spacing:-.02em; line-height:1.15}
+  /* C · app icon: the mark in a rounded tile, wide gap, green second line */
+  .cv.c3 .brand{margin-bottom:5cqw; gap:1.4cqw} .cv.c3 .brand img{width:7cqw; height:7cqw; padding:1.2cqw; box-sizing:border-box; border-radius:22%; background:#1E2128; border:1px solid rgba(236,237,238,.12)}
+  .cv.c3 .brand b{font-family:var(--mono); font-weight:500; font-size:1.9cqw; letter-spacing:.12em; color:var(--txt2)}
+  .cv.c3 h1 span{color:var(--sky)}
+  /* D · footer lockup: title and machine alone; the mark and name sit in a bottom bar */
+  .cv.c4 .brand{display:none} .cv.c4 .ft{display:flex; position:absolute; left:6%; right:6%; bottom:3.6cqw; padding-top:2cqw; border-top:1px solid rgba(236,237,238,.12); align-items:center; justify-content:space-between}
+  .cv.c4 .ft .brand{display:flex} .cv.c4 .ft .brand img{width:3.2cqw; height:3.2cqw} .cv.c4 .ft .brand b{font-size:2cqw}
+  .cv.c4 .ft span{font-family:var(--mono); font-size:1.4cqw; letter-spacing:.08em; color:var(--dim)}
+  .pic.cover{background:var(--bg); container-type:inline-size; display:flex; flex-direction:column; justify-content:center; gap:7cqw; padding:0 9%; color:var(--txt)}
+  .pic.cover .brand{display:flex; align-items:center; gap:3cqw} .pic.cover img{width:11cqw; height:11cqw} .pic.cover b{font-family:var(--mono); font-weight:500; font-size:5cqw; letter-spacing:.2em; color:var(--txt2)}
+  .pic.cover i{font-style:normal; font-weight:500; font-size:10cqw; line-height:1.02; letter-spacing:-.035em}
+  /* founder photo: the real investor-deck page in a frame, one photo placement per page */
+  .fim{position:fixed; inset:0 0 64px; display:grid; place-items:center; padding:20px}
+  .fim iframe{width:min(92vw, calc((100vh - 120px) * 16 / 9)); aspect-ratio:16/9; border:0; border-radius:10px; box-shadow:0 10px 40px rgba(0,0,0,.12); background:var(--page)}
+  .pic.founder{background:var(--page); display:flex; align-items:center; justify-content:center; gap:8%} .pic.founder img{width:34%; aspect-ratio:1; border-radius:50%; object-fit:cover; object-position:50% 30%}
+  .pic.founder span{display:flex; flex-direction:column; gap:6px; width:36%} .pic.founder span i{height:7px; border-radius:4px; background:var(--rule)} .pic.founder span i:first-child{background:var(--ink); width:80%}
+  /* partner tech page: models as plain boxes, run by one agentic engine; five layouts on a cream 16:9 slide */
+  .tch{position:fixed; inset:0 0 64px; display:grid; place-items:center; padding:20px}
+  .ts{position:relative; width:min(92vw, calc((100vh - 120px) * 16 / 9)); aspect-ratio:16/9; container-type:inline-size; background:var(--page); border:1px solid var(--rule); border-radius:10px; overflow:hidden; color:var(--ink)}
+  .ts .tt{position:absolute; left:6%; top:6cqw; margin:0; font-weight:500; font-size:3.4cqw; line-height:1.08; letter-spacing:-.035em; max-width:70cqw}
+  .ts .bd{position:absolute; left:6%; right:6%; top:17cqw; bottom:5cqw}
+  .ts .m{border:1px solid var(--rule); background:#fff; border-radius:1cqw; padding:1.3cqw 1.5cqw; display:flex; flex-direction:column; gap:.5cqw; justify-content:center}
+  .ts .m b{font-weight:500; font-size:1.8cqw; letter-spacing:-.015em} .ts .m span{font-size:1.25cqw; color:var(--ink2)}
+  .ts .eng{background:var(--bg); color:var(--txt); border-radius:1cqw; display:flex; align-items:center; justify-content:center; gap:1.2cqw; font-weight:500; font-size:2.2cqw; letter-spacing:-.02em}
+  .ts .eng img{width:3cqw; height:3cqw}
+  .ts svg.ln{position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none} .ts svg.ln path{fill:none; stroke:#9AA0AA; stroke-width:1.5}
+  /* 1 engine on top, six models in a row */
+  .t1 .bd{display:grid; grid-template-rows:7cqw 1fr; row-gap:5cqw} .t1 .row{display:grid; grid-template-columns:repeat(6, 1fr); gap:1.4cqw}
+  /* 2 engine in the middle, models around it */
+  .t2 .bd{display:grid; grid-template-columns:1fr 1.15fr 1fr; grid-template-rows:repeat(3, 1fr); gap:1.6cqw 4cqw} .t2 .eng{grid-column:2; grid-row:1 / 4; margin:6cqw 0; flex-direction:column}
+  .t2 .eng img{width:5cqw; height:5cqw}
+  /* 3 engine on the left, 2 x 3 models on the right */
+  .t3 .bd{display:grid; grid-template-columns:.8fr 2fr; gap:6cqw} .t3 .grid{display:grid; grid-template-columns:repeat(3, 1fr); grid-template-rows:1fr 1fr; gap:1.4cqw} .t3 .eng{flex-direction:column}
+  .t3 .eng img{width:5cqw; height:5cqw}
+  /* 4 models stand on the engine */
+  .t4 .bd{display:grid; grid-template-rows:12cqw 6cqw; row-gap:1.4cqw; align-content:center} .t4 .row{display:grid; grid-template-columns:repeat(6, 1fr); gap:1.4cqw} .t4 .m{justify-content:flex-end; padding-bottom:1.6cqw}
+  .t4 .eng{justify-content:flex-start; padding-left:2cqw}
+  /* 5 your problem in, engine runs the models, answer out */
+  .t5 .bd{display:grid; grid-template-columns:1fr 2.6fr 1fr; gap:4cqw; align-items:center} .t5 .io{border:1.5px solid var(--ink); border-radius:1cqw; padding:2cqw 1.6cqw; display:flex; flex-direction:column; gap:.6cqw}
+  .t5 .io b{font-weight:500; font-size:1.9cqw} .t5 .io span{font-size:1.25cqw; color:var(--ink2)} .t5 .io.out{border-color:var(--blue)} .t5 .io.out b{color:var(--blue)}
+  .t5 .mid{display:flex; flex-direction:column; gap:1.2cqw} .t5 .eng{height:6cqw} .t5 .row{display:grid; grid-template-columns:repeat(3, 1fr); gap:1.2cqw} .t5 .m{padding:1cqw 1.2cqw}
+  /* F-H: problem → engine → five models in a loop → beats today's best, four numbered steps */
+  .ts.t6 .tt, .ts.t7 .tt, .ts.t8 .tt{max-width:88cqw}
+  .ts .stp{display:flex; flex-direction:column; gap:1.2cqw; align-items:stretch; position:relative}
+  .ts .no{align-self:flex-start; width:2.4cqw; height:2.4cqw; border-radius:50%; border:1.5px solid var(--ink); display:grid; place-items:center; font:500 1.2cqw/1 var(--mono)}
+  .ts .io b{font-weight:500; font-size:1.9cqw} .ts .io{border:1.5px solid var(--ink); border-radius:1cqw; padding:1.8cqw 1.6cqw; display:flex; flex-direction:column; gap:.6cqw; background:#fff} .ts .io span{font-size:1.25cqw; color:var(--ink2)}
+  .ts .io.out{border-color:var(--blue)} .ts .io.out b{color:var(--blue)} .ts .stp.win .no{border-color:var(--blue); color:var(--blue)}
+  .ts svg.ln path.dash{stroke-dasharray:5 5; stroke:var(--blue)} .ts svg.ln path.ar{fill:#9AA0AA; stroke:none}
+  .t6 .bd{display:grid; grid-template-columns:1.2fr 1fr 1.35fr 1.2fr; gap:4.5cqw; align-items:center} .t6 .m b{white-space:nowrap}
+  .t6 .col{display:flex; flex-direction:column; gap:.9cqw} .t6 .m{padding:.9cqw 1.3cqw; flex-direction:row; justify-content:space-between; align-items:baseline} .t6 .eng{height:13cqw; flex-direction:column} .t6 .eng img{width:4.4cqw; height:4.4cqw}
+  .t7 .bd{display:grid; grid-template-columns:1.25fr 4fr 1.25fr; gap:3cqw; align-items:center}
+  .t7 .mid{display:flex; flex-direction:column; gap:3.4cqw} .t7 .eng{height:6cqw} .t7 .pipe{display:grid; grid-template-columns:repeat(5, 1fr); gap:1.6cqw} .t7 .m{padding:1.1cqw 1.2cqw}
+  .t8 .bd{display:grid; grid-template-columns:1.2fr 3.6fr 1.2fr; gap:3cqw; align-items:center; top:15cqw; bottom:3cqw}
+  .t8 .ring{position:relative; height:33cqw} .t8 .ring .eng{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:15cqw; height:7cqw; flex-direction:column; gap:.6cqw; font-size:1.9cqw} .t8 .ring .eng img{width:2.8cqw; height:2.8cqw}
+  .t8 .ring .m{position:absolute; width:10.5cqw; padding:.9cqw 1.1cqw; transform:translate(-50%, -50%)}
+  .pic.vision{background:var(--page); display:flex; align-items:flex-end; justify-content:center; gap:5%; padding:0 10% 16%} .pic.vision i{width:17%; background:#fff; border:1px solid var(--rule); border-radius:5px; position:relative} .pic.vision i::before{content:''; position:absolute; left:20%; top:12%; width:34%; aspect-ratio:1; border-radius:50%; background:var(--blue)}
+  .pic.tech{background:var(--page); display:grid; grid-template-rows:auto 1fr; gap:8%; padding:12% 10%}
+  .pic.tech .e{background:var(--bg); border-radius:6px; height:22px} .pic.tech .r{display:grid; grid-template-columns:repeat(6, 1fr); gap:6%} .pic.tech .r i{background:#fff; border:1px solid var(--rule); border-radius:5px}
+  .foot{position:fixed; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:space-between; padding:14px 20px;
+    font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--mute)}
+  .foot nav{display:flex; align-items:center; gap:8px}
+  .foot button{all:unset; cursor:pointer; width:36px; height:36px; display:grid; place-items:center; border:1px solid var(--rule); border-radius:8px; background:#fff; color:var(--ink)}
+  .foot button:disabled{opacity:.35; cursor:default}
+  .foot span.n{min-width:56px; text-align:center; color:var(--ink)}
+  @media (max-width:900px){ .hero .top{grid-template-columns:1fr; gap:0; padding-top:24px} h1{font-size:min(36px, calc((100vw - 32px) / 9.3))}
+    .stage{height:60vw} #gl{inset:0} .row10{grid-template-columns:repeat(5, minmax(0, 1fr))} body{overflow:auto} }
+</style>
+</head>
+<body>
+<header class="hero" id="hero">
+  <div class="wrap top">
+    <h1>Molecular machines,<br>designed by AI.</h1>
+    <div class="stage"><div id="gl"></div></div>
+  </div>
+</header>
+<section class="apps wrap" id="apps" hidden><h2>Apps</h2><div id="row"></div></section>
+<div class="sep" id="sep" hidden></div>
+<div class="mock" id="mock" hidden></div>
+<div class="gal" id="gal" hidden></div>
+<div class="fim" id="fim" hidden><iframe id="fif" title="Founder page"></iframe></div>
+<div class="tch" id="tch" hidden><div class="ts" id="ts"></div></div>
+<div class="cov" id="cov" hidden><div class="cv" id="cv"><div class="in"><div><div class="brand"><img src="mark.svg" alt=""><b>K14</b></div><h1>Molecular machines,<br><span>designed by AI.</span></h1></div><div class="cgl"><div id="cgl"></div></div></div>
+  <div class="ft"><div class="brand"><img src="mark.svg" alt=""><b>K14</b></div><span>k14.ai</span></div></div></div>
+
+<div class="foot"><span id="lab"></span><nav><button id="prev" aria-label="Previous page">&larr;</button><span class="n" id="n"></span><button id="next" aria-label="Next page">&rarr;</button></nav></div>
+<script type="module">
+import { Stage } from './live.js';
+import { FILMS, COLORS } from './films.js';
+import { setup } from './appmols.js';
+import { APPS, HOME } from './appsdata.js';
+COLORS.blue = '#6FAF52';   // hero machine green, as on the homepage
+const CREAM = '#EDE7D9', LAV = '#B9A6FF';
+// sep: separator page (concept name). look: hero 3D look. target: target colour. ten: 10 diverse app tiles. tiles: homepage row {size px, rows}
+const PAGES = [
+  { gallery:true, lab:'All designs' },
+  { sep:'Hero 3D look' },
+  { lab:'Hero · current', look:null }, { lab:'Hero · thin', look:'thin' }, { lab:'Hero · fine', look:'fine' },
+  { lab:'Hero · bonds only', look:'licorice' }, { lab:'Hero · hollow balls', look:'hollow' }, { lab:'Hero · target as surface', look:'surface' },
+  { lab:'Hero · small hollow balls, target as surface', look:'surfaceHollow' }, { lab:'Hero · flat machine, target as surface', look:'surfaceFlat' },
+  { lab:'Hero · small hollow balls, see-through target', look:'surfaceHollowSee' }, { lab:'Hero · flat machine, see-through target', look:'surfaceFlatSee' },
+  { lab:'Hero · arm near the target white', look:'surfaceHollowArmA', target:LAV }, { lab:'Hero · far arm white', look:'surfaceHollowArmB', target:LAV },
+  { sep:'Target colour' },
+  { lab:'Target colour · cream', look:'surfaceHollow', target:CREAM, ten:true }, { lab:'Target colour · sky blue', look:'surfaceHollow', target:'#8CC8FF', ten:true },
+  { lab:'Target colour · lavender', look:'surfaceHollow', target:LAV, ten:true }, { lab:'Target colour · cyan', look:'surfaceHollow', target:'#5FD8E6', ten:true },
+  { lab:'Target colour · magenta', look:'surfaceHollow', target:'#F27BC8', ten:true },
+  { sep:'App tile size' },
+  { lab:'App tiles · now, 104 px', look:'surfaceHollow', target:LAV, tiles:{ size:104, rows:1 } },
+  { lab:'App tiles · 10% smaller, 94 px', look:'surfaceHollow', target:LAV, tiles:{ size:94, rows:1 } },
+  { lab:'App tiles · 20% smaller, 83 px', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:1 } },
+  { lab:'App tiles · two rows, 104 px', look:'surfaceHollow', target:LAV, tiles:{ size:104, rows:2 } },
+  { sep:'App page' },
+  { lab:'App page · two columns', app:1 }, { lab:'App page · dark header', app:2 }, { lab:'App page · scorecard first', app:3 },
+  { lab:'App page · numbered story', app:4 }, { lab:'App page · tile grid', app:5 },
+  { lab:'App page · tiles, one fold A', app:6 }, { lab:'App page · tiles, one fold B', app:7 }, { lab:'App page · tiles, one fold C', app:8 },
+  { sep:'App icon colours' },
+  { lab:'App icon colours · A · lavender target, no purple atoms (rare earths and alkali teal)', look:'surfaceHollowArmA', target:LAV, tileTarget:'#B9A6FF', tiles:{ size:83, rows:2 }, scheme:{"Li": "#2EC4B6", "I": "#2EC4B6", "Nd": "#2EC4B6", "Pr": "#2EC4B6", "La": "#2EC4B6", "K": "#2EC4B6", "Gd": "#2EC4B6"} },
+  { lab:'App icon colours · B · cyan target', look:'surfaceHollowArmA', target:LAV, tileTarget:'#5FD8E6', tiles:{ size:83, rows:2 }, scheme:{} },
+  { lab:'App icon colours · C · gold target (sulfur lime, phosphorus pink)', look:'surfaceHollowArmA', target:LAV, tileTarget:'#F2C14E', tiles:{ size:83, rows:2 }, scheme:{"S": "#9BE15D", "P": "#FF5AA5", "Si": "#FF5AA5", "Al": "#FF5AA5", "B": "#FF5AA5", "Mg": "#FF5AA5", "Ru": "#FF5AA5", "Au": "#FF5AA5", "Y": "#9BE15D"} },
+  { lab:'App icon colours · D · pink target, violet metals', look:'surfaceHollowArmA', target:LAV, tileTarget:'#F27BC8', tiles:{ size:83, rows:2 }, scheme:{"Li": "#8A7BFF", "I": "#8A7BFF", "Nd": "#8A7BFF", "Pr": "#8A7BFF", "La": "#8A7BFF", "K": "#8A7BFF", "Gd": "#8A7BFF"} },
+  { lab:'App icon colours · E · pearl target, mid-grey carbon', look:'surfaceHollowArmA', target:LAV, tileTarget:'#ECE6DA', tiles:{ size:83, rows:2 }, scheme:{"C": "#7E8594"} },
+  { lab:'App icon colours · F · mint target (halogens cyan)', look:'surfaceHollowArmA', target:LAV, tileTarget:'#7BE495', tiles:{ size:83, rows:2 }, scheme:{"F": "#5CE1E6", "Cl": "#5CE1E6", "Ni": "#5CE1E6", "Zr": "#5CE1E6"} },
+  { sep:'Long-term vision visuals' },
+  { lab:'Vision visuals · A · bigger solid atoms in element colours; L4 docks a molecule', lv:1 }, { lab:'Vision visuals · B · glossy 3D spheres; L4 docks a molecule', lv:2 },
+  { lab:'Vision visuals · C · dark tiles, glowing atoms; L4 is the live molecular hand', lv:3 }, { lab:'Vision visuals · D · one colour per level; L4 docks a molecule', lv:4 },
+  { lab:'Vision visuals · E · larger visuals; L4 is the live molecular hand', lv:5 },
+  { lab:'Vision visuals · F · A with smaller atoms; L4 tripod reaches out and clamps 3 targets', lv:6 }, { lab:'Vision visuals · G · L4 carousel ring turns, pockets close on each target', lv:7 },
+  { lab:'Vision visuals · H · L4 rigid bundle travels to each target and clamps it', lv:8 }, { lab:'Vision visuals · I · L4 two bowls close around the 3 targets', lv:9 },
+  { lab:'Vision visuals · J · L4 tripod grabs targets one by one, then pulls them together', lv:10 },
+  { lab:'Vision visuals · K · L4 three different arms grab one by one, then fold together; L2 holds a target', lv:11 },
+  { lab:'Vision visuals · L · L4 hand: long ringed arm holds two, short bent arm holds one; L2 holds a target', lv:12 },
+  { lab:'Vision visuals · M · L4 fused-ring core, arms of different chemistry close in a wave; L2 holds a target', lv:13 },
+  { lab:'Vision visuals · N · L4 jointed arms of 3 lengths: short holds the near target, middle grabs, long reaches far and reels it in', lv:14 },
+  { lab:'Vision visuals · O · L4 long arm fetches the far target and hands it to the short arm', lv:15 },
+  { lab:'Vision visuals · P · L4 hero-like hand with two unequal arms walks from target to target and pinches each', lv:16 },
+  { sep:'Partner tech page' },
+  { lab:'Partner tech · A · engine on top, models in a row', tech:1 }, { lab:'Partner tech · B · engine in the middle', tech:2 },
+  { lab:'Partner tech · C · engine left, models 2 × 3', tech:3 }, { lab:'Partner tech · D · models stand on the engine', tech:4 },
+  { lab:'Partner tech · E · your problem in, answer out', tech:5 },
+  { lab:'Partner tech · F · four steps, models as one pipeline', tech:6 }, { lab:'Partner tech · G · engine over a 5-model pipeline that loops', tech:7 },
+  { lab:'Partner tech · H · engine at the centre of a model loop', tech:8 },
+  { sep:'Founder photo' },
+  { lab:'Founder photo · A · round, top right', fimg:1 }, { lab:'Founder photo · B · round, left of the name', fimg:2 },
+  { lab:'Founder photo · C · tall portrait, right column', fimg:3 }, { lab:'Founder photo · D · larger, green ring', fimg:4 },
+  { sep:'Investor deck cover' },
+  { lab:'Cover · A · corner mark, K14 in spaced mono', cover:1 }, { lab:'Cover · B · K14 first, big and green', cover:2 },
+  { lab:'Cover · C · mark in a tile, wide gap', cover:3 }, { lab:'Cover · D · mark in a bottom bar', cover:4 },
+  { sep:'Progress on app tiles' },
+  { lab:'Progress · step dots under the name', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, badge:'dots' },
+  { lab:'Progress · label on the tile', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, badge:'pill' },
+  { lab:'Progress · bar inside the tile', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, badge:'bar' },
+  { lab:'Progress · word under the name', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, badge:'word' },
+];
+{ let ch = 'all', n = 0; PAGES.forEach(q => { if (q.gallery){ q.id = 'all'; return; } if (q.sep){ ch = q.sep.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); n = 0; q.id = ch; return; } q.id = `${ch}-${++n}`; }); }   // stable URL per page
+const pageAt = h => { const id = h.replace(/^#/, ''); const i = PAGES.findIndex(q => q.id === id); return i >= 0 ? i : /^p\d+$/.test(id) ? +id.slice(1) - 1 : 0; };
+const $ = id => document.getElementById(id), film = FILMS.find(x => x.id === 'hand3');
+// 10 apps from different categories that have a marked target (colour pages)
+const TEN = ['caffeine', 'pheromone', 'nitrogen', 'fragrance', 'potassium', 'crpsensor', 'pfas', 'crown_nh4', 'loopcorr', 'corrosion'].map(k => APPS.find(a => a.k === k)).filter(Boolean);
+// the homepage row, topped up with other apps so two rows fill the width
+const ROW = [...HOME.map(s => APPS.find(a => a.slug === s)), ...APPS.filter(a => !HOME.includes(a.slug))].filter(Boolean);
+let spin = null, last = performance.now();
+(function loop(t){ if (spin) spin.tick(t - last); last = t; requestAnimationFrame(loop); })(last);
+function wire(el, a, target){
+  const v = setup({ dataset:{ k:a.k }, look:'dark', style:'bulk', target, focus:a.focus, querySelector:() => el.querySelector('canvas') });
+  requestAnimationFrame(() => v.draw());
+  el.onmouseenter = () => { v.active(true); spin = v; }; el.onmouseleave = () => { v.active(false); spin = null; };
+}
+const WORD = { 1:'Researched', 2:'Designed', 3:'Beats today' };
+const steps = st => [0, 1, 2, 3, 4].map(j => `<i class="${j < st ? 'on' : ''}"></i>`).join('');
+function card(a, badge){
+  const st = a.st || 1, w = WORD[st];
+  const tile = badge === 'pill' ? `<span class="tw"><canvas></canvas><em class="pill s${st}">${w}</em></span>`
+    : badge === 'bar' ? `<span class="tw"><canvas></canvas><span class="seg" title="${w}">${steps(st)}</span></span>` : '<canvas></canvas>';
+  const sub = badge === 'dots' ? `<small>${a.cs}</small><span class="dots" title="${w}">${steps(st)}</span>`
+    : badge === 'word' ? `<small>${a.cs}</small><small class="w s${st}">${w}</small>` : `<small>${a.cs}</small>`;
+  return `<a class="card" href="/apps/${a.slug}/">${tile}<div><b>${a.short}</b>${sub}</div></a>`;
+}
+function apps(p){
+  globalThis.MOLDARKEL = p.scheme || null;   // colour-scheme pages: page-wide element colours for the tiles
+  const row = $('row');
+  $('apps').hidden = !(p.ten || p.tiles); if ($('apps').hidden) return;
+  if (p.ten){
+    row.className = 'row10'; row.innerHTML = TEN.map(a => `<div class="card"><canvas></canvas><b>${a.short}</b></div>`).join('');
+    [...row.children].forEach((el, j) => wire(el, TEN[j], p.target)); return;
+  }
+  const { size, rows } = p.tiles, fit = Math.floor((row.parentElement.clientWidth - 80 + 20) / (size + 20));
+  const list = ROW.slice(0, rows === 2 ? fit * 2 : HOME.length);
+  row.className = 'rowbox';
+  row.innerHTML = `<a class="more" href="/apps/">More</a><div class="rowh${rows === 2 ? ' two' : ''}${p.badge ? ' pb-' + p.badge : ''}" style="--t:${size}px">`
+    + list.map(a => card(a, p.badge)).join('') + '</div>';
+  [...row.querySelectorAll('.card')].forEach((el, j) => wire(el, list[j], p.tileTarget || p.target));
+}
+// ---- App page designs: one sample app (PFAS trap), its spinoff numbers from the runs (decks/progress), five layouts
+const A = { title:'PFAS trap for drinking water', cat:'Environment', k:'pfas', levels:['Easy to design', 'Easy to build'],
+  why:'6–10% of US water systems must cut PFOA below 4 ppt', whyMore:'EPA set the limit in 2024; compliance is due 2031. PFAS is in at least 45% of US tap water.',
+  partners:'Water utilities, filter makers', market:'~$1–10M a year in licenses with filter makers',
+  ours:81, today:48, todayName:'pillar[5]arene',
+  wins:[['Picks PFAS over natural organics', 100, 44, 'more selective'], ['Catches PFAS at ppt levels', 100, 50, 'better at ppt levels'], ['Cost per kg', 2.92, 3.40, 'lower cost']],
+  stages:['Problem researched', 'Designs completed', 'Scored vs today’s best', 'Lab tested', 'Partner pilot'], at:3 };
+const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' })[c]);
+const chips = () => A.levels.map(l => `<span class="lv">${l}</span>`).join('');
+const track = () => `<ol class="trk">${A.stages.map((t, j) => `<li class="${j < A.at ? 'done' : j === A.at ? 'now' : ''}"><i></i><span>${t}</span></li>`).join('')}</ol>`;
+const bars = () => `<div class="sc"><div><span>Our design</span><b style="--w:${A.ours}%"></b><em>${A.ours}</em></div><div class="t"><span>Best today</span><b style="--w:${A.today}%"></b><em>${A.today}</em></div></div>`;
+const winVal = w => w[0].startsWith('Cost') ? `$${w[1].toFixed(2)} vs $${w[2].toFixed(2)}` : `${w[1]} vs ${w[2]}`;
+const winBig = w => w[0].startsWith('Cost') ? `${Math.round((1 - w[1] / w[2]) * 100)}%` : `${(w[1] / w[2]).toFixed(1)}×`;
+const wins = () => `<ul class="wins">${A.wins.map(w => `<li><span>${w[0]}</span><em>${winVal(w)}</em></li>`).join('')}</ul>`;
+const cta = (t = 'Work with us on this') => `<a class="cta" href="/contact/?about=pfas-trap-for-drinking-water">${t} <span>&rarr;</span></a>`;
+const tile = cls => `<figure class="tile ${cls || ''}"><canvas></canvas></figure>`;
+const crumb = `<div class="crumb">Apps / ${A.cat}</div>`;
+const VIEWS = {
+  1: () => `<div class="v1 wrap"><div class="l">${crumb}<h1>${A.title}</h1><div class="lvs">${chips()}</div>
+      <p class="why"><b>${A.why}.</b> ${A.whyMore}</p>
+      <h3>Business</h3><dl><dt>Partners</dt><dd>${A.partners}</dd><dt>Market</dt><dd>${A.market}</dd></dl>
+      <h3>Progress</h3>${track()}${bars()}<h4>Where we win</h4>${wins()}${cta()}</div>${tile('side')}</div>`,
+  2: () => `<div class="v2"><div class="band"><div class="wrap bin"><div>${crumb}<h1>${A.title}</h1><div class="lvs">${chips()}</div><p class="why">${A.why}.</p></div>${tile('big')}</div></div>
+      <div class="wrap cols"><section><h3>Why it matters</h3><p>${A.whyMore}</p></section>
+      <section><h3>Business</h3><p><b>${A.partners}</b><br>${A.market}</p></section>
+      <section><h3>Progress</h3>${track()}<div class="big"><b>${A.ours}</b><span>vs ${A.today} for the best product today</span></div></section></div>
+      <div class="wrap wint">${A.wins.map(w => `<div><b>${winBig(w)}</b><span>${w[3]}</span><em>${w[0]}</em></div>`).join('')}</div>
+      <div class="wrap">${cta('Partner with us on PFAS')}</div></div>`,
+  3: () => `<div class="v3 wrap"><div class="head">${tile('sm')}<div>${crumb}<h1>${A.title}</h1><div class="lvs">${chips()}</div></div></div>
+      <div class="board"><div class="us"><b>${A.ours}</b><span>Our design</span></div><div class="vs">vs</div><div class="them"><b>${A.today}</b><span>Best product today</span></div>
+      <p>Score out of 100 on what water utilities need</p></div>
+      <div class="wint">${A.wins.map(w => `<div><b>${winBig(w)}</b><span>${w[3]}</span><em>${winVal(w)} · ${w[0]}</em></div>`).join('')}</div>
+      <dl class="rows"><dt>Why</dt><dd><b>${A.why}.</b> ${A.whyMore}</dd><dt>Partners</dt><dd>${A.partners}</dd><dt>Market</dt><dd>${A.market}</dd><dt>Stage</dt><dd>${track()}</dd></dl>
+      ${cta()}</div>`,
+  4: () => `<div class="v4 wrap"><div class="head"><div>${crumb}<h1>${A.title}</h1><div class="lvs">${chips()}</div></div>${tile('sm')}</div>
+      <ol class="story"><li><i>01</i><h3>Why</h3><p><b>${A.why}.</b> ${A.whyMore}</p></li>
+      <li><i>02</i><h3>Business</h3><p><b>${A.partners}.</b> ${A.market}.</p></li>
+      <li><i>03</i><h3>Progress</h3><div>${track()}${bars()}${wins()}</div></li>
+      <li class="next"><i>04</i><h3>Next</h3><div><p>Lab test in 1–3 months, with a partner.</p>${cta()}</div></li></ol></div>`,
+  5: () => `<div class="v5 wrap"><div class="bento">
+      <div class="b ttl">${crumb}<h1>${A.title}</h1><div class="lvs">${chips()}</div></div>
+      <div class="b mol">${tile('fill')}</div>
+      <div class="b"><h3>Why</h3><p><b>${A.why}.</b></p><p>${A.whyMore}</p></div>
+      <div class="b"><h3>Business</h3><p><b>${A.partners}</b></p><p>${A.market}</p></div>
+      <div class="b"><h3>Score</h3><div class="big"><b>${A.ours}</b><span>vs ${A.today} today</span></div>${track()}</div>
+      <div class="b"><h3>Where we win</h3>${wins()}</div>
+      <a class="b go" href="/contact/?about=pfas-trap-for-drinking-water"><span>Work with us on this</span><b>&rarr;</b></a></div></div>`,
+};
+// one-fold tile layouts (p30 feedback): numbers in one "our design" box under why and business, p28 wording, a real-size button
+const nums = () => `<div class="nums">${A.wins.map(w => `<div><b>${winBig(w)}</b><span>${w[3]}</span><em>${winVal(w)} · ${w[0]}</em></div>`).join('')}
+  <div><b>${A.ours}<small> vs ${A.today}</small></b><span>overall score</span><em>out of 100, on what water utilities need</em></div></div>`;
+const btn = () => `<a class="btn" href="/contact/?about=pfas-trap-for-drinking-water">Work with us on this <span>&rarr;</span></a>`;
+const why = () => `<div class="b"><h3>Why</h3><p><b>${A.why}.</b></p><p>${A.whyMore}</p></div>`;
+const biz = () => `<div class="b"><h3>Business</h3><p><b>${A.partners}</b></p><p>${A.market}</p></div>`;
+const ttl = (x = '') => `<div class="b ttl">${crumb}<h1>${A.title}</h1>${x}</div>`;
+Object.assign(VIEWS, {
+  6: () => `<div class="f6 wrap fold">${ttl()}<div class="b mol">${tile('fill')}</div>${why()}${biz()}
+      <div class="b sol"><h3>Our design vs the best product today</h3>${nums()}</div>
+      <div class="b prog"><h3>Progress</h3>${track()}${btn()}</div></div>`,
+  7: () => `<div class="f7 wrap fold"><div class="b ttl"><div>${crumb}<h1>${A.title}</h1></div>${btn()}</div>
+      ${why()}${biz()}<div class="b mol">${tile('fill')}</div>
+      <div class="b sol"><div class="sh"><h3>Our design vs the best product today</h3>${track()}</div>${nums()}</div></div>`,
+  8: () => `<div class="f8 wrap fold"><div class="lc">${ttl()}<div class="two">${why()}${biz()}</div>
+      <div class="b sol"><h3>Our design vs the best product today</h3>${nums()}</div></div>
+      <div class="rc"><div class="b mol">${tile('fill')}</div><div class="b prog"><h3>Progress</h3>${track()}</div>${btn()}</div></div>`,
+});
+function mock(p){
+  const m = $('mock'); m.hidden = !p.app; if (!p.app) return;
+  m.innerHTML = VIEWS[p.app](); m.scrollTop = 0; m.classList.toggle('fit', p.app >= 6);
+  m.querySelectorAll('.tile canvas').forEach(c => { const v = setup({ dataset:{ k:A.k }, look:'dark', style:'bulk', target:LAV, scale:.95, drag:true, querySelector:() => c });
+    requestAnimationFrame(() => v.draw()); v.active(true); spin = v; });
+}
+// ---- page 1: one box per design concept, newest first; a picture that says the topic, a 2-4 word title linking to its first page
+const CONCEPTS = [['App icon colours', 'App icon colours', 'colors'], ['Long-term vision visuals', 'Vision page visuals', 'vision'], ['Partner tech page', 'Partner tech page', 'tech'], ['Founder photo', 'Founder photo', 'founder'], ['Investor deck cover', 'Investor deck cover', 'cover'], ['Progress on app tiles', 'Progress on tiles', 'prog'], ['App page', 'App page layout', 'page'], ['App tile size', 'App tile size', 'tiles'], ['Target colour', 'Target colour', 'colors'], ['Hero 3D look', 'Hero 3D look', 'hero']];
+let galDone = false, galStage = null;
+function gallery(p){
+  const g = $('gal'); g.hidden = !p.gallery; if (galStage) galStage.pause(!p.gallery);
+  if (!p.gallery || galDone) return; galDone = true;
+  // real links to the section's page (absolute path: the page has <base href="/site/">, and the deck frame opens other paths in the top window)
+  g.innerHTML = '<div class="gg">' + CONCEPTS.map(([sep, t, kind]) => `<a class="gi" href="${location.pathname}#${PAGES.find(q => q.sep === sep).id}" data-sep="${sep}"><div class="pic ${kind}"></div><b>${t}</b></a>`).join('') + '</div>';
+  g.querySelectorAll('.gi').forEach(a => a.onclick = e => { e.preventDefault(); go(PAGES.findIndex(q => q.sep === a.dataset.sep)); });
+  const pic = kind => g.querySelector(`.pic.${kind}`);
+  pic('vision').innerHTML = [28, 38, 52, 72].map(h => `<i style="height:${h}%"></i>`).join('');
+  pic('tech').innerHTML = '<div class="e"></div><div class="r">' + '<i></i>'.repeat(6) + '</div>';
+  pic('founder').innerHTML = '<span><i></i><i></i><i></i></span><img src="/decks/investors/img/koosh.jpg" alt="">';
+  pic('cover').innerHTML = '<div class="brand"><img src="mark.svg" alt=""><b>K14</b></div><i>Molecular machines,<br>designed by AI.</i>';
+  // app page: the chosen layout (p31) itself, shrunk
+  const page = pic('page'); page.innerHTML = `<div class="shrink">${VIEWS[6]()}</div>`;
+  const fit = () => page.style.setProperty('--k', page.clientWidth / 1100); fit(); addEventListener('resize', fit);
+  page.querySelectorAll('.tile canvas').forEach(c => { const v = setup({ dataset:{ k:A.k }, look:'dark', style:'bulk', target:LAV, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
+  // progress: three tiles at the three steps, labelled on the tile
+  const pr = pic('prog'); const P3 = [APPS.find(a => a.st === 1), APPS.find(a => a.st === 2), APPS.find(a => a.st === 3)].filter(Boolean);
+  pr.innerHTML = P3.map(a => `<span class="tw"><canvas></canvas><em class="pill s${a.st}">${WORD[a.st]}</em></span>`).join('');
+  pr.querySelectorAll('canvas').forEach((c, j) => { const v = setup({ dataset:{ k:P3[j].k }, look:'dark', style:'bulk', target:LAV, focus:P3[j].focus, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
+  // tile size: the same app tile at 104, 94 and 83 px
+  const tl = pic('tiles'); tl.innerHTML = [104, 94, 83].map(z => `<i style="--z:${z}"><canvas></canvas></i>`).join('');
+  tl.querySelectorAll('canvas').forEach(c => { const v = setup({ dataset:{ k:'pfas' }, look:'dark', style:'bulk', target:LAV, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
+  // target colour: one target in each candidate colour
+  const cl = pic('colors'); const CS = [CREAM, '#8CC8FF', LAV, '#5FD8E6', '#F27BC8'];
+  cl.innerHTML = CS.map(() => '<canvas></canvas>').join('');
+  cl.querySelectorAll('canvas').forEach((c, j) => { const v = setup({ dataset:{ k:'pfas' }, look:'dark', style:'bulk', target:CS[j], scale:1.1, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
+  // hero 3D look: the live machine
+  const h = pic('hero'); h.innerHTML = '<div class="gl"></div>';
+  galStage = new Stage(h.querySelector('.gl'), null, { minimal:true, look:'surfaceHollow', fill:x => Math.min(.95, x * 1.2) });
+  COLORS.orange = LAV; galStage.load(film);
+}
+// partner tech page: six models, one engine
+const MODELS = [['Design', 'New molecules and materials'], ['Structure', '3D shape and fit'], ['Physics', 'Binding, stability, reactions'], ['Process', 'Synthesis and scale-up'], ['Economy', 'Cost and market'], ['Scoring', 'Against today’s best']];
+const mbox = ([n, s]) => `<div class="m"><b>${n}</b><span>${s}</span></div>`;
+const ENG = '<div class="eng"><img src="mark.svg" alt="">Agentic engine</div>';
+const TECH = {
+  1: () => `${ENG}<div class="row">${MODELS.map(mbox).join('')}</div>`,
+  2: () => MODELS.slice(0, 3).map((m, j) => mbox(m).replace('class="m"', `class="m" style="grid-column:1;grid-row:${j + 1}"`)).join('') + ENG
+       + MODELS.slice(3).map((m, j) => mbox(m).replace('class="m"', `class="m" style="grid-column:3;grid-row:${j + 1}"`)).join(''),
+  3: () => `${ENG}<div class="grid">${MODELS.map(mbox).join('')}</div>`,
+  4: () => `<div class="row">${MODELS.map(mbox).join('')}</div>${ENG}`,
+  5: () => `<div class="io"><b>Your problem</b><span>Target, limits, cost</span></div><div class="mid">${ENG}<div class="row">${MODELS.map(mbox).join('')}</div></div><div class="io out"><b>Best designs</b><span>Scored, ready for the lab</span></div>`,
+};
+const M5 = MODELS.slice(0, 5);
+const step = (k, inner, win) => `<div class="stp${win ? ' win' : ''}"><span class="no">${k}</span>${inner}</div>`;
+const IN = '<div class="io"><b>Your problem</b><span>Target, limits, cost</span></div>', OUT = '<div class="io out"><b>Beats today’s best</b><span>Ready for the lab</span></div>';
+Object.assign(TECH, {
+  6: () => step(1, IN) + step(2, ENG) + step(3, `<div class="col">${['Generative design', 'Structure', 'Physics models', 'Process analysis', 'Economy model'].map(n => `<div class="m"><b>${n}</b></div>`).join('')}</div>`) + step(4, OUT, true),
+  7: () => step(1, IN) + `<div class="mid">${step(2, ENG)}${step(3, `<div class="pipe">${M5.map(([n]) => `<div class="m"><b>${n}</b></div>`).join('')}</div>`)}</div>` + step(4, OUT, true),
+  8: () => step(1, IN) + step(2, `<div class="ring">${ENG}${M5.map(mbox).join('')}</div>`) + step(4, OUT, true),
+});
+function techLinks(n){
+  const ts = $('ts'), bd = ts.querySelector('.bd'); if (!bd) return; bd.querySelector('svg.ln')?.remove();
+  const R = bd.getBoundingClientRect(), eng = bd.querySelector('.eng').getBoundingClientRect();
+  const P = r => ({ l:r.left - R.left, r:r.right - R.left, t:r.top - R.top, b:r.bottom - R.top, cx:(r.left + r.right) / 2 - R.left, cy:(r.top + r.bottom) / 2 - R.top });
+  const E = P(eng), ms = [...bd.querySelectorAll('.m')].map(m => P(m.getBoundingClientRect()));
+  let d = '';
+  if (n === 1) ms.forEach(m => { const y = (E.b + m.t) / 2; d += `M${E.cx} ${E.b}V${y}H${m.cx}V${m.t}`; });
+  if (n === 2) ms.forEach(m => { const left = m.cx < E.l; const x0 = left ? m.r : m.l, x1 = left ? E.l : E.r; d += `M${x0} ${m.cy}C${(x0 + x1) / 2} ${m.cy} ${(x0 + x1) / 2} ${E.cy} ${x1} ${E.cy}`; });
+  if (n === 3){ const l0 = Math.min(...ms.map(m => m.l)), x = (E.r + l0) / 2; ms.filter(m => m.l - l0 < 2).forEach(m => { d += `M${E.r} ${E.cy}H${x}V${m.cy}H${m.l}`; }); }
+  if (n === 5){ const io = [...bd.querySelectorAll('.io')].map(x => P(x.getBoundingClientRect())), mid = P(bd.querySelector('.mid').getBoundingClientRect());
+    d += `M${io[0].r} ${io[0].cy}H${mid.l}M${mid.r} ${io[1].cy}H${io[1].l}`; ms.forEach(m => { if (m.t < E.b + 40) d += `M${m.cx} ${E.b}V${m.t}`; }); }
+  let dash = '';
+  const box = sel => [...bd.querySelectorAll(sel)].map(x => P(x.getBoundingClientRect()));
+  if (n >= 6){ const io = box('.io'); const ar = (x, y) => `M${x} ${y}l-7 -4v8z`;
+    if (n === 8){   // place the five models on a circle around the engine
+      const ring = bd.querySelector('.ring'), rr = ring.getBoundingClientRect(), W = rr.width, H = rr.height;
+      [...ring.querySelectorAll('.m')].forEach((m, j) => { const a = -Math.PI / 2 + j * 2 * Math.PI / 5; m.style.left = (W / 2 + Math.cos(a) * W * .38) + 'px'; m.style.top = (H / 2 + Math.sin(a) * H * .36) + 'px'; });
+    }
+    const E2 = P(bd.querySelector('.eng').getBoundingClientRect()), ms2 = box('.m');
+    if (n === 6){ const col = P(bd.querySelector('.col').getBoundingClientRect());
+      d += `M${io[0].r} ${io[0].cy}H${E2.l}M${E2.r} ${E2.cy}H${col.l}M${col.r} ${io[1].cy}H${io[1].l}`;
+      const g = R.width * .018; dash = `M${col.l + 12} ${col.b}V${col.b + g}H${E2.cx}V${E2.b}`; }
+    if (n === 7){ const pipe = P(bd.querySelector('.pipe').getBoundingClientRect());
+      d += `M${io[0].r} ${io[0].cy}H${pipe.l}`; for (let j = 0; j < 4; j++) d += `M${ms2[j].r} ${ms2[j].cy}H${ms2[j + 1].l}`;
+      d += `M${pipe.r} ${pipe.cy}H${io[1].l}M${E2.cx} ${E2.b}V${pipe.t}`;
+      const g = R.width * .018; dash = `M${ms2[4].cx} ${pipe.b}V${pipe.b + g}H${ms2[0].cx}V${pipe.b}`; }
+    if (n === 8){ const ring = P(bd.querySelector('.ring').getBoundingClientRect());
+      d += `M${io[0].r} ${io[0].cy}H${ring.l}M${ring.r} ${io[1].cy}H${io[1].l}`;
+      const rx = (ring.r - ring.l) * .38, ry = (ring.b - ring.t) * .36;
+      dash = `M${ring.cx + rx} ${ring.cy}A${rx} ${ry} 0 1 1 ${ring.cx - rx} ${ring.cy}A${rx} ${ry} 0 1 1 ${ring.cx + rx} ${ring.cy}`; }
+  }
+  bd.insertAdjacentHTML('afterbegin', `<svg class="ln"><path d="${d}"/>${dash ? `<path class="dash" d="${dash}"/>` : ''}</svg>`);
+}
+let techN = 0; new ResizeObserver(() => { if (techN && !$('tch').hidden) techLinks(techN); }).observe($('ts'));
+function techPage(p){
+  $('tch').hidden = !p.tech; if (!p.tech) return;
+  $('ts').className = 'ts t' + p.tech;
+  const tt = p.tech >= 6 ? 'Five models test each design from a different angle.<br>Our agentic engine loops until a design beats today’s best.' : 'A model for each analysis.<br>One agentic engine runs them all.';
+  $('ts').innerHTML = `<h2 class="tt">${tt}</h2><div class="bd">${TECH[p.tech]()}</div>`;
+  techN = p.tech; requestAnimationFrame(() => techLinks(p.tech)); document.fonts.ready.then(() => techLinks(p.tech));
+}
+function founder(p){
+  $('fim').hidden = !(p.fimg || p.lv); if (!(p.fimg || p.lv)) return;
+  const u = p.lv ? `/decks/investors/?embed=1&lv=${p.lv}#p11` : `/decks/investors/?embed=1&fimg=${p.fimg}#p2`; if ($('fif').dataset.u !== u){ $('fif').dataset.u = u; $('fif').src = u; }
+}
+let covStage = null;
+function cover(p){
+  $('cov').hidden = !p.cover; if (covStage) covStage.pause(!p.cover);
+  if (!p.cover) return;
+  $('cv').className = 'cv c' + p.cover;
+  if (!covStage){ covStage = new Stage($('cgl'), null, { minimal:true, look:'surfaceHollow', fill:x => Math.min(.95, x * 1.15) }); COLORS.orange = LAV; covStage.load(film); }
+}
+const stage = new Stage($('gl'), null, { minimal:true, fill:x => Math.min(.95, x * 1.15) });
+let i = -1, busy = Promise.resolve(), shown = null;
+function go(k){
+  k = Math.max(0, Math.min(PAGES.length - 1, k)); if (k === i) return; i = k;
+  const p = PAGES[k];
+  $('lab').textContent = p.sep || p.gallery ? '' : p.lab; $('n').textContent = `${k + 1} / ${PAGES.length}`;
+  $('prev').disabled = k === 0; $('next').disabled = k === PAGES.length - 1;
+  history.replaceState(null, '', `${location.pathname}${location.search}#${p.id}`);   // absolute: the page has <base href="/site/">
+  const off = p.sep || p.app || p.gallery || p.cover || p.fimg || p.tech || p.lv;
+  $('sep').hidden = !p.sep; $('sep').textContent = p.sep || ''; $('hero').hidden = !!off; stage.pause(!!off);
+  apps(p); mock(p); gallery(p); cover(p); founder(p); techPage(p);
+  if (off) return;
+  const key = `${p.look}|${p.target || CREAM}`; if (key === shown) return; shown = key;
+  busy = busy.then(() => { stage.opts.look = p.look; COLORS.orange = p.target || CREAM; return stage.load(film); });
+}
+$('prev').onclick = () => go(i - 1); $('next').onclick = () => go(i + 1);
+addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') go(i + 1); if (e.key === 'ArrowLeft' || e.key === 'PageUp') go(i - 1); });
+go(pageAt(location.hash)); addEventListener('hashchange', () => go(pageAt(location.hash)));
+</script>
+</body>
+</html>

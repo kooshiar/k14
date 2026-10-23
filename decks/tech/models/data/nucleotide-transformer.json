@@ -1,0 +1,69 @@
+{
+ "slug": "nucleotide-transformer",
+ "name": "Nucleotide Transformer",
+ "what": "Turns DNA into embeddings for genomics tasks",
+ "input": {
+  "label": "DNA as 6-mer tokens",
+  "size": "≤1,000 tokens · ~6 kb"
+ },
+ "blocks": [
+  {
+   "name": "6-mer embedding",
+   "dims": "1 × 2560"
+  },
+  {
+   "name": "BERT encoder",
+   "dims": "32 × 2560"
+  },
+  {
+   "name": "MLM head",
+   "dims": "1 × 4105"
+  }
+ ],
+ "params": "2.5B",
+ "loop": null,
+ "output": {
+  "label": "Token probs + embeddings",
+  "size": "N tokens × 2560"
+ },
+ "who": {
+  "org": "InstaDeep + NVIDIA + TUM",
+  "year": "2023",
+  "versions": "v1 2023 → v2 2023 → NTv3 2025",
+  "license": "Code + weights CC BY-NC-SA 4.0",
+  "sizes": "50M → 2.5B"
+ },
+ "ideas": [
+  "Masked LM on DNA",
+  "6-mer tokens, 6 kb window",
+  "850 species beat human-only",
+  "Probe or fine-tune",
+  "v2 is 10× smaller, same score"
+ ],
+ "train": {
+  "hardware": "128 × A100 80GB",
+  "time": "28 days",
+  "compute": "n/a",
+  "samples": "300B tokens",
+  "data": "850 NCBI genomes · 174B nt",
+  "epochs": "n/a"
+ },
+ "results": [
+  "Beat 12 of 18 BPNet baselines",
+  "Splice sites PR-AUC 0.98"
+ ],
+ "speed": "n/a",
+ "limit": "Short context; no generation",
+ "sources": [
+  "https://www.biorxiv.org/content/10.1101/2023.01.11.523679v2",
+  "https://people.stat.sc.edu/hoyen/STAT718/Papers/Nucleotide_Transformer.pdf",
+  "https://huggingface.co/InstaDeepAI/nucleotide-transformer-2.5b-multi-species",
+  "https://huggingface.co/InstaDeepAI/nucleotide-transformer-2.5b-multi-species/raw/main/config.json",
+  "https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+  "https://github.com/instadeepai/nucleotide-transformer",
+  "https://instadeep.com/2024/12/decoding-our-genome-with-nucleotide-transformers/",
+  "https://www.biorxiv.org/content/10.64898/2025.12.22.695963.full.pdf"
+ ],
+ "ready": true,
+ "type": "Transformer"
+}

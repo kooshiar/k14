@@ -1,0 +1,432 @@
+{
+ "_how": "Grade = mean of 7 factors, each 0-100. Size: realistic yearly revenue we can reach. Competition: how open the field is (100 = no good product). Novelty: how new our approach is. Tech: how well our physics models fit the problem. Scores: from scores.json, our best + (our best - best sold today). Relevance: urgency, rules, pain. Sales cycle: 100 = buyers decide in weeks. Hand-rated 2026-10-20. Spinoffs in extra_rows (bio, rheumatology) have no design runs yet, so their grade averages the 6 hand-rated factors.",
+ "factors": [
+  "Size",
+  "Competition",
+  "Novelty",
+  "Tech",
+  "Scores",
+  "Relevance",
+  "Sales cycle"
+ ],
+ "rows": {
+  "formaldehyde": [
+   60,
+   55,
+   55,
+   70,
+   70,
+   60
+  ],
+  "cement": [
+   85,
+   40,
+   60,
+   55,
+   80,
+   25
+  ],
+  "rebar": [
+   75,
+   50,
+   55,
+   70,
+   70,
+   25
+  ],
+  "dioxane": [
+   55,
+   65,
+   70,
+   80,
+   75,
+   30
+  ],
+  "boron": [
+   70,
+   55,
+   65,
+   80,
+   60,
+   35
+  ],
+  "siloxane": [
+   55,
+   60,
+   65,
+   80,
+   60,
+   65
+  ],
+  "mousy": [
+   35,
+   85,
+   85,
+   80,
+   50,
+   85
+  ],
+  "selenate": [
+   65,
+   60,
+   70,
+   75,
+   75,
+   35
+  ],
+  "tfa": [
+   80,
+   85,
+   85,
+   75,
+   75,
+   30
+  ],
+  "smoke": [
+   55,
+   70,
+   75,
+   85,
+   70,
+   80
+  ],
+  "heatcold": [
+   50,
+   45,
+   50,
+   55,
+   55,
+   80
+  ],
+  "cork": [
+   30,
+   50,
+   60,
+   85,
+   55,
+   85
+  ],
+  "pfas": [
+   70,
+   25,
+   40,
+   75,
+   90,
+   30
+  ],
+  "lithium": [
+   70,
+   35,
+   55,
+   60,
+   85,
+   40
+  ],
+  "co2": [
+   50,
+   25,
+   45,
+   55,
+   80,
+   40
+  ],
+  "ethylene": [
+   40,
+   50,
+   65,
+   70,
+   65,
+   80
+  ],
+  "rareearth": [
+   65,
+   50,
+   70,
+   55,
+   90,
+   30
+  ],
+  "plastic": [
+   55,
+   35,
+   50,
+   45,
+   70,
+   40
+  ],
+  "gold": [
+   60,
+   55,
+   60,
+   75,
+   65,
+   65
+  ],
+  "tmah": [
+   55,
+   70,
+   75,
+   75,
+   70,
+   50
+  ],
+  "cesium": [
+   55,
+   65,
+   65,
+   75,
+   60,
+   15
+  ],
+  "sulfur": [
+   70,
+   45,
+   60,
+   65,
+   55,
+   40
+  ],
+  "phosphate": [
+   50,
+   55,
+   55,
+   65,
+   65,
+   30
+  ],
+  "xenon": [
+   35,
+   75,
+   75,
+   70,
+   60,
+   55
+  ],
+  "chalco": [
+   80,
+   60,
+   75,
+   50,
+   85,
+   40
+  ],
+  "ammonium": [
+   35,
+   70,
+   75,
+   70,
+   55,
+   70
+  ],
+  "psensor": [
+   45,
+   80,
+   85,
+   65,
+   60,
+   65
+  ],
+  "magrec": [
+   40,
+   60,
+   65,
+   60,
+   85,
+   55
+  ],
+  "reecoal": [
+   55,
+   65,
+   75,
+   55,
+   85,
+   35
+  ],
+  "potassium": [
+   70,
+   40,
+   60,
+   55,
+   80,
+   10
+  ],
+  "tma": [
+   45,
+   75,
+   75,
+   70,
+   55,
+   70
+  ],
+  "putrescine": [
+   50,
+   55,
+   65,
+   65,
+   65,
+   55
+  ],
+  "boar": [
+   60,
+   70,
+   80,
+   55,
+   70,
+   40
+  ],
+  "nicotine": [
+   55,
+   80,
+   80,
+   65,
+   60,
+   65
+  ],
+  "smoketest": [
+   45,
+   65,
+   70,
+   60,
+   70,
+   75
+  ],
+  "pdscav": [
+   60,
+   45,
+   55,
+   80,
+   75,
+   45
+  ],
+  "nitrite": [
+   65,
+   55,
+   70,
+   75,
+   90,
+   40
+  ],
+  "ironmedia": [
+   55,
+   60,
+   70,
+   70,
+   60,
+   45
+  ],
+  "tfaswap": [
+   50,
+   55,
+   70,
+   75,
+   65,
+   45
+  ],
+  "endotox": [
+   70,
+   45,
+   60,
+   55,
+   85,
+   35
+  ],
+  "chiral": [
+   70,
+   40,
+   55,
+   50,
+   70,
+   45
+  ],
+  "cryo": [
+   70,
+   60,
+   75,
+   60,
+   80,
+   30
+  ],
+  "gout": [
+   75,
+   50,
+   70,
+   55,
+   75,
+   10
+  ],
+  "joint": [
+   70,
+   45,
+   55,
+   45,
+   70,
+   10
+  ],
+  "crp": [
+   60,
+   45,
+   55,
+   50,
+   70,
+   25
+  ]
+ },
+ "extra_rows": [
+  {
+   "key": "potassium",
+   "name": "Potassium binder",
+   "sub": "hyperkalemia",
+   "state": "notrun"
+  },
+  {
+   "key": "tma",
+   "name": "Fish-odor fabric finish",
+   "sub": "textiles",
+   "state": "notrun"
+  },
+  {
+   "key": "putrescine",
+   "name": "Spoilage label",
+   "sub": "meat, fish",
+   "state": "notrun"
+  },
+  {
+   "key": "boar",
+   "name": "Boar-taint feed binder",
+   "sub": "pork",
+   "state": "notrun"
+  },
+  {
+   "key": "nicotine",
+   "name": "Smoke-residue coating",
+   "sub": "rentals, hotels",
+   "state": "notrun"
+  },
+  {
+   "key": "smoketest",
+   "name": "Smoke-taint field test",
+   "sub": "vineyards",
+   "state": "notrun"
+  },
+  {
+   "key": "gout",
+   "name": "Gout crystal blocker",
+   "sub": "rheumatology",
+   "state": "notrun",
+   "href": "/apps/crystal-blocker-for-gout/"
+  },
+  {
+   "key": "joint",
+   "name": "Slow-release joint injection",
+   "sub": "rheumatology",
+   "state": "notrun",
+   "href": "/apps/slow-release-joint-injection-for-arthritis/"
+  },
+  {
+   "key": "crp",
+   "name": "Home CRP sensor",
+   "sub": "rheumatology",
+   "state": "notrun"
+  }
+ ]
+}

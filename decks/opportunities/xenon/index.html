@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Xenon Catcher · 97A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* CRP deck for doctors and angel investors. AMD deck style. One 16:9 slide per screen; 6% | text 40% | gap 8% | visual 40% | 6%. White text side, visual on a blue-grey card. */
+:root{
+  --page:#E9EBEF; --navbg:#FFFFFF; --navln:#DDE1E7; --navtx:#3A3F4A;
+  --bg:#FFFFFF; --ink:#0B0D12; --body:#5B6170; --mut:#4E5A6E; --line:#C2CCDA; --fill:#FFFFFF; --fl2:#CBD5E3; --acc:#2F6BFF;
+  --card:#D7E1F2; --cardln:#C3CFE5; --good:#00A651; --hot:#E10600;
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--page:#14161A;--navbg:#1E2127;--navln:#2C3038;--navtx:#D5D9E0;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#14161A;--navbg:#1E2127;--navln:#2C3038;--navtx:#D5D9E0;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--page);font-family:var(--sans);margin:0;overflow:hidden}
+.stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px 16px 72px}
+.slide{width:min(100%, calc((100vh - 88px) * 16 / 9));aspect-ratio:16/9;container-type:inline-size;overflow:hidden;position:relative;
+  display:none;grid-template-columns:6% 40% 8% 40% 6%;align-items:center;background:var(--bg);border-radius:6px;
+  box-shadow:0 1px 2px rgba(0,0,0,.06),0 10px 40px rgba(0,0,0,.08)}
+.slide.on{display:grid}
+.txt{grid-column:2;display:flex;flex-direction:column;gap:2.2cqw}
+.txt h2{margin:0;font:600 3.5cqw/1.08 var(--sans);letter-spacing:-.035em;color:var(--ink);text-wrap:balance}
+.txt h2 .n{color:var(--acc)}
+.txt p{margin:0;font:400 1.45cqw/1.55 var(--sans);color:var(--body);max-width:34cqw;text-wrap:pretty}
+.vis{grid-column:4;min-width:0;background:var(--card);box-shadow:inset 0 0 0 1px var(--cardln);border-radius:10px;padding:2.4cqw 2.2cqw}
+.lb,.vis td,.vis th{font:400 .95cqw/1.35 var(--mono);letter-spacing:.01em;color:var(--ink)}
+.m{color:var(--mut)!important}.a{color:var(--acc)!important}.g{color:var(--good)!important}
+.box{background:var(--fill);border:1px solid var(--fl2);border-radius:4px}
+.tb{width:100%;border-collapse:collapse}
+.tb th{text-align:left;font-weight:400;color:var(--mut);padding:0 1.2cqw .9cqw 0;border-bottom:1px solid var(--line)}
+.tb td{padding:1.05cqw 1.2cqw 1.05cqw 0;border-bottom:1px solid var(--line);vertical-align:top}
+.tb tr:last-child td{border-bottom:0}
+.tb td:last-child,.tb th:last-child{padding-right:0}
+.tb td b{font-weight:500}
+
+/* 1 · floor load bars */
+.bars{display:flex;flex-direction:column;gap:1.6cqw}
+.bar{display:grid;grid-template-columns:11cqw 1fr;align-items:center;column-gap:1.2cqw}
+.bar .tr{height:3.2cqw;position:relative}
+.bar .f{position:absolute;inset:0 auto 0 0;background:var(--ink);border-radius:3px;display:flex;align-items:center;justify-content:flex-end;padding-right:.9cqw}
+.bar .f .lb{color:#FFFFFF}
+.bar.hi .f{background:var(--acc)}
+.bar .wt{position:absolute;left:0;top:-1.8cqw}
+
+/* 3 · pipeline steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);column-gap:.9cqw;position:relative}
+.steps::before{content:"";position:absolute;left:12.5%;right:12.5%;top:1.15cqw;height:1px;background:var(--line)}
+.st{display:flex;flex-direction:column;align-items:center;gap:1cqw;text-align:center}
+.st .d{width:2.3cqw;height:2.3cqw;border-radius:50%;background:var(--ink);color:#FFFFFF;display:grid;place-items:center;position:relative;z-index:1}
+.st .d .lb{color:#FFFFFF}
+.st.last .d{background:var(--acc)}
+.st .box{align-self:stretch;padding:1.2cqw .8cqw;display:flex;flex-direction:column;gap:.7cqw;min-height:11cqw}
+.st .num{font:600 2.2cqw/1 var(--sans);letter-spacing:-.03em;color:var(--ink)}
+.st.last .num{color:var(--acc)}
+.proof{margin-top:2cqw;display:grid;grid-template-columns:1fr 1fr;column-gap:.9cqw}
+.proof .box{padding:1.2cqw 1.2cqw;display:flex;flex-direction:column;gap:.8cqw}
+.proof .big{font:600 2.2cqw/1 var(--sans);letter-spacing:-.03em}
+
+/* 4 · status */
+.dot{display:inline-block;width:.8cqw;height:.8cqw;border-radius:50%;margin-right:.7cqw;vertical-align:.05cqw}
+.dot.ok{background:var(--good)}.dot.nx{background:transparent;box-shadow:inset 0 0 0 1.5px var(--acc)}
+
+/* 5 · split of work */
+.split{display:grid;grid-template-columns:1fr 1fr;column-gap:.9cqw}
+.mol{aspect-ratio:1/1;max-height:30cqw;margin:0 auto}.mol canvas{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+.tiles{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:.9cqw}.tiles .box{padding:1.3cqw 1.2cqw;display:flex;flex-direction:column;gap:.8cqw}.tiles .big{font:600 2.2cqw/1 var(--sans);letter-spacing:-.03em;color:var(--ink)}.tiles .big.a{color:var(--acc)}
+.bar2{display:grid;grid-template-columns:13cqw 1fr 5cqw;align-items:center;column-gap:1cqw;margin-bottom:1.1cqw}.bar2 .tr{height:2.4cqw;background:var(--fill);border:1px solid var(--fl2);border-radius:3px;position:relative}.bar2 .f{position:absolute;inset:0 auto 0 0;background:var(--ink);border-radius:2px}.bar2.hi .f{background:var(--acc)}
+.split .box{padding:1.4cqw 1.3cqw;display:flex;flex-direction:column;gap:1cqw}
+.split .hd{font:500 1.15cqw/1.2 var(--sans);color:var(--ink);padding-bottom:.9cqw;border-bottom:1px solid var(--line)}
+.terms{margin-top:.9cqw;display:grid;grid-template-columns:repeat(3,1fr);column-gap:.9cqw}
+.terms .box{padding:1.1cqw 1.2cqw;display:flex;flex-direction:column;gap:.6cqw}
+.terms .big{font:600 1.6cqw/1.1 var(--sans);letter-spacing:-.03em;color:var(--acc);white-space:nowrap}
+
+/* nav */
+.nav{position:fixed;right:20px;bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;z-index:5}
+.nav button{width:38px;height:38px;border-radius:8px;border:1px solid var(--navln);background:var(--navbg);color:var(--navtx);font:500 16px/1 var(--mono);cursor:pointer;display:grid;place-items:center}
+.nav button:focus-visible{outline:2px solid #2F6BFF;outline-offset:2px}
+.nav button:disabled{opacity:.35;cursor:default}
+.nav span{font:500 13px/1 var(--mono);color:var(--navtx);min-width:60px;text-align:center;font-variant-numeric:tabular-nums}
+@media (max-width:700px){
+  body{overflow:auto}.stage{position:static;display:block;padding:16px 16px 80px}
+  .slide{width:100%;aspect-ratio:auto;grid-template-columns:1fr;padding:22px 18px;gap:20px;margin-bottom:16px}
+  .slide,.slide.on{display:grid}.txt,.vis{grid-column:1}
+  .txt h2{font-size:26px}.txt p{font-size:15px;max-width:none}
+  .lb,.vis td,.vis th{font-size:11px}.st .num,.proof .big,.terms .big{font-size:20px}.split .hd{font-size:13px}
+  .bar{grid-template-columns:96px 1fr}.bar .tr{height:26px}.nav{display:none}
+}
+</style>
+<style id="v2css">
+.steps .st .box{flex:1}
+.tl{display:grid;grid-template-columns:repeat(6,1fr);position:relative;padding:1cqw 0 .5cqw}
+.tl::before{content:"";position:absolute;left:8.33%;right:8.33%;top:4.2cqw;height:2px;background:var(--line)}
+.tl .ms{display:flex;flex-direction:column;align-items:center;gap:1.6cqw;text-align:center;position:relative;z-index:1}
+.tl .c{width:8.4cqw;height:8.4cqw;border-radius:50%;background:var(--fill);border:2px solid var(--ink);display:grid;place-items:center;font:600 2.3cqw/1 var(--sans);letter-spacing:-.03em;color:var(--ink)}
+.tl .ms.done .c{background:var(--ink);color:#FFFFFF}
+.tl .ms.last .c{background:var(--acc);border-color:var(--acc);color:#FFFFFF}
+.tl .nm{font:500 1.35cqw/1.2 var(--sans);letter-spacing:-.01em;color:var(--ink);max-width:12cqw}
+.tl .ms.last .nm{color:var(--acc)}
+.tl .sb{font:400 .95cqw/1.3 var(--mono);color:var(--mut);white-space:nowrap}
+.slide.full .vis:has(.tl){background:transparent;box-shadow:none;border-radius:0;padding:0}
+.tl .ds{display:flex;flex-direction:column;gap:.5cqw;margin-top:-.4cqw}
+@media (max-width:700px){.tl{grid-template-columns:1fr 1fr 1fr;row-gap:22px}.tl::before{display:none}.tl .c{width:56px;height:56px;font-size:16px}.tl .nm{font-size:13px;max-width:none}.tl .sb{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="stage">
+<section class="slide on" aria-label="1"><div class="txt"><h2>Air holds 0.087 ppm xenon, so it costs up to $12,000/kg</h2><p>Xenon comes only as a by-product of large oxygen plants. Korea&#x27;s import price jumped 83% in early 2022; SpaceX moved Starlink thrusters to argon.</p></div><div class="vis"><div class="tiles"><div class="box"><span class="lb m">Xenon in air</span><span class="big">0.087 ppm</span><span class="lb m">by-product only</span></div><div class="box"><span class="lb m">Xenon price</span><span class="big">$5–12k/kg</span><span class="lb m">argon: $7–15/kg</span></div><div class="box"><span class="lb m">2022 price jump</span><span class="big">+83%</span><span class="lb m">Korea imports, 2 months</span></div></div></div></section>
+<section class="slide" aria-label="2"><div class="txt"><h2>We design a cage molecule that catches xenon from air-plant or fab gas</h2>
+  <p>Our AI agent designs and scores every candidate with quantum-accurate physics. The best 10 go to the lab.</p></div>
+  <div class="vis"><div class="steps"><div class="st"><div class="d"><span class="lb">1</span></div><div class="box"><span class="lb">AI design agent</span><span class="num">11,700+</span><span class="lb m">designs to date</span></div></div><div class="st"><div class="d"><span class="lb">2</span></div><div class="box"><span class="lb">Proprietary pipeline</span><span class="num">Quantum</span><span class="lb m">accuracy, GPU speed</span></div></div><div class="st"><div class="d"><span class="lb">3</span></div><div class="box"><span class="lb">Buyer scoring</span><span class="num">86</span><span class="lb m">vs 62, best sold</span></div></div><div class="st last"><div class="d"><span class="lb">4</span></div><div class="box"><span class="lb">Lab</span><span class="num">10</span><span class="lb m">3 test rounds</span></div></div></div><div class="mol" id="mol"><canvas aria-label="Xenon Catcher target"></canvas></div></div></section>
+<section class="slide full" aria-label="3"><div class="txt"><h2>Our best pick scores 67 of 100. The best sold today, beta-cyclodextrin, scores 64.</h2></div>
+  <div class="vis"><table class="tb cmp"><colgroup><col class="lab"><col class="ex"><col class="ex"><col class="ex"><col class="ex"><col class="ex"><col class="l2"><col class="l2 sel"><col class="l2"><col class="l2"></colgroup><tr><th></th><th class="ex"><b>Existing 1</b><span class="sb">β-cyclodextrin</span></th><th class="ex"><b>Existing 2</b><span class="sb">α-cyclodextrin</span></th><th class="ex"><b>Existing 3</b><span class="sb">Resorcinarene</span></th><th class="ex"><b>Existing 4</b><span class="sb">Calixarene</span></th><th class="ex"><b>Existing 5</b><span class="sb">Pillararene</span></th><th class="l2 div"><b>Level 3 · US-sourced</b><span class="sb">L3-16</span></th><th class="l2 sel"><b>Level 4 · US, low cost</b><span class="sb">L4-1</span></th><th class="l2"><b>Level 5 · drop-in</b><span class="sb">L5-21</span></th><th class="l2"><b>Level 5 · drop-in</b><span class="sb">L5-21</span></th></tr><tr><td><b>Picks xenon over krypton</b> <span class="m">×3</span></td><td class="ex">45</td><td class="ex">10</td><td class="ex">50</td><td class="ex">0</td><td class="ex">0</td><td class="l2 div g">100</td><td class="l2 sel g">100</td><td class="l2">61</td><td class="l2">61</td></tr><tr><td><b>Ignores oxygen</b> <span class="m">×1</span></td><td class="ex">50</td><td class="ex m">—</td><td class="ex">0</td><td class="ex">0</td><td class="ex">0</td><td class="l2 div g">100</td><td class="l2 sel g">100</td><td class="l2">56</td><td class="l2">56</td></tr><tr><td><b>Catches xenon</b> <span class="m">×2</span></td><td class="ex">49</td><td class="ex">50</td><td class="ex">2</td><td class="ex">0</td><td class="ex">0</td><td class="l2 div g">100</td><td class="l2 sel g">100</td><td class="l2">69</td><td class="l2">69</td></tr><tr><td><b>Low energy to release</b> <span class="m">×2</span></td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="l2 div">53</td><td class="l2 sel">72</td><td class="l2 g">100</td><td class="l2 g">100</td></tr><tr><td><b>Doesn’t evaporate</b> <span class="m">×1</span></td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="l2 div g">100</td><td class="l2 sel g">100</td><td class="l2 g">100</td><td class="l2 g">100</td></tr><tr><td><b>Cost per liter of xenon</b> <span class="m">×1</span></td><td class="ex g">50<span class="pr">$1.19/kg</span></td><td class="ex">44<span class="pr">~$2.50/kg</span></td><td class="ex">47<span class="pr">$3.22/kg</span></td><td class="ex">49<span class="pr">$3.36/kg</span></td><td class="ex">43<span class="pr">$3.40/kg</span></td><td class="l2 div">42<span class="pr">~$2.89/kg</span></td><td class="l2 sel">42<span class="pr">~$2.91/kg</span></td><td class="l2">46<span class="pr">$3.60/kg</span></td><td class="l2">46<span class="pr">$3.60/kg</span></td></tr><tr><td><b>US supply</b> <span class="m">×1</span></td><td class="ex g">100</td><td class="ex m">—</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex">5</td><td class="l2 div m">—</td><td class="l2 sel m">—</td><td class="l2 m">—</td><td class="l2 m">—</td></tr><tr><td><b>Drops into today’s setup</b> <span class="m">×2</span></td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="ex g">100</td><td class="l2 div">29</td><td class="l2 sel">29</td><td class="l2">42</td><td class="l2">42</td></tr><tr><td><b>Equipment cost</b> <span class="m">×1</span></td><td class="ex">50</td><td class="ex">50</td><td class="ex">50</td><td class="ex">50</td><td class="ex">50</td><td class="l2 div g">55</td><td class="l2 sel g">55</td><td class="l2 g">55</td><td class="l2 g">55</td></tr><tr><td><b>Easy to ship and store</b> <span class="m">×1</span></td><td class="ex g">50</td><td class="ex g">50</td><td class="ex g">50</td><td class="ex g">50</td><td class="ex g">50</td><td class="l2 div">20</td><td class="l2 sel">35</td><td class="l2 g">50</td><td class="l2 g">50</td></tr><tr class="ov"><td><b>Overall</b></td><td class="ex">64</td><td class="ex">45</td><td class="ex">33</td><td class="ex">14</td><td class="ex">11</td><td class="l2 div">61</td><td class="l2 sel g">67</td><td class="l2">62</td><td class="l2">62</td></tr></table></div><p class="note">Prices at scale: ours and today’s both costed as if made in large volume from bulk raw materials.</p></section>
+<section class="slide" aria-label="4"><div class="txt"><h2>Xenon gas: a $286M market in 2025</h2></div><div class="vis"><div class="tiles"><div class="box"><span class="lb m">Market 2025</span><span class="big">$286M</span><span class="lb m">N. America 35%+</span></div><div class="box"><span class="lb m">Our share a year</span><span class="big">$2–8M</span><span class="lb m">sorbent, capture units</span></div><div class="box"><span class="lb m">First buyers</span><span class="big">Gas firms, fabs</span><span class="lb m">Linde, Air Products</span></div></div></div></section>
+<section class="slide" aria-label="5"><div class="txt"><h2>Only possible now: 2025 physics AI, run by our design agent</h2><p>Physics AI became quantum-accurate in 2025. Our agent turns it into lab-ready designs.</p></div><div class="vis"><div class="tiles"><div class="box"><span class="lb m">Quantum training data</span><span class="big">100M+</span><span class="lb m">calculations, 2025</span></div><div class="box"><span class="lb m">Speed</span><span class="big">10,000×</span><span class="lb m">vs classic quantum methods</span></div><div class="box"><span class="lb m">Our design agent</span><span class="big a">22 problems</span><span class="lb m">designed in 4 days</span></div></div></div></section>
+<section class="slide" aria-label="6"><div class="txt"><h2>Raising <span class="n">$610k</span> for 12 months</h2><p>Fully funds 3 rounds of lab testing. Team at $150k per person.</p></div><div class="vis"><div class="bar2"><span class="lb">Team (2 × $150k)</span><div class="tr"><div class="f" style="width:100%"></div></div><span class="lb">$300k</span></div><div class="bar2"><span class="lb">Lab testing</span><div class="tr"><div class="f" style="width:40%"></div></div><span class="lb">$120k</span></div><div class="bar2"><span class="lb">Column pilot</span><div class="tr"><div class="f" style="width:33%"></div></div><span class="lb">$100k</span></div><div class="bar2"><span class="lb">Reserve</span><div class="tr"><div class="f" style="width:20%"></div></div><span class="lb">$60k</span></div><div class="bar2"><span class="lb">Compute</span><div class="tr"><div class="f" style="width:10%"></div></div><span class="lb">$30k</span></div></div></section>
+<section class="slide full" aria-label="7"><div class="txt"><h2>From designs to first sales in <span class="n">10 months</span></h2></div><div class="vis"><div class="tl"><div class="ms done"><div class="c">0m</div><span class="nm">Designs ready</span><div class="ds"><span class="sb">Beats β-cyclodextrin</span><span class="sb">Score 86 vs 62</span><span class="sb">US-sourced, low cost</span></div></div><div class="ms "><div class="c">1m</div><span class="nm">Seed closed</span><div class="ds"><span class="sb">$610k raised</span><span class="sb">Team of 2</span><span class="sb">Lab partner signed</span></div></div><div class="ms "><div class="c">4m</div><span class="nm">Lab-proven</span><div class="ds"><span class="sb">3 test rounds</span><span class="sb">Top 10 made</span><span class="sb">Patent filed</span></div></div><div class="ms "><div class="c">7m</div><span class="nm">Column pilot</span><div class="ds"><span class="sb">Dilute Xe/Kr gas</span><span class="sb">Packed-column capture</span></div></div><div class="ms "><div class="c">10m</div><span class="nm">First sales</span><div class="ds"><span class="sb">Paid pilot order</span><span class="sb">Gas-firm partner</span></div></div><div class="ms last"><div class="c">12m</div><span class="nm">Series A</span><div class="ds"><span class="sb">$8M raise</span><span class="sb">Capture-unit supply</span></div></div></div></div></section>
+</div>
+<nav class="nav" aria-label="Pages"><button id="prev" aria-label="Previous page">&larr;</button><span id="pg">1 / 7</span><button id="next" aria-label="Next page">&rarr;</button></nav>
+<style>.nav .back{font:500 13px/1 var(--mono);color:var(--navtx);text-decoration:none;margin-right:8px}.nav .back:hover{text-decoration:underline}.tiles{grid-template-columns:1fr;row-gap:.9cqw}.tiles .box{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;align-items:baseline;column-gap:1.5cqw;row-gap:.4cqw;min-height:0}.tiles .box>.lb:first-child{grid-column:1;grid-row:1}.tiles .big{grid-column:2;grid-row:1/3;white-space:nowrap;align-self:center}.tiles .box>.lb:last-child{grid-column:1;grid-row:2}</style>
+<script>
+const S=[...document.querySelectorAll('.slide')];let cur=0;
+function go(n){cur=Math.max(0,Math.min(S.length-1,n));S.forEach((s,i)=>s.classList.toggle('on',i===cur));
+  document.getElementById('pg').textContent=`${cur+1} / ${S.length}`;prev.disabled=cur===0;next.disabled=cur===S.length-1;if(cur===1)draw();}
+prev.onclick=()=>go(cur-1);next.onclick=()=>go(cur+1);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1);});
+// the target molecule; drag to rotate
+const M={"els":["Xe"],"X":[[0.0,0.0,0.0]],"bonds":[]}, COL={Nd:'#7A3FFF',Au:'#FFC400',Cs:'#7A3FFF',Xe:'#0057FF',C:'#1A1A1A',O:'#E10600',N:'#0057FF',F:'#00A651',S:'#FFC400',P:'#FF7A00',Si:'#FF7A00',B:'#FF7A00',Se:'#FFC400',Cl:'#00A651'}, RAD={Nd:.95,Au:.8,Cs:1.1,Xe:1.3,C:.5,O:.48,N:.48,F:.45,S:.6,P:.6,Si:.6,B:.5,Se:.65,Cl:.6,H:.3};
+const cv=document.querySelector('#mol canvas'),ctx=cv.getContext('2d'),st={th:.6,ph:-.5,drag:null};
+let R=0;M.X.forEach(p=>R=Math.max(R,Math.hypot(...p)));
+function tone(c,t){const x=[1,3,5].map(i=>parseInt(c.slice(i,i+2),16)),y=t>0?[255,255,255]:[5,8,11],k=Math.abs(t);return`rgb(${x.map((v,i)=>Math.round(v+(y[i]-v)*k)).join(',')})`;}
+function draw(){const d=devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;if(!W)return;if(cv.width!==Math.round(W*d)){cv.width=Math.round(W*d);cv.height=Math.round(H*d);}
+  ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,W,H);const sc=Math.min(W,H)/(2*R+2)*.95,ct=Math.cos(st.th),sn=Math.sin(st.th),cp=Math.cos(st.ph),sp=Math.sin(st.ph);
+  const P=M.X.map(([x,y,z])=>{const x1=x*ct+z*sn,z1=-x*sn+z*ct;return[W/2+x1*sc,H/2-(y*cp-z1*sp)*sc,y*sp+z1*cp];});
+  const it=M.bonds.map(b=>({z:(P[b[0]][2]+P[b[1]][2])/2-.3,b})).concat(M.els.map((e,i)=>({z:P[i][2],i})));it.sort((a,b)=>a.z-b.z);
+  for(const o of it){if(o.b){const[a,b]=o.b;ctx.strokeStyle='#3A3F4A';ctx.lineWidth=Math.max(1,sc*.13);ctx.lineCap='round';ctx.beginPath();ctx.moveTo(P[a][0],P[a][1]);ctx.lineTo(P[b][0],P[b][1]);ctx.stroke();continue;}
+    const e=M.els[o.i],[x,y,z]=P[o.i],r=(RAD[e]||.5)*sc*1.1,c=COL[e]||'#1A1A1A',dep=(z/R+1)/2;
+    const g=ctx.createRadialGradient(x-r*.35,y-r*.35,r*.1,x,y,r);g.addColorStop(0,tone(c,.45));g.addColorStop(.55,tone(c,-(1-dep)*.15));g.addColorStop(1,tone(c,-.4));
+    ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fill();}}
+cv.addEventListener('pointerdown',e=>{st.drag=[e.clientX,e.clientY];cv.setPointerCapture(e.pointerId);});
+cv.addEventListener('pointermove',e=>{if(!st.drag)return;st.th+=(e.clientX-st.drag[0])*.01;st.ph=Math.max(-1.5,Math.min(1.5,st.ph+(e.clientY-st.drag[1])*.01));st.drag=[e.clientX,e.clientY];draw();});
+cv.addEventListener('pointerup',()=>st.drag=null);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;let last=performance.now();
+(function loop(t){if(cur===1&&!st.drag&&!reduce){st.th+=(t-last)*.0004;draw();}last=t;requestAnimationFrame(loop);})(last);
+addEventListener('resize',draw);go(0);
+</script>
+<nav class="alldecks" style="position:fixed;left:20px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:6;display:flex;gap:4px;font:500 12px/1 'Geist Mono',ui-monospace,monospace;background:#fff;border:1px solid #DDE1E7;border-radius:8px;padding:4px"><a href="/decks/" style="color:#3A3F4A;text-decoration:none;padding:8px 10px;border-radius:5px">Decks</a><a href="/decks/opportunities/" style="color:#3A3F4A;text-decoration:none;padding:8px 10px;border-radius:5px">Spinoffs</a><a href="/decks/progress/" style="color:#3A3F4A;text-decoration:none;padding:8px 10px;border-radius:5px">Progress</a></nav>
+<style id="railcss">@media (min-width:701px){
+.stage{padding:16px 160px 16px 16px!important}
+.slide{width:min(100%,calc((100vh - 32px)*16/9))!important}
+.nav,.alldecks{position:fixed!important;right:16px!important;left:auto!important;width:120px!important;box-sizing:border-box!important;display:flex!important;gap:4px!important;background:#fff!important;border:1px solid #DDE1E7!important;border-radius:8px!important;padding:4px!important;transform:none!important;z-index:6}
+.nav{flex-direction:row!important;align-items:center!important;top:calc(50% + 4px)!important;bottom:auto!important}
+.nav button{width:30px!important;height:30px!important;flex:none;border:0!important;background:#F3F4F6!important;border-radius:5px!important}
+.nav span{flex:1;min-width:0!important;font-size:12px!important;text-align:center;padding:0!important}
+.alldecks{flex-direction:column!important;align-items:stretch!important;bottom:calc(50% + 4px)!important;top:auto!important}
+.alldecks a{text-align:center;padding:8px 2px!important}
+}</style><script id="sharejs">(()=>{const n=document.querySelector('.alldecks');if(!n||location.pathname.startsWith('/share/'))return;const b=document.createElement('a');b.href='#';b.textContent='Share';b.style.cssText='color:#3A3F4A;text-decoration:none;padding:8px 2px;border-radius:5px;text-align:center;font:inherit';
+b.onclick=async e=>{e.preventDefault();const deck=location.pathname.replace(/^\/decks\//,'').replace(/\/(index\.html|deck\.html)?$/,'').replace(/\/$/,'');b.textContent='…';
+try{const r=await fetch('/decks/_share',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({deck})});const j=await r.json();if(!j.ok)throw 0;
+try{await navigator.clipboard.writeText(j.url);b.textContent='Link copied'}catch(_){prompt('Share link',j.url);b.textContent='Share'}}catch(_){b.textContent='Share failed'}setTimeout(()=>b.textContent='Share',2500)};
+n.insertBefore(b,n.firstChild)})();</script><style id="cmpcss">
+@media (min-width:701px){
+.slide.full{grid-template-columns:6% 88% 6%;grid-template-rows:auto auto;align-content:center;row-gap:2cqw}
+.slide.full .txt{grid-column:2;grid-row:1}
+.slide.full .vis{grid-column:2;grid-row:2}}
+.cmp{table-layout:fixed}
+.slide.full .vis:has(.cmp){padding:0 0 0 1.4cqw;overflow:hidden}
+.cmp tr:first-child th{padding-top:1.2cqw!important}
+.cmp tr:last-child td{padding-bottom:1.2cqw!important}
+.cmp col.lab{width:24%}
+.cmp col.l1,.cmp col.l2{background:rgba(47,107,255,.06)}
+
+.cmp th,.cmp td{padding-left:.8cqw!important;padding-right:.8cqw!important}
+.cmp td{padding-top:.4cqw!important;padding-bottom:.4cqw!important}   /* 12+ buyer and adoption rows must fit the slide */
+.cmp th{vertical-align:bottom;font-weight:400}
+.cmp th b{font-weight:500;display:block;font-size:.85cqw;color:var(--mut)}
+.cmp th .sb{display:block;margin-top:.3cqw;color:var(--ink);overflow-wrap:break-word}
+.cmp th.l1 b,.cmp th.l2 b{color:#2F6BFF}
+.cmp .div{border-left:1.5px solid #9AA6BC}
+.cmp td .pr{display:block;font-size:.8cqw;color:var(--mut);margin-top:.15cqw}
+.slide.full .note{grid-column:2;grid-row:3;margin:0;font:400 .95cqw/1.4 var(--mono);color:var(--mut)}
+@media (min-width:701px){.slide.full{grid-template-rows:auto auto auto}}
+</style>
+<style id="unirail">
+.u-rail{position:fixed;right:16px;top:50%;transform:translateY(-50%);width:128px;display:flex;flex-direction:column;gap:8px;z-index:20;font:500 12px/1 'Geist Mono',ui-monospace,monospace}
+.u-box{background:#fff;border:1px solid #DDE1E7;border-radius:8px;padding:4px;display:flex;flex-direction:column;gap:4px;box-sizing:border-box}
+.u-set{display:grid;grid-template-columns:repeat(2,1fr);gap:4px}.u-set .u-th{grid-column:1/-1}
+.u-set button{height:28px;display:grid;place-items:center;border:0;border-radius:5px;background:#F3F4F6;color:#3A3F4A;font:inherit;cursor:pointer}
+.u-set button.on{background:#181818;color:#fff}.u-set button:focus-visible,.u-links a:focus-visible{outline:2px solid #2E6BE6}.u-set button:disabled{opacity:.35;cursor:default}
+.u-links a,.u-links button{color:#3A3F4A;text-decoration:none;text-align:center;padding:8px 2px;border-radius:5px;border:0;background:none;font:inherit;cursor:pointer}.u-links a:hover,.u-links button:hover{background:#F3F4F6}
+.u-rail .nav{position:static!important;transform:none!important;width:auto!important;display:flex!important;flex-direction:row!important;align-items:center!important;gap:4px!important;background:#fff!important;border:1px solid #DDE1E7!important;border-radius:8px!important;padding:4px!important;margin:0!important;box-shadow:none!important}
+.u-rail .nav button{width:30px!important;height:30px!important;flex:none;border:0!important;background:#F3F4F6!important;border-radius:5px!important;color:#3A3F4A!important;cursor:pointer}
+.u-rail .nav span{flex:1;min-width:0!important;font-size:12px!important;text-align:center;padding:0!important;color:#3A3F4A!important}
+body > nav.alldecks,body > a.alldecks,body > .thm{display:none!important}
+@media screen and (min-width:701px){.stage{padding:16px 160px 16px 16px!important}.slide{width:min(100%,calc((100vh - 32px)*16/9))!important}}
+@media (max-width:700px){.u-rail{top:auto;bottom:12px;transform:none;width:auto;flex-direction:row}.u-set,.u-links{display:none}}
+html[data-theme=dark] .u-box,html[data-theme=dark] .u-rail .nav{background:#1E2127!important;border-color:#2C3038!important}
+html[data-theme=dark] .u-set button,html[data-theme=dark] .u-rail .nav button{background:#2A2D33!important;color:#D5D9E0!important}
+html[data-theme=dark] .u-set button.on{background:#ECEDEE!important;color:#16171A!important}html[data-theme=dark] .u-links a,html[data-theme=dark] .u-links button,html[data-theme=dark] .u-rail .nav span{color:#D5D9E0!important}
+html.fb .u-rail{display:none!important}html.fb .stage{padding:0!important}html.fb .slide{width:min(100vw,calc(100vh*16/9))!important;border-radius:0!important;box-shadow:none!important}
+@media print{.u-rail,#u-x{display:none!important}}
+#u-x{display:none;position:fixed;right:12px;top:12px;z-index:30;width:34px;height:34px;border-radius:8px;border:1px solid #DDE1E7;background:rgba(255,255,255,.9);color:#3A3F4A;cursor:pointer}html.fb #u-x{display:block}
+</style><script id="unirailjs">(()=>{if(document.querySelector('.u-rail'))return;const H=document.documentElement,q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
+const shared=location.pathname.startsWith('/share/');   // shared copies carry no links (Koosh 2026-10-21)
+const old=q('nav.alldecks'),links=shared?[]:old?[...old.querySelectorAll('a')].filter(a=>{const h=a.getAttribute('href')||'';return h&&h!=='#'}).map(a=>[a.getAttribute('href'),a.textContent.trim()]):[['/decks/','Decks'],['/decks/opportunities/','Spinoffs'],['/decks/progress/','Progress']];
+const R=document.createElement('div');R.className='u-rail';
+R.innerHTML='<div class="u-box u-set"></div><nav class="u-box u-links" aria-label="Links">'+links.map(([h,t])=>`<a href="${h}">${t}</a>`).join('')+(shared?'':'<button type="button" class="u-sh">Share</button>')+'</nav>';
+const set=R.querySelector('.u-set'),th=q('#thm'),sty=qa('.thm .sty');
+if(th){th.className='u-th';set.appendChild(th)}else set.insertAdjacentHTML('beforeend','<button class="u-th" disabled aria-label="Dark or light">◐</button>');
+const modes=qa('.nav .modes button').slice(0,2);qa('.nav .modes button').slice(2).forEach(b=>b.remove());if(sty.length)sty.slice(0,2).forEach(b=>set.appendChild(b));else if(modes.length){modes.forEach(b=>set.appendChild(b));qa('.nav .modes').forEach(e=>e.remove())}else set.insertAdjacentHTML('beforeend','<button class="on" disabled>1</button><button disabled>2</button>');
+const IC=['<svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><rect x="1.0" y="1.0" width="14" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>','<svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><rect x="4.0" y="3.0" width="8" height="6" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>'],NM=['Large','Small'];[...set.querySelectorAll('button:not(.u-th)')].slice(0,2).forEach((b,i)=>{b.innerHTML=IC[i];b.setAttribute('aria-label',NM[i]);b.title=NM[i]});qa('body > nav.alldecks, body > .thm, #fbx, #fsb').forEach(e=>e.remove());qa('body > a').forEach(a=>{if(/all decks/i.test(a.textContent))a.remove()});
+document.body.appendChild(R);const pager=q('nav.nav');if(pager)R.appendChild(pager);
+const x=document.createElement('button');x.id='u-x';x.textContent='✕';x.setAttribute('aria-label','Exit full screen');document.body.appendChild(x);
+const fs=v=>{H.classList.toggle('fb',v);try{localStorage.setItem('97a-fb','0')}catch(e){}};x.onclick=()=>fs(false);addEventListener('keydown',e=>{if(e.key==='Escape')fs(false)});
+const sh=R.querySelector('.u-sh');if(sh)sh.onclick=async()=>{const deck=location.pathname.replace(/^\/decks\//,'').replace(/\/(index\.html|deck\.html)?$/,'').replace(/\/$/,'');sh.textContent='…';
+ try{const r=await fetch('/decks/_share',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({deck})});const j=await r.json();if(!j.ok)throw 0;
+ try{await navigator.clipboard.writeText(j.url);sh.textContent='Link copied'}catch(_){prompt('Share link',j.url);sh.textContent='Share'}}catch(_){sh.textContent='Share failed'}setTimeout(()=>sh.textContent='Share',2500)};})();</script></body>
+</html>

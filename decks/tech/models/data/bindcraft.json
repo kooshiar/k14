@@ -1,0 +1,66 @@
+{
+ "slug": "bindcraft",
+ "name": "BindCraft",
+ "what": "Designs de novo binders against a target",
+ "input": {
+  "label": "Target PDB + hotspots",
+  "size": "needs ≥ 32 GB GPU"
+ },
+ "blocks": [
+  {
+   "name": "AF2 hallucination",
+   "dims": "48 × 256 / 128"
+  },
+  {
+   "name": "AF2 structure",
+   "dims": "8 × 384"
+  },
+  {
+   "name": "MPNN redesign",
+   "dims": "3 + 3 × 128"
+  }
+ ],
+ "params": "No new weights · reuses AF2",
+ "loop": "× 140 optimization steps",
+ "output": {
+  "label": "Binder sequence + complex",
+  "size": "20 sequences per run"
+ },
+ "who": {
+  "org": "EPFL · Correia lab",
+  "year": "2025",
+  "versions": "Preprint 2024 → Nature 2025",
+  "license": "Open · MIT, PyRosetta licence"
+ },
+ "ideas": [
+  "Inference only, no training",
+  "Backprop through AF2",
+  "Loss on pLDDT, PAE, i_pTM",
+  "MPNNsol keeps interface",
+  "Nine filters before ordering"
+ ],
+ "train": {
+  "hardware": "n/a",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "n/a",
+  "data": "None · pretrained AF2 weights",
+  "epochs": "n/a"
+ },
+ "results": [
+  "Lab success 46.3% mean, 10–100%",
+  "Affinities below 1 nM"
+ ],
+ "speed": "300–3,000 runs per 100 designs",
+ "limit": "GPU-heavy; i_pTM misses affinity",
+ "sources": [
+  "https://www.nature.com/articles/s41586-025-09429-6",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC12507698/",
+  "https://www.biorxiv.org/content/10.1101/2024.09.30.615802",
+  "https://github.com/martinpacesa/BindCraft",
+  "https://github.com/martinpacesa/BindCraft/blob/main/settings_advanced/default_4stage_multimer.json",
+  "https://www.nature.com/articles/s41586-021-03819-2"
+ ],
+ "ready": true,
+ "type": "AF2 + MPNN pipeline"
+}

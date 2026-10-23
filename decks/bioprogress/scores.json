@@ -1,0 +1,92 @@
+{
+ "pdscav": {
+  "ours": 80,
+  "ours_name": "L2-52",
+  "theirs": 22,
+  "theirs_name": "thiourea resin",
+  "l1": 56,
+  "l2": 80,
+  "l3": 76,
+  "l4": 56
+ },
+ "nitrite": {
+  "ours": 71,
+  "ours_name": "Design A",
+  "theirs": 62,
+  "theirs_name": "glycine",
+  "l1": 71,
+  "l2": 62,
+  "l3": 17,
+  "l4": null
+ },
+ "ironmedia": {
+  "ours": 67,
+  "ours_name": "L3-21",
+  "theirs": 62,
+  "theirs_name": "8-hydroxyquinoline",
+  "l1": 38,
+  "l2": 40,
+  "l3": 67,
+  "l4": 54
+ },
+ "cryo": {
+  "ours": 40,
+  "ours_name": "L2-40",
+  "theirs": 62,
+  "theirs_name": "proline",
+  "l1": 37,
+  "l2": 40,
+  "l3": null,
+  "l4": 28
+ },
+ "tfaswap": {
+  "ours": 69,
+  "ours_name": "Design B",
+  "theirs": 39,
+  "theirs_name": "tren tris(phenylurea)",
+  "l1": 69,
+  "l2": 49,
+  "l3": 49,
+  "l4": 48
+ },
+ "chiral": {
+  "ours": 77,
+  "ours_name": "L3-32",
+  "theirs": 33,
+  "theirs_name": "18-crown-6 tetracarboxylic acid",
+  "l1": 38,
+  "l2": 42,
+  "l3": 77,
+  "l4": 42
+ },
+ "vaxstab": {
+  "ours": 63,
+  "ours_name": "L2-13",
+  "theirs": 69,
+  "theirs_name": "glycine",
+  "l1": 36,
+  "l2": 63,
+  "l3": null,
+  "l4": 27
+ },
+ "abcap": {
+  "ours": 73,
+  "ours_name": "L2-60",
+  "theirs": 24,
+  "theirs_name": "MBI (mercaptobenzimidazole sulfonate)",
+  "l1": 44,
+  "l2": 73,
+  "l3": 70,
+  "l4": 36
+ },
+ "endotox": {
+  "ours": 86,
+  "ours_name": "Design A",
+  "theirs": 26,
+  "theirs_name": "protamine fragment (Arg dipeptide)",
+  "l1": 86,
+  "l2": 53,
+  "l3": 26,
+  "l4": 25
+ }
+}

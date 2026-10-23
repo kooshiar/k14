@@ -1,0 +1,211 @@
+{
+ "title": null,
+ "rows": [
+  "Picks Nd over La",
+  "Picks Nd over Ce",
+  "Catches Nd",
+  "Strips with mild acid",
+  "Stays in the oil phase",
+  "Safe to handle",
+  "Cost per tonne of oxide",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  3,
+  1,
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "TODGA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    0,
+    100,
+    100,
+    100,
+    38,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 27,
+   "price": 3.35
+  },
+  {
+   "label": "EDTA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    50,
+    100,
+    0,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 20,
+   "price": 2.21
+  },
+  {
+   "label": "P507 (HEHEHP)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    100,
+    49,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 2.3
+  },
+  {
+   "label": "D2EHPA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    100,
+    48,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 2.39
+  },
+  {
+   "label": "Cyanex 272",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 2.23
+  },
+  {
+   "label": "L2-32",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    null,
+    0,
+    100,
+    100,
+    100,
+    43,
+    null,
+    29,
+    55,
+    45
+   ],
+   "overall": 51,
+   "price": 2.81
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    null,
+    100,
+    0,
+    92,
+    100,
+    43,
+    null,
+    29,
+    55,
+    45
+   ],
+   "overall": 37,
+   "price": 2.85
+  },
+  {
+   "label": "L5-3",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    null,
+    0,
+    100,
+    100,
+    100,
+    50,
+    null,
+    48,
+    55,
+    45
+   ],
+   "overall": 55,
+   "price": 2.23
+  },
+  {
+   "label": "L5-3",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    null,
+    0,
+    100,
+    100,
+    100,
+    50,
+    null,
+    48,
+    55,
+    45
+   ],
+   "overall": 55,
+   "price": 2.23
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "title": null,
+ "rows": [
+  "Protects the copper loop",
+  "Dissolves in the coolant",
+  "Safe to handle",
+  "Cost per loop fill",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Mercaptobenzothiazole",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    1,
+    100,
+    47,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 34,
+   "price": 2.15
+  },
+  {
+   "label": "Benzotriazole",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    68,
+    100,
+    50,
+    27,
+    100,
+    50,
+    50
+   ],
+   "overall": 26,
+   "price": 2.2
+  },
+  {
+   "label": "Tolyltriazole",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    58,
+    100,
+    49,
+    24,
+    100,
+    50,
+    50
+   ],
+   "overall": 25,
+   "price": 2.25
+  },
+  {
+   "label": "Glutamate(2-)",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    51,
+    null,
+    50,
+    50,
+    50
+   ],
+   "overall": 73,
+   "price": 1.68
+  },
+  {
+   "label": "L2-6",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    64,
+    65,
+    30,
+    100,
+    57,
+    50,
+    35
+   ],
+   "overall": 61,
+   "price": 5.16
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    39,
+    65,
+    41,
+    null,
+    59,
+    50,
+    35
+   ],
+   "overall": 57,
+   "price": 2.34
+  },
+  {
+   "label": "L5-37",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    18,
+    100,
+    45,
+    null,
+    72,
+    50,
+    50
+   ],
+   "overall": 58,
+   "price": 2.18
+  }
+ ]
+}

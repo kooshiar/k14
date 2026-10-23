@@ -1,0 +1,200 @@
+{
+ "title": null,
+ "rows": [
+  "Picks xenon over krypton",
+  "Ignores oxygen",
+  "Catches xenon",
+  "Low energy to release",
+  "Doesn\u2019t evaporate",
+  "Cost per liter of xenon",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  1,
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    45,
+    50,
+    49,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 64,
+   "price": 1.19
+  },
+  {
+   "label": "Alpha-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    10,
+    null,
+    50,
+    100,
+    100,
+    44,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 45,
+   "price": 2.5
+  },
+  {
+   "label": "Resorcin[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    2,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 33,
+   "price": 3.22
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 3.36
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 11,
+   "price": 3.4
+  },
+  {
+   "label": "L3-16",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    53,
+    100,
+    42,
+    null,
+    29,
+    55,
+    20
+   ],
+   "overall": 61,
+   "price": 2.89
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    72,
+    100,
+    42,
+    null,
+    29,
+    55,
+    35
+   ],
+   "overall": 67,
+   "price": 2.91
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    61,
+    56,
+    69,
+    100,
+    100,
+    46,
+    null,
+    42,
+    55,
+    50
+   ],
+   "overall": 62,
+   "price": 3.6
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    61,
+    56,
+    69,
+    100,
+    100,
+    46,
+    null,
+    42,
+    55,
+    50
+   ],
+   "overall": 62,
+   "price": 3.6
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+{
+ "formaldehyde": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 45,
+  "why": "Added at glue blending like urea; specialty chemical costlier to stock than urea",
+  "source": "https://patents.google.com/patent/US10059028"
+ },
+ "cement": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 45,
+  "why": "Same mill dosing pump as TEA/DEIPA; shelf stability unproven",
+  "source": "https://hrcak.srce.hr/en/295292"
+ },
+ "rebar": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 55,
+  "why": "Batch-plant liquid dispenser; likely lower dose than 15 L/m3 nitrite",
+  "source": "https://usa.sika.com/dam/dms/us01/m/sika_cni.pdf"
+ },
+ "boron": {
+  "dropin": 50,
+  "capex": 50,
+  "logistics": 50,
+  "why": "IX columns after SWRO like NMG resin; replaces 2nd RO pass; regen differs",
+  "source": "https://patents.justia.com/patent/7811457"
+ },
+ "dioxane": {
+  "dropin": 50,
+  "capex": 55,
+  "logistics": 45,
+  "why": "Lead-lag media vessels vs UV/peroxide AOP; more media changeouts",
+  "source": "https://clu-in.org/contaminantfocus/default.focus/sec/1,4-dioxane/cat/Treatment_Technologies/"
+ },
+ "siloxane": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Media swap in existing dual adsorber vessels",
+  "source": "https://www.parker.com/content/dam/Parker-com/Literature/Hiross-Zander-Division/PDF-Files/Brochures/BROFOCLEANENERGY-00-EN.pdf"
+ },
+ "mousy": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Standard tank fining, rack, filter; same steps as PVPP/carbon",
+  "source": "https://www.winewithseth.com/winewiki/mousiness-wine-fault/"
+ },
+ "smoke": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Same fining step as activated carbon; no RO unit needed",
+  "source": "https://www.awri.com.au/treating-smoke-affected-wine-with-activated-carbon"
+ },
+ "cork": {
+  "dropin": 50,
+  "capex": 55,
+  "logistics": 50,
+  "why": "Fining in tank instead of PE contact/filtration step",
+  "source": "https://wikipedia.com/wiki/Cork_taint"
+ },
+ "selenate": {
+  "dropin": 0,
+  "capex": 55,
+  "logistics": 45,
+  "why": "Sorbent columns replace bioreactor; spent Se media or brine to manage",
+  "source": "https://www.ge.com/news/press-releases/ge-introduces-modular-abmet\u00ae-system-help-us-coal-mines-utilities-reduce-selenium"
+ },
+ "tfa": {
+  "dropin": 50,
+  "capex": 70,
+  "logistics": 55,
+  "why": "GAC/IX-style contactors vs RO plant plus brine disposal",
+  "source": "https://tzw.de/en/projects/project-details/detail/tfa-limit-consequences"
+ },
+ "lithium": {
+  "dropin": 50,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Same DLE columns as Al-LDH; elution chemistry may differ",
+  "source": "https://centenario.virtual.eramet.com/en/visit/the-plant/high-yield-lithium-extraction/full"
+ },
+ "co2": {
+  "dropin": 0,
+  "capex": 40,
+  "logistics": 55,
+  "why": "TSA bed/fluidized contactor replaces absorber-stripper; no liquid amine handling",
+  "source": "https://www.osti.gov/biblio/1030555"
+ },
+ "ethylene": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 55,
+  "why": "Sachet in carton like KMnO4; avoids oxidizer handling",
+  "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10870304/"
+ },
+ "rareearth": {
+  "dropin": 50,
+  "capex": 55,
+  "logistics": 45,
+  "why": "Same mixer-settlers; new pH/strip conditions; fewer stages if selective",
+  "source": "https://www.ameslab.gov/cmi/research-highlights/nearest-neutral-ligand-based-ree-separation-technology-scaling-neutral"
+ },
+ "plastic": {
+  "dropin": 0,
+  "capex": 30,
+  "logistics": 40,
+  "why": "High-pressure H2 hydrocracker vs simple pyrolysis reactor; needs H2 supply",
+  "source": "https://mure.kaust.edu.sa/research/processes/HPC/continuous-lumped-hydrocracking-kinetics-of-plastic-(polyethylene)-pyrolysis-oil-blended-with-gas-oil"
+ },
+ "gold": {
+  "dropin": 50,
+  "capex": 55,
+  "logistics": 50,
+  "why": "Replaces DBC SX/scrub circuit on chloride leach; tanks and filters",
+  "source": "https://onemine.org/documents/the-extraction-of-gold-copper-silver-bismuth-and-selenium-by-dibutyl-carbitol"
+ },
+ "tmah": {
+  "dropin": 50,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Fits existing resin towers; elution/regeneration steps may change",
+  "source": "https://esg.tsmc.com/en-US/articles/172"
+ },
+ "cesium": {
+  "dropin": 50,
+  "capex": 50,
+  "logistics": 40,
+  "why": "Same TSCR column skid; requalification; organic less radiation-stable than CST",
+  "source": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-30142.pdf"
+ },
+ "sulfur": {
+  "dropin": 50,
+  "capex": 35,
+  "logistics": 40,
+  "why": "Extra adsorber unit after HDS; HDS upgrade is often catalyst swap",
+  "source": "https://aiche.org/conferences/aiche-annual-meeting/2005/proceeding/paper/385b-comparison-adsorbents-deep-desulfurization-diesel-0"
+ },
+ "phosphate": {
+  "dropin": 0,
+  "capex": 30,
+  "logistics": 50,
+  "why": "Columns plus regeneration vs dosing pump; fewer bulk ferric deliveries",
+  "source": "https://www.pca.state.mn.us/sites/default/files/wq-wwtp9-02.pdf"
+ },
+ "xenon": {
+  "dropin": 50,
+  "capex": 55,
+  "logistics": 50,
+  "why": "Adsorber beds on ASU stream replace crude Kr/Xe column",
+  "source": "https://engineering-technologies.airliquide.com/technologies/air-gases/krypton-xenon"
+ },
+ "heatcold": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Same pouch fill line as paraffin packs",
+  "source": "https://polar-tech.com/standard-vs-specialized-phase-change-materials/"
+ },
+ "chalco": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Dosed into raffinate like Jetti catalyst; existing heap and SX-EW",
+  "source": "https://northernminer.com/news/jetti-resources-technology-could-help-unlock-millions-of-tonnes-of-copper-from-tailings/1003831893"
+ },
+ "ammonium": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Same ISE probe body; swap membrane cartridge",
+  "source": "https://prod.xylem.com/siteassets/brand/wtw/resources/white-papers/white-paper-ammonium-based-aeration-control-in-wastewater-wtw.pdf"
+ },
+ "psensor": {
+  "dropin": 50,
+  "capex": 65,
+  "logistics": 65,
+  "why": "In-basin probe replaces analyzer plus sample prep; no reagents",
+  "source": "https://www.hach.com/p-phosphax-sc-phosphate-analyzer/6159600"
+ },
+ "magrec": {
+  "dropin": 50,
+  "capex": 40,
+  "logistics": 45,
+  "why": "Mixer-settlers vs oxalate precipitation tank; organic diluent handling",
+  "source": "https://research.aalto.fi/en/publications/recovery-of-rare-earth-elements-from-the-leaching-solutions-of-sp/"
+ },
+ "reecoal": {
+  "dropin": 50,
+  "capex": 50,
+  "logistics": 45,
+  "why": "Same acid leach plus SX circuit; new extraction conditions",
+  "source": "https://netl.doe.gov/sites/default/files/netl-file/22RS-26_Ziemkiewicz.pdf"
+ },
+ "culoop": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Dosed into the existing coolant loop like tolyltriazole (estimate)",
+  "source": "https://patents.google.com/patent/US5503775"
+ },
+ "lignin": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Catalyst swap in the same reductive fractionation reactor as Ni/C (estimate)",
+  "source": ""
+ },
+ "coolant": {
+  "dropin": 100,
+  "capex": 50,
+  "logistics": 50,
+  "why": "Same immersion tanks and pumps; fluid change",
+  "source": "https://www.opencompute.org/documents/ocp-base-specification-for-immersion-fluids-20221201-pdf"
+ }
+}

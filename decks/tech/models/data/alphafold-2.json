@@ -1,0 +1,69 @@
+{
+ "slug": "alphafold-2",
+ "name": "AlphaFold 2",
+ "what": "Predicts 3D protein structure from amino-acid sequence",
+ "input": {
+  "label": "Sequence + MSA + templates",
+  "size": "N residues"
+ },
+ "blocks": [
+  {
+   "name": "Extra MSA stack",
+   "dims": "4 × 64"
+  },
+  {
+   "name": "Evoformer",
+   "dims": "48 × 256 / 128"
+  },
+  {
+   "name": "Structure module",
+   "dims": "8 × 384"
+  }
+ ],
+ "params": "~93M",
+ "loop": "× 3 recycles",
+ "output": {
+  "label": "3D atoms + pLDDT",
+  "size": "N × 37 × 3"
+ },
+ "who": {
+  "org": "Google DeepMind",
+  "year": "2021",
+  "versions": "AF1 2018 → AF2 2021 → Multimer 2021 → AF3 2024",
+  "license": "Open · Apache 2.0, CC BY 4.0"
+ },
+ "ideas": [
+  "MSA and pair tracks talk",
+  "Triangle updates on pairs",
+  "Invariant point attention",
+  "End-to-end FAPE loss",
+  "Recycle the whole network",
+  "Self-distillation"
+ ],
+ "train": {
+  "hardware": "128 × TPU v3 cores",
+  "time": "7 d + 4 d fine-tune",
+  "compute": "n/a",
+  "samples": "~11.5M crops",
+  "data": "PDB 170k + 356k distilled",
+  "epochs": "n/a"
+ },
+ "results": [
+  "CASP14 median GDT 92.4",
+  "Backbone 0.96 Å vs 2.8 Å next"
+ ],
+ "speed": "~1 min · 384 aa · 1 V100",
+ "limit": "Needs MSA; one static structure",
+ "sources": [
+  "https://www.nature.com/articles/s41586-021-03819-2",
+  "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03819-2/MediaObjects/41586_2021_3819_MOESM1_ESM.pdf",
+  "https://deepmind.google/discover/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/",
+  "https://github.com/google-deepmind/alphafold",
+  "https://github.com/google-deepmind/alphafold/blob/main/alphafold/common/residue_constants.py",
+  "https://arxiv.org/abs/2207.05477",
+  "https://www.nature.com/articles/s41586-019-1923-7",
+  "https://www.biorxiv.org/content/10.1101/2021.10.04.463034"
+ ],
+ "ready": true,
+ "type": "Transformer"
+}

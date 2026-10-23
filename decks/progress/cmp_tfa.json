@@ -1,0 +1,181 @@
+{
+ "title": null,
+ "rows": [
+  "Picks TFA over chloride and sulfate",
+  "Catches ppt TFA",
+  "Safe for drinking water",
+  "Stays in the filter",
+  "Frees up for reuse",
+  "Cost per m\u00b3 of water",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  3,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Quaternary ammonium (resin site)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    65,
+    63,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 38,
+   "price": 2.12
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    100,
+    0,
+    100,
+    34,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 1.19
+  },
+  {
+   "label": "Tren tris(phenylurea)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    100,
+    32,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 3.28
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    100,
+    27,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 19,
+   "price": 3.4
+  },
+  {
+   "label": "Design A",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    49,
+    65,
+    100,
+    100,
+    31,
+    null,
+    29,
+    70,
+    40
+   ],
+   "overall": 60,
+   "price": 3.11
+  },
+  {
+   "label": "L2-37",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    90,
+    65,
+    100,
+    100,
+    30,
+    null,
+    28,
+    70,
+    40
+   ],
+   "overall": 63,
+   "price": 3.12
+  },
+  {
+   "label": "L4-5",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    65,
+    100,
+    0,
+    30,
+    null,
+    30,
+    70,
+    40
+   ],
+   "overall": 49,
+   "price": 3.15
+  },
+  {
+   "label": "L5-2",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    0,
+    100,
+    100,
+    100,
+    31,
+    null,
+    44,
+    70,
+    55
+   ],
+   "overall": 44,
+   "price": 3.28
+  }
+ ]
+}

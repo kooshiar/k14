@@ -1,0 +1,68 @@
+{
+ "slug": "mace",
+ "name": "MACE",
+ "what": "Predicts energy, forces, stress for any chemistry",
+ "input": {
+  "label": "Atom types + positions",
+  "size": "N atoms · 6 Å cutoff"
+ },
+ "blocks": [
+  {
+   "name": "Radial MLP",
+   "dims": "3 × 64"
+  },
+  {
+   "name": "MACE layers",
+   "dims": "2 × 128"
+  },
+  {
+   "name": "Energy readout",
+   "dims": ""
+  }
+ ],
+ "params": "4.69M",
+ "loop": null,
+ "output": {
+  "label": "Energy + forces + stress",
+  "size": "1 + 3N + 3×3"
+ },
+ "who": {
+  "org": "Cambridge · Csányi group",
+  "year": "2023",
+  "versions": "MACE 2022 → MP-0 → MPA-0 → MH-1 2025",
+  "license": "Open · MIT code, MIT/ASL weights",
+  "sizes": "small · medium · large"
+ },
+ "ideas": [
+  "Higher body-order messages",
+  "Only 2 message layers",
+  "ACE symmetric tensor products",
+  "One model, 89 elements",
+  "Fine-tune with little data",
+  "ZBL repulsion built in"
+ ],
+ "train": {
+  "hardware": "40–80 × H100",
+  "time": "n/a",
+  "compute": "~2,600 GPU-h",
+  "samples": "~1.5M configs",
+  "data": "MPtrj · PBE+U",
+  "epochs": "100"
+ },
+ "results": [
+  "MPtrj MAE 18 meV/atom",
+  "4–5× faster than NequIP"
+ ],
+ "speed": "~ns/day · 1k atoms · A100",
+ "limit": "Inherits MPtrj PBE+U errors",
+ "sources": [
+  "https://arxiv.org/abs/2206.07697",
+  "https://arxiv.org/abs/2401.00096",
+  "https://github.com/ACEsuit/mace",
+  "https://github.com/ACEsuit/mace-mp",
+  "https://github.com/ACEsuit/mace-foundations/releases",
+  "https://github.com/janosh/matbench-discovery/blob/main/models/mace/mace-mp-0.yml"
+ ],
+ "ready": true,
+ "type": "Equivariant GNN"
+}

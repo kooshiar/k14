@@ -1,0 +1,37 @@
+/* One application page: a short business page in tiles that fits one screen (design deck p31).
+   Title and molecule on top, why and business, our design vs the best product today, progress and the contact button.
+   Tiles grow with their text: nothing may overflow a tile. */
+main.app{padding-block:18px 20px}
+.fold{display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px; align-content:start}
+.fold .b{background:#fff; border:1px solid var(--rule); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:6px; margin:0; min-width:0}
+.fold .ttl{grid-column:1 / 3; justify-content:center}
+.fold .mol{grid-column:3; grid-row:1 / 3; padding:0; overflow:hidden; background:var(--bg); border:0; min-height:240px; position:relative}
+.fold .mol canvas{position:absolute; inset:0; width:100%; height:100%; display:block}
+.fold .sol{grid-column:1 / 3}
+.fold.nosol .prog{grid-column:1 / 3}
+.crumb{font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--mute)}
+.crumb a{color:inherit; text-decoration:none} .crumb a:hover{color:var(--ink)}
+.fold h1{margin:4px 0 2px; font-weight:500; font-size:clamp(24px, 2.4vw, 32px); line-height:1.1; letter-spacing:-.025em; color:var(--ink)}
+.fold h3{margin:0 0 4px; font-family:var(--mono); font-weight:500; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute)}
+.fold p{margin:0; font-size:14px; line-height:1.45; color:var(--ink2)} .fold p b{color:var(--ink); font-weight:500}
+.nums{display:grid; grid-template-columns:repeat(var(--n, 4), minmax(0, 1fr)); flex:1}
+.nums > div{display:flex; flex-direction:column; justify-content:center; gap:2px; padding:4px 16px; min-width:0} .nums > div:first-child{padding-left:0}
+.nums > div + div{border-left:1px solid var(--rule)}
+.nums b{font-size:32px; font-weight:600; letter-spacing:-.03em; line-height:1.05; color:var(--blue); white-space:nowrap} .nums b small{font-size:17px; font-weight:500; color:var(--mute)}
+.nums span{font-size:14px; font-weight:500; color:var(--ink)} .nums em{font-style:normal; font-size:12px; line-height:1.35; color:var(--mute); margin-top:3px}
+.trk{list-style:none; margin:6px 0 4px; padding:0; display:grid; grid-template-columns:repeat(5, minmax(0, 1fr))}
+.trk li{display:flex; flex-direction:column; align-items:center; gap:7px; text-align:center; position:relative; font-size:11.5px; line-height:1.25; color:var(--mute)}
+.trk li::before{content:""; position:absolute; top:6px; left:-50%; width:100%; height:2px; background:var(--rule)} .trk li:first-child::before{display:none}
+.trk li.done::before, .trk li.now::before{background:var(--blue)}
+.trk i{width:14px; height:14px; border-radius:99px; background:var(--page); border:2px solid var(--rule); position:relative; box-sizing:border-box}
+.trk li.done i{background:var(--blue); border-color:var(--blue)} .trk li.now i{border-color:var(--blue); box-shadow:0 0 0 4px rgba(63,127,44,.18)}
+.trk li.done span, .trk li.now span{color:var(--ink)}
+.btn{display:inline-flex; align-self:flex-start; align-items:center; gap:10px; margin-top:12px; padding:13px 22px; border-radius:99px; background:var(--blue); color:#fff;
+  font-weight:500; font-size:15px; text-decoration:none; box-shadow:0 6px 18px rgba(63,127,44,.28); white-space:nowrap}
+.btn span{font-size:18px} .btn:hover{background:#2F6A20}
+.pn{display:flex; justify-content:space-between; gap:16px; margin-top:14px; font-size:13px}
+.pn a{color:var(--mute); text-decoration:none} .pn a:hover{color:var(--ink)}
+@media (max-width:900px){
+  .fold{grid-template-columns:1fr} .fold > *{grid-column:auto !important; grid-row:auto !important}
+  .fold .mol{min-height:0; aspect-ratio:1} .nums{grid-template-columns:1fr 1fr; row-gap:14px} .nums > div:nth-child(3){border-left:0; padding-left:0}
+}

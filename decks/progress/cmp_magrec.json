@@ -1,0 +1,200 @@
+{
+ "title": null,
+ "rows": [
+  "Picks rare earths over iron",
+  "Catches neodymium",
+  "Strips with mild acid",
+  "Stays in the oil phase",
+  "Safe to handle",
+  "Cost per kg of oxide",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Cyanex 272",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    null,
+    50,
+    100,
+    100,
+    100,
+    32,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 68,
+   "price": 2.23
+  },
+  {
+   "label": "D2EHPA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    null,
+    0,
+    100,
+    100,
+    100,
+    31,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 37,
+   "price": 2.39
+  },
+  {
+   "label": "P507 (HEHEHP)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    null,
+    0,
+    100,
+    100,
+    100,
+    31,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 37,
+   "price": 2.3
+  },
+  {
+   "label": "TODGA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    null,
+    0,
+    100,
+    100,
+    100,
+    20,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 35,
+   "price": 3.35
+  },
+  {
+   "label": "Oxalic acid (precipitation)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    100,
+    0,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 23,
+   "price": 1.45
+  },
+  {
+   "label": "L3-22",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    100,
+    91,
+    100,
+    100,
+    100,
+    23,
+    null,
+    29,
+    40,
+    45
+   ],
+   "overall": 63,
+   "price": 3.02
+  },
+  {
+   "label": "L4-11",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    null,
+    75,
+    100,
+    100,
+    100,
+    25,
+    null,
+    33,
+    40,
+    45
+   ],
+   "overall": 57,
+   "price": 2.97
+  },
+  {
+   "label": "L5-3",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    null,
+    38,
+    100,
+    100,
+    100,
+    33,
+    null,
+    48,
+    40,
+    45
+   ],
+   "overall": 57,
+   "price": 2.23
+  },
+  {
+   "label": "L5-3",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    null,
+    38,
+    100,
+    100,
+    100,
+    33,
+    null,
+    48,
+    40,
+    45
+   ],
+   "overall": 57,
+   "price": 2.23
+  }
+ ]
+}

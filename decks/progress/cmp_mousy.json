@@ -1,0 +1,181 @@
+{
+ "title": null,
+ "rows": [
+  "Removes the mousy taint",
+  "Keeps fruit and floral aroma",
+  "Keeps the color",
+  "Food-safe",
+  "Leaves nothing in the wine",
+  "Cost per bottle",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  2,
+  3,
+  2,
+  3,
+  2,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    49,
+    50,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 57,
+   "price": 3.4
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    33,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 42,
+   "price": 3.36
+  },
+  {
+   "label": "Resorcin[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    45,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 23,
+   "price": 3.22
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    0,
+    100,
+    0,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 9,
+   "price": 1.19
+  },
+  {
+   "label": "Design A",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    65,
+    86,
+    56,
+    null,
+    54,
+    50,
+    35
+   ],
+   "overall": 74,
+   "price": 2.5
+  },
+  {
+   "label": "L3-24",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    85,
+    96,
+    100,
+    100,
+    100,
+    48,
+    null,
+    54,
+    50,
+    50
+   ],
+   "overall": 80,
+   "price": 3.19
+  },
+  {
+   "label": "L4-23",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    68,
+    93,
+    100,
+    100,
+    100,
+    44,
+    null,
+    67,
+    50,
+    50
+   ],
+   "overall": 79,
+   "price": 2.86
+  },
+  {
+   "label": "L5-18",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    33,
+    41,
+    81,
+    100,
+    100,
+    45,
+    null,
+    81,
+    50,
+    50
+   ],
+   "overall": 63,
+   "price": 3.78
+  }
+ ]
+}

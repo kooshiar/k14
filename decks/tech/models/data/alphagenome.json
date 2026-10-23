@@ -1,0 +1,70 @@
+{
+ "slug": "alphagenome",
+ "name": "AlphaGenome",
+ "what": "Predicts regulatory tracks and variant effects",
+ "input": {
+  "label": "One-hot DNA + species",
+  "size": "1 Mb × 4"
+ },
+ "blocks": [
+  {
+   "name": "Conv encoder",
+   "dims": "7 × 768 → 1536"
+  },
+  {
+   "name": "Transformer",
+   "dims": "9 × 1536"
+  },
+  {
+   "name": "Pairwise blocks",
+   "dims": "every 2nd × 128"
+  },
+  {
+   "name": "U-Net decoder",
+   "dims": "7 × 1536 → 768"
+  }
+ ],
+ "params": "~450M",
+ "loop": null,
+ "output": {
+  "label": "Tracks, splicing, contact maps",
+  "size": "5,930 human tracks"
+ },
+ "who": {
+  "org": "Google DeepMind",
+  "year": "2025",
+  "versions": "API 2025 → Nature + weights 2026",
+  "license": "Code Apache 2.0 · weights non-comm."
+ },
+ "ideas": [
+  "1 Mb context at 1 bp",
+  "U-Net with transformer core",
+  "2D pairs for contacts",
+  "Sequence parallel on 8 TPUs",
+  "Ensemble distilled to student",
+  "One model, 11 modalities"
+ ],
+ "train": {
+  "hardware": "512 TPU v3 · 64 × H100",
+  "time": "~4 h + ~3 d distill",
+  "compute": "n/a",
+  "samples": "15k steps + 250k distill",
+  "data": "ENCODE, GTEx, FANTOM5, 4DN",
+  "epochs": "n/a"
+ },
+ "results": [
+  "SOTA on 22/24 track tasks",
+  "eQTL Spearman 0.49 vs 0.39 Borzoi"
+ ],
+ "speed": "<1 s per variant · H100",
+ "limit": "Human and mouse only",
+ "sources": [
+  "https://storage.googleapis.com/deepmind-media/papers/alphagenome.pdf",
+  "https://doi.org/10.1038/s41586-025-10014-0",
+  "https://deepmind.google/blog/alphagenome-ai-for-better-understanding-the-genome/",
+  "https://github.com/google-deepmind/alphagenome_research",
+  "https://huggingface.co/google/alphagenome-all-folds"
+ ],
+ "ready": true,
+ "type": "U-Net + Transformer"
+}

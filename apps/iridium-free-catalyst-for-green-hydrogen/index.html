@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K14 · Iridium-free catalyst for green hydrogen</title>
+<meta name="description" content="Split water in acid electrolyzers without iridium, one of the rarest metals">
+<script async src="/site/analytics.js?v=1"></script>
+<script type="module" src="/site/auth.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site/frame.css">
+<link rel="icon" href="/site/favicon.svg">
+<link rel="stylesheet" href="/apps/app.css?v=2">
+</head>
+<body>
+<header class="site"><div class="bar"><nav class="wrap"><a class="logo" href="/"><img src="/site/mark.svg" alt="">K14</a><div class="tabs"><a href="/apps/" class="on">Apps</a><a href="/tech/">Tech</a></div><a data-cta href="/contact/">Contact</a></nav></div></header>
+<main class="wrap app">
+  <div class="fold nosol">
+    <div class="b ttl"><div class="crumb"><a href="/apps/">Apps</a> / <a href="/apps/energy/">Energy</a></div><h1>Iridium-free catalyst for green hydrogen</h1></div>
+    <figure class="b mol" data-k="iro2"><canvas aria-label="Rutile IrO₂, today’s catalyst (blue = Ir)"></canvas></figure>
+    <div class="b"><h3>Why</h3><p><b>Split water in acid electrolyzers without iridium, one of the rarest metals.</b></p></div>
+    <div class="b"><h3>Business</h3><p><b>Siemens Energy, ITM, Plug, Nel</b></p><p>Co-development ~$1–5M, license to catalyst makers. ~$5–20M/yr if it wins</p></div>
+    
+    <div class="b prog"><h3>Progress</h3><ol class="trk"><li class="done"><i></i><span>Problem researched</span></li><li class="now"><i></i><span>Designs completed</span></li><li class=""><i></i><span>Scored vs today’s best</span></li><li class=""><i></i><span>Lab tested</span></li><li class=""><i></i><span>Partner pilot</span></li></ol><a class="btn" href="/contact/?about=iridium-free-catalyst-for-green-hydrogen">Work with us on this <span>&rarr;</span></a></div>
+  </div>
+  <nav class="pn"><a href="/apps/solid-electrolyte-for-solid-state-batteries/">&larr; Solid-state batteries</a><a href="/apps/rare-earth-free-permanent-magnet/">Rare-earth-free magnet &rarr;</a></nav>
+</main>
+<footer class="site"><div class="wrap"><span class="logo"><img src="/site/mark.svg" alt="">K14</span><span>© 2026</span></div></footer>
+<script type="module">
+import { setup } from '/site/appmols.js?v=5';
+const f = document.querySelector('.mol'), v = setup({ dataset:{ k:f.dataset.k }, scale:.95, look:'dark', drag:true, querySelector:() => f.querySelector('canvas') });
+v.active(true); let last = performance.now();
+(function loop(t){ v.tick(t - last); last = t; requestAnimationFrame(loop); })(last);
+addEventListener('resize', () => v.draw());
+// left / right arrow keys step through the applications
+const pn = document.querySelectorAll('.pn a');
+addEventListener('keydown', e => { if (e.altKey || e.metaKey || e.ctrlKey || /input|textarea/i.test(e.target.tagName)) return;
+  if (e.key === 'ArrowLeft') location.href = pn[0].href; if (e.key === 'ArrowRight') location.href = pn[1].href; });
+</script>
+</body>
+</html>

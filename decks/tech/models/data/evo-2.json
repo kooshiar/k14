@@ -1,0 +1,72 @@
+{
+ "slug": "evo-2",
+ "name": "Evo 2",
+ "what": "Reads and writes DNA; scores variants",
+ "input": {
+  "label": "DNA, single-base tokens",
+  "size": "up to 1M bp"
+ },
+ "blocks": [
+  {
+   "name": "Hyena-SE",
+   "dims": "14 × 8192"
+  },
+  {
+   "name": "Hyena-MR",
+   "dims": "14 × 8192"
+  },
+  {
+   "name": "Hyena-LI",
+   "dims": "14 × 8192"
+  },
+  {
+   "name": "Attention",
+   "dims": "8 × 8192"
+  }
+ ],
+ "params": "40.3B",
+ "loop": null,
+ "output": {
+  "label": "Next-base odds or new DNA",
+  "size": "N × vocab 512"
+ },
+ "who": {
+  "org": "Arc Institute + NVIDIA",
+  "year": "2025",
+  "versions": "Evo 1 2024 → Evo 2 2025 → Nature 2026",
+  "license": "Open · Apache 2.0, incl. data",
+  "sizes": "1B · 7B · 40B"
+ },
+ "ideas": [
+  "StripedHyena 2 convolutions",
+  "50 layers, 3 Hyena per attention",
+  "1M bp context",
+  "Zero-shot variant scoring",
+  "All domains of life",
+  "Data, code, weights open"
+ ],
+ "train": {
+  "hardware": ">2,000 × H100",
+  "time": "several months",
+  "compute": "2.25e24 FLOPs est.",
+  "samples": "9.3T nucleotides",
+  "data": "OpenGenome2 · 8.84T nt",
+  "epochs": "n/a"
+ },
+ "results": [
+  "Noncoding SNV AUROC 0.987 vs 0.981",
+  "Noncoding indel 0.971 vs 0.926"
+ ],
+ "speed": "Needs several H100s at 40B",
+ "limit": "Weaker on coding SNVs",
+ "sources": [
+  "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1",
+  "https://arcinstitute.org/manuscripts/Evo2.pdf",
+  "https://github.com/ArcInstitute/evo2",
+  "https://raw.githubusercontent.com/ArcInstitute/evo2/main/evo2/configs/evo2-40b-1m.yml",
+  "https://arcinstitute.org/news/evo2",
+  "https://docs.nvidia.com/bionemo-framework/latest/models/evo2/index.html"
+ ],
+ "ready": true,
+ "type": "Hyena + attention"
+}

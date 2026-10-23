@@ -1,0 +1,62 @@
+{
+ "slug": "gnome",
+ "name": "GNoME",
+ "what": "Finds stable crystals by GNN-filtered DFT search",
+ "input": {
+  "label": "Candidate crystal or formula",
+  "size": "4 Å graph cutoff"
+ },
+ "blocks": [
+  {
+   "name": "Stability GNN",
+   "dims": "3 × 256 · 10 models"
+  },
+  {
+   "name": "NequIP potential",
+   "dims": "5 × 128 / 64 / 32"
+  }
+ ],
+ "params": "16.24M potential",
+ "loop": "× 6 active-learning rounds",
+ "output": {
+  "label": "Energy → stability filter",
+  "size": "1 per structure"
+ },
+ "who": {
+  "org": "Google DeepMind",
+  "year": "2023",
+  "versions": "Nature 2023 → 520k dataset 2024",
+  "license": "Code Apache 2.0 · data CC BY-NC"
+ },
+ "ideas": [
+  "DFT in the loop",
+  "Deep ensembles for doubt",
+  "Symmetry-aware substitution",
+  "Random structure search",
+  "Power-law scaling with data",
+  "Zero-shot potential"
+ ],
+ "train": {
+  "hardware": "4 × TPU v3",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "~69k start + 6 rounds",
+  "data": "Materials Project, OQMD, own DFT",
+  "epochs": "1,000 · stability GNN"
+ },
+ "results": [
+  "Hit rate >80% vs ~1% before",
+  "Energy MAE 11 vs 28 meV/atom"
+ ],
+ "speed": "~14 ms per 50-atom step · A100",
+ "limit": "Weights unreleased; PBE only",
+ "sources": [
+  "https://www.nature.com/articles/s41586-023-06735-9",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700131/",
+  "https://github.com/google-deepmind/materials_discovery",
+  "https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/",
+  "https://github.com/janosh/matbench-discovery/blob/main/models/gnome/gnome.yml"
+ ],
+ "ready": true,
+ "type": "GNN"
+}

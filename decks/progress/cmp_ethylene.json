@@ -1,0 +1,162 @@
+{
+ "title": null,
+ "rows": [
+  "Catches ppm ethylene",
+  "Works in humid cold stores",
+  "Ignores CO\u2082",
+  "Food-safe",
+  "Doesn\u2019t evaporate",
+  "Cost per pallet",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  1,
+  2,
+  1,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    40,
+    50,
+    50,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 63,
+   "price": 3.36
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    11,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 35,
+   "price": 1.19
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    3,
+    0,
+    20,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 17,
+   "price": 3.4
+  },
+  {
+   "label": "L3-20",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    88,
+    65,
+    100,
+    100,
+    100,
+    50,
+    null,
+    64,
+    50,
+    55
+   ],
+   "overall": 74,
+   "price": 2.58
+  },
+  {
+   "label": "L4-17",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    72,
+    48,
+    65,
+    100,
+    45,
+    null,
+    67,
+    50,
+    40
+   ],
+   "overall": 68,
+   "price": 2.8
+  },
+  {
+   "label": "L5-3",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    43,
+    null,
+    72,
+    50,
+    55
+   ],
+   "overall": 82,
+   "price": 2.92
+  },
+  {
+   "label": "L5-3",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    43,
+    null,
+    72,
+    50,
+    55
+   ],
+   "overall": 82,
+   "price": 2.92
+  }
+ ]
+}

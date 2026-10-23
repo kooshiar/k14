@@ -1,0 +1,191 @@
+{
+ "title": null,
+ "rows": [
+  "Picks ammonium over potassium",
+  "Picks ammonium over sodium",
+  "Fast, reversible reading",
+  "Stays in the sensor membrane",
+  "Catches ammonium",
+  "Safe to handle",
+  "Cost per sensor",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  3,
+  1,
+  1,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    50,
+    100,
+    100,
+    0,
+    100,
+    42,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 56,
+   "price": 3.36
+  },
+  {
+   "label": "Nonactin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    39,
+    0,
+    100,
+    100,
+    0,
+    100,
+    40,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 33,
+   "price": 2.39
+  },
+  {
+   "label": "Dibenzo-18-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    98,
+    50,
+    100,
+    46,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 22,
+   "price": 2.83
+  },
+  {
+   "label": "18-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    3,
+    12,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 11,
+   "price": 2.56
+  },
+  {
+   "label": "Design A",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    0,
+    100,
+    33,
+    null,
+    60,
+    50,
+    50
+   ],
+   "overall": 62,
+   "price": 3.21
+  },
+  {
+   "label": "L2-18",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    96,
+    100,
+    100,
+    100,
+    63,
+    100,
+    33,
+    null,
+    57,
+    50,
+    50
+   ],
+   "overall": 78,
+   "price": 3.12
+  },
+  {
+   "label": "L4-11",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    0,
+    100,
+    34,
+    null,
+    60,
+    50,
+    50
+   ],
+   "overall": 62,
+   "price": 3.03
+  },
+  {
+   "label": "L5-24",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    55,
+    39,
+    100,
+    100,
+    0,
+    100,
+    39,
+    null,
+    84,
+    50,
+    50
+   ],
+   "overall": 52,
+   "price": 3.93
+  }
+ ]
+}

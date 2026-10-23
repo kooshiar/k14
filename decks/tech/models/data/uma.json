@@ -1,0 +1,84 @@
+{
+ "slug": "uma",
+ "name": "UMA",
+ "what": "Predicts energy and forces for any atomic system",
+ "input": {
+  "label": "Atoms + xyz + charge, spin, task",
+  "size": "N atoms · 6 Å graph"
+ },
+ "blocks": [
+  {
+   "name": "Embedding",
+   "dims": "128 ch"
+  },
+  {
+   "name": "eSEN layers",
+   "dims": "4 × 128"
+  },
+  {
+   "name": "Linear experts",
+   "dims": "32 experts"
+  },
+  {
+   "name": "Energy head",
+   "dims": "forces by autograd"
+  }
+ ],
+ "params": "150M params · 6M active",
+ "loop": null,
+ "output": {
+  "label": "Energy + forces + stress",
+  "size": "1 + 3N + 3×3"
+ },
+ "who": {
+  "org": "Meta FAIR",
+  "year": "2025",
+  "versions": "S-1 → S/M-1.1 → S-1.2",
+  "license": "Open, gated · commercial OK"
+ },
+ "ideas": [
+  "Mixture of linear experts",
+  "Experts merged per system",
+  "Task embedding picks DFT level",
+  "Charge and spin as inputs",
+  "One model, five domains",
+  "Equivariant eSEN backbone"
+ ],
+ "train": {
+  "hardware": "128–256 × H200",
+  "time": "10 d",
+  "compute": "~1e22 FLOPs",
+  "samples": "459M structures · 30B atoms",
+  "data": "OMat24, OMol25, OC20, OMC25, ODAC25",
+  "epochs": "2–3"
+ },
+ "results": [
+  "Matbench F1 0.929 (M) vs 0.925 eSEN",
+  "AdsorbML 72% vs 61% eqV2"
+ ],
+ "speed": "16 steps/s · 1k atoms · 1 H100 (S)",
+ "limit": "6 Å cutoff, no long-range",
+ "sources": [
+  "https://arxiv.org/abs/2506.23971",
+  "https://arxiv.org/pdf/2506.23971",
+  "https://huggingface.co/facebook/UMA",
+  "https://github.com/facebookresearch/fairchem"
+ ],
+ "ready": true,
+ "sizes": [
+  {
+   "name": "UMA-S"
+  },
+  {
+   "name": "UMA-M",
+   "params": "1.4B params · 50M active",
+   "dims": {
+    "eSEN layers": "10 × 128"
+   },
+   "train": {
+    "time": "28 d"
+   }
+  }
+ ],
+ "type": "Equivariant GNN"
+}

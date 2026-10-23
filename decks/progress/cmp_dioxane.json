@@ -1,0 +1,171 @@
+{
+ "title": null,
+ "rows": [
+  "Picks dioxane over natural organics",
+  "Catches ppb dioxane",
+  "Stays in the filter",
+  "Safe for drinking water",
+  "Cost per m\u00b3 of water",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  3,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    50,
+    0,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 40,
+   "price": 1.19
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 22,
+   "price": 3.36
+  },
+  {
+   "label": "Resorcin[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 22,
+   "price": 3.22
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 18,
+   "price": 3.4
+  },
+  {
+   "label": "L2-58",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    68,
+    66,
+    100,
+    65,
+    45,
+    4,
+    29,
+    55,
+    30
+   ],
+   "overall": 48,
+   "price": 4.28
+  },
+  {
+   "label": "L4-4",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    38,
+    43,
+    100,
+    100,
+    48,
+    null,
+    28,
+    55,
+    45
+   ],
+   "overall": 54,
+   "price": 3.18
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    87,
+    100,
+    100,
+    65,
+    46,
+    null,
+    42,
+    55,
+    30
+   ],
+   "overall": 65,
+   "price": 3.61
+  },
+  {
+   "label": "L5-21",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    87,
+    100,
+    100,
+    65,
+    46,
+    null,
+    42,
+    55,
+    30
+   ],
+   "overall": 65,
+   "price": 3.61
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "title": null,
+ "rows": [
+  "Picks TMAH over ammonium and sodium",
+  "Catches TMAH",
+  "Releases TMAH for reuse",
+  "Stays in the resin",
+  "Safe in the fab",
+  "Cost per m\u00b3 of wastewater",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  3,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    100,
+    100,
+    100,
+    42,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 45,
+   "price": 3.36
+  },
+  {
+   "label": "Sulfonato-calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    100,
+    27,
+    100,
+    38,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 29,
+   "price": 2.79
+  },
+  {
+   "label": "18-crown-6",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    3,
+    100,
+    50,
+    null,
+    100,
+    50,
+    50
+   ],
+   "overall": 15,
+   "price": 2.56
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    0,
+    100,
+    42,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 14,
+   "price": 1.19
+  },
+  {
+   "label": "Design D",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    23,
+    100,
+    30,
+    33,
+    null,
+    29,
+    50,
+    20
+   ],
+   "overall": 48,
+   "price": 3.03
+  },
+  {
+   "label": "L2-44",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    45,
+    100,
+    100,
+    65,
+    35,
+    null,
+    27,
+    50,
+    35
+   ],
+   "overall": 61,
+   "price": 2.99
+  },
+  {
+   "label": "L4-1",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    73,
+    0,
+    100,
+    100,
+    65,
+    36,
+    null,
+    28,
+    50,
+    35
+   ],
+   "overall": 37,
+   "price": 2.84
+  },
+  {
+   "label": "L5-7",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    0,
+    100,
+    100,
+    100,
+    40,
+    null,
+    40,
+    50,
+    50
+   ],
+   "overall": 43,
+   "price": 3.77
+  }
+ ]
+}

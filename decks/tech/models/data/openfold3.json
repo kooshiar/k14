@@ -1,0 +1,65 @@
+{
+ "slug": "openfold3",
+ "name": "OpenFold3",
+ "what": "Open AF3 rebuild for all-atom complexes",
+ "input": {
+  "label": "Protein, DNA, RNA, ligand",
+  "size": "MSA to 1,024 sequences"
+ },
+ "blocks": [
+  {
+   "name": "MSA module",
+   "dims": "4 × 64 / 128"
+  },
+  {
+   "name": "Pairformer",
+   "dims": "48 × 384 / 128"
+  },
+  {
+   "name": "Diffusion",
+   "dims": "24 × 768"
+  }
+ ],
+ "params": "n/a",
+ "loop": "× 10 cycles · 5 seeds × 5 samples",
+ "output": {
+  "label": "All-atom xyz + pLDDT / PAE",
+  "size": "25 structures per target"
+ },
+ "who": {
+  "org": "OpenFold · Columbia",
+  "year": "2025",
+  "versions": "OpenFold 2024 → OF3-preview 2025",
+  "license": "Open · Apache 2.0"
+ },
+ "ideas": [
+  "Reproduce AF3 exactly",
+  "Trainable from scratch",
+  "Data fully released",
+  "13M monomer distillation set",
+  "PAE head from the start"
+ ],
+ "train": {
+  "hardware": "256 × H100",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "155,000 steps",
+  "data": "PDB + MGnify 13M + Rfam 125k RNA",
+  "epochs": "n/a"
+ },
+ "results": [
+  "FoldBench monomers on par with AF3",
+  "Antibody DockQ trails AF3"
+ ],
+ "speed": "n/a",
+ "limit": "Preview; no full AF3 parity",
+ "sources": [
+  "https://github.com/aqlaboratory/openfold-3",
+  "https://portal.openfold.io/reports/of3p2_technical_report.pdf",
+  "https://openbind.uk/news/blog-openbind-0-advancing-open-molecular-structure-prediction/",
+  "https://github.com/aqlaboratory/openfold-3/blob/main/openfold3/projects/of3_all_atom/config/model_config.py",
+  "https://huggingface.co/OpenFold/OpenFold3"
+ ],
+ "ready": true,
+ "type": "Transformer + diffusion"
+}

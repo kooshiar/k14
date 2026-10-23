@@ -1,0 +1,684 @@
+[
+ {
+  "key": "pdscav",
+  "title_problem": "Catalyst palladium has to come out of the drug",
+  "p_problem": "Most new small-molecule drugs are built with palladium catalysts. The rules cap palladium in the finished drug at 10 ppm, so every batch runs through scavenger beads, often twice.",
+  "tiles_problem": [
+   [
+    "Limit in the drug",
+    "10 ppm",
+    "ICH Q3D, oral"
+   ],
+   [
+    "Palladium price",
+    "$48k/kg",
+    "spot, 2026"
+   ],
+   [
+    "Scavenger market",
+    "$1.2B",
+    "2024"
+   ]
+  ],
+  "market_title": "Metal scavengers: a $1.2B market in 2024",
+  "tiles_market": [
+   [
+    "Market 2024",
+    "$1.2B",
+    "metal scavenging agents"
+   ],
+   [
+    "Our share a year",
+    "$5\u201315M",
+    "scavenger sales"
+   ],
+   [
+    "First buyers",
+    "US CDMOs",
+    "API plants"
+   ]
+  ],
+  "options_title": "Palladium removal today",
+  "options": [
+   [
+    "Thiol and thiourea silica",
+    "SiliCycle, Biotage",
+    "Two passes, product loss"
+   ],
+   [
+    "Activated carbon",
+    "Plant supply",
+    "Soaks up the drug too"
+   ],
+   [
+    "Extra crystallisation",
+    "Plant operations",
+    "Yield and time lost"
+   ],
+   [
+    "Designed scavenger ligand",
+    "Us",
+    "One pass, below 10 ppm"
+   ]
+  ],
+  "deck_name": "Palladium Scavenger",
+  "title_solution": "We design a ligand that grips palladium and leaves the drug alone",
+  "timeline_goal": "palladium below 10 ppm in one pass on a real API stream",
+  "steps": [
+   "Make the top ligands, graft on silica",
+   "Spike-and-strip tests, ICP-MS",
+   "One-pass run on a CDMO batch"
+  ],
+  "sources": [
+   "https://www.emergenresearch.com/industry-report/metal-scavenging-agent-market",
+   "https://www.silicycle.com/articles/simplifying-metal-catalyst-removal-in-drug-development-applications",
+   "https://www.kitco.com/news/off-the-wire/2025-10-27/analysts-raise-2026-price-forecasts-platinum-palladium-after-2025"
+  ]
+ },
+ {
+  "key": "nitrite",
+  "title_problem": "Trace nitrite turns finished drugs into nitrosamines",
+  "p_problem": "Nitrite sits at ppm levels in common excipients and slowly nitrosates the drug on the shelf. The FDA has recalled or withdrawn whole drug classes over it, and limits for drug-specific nitrosamines came into force in August 2025.",
+  "tiles_problem": [
+   [
+    "Ranitidine",
+    "Off the US market",
+    "2020, FDA"
+   ],
+   [
+    "Nitrite in excipients",
+    "ppm",
+    "many common grades"
+   ],
+   [
+    "FDA limits in force",
+    "Aug 2025",
+    "drug-specific nitrosamines"
+   ]
+  ],
+  "market_title": "Nitrosamine control: a $0.4B a year problem for US generics",
+  "tiles_market": [
+   [
+    "Market 2026",
+    "$0.4B",
+    "mitigation spend, estimate"
+   ],
+   [
+    "Our share a year",
+    "$5\u201320M",
+    "excipient-grade scavenger"
+   ],
+   [
+    "First buyers",
+    "US generic makers",
+    "oral solid dose"
+   ]
+  ],
+  "options_title": "Nitrosamine control today",
+  "options": [
+   [
+    "Ascorbic acid, vitamin E",
+    "Formulators",
+    "Weak, uses up fast"
+   ],
+   [
+    "Reformulate the drug",
+    "Drug maker",
+    "Years, new filing"
+   ],
+   [
+    "Buy low-nitrite excipients",
+    "Excipient makers",
+    "Scarce, costly"
+   ],
+   [
+    "Designed nitrite scavenger",
+    "Us",
+    "Takes the nitrite first"
+   ]
+  ],
+  "deck_name": "Nitrite Scavenger",
+  "title_solution": "We design a scavenger that takes the nitrite before the drug does",
+  "timeline_goal": "nitrosamine growth stopped in a real tablet on accelerated storage",
+  "steps": [
+   "Make the top scavengers",
+   "Nitrosation race against the drug, LC-MS",
+   "Accelerated storage in a real tablet"
+  ],
+  "sources": [
+   "https://www.drugdiscoverynews.com/pharma-still-hasn-t-solved-its-nitrosamine-problem-17422",
+   "https://www.fda.gov/media/194005/download",
+   "https://www.dsm-firmenich.com/content/dam/dsm-firmenich/health-nutrition-care/pharmaceutical/pdfs-open-downloads/nitrosamine-free-pharmaceuticals%20whitepaper.pdf"
+  ]
+ },
+ {
+  "key": "ironmedia",
+  "title_problem": "Antibody cells need iron, and iron falls out of the media",
+  "p_problem": "Chemically defined media feed cells iron as ferric citrate, which precipitates above pH 7, or as transferrin, a plasma protein that costs more than the rest of the media. Serum-free media alone was a $2.1B market in 2025.",
+  "tiles_problem": [
+   [
+    "Serum-free media",
+    "$2.1B",
+    "2025"
+   ],
+   [
+    "Iron source today",
+    "Ferric citrate",
+    "clumps above pH 7"
+   ],
+   [
+    "Transferrin",
+    "Plasma protein",
+    "costly, animal-sourced"
+   ]
+  ],
+  "market_title": "Cell culture media: $3.9B in 2025, over half serum-free",
+  "tiles_market": [
+   [
+    "Media market 2025",
+    "$3.9B",
+    "serum-free $2.1B"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "iron additive"
+   ],
+   [
+    "First buyers",
+    "Media makers",
+    "US and EU suppliers"
+   ]
+  ],
+  "options_title": "Feeding iron to cells today",
+  "options": [
+   [
+    "Ferric citrate",
+    "Thermo, Lonza media",
+    "Precipitates, batch to batch"
+   ],
+   [
+    "Transferrin",
+    "Plasma suppliers",
+    "Costly, animal-sourced"
+   ],
+   [
+    "Iron chelates (EDTA, NTA)",
+    "Media makers",
+    "Holds iron too tightly"
+   ],
+   [
+    "Designed iron carrier",
+    "Us",
+    "Stays dissolved, hands iron over"
+   ]
+  ],
+  "deck_name": "Iron Carrier",
+  "title_solution": "We design an iron carrier that stays dissolved and still feeds the cell",
+  "timeline_goal": "CHO cells at higher antibody titer than ferric citrate media",
+  "steps": [
+   "Make the top carriers, load with iron",
+   "Solubility and release tests at pH 7.2",
+   "CHO shake-flask titer vs ferric citrate"
+  ],
+  "sources": [
+   "https://www.gminsights.com/industry-analysis/cell-culture-media-market",
+   "https://bioscience.lonza.com/lonza_bs/ES/en/Culture-Media-and-Reagents/p/000000000000201857/PowerFeed-A-%E2%80%93-Chemically-Defined-and-Protein-free-basal-Powder-10-L"
+  ]
+ },
+ {
+  "key": "tfaswap",
+  "title_problem": "Peptide drugs come out of synthesis as TFA salts",
+  "p_problem": "Peptides are purified with trifluoroacetic acid and arrive as the TFA salt. An API has to be under 1% TFA, so makers run repeated exchange passes that cost yield and time.",
+  "tiles_problem": [
+   [
+    "TFA allowed in an API",
+    "under 1%",
+    "typical spec"
+   ],
+   [
+    "Passes today",
+    "3 methods",
+    "HPLC, resin, acid cycles"
+   ],
+   [
+    "Peptide drugs approved",
+    "about 80",
+    "US, cumulative"
+   ]
+  ],
+  "market_title": "Counter-ion exchange: a $0.2B step in peptide making",
+  "tiles_market": [
+   [
+    "Market 2026",
+    "$0.2B",
+    "exchange step, estimate"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "resin and licence"
+   ],
+   [
+    "First buyers",
+    "Peptide CDMOs",
+    "GLP-1 supply chain"
+   ]
+  ],
+  "options_title": "Swapping the TFA salt today",
+  "options": [
+   [
+    "Repeat HPLC",
+    "Peptide CDMOs",
+    "Solvent, time, yield loss"
+   ],
+   [
+    "Ion-exchange resin",
+    "Bio-Rad, Dow resins",
+    "Partial swap, peptide loss"
+   ],
+   [
+    "Acid cycles and freeze-dry",
+    "Plant operations",
+    "Slow, repeated"
+   ],
+   [
+    "Designed TFA trap",
+    "Us",
+    "One pass, peptide untouched"
+   ]
+  ],
+  "deck_name": "TFA Trap",
+  "title_solution": "We design a trap that pulls TFA out and leaves acetate behind",
+  "timeline_goal": "under 1% TFA in one pass on a real peptide batch",
+  "steps": [
+   "Make the top traps, pack columns",
+   "TFA against acetate and chloride, ion analysis",
+   "One-pass swap on a CDMO peptide"
+  ],
+  "sources": [
+   "https://www.lifetein.com/How-to-remove-TFA-salt.html",
+   "https://lifetein.com/blog/?p=2554"
+  ]
+ },
+ {
+  "key": "endotox",
+  "title_problem": "Bacterial debris has to come out of protein drugs",
+  "p_problem": "Endotoxin from the bacteria used to make proteins causes fever at tiny doses. Columns today carry polymyxin B, an antibiotic, and lose capacity after about five cycles.",
+  "tiles_problem": [
+   [
+    "Endotoxin limit",
+    "5 EU/kg",
+    "per hour, injectables"
+   ],
+   [
+    "Binder today",
+    "Polymyxin B",
+    "an antibiotic on the resin"
+   ],
+   [
+    "Reuse",
+    "5 cycles",
+    "before capacity drops"
+   ]
+  ],
+  "market_title": "Endotoxin removal: a $0.2B market in resins and kits",
+  "tiles_market": [
+   [
+    "Market 2026",
+    "$0.2B",
+    "resins and kits, estimate"
+   ],
+   [
+    "Our share a year",
+    "$3\u20138M",
+    "resin ligand licence"
+   ],
+   [
+    "First buyers",
+    "Resin makers",
+    "US and EU suppliers"
+   ]
+  ],
+  "options_title": "Taking endotoxin out today",
+  "options": [
+   [
+    "Polymyxin B columns",
+    "Thermo, Bio-Rad",
+    "Antibiotic, 5 cycles"
+   ],
+   [
+    "Charged membranes",
+    "Sartorius, Cytiva",
+    "Takes the protein too"
+   ],
+   [
+    "Two-phase washes",
+    "Plant operations",
+    "Protein loss"
+   ],
+   [
+    "Designed lipid A binder",
+    "Us",
+    "Holds endotoxin, passes the protein"
+   ]
+  ],
+  "deck_name": "Endotoxin Binder",
+  "title_solution": "We design a binder that grips the endotoxin headgroup, not the protein",
+  "timeline_goal": "endotoxin cleared from a real protein solution with full protein recovery",
+  "steps": [
+   "Make the top binders, graft on resin",
+   "LAL clearance and protein recovery",
+   "Cycle life against a polymyxin column"
+  ],
+  "sources": [
+   "https://www.thermofisher.com/order/catalog/product/de/en/20344",
+   "https://www.genscript.com/kit/L00338-ToxinEraser_Endotoxin_Removal_Kit.html",
+   "https://datahorizzonresearch.com/high-capacity-endotoxin-removal-kit-market-76364"
+  ]
+ },
+ {
+  "key": "chiral",
+  "title_problem": "Drugs come as two mirror forms and one is useless",
+  "p_problem": "About half of small-molecule drugs are chiral, and the two mirror forms have to be separated and measured on every batch. The columns that do it are coated with cellulose from wood pulp.",
+  "tiles_problem": [
+   [
+    "Chiral columns",
+    "$130M",
+    "2025"
+   ],
+   [
+    "Coating today",
+    "Cellulose",
+    "from wood pulp"
+   ],
+   [
+    "Largest supplier",
+    "Daicel",
+    "widest phase range"
+   ]
+  ],
+  "market_title": "Chiral columns: $130M in 2025, plus phases and services",
+  "tiles_market": [
+   [
+    "Columns 2025",
+    "$130M",
+    "global"
+   ],
+   [
+    "Our share a year",
+    "$2\u20136M",
+    "phase licence"
+   ],
+   [
+    "First buyers",
+    "Column makers",
+    "US sales channel"
+   ]
+  ],
+  "options_title": "Separating mirror forms today",
+  "options": [
+   [
+    "Cellulose and amylose phases",
+    "Daicel",
+    "Trial and error per drug"
+   ],
+   [
+    "Cyclodextrin phases",
+    "Sigma, Astec",
+    "Narrow range"
+   ],
+   [
+    "Make one form only",
+    "Process chemistry",
+    "New route per drug"
+   ],
+   [
+    "Designed chiral selector",
+    "Us",
+    "Picked for the drug up front"
+   ]
+  ],
+  "deck_name": "Chiral Selector",
+  "title_solution": "We design a selector that holds one mirror form harder than the other",
+  "timeline_goal": "a packed column separating a real drug's two mirror forms",
+  "steps": [
+   "Make the top selectors, bond to silica",
+   "Resolution tests on model drugs",
+   "Side-by-side with a cellulose column"
+  ],
+  "sources": [
+   "https://www.marketsandmarkets.com/PressReleases/chiral-chromatography-columns.asp",
+   "https://alliedmarketresearch.com/chiral-separation-column-market",
+   "https://www.crawfordscientific.com/manufacturers/daicel"
+  ]
+ },
+ {
+  "key": "cryo",
+  "title_problem": "Cell therapies are frozen in DMSO, which damages cells",
+  "p_problem": "Freezing mixes are 10% DMSO. It kills part of the dose on thaw and has to be washed out before infusion. DMSO-free media were a $143M market in 2025 and growing 12% a year.",
+  "tiles_problem": [
+   [
+    "DMSO in the mix",
+    "10%",
+    "standard today"
+   ],
+   [
+    "DMSO-free market",
+    "$143M",
+    "2025"
+   ],
+   [
+    "Cell and gene therapy",
+    "48%",
+    "of freezing-media demand"
+   ]
+  ],
+  "market_title": "DMSO-free freezing media: $143M in 2025, $310M by 2032",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$143M",
+    "to $310M by 2032"
+   ],
+   [
+    "Our share a year",
+    "$3\u201310M",
+    "cryo additive"
+   ],
+   [
+    "First buyers",
+    "US cell therapy",
+    "makers and biobanks"
+   ]
+  ],
+  "options_title": "Freezing cells today",
+  "options": [
+   [
+    "10% DMSO mixes",
+    "BioLife CryoStor",
+    "Cell loss, wash step"
+   ],
+   [
+    "Glycerol mixes",
+    "Lab suppliers",
+    "Weaker, slow"
+   ],
+   [
+    "Peptoid additives",
+    "X-Therma",
+    "Early, costly"
+   ],
+   [
+    "Designed ice blocker",
+    "Us",
+    "Small crystals, no DMSO"
+   ]
+  ],
+  "deck_name": "DMSO-free Cryoprotectant",
+  "title_solution": "We design a molecule that sits on the ice face and keeps crystals small",
+  "timeline_goal": "cell survival after thaw matching 10% DMSO, with no DMSO",
+  "steps": [
+   "Make the top ice blockers",
+   "Ice growth and thaw viability tests",
+   "Side-by-side with CryoStor on real cells"
+  ],
+  "sources": [
+   "https://www.datainsightsmarket.com/reports/dmso-free-cryopreservation-medium-1030496",
+   "https://www.sphericalinsights.com/reports/asia-pacific-cell-freezing-media-market",
+   "https://sigmaaldrich.com/PL/en/product/sigma/c2999"
+  ]
+ },
+ {
+  "key": "abcap",
+  "title_problem": "Protein A is the most expensive litre in antibody making",
+  "p_problem": "Every monoclonal antibody is captured on protein A resin. The resin lists at $8,000\u201314,000 a litre and adds $5\u201315 to every gram of antibody, and the protein ligand itself leaches and needs a pH 3 elution that aggregates the drug.",
+  "tiles_problem": [
+   [
+    "Resin list price",
+    "$8\u201314k/L",
+    "commercial grade"
+   ],
+   [
+    "Cost per gram",
+    "$5\u201315",
+    "antibody made"
+   ],
+   [
+    "Elution",
+    "pH 3",
+    "aggregates the drug"
+   ]
+  ],
+  "market_title": "Protein A resin: a $1.1\u20131.5B market in 2025",
+  "tiles_market": [
+   [
+    "Market 2025",
+    "$1.1\u20131.5B",
+    "protein A resin"
+   ],
+   [
+    "Our share a year",
+    "$10\u201330M",
+    "ligand and resin sales"
+   ],
+   [
+    "First buyers",
+    "US CDMOs",
+    "antibody plants"
+   ]
+  ],
+  "options_title": "Antibody capture today",
+  "options": [
+   [
+    "Protein A resin",
+    "Cytiva, Purolite",
+    "Price, leaching, pH 3 elution"
+   ],
+   [
+    "Mixed-mode mimetic resin",
+    "MEP, MBI, A2P",
+    "Cheaper, less selective"
+   ],
+   [
+    "Cation-exchange capture",
+    "Plant process",
+    "Extra steps, lower purity"
+   ],
+   [
+    "Designed capture ligand",
+    "Us",
+    "Resin price, mild elution"
+   ]
+  ],
+  "deck_name": "Antibody Capture Ligand",
+  "title_solution": "We design a small ligand that grips the antibody's Fc patch and lets go at mild pH",
+  "timeline_goal": "one-pass capture of IgG from CHO harvest, eluted above pH 5",
+  "steps": [
+   "Make the top ligands, graft on agarose",
+   "Breakthrough and elution on CHO harvest",
+   "Purity and leachate by ELISA and LC-MS"
+  ],
+  "sources": [
+   "https://www.marketsandmarkets.com/Market-Reports/protein-a-resin-market-19196962.html",
+   "https://www.kingsresearch.com/report/protein-a-resin-market-2393",
+   "https://www.indexbox.io/store/world-protein-a-affinity-chromatography-resins-market-analysis-forecast-size-trends-and-insights/"
+  ]
+ },
+ {
+  "key": "vaxstab",
+  "title_problem": "Half of freeze-dried vaccine doses are thrown away",
+  "p_problem": "WHO puts yearly waste at about half of lyophilised doses and a quarter of liquid doses, mostly from cold-chain breaks. Today's stabilisers are sugars that still need 2\u20138 \u00b0C, so the freezer travels with the vial.",
+  "tiles_problem": [
+   [
+    "Lyophilised doses wasted",
+    "~50%",
+    "a year, WHO"
+   ],
+   [
+    "Liquid doses wasted",
+    "~25%",
+    "a year, WHO"
+   ],
+   [
+    "Economic loss",
+    "~\u00a319B",
+    "a year"
+   ]
+  ],
+  "market_title": "Vaccine stabilisers: $102M in 2025 inside a $5.3B excipient market",
+  "tiles_market": [
+   [
+    "Stabiliser market",
+    "$102M",
+    "2025"
+   ],
+   [
+    "Biologic excipients",
+    "$5.3B",
+    "2025"
+   ],
+   [
+    "Our share a year",
+    "$5\u201315M",
+    "excipient sales"
+   ]
+  ],
+  "options_title": "Keeping a vaccine alive today",
+  "options": [
+   [
+    "Sucrose and trehalose glass",
+    "Every maker",
+    "Still needs 2\u20138 \u00b0C"
+   ],
+   [
+    "Mannitol and sorbitol",
+    "Lyophilised vaccines",
+    "Crystallise, lose potency"
+   ],
+   [
+    "Human serum albumin",
+    "Older vaccines",
+    "Animal-derived, variable"
+   ],
+   [
+    "Designed stabiliser",
+    "Us",
+    "Potency held at 40 \u00b0C"
+   ]
+  ],
+  "deck_name": "Vaccine Stabiliser",
+  "title_solution": "We design an excipient that sits where water sits on the protein, so the vial survives warm shipping",
+  "timeline_goal": "a model antigen keeps potency for 4 weeks at 40 \u00b0C",
+  "steps": [
+   "Make the top stabilisers, injection grade",
+   "Freeze-dry a model antigen, measure Tg",
+   "4 weeks at 40 \u00b0C, potency by ELISA"
+  ],
+  "sources": [
+   "https://www.futuremarketinsights.com/reports/vaccine-stabilizers-market",
+   "https://www.snsinsider.com/reports/biologic-excipients-market-10813",
+   "https://www.htworld.co.uk/?p=6559"
+  ]
+ }
+]

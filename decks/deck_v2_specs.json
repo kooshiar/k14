@@ -1,0 +1,1149 @@
+{
+ "boron": {
+  "score": [
+   "73",
+   "vs 65, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    200
+   ],
+   [
+    "Plant pilot",
+    120
+   ],
+   [
+    "Reserve",
+    80
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats catechol",
+   "Score 73 vs 65",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Plant pilot",
+   [
+    "1 desal plant",
+    "Cartridge on RO water"
+   ]
+  ],
+  "partner": "Membrane-maker partner",
+  "scale": "Plant-scale supply"
+ },
+ "siloxane": {
+  "score": [
+   "85",
+   "vs 53, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    180
+   ],
+   [
+    "Plant pilot",
+    100
+   ],
+   [
+    "Reserve",
+    70
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats resorcinarene",
+   "Score 85 vs 53",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Plant pilot",
+   [
+    "1 biogas plant",
+    "Reuse cycles on real gas"
+   ]
+  ],
+  "partner": "Engine-maker partner",
+  "scale": "Plant-scale supply"
+ },
+ "lithium": {
+  "score": [
+   "53",
+   "vs 24, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Brine pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats 12-crown-4",
+   "Score 53 vs 24",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Brine pilot",
+   [
+    "1 salar column",
+    "Li over Mg, real brine"
+   ]
+  ],
+  "partner": "Brine-producer partner",
+  "scale": "Sorbent-scale supply"
+ },
+ "co2": {
+  "score": [
+   "68",
+   "vs 28, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "DAC pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats β-cyclodextrin",
+   "Score 68 vs 28",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "DAC pilot",
+   [
+    "1 bench unit",
+    "Humid outdoor air"
+   ]
+  ],
+  "partner": "DAC-builder partner",
+  "scale": "Plant-scale sorbent"
+ },
+ "ethylene": {
+  "score": [
+   "82",
+   "vs 60, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Cold-store pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats calixarene",
+   "Score 82 vs 60",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Cold-store pilot",
+   [
+    "1 fruit shipper",
+    "Shelf-life data"
+   ]
+  ],
+  "partner": "Packaging partner",
+  "scale": "Sachet-scale supply"
+ },
+ "rareearth": {
+  "score": [
+   "56",
+   "vs 20, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Mixer-settler pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats TODGA",
+   "Score 56 vs 20",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Mixer-settler pilot",
+   [
+    "Real plant liquor",
+    "Fewer stages for NdPr"
+   ]
+  ],
+  "partner": "US refiner partner",
+  "scale": "Plant license"
+ },
+ "plastic": {
+  "score": [
+   "72",
+   "vs 73, Pt today"
+  ],
+  "lab": "5",
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Reactor pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Ni–Cu, no platinum",
+   "Score 72 vs 73",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Reactor pilot",
+   [
+    "Real sorted waste",
+    "Fuel yield, Cl tolerance"
+   ]
+  ],
+  "partner": "Pyrolysis-plant partner",
+  "scale": "2–3 plant supply"
+ },
+ "gold": {
+  "score": [
+   "75",
+   "vs 30, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Leach pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats resin site",
+   "Score 75 vs 30",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Leach pilot",
+   [
+    "Real board leach",
+    "Gold over Cu, Zn"
+   ]
+  ],
+  "partner": "E-scrap partner",
+  "scale": "Processor-scale supply"
+ },
+ "sulfur": {
+  "score": [
+   "80",
+   "vs 52, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Refinery pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats β-cyclodextrin",
+   "Score 80 vs 52",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Refinery pilot",
+   [
+    "Real hydrotreated diesel",
+    "Below 10 ppm sulfur"
+   ]
+  ],
+  "partner": "US refiner partner",
+  "scale": "Refinery-scale supply"
+ },
+ "phosphate": {
+  "score": [
+   "42",
+   "vs 19, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Utility pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats resin site",
+   "Score 42 vs 19",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Utility pilot",
+   [
+    "Real plant effluent",
+    "Capture and release"
+   ]
+  ],
+  "partner": "US utility partner",
+  "scale": "Utility-scale supply"
+ },
+ "xenon": {
+  "score": [
+   "86",
+   "vs 62, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Column pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats β-cyclodextrin",
+   "Score 86 vs 62",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Column pilot",
+   [
+    "Dilute Xe/Kr gas",
+    "Packed-column capture"
+   ]
+  ],
+  "partner": "Gas-firm partner",
+  "scale": "Capture-unit supply"
+ },
+ "chalco": {
+  "score": [
+   "67",
+   "vs 66, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Heap pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Edges out thiourea",
+   "Score 67 vs 66",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Heap pilot",
+   [
+    "1 Arizona miner",
+    "Column, heap leach data"
+   ]
+  ],
+  "partner": "Copper-miner partner",
+  "scale": "Mine-scale supply"
+ },
+ "dioxane": {
+  "score": [
+   "60",
+   "vs 34, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    200
+   ],
+   [
+    "Utility pilot",
+    120
+   ],
+   [
+    "Reserve",
+    80
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats β-cyclodextrin",
+   "Score 60 vs 34",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Utility pilot",
+   [
+    "Real well water",
+    "Reuse cycles at 1 ppb"
+   ]
+  ],
+  "partner": "Water-utility partner",
+  "scale": "First license"
+ },
+ "selenate": {
+  "score": [
+   "49",
+   "vs 46, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    200
+   ],
+   [
+    "Mine pilot",
+    150
+   ],
+   [
+    "Reserve",
+    80
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Edges out sulfo-calixarene",
+   "Score 49 vs 46",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Mine pilot",
+   [
+    "Real mine water",
+    "Selenium over sulfate"
+   ]
+  ],
+  "partner": "Mining partner",
+  "scale": "Site-scale supply"
+ },
+ "tfa": {
+  "score": [
+   "74",
+   "vs 32, best sold"
+  ],
+  "team": 3,
+  "raise": [
+   [
+    "Lab testing",
+    300
+   ],
+   [
+    "Filter pilot",
+    150
+   ],
+   [
+    "Reserve",
+    70
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats resin site",
+   "Score 74 vs 32",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Filter pilot",
+   [
+    "Real tap water",
+    "Filter-maker prototype"
+   ]
+  ],
+  "partner": "Filter-maker partner",
+  "scale": "Utility-scale supply"
+ },
+ "cesium": {
+  "score": [
+   "71",
+   "vs 17, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Simulant pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats calixarene-crown",
+   "Score 71 vs 17",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Simulant pilot",
+   [
+    "Hanford tank simulant",
+    "Cs over 10,000× Na"
+   ]
+  ],
+  "partner": "DOE-contractor partner",
+  "scale": "Site media supply"
+ },
+ "tmah": {
+  "score": [
+   "73",
+   "vs 39, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Fab pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats calixarene",
+   "Score 73 vs 39",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Fab pilot",
+   [
+    "Real fab rinse water",
+    "Reuse-purity TMAH"
+   ]
+  ],
+  "partner": "Chip-fab partner",
+  "scale": "Fab-scale units"
+ },
+ "cork": {
+  "score": [
+   "91",
+   "vs 54, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Winery pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Beats pillararene",
+   "Score 91 vs 54",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Winery pilot",
+   [
+    "Tainted winery lots",
+    "Aroma panel data"
+   ]
+  ],
+  "partner": "Winery partner",
+  "scale": "Winery-scale supply"
+ },
+ "mousy": {
+  "score": [
+   "91",
+   "vs 54, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    100
+   ],
+   [
+    "Winery trials",
+    40
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats pillararene",
+   "Score 91 vs 54",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Winery trials",
+   [
+    "Real mousy wine",
+    "Tasting panel data"
+   ]
+  ],
+  "partner": "Wine-product partner",
+  "scale": "Winery-scale supply"
+ },
+ "smoke": {
+  "score": [
+   "88",
+   "vs 41, best sold"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Winery trials",
+    80
+   ],
+   [
+    "Reserve",
+    70
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats pillararene",
+   "Score 88 vs 41",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Winery trials",
+   [
+    "Smoke-tainted wine",
+    "Tasting panel data"
+   ]
+  ],
+  "partner": "Wine-product partner",
+  "scale": "Winery-scale supply"
+ },
+ "heatcold": {
+  "path": "heatcold/deck.html",
+  "score": [
+   "80",
+   "vs 70, paraffin"
+  ],
+  "raise": [
+   [
+    "Lab and prototypes",
+    120
+   ],
+   [
+    "First production",
+    80
+   ],
+   [
+    "Reserve",
+    50
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Beats paraffin packs",
+   "Scores 79, 80 vs 67, 70",
+   "US-sourced blends"
+  ],
+  "pilot": [
+   "Wear test",
+   [
+    "30-user comfort test",
+    "Hold-time data"
+   ]
+  ],
+  "partner": "Clinic channel partner",
+  "scale": "Retail-scale supply"
+ },
+ "potassium": {
+  "score": [
+   "K⁺",
+   "picked over Na⁺, Mg²⁺"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Gut-fluid tests",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "K⁺ binders designed",
+   "Screened vs Na⁺, Mg²⁺",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Gut-fluid tests",
+   [
+    "Simulated gut fluid",
+    "K⁺ uptake data"
+   ]
+  ],
+  "partner": "Pharma partner",
+  "revenue": [
+   "Paid feasibility study",
+   "Pharma partner"
+  ],
+  "scale": "Preclinical program"
+ },
+ "tma": {
+  "score": [
+   "TMA",
+   "picked over sweat salts"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    100
+   ],
+   [
+    "Wear trials",
+    40
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "TMA traps designed",
+   "Screened vs sweat salts",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Wear trials",
+   [
+    "Treated fabric",
+    "Wash and wear data"
+   ]
+  ],
+  "partner": "Textile-brand partner",
+  "scale": "Brand-scale supply"
+ },
+ "putrescine": {
+  "score": [
+   "Amines",
+   "picked over NH₃, pack gas"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Packaging pilot",
+    100
+   ],
+   [
+    "Reserve",
+    50
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Spoilage traps designed",
+   "Screened vs ammonia",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Packaging pilot",
+   [
+    "Labels on real packs",
+    "Spoilage read data"
+   ]
+  ],
+  "partner": "Label-maker partner",
+  "scale": "Packer-scale supply"
+ },
+ "boar": {
+  "score": [
+   "Skatole",
+   "picked over nutrients"
+  ],
+  "raise": [
+   [
+    "Feeding trials",
+    250
+   ],
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Reserve",
+    100
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Skatole binders designed",
+   "Screened vs nutrients",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Feeding trial",
+   [
+    "1 pig farm",
+    "Taint and growth data"
+   ]
+  ],
+  "partner": "Feed-maker partner",
+  "scale": "Feed-mill supply"
+ },
+ "nicotine": {
+  "score": [
+   "Nicotine",
+   "picked over cleaners"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Field test",
+    60
+   ],
+   [
+    "Reserve",
+    40
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Residue traps designed",
+   "Screened vs cleaners",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Field test",
+   [
+    "Smoked rental units",
+    "Residue and wear data"
+   ]
+  ],
+  "partner": "Paint-maker partner",
+  "scale": "Paint-line supply"
+ },
+ "smoketest": {
+  "score": [
+   "Phenols",
+   "picked over grape aromas"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    150
+   ],
+   [
+    "Field trials",
+    80
+   ],
+   [
+    "Reserve",
+    70
+   ],
+   [
+    "Compute",
+    20
+   ]
+  ],
+  "ready": [
+   "Phenol traps designed",
+   "Screened vs grape aromas",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Field trials",
+   [
+    "Vineyard samples",
+    "Matches lab GC-MS"
+   ]
+  ],
+  "partner": "Test-kit maker partner",
+  "scale": "Kit-scale supply"
+ },
+ "pfas": {
+  "score": [
+   "PFOA",
+   "picked over other ions"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Utility pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "PFOA binders designed",
+   "Selective in simulation",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Utility pilot",
+   [
+    "1 small utility",
+    "Column vs carbon (GAC)"
+   ]
+  ],
+  "partner": "Water-utility partner",
+  "scale": "Utility-scale media"
+ },
+ "ammonium": {
+  "score": [
+   "NH₄⁺",
+   "picked over K⁺"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Plant probe pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Ammonium binders designed",
+   "Screened vs potassium",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Plant probe pilot",
+   [
+    "1 US sewage plant",
+    "Side-by-side drift data"
+   ]
+  ],
+  "partner": "Probe-maker partner",
+  "scale": "Probe-line license"
+ },
+ "psensor": {
+  "score": [
+   "PO₄³⁻",
+   "picked over SO₄²⁻, Cl⁻"
+  ],
+  "raise": [
+   [
+    "Lab testing",
+    120
+   ],
+   [
+    "Plant probe pilot",
+    100
+   ],
+   [
+    "Reserve",
+    60
+   ],
+   [
+    "Compute",
+    30
+   ]
+  ],
+  "ready": [
+   "Phosphate binders designed",
+   "Screened vs sulfate",
+   "US-sourced, low cost"
+  ],
+  "pilot": [
+   "Plant probe pilot",
+   [
+    "1 US sewage plant",
+    "Side-by-side vs analyzer"
+   ]
+  ],
+  "partner": "Analyzer-maker partner",
+  "scale": "Probe-line license"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "slug": "state",
+ "name": "State",
+ "what": "Predicts how a perturbation shifts expression",
+ "input": {
+  "label": "Control cells + perturbation",
+  "size": "256 cells × 19,790 genes"
+ },
+ "blocks": [
+  {
+   "name": "SE encoder",
+   "dims": "16 × 2048"
+  },
+  {
+   "name": "ST encoders",
+   "dims": "4 × 1488"
+  },
+  {
+   "name": "ST transformer",
+   "dims": "4 × 1488"
+  },
+  {
+   "name": "Gene decoder",
+   "dims": "3 × 1024 → 512"
+  }
+ ],
+ "params": "SE 600M",
+ "loop": null,
+ "output": {
+  "label": "Post-perturbation cells",
+  "size": "cells × 19,790 genes"
+ },
+ "who": {
+  "org": "Arc Institute",
+  "year": "2025",
+  "versions": "SE-600M + ST 2025",
+  "license": "Non-commercial · CC BY-NC-SA"
+ },
+ "ideas": [
+  "Works on sets, not single cells",
+  "SE embedding + ST transition",
+  "Attention across the set",
+  "No distribution assumption",
+  "Optimal-transport view",
+  "Transfers across datasets"
+ ],
+ "train": {
+  "hardware": "32 × H100 for SE",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "SE 167M cells · ST >100M",
+  "data": "scBaseCount, CELLxGENE, Tahoe-100M",
+  "epochs": "4 · SE"
+ },
+ "results": [
+  "Perturbation ID >50% over baseline",
+  "DE overlap 2× next best scGPT"
+ ],
+ "speed": "n/a",
+ "limit": "Cell lines, not real tissue",
+ "sources": [
+  "https://www.biorxiv.org/content/10.1101/2025.06.26.661135",
+  "https://www.biorxiv.org/content/biorxiv/early/2025/06/27/2025.06.26.661135.full.pdf",
+  "https://arcinstitute.org/news/virtual-cell-model-state",
+  "https://github.com/ArcInstitute/state",
+  "https://huggingface.co/arcinstitute/SE-600M"
+ ],
+ "ready": true,
+ "type": "Transformer"
+}

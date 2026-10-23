@@ -1,0 +1,71 @@
+{
+ "slug": "alphafold-3",
+ "name": "AlphaFold 3",
+ "what": "Predicts 3D structure of proteins, DNA, RNA and ligands together",
+ "input": {
+  "label": "Sequences + ligands + MSA",
+  "size": "N tokens · up to 5,120"
+ },
+ "blocks": [
+  {
+   "name": "MSA module",
+   "dims": "4 × 64 / 128"
+  },
+  {
+   "name": "Pairformer",
+   "dims": "48 × 384 / 128"
+  },
+  {
+   "name": "Diffusion module",
+   "dims": "24 × 768"
+  },
+  {
+   "name": "Confidence",
+   "dims": "4 × 384 / 128"
+  }
+ ],
+ "params": "n/a",
+ "loop": "× 4 cycles · 200 diffusion steps",
+ "output": {
+  "label": "All-atom xyz + confidence",
+  "size": "N atoms × 3"
+ },
+ "who": {
+  "org": "Google DeepMind + Isomorphic",
+  "year": "2024",
+  "versions": "AF2 2021 → Multimer 2.3 → AF3 2024",
+  "license": "Code open · weights on request, non-commercial"
+ },
+ "ideas": [
+  "Pairformer replaces Evoformer",
+  "Diffusion on raw atom xyz",
+  "No frames, no equivariance",
+  "Token = residue or atom",
+  "Cross-distillation curbs hallucination",
+  "Mini-rollout trains confidence"
+ ],
+ "train": {
+  "hardware": "256 × A100",
+  "time": "~20 d",
+  "compute": "n/a",
+  "samples": "~25M crops",
+  "data": "PDB ≤ 2021 + 41M AF2 preds",
+  "epochs": "n/a"
+ },
+ "results": [
+  "PoseBusters 76% vs 52% Vina",
+  "Antibody docking 63% vs 30% AF-M"
+ ],
+ "speed": "34 s · 1,024 tokens · 1 H100",
+ "limit": "Chirality errors, hallucination, static",
+ "sources": [
+  "https://www.nature.com/articles/s41586-024-07487-w",
+  "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07487-w/MediaObjects/41586_2024_7487_MOESM1_ESM.pdf",
+  "https://www.nature.com/articles/s41586-024-07487-w/tables/1",
+  "https://github.com/google-deepmind/alphafold3",
+  "https://github.com/google-deepmind/alphafold3/blob/main/docs/performance.md",
+  "https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md"
+ ],
+ "ready": true,
+ "type": "Transformer + diffusion"
+}

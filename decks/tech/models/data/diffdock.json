@@ -1,0 +1,59 @@
+{
+ "slug": "diffdock",
+ "name": "DiffDock",
+ "what": "Docks a small molecule into a protein",
+ "input": {
+  "label": "Protein + ligand graph",
+  "size": "residue graph, m angles"
+ },
+ "blocks": [
+  {
+   "name": "Score model",
+   "dims": "6 × 48 / 10"
+  },
+  {
+   "name": "Confidence model",
+   "dims": "5 × 24 / 6"
+  }
+ ],
+ "params": "~25M · 20.2M + 4.8M",
+ "loop": "× 20 steps · 40 samples",
+ "output": {
+  "label": "Ranked poses + confidence",
+  "size": "40 poses"
+ },
+ "who": {
+  "org": "MIT CSAIL",
+  "year": "2022",
+  "versions": "DiffDock 2022 → Pocket 2023 → L 2024",
+  "license": "Open · MIT"
+ },
+ "ideas": [
+  "Docking as generation",
+  "Diffusion on pose and torsions",
+  "Product space R3, SO(3), torus",
+  "Separate model ranks poses",
+  "Blind docking, no pocket"
+ ],
+ "train": {
+  "hardware": "4 × RTX A6000",
+  "time": "~18 days",
+  "compute": "n/a",
+  "samples": "~17k complexes",
+  "data": "PDBBind, time split",
+  "epochs": "850 score · 75 conf."
+ },
+ "results": [
+  "RMSD <2 Å 38.2% vs 22.9% GNINA",
+  "Top third by score 83% <2 Å"
+ ],
+ "speed": "~40 s per complex · 1 GPU",
+ "limit": "Rigid protein; new pockets hard",
+ "sources": [
+  "https://arxiv.org/abs/2210.01776",
+  "https://github.com/gcorso/DiffDock",
+  "https://arxiv.org/abs/2402.18396"
+ ],
+ "ready": true,
+ "type": "Equiv. GNN + diffusion"
+}

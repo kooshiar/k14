@@ -1,0 +1,144 @@
+{
+ "title": null,
+ "rows": [
+  "Holds the steel against salt",
+  "Dissolves in pore water",
+  "Safe on site",
+  "Cost per m\u00b3 of concrete",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  3,
+  2,
+  1,
+  2,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Benzotriazole",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    68,
+    100,
+    37,
+    27,
+    100,
+    50,
+    50
+   ],
+   "overall": 56,
+   "price": 2.2
+  },
+  {
+   "label": "DMEA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    100,
+    100,
+    46,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 28,
+   "price": 1.22
+  },
+  {
+   "label": "MEA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    100,
+    100,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 28,
+   "price": 1.26
+  },
+  {
+   "label": "L3-30",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    100,
+    63,
+    100,
+    37,
+    null,
+    72,
+    50,
+    55
+   ],
+   "overall": 67,
+   "price": 1.93
+  },
+  {
+   "label": "L4-7",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    78,
+    100,
+    34,
+    null,
+    72,
+    50,
+    55
+   ],
+   "overall": 68,
+   "price": 2.09
+  },
+  {
+   "label": "L5-1",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    85,
+    100,
+    31,
+    null,
+    71,
+    50,
+    55
+   ],
+   "overall": 68,
+   "price": 3.06
+  },
+  {
+   "label": "L5-1",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    85,
+    100,
+    31,
+    null,
+    71,
+    50,
+    55
+   ],
+   "overall": 68,
+   "price": 3.06
+  }
+ ]
+}

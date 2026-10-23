@@ -1,0 +1,171 @@
+{
+ "title": null,
+ "rows": [
+  "Removes the smoke taint",
+  "Keeps fruit and oak aroma",
+  "Food-safe",
+  "Leaves nothing in the wine",
+  "Cost per bottle",
+  "US supply",
+  "Drops into today\u2019s setup",
+  "Equipment cost",
+  "Easy to ship and store"
+ ],
+ "weights": [
+  2,
+  3,
+  3,
+  2,
+  1,
+  1,
+  2,
+  1,
+  1
+ ],
+ "options": [
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    9,
+    50,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50
+   ],
+   "overall": 47,
+   "price": 3.4
+  },
+  {
+   "label": "Calix[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    100,
+    100,
+    49,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 43,
+   "price": 3.36
+  },
+  {
+   "label": "Resorcin[4]arene",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    100,
+    100,
+    47,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 21,
+   "price": 3.22
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    100,
+    0,
+    50,
+    100,
+    100,
+    50,
+    50
+   ],
+   "overall": 19,
+   "price": 1.19
+  },
+  {
+   "label": "L3-12",
+   "sub": "Level 3 \u00b7 US-sourced",
+   "kind": "design",
+   "vals": [
+    58,
+    99,
+    100,
+    100,
+    50,
+    null,
+    71,
+    50,
+    50
+   ],
+   "overall": 77,
+   "price": 2.58
+  },
+  {
+   "label": "L4-3",
+   "sub": "Level 4 \u00b7 US, low cost",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    65,
+    100,
+    45,
+    null,
+    62,
+    50,
+    35
+   ],
+   "overall": 73,
+   "price": 2.69
+  },
+  {
+   "label": "L5-8",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    45,
+    null,
+    81,
+    50,
+    50
+   ],
+   "overall": 84,
+   "price": 3.78
+  },
+  {
+   "label": "L5-8",
+   "sub": "Level 5 \u00b7 drop-in",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    100,
+    100,
+    45,
+    null,
+    81,
+    50,
+    50
+   ],
+   "overall": 84,
+   "price": 3.78
+  }
+ ]
+}

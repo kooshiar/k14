@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>REINVENT 4 · 97A</title><style>
+:root{--ink:#0B0B0B;--ink2:#52514E;--mute:#898781;--line:#D5DAE2;--panel:#F5F6F8;--acc:#0057FF;--page:#ECEEF1;--card:#FFFFFF;
+ --sans:"SF Pro Display",-apple-system,system-ui,"Segoe UI",sans-serif;--mono:"SF Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--page);font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1360px;height:780px;transform-origin:0 0}
+.card{width:100%;height:100%;background:var(--card);border-radius:12px;padding:44px 48px;display:grid;grid-template-rows:auto 1fr;row-gap:40px}
+.top{display:flex;align-items:baseline;gap:18px;min-width:0}
+.top h1{margin:0;font-weight:700;font-size:38px;letter-spacing:-.035em;line-height:1;white-space:nowrap}
+.top p{margin:0;font-size:20px;color:var(--ink2);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:32px;min-height:0}
+span.sz{display:none!important}body.s0 span.sz.s0,body.s1 span.sz.s1,body.s2 span.sz.s2,body.s3 span.sz.s3,body.s4 span.sz.s4,body.s5 span.sz.s5{display:inline!important}
+.tog{position:absolute;top:16px;left:16px;display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.tog button{all:unset;cursor:pointer;font:500 12px/1 var(--mono);padding:8px 12px;color:var(--ink2)}.tog button+button{border-left:1px solid var(--line)}
+.tog button[aria-pressed=true]{background:var(--ink);color:#fff}.tog button:focus-visible{outline:2px solid var(--acc);outline-offset:-2px}
+.arch{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;padding:28px 24px;min-height:0}
+.flow{display:grid;grid-template-columns:128px 40px minmax(0,1fr) 40px 128px;align-items:center;width:100%}
+.io b{display:block;font-weight:600;font-size:18px;line-height:1.25;letter-spacing:-.01em}
+.io span{display:block;margin-top:10px;font:13.5px/1.4 var(--mono);color:var(--mute)}
+.ar{height:2px;background:var(--ink);position:relative;margin:0 6px}.ar::after{content:"";position:absolute;right:-1px;top:-4px;border-left:7px solid var(--ink);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.mwrap{position:relative;padding-top:60px}
+.model{background:#fff;border:1.5px solid var(--ink);border-radius:10px;padding:8px 22px}
+.mt{font-weight:700;font-size:21px;letter-spacing:-.02em;line-height:1.2;padding:16px 0 14px;border-bottom:1.5px solid var(--ink)}
+.mt+.bl{border-top:0}
+.bl{display:flex;flex-direction:column;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+.bl:first-child{border-top:0}
+.bl b{font-weight:600;font-size:19px;letter-spacing:-.01em}
+.bl span{font:14px var(--mono);color:var(--ink2)}
+.pm{margin:14px -60px 0;text-align:center;line-height:1.4;font:15px var(--mono);color:var(--ink2)}
+.loop{position:absolute;left:12%;right:12%;top:8px;height:46px}
+.loop svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.loop span{position:absolute;left:-40%;right:-40%;top:-4px;white-space:nowrap;text-align:center;font:14px var(--mono);color:var(--ink2)}
+.side{display:grid;grid-template-rows:repeat(4,auto);align-content:stretch;row-gap:14px;min-height:0}
+.bx{border:1px solid var(--line);border-radius:10px;padding:13px 20px 14px;display:flex;flex-direction:column;justify-content:center;gap:5px;min-height:0}
+.bx h2{margin:0 0 3px;font-weight:600;font-size:15px;letter-spacing:-.01em}
+.r{display:grid;grid-template-columns:96px 1fr;column-gap:14px;font-size:13.5px;line-height:1.22}
+.r i{font:normal 11.5px/1.5 var(--mono);color:var(--mute)}
+.r span{color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ideas{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:18px;row-gap:7px;font-size:13.5px;line-height:1.3}
+.ideas span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--acc);margin-right:9px;vertical-align:2px}
+.nav{position:fixed;left:16px;bottom:14px;font:500 13px var(--mono)}.nav a{color:var(--ink2);text-decoration:none}.nav a:hover{text-decoration:underline}
+@media (max-width:760px){
+ body{overflow:auto}#stage{position:static;width:auto;height:auto;transform:none!important;padding:16px 16px 56px}
+ .card{padding:22px 18px;row-gap:22px}.top{flex-direction:column;gap:8px}.top h1{font-size:30px}.top p{font-size:16px;white-space:normal}
+ .body{grid-template-columns:1fr;row-gap:14px}.flow{grid-template-columns:1fr;row-gap:10px;text-align:center}.ar{width:2px;height:22px;margin:0 auto}
+ .ar::after{right:-4px;top:auto;bottom:-1px;border-top:7px solid var(--ink);border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:0}
+ .side{grid-template-rows:none}.r span{white-space:normal}.ideas{grid-template-columns:1fr}}
+</style></head><body class="s0">
+<div id="stage"><div class="card"><div class="top"><h1>REINVENT 4</h1><p>Generates molecules under scoring objectives</p></div>
+<div class="body"><div class="arch"><div class="flow"><div class="io"><b>SMILES scaffold or seed</b><span>token sequence</span></div><i class="ar"></i><div class="mwrap"><div class="loop"><svg viewBox="0 0 100 46" preserveAspectRatio="none" aria-hidden="true"><path d="M92 46 V18 H8 V46" fill="none" stroke="#52514E" stroke-width="1.5" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"/></svg><span>Sample → score → update</span></div><div class="model"><div class="mt">RNN + Transformer</div><div class="bl"><b>Reinvent RNN</b><span>3 × 512</span></div><div class="bl"><b>Lib / LinkInvent</b><span>3 × 512</span></div><div class="bl"><b>Mol2Mol</b><span>6 + 6 × 256</span></div></div></div><i class="ar"></i><div class="io"><b>SMILES + scores</b><span>batch per epoch</span></div></div></div><div class="side">
+<section class="bx"><h2>Who and when</h2><div class="r"><i>Built by</i><span>AstraZeneca MolecularAI</span></div><div class="r"><i>Year</i><span>2024</span></div><div class="r"><i>Versions</i><span>v1 2017 → v2 → v3 → v4 2024</span></div><div class="r"><i>Weights</i><span>Open · Apache 2.0</span></div></section><section class="bx"><h2>Main ideas</h2><div class="ideas"><span>Four generators, one RL engine</span><span>SMILES token by token</span><span>Scoring parts as reward</span><span>Transfer and curriculum learning</span><span>Scaffold hop and linking</span></div></section>
+<section class="bx"><h2>Training</h2><div class="r"><i>Hardware</i><span>1 GPU · 8 GiB</span></div><div class="r"><i>Samples</i><span>Mol2Mol prior &gt;200B pairs</span></div><div class="r"><i>Data</i><span>ChEMBL 25–28 + PubChem</span></div></section><section class="bx"><h2>Results</h2><div class="r"><i>Result</i><span>PDK1 hit rate 1.9% of 6,400</span></div><div class="r"><i></i><span>Transfer learning lifts it to 3.5%</span></div><div class="r"><i>Limit</i><span>2D only; reward hacking</span></div></section></div></div></div></div>
+<nav class="nav"><a href="/decks/tech/#2">&larr; Models</a></nav>
+<script>function fit(){const s=Math.min((innerWidth-32)/1360,(innerHeight-64)/780);document.getElementById('stage').style.transform=`scale(${s}) translate(-680px,-390px)`}
+if(innerWidth>760){addEventListener('resize',fit);fit()}
+document.querySelectorAll('.tog button').forEach(b=>b.onclick=()=>{document.body.className='s'+b.dataset.s;document.querySelectorAll('.tog button').forEach(x=>x.setAttribute('aria-pressed',x===b))});</script></body></html>

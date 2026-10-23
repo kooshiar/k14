@@ -1,0 +1,60 @@
+{
+ "slug": "proteinmpnn",
+ "name": "ProteinMPNN",
+ "what": "Designs a sequence for a fixed backbone",
+ "input": {
+  "label": "Backbone N, Cα, C, O atoms",
+  "size": "N aa · 48 neighbours"
+ },
+ "blocks": [
+  {
+   "name": "Encoder",
+   "dims": "3 × 128"
+  },
+  {
+   "name": "Decoder",
+   "dims": "3 × 128"
+  }
+ ],
+ "params": "1.68M",
+ "loop": "× N decode steps, random order",
+ "output": {
+  "label": "Residue logits per position",
+  "size": "N × 20"
+ },
+ "who": {
+  "org": "UW IPD · Baker lab",
+  "year": "2022",
+  "versions": "v_48 weights → soluble → LigandMPNN 2023",
+  "license": "Open · MIT"
+ },
+ "ideas": [
+  "Message passing on backbone",
+  "Random decoding order",
+  "Backbone noise in training",
+  "Tied decoding for symmetry",
+  "Per-position constraints"
+ ],
+ "train": {
+  "hardware": "n/a",
+  "time": "n/a",
+  "compute": "n/a",
+  "samples": "25,361 clusters at 30% id",
+  "data": "PDB biounits < 3.5 Å",
+  "epochs": "200"
+ },
+ "results": [
+  "Native recovery 52.4% vs 32.9% Rosetta",
+  "Median yield 247 vs 9 mg/L"
+ ],
+ "speed": "1.2 s per 100 aa · 1 CPU",
+ "limit": "Ignores expression and function",
+ "sources": [
+  "https://www.science.org/doi/10.1126/science.add2187",
+  "https://pmc.ncbi.nlm.nih.gov/articles/9997061",
+  "https://www.bakerlab.org/wp-content/uploads/2022/09/Dauparas_etal_Science2022_Sequence_design_via_ProteinMPNN.pdf",
+  "https://github.com/dauparas/ProteinMPNN"
+ ],
+ "ready": true,
+ "type": "GNN"
+}

@@ -1,0 +1,6 @@
+{"_note": "USD per kg, bulk, Oct 2026 (China ex-works unless noted; research agent, sources in chat 2026-10-16). Unpriced designs use EST_UNPRICED.",
+ "EST_UNPRICED": 25,
+ "by_name": {"urea": 0.40, "melamine": 0.87, "dicyandiamide": 1.5, "TEA": 0.95, "TIPA": 1.2, "DEIPA": 1.24, "MDEA": 1.75, "THEED": 7.6, "THPED": 3.7,
+   "benzotriazole": 4.9, "tolyltriazole": 6.5, "MBT anion": 3.0, "2-mercaptobenzimidazole": 6.2, "thiourea": 1.33, "aminotriazole": 25,
+   "BTS-succinic acid": 20, "MEA": 1.35, "DMEA": 2.1, "glycerol": 1.25},
+ "by_smiles": {"CC1CNCCN1": 23, "Sc1nc2ccccc2s1": 1.9, "Sc1ccccc1": 8.5, "Cc1ccccc1S": 850, "NC(N)=O": 0.40, "OCCN(CCO)CCO": 0.95}}
