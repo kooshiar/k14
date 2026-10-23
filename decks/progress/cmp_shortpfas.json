@@ -1,0 +1,108 @@
+{
+ "title": null,
+ "rows": [
+  "Strength",
+  "Selectivity",
+  "Cost per use",
+  "US supply"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  1
+ ],
+ "options": [
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    0,
+    34,
+    100
+   ],
+   "overall": 19,
+   "price": 1.19
+  },
+  {
+   "label": "Quaternary ammonium (resin site)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    50,
+    null
+   ],
+   "overall": 9,
+   "price": 2.12
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    27,
+    5
+   ],
+   "overall": 3,
+   "price": 3.4
+  },
+  {
+   "label": "Alpha-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    28,
+    null
+   ],
+   "overall": 3,
+   "price": 2.5
+  },
+  {
+   "label": "Design B",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    37,
+    100,
+    48,
+    null
+   ],
+   "overall": 53,
+   "price": 1.98
+  },
+  {
+   "label": "L2-31",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    26,
+    null
+   ],
+   "overall": 68,
+   "price": 2.88
+  },
+  {
+   "label": "L2-45",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    55,
+    100,
+    46,
+    null
+   ],
+   "overall": 62,
+   "price": 2.02
+  }
+ ]
+}

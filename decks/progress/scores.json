@@ -381,5 +381,27 @@
   "l4": 20,
   "l5": 34,
   "scored": 47
+ },
+ "polysulfide": {
+  "ours": 75,
+  "ours_name": "Design B",
+  "theirs": 44,
+  "theirs_name": "beta-cyclodextrin",
+  "l1": 75,
+  "l2": 68,
+  "l3": 68,
+  "l4": null,
+  "l5": null
+ },
+ "shortpfas": {
+  "ours": 68,
+  "ours_name": "L2-31",
+  "theirs": 19,
+  "theirs_name": "beta-cyclodextrin",
+  "l1": 53,
+  "l2": 68,
+  "l3": 19,
+  "l4": null,
+  "l5": null
  }
 }

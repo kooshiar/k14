@@ -1,0 +1,108 @@
+{
+ "title": null,
+ "rows": [
+  "Strength",
+  "Selectivity",
+  "Cost per use",
+  "US supply"
+ ],
+ "weights": [
+  3,
+  2,
+  2,
+  1
+ ],
+ "options": [
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    50,
+    21,
+    100
+   ],
+   "overall": 44,
+   "price": 1.19
+  },
+  {
+   "label": "Lithium nitrate (additive)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    50,
+    null
+   ],
+   "overall": 3,
+   "price": 1.45
+  },
+  {
+   "label": "Tren tris(phenylurea)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    18,
+    null
+   ],
+   "overall": 2,
+   "price": 3.28
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    14,
+    5
+   ],
+   "overall": 2,
+   "price": 3.4
+  },
+  {
+   "label": "Design B",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    36,
+    null
+   ],
+   "overall": 75,
+   "price": 1.76
+  },
+  {
+   "label": "Design A",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    33,
+    null
+   ],
+   "overall": 73,
+   "price": 1.94
+  },
+  {
+   "label": "L2-5",
+   "sub": "Level 2",
+   "kind": "design",
+   "vals": [
+    100,
+    100,
+    26,
+    null
+   ],
+   "overall": 68,
+   "price": 2.45
+  }
+ ]
+}

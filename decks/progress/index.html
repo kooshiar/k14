@@ -122,6 +122,13 @@ html,body{height:auto!important;overflow:auto!important;background:#FFFFFF!impor
 #tbl th{background:#FFFFFF!important}
 .nav{display:none!important}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) html,:root:not([data-theme="light"]) body{background:#111317!important}}
+</style><style id="cxcss">
+.cx{width:20px;height:20px;margin:0 8px 0 0;padding:0;border:0;border-radius:5px;background:rgba(127,127,127,.12);color:#5B6170;font:500 11px/20px var(--mono,ui-monospace);cursor:pointer;vertical-align:1px;transition:transform .15s}
+.cx:hover{background:rgba(127,127,127,.22)}.cx.on{transform:rotate(90deg)}.cx0{display:inline-block;width:28px}
+#tbl tr.cxr td{border-top:0!important;padding-top:0!important;padding-bottom:14px!important}
+#tbl tr.cxr ul{margin:0;padding:0 0 0 28px;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 24px}
+#tbl tr.cxr li{font:400 13px/1.4 var(--sans,system-ui);color:#3A3F4A}
+#tbl tr.cxr li::before{content:"·";margin-right:8px;color:#9AA3B2}
 </style></head>
 <body>
 <div class="stage">
@@ -159,7 +166,7 @@ addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(cur+1);if(e.key==='Arr
 <script>
 // live table from status.json (GPU box, every 2 min) + scores.json + grades.json (hand-rated factors)
 const DECK=['potassium','tma','putrescine','boar','nicotine','smoketest','magrec','reecoal','ammonium','psensor','chalco','gold','tmah','cesium','sulfur','phosphate','xenon','rareearth','plastic','cork','pfas','lithium','co2','ethylene','heatcold','formaldehyde','cement','rebar','dioxane','boron','siloxane','mousy','selenate','tfa','smoke'];
-const TAG={"chalco": "Cemvita", "culoop": "Cemvita", "lignin": "Cemvita", "coolant": "Cemvita", "ionomer": "Evonik", "pucat": "Evonik", "hardener": "Evonik", "gout": "rheuma", "joint": "rheuma", "crp": "rheuma", "heatcold": "rheuma", "pdscav": "drug", "nitrite": "drug", "tfaswap": "drug", "chiral": "drug", "ironmedia": "biotech", "endotox": "biotech", "cryo": "biotech", "abcap": "biotech", "vaxstab": "biotech", "formaldehyde": "construction", "cement": "construction", "rebar": "construction", "dioxane": "water", "boron": "water", "selenate": "water", "tfa": "water", "pfas": "water", "phosphate": "water", "siloxane": "energy", "mousy": "wine", "smoke": "wine", "cork": "wine", "smoketest": "wine", "lithium": "batteries", "co2": "climate", "ethylene": "food", "rareearth": "rare earth", "magrec": "rare earth", "reecoal": "rare earth", "plastic": "plastic", "gold": "recycling", "tmah": "chips", "cesium": "nuclear", "sulfur": "fuel", "xenon": "gases", "ammonium": "sensors", "psensor": "sensors", "potassium": "health", "tma": "textiles", "putrescine": "food", "boar": "food", "nicotine": "health"};
+const TAG={"polysulfide": "batteries", "shortpfas": "water", "dyetrap": "recycling", "femob": "hydrogen", "antiscale": "climate", "pgmwater": "mining", "pgmchlor": "mining", "uranyl": "nuclear", "tmdiss": "batteries", "cmpchel": "chips", "chalco": "Cemvita", "culoop": "Cemvita", "lignin": "Cemvita", "coolant": "Cemvita", "ionomer": "Evonik", "pucat": "Evonik", "hardener": "Evonik", "gout": "rheuma", "joint": "rheuma", "crp": "rheuma", "heatcold": "rheuma", "pdscav": "drug", "nitrite": "drug", "tfaswap": "drug", "chiral": "drug", "ironmedia": "biotech", "endotox": "biotech", "cryo": "biotech", "abcap": "biotech", "vaxstab": "biotech", "formaldehyde": "construction", "cement": "construction", "rebar": "construction", "dioxane": "water", "boron": "water", "selenate": "water", "tfa": "water", "pfas": "water", "phosphate": "water", "siloxane": "energy", "mousy": "wine", "smoke": "wine", "cork": "wine", "smoketest": "wine", "lithium": "batteries", "co2": "climate", "ethylene": "food", "rareearth": "rare earth", "magrec": "rare earth", "reecoal": "rare earth", "plastic": "plastic", "gold": "recycling", "tmah": "chips", "cesium": "nuclear", "sulfur": "fuel", "xenon": "gases", "ammonium": "sensors", "psensor": "sensors", "potassium": "health", "tma": "textiles", "putrescine": "food", "boar": "food", "nicotine": "health"};
 const ST={done:['ok','done'],running:['run','running'],queued:['m','queued'],waiting:['m','waiting'],failed:['no','failed'],skipped:['m','skipped'],notrun:['m','not run']};
 const FN=['Size','Competition','Novelty','Tech','Scores','Relevance','Sales cycle'];
 let SC={},GR={},XR=[],D=null,SORT=null,DIR=-1;
@@ -177,11 +184,13 @@ function scoreCell(sc){if(!sc)return '<td class="m">—</td>';const l1=sc.l1??(s
 const KEY={tag:r=>(TAG[r.key]||r.tag||'~').toLowerCase(),name:r=>r.name.toLowerCase(),grade:r=>grade(r.key)?.g??-1,created:r=>r.created||'',finished:r=>r.finished||''};
 function sortBy(k){if(SORT===k)DIR=-DIR;else{SORT=k;DIR=k==='name'?1:-1}render(D)}
 function th(label,k){return `<th class="srt${SORT===k?' on':''}" onclick="sortBy('${k}')">${label}${SORT===k?(DIR>0?' ↑':' ↓'):''}</th>`}
+let CX={},OPEN=new Set();
+function cxT(k){OPEN.has(k)?OPEN.delete(k):OPEN.add(k);render(D)}
 function render(d){if(!d)return;D=d;let R=[...d.rows];
   if(SORT){const f=KEY[SORT];R.sort((a,b)=>{const x=f(a),y=f(b);return (x<y?-1:x>y?1:0)*DIR})}
   const rows=R.map(r=>{const [c,t]=ST[r.state]||['m',r.state];const G=grade(r.key);
     const nm=r.href?`<a class="pl" href="${r.href}">${r.name}</a>`:DECK.includes(r.key)?`<a class="pl" href="${r.key==='heatcold'?'/decks/heatcold/':`/decks/opportunities/${r.key}/`}">${r.name}</a>`:`<b>${r.name}</b>`;
-    return `<tr><td class="tg"><span>${TAG[r.key]||r.tag||'—'}</span></td><td class="p" title="${r.sub}">${nm}</td>${ph(r.phase1,r.phase1_stage)}${ph(r.phase2,r.phase2_stage)}${ph(r.phase3,r.phase3_stage)}${ph(r.phase4,r.phase4_stage)}${ph(r.phase5,r.phase5_stage)}${scoreCell(SC[r.key])}<td class="gr" title="${G?G.tip:''}">${G?G.g:'—'}</td><td class="t" title="${tmF(r.created)}">${tmD(r.created)}</td><td class="t" title="${tmF(r.finished)}">${tmD(r.finished)}</td><td class="fin ${c}">${t}</td></tr>`}).join('');
+    return `<tr><td class="tg"><span>${TAG[r.key]||r.tag||'—'}</span></td><td class="p" title="${r.sub}">${CX[r.key]?`<button class="cx${OPEN.has(r.key)?' on':''}" aria-expanded="${OPEN.has(r.key)}" aria-label="Design constraints" onclick="cxT('${r.key}')">▸</button>`:'<span class="cx0"></span>'}${nm}</td>${ph(r.phase1,r.phase1_stage)}${ph(r.phase2,r.phase2_stage)}${ph(r.phase3,r.phase3_stage)}${ph(r.phase4,r.phase4_stage)}${ph(r.phase5,r.phase5_stage)}${scoreCell(SC[r.key])}<td class="gr" title="${G?G.tip:''}">${G?G.g:'—'}</td><td class="t" title="${tmF(r.created)}">${tmD(r.created)}</td><td class="t" title="${tmF(r.finished)}">${tmD(r.finished)}</td><td class="fin ${c}">${t}</td></tr>`+(OPEN.has(r.key)&&CX[r.key]?`<tr class="cxr"><td></td><td colspan="11"><ul>${CX[r.key].map(x=>`<li>${x}</li>`).join('')}</ul></td></tr>`:'')}).join('');
   document.getElementById('tbl').innerHTML=`<tr>${th('Tag','tag')}${th('Problem','name')}<th class="c" title="Phase 1 · design">P1</th><th class="c" title="Phase 2 · level 2 edits">P2</th><th class="c" title="Phase 3 · US-sourced">P3</th><th class="c" title="Phase 4 · US-sourced, low cost">P4</th><th class="c" title="Phase 5 · drop-in upgrade of today’s products">P5</th><th title="Score: best sold today / our best after P1, P2, P3, P4, P5">Score</th>${th('Grade','grade')}${th('Started','created')}${th('Finished','finished')}<th>Status</th></tr>${rows}`;
   const av=k=>{const v=R.map(r=>r[k]).filter(x=>x!=null);return v.length?Math.round(v.reduce((a,b)=>a+b,0)/v.length):0};
   document.getElementById('ttl').textContent='Spinoff progress';
@@ -193,7 +202,7 @@ function render(d){if(!d)return;D=d;let R=[...d.rows];
   document.getElementById('sum').innerHTML=`<div class="sb"><h4>Done</h4><span><b>${full}</b> all phases</span><span><b>${p1}</b> phase 1</span><span><b>${all}</b> total</span></div><div class="sb"><h4>Today</h4><span><b>${fin}</b> finished</span><span><b>${st}</b> started</span><span><b>${run}</b> running</span></div><div class="sb" title="${Object.entries(cat).map(([t,n])=>t+' '+n).join(' · ')}"><h4>Top categories</h4>${top3}</div>`;
 }
 function load(){const J=u=>fetch(u,{cache:'no-store'}).then(r=>r.json()).catch(()=>({}));
-  Promise.all([J('scores.json'),J('grades.json'),J('../bioprogress/scores.json'),J('../bioprogress/status.json'),J('status.json')]).then(([s,g,bs,bst,d])=>{
+  Promise.all([J('scores.json'),J('grades.json'),J('../bioprogress/scores.json'),J('../bioprogress/status.json'),J('status.json'),J('constraints.json')]).then(([s,g,bs,bst,d,cx])=>{CX=cx||{};
     SC={...s,...bs};GR=g.rows||{};XR=g.extra_rows||[];if(!d.rows)return;
     const bio=(bst.rows||[]).map(r=>({...r,href:`/decks/bio/${r.key}/`}));
     d.rows=d.rows.concat(bio,XR).filter((r,i,a)=>a.findIndex(x=>x.key===r.key)===i);render(d)});}
