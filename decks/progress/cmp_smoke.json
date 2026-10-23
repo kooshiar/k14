@@ -9,12 +9,18 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   2,
   3,
   3,
+  2,
+  1,
+  1,
   2,
   1,
   1,
@@ -36,10 +42,128 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 47,
-   "price": 3.4
+   "overall": 52,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 9,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -54,10 +178,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 43,
-   "price": 3.36
+   "overall": 48,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 22,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Resorcin[4]arene",
@@ -72,10 +314,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    41,
+    58
    ],
-   "overall": 21,
-   "price": 3.22
+   "overall": 26,
+   "price": 3.22,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 5,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 47,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 78,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -90,82 +450,644 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 19,
-   "price": 1.19
+   "overall": 23,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 4,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L3-12",
+   "label": "L3-22",
    "sub": "Level 3 \u00b7 US-sourced",
    "kind": "design",
    "vals": [
-    58,
-    99,
+    74,
+    96,
     100,
     100,
-    50,
+    51,
     null,
-    71,
+    56,
     50,
-    50
+    50,
+    100,
+    51,
+    91
    ],
-   "overall": 77,
-   "price": 2.58
+   "overall": 78,
+   "price": 3.08,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 84,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 74,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 96,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 51,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 51,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 61,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 91,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L4-3",
+   "label": "L4-14",
    "sub": "Level 4 \u00b7 US, low cost",
    "kind": "design",
    "vals": [
+    27,
     100,
     100,
-    65,
     100,
-    45,
+    49,
     null,
-    62,
+    56,
     50,
-    35
+    50,
+    100,
+    48,
+    91
    ],
-   "overall": 73,
-   "price": 2.69
+   "overall": 71,
+   "price": 3.2,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 66,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 27,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 61,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 91,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L5-8",
+   "label": "L5-24",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
+    83,
     100,
     100,
     100,
-    100,
-    45,
+    48,
     null,
-    81,
+    88,
     50,
-    50
+    50,
+    100,
+    49,
+    63
    ],
-   "overall": 84,
-   "price": 3.78
+   "overall": 81,
+   "price": 3.79,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 83,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 70,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 88,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 63,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L5-8",
+   "label": "L5-24",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
+    83,
     100,
     100,
     100,
-    100,
-    45,
+    48,
     null,
-    81,
+    88,
     50,
-    50
+    50,
+    100,
+    49,
+    63
    ],
-   "overall": 84,
-   "price": 3.78
+   "overall": 81,
+   "price": 3.79,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 10.0,
+       "val": 83,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 70,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 88,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 63,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

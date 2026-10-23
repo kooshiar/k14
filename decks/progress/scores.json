@@ -1,113 +1,2347 @@
 {
  "formaldehyde": {
-  "ours": 61,
-  "ours_name": "Aminomethyl acetate",
-  "theirs": 67,
+  "ours": 53,
+  "ours_name": "L4-3",
+  "theirs": 63,
   "theirs_name": "urea",
-  "l1": 61,
-  "l2": 57,
+  "l1": 20,
+  "l2": 20,
   "l3": null,
-  "l4": 55,
-  "l5": 46
+  "l4": 53,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 68,
+    "rows": [
+     {
+      "name": "Catches free formaldehyde",
+      "w": 24.0,
+      "val": 73,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Mixes into the glue",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 8.0,
+      "val": 37,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 31,
+    "rows": [
+     {
+      "name": "Cost per panel",
+      "w": 22.5,
+      "val": 26,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe in the panel",
+      "w": 5.0,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 5.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 55,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 45,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 81,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 57,
+    "rows": [
+     {
+      "name": "Catches free formaldehyde",
+      "w": 24.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Mixes into the glue",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 8.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per panel",
+      "w": 22.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe in the panel",
+      "w": 5.0,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 5.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 85,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 90,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "cement": {
-  "ours": 73,
+  "ours": 70,
   "ours_name": "L2-17",
-  "theirs": 69,
+  "theirs": 66,
   "theirs_name": "DEIPA",
-  "l1": 70,
-  "l2": 73,
+  "l1": 66,
+  "l2": 70,
   "l3": null,
-  "l4": 70,
-  "l5": null
+  "l4": 69,
+  "l5": null,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 88,
+    "rows": [
+     {
+      "name": "Early strength",
+      "w": 17.1,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t slow setting",
+      "w": 17.1,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.7,
+      "val": 41,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 44,
+    "rows": [
+     {
+      "name": "Cost per tonne of cement",
+      "w": 22.5,
+      "val": 42,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe on site",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 72,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 75,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 45,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 79,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 67,
+    "rows": [
+     {
+      "name": "Early strength",
+      "w": 17.1,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t slow setting",
+      "w": 17.1,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.7,
+      "val": 47,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 48,
+    "rows": [
+     {
+      "name": "Cost per tonne of cement",
+      "w": 22.5,
+      "val": 48,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe on site",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 83,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 79,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "rebar": {
-  "ours": 68,
-  "ours_name": "L5-1",
-  "theirs": 56,
+  "ours": 61,
+  "ours_name": "L5-8",
+  "theirs": 53,
   "theirs_name": "benzotriazole",
-  "l1": 58,
-  "l2": 63,
-  "l3": 67,
-  "l4": 68,
-  "l5": 68
+  "l1": 53,
+  "l2": 57,
+  "l3": 60,
+  "l4": 60,
+  "l5": 61,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 71,
+    "rows": [
+     {
+      "name": "Holds the steel against salt",
+      "w": 20.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in pore water",
+      "w": 13.3,
+      "val": 78,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.7,
+      "val": 21,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 38,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of concrete",
+      "w": 20.0,
+      "val": 33,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe on site",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 70,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 75,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 79,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Holds the steel against salt",
+      "w": 20.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in pore water",
+      "w": 13.3,
+      "val": 68,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.7,
+      "val": 26,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 41,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of concrete",
+      "w": 20.0,
+      "val": 37,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe on site",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 65,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 27,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 83,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "dioxane": {
-  "ours": 65,
+  "ours": 67,
   "ours_name": "L5-21",
-  "theirs": 40,
+  "theirs": 41,
   "theirs_name": "beta-cyclodextrin",
-  "l1": 26,
-  "l2": 48,
+  "l1": 20,
+  "l2": 58,
   "l3": null,
-  "l4": 54,
-  "l5": 65
+  "l4": 60,
+  "l5": 67,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 85,
+    "rows": [
+     {
+      "name": "Picks dioxane over natural organics",
+      "w": 15.0,
+      "val": 87,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppb dioxane",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 49,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 46,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 77,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 65,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 39,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 42,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 30,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 43,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 16,
+    "rows": [
+     {
+      "name": "Picks dioxane over natural organics",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppb dioxane",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 10.0,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 15,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 71,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "boron": {
-  "ours": 63,
+  "ours": 68,
   "ours_name": "L2-13",
-  "theirs": 66,
+  "theirs": 69,
   "theirs_name": "catechol",
-  "l1": 55,
-  "l2": 63,
-  "l3": 62,
-  "l4": 54,
-  "l5": 41
+  "l1": 61,
+  "l2": 68,
+  "l3": 67,
+  "l4": 58,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 67,
+    "rows": [
+     {
+      "name": "Catches boron",
+      "w": 15.0,
+      "val": 78,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the resin",
+      "w": 10.0,
+      "val": 46,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Acid wash frees it for reuse",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 41,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 37,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 53,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 32,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 85,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 55,
+    "rows": [
+     {
+      "name": "Catches boron",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the resin",
+      "w": 10.0,
+      "val": 37,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Acid wash frees it for reuse",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 47,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 46,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 86,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 94,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "siloxane": {
-  "ours": 73,
+  "ours": 71,
   "ours_name": "L2-5",
-  "theirs": 57,
+  "theirs": 58,
   "theirs_name": "resorcin[4]arene",
   "l1": 69,
-  "l2": 73,
-  "l3": 71,
-  "l4": 41,
-  "l5": 58
+  "l2": 71,
+  "l3": 70,
+  "l4": 20,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 89,
+    "rows": [
+     {
+      "name": "Works in wet biogas",
+      "w": 13.5,
+      "val": 91,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches trace siloxane",
+      "w": 9.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves the fuel gas alone",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 9.0,
+      "val": 88,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.5,
+      "val": 52,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 51,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of gas",
+      "w": 16.7,
+      "val": 52,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 54,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 56,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 75,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 49,
+    "rows": [
+     {
+      "name": "Works in wet biogas",
+      "w": 13.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches trace siloxane",
+      "w": 9.0,
+      "val": 18,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Leaves the fuel gas alone",
+      "w": 4.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 9.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.5,
+      "val": 41,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 48,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of gas",
+      "w": 16.7,
+      "val": 47,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 78,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 58,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "selenate": {
-  "ours": 29,
-  "ours_name": "L4-2",
-  "theirs": 52,
+  "ours": 37,
+  "ours_name": "L4-28",
+  "theirs": 51,
   "theirs_name": "sulfonato-calix[4]arene",
-  "l1": 9,
-  "l2": 28,
+  "l1": 19,
+  "l2": 36,
   "l3": null,
-  "l4": 29,
-  "l5": 25
+  "l4": 37,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 33,
+    "rows": [
+     {
+      "name": "Picks selenium over sulfate",
+      "w": 13.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppb selenium",
+      "w": 8.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 8.9,
+      "val": 68,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 4.4,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.4,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 37,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 30,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to discharge",
+      "w": 10.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 20.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 6,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 45,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 39,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 30,
+    "rows": [
+     {
+      "name": "Picks selenium over sulfate",
+      "w": 13.3,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppb selenium",
+      "w": 8.9,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 8.9,
+      "val": 27,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 4.4,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.4,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 36,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 30,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to discharge",
+      "w": 10.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 20.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 71,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 51,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "tfa": {
-  "ours": 63,
+  "ours": 56,
   "ours_name": "L2-37",
-  "theirs": 38,
+  "theirs": 46,
   "theirs_name": "quaternary ammonium (resin site)",
-  "l1": 60,
-  "l2": 63,
-  "l3": 42,
-  "l4": 49,
-  "l5": 44
+  "l1": 54,
+  "l2": 56,
+  "l3": 20,
+  "l4": 47,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 59,
+    "rows": [
+     {
+      "name": "Picks TFA over chloride and sulfate",
+      "w": 13.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppt TFA",
+      "w": 8.9,
+      "val": 90,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 8.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 4.4,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.4,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 40,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 30,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 70,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 77,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 65,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 39,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 28,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 71,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 24,
+    "rows": [
+     {
+      "name": "Picks TFA over chloride and sulfate",
+      "w": 13.3,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppt TFA",
+      "w": 8.9,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 8.9,
+      "val": 63,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 4.4,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.4,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 77,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 65,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 82,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 89,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "smoke": {
-  "ours": 84,
-  "ours_name": "L5-8",
-  "theirs": 47,
+  "ours": 81,
+  "ours_name": "L5-24",
+  "theirs": 52,
   "theirs_name": "pillar[5]arene (OMe)",
-  "l1": 74,
+  "l1": 73,
   "l2": 72,
-  "l3": 77,
-  "l4": 73,
-  "l5": 84
+  "l3": 78,
+  "l4": 71,
+  "l5": 81,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 87,
+    "rows": [
+     {
+      "name": "Removes the smoke taint",
+      "w": 10.0,
+      "val": 83,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps fruit and oak aroma",
+      "w": 15.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves nothing in the wine",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 49,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 49,
+    "rows": [
+     {
+      "name": "Cost per bottle",
+      "w": 7.5,
+      "val": 48,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 70,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 88,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 63,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 36,
+    "rows": [
+     {
+      "name": "Removes the smoke taint",
+      "w": 10.0,
+      "val": 9,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Keeps fruit and oak aroma",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves nothing in the wine",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 29,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per bottle",
+      "w": 7.5,
+      "val": 43,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 43,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 5,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 60,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "mousy": {
   "ours": 80,
-  "ours_name": "L3-24",
-  "theirs": 57,
+  "ours_name": "L3-28",
+  "theirs": 61,
   "theirs_name": "pillar[5]arene (OMe)",
   "l1": 74,
   "l2": 79,
   "l3": 80,
-  "l4": 79,
-  "l5": 63
+  "l4": 75,
+  "l5": 65,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 89,
+    "rows": [
+     {
+      "name": "Removes the mousy taint",
+      "w": 8.0,
+      "val": 94,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps fruit and floral aroma",
+      "w": 12.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps the color",
+      "w": 8.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves nothing in the wine",
+      "w": 8.0,
+      "val": 80,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.0,
+      "val": 53,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per bottle",
+      "w": 7.5,
+      "val": 51,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 61,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 56,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 91,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 54,
+    "rows": [
+     {
+      "name": "Removes the mousy taint",
+      "w": 8.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps fruit and floral aroma",
+      "w": 12.0,
+      "val": 49,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps the color",
+      "w": 8.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves nothing in the wine",
+      "w": 8.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.0,
+      "val": 29,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per bottle",
+      "w": 7.5,
+      "val": 43,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 43,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 5,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 60,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "heatcold": {
   "ours": 80,
@@ -118,59 +2352,1267 @@
   "l4": 78
  },
  "co2": {
-  "ours": 41,
+  "ours": 44,
   "ours_name": "L2-17",
-  "theirs": 34,
+  "theirs": 39,
   "theirs_name": "beta-cyclodextrin",
-  "l1": 21,
-  "l2": 41,
-  "l3": 21,
-  "l4": 39,
-  "l5": 30
+  "l1": 20,
+  "l2": 44,
+  "l3": 20,
+  "l4": 20,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 86,
+    "rows": [
+     {
+      "name": "Works in wet flue gas",
+      "w": 11.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks CO\u2082 over nitrogen",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches CO\u2082",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Low heat to release CO\u2082",
+      "w": 11.2,
+      "val": 84,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 3.8,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 28,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 41,
+    "rows": [
+     {
+      "name": "Cost per tonne of CO\u2082",
+      "w": 16.7,
+      "val": 41,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 7,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 5,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 56,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 21,
+    "rows": [
+     {
+      "name": "Works in wet flue gas",
+      "w": 11.2,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Picks CO\u2082 over nitrogen",
+      "w": 7.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches CO\u2082",
+      "w": 7.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Low heat to release CO\u2082",
+      "w": 11.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 3.8,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 15,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per tonne of CO\u2082",
+      "w": 16.7,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 71,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "ethylene": {
-  "ours": 82,
+  "ours": 77,
   "ours_name": "L5-3",
-  "theirs": 63,
+  "theirs": 66,
   "theirs_name": "calix[4]arene",
-  "l1": 64,
-  "l2": 68,
-  "l3": 74,
-  "l4": 68,
-  "l5": 82
+  "l1": 66,
+  "l2": 71,
+  "l3": 75,
+  "l4": 67,
+  "l5": 77,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 84,
+    "rows": [
+     {
+      "name": "Catches ppm ethylene",
+      "w": 15.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Works in humid cold stores",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Ignores CO\u2082",
+      "w": 5.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 5.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 25,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per pallet",
+      "w": 7.5,
+      "val": 43,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 15.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 15.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 61,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 72,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Catches ppm ethylene",
+      "w": 15.0,
+      "val": 40,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Works in humid cold stores",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Ignores CO\u2082",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 5.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 49,
+    "rows": [
+     {
+      "name": "Cost per pallet",
+      "w": 7.5,
+      "val": 49,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 15.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 15.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 80,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 66,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "lithium": {
-  "ours": 47,
+  "ours": 40,
   "ours_name": "L2-52",
-  "theirs": 31,
+  "theirs": 41,
   "theirs_name": "12-crown-4",
-  "l1": 21,
-  "l2": 47,
-  "l3": 35,
-  "l4": 21,
-  "l5": null
+  "l1": 20,
+  "l2": 40,
+  "l3": 20,
+  "l4": 20,
+  "l5": null,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 42,
+    "rows": [
+     {
+      "name": "Picks lithium over sodium",
+      "w": 12.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks lithium over magnesium",
+      "w": 8.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches lithium",
+      "w": 4.1,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Acid strip frees it for reuse",
+      "w": 8.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sorbent",
+      "w": 8.2,
+      "val": 85,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.1,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 33,
+    "rows": [
+     {
+      "name": "Cost per tonne of lithium",
+      "w": 16.7,
+      "val": 27,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 30,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 26,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 36,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 22,
+    "rows": [
+     {
+      "name": "Picks lithium over sodium",
+      "w": 12.3,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks lithium over magnesium",
+      "w": 8.2,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches lithium",
+      "w": 4.1,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Acid strip frees it for reuse",
+      "w": 8.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sorbent",
+      "w": 8.2,
+      "val": 2,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.1,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per tonne of lithium",
+      "w": 16.7,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 81,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 86,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "cork": {
-  "ours": 77,
+  "ours": 78,
   "ours_name": "L5-21",
-  "theirs": 58,
+  "theirs": 62,
   "theirs_name": "pillar[5]arene (OMe)",
-  "l1": 74,
-  "l2": 70,
+  "l1": 72,
+  "l2": 72,
   "l3": 58,
   "l4": 67,
-  "l5": 77
+  "l5": 78,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 91,
+    "rows": [
+     {
+      "name": "Removes cork taint (TCA)",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps fruit and floral aroma",
+      "w": 15.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves nothing in the wine",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 49,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 51,
+    "rows": [
+     {
+      "name": "Cost per bottle",
+      "w": 7.5,
+      "val": 48,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 47,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 61,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 56,
+    "rows": [
+     {
+      "name": "Removes cork taint (TCA)",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Keeps fruit and floral aroma",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Leaves nothing in the wine",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 29,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per bottle",
+      "w": 7.5,
+      "val": 43,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Food-safe",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 43,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 3.0,
+      "val": 5,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 6.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.0,
+      "val": 60,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "rareearth": {
-  "ours": 55,
+  "ours": 49,
   "ours_name": "L5-3",
-  "theirs": 27,
+  "theirs": 38,
   "theirs_name": "TODGA",
-  "l1": 27,
-  "l2": 51,
-  "l3": 26,
-  "l4": 37,
-  "l5": 55
+  "l1": 20,
+  "l2": 39,
+  "l3": 20,
+  "l4": 20,
+  "l5": 49,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 41,
+    "rows": [
+     {
+      "name": "Picks Nd over La",
+      "w": 11.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches Nd",
+      "w": 3.8,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Strips with mild acid",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the oil phase",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 51,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.8,
+      "val": 80,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.8,
+      "val": 48,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the oil phase",
+      "w": 3.8,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 52,
+    "rows": [
+     {
+      "name": "Cost per tonne of oxide",
+      "w": 16.7,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 51,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 48,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 45,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 67,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 20,
+    "rows": [
+     {
+      "name": "Picks Nd over La",
+      "w": 9.0,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Picks Nd over Ce",
+      "w": 9.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches Nd",
+      "w": 3.0,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Strips with mild acid",
+      "w": 6.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the oil phase",
+      "w": 6.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.0,
+      "val": 25,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.0,
+      "val": 80,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.0,
+      "val": 37,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the oil phase",
+      "w": 3.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 42,
+    "rows": [
+     {
+      "name": "Cost per tonne of oxide",
+      "w": 16.7,
+      "val": 38,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 81,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 86,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "plastic": {
   "ours": 72,
@@ -183,147 +3625,3130 @@
   "l4": 68
  },
  "gold": {
-  "ours": 69,
+  "ours": 63,
   "ours_name": "L5-15",
-  "theirs": 36,
+  "theirs": 44,
   "theirs_name": "quaternary ammonium (resin site)",
-  "l1": 40,
-  "l2": 64,
-  "l3": 39,
-  "l4": 39,
-  "l5": 69
+  "l1": 20,
+  "l2": 59,
+  "l3": 20,
+  "l4": 20,
+  "l5": 63,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 84,
+    "rows": [
+     {
+      "name": "Picks gold over copper and zinc",
+      "w": 10.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Works in strong chloride leach",
+      "w": 7.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches gold",
+      "w": 7.3,
+      "val": 80,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Lets go of gold for refining",
+      "w": 7.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the oil phase",
+      "w": 3.6,
+      "val": 73,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.6,
+      "val": 32,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 47,
+    "rows": [
+     {
+      "name": "Cost per ounce recovered",
+      "w": 20.0,
+      "val": 43,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 10.0,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 87,
+    "rows": [
+     {
+      "name": "No cyanide, safe to handle",
+      "w": 3.3,
+      "val": 65,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 47,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 88,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 26,
+    "rows": [
+     {
+      "name": "Picks gold over copper and zinc",
+      "w": 10.9,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Works in strong chloride leach",
+      "w": 7.3,
+      "val": 37,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches gold",
+      "w": 7.3,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Lets go of gold for refining",
+      "w": 7.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the oil phase",
+      "w": 3.6,
+      "val": 63,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.6,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per ounce recovered",
+      "w": 20.0,
+      "val": 44,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 87,
+    "rows": [
+     {
+      "name": "No cyanide, safe to handle",
+      "w": 3.3,
+      "val": 65,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 82,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 89,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "tmah": {
-  "ours": 61,
+  "ours": 52,
   "ours_name": "L2-44",
-  "theirs": 45,
+  "theirs": 47,
   "theirs_name": "calix[4]arene",
-  "l1": 48,
-  "l2": 61,
-  "l3": 39,
-  "l4": 37,
-  "l5": 43
+  "l1": 20,
+  "l2": 52,
+  "l3": 20,
+  "l4": 20,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 66,
+    "rows": [
+     {
+      "name": "Picks TMAH over ammonium and sodium",
+      "w": 12.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches TMAH",
+      "w": 8.2,
+      "val": 45,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Releases TMAH for reuse",
+      "w": 12.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the resin",
+      "w": 8.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.1,
+      "val": 5,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 39,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of wastewater",
+      "w": 16.7,
+      "val": 35,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 87,
+    "rows": [
+     {
+      "name": "Safe in the fab",
+      "w": 3.3,
+      "val": 65,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 34,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 27,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 32,
+    "rows": [
+     {
+      "name": "Picks TMAH over ammonium and sodium",
+      "w": 12.3,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches TMAH",
+      "w": 8.2,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Releases TMAH for reuse",
+      "w": 12.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the resin",
+      "w": 8.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.1,
+      "val": 33,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 45,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of wastewater",
+      "w": 16.7,
+      "val": 42,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe in the fab",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 80,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 66,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "cesium": {
-  "ours": 59,
+  "ours": 60,
   "ours_name": "Design C",
-  "theirs": 24,
+  "theirs": 33,
   "theirs_name": "calix[4]arene-crown-6",
-  "l1": 59,
-  "l2": 42,
-  "l3": 38,
-  "l4": 23,
-  "l5": 40
+  "l1": 60,
+  "l2": 20,
+  "l3": 20,
+  "l4": 20,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 72,
+    "rows": [
+     {
+      "name": "Picks cesium over sodium",
+      "w": 11.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks cesium over potassium",
+      "w": 7.5,
+      "val": 89,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches cesium",
+      "w": 7.5,
+      "val": 37,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Strips with dilute acid",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the solvent",
+      "w": 7.5,
+      "val": 55,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 56,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 52,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of waste",
+      "w": 12.5,
+      "val": 54,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 12.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 36,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 25,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 66,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 16,
+    "rows": [
+     {
+      "name": "Picks cesium over sodium",
+      "w": 11.2,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks cesium over potassium",
+      "w": 7.5,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Catches cesium",
+      "w": 7.5,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Strips with dilute acid",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the solvent",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 19,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 45,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of waste",
+      "w": 12.5,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 12.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 73,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 58,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "sulfur": {
-  "ours": 65,
-  "ours_name": "L5-21",
-  "theirs": 56,
+  "ours": 61,
+  "ours_name": "L2-21",
+  "theirs": 54,
   "theirs_name": "beta-cyclodextrin",
-  "l1": 61,
+  "l1": 57,
   "l2": 61,
-  "l3": 59,
-  "l4": 64,
-  "l5": 65
+  "l3": 60,
+  "l4": 60,
+  "l5": 60,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 83,
+    "rows": [
+     {
+      "name": "Picks sulfur over aromatics",
+      "w": 13.5,
+      "val": 90,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches the hardest sulfur",
+      "w": 13.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 9.0,
+      "val": 67,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t wash into the fuel",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.5,
+      "val": 47,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 44,
+    "rows": [
+     {
+      "name": "Cost per tonne of fuel",
+      "w": 16.7,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 35,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 28,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 25,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 73,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 43,
+    "rows": [
+     {
+      "name": "Picks sulfur over aromatics",
+      "w": 13.5,
+      "val": 23,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Catches the hardest sulfur",
+      "w": 13.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Frees up for reuse",
+      "w": 9.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t wash into the fuel",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.5,
+      "val": 15,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per tonne of fuel",
+      "w": 16.7,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 71,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "phosphate": {
-  "ours": 27,
-  "ours_name": "L3-3",
-  "theirs": 25,
+  "ours": 20,
+  "ours_name": "Design A",
+  "theirs": 40,
   "theirs_name": "quaternary ammonium (resin site)",
-  "l1": 25,
-  "l2": 25,
-  "l3": 27,
-  "l4": 15,
-  "l5": null
+  "l1": 20,
+  "l2": 20,
+  "l3": 20,
+  "l4": 20,
+  "l5": null,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 13,
+    "rows": [
+     {
+      "name": "Picks phosphate over sulfate",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks phosphate over chloride, bicarbonate",
+      "w": 6.7,
+      "val": 8,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Catches phosphate",
+      "w": 6.7,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Releases phosphate as fertilizer",
+      "w": 6.7,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 6.7,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.3,
+      "val": 37,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 40,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of wastewater",
+      "w": 10.0,
+      "val": 46,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 30,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to discharge",
+      "w": 10.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 20.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 8,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 71,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 16,
+    "rows": [
+     {
+      "name": "Picks phosphate over sulfate",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks phosphate over chloride, bicarbonate",
+      "w": 6.7,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Catches phosphate",
+      "w": 6.7,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Releases phosphate as fertilizer",
+      "w": 6.7,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 6.7,
+      "val": 63,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of wastewater",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 87,
+    "rows": [
+     {
+      "name": "Safe to discharge",
+      "w": 10.0,
+      "val": 65,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 20.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 82,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 7.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 3.8,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 3.8,
+      "val": 89,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": [
+   "Picks phosphate over chloride, bicarbonate",
+   "Catches phosphate",
+   "Stays in the filter"
+  ]
  },
  "xenon": {
-  "ours": 67,
-  "ours_name": "L4-1",
-  "theirs": 64,
+  "ours": 61,
+  "ours_name": "L5-21",
+  "theirs": 59,
   "theirs_name": "beta-cyclodextrin",
-  "l1": 37,
-  "l2": 36,
-  "l3": 61,
-  "l4": 67,
-  "l5": 62
+  "l1": 20,
+  "l2": 20,
+  "l3": 57,
+  "l4": 60,
+  "l5": 61,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 69,
+    "rows": [
+     {
+      "name": "Picks xenon over krypton",
+      "w": 13.5,
+      "val": 61,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Ignores oxygen",
+      "w": 4.5,
+      "val": 56,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Catches xenon",
+      "w": 9.0,
+      "val": 69,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Low energy to release",
+      "w": 9.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.5,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per liter of xenon",
+      "w": 12.5,
+      "val": 46,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 12.5,
+      "val": 55,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 45,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 42,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 48,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 53,
+    "rows": [
+     {
+      "name": "Picks xenon over krypton",
+      "w": 13.5,
+      "val": 45,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Ignores oxygen",
+      "w": 4.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Catches xenon",
+      "w": 9.0,
+      "val": 49,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Low energy to release",
+      "w": 9.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t evaporate",
+      "w": 4.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.5,
+      "val": 15,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per liter of xenon",
+      "w": 12.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 12.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 71,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 4.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 8.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 4.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 4.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "chalco": {
-  "ours": 60,
+  "ours": 55,
   "ours_name": "Design B",
-  "theirs": 68,
+  "theirs": 63,
   "theirs_name": "ethylene thiourea",
-  "l1": 60,
-  "l2": 50,
-  "l3": 48,
-  "l4": 51,
-  "l5": 29
+  "l1": 55,
+  "l2": 44,
+  "l3": 44,
+  "l4": 46,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 56,
+    "rows": [
+     {
+      "name": "Grips the copper sites",
+      "w": 17.1,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t lock up the surface",
+      "w": 11.4,
+      "val": 40,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the leach",
+      "w": 5.7,
+      "val": 52,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.7,
+      "val": 21,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 41,
+    "rows": [
+     {
+      "name": "Cost per tonne of copper",
+      "w": 22.5,
+      "val": 38,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe for leach microbes and crews",
+      "w": 5.0,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 5.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 61,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 65,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 66,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 65,
+    "rows": [
+     {
+      "name": "Grips the copper sites",
+      "w": 17.1,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Doesn\u2019t lock up the surface",
+      "w": 11.4,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the leach",
+      "w": 5.7,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.7,
+      "val": 39,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per tonne of copper",
+      "w": 22.5,
+      "val": 45,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 7.5,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe for leach microbes and crews",
+      "w": 5.0,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 5.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 77,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 71,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "psensor": {
-  "ours": 72,
-  "ours_name": "L4-19",
-  "theirs": 54,
+  "ours": 59,
+  "ours_name": "L4-17",
+  "theirs": 53,
   "theirs_name": "tren tris(phenylurea)",
-  "l1": 59,
-  "l2": 65,
-  "l3": 60,
-  "l4": 72,
-  "l5": 49
+  "l1": 58,
+  "l2": 54,
+  "l3": 58,
+  "l4": 59,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 55,
+    "score": 65,
+    "rows": [
+     {
+      "name": "Picks phosphate over sulfate and nitrate",
+      "w": 13.8,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks phosphate over chloride",
+      "w": 9.2,
+      "val": 86,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Fast, reversible reading",
+      "w": 9.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sensor membrane",
+      "w": 13.8,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches phosphate",
+      "w": 4.6,
+      "val": 28,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.6,
+      "val": 3,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 10,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per sensor",
+      "w": 5.0,
+      "val": 32,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 65,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 87,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 65,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 25,
+    "score": 45,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 12.5,
+      "val": 32,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 6.2,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 6.2,
+      "val": 79,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 55,
+    "score": 40,
+    "rows": [
+     {
+      "name": "Picks phosphate over sulfate and nitrate",
+      "w": 13.8,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks phosphate over chloride",
+      "w": 9.2,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Fast, reversible reading",
+      "w": 9.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sensor membrane",
+      "w": 13.8,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches phosphate",
+      "w": 4.6,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.6,
+      "val": 6,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 10,
+    "score": 40,
+    "rows": [
+     {
+      "name": "Cost per sensor",
+      "w": 5.0,
+      "val": 32,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 25,
+    "score": 82,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 12.5,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 6.2,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 6.2,
+      "val": 89,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "ammonium": {
-  "ours": 78,
-  "ours_name": "L2-18",
-  "theirs": 56,
+  "ours": 65,
+  "ours_name": "L2-56",
+  "theirs": 57,
   "theirs_name": "calix[4]arene",
-  "l1": 62,
-  "l2": 78,
-  "l3": 65,
-  "l4": 62,
-  "l5": 52
+  "l1": 55,
+  "l2": 65,
+  "l3": 64,
+  "l4": 54,
+  "l5": 54,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 55,
+    "score": 67,
+    "rows": [
+     {
+      "name": "Picks ammonium over potassium",
+      "w": 13.8,
+      "val": 84,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks ammonium over sodium",
+      "w": 9.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Fast, reversible reading",
+      "w": 9.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sensor membrane",
+      "w": 13.8,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ammonium",
+      "w": 4.6,
+      "val": 5,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.6,
+      "val": 29,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 10,
+    "score": 44,
+    "rows": [
+     {
+      "name": "Cost per sensor",
+      "w": 5.0,
+      "val": 38,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 87,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 65,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 25,
+    "score": 64,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 5.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 72,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 57,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 55,
+    "score": 47,
+    "rows": [
+     {
+      "name": "Picks ammonium over potassium",
+      "w": 13.8,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks ammonium over sodium",
+      "w": 9.2,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Fast, reversible reading",
+      "w": 9.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sensor membrane",
+      "w": 13.8,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ammonium",
+      "w": 4.6,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.6,
+      "val": 33,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 10,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per sensor",
+      "w": 5.0,
+      "val": 42,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 25,
+    "score": 80,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 5.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 66,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "magrec": {
-  "ours": 63,
-  "ours_name": "L3-22",
-  "theirs": 68,
+  "ours": 51,
+  "ours_name": "L5-3",
+  "theirs": 57,
   "theirs_name": "Cyanex 272",
-  "l1": 39,
-  "l2": 55,
-  "l3": 63,
-  "l4": 57,
-  "l5": 57
+  "l1": 20,
+  "l2": 20,
+  "l3": 20,
+  "l4": 45,
+  "l5": 51,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 54,
+    "rows": [
+     {
+      "name": "Catches neodymium",
+      "w": 12.9,
+      "val": 38,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Strips with mild acid",
+      "w": 12.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the oil phase",
+      "w": 12.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.4,
+      "val": 9,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 35,
+    "rows": [
+     {
+      "name": "Cost per kg of oxide",
+      "w": 16.7,
+      "val": 33,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 40,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 51,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 48,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 45,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 67,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 56,
+    "rows": [
+     {
+      "name": "Catches neodymium",
+      "w": 12.9,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Strips with mild acid",
+      "w": 12.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the oil phase",
+      "w": 12.9,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.4,
+      "val": 7,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 37,
+    "rows": [
+     {
+      "name": "Cost per kg of oxide",
+      "w": 16.7,
+      "val": 32,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 76,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 65,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "reecoal": {
-  "ours": 42,
+  "ours": 20,
   "ours_name": "Design A",
-  "theirs": 24,
+  "theirs": 31,
   "theirs_name": "EDTA",
-  "l1": 42,
-  "l2": 42,
-  "l3": 42,
-  "l4": 42,
-  "l5": 40
+  "l1": 20,
+  "l2": 20,
+  "l3": 20,
+  "l4": 20,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 32,
+    "rows": [
+     {
+      "name": "Picks rare earths over aluminum",
+      "w": 11.2,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks rare earths over calcium, iron",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches trace rare earths",
+      "w": 7.5,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Releases them for refining",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sorbent",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 32,
+    "rows": [
+     {
+      "name": "Cost per kg of oxide",
+      "w": 16.7,
+      "val": 26,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to discharge",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 44,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 32,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 45,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 81,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 14,
+    "rows": [
+     {
+      "name": "Picks rare earths over aluminum",
+      "w": 11.2,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Picks rare earths over calcium, iron",
+      "w": 7.5,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Catches trace rare earths",
+      "w": 7.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Releases them for refining",
+      "w": 7.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the sorbent",
+      "w": 7.5,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 3.8,
+      "val": 15,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 39,
+    "rows": [
+     {
+      "name": "Cost per kg of oxide",
+      "w": 16.7,
+      "val": 35,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 8.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to discharge",
+      "w": 3.3,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 6.7,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 75,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 64,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": [
+   "Catches trace rare earths"
+  ]
  },
  "pfas": {
-  "ours": 81,
-  "ours_name": "L3-3",
-  "theirs": 48,
-  "theirs_name": "pillar[5]arene (OMe)",
-  "l1": 78,
-  "l2": 75,
-  "l3": 81,
-  "l4": 81,
-  "l5": null
+  "ours": 72,
+  "ours_name": "L3-19",
+  "theirs": 43,
+  "theirs_name": "quaternary ammonium (resin site)",
+  "l1": 71,
+  "l2": 65,
+  "l3": 72,
+  "l4": 60,
+  "l5": null,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 71,
+    "rows": [
+     {
+      "name": "Picks PFAS over natural organics",
+      "w": 15.0,
+      "val": 89,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppt PFAS",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 10.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 9,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 34,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 15.0,
+      "val": 34,
+      "cut": 25,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 100,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 80,
+    "rows": [
+     {
+      "name": "Easy to make",
+      "w": 15.0,
+      "val": 80,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 20,
+    "rows": [
+     {
+      "name": "Picks PFAS over natural organics",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Catches ppt PFAS",
+      "w": 10.0,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Stays in the filter",
+      "w": 10.0,
+      "val": 63,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per m\u00b3 of water",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 77,
+    "rows": [
+     {
+      "name": "Safe for drinking water",
+      "w": 18.0,
+      "val": 65,
+      "cut": 65,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 12.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 89,
+    "rows": [
+     {
+      "name": "Easy to make",
+      "w": 15.0,
+      "val": 89,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "culoop": {
-  "ours": 73,
+  "ours": 68,
   "ours_name": "Glutamate(2-)",
-  "theirs": 34,
+  "theirs": 40,
   "theirs_name": "mercaptobenzothiazole",
-  "l1": 73,
-  "l2": 61,
-  "l3": 57,
-  "l4": 57,
-  "l5": 58
+  "l1": 68,
+  "l2": 56,
+  "l3": 55,
+  "l4": 55,
+  "l5": 20,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 87,
+    "rows": [
+     {
+      "name": "Protects the copper loop",
+      "w": 20.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the coolant",
+      "w": 13.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.7,
+      "val": 43,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 51,
+    "rows": [
+     {
+      "name": "Cost per loop fill",
+      "w": 20.0,
+      "val": 51,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 5.0,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 5.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 53,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 61,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 19,
+    "rows": [
+     {
+      "name": "Protects the copper loop",
+      "w": 13.3,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the coolant",
+      "w": 8.9,
+      "val": 1,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 4.4,
+      "val": 38,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 4.4,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 4.4,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the water",
+      "w": 4.4,
+      "val": 17,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 30,
+    "score": 48,
+    "rows": [
+     {
+      "name": "Cost per loop fill",
+      "w": 20.0,
+      "val": 47,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Equipment cost",
+      "w": 10.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Safe to handle",
+      "w": 5.0,
+      "val": 100,
+      "cut": 30,
+      "ok": true
+     },
+     {
+      "name": "Allowed for sale",
+      "w": 5.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 81,
+    "rows": [
+     {
+      "name": "Drops into today\u2019s setup",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to ship and store",
+      "w": 5.0,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 5.0,
+      "val": 85,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "coolant": {
   "ours": 50,
@@ -383,25 +6808,322 @@
   "scored": 47
  },
  "polysulfide": {
-  "ours": 75,
+  "ours": 58,
   "ours_name": "Design B",
-  "theirs": 44,
+  "theirs": 33,
   "theirs_name": "beta-cyclodextrin",
-  "l1": 75,
-  "l2": 68,
-  "l3": 68,
+  "l1": 58,
+  "l2": 47,
+  "l3": 47,
   "l4": null,
-  "l5": null
+  "l5": null,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 68,
+    "rows": [
+     {
+      "name": "Strength",
+      "w": 22.5,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Selectivity",
+      "w": 15.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 7.5,
+      "val": 10,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 36,
+    "rows": [
+     {
+      "name": "Cost per use",
+      "w": 25.0,
+      "val": 36,
+      "cut": 25,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 54,
+    "rows": [
+     {
+      "name": "Easy to make",
+      "w": 20.0,
+      "val": 54,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 45,
+    "score": 26,
+    "rows": [
+     {
+      "name": "Strength",
+      "w": 22.5,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Selectivity",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 7.5,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 25,
+    "score": 21,
+    "rows": [
+     {
+      "name": "Cost per use",
+      "w": 25.0,
+      "val": 21,
+      "cut": 25,
+      "ok": false
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 10,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 10.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 20,
+    "score": 59,
+    "rows": [
+     {
+      "name": "US supply",
+      "w": 10.0,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Easy to make",
+      "w": 10.0,
+      "val": 35,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  },
  "shortpfas": {
-  "ours": 68,
-  "ours_name": "L2-31",
-  "theirs": 19,
-  "theirs_name": "beta-cyclodextrin",
-  "l1": 53,
-  "l2": 68,
-  "l3": 19,
+  "ours": 69,
+  "ours_name": "L2-45",
+  "theirs": 31,
+  "theirs_name": "quaternary ammonium (resin site)",
+  "l1": 65,
+  "l2": 69,
+  "l3": 20,
   "l4": null,
-  "l5": null
+  "l5": null,
+  "ours_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 63,
+    "rows": [
+     {
+      "name": "Strength",
+      "w": 20.0,
+      "val": 55,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Selectivity",
+      "w": 13.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.7,
+      "val": 36,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 46,
+    "rows": [
+     {
+      "name": "Cost per use",
+      "w": 15.0,
+      "val": 46,
+      "cut": 25,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 30.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 64,
+    "rows": [
+     {
+      "name": "Easy to make",
+      "w": 15.0,
+      "val": 64,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "theirs_boxes": [
+   {
+    "box": "Performance",
+    "mult": 40,
+    "score": 7,
+    "rows": [
+     {
+      "name": "Strength",
+      "w": 20.0,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Selectivity",
+      "w": 13.3,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Holds more per kg",
+      "w": 6.7,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Cost",
+    "mult": 15,
+    "score": 50,
+    "rows": [
+     {
+      "name": "Cost per use",
+      "w": 15.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Safety & rules",
+    "mult": 30,
+    "score": 100,
+    "rows": [
+     {
+      "name": "Allowed for sale",
+      "w": 30.0,
+      "val": 100,
+      "cut": 31,
+      "ok": true
+     }
+    ]
+   },
+   {
+    "box": "Fit & supply",
+    "mult": 15,
+    "score": 89,
+    "rows": [
+     {
+      "name": "Easy to make",
+      "w": 15.0,
+      "val": 89,
+      "cut": 0,
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "ours_fails": []
  }
 }

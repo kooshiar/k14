@@ -4,12 +4,18 @@
   "Strength",
   "Selectivity",
   "Cost per use",
-  "US supply"
+  "US supply",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
   2,
   2,
+  1,
+  2,
+  1,
   1
  ],
  "options": [
@@ -21,10 +27,93 @@
     50,
     50,
     21,
-    100
+    100,
+    100,
+    0,
+    35
    ],
-   "overall": 44,
-   "price": 1.19
+   "overall": 33,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 26,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 21,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 21,
+       "cut": 25,
+       "ok": false
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 59,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 10.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Lithium nitrate (additive)",
@@ -34,10 +123,86 @@
     0,
     0,
     50,
-    null
+    null,
+    100,
+    50,
+    81
    ],
-   "overall": 3,
-   "price": 1.45
+   "overall": 14,
+   "price": 1.45,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 2,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 20.0,
+       "val": 81,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Tren tris(phenylurea)",
@@ -47,10 +212,86 @@
     0,
     0,
     18,
-    null
+    null,
+    100,
+    0,
+    89
    ],
-   "overall": 2,
-   "price": 3.28
+   "overall": 8,
+   "price": 3.28,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 1,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 18,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 18,
+       "cut": 25,
+       "ok": false
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 89,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 20.0,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -60,10 +301,93 @@
     0,
     0,
     14,
-    5
+    5,
+    100,
+    0,
+    60
    ],
-   "overall": 2,
-   "price": 3.4
+   "overall": 5,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 1,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 14,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 14,
+       "cut": 25,
+       "ok": false
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 17,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 10.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 10.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Design B",
@@ -73,10 +397,86 @@
     100,
     100,
     36,
-    null
+    null,
+    100,
+    10,
+    54
    ],
-   "overall": 75,
-   "price": 1.76
+   "overall": 58,
+   "price": 1.76,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 68,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 10,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 36,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 54,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 20.0,
+       "val": 54,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Design A",
@@ -86,10 +486,86 @@
     100,
     100,
     33,
-    null
+    null,
+    100,
+    5,
+    60
    ],
-   "overall": 73,
-   "price": 1.94
+   "overall": 55,
+   "price": 1.94,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 61,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 33,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 33,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 60,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 20.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-5",
@@ -99,10 +575,86 @@
     100,
     100,
     26,
-    null
+    null,
+    100,
+    0,
+    70
    ],
-   "overall": 68,
-   "price": 2.45
+   "overall": 47,
+   "price": 2.45,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 22.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Selectivity",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 26,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 25.0,
+       "val": 26,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 70,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 20.0,
+       "val": 70,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

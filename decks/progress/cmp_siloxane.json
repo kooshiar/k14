@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   2,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -39,10 +45,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    41,
+    58
    ],
-   "overall": 57,
-   "price": 3.22
+   "overall": 58,
+   "price": 3.22,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 18,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 78,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -58,10 +189,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 30,
-   "price": 1.19
+   "overall": 34,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 16,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 25,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -77,10 +333,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 15,
-   "price": 3.36
+   "overall": 22,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -96,10 +477,135 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 15,
-   "price": 3.4
+   "overall": 22,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 23,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Design G",
@@ -115,10 +621,128 @@
     null,
     54,
     50,
-    35
+    35,
+    100,
+    60,
+    76
    ],
    "overall": 69,
-   "price": 2.53
+   "price": 2.53,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 83,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 96,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 53,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 53,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 55,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 53,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 54,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 76,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-5",
@@ -134,10 +758,128 @@
     null,
     56,
     50,
-    35
+    35,
+    100,
+    52,
+    75
    ],
-   "overall": 73,
-   "price": 2.7
+   "overall": 71,
+   "price": 2.7,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 89,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 91,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 88,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 52,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 52,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 54,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 75,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -153,29 +895,270 @@
     null,
     58,
     50,
-    50
+    50,
+    100,
+    19,
+    36
    ],
-   "overall": 41,
-   "price": 2.78
+   "overall": 20,
+   "price": 2.78,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 34,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 19,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 42,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Frees up for reuse"
+   ]
   },
   {
-   "label": "L5-15",
+   "label": "L5-1",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
-    60,
-    23,
+    0,
+    0,
+    0,
     100,
     100,
-    100,
-    46,
+    45,
     null,
-    83,
+    82,
     50,
-    35
+    50,
+    100,
+    39,
+    43
    ],
-   "overall": 58,
-   "price": 3.61
+   "overall": 20,
+   "price": 3.7,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Works in wet biogas",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches trace siloxane",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves the fuel gas alone",
+       "w": 4.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 39,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of gas",
+       "w": 16.7,
+       "val": 45,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 62,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 82,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Works in wet biogas",
+    "Catches trace siloxane"
+   ]
   }
  ]
 }

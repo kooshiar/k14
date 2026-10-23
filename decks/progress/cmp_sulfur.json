@@ -9,7 +9,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -17,6 +20,9 @@
   2,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -36,10 +42,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 56,
-   "price": 1.19
+   "overall": 54,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 43,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 23,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -54,10 +178,128 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 49,
-   "price": 3.4
+   "overall": 52,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 52,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 35,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -72,10 +314,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 45,
-   "price": 3.36
+   "overall": 50,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 31,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 12,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Resorcin[4]arene",
@@ -90,10 +450,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    41,
+    58
    ],
-   "overall": 27,
-   "price": 3.22
+   "overall": 34,
+   "price": 3.22,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 15,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 26,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 78,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-21",
@@ -108,10 +586,121 @@
     null,
     28,
     35,
-    25
+    25,
+    100,
+    47,
+    73
    ],
    "overall": 61,
-   "price": 2.81
+   "price": 2.81,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 83,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 90,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 67,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 47,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 44,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 25,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 73,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-26",
@@ -126,10 +715,121 @@
     null,
     34,
     35,
-    40
+    40,
+    100,
+    27,
+    49
    ],
-   "overall": 64,
-   "price": 2.82
+   "overall": 60,
+   "price": 2.82,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 66,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 27,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 34,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -144,10 +844,121 @@
     null,
     35,
     35,
-    40
+    40,
+    100,
+    24,
+    49
    ],
-   "overall": 65,
-   "price": 2.93
+   "overall": 60,
+   "price": 2.93,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 73,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -162,10 +973,121 @@
     null,
     35,
     35,
-    40
+    40,
+    100,
+    24,
+    49
    ],
-   "overall": 65,
-   "price": 2.93
+   "overall": 60,
+   "price": 2.93,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Picks sulfur over aromatics",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches the hardest sulfur",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 9.0,
+       "val": 73,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t wash into the fuel",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per tonne of fuel",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

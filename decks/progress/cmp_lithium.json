@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   2,
   2,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -39,10 +45,128 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    86
    ],
-   "overall": 31,
-   "price": 2.19
+   "overall": 41,
+   "price": 2.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 22,
+     "rows": [
+      {
+       "name": "Picks lithium over sodium",
+       "w": 12.3,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks lithium over magnesium",
+       "w": 8.2,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches lithium",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Acid strip frees it for reuse",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sorbent",
+       "w": 8.2,
+       "val": 2,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of lithium",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 86,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "15-crown-5",
@@ -58,10 +182,128 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    42,
+    86
    ],
-   "overall": 12,
-   "price": 2.39
+   "overall": 22,
+   "price": 2.39,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Picks lithium over sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks lithium over magnesium",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches lithium",
+       "w": 4.1,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Acid strip frees it for reuse",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sorbent",
+       "w": 8.2,
+       "val": 3,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per tonne of lithium",
+       "w": 16.7,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 86,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "18-crown-6",
@@ -77,10 +319,128 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    35,
+    87
    ],
-   "overall": 9,
-   "price": 2.56
+   "overall": 18,
+   "price": 2.56,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 4,
+     "rows": [
+      {
+       "name": "Picks lithium over sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks lithium over magnesium",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches lithium",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Acid strip frees it for reuse",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sorbent",
+       "w": 8.2,
+       "val": 3,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per tonne of lithium",
+       "w": 16.7,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Dimethoxypillar(5)arene",
@@ -96,10 +456,130 @@
     null,
     26,
     50,
-    50
+    50,
+    100,
+    0,
+    60
    ],
-   "overall": 21,
-   "price": 3.01
+   "overall": 20,
+   "price": 3.01,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 12,
+     "rows": [
+      {
+       "name": "Picks lithium over sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks lithium over magnesium",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches lithium",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Acid strip frees it for reuse",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sorbent",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Cost per tonne of lithium",
+       "w": 16.7,
+       "val": 31,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 38,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 26,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks lithium over sodium"
+   ]
   },
   {
    "label": "L2-52",
@@ -115,13 +595,131 @@
     null,
     26,
     50,
-    35
+    35,
+    100,
+    0,
+    36
    ],
-   "overall": 47,
-   "price": 2.86
+   "overall": 40,
+   "price": 2.86,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Picks lithium over sodium",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks lithium over magnesium",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches lithium",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Acid strip frees it for reuse",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sorbent",
+       "w": 8.2,
+       "val": 85,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 33,
+     "rows": [
+      {
+       "name": "Cost per tonne of lithium",
+       "w": 16.7,
+       "val": 27,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 30,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 26,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L4-5",
+   "label": "L4-1",
    "sub": "Level 4 \u00b7 US, low cost",
    "kind": "design",
    "vals": [
@@ -129,15 +727,135 @@
     100,
     0,
     100,
-    100,
-    32,
+    75,
+    28,
     null,
     26,
     50,
-    50
+    35,
+    100,
+    0,
+    37
    ],
-   "overall": 21,
-   "price": 2.8
+   "overall": 20,
+   "price": 2.83,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 12,
+     "rows": [
+      {
+       "name": "Picks lithium over sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks lithium over magnesium",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches lithium",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Acid strip frees it for reuse",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sorbent",
+       "w": 8.2,
+       "val": 75,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 34,
+     "rows": [
+      {
+       "name": "Cost per tonne of lithium",
+       "w": 16.7,
+       "val": 28,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 31,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 26,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 37,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks lithium over sodium"
+   ]
   }
  ]
 }

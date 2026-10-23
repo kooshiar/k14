@@ -9,7 +9,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -17,6 +20,9 @@
   2,
   3,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -36,10 +42,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 40,
-   "price": 1.19
+   "overall": 41,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 16,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -54,10 +178,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 22,
-   "price": 3.36
+   "overall": 27,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 5,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Resorcin[4]arene",
@@ -72,10 +314,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    41,
+    58
    ],
-   "overall": 22,
-   "price": 3.22
+   "overall": 26,
+   "price": 3.22,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 5,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 78,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -90,10 +450,128 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 18,
-   "price": 3.4
+   "overall": 23,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 5,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-58",
@@ -108,10 +586,128 @@
     4,
     29,
     55,
-    30
+    30,
+    100,
+    43,
+    85
    ],
-   "overall": 48,
-   "price": 4.28
+   "overall": 58,
+   "price": 4.28,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 70,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 68,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 66,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 45,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 24,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 4,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 85,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-4",
@@ -126,10 +722,121 @@
     null,
     28,
     55,
-    45
+    45,
+    100,
+    45,
+    87
    ],
-   "overall": 54,
-   "price": 3.18
+   "overall": 60,
+   "price": 3.18,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 48,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -144,10 +851,121 @@
     null,
     42,
     55,
-    30
+    30,
+    100,
+    40,
+    43
    ],
-   "overall": 65,
-   "price": 3.61
+   "overall": 67,
+   "price": 3.61,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 85,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 87,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 46,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -162,10 +980,121 @@
     null,
     42,
     55,
-    30
+    30,
+    100,
+    40,
+    43
    ],
-   "overall": 65,
-   "price": 3.61
+   "overall": 67,
+   "price": 3.61,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 85,
+     "rows": [
+      {
+       "name": "Picks dioxane over natural organics",
+       "w": 15.0,
+       "val": 87,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppb dioxane",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 46,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

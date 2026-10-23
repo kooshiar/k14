@@ -9,12 +9,18 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   2,
   3,
   3,
+  2,
+  1,
+  1,
   2,
   1,
   1,
@@ -36,10 +42,128 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 58,
-   "price": 3.4
+   "overall": 62,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 56,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -54,10 +178,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 39,
-   "price": 3.36
+   "overall": 44,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 18,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 27,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -72,10 +314,128 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 12,
-   "price": 1.19
+   "overall": 16,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 1,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-21",
@@ -90,10 +450,128 @@
     100,
     38,
     55,
-    50
+    50,
+    100,
+    46,
+    58
    ],
-   "overall": 70,
-   "price": 4.36
+   "overall": 72,
+   "price": 4.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 74,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 52,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 89,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 46,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 53,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 38,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-6",
@@ -108,10 +586,121 @@
     null,
     31,
     55,
-    35
+    35,
+    100,
+    28,
+    45
    ],
    "overall": 67,
-   "price": 2.71
+   "price": 2.71,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 85,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 31,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -126,10 +715,121 @@
     null,
     40,
     55,
-    50
+    50,
+    100,
+    49,
+    61
    ],
-   "overall": 77,
-   "price": 3.77
+   "overall": 78,
+   "price": 3.77,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 91,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 61,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -144,10 +844,121 @@
     null,
     40,
     55,
-    50
+    50,
+    100,
+    49,
+    61
    ],
-   "overall": 77,
-   "price": 3.77
+   "overall": 78,
+   "price": 3.77,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 91,
+     "rows": [
+      {
+       "name": "Removes cork taint (TCA)",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 61,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

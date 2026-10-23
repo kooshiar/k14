@@ -1,552 +1,1236 @@
 {
- "selenate": [
-  "Picks selenium over sulfate.",
-  "Catches ppb selenium.",
-  "Stays in the filter.",
-  "Lets go for reuse.",
-  "Safe to discharge.",
-  "Low cost per m³ of water.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "tfa": [
-  "Picks TFA over chloride and sulfate.",
-  "Catches ppt TFA.",
-  "Safe for drinking water.",
-  "Stays in the filter.",
-  "Lets go for reuse.",
-  "Low cost per m³ of water.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "dioxane": [
-  "Picks dioxane over natural organics.",
-  "Catches ppb dioxane.",
-  "Stays in the filter.",
-  "Safe for drinking water.",
-  "Low cost per m³ of water.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "smoke": [
-  "Removes the smoke taint.",
-  "Keeps fruit and oak aroma.",
-  "Food-safe.",
-  "Leaves nothing in the wine.",
-  "Low cost per bottle.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "boron": [
-  "Catches boron.",
-  "Stays in the resin.",
-  "Acid wash frees it for reuse.",
-  "Safe for drinking water.",
-  "Low cost per m³ of water.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "siloxane": [
-  "Works in wet biogas.",
-  "Catches trace siloxane.",
-  "Leaves the fuel gas alone.",
-  "Lets go for reuse.",
-  "Doesn’t evaporate.",
-  "Low cost per m³ of gas.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "mousy": [
-  "Removes the mousy taint.",
-  "Keeps fruit and floral aroma.",
-  "Keeps the color.",
-  "Food-safe.",
-  "Leaves nothing in the wine.",
-  "Low cost per bottle.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "cement": [
-  "Early strength.",
-  "Doesn’t slow setting.",
-  "Safe on site.",
-  "Low cost per tonne of cement.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "formaldehyde": [
-  "Catches free formaldehyde.",
-  "Safe in the panel.",
-  "Mixes into the glue.",
-  "Low cost per panel.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "rebar": [
-  "Holds the steel against salt.",
-  "Dissolves in pore water.",
-  "Safe on site.",
-  "Low cost per m³ of concrete.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "cork": [
-  "Removes cork taint (TCA).",
-  "Keeps fruit and floral aroma.",
-  "Food-safe.",
-  "Leaves nothing in the wine.",
-  "Low cost per bottle.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "pfas": [
-  "Picks PFAS over natural organics.",
-  "Catches ppt PFAS.",
-  "Safe for drinking water.",
-  "Stays in the filter.",
-  "Low cost per m³ of water.",
-  "Made from US raw materials."
- ],
- "lithium": [
-  "Picks lithium over sodium.",
-  "Picks lithium over magnesium.",
-  "Catches lithium.",
-  "Acid strip frees it for reuse.",
-  "Stays in the sorbent.",
-  "Low cost per tonne of lithium.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "co2": [
-  "Works in wet flue gas.",
-  "Picks CO₂ over nitrogen.",
-  "Catches CO₂.",
-  "Low heat to release CO₂.",
-  "Doesn’t evaporate.",
-  "Low cost per tonne of CO₂.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "ethylene": [
-  "Catches ppm ethylene.",
-  "Works in humid cold stores.",
-  "Ignores CO₂.",
-  "Food-safe.",
-  "Doesn’t evaporate.",
-  "Low cost per pallet.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "rareearth": [
-  "Picks Nd over La.",
-  "Picks Nd over Ce.",
-  "Catches Nd.",
-  "Strips with mild acid.",
-  "Stays in the oil phase.",
-  "Safe to handle.",
-  "Low cost per tonne of oxide.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "gold": [
-  "Picks gold over copper and zinc.",
-  "Works in strong chloride leach.",
-  "Catches gold.",
-  "Lets go of gold for refining.",
-  "Stays in the oil phase.",
-  "No cyanide, safe to handle.",
-  "Low cost per ounce recovered.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "tmah": [
-  "Picks TMAH over ammonium and sodium.",
-  "Catches TMAH.",
-  "Releases TMAH for reuse.",
-  "Stays in the resin.",
-  "Safe in the fab.",
-  "Low cost per m³ of wastewater.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "cesium": [
-  "Picks cesium over sodium.",
-  "Picks cesium over potassium.",
-  "Catches cesium.",
-  "Strips with dilute acid.",
-  "Stays in the solvent.",
-  "Low cost per m³ of waste.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "sulfur": [
-  "Picks sulfur over aromatics.",
-  "Catches the hardest sulfur.",
-  "Lets go for reuse.",
-  "Doesn’t wash into the fuel.",
-  "Low cost per tonne of fuel.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "phosphate": [
-  "Picks phosphate over sulfate.",
-  "Picks phosphate over chloride, bicarbonate.",
-  "Catches phosphate.",
-  "Releases phosphate as fertilizer.",
-  "Stays in the filter.",
-  "Safe to discharge.",
-  "Low cost per m³ of wastewater.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "xenon": [
-  "Picks xenon over krypton.",
-  "Ignores oxygen.",
-  "Catches xenon.",
-  "Low energy to release.",
-  "Doesn’t evaporate.",
-  "Low cost per liter of xenon.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "chalco": [
-  "Grips the copper sites.",
-  "Doesn’t lock up the surface.",
-  "Safe for leach microbes and crews.",
-  "Dissolves in the leach.",
-  "Low cost per tonne of copper.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "ammonium": [
-  "Picks ammonium over potassium.",
-  "Picks ammonium over sodium.",
-  "Fast, reversible reading.",
-  "Stays in the sensor membrane.",
-  "Catches ammonium.",
-  "Safe to handle.",
-  "Low cost per sensor.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "psensor": [
-  "Picks phosphate over sulfate and nitrate.",
-  "Picks phosphate over chloride.",
-  "Fast, reversible reading.",
-  "Stays in the sensor membrane.",
-  "Catches phosphate.",
-  "Safe to handle.",
-  "Low cost per sensor.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "magrec": [
-  "Picks rare earths over iron.",
-  "Catches neodymium.",
-  "Strips with mild acid.",
-  "Stays in the oil phase.",
-  "Safe to handle.",
-  "Low cost per kg of oxide.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "reecoal": [
-  "Picks rare earths over aluminum.",
-  "Picks rare earths over calcium, iron.",
-  "Catches trace rare earths.",
-  "Releases them for refining.",
-  "Stays in the sorbent.",
-  "Safe to discharge.",
-  "Low cost per kg of oxide.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "culoop": [
-  "Protects the copper loop.",
-  "Dissolves in the coolant.",
-  "Safe to handle.",
-  "Low cost per loop fill.",
-  "Made from US raw materials.",
-  "Drops into today’s setup.",
-  "Needs little new equipment.",
-  "Easy to ship and store."
- ],
- "polysulfide": [
-  "Grabs polysulfide.",
-  "Ignores TFSI, even at 50× more.",
-  "Ignores nitrate, even at 10× more.",
-  "Works in the battery electrolyte.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "antiscale": [
-  "Grabs calcium.",
-  "Ignores magnesium.",
-  "Ignores sodium, even at 50× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "femob": [
-  "Grabs iron.",
-  "Ignores magnesium, even at 10× more.",
-  "Ignores calcium, even at 10× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "shortpfas": [
-  "Grabs short-chain PFAS.",
-  "Ignores butanoate, even at 100× more.",
-  "Ignores natural organics, even at 100× more.",
-  "Ignores sulfate, even at 1,000× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "dyetrap": [
-  "Grabs the dye.",
-  "Ignores caprolactam, even at 100× more.",
-  "Ignores adipate, even at 50× more.",
-  "Ignores HMDA, even at 50× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "pgmwater": [
-  "Grabs iridium.",
-  "Ignores iron, even at 1,000× more.",
-  "Ignores copper, even at 500× more.",
-  "Ignores nickel, even at 500× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "pgmchlor": [
-  "Grabs rhodium.",
-  "Ignores copper, even at 200× more.",
-  "Ignores iron, even at 200× more.",
-  "Ignores nickel, even at 100× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "uranyl": [
-  "Grabs uranyl.",
-  "Ignores vanadium.",
-  "Ignores calcium, even at 10,000× more.",
-  "Ignores magnesium, even at 50,000× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "cmpchel": [
-  "Grabs copper.",
-  "Ignores cobalt, even at 10× more.",
-  "Ignores nickel, even at 10× more.",
-  "Ignores iron, even at 10× more.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials.",
-  "Drops into today’s setup."
- ],
- "pdscav": [
-  "Grabs leftover palladium tightly.",
-  "Doesn’t leach into the product.",
-  "Safe to handle.",
-  "Lets go for reuse.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "nitrite": [
-  "Grabs nitrite tightly.",
-  "Safe to handle.",
-  "Dissolves in water.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "ironmedia": [
-  "Grabs iron tightly.",
-  "Lets go for reuse.",
-  "Safe to handle.",
-  "Dissolves in water.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "tfaswap": [
-  "Grabs TFA tightly.",
-  "Ignores acetate.",
-  "Ignores chloride.",
-  "Lets go for reuse.",
-  "Doesn’t leach into the product.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "endotox": [
-  "Grabs endotoxin tightly.",
-  "Ignores buffer phosphate.",
-  "Ignores protein surfaces.",
-  "Lets go for reuse.",
-  "Doesn’t leach into the product.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "chiral": [
-  "Grabs the S form tightly.",
-  "Ignores the R form.",
-  "Lets go for reuse.",
-  "Doesn’t leach into the product.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "cryo": [
-  "Grabs ice tightly.",
-  "Ignores plain water.",
-  "Safe to handle.",
-  "Dissolves in water.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "abcap": [
-  "Grabs antibodies tightly.",
-  "Ignores host-cell proteins.",
-  "Ignores buffer phosphate.",
-  "Lets go for reuse.",
-  "Doesn’t leach into the product.",
-  "Safe to handle.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "vaxstab": [
-  "Grabs the protein surface tightly.",
-  "Ignores plain water.",
-  "Safe to handle.",
-  "Dissolves in water.",
-  "Low cost.",
-  "Made from US raw materials."
- ],
- "ionomer": [
-  "Holds a positive charge.",
-  "Survives hot alkali at 80 °C.",
-  "Survives oxidation at the anode.",
-  "Light, so it conducts well.",
-  "Easy to make.",
-  "Made like today’s ionomers."
- ],
- "pucat": [
-  "Speeds up foam hydrolysis.",
-  "Strong base in water.",
-  "Survives 150–280 °C water.",
-  "Easy to recover.",
-  "Low cost.",
-  "No extra solvent."
- ],
- "hardener": [
-  "Cures epoxy like IPDA.",
-  "Comes apart in mild acid.",
-  "Holds in service.",
-  "Gives a stiff resin.",
-  "Low cost.",
-  "Same resin and cure as today."
- ],
- "plastic": [
-  "Breaks C–C bonds in plastic.",
-  "Resists coking.",
-  "Tolerates chlorine from PVC.",
-  "Uses cheap metals.",
-  "Uses US-sourced metals."
- ],
- "lignin": [
-  "Cuts lignin’s ether bonds.",
-  "Lets the aromatics go.",
-  "Tolerates sulfur.",
-  "Uses cheap metals.",
-  "Uses US-sourced metals."
- ],
- "coolant": [
-  "Cools servers well.",
-  "Thin, so it pumps easily.",
-  "High flash point.",
-  "Low cost.",
-  "Biodegradable.",
-  "US-made base oils.",
-  "Fits today’s tanks and pumps."
- ],
- "heatcold": [
-  "Melts at 42 °C or 15 °C.",
-  "Stores a lot of heat.",
-  "Safe on skin.",
-  "Low cost."
- ],
- "tmdiss": [
-  "Grabs dissolved manganese.",
-  "Leaves lithium alone.",
-  "Also takes nickel and cobalt.",
-  "Stable to 4.5 V.",
-  "Low cost."
- ]
+ "selenate": {
+  "needs": [
+   "Picks selenium over sulfate.",
+   "Catches ppb selenium.",
+   "Stays in the filter.",
+   "Lets go for reuse.",
+   "Safe to discharge.",
+   "Low cost per m³ of water.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to selenate (UMA, water).",
+   "Selenate over sulfate at 1,000× more.",
+   "Stays out of water (logP ~3+).",
+   "No more than 100× tighter than today’s best.",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "tfa": {
+  "needs": [
+   "Picks TFA over chloride and sulfate.",
+   "Catches ppt TFA.",
+   "Safe for drinking water.",
+   "Stays in the filter.",
+   "Lets go for reuse.",
+   "Low cost per m³ of water.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to TFA (UMA, water).",
+   "TFA over chloride at 100,000× more.",
+   "TFA over sulfate at 10,000× more.",
+   "TFA over nitrate at 10,000× more.",
+   "No toxic groups (13 structure alerts).",
+   "Stays out of water (logP ~3+).",
+   "No more than 100× tighter than today’s best.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "dioxane": {
+  "needs": [
+   "Picks dioxane over natural organics.",
+   "Catches ppb dioxane.",
+   "Stays in the filter.",
+   "Safe for drinking water.",
+   "Low cost per m³ of water.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to 1,4-dioxane (UMA, water).",
+   "1,4-dioxane over natural organics at 1,000× more.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "smoke": {
+  "needs": [
+   "Removes the smoke taint.",
+   "Keeps fruit and oak aroma.",
+   "Food-safe.",
+   "Leaves nothing in the wine.",
+   "Low cost per bottle.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to guaiacol (UMA, water).",
+   "Guaiacol over ethyl hexanoate (fruit) at 10× more.",
+   "Guaiacol over beta-damascenone at 10× more.",
+   "Guaiacol over vanillin at 10× more.",
+   "No toxic groups (13 structure alerts).",
+   "Stays out of water (logP ~3+).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "boron": {
+  "needs": [
+   "Catches boron.",
+   "Stays in the resin.",
+   "Acid wash frees it for reuse.",
+   "Safe for drinking water.",
+   "Low cost per m³ of water.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Reaction free energy with boric acid (UMA, water).",
+   "Stays out of water (logP ~3+).",
+   "No more than 100× tighter than today’s best.",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "siloxane": {
+  "needs": [
+   "Works in wet biogas.",
+   "Catches trace siloxane.",
+   "Leaves the fuel gas alone.",
+   "Lets go for reuse.",
+   "Doesn’t evaporate.",
+   "Low cost per m³ of gas.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to D4 siloxane (UMA, gas phase).",
+   "D4 siloxane over water at 10,000× more.",
+   "D4 siloxane over toluene at 10× more.",
+   "No more than 100× tighter than today’s best.",
+   "Doesn’t evaporate (≥300 g/mol).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "mousy": {
+  "needs": [
+   "Removes the mousy taint.",
+   "Keeps fruit and floral aroma.",
+   "Keeps the color.",
+   "Food-safe.",
+   "Leaves nothing in the wine.",
+   "Low cost per bottle.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to 2-acetyl-tetrahydropyridine (UMA, water).",
+   "2-acetyl-tetrahydropyridine over ethyl hexanoate (fruit) at 10× more.",
+   "2-acetyl-tetrahydropyridine over 2-phenylethanol (rose) at 100× more.",
+   "2-acetyl-tetrahydropyridine over malvidin-like (color) at 10× more.",
+   "No toxic groups (13 structure alerts).",
+   "Stays out of water (logP ~3+).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "cement": {
+  "needs": [
+   "Early strength.",
+   "Doesn’t slow setting.",
+   "Safe on site.",
+   "Low cost per tonne of cement.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binds Al³⁺ and Fe³⁺ water sites (UMA).",
+   "Binds Ca²⁺ no harder than TEA.",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "formaldehyde": {
+  "needs": [
+   "Catches free formaldehyde.",
+   "Safe in the panel.",
+   "Mixes into the glue.",
+   "Low cost per panel.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Reaction free energy with formaldehyde (UMA, water).",
+   "No toxic groups (13 structure alerts).",
+   "Dissolves in water (low logP).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "rebar": {
+  "needs": [
+   "Holds the steel against salt.",
+   "Dissolves in pore water.",
+   "Safe on site.",
+   "Low cost per m³ of concrete.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binds the iron surface site (UMA, water).",
+   "Beats chloride at 1,000× more.",
+   "Dissolves in water (low logP).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "cork": {
+  "needs": [
+   "Removes cork taint (TCA).",
+   "Keeps fruit and floral aroma.",
+   "Food-safe.",
+   "Leaves nothing in the wine.",
+   "Low cost per bottle.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to 2,4,6-trichloroanisole (UMA, water).",
+   "2,4,6-trichloroanisole over ethyl hexanoate (fruit) at 10× more.",
+   "2,4,6-trichloroanisole over 2-phenylethanol (rose) at 100× more.",
+   "2,4,6-trichloroanisole over vanillin at 10× more.",
+   "No toxic groups (13 structure alerts).",
+   "Stays out of water (logP ~3+).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "pfas": {
+  "needs": [
+   "Picks PFAS over natural organics.",
+   "Catches ppt PFAS.",
+   "Safe for drinking water.",
+   "Stays in the filter.",
+   "Low cost per m³ of water.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to PFOA (UMA, water).",
+   "PFOA over octanoate at 100× more.",
+   "PFOA over natural organics at 100× more.",
+   "No toxic groups (13 structure alerts).",
+   "Stays out of water (logP ~3+).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "lithium": {
+  "needs": [
+   "Picks lithium over sodium.",
+   "Picks lithium over magnesium.",
+   "Catches lithium.",
+   "Acid strip frees it for reuse.",
+   "Stays in the sorbent.",
+   "Low cost per tonne of lithium.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to lithium (UMA, water).",
+   "Lithium over sodium at 100× more.",
+   "Lithium over magnesium at 10× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "co2": {
+  "needs": [
+   "Works in wet flue gas.",
+   "Picks CO₂ over nitrogen.",
+   "Catches CO₂.",
+   "Low heat to release CO₂.",
+   "Doesn’t evaporate.",
+   "Low cost per tonne of CO₂.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to CO2 (UMA, gas phase).",
+   "CO2 over water at 0.5×.",
+   "CO2 over nitrogen at 5× more.",
+   "No more than 100× tighter than today’s best.",
+   "Doesn’t evaporate (≥300 g/mol).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "ethylene": {
+  "needs": [
+   "Catches ppm ethylene.",
+   "Works in humid cold stores.",
+   "Ignores CO₂.",
+   "Food-safe.",
+   "Doesn’t evaporate.",
+   "Low cost per pallet.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to ethylene (UMA, gas phase).",
+   "Ethylene over water at 6,000× more.",
+   "Ethylene over CO2 at 10,000× more.",
+   "No toxic groups (13 structure alerts).",
+   "Doesn’t evaporate (≥300 g/mol).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "rareearth": {
+  "needs": [
+   "Picks Nd over La.",
+   "Picks Nd over Ce.",
+   "Catches Nd.",
+   "Strips with mild acid.",
+   "Stays in the oil phase.",
+   "Safe to handle.",
+   "Low cost per tonne of oxide.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to neodymium (UMA, water).",
+   "Neodymium over lanthanum at 3× more.",
+   "Neodymium over cerium at 4× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "gold": {
+  "needs": [
+   "Picks gold over copper and zinc.",
+   "Works in strong chloride leach.",
+   "Catches gold.",
+   "Lets go of gold for refining.",
+   "Stays in the oil phase.",
+   "No cyanide, safe to handle.",
+   "Low cost per ounce recovered.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to gold chloride (UMA, water).",
+   "Gold chloride over copper(I) chloride at 50× more.",
+   "Gold chloride over zinc chloride at 50× more.",
+   "Gold chloride over chloride at 1,000× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "tmah": {
+  "needs": [
+   "Picks TMAH over ammonium and sodium.",
+   "Catches TMAH.",
+   "Releases TMAH for reuse.",
+   "Stays in the resin.",
+   "Safe in the fab.",
+   "Low cost per m³ of wastewater.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to tetramethylammonium (UMA, water).",
+   "Tetramethylammonium over ammonium at 3× more.",
+   "Tetramethylammonium over sodium at 1×.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "cesium": {
+  "needs": [
+   "Picks cesium over sodium.",
+   "Picks cesium over potassium.",
+   "Catches cesium.",
+   "Strips with dilute acid.",
+   "Stays in the solvent.",
+   "Low cost per m³ of waste.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to cesium (UMA, water).",
+   "Cesium over sodium at 50,000× more.",
+   "Cesium over potassium at 100× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "sulfur": {
+  "needs": [
+   "Picks sulfur over aromatics.",
+   "Catches the hardest sulfur.",
+   "Lets go for reuse.",
+   "Doesn’t wash into the fuel.",
+   "Low cost per tonne of fuel.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to 4,6-dimethyldibenzothiophene (UMA, oil model).",
+   "4,6-dimethyldibenzothiophene over naphthalene (aromatics) at 500× more.",
+   "No more than 100× tighter than today’s best.",
+   "Doesn’t evaporate (≥300 g/mol).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "phosphate": {
+  "needs": [
+   "Picks phosphate over sulfate.",
+   "Picks phosphate over chloride, bicarbonate.",
+   "Catches phosphate.",
+   "Releases phosphate as fertilizer.",
+   "Stays in the filter.",
+   "Safe to discharge.",
+   "Low cost per m³ of wastewater.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to phosphate (UMA, water).",
+   "Phosphate over sulfate at 10× more.",
+   "Phosphate over chloride at 30× more.",
+   "Phosphate over bicarbonate at 30× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "xenon": {
+  "needs": [
+   "Picks xenon over krypton.",
+   "Ignores oxygen.",
+   "Catches xenon.",
+   "Low energy to release.",
+   "Doesn’t evaporate.",
+   "Low cost per liter of xenon.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to xenon (UMA, gas phase).",
+   "Xenon over krypton at 10× more.",
+   "Xenon over oxygen at 100× more.",
+   "No more than 100× tighter than today’s best.",
+   "Doesn’t evaporate (≥300 g/mol).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "chalco": {
+  "needs": [
+   "Grips the copper sites.",
+   "Doesn’t lock up the surface.",
+   "Safe for leach microbes and crews.",
+   "Dissolves in the leach.",
+   "Low cost per tonne of copper.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binds the copper-sulfide site (UMA, water).",
+   "No more than 100× tighter than today’s best.",
+   "No toxic groups (13 structure alerts).",
+   "Dissolves in water (low logP).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "ammonium": {
+  "needs": [
+   "Picks ammonium over potassium.",
+   "Picks ammonium over sodium.",
+   "Fast, reversible reading.",
+   "Stays in the sensor membrane.",
+   "Catches ammonium.",
+   "Safe to handle.",
+   "Low cost per sensor.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to ammonium (UMA, membrane model).",
+   "Ammonium over potassium at 1×.",
+   "Ammonium over sodium at 5× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "psensor": {
+  "needs": [
+   "Picks phosphate over sulfate and nitrate.",
+   "Picks phosphate over chloride.",
+   "Fast, reversible reading.",
+   "Stays in the sensor membrane.",
+   "Catches phosphate.",
+   "Safe to handle.",
+   "Low cost per sensor.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to phosphate (UMA, membrane model).",
+   "Phosphate over sulfate at 10× more.",
+   "Phosphate over nitrate at 10× more.",
+   "Phosphate over chloride at 30× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "magrec": {
+  "needs": [
+   "Picks rare earths over iron.",
+   "Catches neodymium.",
+   "Strips with mild acid.",
+   "Stays in the oil phase.",
+   "Safe to handle.",
+   "Low cost per kg of oxide.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to neodymium (UMA, water).",
+   "Neodymium over iron at 6× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "reecoal": {
+  "needs": [
+   "Picks rare earths over aluminum.",
+   "Picks rare earths over calcium, iron.",
+   "Catches trace rare earths.",
+   "Releases them for refining.",
+   "Stays in the sorbent.",
+   "Safe to discharge.",
+   "Low cost per kg of oxide.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binding free energy to neodymium (UMA, water).",
+   "Neodymium over aluminum at 5,000× more.",
+   "Neodymium over calcium at 2,000× more.",
+   "Neodymium over iron at 1,000× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "culoop": {
+  "needs": [
+   "Protects the copper loop.",
+   "Dissolves in the coolant.",
+   "Safe to handle.",
+   "Low cost per loop fill.",
+   "Made from US raw materials.",
+   "Drops into today’s setup.",
+   "Needs little new equipment.",
+   "Easy to ship and store."
+  ],
+  "sim": [
+   "Binds the copper site in water (UMA).",
+   "Dissolves in water (low logP).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "polysulfide": {
+  "needs": [
+   "Grabs polysulfide.",
+   "Ignores TFSI, even at 50× more.",
+   "Ignores nitrate, even at 10× more.",
+   "Works in the battery electrolyte.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to polysulfide (UMA, oil model).",
+   "Polysulfide over TFSI at 50× more.",
+   "Polysulfide over nitrate at 10× more.",
+   "Cost per use from size and synthesis steps.",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "antiscale": {
+  "needs": [
+   "Grabs calcium.",
+   "Ignores magnesium.",
+   "Ignores sodium, even at 50× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to calcium (UMA, water).",
+   "Calcium over magnesium at 2× more.",
+   "Calcium over sodium at 50× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "femob": {
+  "needs": [
+   "Grabs iron.",
+   "Ignores magnesium, even at 10× more.",
+   "Ignores calcium, even at 10× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to iron (UMA, water).",
+   "Iron over magnesium at 10× more.",
+   "Iron over calcium at 10× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "shortpfas": {
+  "needs": [
+   "Grabs short-chain PFAS.",
+   "Ignores butanoate, even at 100× more.",
+   "Ignores natural organics, even at 100× more.",
+   "Ignores sulfate, even at 1,000× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to short-chain PFAS (UMA, water).",
+   "Short-chain PFAS over butanoate at 100× more.",
+   "Short-chain PFAS over natural organics at 100× more.",
+   "Short-chain PFAS over sulfate at 1,000× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "dyetrap": {
+  "needs": [
+   "Grabs the dye.",
+   "Ignores caprolactam, even at 100× more.",
+   "Ignores adipate, even at 50× more.",
+   "Ignores HMDA, even at 50× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to the dye (UMA, water).",
+   "The dye over caprolactam at 100× more.",
+   "The dye over adipate at 50× more.",
+   "The dye over HMDA at 50× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "pgmwater": {
+  "needs": [
+   "Grabs iridium.",
+   "Ignores iron, even at 1,000× more.",
+   "Ignores copper, even at 500× more.",
+   "Ignores nickel, even at 500× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to iridium (UMA, water).",
+   "Iridium over iron at 1,000× more.",
+   "Iridium over copper at 500× more.",
+   "Iridium over nickel at 500× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "pgmchlor": {
+  "needs": [
+   "Grabs rhodium.",
+   "Ignores copper, even at 200× more.",
+   "Ignores iron, even at 200× more.",
+   "Ignores nickel, even at 100× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to rhodium (UMA, water).",
+   "Rhodium over copper at 200× more.",
+   "Rhodium over iron at 200× more.",
+   "Rhodium over nickel at 100× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "uranyl": {
+  "needs": [
+   "Grabs uranyl.",
+   "Ignores vanadium.",
+   "Ignores calcium, even at 10,000× more.",
+   "Ignores magnesium, even at 50,000× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to uranyl (UMA, water).",
+   "Uranyl over vanadium at 1×.",
+   "Uranyl over calcium at 10,000× more.",
+   "Uranyl over magnesium at 50,000× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "cmpchel": {
+  "needs": [
+   "Grabs copper.",
+   "Ignores cobalt, even at 10× more.",
+   "Ignores nickel, even at 10× more.",
+   "Ignores iron, even at 10× more.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials.",
+   "Drops into today’s setup."
+  ],
+  "sim": [
+   "Binding free energy to copper (UMA, water).",
+   "Copper over cobalt at 10× more.",
+   "Copper over nickel at 10× more.",
+   "Copper over iron at 10× more.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "pdscav": {
+  "needs": [
+   "Grabs leftover palladium tightly.",
+   "Doesn’t leach into the product.",
+   "Safe to handle.",
+   "Lets go for reuse.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to leftover palladium (UMA, water).",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "No more than 100× tighter than today’s best.",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "nitrite": {
+  "needs": [
+   "Grabs nitrite tightly.",
+   "Safe to handle.",
+   "Dissolves in water.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to nitrite (UMA, water).",
+   "No toxic groups (13 structure alerts).",
+   "Dissolves in water (low logP).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "ironmedia": {
+  "needs": [
+   "Grabs iron tightly.",
+   "Lets go for reuse.",
+   "Safe to handle.",
+   "Dissolves in water.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to iron (UMA, water).",
+   "No more than 100× tighter than today’s best.",
+   "No toxic groups (13 structure alerts).",
+   "Dissolves in water (low logP).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "tfaswap": {
+  "needs": [
+   "Grabs TFA tightly.",
+   "Ignores acetate.",
+   "Ignores chloride.",
+   "Lets go for reuse.",
+   "Doesn’t leach into the product.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to TFA (UMA, water).",
+   "TFA over acetate at 100× more.",
+   "TFA over chloride at 100× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "endotox": {
+  "needs": [
+   "Grabs endotoxin tightly.",
+   "Ignores buffer phosphate.",
+   "Ignores protein surfaces.",
+   "Lets go for reuse.",
+   "Doesn’t leach into the product.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to endotoxin (UMA, water).",
+   "Endotoxin over buffer phosphate at 10,000× more.",
+   "Endotoxin over protein surfaces at 1,000× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "chiral": {
+  "needs": [
+   "Grabs the S form tightly.",
+   "Ignores the R form.",
+   "Lets go for reuse.",
+   "Doesn’t leach into the product.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to the S form (UMA, water).",
+   "The S form over the R form at 1×.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "cryo": {
+  "needs": [
+   "Grabs ice tightly.",
+   "Ignores plain water.",
+   "Safe to handle.",
+   "Dissolves in water.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to ice (UMA, water).",
+   "Ice over plain water at 55× more.",
+   "No toxic groups (13 structure alerts).",
+   "Dissolves in water (low logP).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "abcap": {
+  "needs": [
+   "Grabs antibodies tightly.",
+   "Ignores host-cell proteins.",
+   "Ignores buffer phosphate.",
+   "Lets go for reuse.",
+   "Doesn’t leach into the product.",
+   "Safe to handle.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to antibodies (UMA, water).",
+   "Antibodies over host-cell proteins at 100× more.",
+   "Antibodies over buffer phosphate at 2,000× more.",
+   "No more than 100× tighter than today’s best.",
+   "Stays out of water (logP ~3+).",
+   "No toxic groups (13 structure alerts).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "vaxstab": {
+  "needs": [
+   "Grabs the protein surface tightly.",
+   "Ignores plain water.",
+   "Safe to handle.",
+   "Dissolves in water.",
+   "Low cost.",
+   "Made from US raw materials."
+  ],
+  "sim": [
+   "Binding free energy to the protein surface (UMA, water).",
+   "The protein surface over plain water at 55× more.",
+   "No toxic groups (13 structure alerts).",
+   "Dissolves in water (low logP).",
+   "Cost per use from size and synthesis steps.",
+   "Stays bound in water MD (UMA).",
+   "Level 3: swap imported F and I atoms out.",
+   "Level 4: cheaper edits, same quality.",
+   "Level 5: small edits of today’s product."
+  ]
+ },
+ "ionomer": {
+  "needs": [
+   "Holds a positive charge.",
+   "Survives hot alkali at 80 °C.",
+   "Survives oxidation at the anode.",
+   "Light, so it conducts well.",
+   "Easy to make.",
+   "Made like today’s ionomers."
+  ],
+  "sim": [
+   "Hydroxide attack barrier at each C on N⁺ (xTB scan).",
+   "Weakest C–H bond energy (xTB).",
+   "Head-group mass (conductivity).",
+   "Synthesis score (SA)."
+  ]
+ },
+ "pucat": {
+  "needs": [
+   "Speeds up foam hydrolysis.",
+   "Strong base in water.",
+   "Survives 150–280 °C water.",
+   "Easy to recover.",
+   "Low cost.",
+   "No extra solvent."
+  ],
+  "sim": [
+   "Protonation free energy in water (xTB).",
+   "Survives hot water (family rule).",
+   "Recoverable (family rule).",
+   "Price per kg (family)."
+  ]
+ },
+ "hardener": {
+  "needs": [
+   "Cures epoxy like IPDA.",
+   "Comes apart in mild acid.",
+   "Holds in service.",
+   "Gives a stiff resin.",
+   "Low cost.",
+   "Same resin and cure as today."
+  ],
+  "sim": [
+   "Acid cleavage free energy (UMA + xTB water).",
+   "Not over 100× faster than Recyclamine.",
+   "Rings vs rotatable bonds (stiffness).",
+   "Two primary amines, aliphatic.",
+   "Synthesis score (SA)."
+  ]
+ },
+ "plastic": {
+  "needs": [
+   "Breaks C–C bonds in plastic.",
+   "Resists coking.",
+   "Tolerates chlorine from PVC.",
+   "Uses cheap metals.",
+   "Uses US-sourced metals."
+  ],
+  "sim": [
+   "C–C scission barrier on the metal (UMA, BEP).",
+   "Carbon binding (coking).",
+   "Chlorine binding (poisoning).",
+   "Metal price and US imports."
+  ]
+ },
+ "lignin": {
+  "needs": [
+   "Cuts lignin’s ether bonds.",
+   "Lets the aromatics go.",
+   "Tolerates sulfur.",
+   "Uses cheap metals.",
+   "Uses US-sourced metals."
+  ],
+  "sim": [
+   "Ether C–O scission barrier (UMA, BEP).",
+   "Benzene binding (release).",
+   "Sulfur binding (poisoning).",
+   "Metal price and US imports."
+  ]
+ },
+ "coolant": {
+  "needs": [
+   "Cools servers well.",
+   "Thin, so it pumps easily.",
+   "High flash point.",
+   "Low cost.",
+   "Biodegradable.",
+   "US-made base oils.",
+   "Fits today’s tanks and pumps."
+  ],
+  "sim": [
+   "Cooling figure of merit (k, cp, density, viscosity).",
+   "Viscosity at 40 °C (blend rule).",
+   "Flash point (lowest component).",
+   "Price per kg.",
+   "Biodegradable components only."
+  ]
+ },
+ "heatcold": {
+  "needs": [
+   "Melts at 42 °C or 15 °C.",
+   "Stores a lot of heat.",
+   "Safe on skin.",
+   "Low cost."
+  ],
+  "sim": [
+   "Melting point at 42 °C or 15 °C.",
+   "Latent heat per kg.",
+   "Skin-safe components.",
+   "Price per kg."
+  ]
+ },
+ "tmdiss": {
+  "needs": [
+   "Grabs dissolved manganese.",
+   "Leaves lithium alone.",
+   "Also takes nickel and cobalt.",
+   "Stable to 4.5 V.",
+   "Low cost."
+  ],
+  "sim": [
+   "Binding free energy to Mn²⁺ (UMA, water).",
+   "Mn²⁺ over Li⁺ at 1,000× Li."
+  ]
+ }
 }

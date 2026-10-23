@@ -11,7 +11,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -21,6 +24,9 @@
   2,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -42,10 +48,135 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    89
    ],
-   "overall": 25,
-   "price": 2.12
+   "overall": 40,
+   "price": 2.12,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 16,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride, bicarbonate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases phosphate as fertilizer",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 6.7,
+       "val": 63,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe to discharge",
+       "w": 10.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 20.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Tren tris(phenylurea)",
@@ -62,10 +193,135 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    6,
+    89
    ],
-   "overall": 21,
-   "price": 3.28
+   "overall": 34,
+   "price": 3.28,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 10,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks phosphate over chloride, bicarbonate",
+       "w": 6.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases phosphate as fertilizer",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.3,
+       "val": 6,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 37,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 10.0,
+       "val": 32,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to discharge",
+       "w": 10.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 20.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -82,70 +338,589 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    0,
+    35
    ],
-   "overall": 21,
-   "price": 1.19
+   "overall": 29,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks phosphate over chloride, bicarbonate",
+       "w": 6.7,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 6.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Releases phosphate as fertilizer",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.3,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 10.0,
+       "val": 34,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to discharge",
+       "w": 10.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 20.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "Design B",
+   "label": "Design A",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
     100,
-    41,
+    8,
     0,
     100,
+    0,
     100,
-    100,
-    27,
+    46,
     null,
     0,
     30,
-    50
+    50,
+    100,
+    37,
+    71
    ],
-   "overall": 25,
-   "price": 3.48
+   "overall": 20,
+   "price": 2.1,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 13,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride, bicarbonate",
+       "w": 6.7,
+       "val": 8,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases phosphate as fertilizer",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.3,
+       "val": 37,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 10.0,
+       "val": 46,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to discharge",
+       "w": 10.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 20.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 71,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks phosphate over chloride, bicarbonate",
+    "Catches phosphate",
+    "Stays in the filter"
+   ]
   },
   {
-   "label": "L3-3",
-   "sub": "Level 3 \u00b7 US-sourced",
+   "label": "L2-5",
+   "sub": "Level 2",
    "kind": "design",
    "vals": [
     100,
+    0,
+    0,
     100,
     0,
     100,
-    100,
-    65,
-    30,
+    44,
     null,
     0,
     30,
-    35
+    50,
+    100,
+    30,
+    69
    ],
-   "overall": 27,
-   "price": 3.23
+   "overall": 20,
+   "price": 2.21,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 9,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride, bicarbonate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases phosphate as fertilizer",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.3,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 10.0,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to discharge",
+       "w": 10.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 20.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 69,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks phosphate over chloride, bicarbonate",
+    "Catches phosphate",
+    "Stays in the filter"
+   ]
   },
   {
-   "label": "L4-7",
+   "label": "L4-1",
    "sub": "Level 4 \u00b7 US, low cost",
    "kind": "design",
    "vals": [
-    39,
+    100,
     0,
     0,
     100,
+    0,
     100,
-    100,
-    33,
+    44,
     null,
     0,
     30,
-    50
+    50,
+    100,
+    32,
+    70
    ],
-   "overall": 15,
-   "price": 3.13
+   "overall": 20,
+   "price": 2.17,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 9,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride, bicarbonate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases phosphate as fertilizer",
+       "w": 6.7,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 6.7,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.3,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 10.0,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to discharge",
+       "w": 10.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 20.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 70,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks phosphate over chloride, bicarbonate",
+    "Catches phosphate",
+    "Stays in the filter"
+   ]
   }
  ]
 }

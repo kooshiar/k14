@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   2,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -39,29 +45,121 @@
     null,
     100,
     50,
-    50
-   ],
-   "overall": 68,
-   "price": 2.23
-  },
-  {
-   "label": "D2EHPA",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    null,
-    0,
-    100,
-    100,
-    100,
-    31,
-    null,
-    100,
     50,
-    50
+    100,
+    7,
+    65
    ],
-   "overall": 37,
-   "price": 2.39
+   "overall": 57,
+   "price": 2.23,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 56,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 7,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 37,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 32,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 76,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "P507 (HEHEHP)",
@@ -77,13 +175,124 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    5,
+    67
    ],
-   "overall": 37,
-   "price": 2.3
+   "overall": 34,
+   "price": 2.3,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 17,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 31,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 76,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 67,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "TODGA",
+   "label": "D2EHPA",
    "sub": "Sold today",
    "kind": "known",
    "vals": [
@@ -92,14 +301,125 @@
     100,
     100,
     100,
-    20,
+    31,
     null,
     100,
     50,
-    50
+    50,
+    100,
+    3,
+    69
    ],
-   "overall": 35,
-   "price": 3.35
+   "overall": 33,
+   "price": 2.39,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 16,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 3,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 31,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 69,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Oxalic acid (precipitation)",
@@ -115,29 +435,398 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    64
    ],
-   "overall": 23,
-   "price": 1.45
+   "overall": 31,
+   "price": 1.45,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 12,
+     "rows": [
+      {
+       "name": "Picks rare earths over iron",
+       "w": 13.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches neodymium",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 75,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 64,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L3-22",
-   "sub": "Level 3 \u00b7 US-sourced",
+   "label": "TODGA",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    null,
+    0,
+    100,
+    100,
+    100,
+    20,
+    null,
+    100,
+    50,
+    50,
+    100,
+    0,
+    86
+   ],
+   "overall": 28,
+   "price": 3.35,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 14,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 27,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 20,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 86,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
+   "label": "L2-1",
+   "sub": "Level 2",
    "kind": "design",
    "vals": [
     100,
-    91,
+    100,
+    0,
     100,
     100,
-    100,
-    23,
+    22,
     null,
-    29,
+    28,
     40,
-    45
+    45,
+    100,
+    0,
+    77
    ],
-   "overall": 63,
-   "price": 3.02
+   "overall": 20,
+   "price": 3.07,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 25,
+     "rows": [
+      {
+       "name": "Picks rare earths over iron",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches neodymium",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 27,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 22,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 77,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Strips with mild acid",
+    "Cost per kg of oxide"
+   ]
   },
   {
    "label": "L4-11",
@@ -153,10 +842,121 @@
     null,
     33,
     40,
-    45
+    45,
+    100,
+    0,
+    82
    ],
-   "overall": 57,
-   "price": 2.97
+   "overall": 45,
+   "price": 2.97,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 75,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 29,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 25,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 33,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 82,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-3",
@@ -172,10 +972,121 @@
     null,
     48,
     40,
-    45
+    45,
+    100,
+    9,
+    67
    ],
-   "overall": 57,
-   "price": 2.23
+   "overall": 51,
+   "price": 2.23,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 54,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 9,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 33,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 67,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-3",
@@ -191,10 +1102,121 @@
     null,
     48,
     40,
-    45
+    45,
+    100,
+    9,
+    67
    ],
-   "overall": 57,
-   "price": 2.23
+   "overall": 51,
+   "price": 2.23,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 54,
+     "rows": [
+      {
+       "name": "Catches neodymium",
+       "w": 12.9,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 12.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.4,
+       "val": 9,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Cost per kg of oxide",
+       "w": 16.7,
+       "val": 33,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 67,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

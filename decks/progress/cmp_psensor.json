@@ -11,7 +11,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -20,6 +23,9 @@
   3,
   1,
   1,
+  1,
+  1,
+  2,
   1,
   1,
   2,
@@ -42,10 +48,135 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    6,
+    89
    ],
-   "overall": 54,
-   "price": 3.28
+   "overall": 53,
+   "price": 3.28,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 6,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 12.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 6.2,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 6.2,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Quaternary ammonium (resin site)",
@@ -62,10 +193,135 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    89
    ],
-   "overall": 16,
-   "price": 2.12
+   "overall": 22,
+   "price": 2.12,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 63,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 12.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 6.2,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 6.2,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -82,90 +338,725 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    0,
+    35
    ],
-   "overall": 11,
-   "price": 1.19
+   "overall": 12,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 3,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 34,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 5.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "Design A",
+   "label": "Design E",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
     100,
     100,
     100,
-    100,
+    92,
     0,
     100,
-    33,
+    37,
     null,
-    29,
+    32,
     65,
-    65
+    65,
+    100,
+    17,
+    87
    ],
-   "overall": 59,
-   "price": 3.18
+   "overall": 58,
+   "price": 2.91,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 58,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 92,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 17,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 37,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 12.5,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 6.2,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 6.2,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L2-9",
-   "sub": "Level 2",
+   "label": "L3-26",
+   "sub": "Level 3 \u00b7 US-sourced",
    "kind": "design",
    "vals": [
     100,
+    88,
     100,
+    99,
+    0,
     100,
-    100,
-    40,
-    30,
-    29,
+    36,
     null,
-    30,
+    35,
     65,
-    35
+    65,
+    100,
+    17,
+    89
    ],
-   "overall": 65,
-   "price": 3.25
+   "overall": 58,
+   "price": 2.95,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 57,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 88,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 99,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 17,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 52,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 12.5,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 6.2,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 6.2,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L4-19",
+   "label": "L4-17",
    "sub": "Level 4 \u00b7 US, low cost",
    "kind": "design",
    "vals": [
     100,
+    86,
     100,
     100,
-    100,
-    67,
+    28,
     65,
-    31,
+    32,
     null,
-    31,
+    32,
     65,
-    50
+    50,
+    100,
+    3,
+    79
    ],
-   "overall": 72,
-   "price": 3.18
+   "overall": 59,
+   "price": 3.14,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 65,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 86,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 3,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 12.5,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 6.2,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 6.2,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L5-18",
+   "label": "L5-1",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
-    100,
-    15,
-    100,
-    100,
     0,
+    1,
     100,
-    31,
-    null,
-    44,
+    85,
+    0,
     65,
-    65
+    47,
+    null,
+    37,
+    65,
+    50,
+    100,
+    43,
+    87
    ],
-   "overall": 49,
-   "price": 3.28
+   "overall": 20,
+   "price": 2.24,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 55,
+     "score": 9,
+     "rows": [
+      {
+       "name": "Picks phosphate over sulfate and nitrate",
+       "w": 13.8,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks phosphate over chloride",
+       "w": 9.2,
+       "val": 1,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Fast, reversible reading",
+       "w": 9.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the sensor membrane",
+       "w": 13.8,
+       "val": 85,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches phosphate",
+       "w": 4.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.6,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 10,
+     "score": 55,
+     "rows": [
+      {
+       "name": "Cost per sensor",
+       "w": 5.0,
+       "val": 47,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 12.5,
+       "val": 37,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 6.2,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 6.2,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks phosphate over sulfate and nitrate",
+    "Picks phosphate over chloride"
+   ]
   }
  ]
 }

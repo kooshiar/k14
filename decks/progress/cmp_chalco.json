@@ -9,7 +9,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -17,6 +20,9 @@
   2,
   1,
   3,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -36,10 +42,121 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    39,
+    71
    ],
-   "overall": 68,
-   "price": 1.61
+   "overall": 63,
+   "price": 1.61,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 65,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 39,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 45,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 71,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Thiourea",
@@ -54,10 +171,128 @@
     44,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    82
    ],
-   "overall": 32,
-   "price": 1.33
+   "overall": 33,
+   "price": 1.33,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 13,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 44,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 82,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Thioacetamide",
@@ -72,10 +307,121 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    82
    ],
-   "overall": 31,
-   "price": 1.58
+   "overall": 33,
+   "price": 1.58,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 12,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 90,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 48,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 80,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 82,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Design B",
@@ -90,28 +436,250 @@
     null,
     65,
     50,
-    50
+    50,
+    100,
+    21,
+    66
    ],
-   "overall": 60,
-   "price": 1.84
+   "overall": 55,
+   "price": 1.84,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 56,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 40,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 52,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 21,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 61,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L2-29",
+   "label": "L2-11",
    "sub": "Level 2",
    "kind": "design",
    "vals": [
-    55,
     100,
-    100,
-    11,
-    28,
+    58,
+    65,
+    10,
+    31,
     null,
-    55,
+    57,
     50,
-    50
+    35,
+    100,
+    5,
+    77
    ],
-   "overall": 50,
-   "price": 2.53
+   "overall": 44,
+   "price": 2.35,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 58,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 10,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 31,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 54,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 57,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 77,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -126,10 +694,121 @@
     null,
     56,
     50,
-    50
+    50,
+    100,
+    10,
+    79
    ],
-   "overall": 51,
-   "price": 2.29
+   "overall": 46,
+   "price": 2.29,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 78,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 3,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 10,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 32,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 59,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-1",
@@ -144,10 +823,123 @@
     null,
     73,
     50,
-    50
+    50,
+    100,
+    44,
+    83
    ],
-   "overall": 29,
-   "price": 1.68
+   "overall": 20,
+   "price": 1.68,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 12,
+     "rows": [
+      {
+       "name": "Grips the copper sites",
+       "w": 17.1,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Doesn\u2019t lock up the surface",
+       "w": 11.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the leach",
+       "w": 5.7,
+       "val": 77,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 44,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per tonne of copper",
+       "w": 22.5,
+       "val": 46,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for leach microbes and crews",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 69,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 73,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 83,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Grips the copper sites"
+   ]
   }
  ]
 }

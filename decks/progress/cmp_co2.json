@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   3,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -39,10 +45,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 34,
-   "price": 1.19
+   "overall": 39,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 21,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -58,10 +189,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 27,
-   "price": 3.36
+   "overall": 36,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 17,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 1,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -77,10 +333,274 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 12,
-   "price": 3.4
+   "overall": 20,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
+   "label": "Design D",
+   "sub": "Level 1",
+   "kind": "design",
+   "vals": [
+    0,
+    100,
+    100,
+    81,
+    100,
+    44,
+    null,
+    0,
+    40,
+    55,
+    100,
+    26,
+    48
+   ],
+   "overall": 20,
+   "price": 2.84,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 27,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 81,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 26,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 43,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 7,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Works in wet flue gas"
+   ]
   },
   {
    "label": "L2-17",
@@ -96,67 +616,414 @@
     5,
     0,
     40,
-    55
+    55,
+    100,
+    28,
+    56
    ],
-   "overall": 41,
-   "price": 3.84
+   "overall": 44,
+   "price": 3.84,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 86,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 84,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 41,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 7,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L4-30",
+   "label": "L4-1",
    "sub": "Level 4 \u00b7 US, low cost",
    "kind": "design",
    "vals": [
-    99,
-    19,
-    91,
-    100,
-    100,
-    46,
-    null,
     0,
-    40,
-    55
-   ],
-   "overall": 39,
-   "price": 2.81
-  },
-  {
-   "label": "L5-14",
-   "sub": "Level 5 \u00b7 drop-in",
-   "kind": "design",
-   "vals": [
-    31,
-    12,
-    80,
     100,
+    100,
+    58,
     100,
     41,
     null,
     0,
     40,
-    55
+    55,
+    100,
+    16,
+    36
    ],
-   "overall": 30,
-   "price": 3.84
+   "overall": 20,
+   "price": 2.86,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 24,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 58,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 16,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 41,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 7,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Works in wet flue gas"
+   ]
   },
   {
-   "label": "L5-14",
+   "label": "L5-1",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
-    31,
-    12,
-    80,
+    59,
+    10,
+    0,
     100,
     100,
-    41,
+    47,
     null,
     0,
     40,
-    55
+    55,
+    100,
+    48,
+    62
    ],
-   "overall": 30,
-   "price": 3.84
+   "overall": 20,
+   "price": 3.9,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 26,
+     "rows": [
+      {
+       "name": "Works in wet flue gas",
+       "w": 11.2,
+       "val": 59,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks CO\u2082 over nitrogen",
+       "w": 7.5,
+       "val": 10,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches CO\u2082",
+       "w": 7.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Low heat to release CO\u2082",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per tonne of CO\u2082",
+       "w": 16.7,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 62,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks CO\u2082 over nitrogen",
+    "Catches CO\u2082"
+   ]
   }
  ]
 }

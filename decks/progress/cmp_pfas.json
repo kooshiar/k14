@@ -6,7 +6,10 @@
   "Safe for drinking water",
   "Stays in the filter",
   "Cost per m\u00b3 of water",
-  "US supply"
+  "US supply",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -14,24 +17,12 @@
   3,
   2,
   2,
+  1,
+  2,
+  1,
   1
  ],
  "options": [
-  {
-   "label": "Pillar[5]arene (OMe)",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    44,
-    50,
-    100,
-    100,
-    27,
-    5
-   ],
-   "overall": 48,
-   "price": 3.4
-  },
   {
    "label": "Quaternary ammonium (resin site)",
    "sub": "Sold today",
@@ -42,10 +33,212 @@
     65,
     63,
     50,
-    null
+    null,
+    100,
+    50,
+    89
    ],
-   "overall": 29,
-   "price": 2.12
+   "overall": 43,
+   "price": 2.12,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 20,
+     "rows": [
+      {
+       "name": "Picks PFAS over natural organics",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt PFAS",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 63,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 15.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 89,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 15.0,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    44,
+    50,
+    100,
+    100,
+    27,
+    5,
+    100,
+    0,
+    60
+   ],
+   "overall": 41,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Picks PFAS over natural organics",
+       "w": 15.0,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt PFAS",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 27,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 15.0,
+       "val": 27,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 17,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 7.5,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 7.5,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -57,10 +250,107 @@
     100,
     0,
     34,
-    100
+    100,
+    100,
+    0,
+    35
    ],
-   "overall": 7,
-   "price": 1.19
+   "overall": 12,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 1,
+     "rows": [
+      {
+       "name": "Picks PFAS over natural organics",
+       "w": 15.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppt PFAS",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 34,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 15.0,
+       "val": 34,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 59,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 7.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 7.5,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Design C",
@@ -72,25 +362,205 @@
     100,
     100,
     35,
-    null
+    null,
+    100,
+    13,
+    81
    ],
-   "overall": 78,
-   "price": 2.88
+   "overall": 71,
+   "price": 2.88,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 69,
+     "rows": [
+      {
+       "name": "Picks PFAS over natural organics",
+       "w": 15.0,
+       "val": 73,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt PFAS",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 13,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 15.0,
+       "val": 35,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 15.0,
+       "val": 81,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L3-3",
+   "label": "L3-19",
    "sub": "Level 3 \u00b7 US-sourced",
    "kind": "design",
    "vals": [
+    89,
     100,
     100,
     100,
+    34,
+    null,
     100,
-    28,
-    null
+    9,
+    80
    ],
-   "overall": 81,
-   "price": 2.92
+   "overall": 72,
+   "price": 2.97,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 71,
+     "rows": [
+      {
+       "name": "Picks PFAS over natural organics",
+       "w": 15.0,
+       "val": 89,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt PFAS",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 9,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 34,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 15.0,
+       "val": 34,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 80,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 15.0,
+       "val": 80,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-19",
@@ -102,10 +572,100 @@
     100,
     100,
     29,
-    null
+    null,
+    100,
+    0,
+    51
    ],
-   "overall": 81,
-   "price": 2.83
+   "overall": 60,
+   "price": 2.83,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 56,
+     "rows": [
+      {
+       "name": "Picks PFAS over natural organics",
+       "w": 15.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt PFAS",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 29,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 15.0,
+       "val": 29,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 15.0,
+       "val": 51,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

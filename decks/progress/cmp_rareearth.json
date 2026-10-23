@@ -11,7 +11,13 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Dissolves in the oil phase"
  ],
  "weights": [
   3,
@@ -23,6 +29,12 @@
   2,
   1,
   2,
+  1,
+  1,
+  2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -42,10 +54,159 @@
     null,
     100,
     50,
+    50,
+    100,
+    25,
+    86,
+    80,
+    37,
     50
    ],
-   "overall": 27,
-   "price": 3.35
+   "overall": 38,
+   "price": 3.35,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 20,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks Nd over Ce",
+       "w": 9.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.0,
+       "val": 25,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.0,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.0,
+       "val": 37,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 86,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "EDTA",
@@ -62,10 +223,159 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    64,
+    100,
+    0,
+    0
    ],
-   "overall": 20,
-   "price": 2.21
+   "overall": 27,
+   "price": 2.21,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 9,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 9.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Picks Nd over Ce",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 6.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 75,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 64,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "P507 (HEHEHP)",
@@ -82,10 +392,159 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    48,
+    67,
+    80,
+    36,
+    0
    ],
-   "overall": 14,
-   "price": 2.3
+   "overall": 25,
+   "price": 2.3,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks Nd over Ce",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.0,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.0,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 76,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 67,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "D2EHPA",
@@ -102,10 +561,159 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    46,
+    69,
+    60,
+    50,
+    0
    ],
-   "overall": 14,
-   "price": 2.39
+   "overall": 25,
+   "price": 2.39,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks Nd over Ce",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.0,
+       "val": 46,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.0,
+       "val": 60,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 48,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 69,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Cyanex 272",
@@ -122,10 +730,159 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    65,
+    100,
+    31,
+    0
    ],
-   "overall": 14,
-   "price": 2.23
+   "overall": 25,
+   "price": 2.23,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 8,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Picks Nd over Ce",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 6.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.0,
+       "val": 31,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 76,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 65,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-32",
@@ -142,10 +899,152 @@
     null,
     29,
     55,
-    45
+    45,
+    100,
+    37,
+    79,
+    80,
+    0,
+    0
    ],
-   "overall": 51,
-   "price": 2.81
+   "overall": 39,
+   "price": 2.81,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 29,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 37,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.8,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -162,10 +1061,154 @@
     null,
     29,
     55,
-    45
+    45,
+    100,
+    36,
+    79,
+    80,
+    0,
+    0
    ],
-   "overall": 37,
-   "price": 2.85
+   "overall": 20,
+   "price": 2.85,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 19,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.8,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 7.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 7.5,
+       "val": 92,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.8,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Strips with mild acid"
+   ]
   },
   {
    "label": "L5-3",
@@ -182,10 +1225,152 @@
     null,
     48,
     55,
-    45
+    45,
+    100,
+    51,
+    67,
+    80,
+    48,
+    0
    ],
-   "overall": 55,
-   "price": 2.23
+   "overall": 49,
+   "price": 2.23,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 51,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.8,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.8,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 52,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 67,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-3",
@@ -202,10 +1387,152 @@
     null,
     48,
     55,
-    45
+    45,
+    100,
+    51,
+    67,
+    80,
+    48,
+    0
    ],
-   "overall": 55,
-   "price": 2.23
+   "overall": 49,
+   "price": 2.23,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Picks Nd over La",
+       "w": 11.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches Nd",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Strips with mild acid",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 7.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.8,
+       "val": 51,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.8,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.8,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the oil phase",
+       "w": 3.8,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 52,
+     "rows": [
+      {
+       "name": "Cost per tonne of oxide",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 67,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

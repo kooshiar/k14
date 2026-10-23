@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   2,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -39,10 +45,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    33,
+    66
    ],
-   "overall": 45,
-   "price": 3.36
+   "overall": 47,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 32,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 33,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 42,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Sulfonato-calix[4]arene",
@@ -58,10 +189,128 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    13,
+    51
    ],
-   "overall": 29,
-   "price": 2.79
+   "overall": 33,
+   "price": 2.79,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 16,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 27,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 13,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 51,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "18-crown-6",
@@ -77,10 +326,128 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    87
    ],
-   "overall": 15,
-   "price": 2.56
+   "overall": 23,
+   "price": 2.56,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 3,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Beta-cyclodextrin",
@@ -96,29 +463,274 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    0,
+    35
    ],
-   "overall": 14,
-   "price": 1.19
+   "overall": 17,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 4,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 42,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "Design D",
+   "label": "Design A",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
     100,
     100,
-    23,
+    0,
     100,
-    30,
-    33,
+    65,
+    36,
     null,
-    29,
+    31,
     50,
-    20
+    35,
+    100,
+    7,
+    46
    ],
-   "overall": 48,
-   "price": 3.03
+   "overall": 20,
+   "price": 2.86,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 22,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 7,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 36,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 35,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 31,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 46,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Releases TMAH for reuse"
+   ]
   },
   {
    "label": "L2-44",
@@ -134,10 +746,128 @@
     null,
     27,
     50,
-    35
+    35,
+    100,
+    5,
+    50
    ],
-   "overall": 61,
-   "price": 2.99
+   "overall": 52,
+   "price": 2.99,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 66,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 45,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 35,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 34,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 27,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -153,29 +883,270 @@
     null,
     28,
     50,
-    35
+    35,
+    100,
+    6,
+    44
    ],
-   "overall": 37,
-   "price": 2.84
+   "overall": 20,
+   "price": 2.84,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 31,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 73,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 6,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 36,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 33,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 44,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Catches TMAH"
+   ]
   },
   {
-   "label": "L5-7",
+   "label": "L5-1",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
-    100,
+    0,
     0,
     100,
     100,
     100,
-    40,
+    39,
     null,
-    40,
+    38,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 43,
-   "price": 3.77
+   "overall": 20,
+   "price": 4.01,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 11,
+     "rows": [
+      {
+       "name": "Picks TMAH over ammonium and sodium",
+       "w": 12.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches TMAH",
+       "w": 8.2,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Releases TMAH for reuse",
+       "w": 12.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the resin",
+       "w": 8.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.1,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of wastewater",
+       "w": 16.7,
+       "val": 39,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 8.3,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe in the fab",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 38,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks TMAH over ammonium and sodium",
+    "Catches TMAH"
+   ]
   }
  ]
 }

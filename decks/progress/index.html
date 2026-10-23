@@ -123,12 +123,28 @@ html,body{height:auto!important;overflow:auto!important;background:#FFFFFF!impor
 .nav{display:none!important}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) html,:root:not([data-theme="light"]) body{background:#111317!important}}
 </style><style id="cxcss">
-.cx{width:20px;height:20px;margin:0 8px 0 0;padding:0;border:0;border-radius:5px;background:rgba(127,127,127,.12);color:#5B6170;font:500 11px/20px var(--mono,ui-monospace);cursor:pointer;vertical-align:1px;transition:transform .15s}
-.cx:hover{background:rgba(127,127,127,.22)}.cx.on{transform:rotate(90deg)}.cx0{display:inline-block;width:28px}
-#tbl tr.cxr td{border-top:0!important;padding-top:0!important;padding-bottom:14px!important}
-#tbl tr.cxr ul{margin:0;padding:0 0 0 28px;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 24px}
-#tbl tr.cxr li{font:400 13px/1.4 var(--sans,system-ui);color:#3A3F4A}
-#tbl tr.cxr li::before{content:"·";margin-right:8px;color:#9AA3B2}
+.cxb{display:inline-flex;gap:4px;margin-left:10px;vertical-align:1px}
+.cx{height:20px;padding:0 7px;border:0;border-radius:5px;background:rgba(127,127,127,.12);color:#5B6170;font:500 11px/20px var(--mono,ui-monospace);cursor:pointer}
+.cx:hover{background:#181818;color:#fff}
+#cxm{position:fixed;inset:0;z-index:50;background:rgba(14,16,22,.35);display:flex;align-items:center;justify-content:center;padding:16px}
+#cxm[hidden]{display:none}
+#cxm .bx{background:#fff;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.25);width:min(460px,100%);max-height:80vh;overflow:auto;padding:22px 24px 20px;position:relative}
+#cxm .k{font:500 11px/1 var(--mono,ui-monospace);color:#7C8494;text-transform:uppercase;letter-spacing:.06em}
+#cxm h3{margin:8px 0 14px;font:600 20px/1.2 var(--sans,system-ui);letter-spacing:-.02em;color:#181818}
+#cxm ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+#cxm li{font:400 14px/1.4 var(--sans,system-ui);color:#2A2E36;padding-left:16px;position:relative}
+#cxm li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height:5px;border-radius:50%;background:#9AA3B2}
+#cxm .x{position:absolute;right:12px;top:12px;width:28px;height:28px;border:0;border-radius:6px;background:#F3F4F6;color:#3A3F4A;cursor:pointer;font-size:14px}
+#cxm.wide .bx{width:min(640px,100%)}
+#cxm li.sh,#cxm li.bh,#cxm li.rw{display:grid;grid-template-columns:1fr 56px 48px 48px 52px;gap:6px;padding-left:0}
+#cxm li.sh::before,#cxm li.bh::before,#cxm li.rw::before,#cxm li.fl::before{display:none}
+#cxm li em{font-style:normal;text-align:right;font:500 12px/1.4 var(--mono,ui-monospace);color:#3A3F4A}
+#cxm li.sh em{color:#7C8494;font-size:10px;text-transform:uppercase;letter-spacing:.05em}
+#cxm li.bh{margin-top:10px;padding-top:8px;border-top:1px solid #E5E7EB}#cxm li.bh span{font-weight:600;color:#181818}#cxm li.bh em{font-weight:600;color:#181818}
+#cxm li.rw span{padding-left:12px;color:#3A3F4A;font-size:13px}
+#cxm li.rw.bad span,#cxm li.rw.bad em{color:#C4271B}
+#cxm li.gh{padding-left:0;margin-top:8px;font:600 13px/1.2 var(--sans,system-ui);color:#181818}#cxm li.gh::before{display:none}#cxm li.gh:first-child{margin-top:0}
+#cxm li.fl{margin-top:12px;padding-left:0;color:#C4271B;font-weight:500;font-size:13px}
 </style></head>
 <body>
 <div class="stage">
@@ -184,14 +200,25 @@ function scoreCell(sc){if(!sc)return '<td class="m">—</td>';const l1=sc.l1??(s
 const KEY={tag:r=>(TAG[r.key]||r.tag||'~').toLowerCase(),name:r=>r.name.toLowerCase(),grade:r=>grade(r.key)?.g??-1,created:r=>r.created||'',finished:r=>r.finished||''};
 function sortBy(k){if(SORT===k)DIR=-DIR;else{SORT=k;DIR=k==='name'?1:-1}render(D)}
 function th(label,k){return `<th class="srt${SORT===k?' on':''}" onclick="sortBy('${k}')">${label}${SORT===k?(DIR>0?' ↑':' ↓'):''}</th>`}
-let CX={},OPEN=new Set();
-function cxT(k){OPEN.has(k)?OPEN.delete(k):OPEN.add(k);render(D)}
+let CX={};
+function cxO(k,w){const c=CX[k];if(!c||!c[w])return;const r=(D.rows||[]).find(x=>x.key===k)||{name:k};const m=document.getElementById('cxm');
+  m.querySelector('h3').textContent=r.name;m.querySelector('.k').textContent=w==='sim'?'What we simulate':'What the buyer needs';
+  const bo=t=>{const l=t.toLowerCase();if(/cost|price|equipment|cheap|cheaper/.test(l))return 'Cost';if(/safe|toxic|allowed|banned|alert|food-safe|cyanide/.test(l))return 'Safety & rules';if(/^(us |made from us|drops into|fits today|easy to ship|easy to make|needs little|uses us|level 3|level 5|small edits|swap imported|us-made|similar|close to today)/.test(l))return 'Fit & supply';return 'Performance'};
+  const g={};c[w].forEach(x=>{(g[bo(x)]=g[bo(x)]||[]).push(x)});
+  m.querySelector('ul').innerHTML=['Performance','Cost','Safety & rules','Fit & supply'].filter(k=>g[k]).map(k=>`<li class="gh">${k}</li>`+g[k].map(x=>`<li>${x}</li>`).join('')).join('');m.classList.remove('wide');m.hidden=false;m.querySelector('.x').focus()}
+function scO(k){const v=SC[k];if(!v||!v.ours_boxes)return;const r=(D.rows||[]).find(x=>x.key===k)||{name:k};const m=document.getElementById('cxm');
+  const tb={};(v.theirs_boxes||[]).forEach(b=>b.rows.forEach(x=>tb[x.name]=x.val));const tbs={};(v.theirs_boxes||[]).forEach(b=>tbs[b.box]=b.score);
+  m.querySelector('h3').textContent=r.name;m.querySelector('.k').textContent=`Ours ${v.ours} · today ${v.theirs??'—'} (${v.theirs_name||''})`;
+  m.querySelector('ul').innerHTML=`<li class="sh"><span></span><em>Weight</em><em>Ours</em><em>Today</em><em>Cutoff</em></li>`+v.ours_boxes.map(b=>`<li class="bh"><span>${b.box}</span><em>${b.mult}</em><em>${b.score}</em><em>${tbs[b.box]??'—'}</em><em></em></li>`+b.rows.map(x=>`<li class="rw${x.ok?'':' bad'}"><span>${x.name}</span><em>${x.w}</em><em>${x.val??'—'}</em><em>${tb[x.name]??'—'}</em><em>${x.cut||'—'}</em></li>`).join('')).join('')+(v.ours_fails&&v.ours_fails.length?`<li class="fl">Deal breaker: ${v.ours_fails.join(', ')}</li>`:'');
+  m.classList.add('wide');m.hidden=false;m.querySelector('.x').focus()}
+function cxC(){document.getElementById('cxm').classList.remove('wide');document.getElementById('cxm').hidden=true}
+addEventListener('keydown',e=>{if(e.key==='Escape')cxC()});
 function render(d){if(!d)return;D=d;let R=[...d.rows];
   if(SORT){const f=KEY[SORT];R.sort((a,b)=>{const x=f(a),y=f(b);return (x<y?-1:x>y?1:0)*DIR})}
   const rows=R.map(r=>{const [c,t]=ST[r.state]||['m',r.state];const G=grade(r.key);
     const nm=r.href?`<a class="pl" href="${r.href}">${r.name}</a>`:DECK.includes(r.key)?`<a class="pl" href="${r.key==='heatcold'?'/decks/heatcold/':`/decks/opportunities/${r.key}/`}">${r.name}</a>`:`<b>${r.name}</b>`;
-    return `<tr><td class="tg"><span>${TAG[r.key]||r.tag||'—'}</span></td><td class="p" title="${r.sub}">${CX[r.key]?`<button class="cx${OPEN.has(r.key)?' on':''}" aria-expanded="${OPEN.has(r.key)}" aria-label="Design constraints" onclick="cxT('${r.key}')">▸</button>`:'<span class="cx0"></span>'}${nm}</td>${ph(r.phase1,r.phase1_stage)}${ph(r.phase2,r.phase2_stage)}${ph(r.phase3,r.phase3_stage)}${ph(r.phase4,r.phase4_stage)}${ph(r.phase5,r.phase5_stage)}${scoreCell(SC[r.key])}<td class="gr" title="${G?G.tip:''}">${G?G.g:'—'}</td><td class="t" title="${tmF(r.created)}">${tmD(r.created)}</td><td class="t" title="${tmF(r.finished)}">${tmD(r.finished)}</td><td class="fin ${c}">${t}</td></tr>`+(OPEN.has(r.key)&&CX[r.key]?`<tr class="cxr"><td></td><td colspan="11"><ul>${CX[r.key].map(x=>`<li>${x}</li>`).join('')}</ul></td></tr>`:'')}).join('');
-  document.getElementById('tbl').innerHTML=`<tr>${th('Tag','tag')}${th('Problem','name')}<th class="c" title="Phase 1 · design">P1</th><th class="c" title="Phase 2 · level 2 edits">P2</th><th class="c" title="Phase 3 · US-sourced">P3</th><th class="c" title="Phase 4 · US-sourced, low cost">P4</th><th class="c" title="Phase 5 · drop-in upgrade of today’s products">P5</th><th title="Score: best sold today / our best after P1, P2, P3, P4, P5">Score</th>${th('Grade','grade')}${th('Started','created')}${th('Finished','finished')}<th>Status</th></tr>${rows}`;
+    return `<tr><td class="tg"><span>${TAG[r.key]||r.tag||'—'}</span></td><td class="p" title="${r.sub}">${nm}${CX[r.key]?`<span class="cxb"><button class="cx" onclick="cxO('${r.key}','needs')" title="What the buyer needs">Needs</button><button class="cx" onclick="cxO('${r.key}','sim')" title="What we simulate">Sim</button>${SC[r.key]&&SC[r.key].ours_boxes?`<button class="cx" onclick="scO('${r.key}')" title="How the score adds up">Score</button>`:''}</span>`:''}</td>${ph(r.phase1,r.phase1_stage)}${ph(r.phase2,r.phase2_stage)}${ph(r.phase3,r.phase3_stage)}${ph(r.phase4,r.phase4_stage)}${ph(r.phase5,r.phase5_stage)}${ph(r.phase6,r.phase6_stage)}${scoreCell(SC[r.key])}<td class="gr" title="${G?G.tip:''}">${G?G.g:'—'}</td><td class="t" title="${tmF(r.created)}">${tmD(r.created)}</td><td class="t" title="${tmF(r.finished)}">${tmD(r.finished)}</td><td class="fin ${c}">${t}</td></tr>`}).join('');
+  document.getElementById('tbl').innerHTML=`<tr>${th('Tag','tag')}${th('Problem','name')}<th class="c" title="Phase 1 · design">P1</th><th class="c" title="Phase 2 · level 2 edits">P2</th><th class="c" title="Phase 3 · US-sourced">P3</th><th class="c" title="Phase 4 · US-sourced, low cost">P4</th><th class="c" title="Phase 5 · drop-in upgrade of today’s products">P5</th><th class="c" title="Phase 6 · real-world check of the finalists">P6</th><th title="Score: best sold today / our best after P1, P2, P3, P4, P5">Score</th>${th('Grade','grade')}${th('Started','created')}${th('Finished','finished')}<th>Status</th></tr>${rows}`;
   const av=k=>{const v=R.map(r=>r[k]).filter(x=>x!=null);return v.length?Math.round(v.reduce((a,b)=>a+b,0)/v.length):0};
   document.getElementById('ttl').textContent='Spinoff progress';
   const all=R.length,full=R.filter(r=>r.state==='done').length,p1=R.filter(r=>r.phase1===100).length;
@@ -220,5 +247,6 @@ load();setInterval(load,60000);
 .alldecks a{text-align:center;padding:8px 2px!important}
 }</style><style id="fullpage2">html body nav.nav{display:none!important}
 html body .stage{padding:64px 150px 96px clamp(32px,5vw,88px)!important}
-@media (max-width:900px){html body .stage{padding:32px 16px 64px!important}}</style><style id="plgap">.txt .pl{position:static!important;align-self:flex-start!important;margin:0 0 1.6cqw!important}</style></body>
+@media (max-width:900px){html body .stage{padding:32px 16px 64px!important}}</style><style id="plgap">.txt .pl{position:static!important;align-self:flex-start!important;margin:0 0 1.6cqw!important}</style><div id="cxm" hidden onclick="if(event.target===this)cxC()" role="dialog" aria-modal="true"><div class="bx"><button class="x" onclick="cxC()" aria-label="Close">✕</button><span class="k"></span><h3></h3><ul></ul></div></div>
+</body>
 </html>

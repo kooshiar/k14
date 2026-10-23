@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -18,6 +21,9 @@
   2,
   2,
   1,
+  1,
+  1,
+  2,
   1,
   1,
   2,
@@ -39,10 +45,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    15,
+    35
    ],
-   "overall": 64,
-   "price": 1.19
+   "overall": 59,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 53,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 45,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Alpha-cyclodextrin",
@@ -58,10 +189,121 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    20,
+    24
    ],
    "overall": 45,
-   "price": 2.5
+   "price": 2.5,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 33,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 15.0,
+       "val": 10,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches xenon",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low energy to release",
+       "w": 10.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 5.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.0,
+       "val": 20,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 44,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 59,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Resorcin[4]arene",
@@ -77,10 +319,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    41,
+    58
    ],
-   "overall": 33,
-   "price": 3.22
+   "overall": 40,
+   "price": 3.22,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 21,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 2,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 47,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 78,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 58,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Calix[4]arene",
@@ -96,10 +463,135 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    66
    ],
-   "overall": 14,
-   "price": 3.36
+   "overall": 22,
+   "price": 3.36,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 80,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -115,10 +607,135 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    29,
+    60
    ],
-   "overall": 11,
-   "price": 3.4
+   "overall": 19,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L3-16",
@@ -134,10 +751,128 @@
     null,
     29,
     55,
-    20
+    20,
+    100,
+    21,
+    43
    ],
-   "overall": 61,
-   "price": 2.89
+   "overall": 57,
+   "price": 2.89,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 75,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 53,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 21,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 29,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 20,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -153,10 +888,128 @@
     null,
     29,
     55,
-    35
+    35,
+    100,
+    20,
+    43
    ],
-   "overall": 67,
-   "price": 2.91
+   "overall": 60,
+   "price": 2.91,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 80,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 72,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 20,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 34,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -172,10 +1025,128 @@
     null,
     42,
     55,
-    50
+    50,
+    100,
+    40,
+    48
    ],
-   "overall": 62,
-   "price": 3.6
+   "overall": 61,
+   "price": 3.6,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 69,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 61,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 69,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 46,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-21",
@@ -191,10 +1162,128 @@
     null,
     42,
     55,
-    50
+    50,
+    100,
+    40,
+    48
    ],
-   "overall": 62,
-   "price": 3.6
+   "overall": 61,
+   "price": 3.6,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 45,
+     "score": 69,
+     "rows": [
+      {
+       "name": "Picks xenon over krypton",
+       "w": 13.5,
+       "val": 61,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Ignores oxygen",
+       "w": 4.5,
+       "val": 56,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Catches xenon",
+       "w": 9.0,
+       "val": 69,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Low energy to release",
+       "w": 9.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t evaporate",
+       "w": 4.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.5,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 25,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per liter of xenon",
+       "w": 12.5,
+       "val": 46,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 12.5,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 10.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 42,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 48,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

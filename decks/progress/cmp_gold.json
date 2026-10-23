@@ -11,7 +11,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -21,6 +24,9 @@
   1,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -42,30 +48,135 @@
     null,
     100,
     50,
-    50
-   ],
-   "overall": 36,
-   "price": 2.12
-  },
-  {
-   "label": "Dibutyl carbitol",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    0,
-    35,
-    0,
-    100,
-    88,
-    100,
-    38,
-    null,
-    100,
     50,
-    50
+    100,
+    35,
+    89
    ],
-   "overall": 19,
-   "price": 2.45
+   "overall": 44,
+   "price": 2.12,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 26,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 37,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 63,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 44,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "MIBK",
@@ -82,10 +193,280 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    87
    ],
-   "overall": 19,
-   "price": 1.82
+   "overall": 31,
+   "price": 1.82,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 10,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 54,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
+   "label": "Dibutyl carbitol",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    35,
+    0,
+    100,
+    88,
+    100,
+    38,
+    null,
+    100,
+    50,
+    50,
+    100,
+    22,
+    90
+   ],
+   "overall": 28,
+   "price": 2.45,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 9,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 35,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 88,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 22,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 38,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 90,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Alpha-cyclodextrin",
@@ -102,10 +483,135 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    0,
+    24
    ],
-   "overall": 14,
-   "price": 2.5
+   "overall": 18,
+   "price": 2.5,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 5,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 29,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 22,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 59,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-19",
@@ -122,10 +628,135 @@
     null,
     34,
     55,
-    35
+    35,
+    100,
+    25,
+    85
    ],
-   "overall": 64,
-   "price": 2.27
+   "overall": 59,
+   "price": 2.27,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 59,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 68,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 25,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 44,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 40,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 43,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 34,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 85,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -142,10 +773,138 @@
     null,
     28,
     55,
-    50
+    50,
+    100,
+    0,
+    80
    ],
-   "overall": 39,
-   "price": 3.44
+   "overall": 20,
+   "price": 3.44,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 28,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 30,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 22,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 42,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 80,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Lets go of gold for refining",
+    "Cost per ounce recovered"
+   ]
   },
   {
    "label": "L5-15",
@@ -162,10 +921,135 @@
     null,
     40,
     55,
-    35
+    35,
+    100,
+    32,
+    88
    ],
-   "overall": 69,
-   "price": 2.18
+   "overall": 63,
+   "price": 2.18,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 84,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 73,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 88,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L5-15",
@@ -182,10 +1066,135 @@
     null,
     40,
     55,
-    35
+    35,
+    100,
+    32,
+    88
    ],
-   "overall": 69,
-   "price": 2.18
+   "overall": 63,
+   "price": 2.18,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 84,
+     "rows": [
+      {
+       "name": "Picks gold over copper and zinc",
+       "w": 10.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Works in strong chloride leach",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches gold",
+       "w": 7.3,
+       "val": 80,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Lets go of gold for refining",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the oil phase",
+       "w": 3.6,
+       "val": 73,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 32,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Cost per ounce recovered",
+       "w": 20.0,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 55,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 87,
+     "rows": [
+      {
+       "name": "No cyanide, safe to handle",
+       "w": 3.3,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 88,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

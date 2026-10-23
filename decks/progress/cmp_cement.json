@@ -8,13 +8,19 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
   3,
   1,
   3,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -33,10 +39,121 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    47,
+    79
    ],
-   "overall": 69,
-   "price": 1.54
+   "overall": 66,
+   "price": 1.54,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 67,
+     "rows": [
+      {
+       "name": "Early strength",
+       "w": 17.1,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t slow setting",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 47,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per tonne of cement",
+       "w": 22.5,
+       "val": 48,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe on site",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 83,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "TEA",
@@ -50,10 +167,121 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    85
    ],
-   "overall": 32,
-   "price": 1.45
+   "overall": 34,
+   "price": 1.45,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 13,
+     "rows": [
+      {
+       "name": "Early strength",
+       "w": 17.1,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Doesn\u2019t slow setting",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per tonne of cement",
+       "w": 22.5,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe on site",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 84,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 85,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "TIPA",
@@ -67,27 +295,249 @@
     100,
     100,
     50,
-    50
+    50,
+    100,
+    41,
+    72
    ],
-   "overall": 31,
-   "price": 1.76
+   "overall": 33,
+   "price": 1.76,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 12,
+     "rows": [
+      {
+       "name": "Early strength",
+       "w": 17.1,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Doesn\u2019t slow setting",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per tonne of cement",
+       "w": 22.5,
+       "val": 45,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe on site",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 82,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 72,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "DIPA-butanol",
+   "label": "DEA-butanol",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
-    84,
+    69,
     100,
     100,
-    40,
-    72,
-    84,
+    47,
+    49,
+    79,
     50,
-    45
+    45,
+    100,
+    44,
+    79
    ],
-   "overall": 70,
-   "price": 2.53
+   "overall": 66,
+   "price": 1.62,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 76,
+     "rows": [
+      {
+       "name": "Early strength",
+       "w": 17.1,
+       "val": 69,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t slow setting",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 44,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per tonne of cement",
+       "w": 22.5,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe on site",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 64,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 49,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-17",
@@ -101,10 +551,121 @@
     100,
     75,
     50,
-    45
+    45,
+    100,
+    41,
+    79
    ],
-   "overall": 73,
-   "price": 2.41
+   "overall": 70,
+   "price": 2.41,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 88,
+     "rows": [
+      {
+       "name": "Early strength",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t slow setting",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 44,
+     "rows": [
+      {
+       "name": "Cost per tonne of cement",
+       "w": 22.5,
+       "val": 42,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe on site",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 72,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 75,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-9",
@@ -118,10 +679,114 @@
     null,
     61,
     50,
-    45
+    45,
+    100,
+    54,
+    80
    ],
-   "overall": 70,
-   "price": 1.9
+   "overall": 69,
+   "price": 1.9,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Early strength",
+       "w": 17.1,
+       "val": 88,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Doesn\u2019t slow setting",
+       "w": 17.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 5.7,
+       "val": 54,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per tonne of cement",
+       "w": 22.5,
+       "val": 48,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe on site",
+       "w": 3.3,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 6.7,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 60,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 61,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 45,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 80,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   }
  ]
 }

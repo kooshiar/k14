@@ -10,7 +10,10 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   2,
   1,
   2,
+  1,
+  2,
+  1,
   1,
   2,
   1,
@@ -39,29 +45,128 @@
     null,
     100,
     50,
-    50
-   ],
-   "overall": 38,
-   "price": 2.12
-  },
-  {
-   "label": "Beta-cyclodextrin",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    0,
     50,
     100,
-    0,
-    100,
-    34,
-    100,
-    100,
     50,
-    50
+    89
    ],
-   "overall": 21,
-   "price": 1.19
+   "overall": 46,
+   "price": 2.12,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 24,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 63,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Tren tris(phenylurea)",
@@ -77,10 +182,272 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    6,
+    89
    ],
-   "overall": 21,
-   "price": 3.28
+   "overall": 27,
+   "price": 3.28,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 6,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 37,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 32,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 82,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 89,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
+   "label": "Beta-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    50,
+    100,
+    0,
+    100,
+    34,
+    100,
+    100,
+    50,
+    50,
+    100,
+    0,
+    35
+   ],
+   "overall": 23,
+   "price": 1.19,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 4,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 34,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 71,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Pillar[5]arene (OMe)",
@@ -96,10 +463,135 @@
     5,
     100,
     50,
-    50
+    50,
+    100,
+    0,
+    60
    ],
-   "overall": 19,
-   "price": 3.4
+   "overall": 22,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 5,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 33,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 27,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Design A",
@@ -115,10 +607,128 @@
     null,
     29,
     70,
-    40
+    40,
+    100,
+    0,
+    73
    ],
-   "overall": 60,
-   "price": 3.11
+   "overall": 54,
+   "price": 3.11,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 41,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 31,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 70,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 73,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L2-37",
@@ -134,10 +744,128 @@
     null,
     28,
     70,
-    40
+    40,
+    100,
+    0,
+    71
    ],
-   "overall": 63,
-   "price": 3.12
+   "overall": 56,
+   "price": 3.12,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 59,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 90,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 30,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 70,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 71,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-5",
@@ -153,29 +881,268 @@
     null,
     30,
     70,
-    40
+    40,
+    100,
+    0,
+    71
    ],
-   "overall": 49,
-   "price": 3.15
+   "overall": 47,
+   "price": 3.15,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 36,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 30,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 70,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 40,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 30,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 71,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L5-2",
+   "label": "L5-1",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
-    100,
     0,
+    0,
+    65,
+    63,
     100,
-    100,
-    100,
-    31,
+    47,
     null,
-    44,
+    38,
     70,
-    55
+    40,
+    100,
+    43,
+    87
    ],
-   "overall": 44,
-   "price": 3.28
+   "overall": 20,
+   "price": 2.24,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 6,
+     "rows": [
+      {
+       "name": "Picks TFA over chloride and sulfate",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Catches ppt TFA",
+       "w": 8.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Stays in the filter",
+       "w": 8.9,
+       "val": 63,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Frees up for reuse",
+       "w": 4.4,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 54,
+     "rows": [
+      {
+       "name": "Cost per m\u00b3 of water",
+       "w": 10.0,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 5.0,
+       "val": 70,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 77,
+     "rows": [
+      {
+       "name": "Safe for drinking water",
+       "w": 18.0,
+       "val": 65,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 47,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 7.5,
+       "val": 38,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.8,
+       "val": 40,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.8,
+       "val": 87,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Picks TFA over chloride and sulfate",
+    "Catches ppt TFA"
+   ]
   }
  ]
 }

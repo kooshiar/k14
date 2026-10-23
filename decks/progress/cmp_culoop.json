@@ -8,7 +8,13 @@
   "US supply",
   "Drops into today\u2019s setup",
   "Equipment cost",
-  "Easy to ship and store"
+  "Easy to ship and store",
+  "Allowed for sale",
+  "Holds more per kg",
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Dissolves in the water"
  ],
  "weights": [
   3,
@@ -17,6 +23,12 @@
   2,
   1,
   2,
+  1,
+  1,
+  2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -33,10 +45,138 @@
     null,
     100,
     50,
-    50
+    50,
+    100,
+    38,
+    85,
+    100,
+    50,
+    17
    ],
-   "overall": 34,
-   "price": 2.15
+   "overall": 40,
+   "price": 2.15,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 19,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 13.3,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 8.9,
+       "val": 1,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 38,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.4,
+       "val": 17,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 48,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 47,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 85,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Benzotriazole",
@@ -50,10 +190,145 @@
     27,
     100,
     50,
-    50
+    50,
+    100,
+    50,
+    83,
+    100,
+    31,
+    43
    ],
-   "overall": 26,
-   "price": 2.2
+   "overall": 35,
+   "price": 2.2,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 15,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 8.9,
+       "val": 68,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 31,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.4,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 50,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 65,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 27,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 83,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Tolyltriazole",
@@ -67,10 +342,145 @@
     24,
     100,
     50,
+    50,
+    100,
+    46,
+    82,
+    100,
+    0,
     50
    ],
-   "overall": 25,
-   "price": 2.25
+   "overall": 29,
+   "price": 2.25,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 10,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 8.9,
+       "val": 58,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 46,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.4,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 49,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 63,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 82,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "Glutamate(2-)",
@@ -84,27 +494,248 @@
     null,
     50,
     50,
-    50
+    50,
+    100,
+    43,
+    61,
+    null,
+    null,
+    null
    ],
-   "overall": 73,
-   "price": 1.68
+   "overall": 68,
+   "price": 1.68,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 87,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 20.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 13.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.7,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 51,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 51,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 53,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 61,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L2-6",
+   "label": "L2-22",
    "sub": "Level 2",
    "kind": "design",
    "vals": [
-    100,
-    64,
+    68,
+    89,
     65,
-    30,
-    100,
-    57,
+    40,
+    24,
+    66,
     50,
-    35
+    35,
+    100,
+    35,
+    74,
+    null,
+    null,
+    null
    ],
-   "overall": 61,
-   "price": 5.16
+   "overall": 56,
+   "price": 3.61,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 67,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 20.0,
+       "val": 68,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 13.3,
+       "val": 89,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.7,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 43,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 40,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 49,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 4.0,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 8.0,
+       "val": 66,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 4.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 4.0,
+       "val": 74,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
    "label": "L4-1",
@@ -118,27 +749,243 @@
     null,
     59,
     50,
-    35
+    35,
+    100,
+    24,
+    79,
+    null,
+    null,
+    null
    ],
-   "overall": 57,
-   "price": 2.34
+   "overall": 55,
+   "price": 2.34,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 58,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 20.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 13.3,
+       "val": 39,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.7,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 44,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 41,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 81,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 65,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 56,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 59,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 35,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 79,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
   },
   {
-   "label": "L5-37",
+   "label": "L5-2",
    "sub": "Level 5 \u00b7 drop-in",
    "kind": "design",
    "vals": [
+    0,
+    46,
     100,
-    18,
-    100,
-    45,
+    43,
     null,
     72,
     50,
-    50
+    50,
+    100,
+    41,
+    81,
+    null,
+    null,
+    null
    ],
-   "overall": 58,
-   "price": 2.18
+   "overall": 20,
+   "price": 3.14,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 7,
+     "rows": [
+      {
+       "name": "Protects the copper loop",
+       "w": 20.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Dissolves in the coolant",
+       "w": 13.3,
+       "val": 46,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 6.7,
+       "val": 41,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 30,
+     "score": 45,
+     "rows": [
+      {
+       "name": "Cost per loop fill",
+       "w": 20.0,
+       "val": 43,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 10.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 10,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Safe to handle",
+       "w": 5.0,
+       "val": 100,
+       "cut": 30,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 5.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 20,
+     "score": 68,
+     "rows": [
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 10.0,
+       "val": 72,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 5.0,
+       "val": 81,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": [
+    "Protects the copper loop"
+   ]
   }
  ]
 }
