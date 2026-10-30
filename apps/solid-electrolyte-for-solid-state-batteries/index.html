@@ -30,9 +30,9 @@
 <script type="module">
 import { setup } from '/site/appmols.js?v=5';
 import { stateOf, follow } from '/site/status.js';
-const trk = document.querySelector('.trk[data-pk]');   // progress follows the status DB: a finished round moves it to Designs completed
-if (trk) follow(m => { if (stateOf({ st:1, pk:trk.dataset.pk }, m) !== 'solved') return;
-  [...trk.children].forEach((li, j) => li.className = j < 2 ? 'done' : j === 2 ? 'now' : ''); });
+const trk = document.querySelector('.trk[data-pk]');   // progress follows the status DB: a finished round = Designs completed
+if (trk) follow(m => { if (!m) return; const at = stateOf({ pk:trk.dataset.pk }, m) === 'solved' ? 2 : 1;
+  [...trk.children].forEach((li, j) => li.className = j < at ? 'done' : j === at ? 'now' : ''); });
 const f = document.querySelector('.mol'), v = setup({ dataset:{ k:f.dataset.k }, scale:.95, look:'dark', drag:true, querySelector:() => f.querySelector('canvas') });
 v.active(true); let last = performance.now();
 (function loop(t){ v.tick(t - last); last = t; requestAnimationFrame(loop); })(last);

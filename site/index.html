@@ -142,7 +142,7 @@ stage.load(f).then(() => { stage.ov = { svg:$('ov') }; });
 
 // applications: two rows of molecule tiles (as many columns of ~83 px as fit), then a box that opens all apps
 const row = $('row'), ORDER = [...HOME.map(s => APPS.find(a => a.slug === s)), ...APPS.filter(a => !HOME.includes(a.slug))];
-let views = [], hot = -1, last = performance.now(), LIVE = {};
+let views = [], hot = -1, last = performance.now(), LIVE = null;
 (function loop(t){ if (hot >= 0 && views[hot]) views[hot].tick(t - last); last = t; requestAnimationFrame(loop); })(last);
 function fill(){
   const W = row.clientWidth, gap = innerWidth <= 900 ? 14 : 20, cols = Math.max(3, Math.floor((W + gap) / (83 + gap)));
@@ -150,7 +150,7 @@ function fill(){
   row.dataset.cols = cols; row.style.setProperty('--cols', cols);
   const picks = ORDER.slice(0, cols * 2 - 1);
   row.innerHTML = picks.map(a => { const s = stateOf(a, LIVE);   // solved, solving, queued, open (site/status.js)
-    return `<a class="card s-${s}" href="/apps/${a.slug}/" data-st="${a.st || 1}" data-pk="${a.pk || ''}"><canvas></canvas><div><b>${a.short}</b><small>${a.cs}</small><small class="sl">${LABEL[s]}</small></div></a>`; }).join('')
+    return `<a class="card s-${s}" href="/apps/${a.slug}/" data-st="${s}" data-pk="${a.pk || ''}"><canvas></canvas><div><b>${a.short}</b><small>${a.cs}</small><small class="sl">${LABEL[s]}</small></div></a>`; }).join('')
     + `<a class="card more" href="/apps/"><span class="mbox">+${APPS.length - picks.length}</span><div><b>All apps</b><small>${APPS.length}</small></div></a>`;
   views = [...row.querySelectorAll('.card:not(.more)')].map((el, i) => setup({ dataset:{ k:picks[i].k }, focus:picks[i].focus, look:'dark', querySelector:() => el.querySelector('canvas') }));
   requestAnimationFrame(() => views.forEach(v => v.draw()));
@@ -161,7 +161,7 @@ function fill(){
   });
 }
 addEventListener('resize', fill); fill();
-follow(m => { LIVE = m; paint([...row.querySelectorAll('.card:not(.more)')], m); });
+follow(m => { if (m) LIVE = m; paint([...row.querySelectorAll('.card:not(.more)')], m); });
 
 
 // technology diagram: connectors drawn from the boxes' positions (side by side on wide screens, stacked on phones)

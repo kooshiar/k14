@@ -247,6 +247,10 @@
   .t8 .ring{position:relative; height:33cqw} .t8 .ring .eng{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:15cqw; height:7cqw; flex-direction:column; gap:.6cqw; font-size:1.9cqw} .t8 .ring .eng img{width:2.8cqw; height:2.8cqw}
   .t8 .ring .m{position:absolute; width:10.5cqw; padding:.9cqw 1.1cqw; transform:translate(-50%, -50%)}
   .pic.vision{background:var(--page); display:flex; align-items:flex-end; justify-content:center; gap:5%; padding:0 10% 16%} .pic.vision i{width:17%; background:#fff; border:1px solid var(--rule); border-radius:5px; position:relative} .pic.vision i::before{content:''; position:absolute; left:20%; top:12%; width:34%; aspect-ratio:1; border-radius:50%; background:var(--blue)}
+  .pic.abt{display:grid; grid-template-columns:1fr 1fr 2fr; gap:6px; padding:27% 9%} .pic.abt i{border-radius:6px}
+  .pic.abt i:nth-child(1){background:radial-gradient(circle, #14161A 0 3px, transparent 3.5px), #B9A6FF}
+  .pic.abt i:nth-child(2){background:radial-gradient(circle, #14161A 0 1.8px, transparent 2.3px) 0 0 / 9px 9px, #8CC8FF}
+  .pic.abt i:nth-child(3){background:radial-gradient(circle, #14161A 0 .9px, transparent 1.3px) 0 0 / 4px 4px, linear-gradient(90deg, #8FCB72, #FFC46B)}
   .pic.p6f{background:var(--page); display:grid; grid-template-columns:repeat(4,1fr); gap:5px; padding:16% 12%} .pic.p6f i{border-radius:3px; background:#7FB069} .pic.p6f i.g{background:#2E8A1F} .pic.p6f i.r{background:#E8B4AC} .pic.p6f i.p{background:#7FB069}
   .pic.eng{background:var(--page); display:flex; align-items:center; justify-content:center; gap:3%; padding:0 6%} .pic.eng i{width:13%; height:46%; background:#fff; border:1.5px solid #C9CED6; border-radius:4px} .pic.eng u{width:6%; aspect-ratio:1; border-radius:50%; background:#14161A} .pic.eng u.g{background:#2E8A1F}
   .pic.layers{background:var(--page); display:flex; align-items:center; justify-content:center; gap:4%; padding:0 8%} .pic.layers i{width:15%; background:#fff; border:1.5px solid #14161A; border-radius:4px} .pic.layers i:last-child{background:#14161A}
@@ -291,6 +295,10 @@ const CREAM = '#EDE7D9', LAV = '#B9A6FF';
 // sep: separator page (concept name). look: hero 3D look. target: target colour. ten: 10 diverse app tiles. tiles: homepage row {size px, rows}
 const PAGES = [
   { gallery:true, lab:'All designs' },
+  { sep:'About · layer images' },
+  { lab:'Layer images · A · line art, each picture marks the piece the layer on its left zooms into', frame:'/decks/aboutconcept/?v=1' },
+  { lab:'Layer images · B · dots: 1 atom, 13 atoms, 220 + a cell wall, each smaller', frame:'/decks/aboutconcept/?v=2' },
+  { lab:'Layer images · C · lit spheres on dark tiles, like the homepage machines', frame:'/decks/aboutconcept/?v=3' },
   { sep:'Homepage · designed apps' },
   { lab:'Designed apps · A · green ring on designed, the rest faded', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'ring' },
   { lab:'Designed apps · B · designed first, open ones as outlines', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'split' },
@@ -595,7 +603,7 @@ function mock(p){
     requestAnimationFrame(() => v.draw()); v.active(true); spin = v; });
 }
 // ---- page 1: one box per design concept, newest first; a picture that says the topic, a 2-4 word title linking to its first page
-const CONCEPTS = [['Homepage · designed apps', 'Designed apps highlight', 'solved'], ['Problem deck · page 6 factors', 'Problem deck · page 6 factors', 'p6f'], ['Agentic deck · 4 layers, 5 engines', 'Agentic deck · 4 layers, 5 engines', 'eng'], ['Problem deck · page 7 next steps', 'Problem deck · page 7', 'page'], ['Problem deck · page 5 designs', 'Problem deck · page 5', 'page'], ['Problem deck · page 4 scoring', 'Problem deck · page 4', 'page'], ['Problem deck · page 3 needs', 'Problem deck · page 3', 'page'], ['Problem deck · page 2 market', 'Problem deck · page 2', 'page'], ['Problem deck · page 1 problem', 'Problem deck · page 1', 'page'], ['Problem deck · pages 1–4', 'Problem deck · pages 1–4', 'page'], ['Scorecard · ours vs today', 'Scorecard · ours vs today', 'rcard'], ['Decks page · home 2', 'Decks page · home 2', 'dkh'], ['Decks page · home', 'Decks page · home', 'dkh'], ['Decks page layout', 'Decks page layout', 'dkl'], ['Agentic deck · five layers slide', 'Agentic deck · five layers', 'layers'], ['Results cards', 'Results cards', 'rcard'], ['Deck colours', 'Deck colours', 'dcol'], ['Progress page', 'Progress page', 'ptab'], ['App icon colours', 'App icon colours', 'icol'], ['Long-term vision visuals', 'Vision page visuals', 'vision'], ['Partner tech page', 'Partner tech page', 'tech'], ['Founder photo', 'Founder photo', 'founder'], ['Investor deck cover', 'Investor deck cover', 'cover'], ['Progress on app tiles', 'Progress on tiles', 'prog'], ['App page', 'App page layout', 'page'], ['App tile size', 'App tile size', 'tiles'], ['Target colour', 'Target colour', 'colors'], ['Hero 3D look', 'Hero 3D look', 'hero']];
+const CONCEPTS = [['About · layer images', 'About · layer images', 'abt'], ['Homepage · designed apps', 'Designed apps highlight', 'solved'], ['Problem deck · page 6 factors', 'Problem deck · page 6 factors', 'p6f'], ['Agentic deck · 4 layers, 5 engines', 'Agentic deck · 4 layers, 5 engines', 'eng'], ['Problem deck · page 7 next steps', 'Problem deck · page 7', 'page'], ['Problem deck · page 5 designs', 'Problem deck · page 5', 'page'], ['Problem deck · page 4 scoring', 'Problem deck · page 4', 'page'], ['Problem deck · page 3 needs', 'Problem deck · page 3', 'page'], ['Problem deck · page 2 market', 'Problem deck · page 2', 'page'], ['Problem deck · page 1 problem', 'Problem deck · page 1', 'page'], ['Problem deck · pages 1–4', 'Problem deck · pages 1–4', 'page'], ['Scorecard · ours vs today', 'Scorecard · ours vs today', 'rcard'], ['Decks page · home 2', 'Decks page · home 2', 'dkh'], ['Decks page · home', 'Decks page · home', 'dkh'], ['Decks page layout', 'Decks page layout', 'dkl'], ['Agentic deck · five layers slide', 'Agentic deck · five layers', 'layers'], ['Results cards', 'Results cards', 'rcard'], ['Deck colours', 'Deck colours', 'dcol'], ['Progress page', 'Progress page', 'ptab'], ['App icon colours', 'App icon colours', 'icol'], ['Long-term vision visuals', 'Vision page visuals', 'vision'], ['Partner tech page', 'Partner tech page', 'tech'], ['Founder photo', 'Founder photo', 'founder'], ['Investor deck cover', 'Investor deck cover', 'cover'], ['Progress on app tiles', 'Progress on tiles', 'prog'], ['App page', 'App page layout', 'page'], ['App tile size', 'App tile size', 'tiles'], ['Target colour', 'Target colour', 'colors'], ['Hero 3D look', 'Hero 3D look', 'hero']];
 let galDone = false, galStage = null;
 function gallery(p){
   const g = $('gal'); g.hidden = !p.gallery; if (galStage) galStage.pause(!p.gallery);
@@ -622,6 +630,7 @@ function gallery(p){
   // tile size: the same app tile at 104, 94 and 83 px
   const tl = pic('tiles'); tl.innerHTML = [104, 94, 83].map(z => `<i style="--z:${z}"><canvas></canvas></i>`).join('');
   tl.querySelectorAll('canvas').forEach(c => { const v = setup({ dataset:{ k:'pfas' }, look:'dark', style:'bulk', target:LAV, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
+  pic('abt').innerHTML = '<i></i><i></i><i></i>';
   pic('p6f').innerHTML = ['r','r','g','g','r','p','g','g','p','r','g','g','g','g','g','p'].map(c => `<i class="${c}"></i>`).join('');
   pic('eng').innerHTML = '<u></u>' + '<i></i><u></u>'.repeat(4).replace(/<u><\/u>$/, '<u class="g"></u>');
   pic('layers').innerHTML = [92, 80, 68, 56, 44].map(h => `<i style="height:${h}%"></i>`).join('');
@@ -711,7 +720,7 @@ function techPage(p){
 function founder(p){
   $('fim').hidden = !(p.fimg || p.lv || p.pv || p.cs || p.rs || p.frame); if (!(p.fimg || p.lv || p.pv || p.cs || p.rs || p.frame)) return;
   const u = p.frame ? p.frame : p.rs ? `/decks/investors/?embed=1&rs=${p.rs}#p3` : p.cs ? `/decks/investors/?embed=1&cs=${p.cs}#p3` : p.pv ? `/decks/progress/?embed=1&view=table&pv=${p.pv}` : p.lv ? `/decks/investors/?embed=1&lv=${p.lv}#p11` : `/decks/investors/?embed=1&fimg=${p.fimg}#p2`; if ($('fif').dataset.u !== u){ $('fif').dataset.u = u; $('fif').src = u; }
-  $('fim').classList.toggle('full', /^\/decks\/(dkc\d?|progress|customers|biz)\//.test(u));
+  $('fim').classList.toggle('full', /^\/decks\/(dkc\d?|progress|customers|biz|aboutconcept)\//.test(u));
 }
 let covStage = null;
 function cover(p){

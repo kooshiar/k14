@@ -22,7 +22,7 @@
     <div class="b"><h3>Why</h3><p><b>Half of freeze-dried vaccine doses are thrown away.</b></p><p>WHO puts yearly waste at about half of lyophilised doses and a quarter of liquid doses, mostly from cold-chain breaks. Today&#x27;s stabilisers are sugars that still need 2–8 °C, so the freezer travels with the vial.</p></div>
     <div class="b"><h3>Business</h3><p><b>Vaccine and biologic makers</b></p><p>License per product to biologic makers. ~$1–10M/yr</p></div>
     
-    <div class="b prog"><h3>Progress</h3><ol class="trk" data-pk="vaxstab"><li class="done"><i></i><span>Problem researched</span></li><li class="done"><i></i><span>Designs completed</span></li><li class="now"><i></i><span>Scored vs today’s best</span></li><li class=""><i></i><span>Lab tested</span></li><li class=""><i></i><span>Partner pilot</span></li></ol><a class="btn" href="/contact/?about=stabilizer-that-keeps-vaccines-safe-without-a-freezer">Work with us on this <span>&rarr;</span></a></div>
+    <div class="b prog"><h3>Progress</h3><ol class="trk" data-pk="vaxstab"><li class="done"><i></i><span>Problem researched</span></li><li class="now"><i></i><span>Designs completed</span></li><li class=""><i></i><span>Scored vs today’s best</span></li><li class=""><i></i><span>Lab tested</span></li><li class=""><i></i><span>Partner pilot</span></li></ol><a class="btn" href="/contact/?about=stabilizer-that-keeps-vaccines-safe-without-a-freezer">Work with us on this <span>&rarr;</span></a></div>
   </div>
   <nav class="pn"><a href="/apps/mri-contrast-agent-without-gadolinium/">&larr; Gadolinium-free MRI</a><a href="/apps/cell-freezing-solution-without-dmso/">DMSO-free cell freezing &rarr;</a></nav>
 </main>
@@ -30,9 +30,9 @@
 <script type="module">
 import { setup } from '/site/appmols.js?v=5';
 import { stateOf, follow } from '/site/status.js';
-const trk = document.querySelector('.trk[data-pk]');   // progress follows the status DB: a finished round moves it to Designs completed
-if (trk) follow(m => { if (stateOf({ st:2, pk:trk.dataset.pk }, m) !== 'solved') return;
-  [...trk.children].forEach((li, j) => li.className = j < 2 ? 'done' : j === 2 ? 'now' : ''); });
+const trk = document.querySelector('.trk[data-pk]');   // progress follows the status DB: a finished round = Designs completed
+if (trk) follow(m => { if (!m) return; const at = stateOf({ pk:trk.dataset.pk }, m) === 'solved' ? 2 : 1;
+  [...trk.children].forEach((li, j) => li.className = j < at ? 'done' : j === at ? 'now' : ''); });
 const f = document.querySelector('.mol'), v = setup({ dataset:{ k:f.dataset.k }, scale:.95, look:'dark', drag:true, querySelector:() => f.querySelector('canvas') });
 v.active(true); let last = performance.now();
 (function loop(t){ v.tick(t - last); last = t; requestAnimationFrame(loop); })(last);

@@ -22,7 +22,7 @@
     <div class="b"><h3>Why</h3><p><b>Air capture costs $400–990 a tonne, and water competes with CO₂.</b></p></div>
     <div class="b"><h3>Business</h3><p><b>Climeworks, Heirloom, Svante</b></p><p>Sorbent license to capture firms. ~$1–10M/yr, depends on carbon prices</p></div>
     
-    <div class="b prog"><h3>Progress</h3><ol class="trk" data-pk="co2"><li class="done"><i></i><span>Problem researched</span></li><li class="done"><i></i><span>Designs completed</span></li><li class="now"><i></i><span>Scored vs today’s best</span></li><li class=""><i></i><span>Lab tested</span></li><li class=""><i></i><span>Partner pilot</span></li></ol><a class="btn" href="/contact/?about=co2-trap-that-works-in-humid-air">Work with us on this <span>&rarr;</span></a></div>
+    <div class="b prog"><h3>Progress</h3><ol class="trk" data-pk="co2"><li class="done"><i></i><span>Problem researched</span></li><li class="now"><i></i><span>Designs completed</span></li><li class=""><i></i><span>Scored vs today’s best</span></li><li class=""><i></i><span>Lab tested</span></li><li class=""><i></i><span>Partner pilot</span></li></ol><a class="btn" href="/contact/?about=co2-trap-that-works-in-humid-air">Work with us on this <span>&rarr;</span></a></div>
   </div>
   <nav class="pn"><a href="/apps/pfas-trap-for-drinking-water/">&larr; PFAS trap for water</a><a href="/apps/boron-catcher-for-desalination/">Boron catcher &rarr;</a></nav>
 </main>
@@ -30,9 +30,9 @@
 <script type="module">
 import { setup } from '/site/appmols.js?v=5';
 import { stateOf, follow } from '/site/status.js';
-const trk = document.querySelector('.trk[data-pk]');   // progress follows the status DB: a finished round moves it to Designs completed
-if (trk) follow(m => { if (stateOf({ st:2, pk:trk.dataset.pk }, m) !== 'solved') return;
-  [...trk.children].forEach((li, j) => li.className = j < 2 ? 'done' : j === 2 ? 'now' : ''); });
+const trk = document.querySelector('.trk[data-pk]');   // progress follows the status DB: a finished round = Designs completed
+if (trk) follow(m => { if (!m) return; const at = stateOf({ pk:trk.dataset.pk }, m) === 'solved' ? 2 : 1;
+  [...trk.children].forEach((li, j) => li.className = j < at ? 'done' : j === at ? 'now' : ''); });
 const f = document.querySelector('.mol'), v = setup({ dataset:{ k:f.dataset.k }, scale:.95, look:'dark', drag:true, querySelector:() => f.querySelector('canvas') });
 v.active(true); let last = performance.now();
 (function loop(t){ v.tick(t - last); last = t; requestAnimationFrame(loop); })(last);
