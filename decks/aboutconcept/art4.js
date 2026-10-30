@@ -7,11 +7,12 @@
 // 10 · ink graphs   11 · a light patch where the designed piece touches its partner   12 · the designed piece in white   13 · scenes turning slowly
 (async () => {
 const V = +(new URLSearchParams(location.search).get('v') || 1);
-if (V < 10 || V > 17) return;   // 18+: art5.js
+if (V < 10 || (V > 17 && V < 22) || V > 24) return;   // 18-21: art5.js; 22-24: minimal 15
 document.body.classList.add('nv', 'nv3', 'v' + V);
 document.querySelector('h1').textContent = { 10:'Molecular intelligence, broken into solvable pieces.', 11:'What is K14?',
   12:'Molecular intelligence, broken into solvable pieces.', 13:'What is K14?', 14:'Molecular intelligence, broken into solvable pieces.',
-  15:'What is K14?', 16:'Molecular intelligence, broken into solvable pieces.', 17:'What is K14?' }[V];
+  15:'What is K14?', 16:'Molecular intelligence, broken into solvable pieces.', 17:'What is K14?',
+  22:'What is K14?', 23:'What is K14?', 24:'What is K14?' }[V];
 document.querySelector('.us h2').remove(); document.querySelector('.join').remove();
 
 const COL = ['#B9A6FF', '#8CC8FF', 'linear-gradient(90deg, #8FCB72, #FFC46B)'], TXT = ['#B9A6FF', '#8CC8FF', '#A9D67F'];
@@ -46,20 +47,21 @@ const item = (A, o = {}) => ({ A, b: o.b || bondsOf(A), ...o });
 function scenes(){
   seed = 11;
   // physics: guaiacol and caffeine face to face, a water on the OH: electrons of 3 molecules meeting
-  const phys = [item(flat(atoms(M.phys), -3.4, .3), { key: true, cloud: true }), item(flat(atoms(M.caf), 3.9, -.4, .5), { cloud: true }),
-                item(flat(WATER, -6.9, 3.2), { cloud: true })];
+  const MIN = V >= 22;   // 22-24: minimal. physics 2 things, chemistry ~8, biology ~20: complexity steps up evenly
+  const phys = [item(flat(atoms(M.phys), -3.4, .3), { key: true, cloud: true }), item(flat(atoms(M.caf), 3.9, -.4, .5), { cloud: true })];
+  if (!MIN) phys.push(item(flat(WATER, -6.9, 3.2), { cloud: true }));
   // chemistry: the host holding guaiacol, in a crowd of other kinds: caffeine, quinic acid, water, sodium
   const chem = [item(host, { pair: true }), item(guest, { key: true, pair: true })];
-  for (const [m, x, y] of [[M.caf, 16, 8], [M.qui, -16, -7], [M.caf, -14, 10], [M.qui, 15, -9]]) chem.push(item(place(atoms(m), x, y)));
-  for (const [x, y] of [[9, 13], [-5, -13], [20, 0], [-21, 2], [3, -14], [-3, 14], [11, -15]]) chem.push(item(place(WATER, x, y)));
-  for (const [x, y] of [[-10, -15], [19, 13], [-20, -12]]) chem.push(item(place(ION, x, y)));
+  for (const [m, x, y] of [[M.caf, 16, 8], [M.qui, -16, -7], [M.caf, -14, 10], [M.qui, 15, -9]].slice(0, MIN ? 2 : 4)) chem.push(item(place(atoms(m), x, y)));
+  for (const [x, y] of [[9, 13], [-5, -13], [20, 0], [-21, 2], [3, -14], [-3, 14], [11, -15]].slice(0, MIN ? 3 : 7)) chem.push(item(place(WATER, x, y)));
+  for (const [x, y] of [[-10, -15], [19, 13], [-20, -12]].slice(0, MIN ? 1 : 3)) chem.push(item(place(ION, x, y)));
   // biology: barstar bound to barnase (real complex), small molecules and ions around them
   const B = atoms(M.bio), idx = k => M.bio.c.map((c, i) => c === k ? i : -1).filter(i => i >= 0);
   const chain = k => { const I = idx(k), map = new Map(I.map((g, j) => [g, j]));
     return item(I.map(i => ({ ...B[i], bb: M.bio.k[i] })), { b: M.bio.b.filter(([i, j]) => map.has(i) && map.has(j)).map(([i, j]) => [map.get(i), map.get(j)]), pair: true, key: k === 1 }); };
   const bio = [chain(0), chain(1)];
-  for (let k = 0; k < 10; k++) { const a = k / 10 * 6.3 + rnd() * .4, r = 33 + rnd() * 8; bio.push(item(place(atoms(k % 2 ? M.caf : M.qui), Math.cos(a) * r * 1.25, Math.sin(a) * r * .75))); }
-  for (let k = 0; k < 16; k++) { const a = rnd() * 6.3, r = 30 + rnd() * 14; bio.push(item(place(k % 3 ? WATER : ION, Math.cos(a) * r * 1.3, Math.sin(a) * r * .8))); }
+  for (let k = 0, n = MIN ? 6 : 10; k < n; k++) { const a = k / n * 6.3 + rnd() * .4, r = 33 + rnd() * 8; bio.push(item(place(atoms(k % 2 ? M.caf : M.qui), Math.cos(a) * r * 1.25, Math.sin(a) * r * .75))); }
+  for (let k = 0; k < (MIN ? 12 : 16); k++) { const a = rnd() * 6.3, r = 30 + rnd() * 14; bio.push(item(place(k % 3 ? WATER : ION, Math.cos(a) * r * 1.3, Math.sin(a) * r * .8))); }
   const mid = k => [0, 1, 2].map(j => idx(k).reduce((t, i) => t + B[i].p[j], 0) / idx(k).length), d = mid(1).map((v, j) => v - mid(0)[j]);
   return { 1: [phys, 0, .35], 2: [chem, .3, .5], 3: [bio, Math.atan2(d[2], d[0]), .25] };
 }
@@ -148,14 +150,15 @@ function flat2d(cv){
   const cx = w / 2 - (Math.max(...X) + Math.min(...X)) / 2 * s, by = h - 5 + (Math.min(...Y) - mg) * s;
   const P = it => it.Q.map((q, i) => ({ x: cx + q[0] * s, y: by - q[1] * s, e: it.A[i].e, r: (RAD[it.A[i].e] || 1.6) * s }));
   const rgba = (col, al) => `rgba(${col.join(',')},${al})`, crowd = it => !it.key && !it.pair && L > 1;
-  const tone = it => V === 17 && it.key ? WH : INK, alpha = it => it.key ? 1 : crowd(it) ? .45 : it.pair ? .75 : .8;
+  const tone = it => (V === 17 || V === 23) && it.key ? WH : INK, alpha = it => it.key ? 1 : crowd(it) ? .45 : it.pair ? .75 : .8;
   // order: partners first, the designed piece on top
   const order = [...items].sort((u, v) => (u.key ? 2 : u.pair ? 1 : 0) - (v.key ? 2 : v.pair ? 1 : 0));
   for (const it of order) {
     const p = P(it), col = tone(it), al = alpha(it);
-    if (V === 15 || (L === 3 && it.pair && V !== 16)) {   // silhouettes (version 15; proteins in 14 and 17)
+    if (V === 24 && crowd(it)) { c.strokeStyle = rgba(INK, .55); c.lineWidth = .8; contour(c, field(p), .5); continue; }   // 24: the crowd as outlines
+    if (V === 15 || V >= 22 || (L === 3 && it.pair && V !== 16)) {   // silhouettes (15, 22-24; proteins in 14 and 17)
       fillField(c, field(L === 3 && it.pair ? p.filter((q, i) => i % 2 === 0).map(q => ({ ...q, r: q.r * 1.7 })) : p), L === 3 && it.pair ? .7 : .5,
-                V === 17 && it.key ? WH : INK, it.key ? .9 : crowd(it) ? .3 : .5);
+                (V === 17 || V === 23) && it.key ? WH : INK, it.key ? .9 : crowd(it) ? .3 : .5);
       continue;
     }
     if (V === 16) { c.fillStyle = rgba(it.key ? WH : INK, it.key ? 1 : crowd(it) ? .45 : .8);   // one dot per atom

@@ -5,7 +5,7 @@
 // 21 · interaction network: dashed lines are forces between things; their number grows with the layer
 (async () => {
 const V = +(new URLSearchParams(location.search).get('v') || 1);
-if (V < 18) return;
+if (V < 18 || V > 21) return;
 document.body.classList.add('nv', 'nv3', 'v' + V);
 document.querySelector('h1').textContent = V % 2 ? 'What is K14?' : 'Molecular intelligence, broken into solvable pieces.';
 document.querySelector('.us h2').remove(); document.querySelector('.join').remove();
