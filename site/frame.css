@@ -33,3 +33,14 @@ footer.site{background:var(--bg); border-top:1px solid rgba(236,237,238,.08); co
 footer.site .wrap{height:64px; display:flex; align-items:center; justify-content:space-between}
 footer.site .logo{display:flex; align-items:center; gap:8px} footer.site .logo img{width:18px; height:18px}
 @media (max-width:900px){ .wrap{padding:0 16px} .bar nav{gap:20px} .bar nav .who{margin-left:-6px} .bar nav .whomenu{right:16px} .bar .tabs{gap:16px} .bar nav a{font-size:11px; letter-spacing:.04em} }
+/* app status on tiles (site/status.js). Solved: dark tile, green ring, green label. Solving: light tile, dashed green ring.
+   Queued: light tile, grey label. Open (not started): faint tile, dashed grey edge */
+[data-st]:not(.s-solved) canvas{filter:grayscale(1) invert(1) brightness(1.04); opacity:.85}
+[data-st].s-open canvas{filter:grayscale(1) invert(1); opacity:.32; outline:1.5px dashed #9AA3B2; outline-offset:-1.5px}
+[data-st]:not(.s-solved) b{color:var(--ink2)}
+.s-solved canvas{box-shadow:0 0 0 1.5px #6FAF52}
+.s-solving.card, .s-solving.tile, .s-solving .tile{position:relative}   /* the ring sits on an overlay: the tile's grey filter would turn it grey */
+.s-solving.card::before, .s-solving.tile::before, .s-solving .tile::before{content:''; position:absolute; left:0; top:0; width:100%; aspect-ratio:1; box-sizing:border-box;
+  border-radius:21%; outline:1.5px dashed #6FAF52; outline-offset:2px; pointer-events:none}
+.sl{display:block; margin-top:3px; font-family:var(--mono); font-size:9.5px; font-style:normal; letter-spacing:.05em; text-transform:uppercase; color:var(--mute)}
+.s-solved .sl{color:#3F7F2C; font-weight:600} .s-solving .sl{color:#3F7F2C}

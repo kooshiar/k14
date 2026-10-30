@@ -38,7 +38,6 @@
   .card:hover canvas, .card:hover .mbox{transform:translateY(-2px)} .card.more:hover .mbox{border-color:var(--ink); color:var(--ink)}
   .card div{padding:9px 2px 0}
   .card b{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:2.5em; font-weight:500; font-size:13px; line-height:1.25; letter-spacing:-.005em}
-  .dots{display:flex; gap:3px; margin-top:6px} .dots i{width:6px; height:6px; border-radius:99px; background:var(--rule)} .dots i.on{background:var(--blue)}
   .card small{display:block; margin-top:3px; font-family:var(--mono); font-size:9.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--mute)}
 
   /* 3 · technology: layered system, short band; style switch in the footer (1-4) */
@@ -133,6 +132,7 @@ import { FILMS, COLORS } from './films.js';
 Object.assign(COLORS, { blue:'#6FAF52', orange:'#B9A6FF' });   // hero machine green, the target lavender (as in the app tiles)
 import { setup } from './appmols.js';
 import { APPS, HOME } from './appsdata.js';
+import { LABEL, stateOf, paint, follow } from './status.js';
 const $ = s => document.getElementById(s);
 
 // 1 · one machine (?m=<id> previews another)
@@ -142,16 +142,15 @@ stage.load(f).then(() => { stage.ov = { svg:$('ov') }; });
 
 // applications: two rows of molecule tiles (as many columns of ~83 px as fit), then a box that opens all apps
 const row = $('row'), ORDER = [...HOME.map(s => APPS.find(a => a.slug === s)), ...APPS.filter(a => !HOME.includes(a.slug))];
-let views = [], hot = -1, last = performance.now();
+let views = [], hot = -1, last = performance.now(), LIVE = {};
 (function loop(t){ if (hot >= 0 && views[hot]) views[hot].tick(t - last); last = t; requestAnimationFrame(loop); })(last);
 function fill(){
   const W = row.clientWidth, gap = innerWidth <= 900 ? 14 : 20, cols = Math.max(3, Math.floor((W + gap) / (83 + gap)));
   if (row.dataset.cols == cols) { views.forEach(v => v.draw()); return; }
   row.dataset.cols = cols; row.style.setProperty('--cols', cols);
   const picks = ORDER.slice(0, cols * 2 - 1);
-  const STEP = ['Problem researched', 'Designs completed', 'Scored vs today’s best'];
-  const dots = a => `<span class="dots" title="${STEP[(a.st || 1) - 1]}">${[0, 1, 2, 3, 4].map(j => `<i class="${j < (a.st || 1) ? 'on' : ''}"></i>`).join('')}</span>`;
-  row.innerHTML = picks.map(a => `<a class="card" href="/apps/${a.slug}/"><canvas></canvas><div><b>${a.short}</b><small>${a.cs}</small>${dots(a)}</div></a>`).join('')
+  row.innerHTML = picks.map(a => { const s = stateOf(a, LIVE);   // solved, solving, queued, open (site/status.js)
+    return `<a class="card s-${s}" href="/apps/${a.slug}/" data-st="${a.st || 1}" data-pk="${a.pk || ''}"><canvas></canvas><div><b>${a.short}</b><small>${a.cs}</small><small class="sl">${LABEL[s]}</small></div></a>`; }).join('')
     + `<a class="card more" href="/apps/"><span class="mbox">+${APPS.length - picks.length}</span><div><b>All apps</b><small>${APPS.length}</small></div></a>`;
   views = [...row.querySelectorAll('.card:not(.more)')].map((el, i) => setup({ dataset:{ k:picks[i].k }, focus:picks[i].focus, look:'dark', querySelector:() => el.querySelector('canvas') }));
   requestAnimationFrame(() => views.forEach(v => v.draw()));
@@ -162,6 +161,7 @@ function fill(){
   });
 }
 addEventListener('resize', fill); fill();
+follow(m => { LIVE = m; paint([...row.querySelectorAll('.card:not(.more)')], m); });
 
 
 // technology diagram: connectors drawn from the boxes' positions (side by side on wide screens, stacked on phones)
