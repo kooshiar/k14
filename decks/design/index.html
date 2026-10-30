@@ -280,6 +280,10 @@
 <div class="mock" id="mock" hidden></div>
 <div class="gal" id="gal" hidden></div>
 <div class="fim" id="fim" hidden><iframe id="fif" title="Founder page"></iframe></div>
+<script>   // concept pages shown here never carry their own nav bar or footer: this deck already has one
+document.getElementById('fif').addEventListener('load', e => { try { const d = e.target.contentDocument, st = d.createElement('style');
+  st.textContent = 'header.site, footer.site, .k14bar{display:none !important}'; d.head.append(st); } catch {} });
+</script>
 <div class="tch" id="tch" hidden><div class="ts" id="ts"></div></div>
 <div class="cov" id="cov" hidden><div class="cv" id="cv"><div class="in"><div><div class="brand"><img src="mark.svg" alt=""><b>K14</b></div><h1>Molecular machines,<br><span>designed by AI.</span></h1></div><div class="cgl"><div id="cgl"></div></div></div>
   <div class="ft"><div class="brand"><img src="mark.svg" alt=""><b>K14</b></div><span>k14.ai</span></div></div></div>
