@@ -106,6 +106,9 @@
   .pic.tiles{display:flex; align-items:flex-end; justify-content:center; gap:10%; padding:0 8% 20%}
   .pic.tiles i{width:calc(var(--z) / 104 * 26%); aspect-ratio:1; border-radius:22%; background:#22252B; border:1px solid rgba(236,237,238,.12); overflow:hidden}
   .pic.tiles canvas, .pic.colors canvas{display:block; width:100%; height:100%}
+  .pic.solved{display:grid; grid-template-columns:repeat(4, 1fr); gap:6%; align-items:center; padding:0 7%; background:var(--page)}
+  .pic.solved .tw{aspect-ratio:1; border-radius:22%; background:#22252B; overflow:hidden; display:block} .pic.solved canvas{display:block; width:100%; height:100%}
+  .pic.solved .tw.d{outline:2px solid #6FAF52; outline-offset:3px; overflow:visible} .pic.solved .tw.d canvas{border-radius:22%} .pic.solved .tw.o{opacity:.4; filter:grayscale(1)}
   .pic.prog{display:grid; grid-template-columns:repeat(3, 1fr); gap:8%; align-items:center; padding:0 8%}
   .pic.prog .tw{aspect-ratio:1; border-radius:22%; background:#22252B; overflow:hidden} .pic.prog canvas{display:block; width:100%; height:100%}
   .pic.colors{display:grid; grid-template-columns:repeat(5, 1fr); align-items:center; padding:0 4%}
@@ -150,6 +153,17 @@
   .f8 .rc .btn{justify-self:start}
   @media (max-width:900px){ .mock.fit .fold{height:auto; grid-template-columns:1fr} .fold > *{grid-column:auto !important; grid-row:auto !important} .nums{grid-template-columns:1fr 1fr} .f8 .two{grid-template-columns:1fr} .fold .mol{height:260px} }
   @media (max-width:900px){ .v1, .v2 .bin, .v2 .cols, .wint, .v5 .bento{grid-template-columns:1fr} .v5 .ttl, .v5 .mol{grid-column:auto; grid-row:auto} .v3 .board{grid-template-columns:auto auto auto} .v3 .board p{display:none} .v4 .story > li{grid-template-columns:36px 1fr} .v4 .story > li > div, .v4 .story > li > p{grid-column:2} }
+  /* designed vs open apps (st >= 2 = design runs done). Strong, not loud: one green, the rest muted */
+  .rowh[class*=hl-] .card.o b{color:var(--ink2)} .rowh[class*=hl-]{padding:5px; margin:-5px}
+  .hl-ring .card.d canvas{outline:2px solid #6FAF52; outline-offset:3px} .hl-ring .card.o canvas{filter:grayscale(1); opacity:.45}
+  .gw{color:#3F7F2C !important; font-weight:600}
+  .hl-split .card.d{position:relative} .hl-split .card.o canvas{filter:grayscale(1) invert(1); opacity:.32; outline:1.5px dashed #9AA3B2; outline-offset:-1.5px}
+  .hl-light .card.o canvas{filter:grayscale(1) invert(1) brightness(1.04); opacity:.85} .hl-light .card.d canvas{box-shadow:0 0 0 1.5px #6FAF52}
+  .hl-check .tw{position:relative; display:block} .hl-check .ck{position:absolute; top:6px; right:6px; width:18px; height:18px; border-radius:99px; display:grid; place-items:center;
+    font-style:normal; font-size:11px; font-weight:700; line-height:1} .hl-check .card.d .ck{background:#8FCB72; color:#14200F} .hl-check .card.o .ck{border:1.5px solid rgba(236,237,238,.35); box-sizing:border-box}
+  .hl-check .card.o canvas{opacity:.6}
+  .hl-label .lbl{display:inline-block; margin-top:4px; font-style:normal; font-family:var(--mono); font-size:9.5px; letter-spacing:.05em; text-transform:uppercase}
+  .hl-label .card.d .lbl{background:#E3F0DB; color:#2F6A20; padding:2px 6px; border-radius:99px} .hl-label .card.o .lbl{color:var(--mute)} .hl-label .card.o canvas{opacity:.55}
   /* progress marks on app tiles: steps done = researched (1), designed (2), beats today's best (3) of 5 */
   .tw{position:relative; display:block}
   .pill{position:absolute; left:6px; top:6px; font-style:normal; font-family:var(--mono); font-size:8.5px; letter-spacing:.04em; text-transform:uppercase;
@@ -277,6 +291,12 @@ const CREAM = '#EDE7D9', LAV = '#B9A6FF';
 // sep: separator page (concept name). look: hero 3D look. target: target colour. ten: 10 diverse app tiles. tiles: homepage row {size px, rows}
 const PAGES = [
   { gallery:true, lab:'All designs' },
+  { sep:'Homepage · designed apps' },
+  { lab:'Designed apps · A · green ring on designed, the rest faded', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'ring' },
+  { lab:'Designed apps · B · designed first, open ones as outlines', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'split' },
+  { lab:'Designed apps · C · dark tile = designed, light tile = open', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'light' },
+  { lab:'Designed apps · D · check on designed, empty circle on open', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'check' },
+  { lab:'Designed apps · E · “Designed” and “Open” labels', look:'surfaceHollow', target:LAV, tiles:{ size:83, rows:2 }, hl:'label' },
   { sep:'Problem deck · page 6 factors' },
   { lab:'Page 6 factors · A · dimension rows, factors indented under each', frame:'/decks/p6concept/?embed=1&v=1' },
   { lab:'Page 6 factors · B · one row per factor, dimension bracket on the left', frame:'/decks/p6concept/?embed=1&v=2' },
@@ -471,7 +491,14 @@ function wire(el, a, target){
 }
 const WORD = { 1:'Researched', 2:'Designed', 3:'Beats today' };
 const steps = st => [0, 1, 2, 3, 4].map(j => `<i class="${j < st ? 'on' : ''}"></i>`).join('');
-function card(a, badge){
+function card(a, badge, hl){
+  if (hl){   // designed = design runs done (st >= 2); open = researched only, no designs yet
+    const d = (a.st || 1) >= 2, cls = d ? 'd' : 'o';
+    const tile = hl === 'check' ? `<span class="tw"><canvas></canvas><i class="ck">${d ? '✓' : ''}</i></span>` : '<canvas></canvas>';
+    const sub = hl === 'label' ? (d ? '<em class="lbl">Designed</em>' : '<em class="lbl">Open</em>')
+      : hl === 'ring' && d ? `<small>${a.cs}</small><small class="gw">Designed</small>` : `<small>${a.cs}</small>`;
+    return `<a class="card ${cls}" href="/apps/${a.slug}/">${tile}<div><b>${a.short}</b>${sub}</div></a>`;
+  }
   const st = a.st || 1, w = WORD[st];
   const tile = badge === 'pill' ? `<span class="tw"><canvas></canvas><em class="pill s${st}">${w}</em></span>`
     : badge === 'bar' ? `<span class="tw"><canvas></canvas><span class="seg" title="${w}">${steps(st)}</span></span>` : '<canvas></canvas>';
@@ -488,10 +515,11 @@ function apps(p){
     [...row.children].forEach((el, j) => wire(el, TEN[j], p.target)); return;
   }
   const { size, rows } = p.tiles, fit = Math.floor((row.parentElement.clientWidth - 80 + 20) / (size + 20));
-  const list = ROW.slice(0, rows === 2 ? fit * 2 : HOME.length);
+  let list = ROW.slice(0, rows === 2 ? fit * 2 : HOME.length);
+  if (p.hl === 'split'){ const h = Math.ceil(list.length / 2); list = [...ROW.filter(a => a.st >= 2).slice(0, h), ...ROW.filter(a => (a.st || 1) < 2).slice(0, list.length - h)]; }   // row 1 designed, row 2 open
   row.className = 'rowbox';
-  row.innerHTML = `<a class="more" href="/apps/">More</a><div class="rowh${rows === 2 ? ' two' : ''}${p.badge ? ' pb-' + p.badge : ''}" style="--t:${size}px">`
-    + list.map(a => card(a, p.badge)).join('') + '</div>';
+  row.innerHTML = `<a class="more" href="/apps/">More</a><div class="rowh${rows === 2 ? ' two' : ''}${p.badge ? ' pb-' + p.badge : ''}${p.hl ? ' hl-' + p.hl : ''}" style="--t:${size}px">`
+    + list.map(a => card(a, p.badge, p.hl)).join('') + '</div>';
   [...row.querySelectorAll('.card')].forEach((el, j) => wire(el, list[j], p.tileTarget || p.target));
 }
 // ---- App page designs: one sample app (PFAS trap), its spinoff numbers from the runs (decks/progress), five layouts
@@ -567,7 +595,7 @@ function mock(p){
     requestAnimationFrame(() => v.draw()); v.active(true); spin = v; });
 }
 // ---- page 1: one box per design concept, newest first; a picture that says the topic, a 2-4 word title linking to its first page
-const CONCEPTS = [['Problem deck · page 6 factors', 'Problem deck · page 6 factors', 'p6f'], ['Agentic deck · 4 layers, 5 engines', 'Agentic deck · 4 layers, 5 engines', 'eng'], ['Problem deck · page 7 next steps', 'Problem deck · page 7', 'page'], ['Problem deck · page 5 designs', 'Problem deck · page 5', 'page'], ['Problem deck · page 4 scoring', 'Problem deck · page 4', 'page'], ['Problem deck · page 3 needs', 'Problem deck · page 3', 'page'], ['Problem deck · page 2 market', 'Problem deck · page 2', 'page'], ['Problem deck · page 1 problem', 'Problem deck · page 1', 'page'], ['Problem deck · pages 1–4', 'Problem deck · pages 1–4', 'page'], ['Scorecard · ours vs today', 'Scorecard · ours vs today', 'rcard'], ['Decks page · home 2', 'Decks page · home 2', 'dkh'], ['Decks page · home', 'Decks page · home', 'dkh'], ['Decks page layout', 'Decks page layout', 'dkl'], ['Agentic deck · five layers slide', 'Agentic deck · five layers', 'layers'], ['Results cards', 'Results cards', 'rcard'], ['Deck colours', 'Deck colours', 'dcol'], ['Progress page', 'Progress page', 'ptab'], ['App icon colours', 'App icon colours', 'icol'], ['Long-term vision visuals', 'Vision page visuals', 'vision'], ['Partner tech page', 'Partner tech page', 'tech'], ['Founder photo', 'Founder photo', 'founder'], ['Investor deck cover', 'Investor deck cover', 'cover'], ['Progress on app tiles', 'Progress on tiles', 'prog'], ['App page', 'App page layout', 'page'], ['App tile size', 'App tile size', 'tiles'], ['Target colour', 'Target colour', 'colors'], ['Hero 3D look', 'Hero 3D look', 'hero']];
+const CONCEPTS = [['Homepage · designed apps', 'Designed apps highlight', 'solved'], ['Problem deck · page 6 factors', 'Problem deck · page 6 factors', 'p6f'], ['Agentic deck · 4 layers, 5 engines', 'Agentic deck · 4 layers, 5 engines', 'eng'], ['Problem deck · page 7 next steps', 'Problem deck · page 7', 'page'], ['Problem deck · page 5 designs', 'Problem deck · page 5', 'page'], ['Problem deck · page 4 scoring', 'Problem deck · page 4', 'page'], ['Problem deck · page 3 needs', 'Problem deck · page 3', 'page'], ['Problem deck · page 2 market', 'Problem deck · page 2', 'page'], ['Problem deck · page 1 problem', 'Problem deck · page 1', 'page'], ['Problem deck · pages 1–4', 'Problem deck · pages 1–4', 'page'], ['Scorecard · ours vs today', 'Scorecard · ours vs today', 'rcard'], ['Decks page · home 2', 'Decks page · home 2', 'dkh'], ['Decks page · home', 'Decks page · home', 'dkh'], ['Decks page layout', 'Decks page layout', 'dkl'], ['Agentic deck · five layers slide', 'Agentic deck · five layers', 'layers'], ['Results cards', 'Results cards', 'rcard'], ['Deck colours', 'Deck colours', 'dcol'], ['Progress page', 'Progress page', 'ptab'], ['App icon colours', 'App icon colours', 'icol'], ['Long-term vision visuals', 'Vision page visuals', 'vision'], ['Partner tech page', 'Partner tech page', 'tech'], ['Founder photo', 'Founder photo', 'founder'], ['Investor deck cover', 'Investor deck cover', 'cover'], ['Progress on app tiles', 'Progress on tiles', 'prog'], ['App page', 'App page layout', 'page'], ['App tile size', 'App tile size', 'tiles'], ['Target colour', 'Target colour', 'colors'], ['Hero 3D look', 'Hero 3D look', 'hero']];
 let galDone = false, galStage = null;
 function gallery(p){
   const g = $('gal'); g.hidden = !p.gallery; if (galStage) galStage.pause(!p.gallery);
@@ -585,6 +613,9 @@ function gallery(p){
   const fit = () => page.style.setProperty('--k', page.clientWidth / 1100); fit(); addEventListener('resize', fit);
   page.querySelectorAll('.tile canvas').forEach(c => { const v = setup({ dataset:{ k:A.k }, look:'dark', style:'bulk', target:LAV, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
   // progress: three tiles at the three steps, labelled on the tile
+  const so = pic('solved'); if (so){ const S4 = [...APPS.filter(a => a.st >= 2).slice(0, 2), ...APPS.filter(a => a.st < 2).slice(0, 2)];
+    so.innerHTML = S4.map(a => `<span class="tw ${a.st >= 2 ? 'd' : 'o'}"><canvas></canvas></span>`).join('');
+    so.querySelectorAll('canvas').forEach((c, j) => { const v = setup({ dataset:{ k:S4[j].k }, look:'dark', style:'bulk', target:LAV, focus:S4[j].focus, querySelector:() => c }); requestAnimationFrame(() => v.draw()); }); }
   const pr = pic('prog'); const P3 = [APPS.find(a => a.st === 1), APPS.find(a => a.st === 2), APPS.find(a => a.st === 3)].filter(Boolean);
   pr.innerHTML = P3.map(a => `<span class="tw"><canvas></canvas><em class="pill s${a.st}">${WORD[a.st]}</em></span>`).join('');
   pr.querySelectorAll('canvas').forEach((c, j) => { const v = setup({ dataset:{ k:P3[j].k }, look:'dark', style:'bulk', target:LAV, focus:P3[j].focus, querySelector:() => c }); requestAnimationFrame(() => v.draw()); });
