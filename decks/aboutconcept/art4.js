@@ -7,7 +7,7 @@
 // 10 · ink graphs   11 · a light patch where the designed piece touches its partner   12 · the designed piece in white   13 · scenes turning slowly
 (async () => {
 const V = +(new URLSearchParams(location.search).get('v') || 1);
-if (V < 10) return;
+if (V < 10 || V > 17) return;   // 18+: art5.js
 document.body.classList.add('nv', 'nv3', 'v' + V);
 document.querySelector('h1').textContent = { 10:'Molecular intelligence, broken into solvable pieces.', 11:'What is K14?',
   12:'Molecular intelligence, broken into solvable pieces.', 13:'What is K14?', 14:'Molecular intelligence, broken into solvable pieces.',
