@@ -44,7 +44,7 @@ function scenes(){
   return { 1: [phys, 0, .35], 2: [chem, .3, .5], 3: [bio, Math.atan2(d[2], d[0]), .25] };
 }
 const SC = scenes();
-const SHARE = { 1:.5, 2:.76, 3:1 };   // scene height per layer on one baseline: bigger and busier left to right
+const SHARE = { 1:.38, 2:.62, 3:1 };   // scene height per layer on one baseline: bigger and busier left to right
 // contact atoms: where the designed piece touches its partner (version 11)
 for (const [scene] of Object.values(SC)) {
   const k = scene.find(it => it.key), others = scene.filter(it => it !== k && (it.pair || it.cloud)).flatMap(it => it.A);
