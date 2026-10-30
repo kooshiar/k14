@@ -188,5 +188,5 @@ addEventListener('resize',draw);go(0);
 b.onclick=async e=>{e.preventDefault();const deck=location.pathname.replace(/^\/decks\//,'').replace(/\/(index\.html|deck\.html)?$/,'').replace(/\/$/,'');b.textContent='…';
 try{const r=await fetch('/decks/_share',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({deck})});const j=await r.json();if(!j.ok)throw 0;
 try{await navigator.clipboard.writeText(j.url);b.textContent='Link copied'}catch(_){prompt('Share link',j.url);b.textContent='Share'}}catch(_){b.textContent='Share failed'}setTimeout(()=>b.textContent='Share',2500)};
-n.insertBefore(b,n.firstChild)})();</script><link rel="stylesheet" id="u-railcss" href="/decks/_shared/rail.css?v=8282fa81"><script id="u-railjs" src="/decks/_shared/rail.js?v=8282fa81" defer></script></body>
+n.insertBefore(b,n.firstChild)})();</script><link rel="stylesheet" id="u-railcss" href="/decks/_shared/rail.css?v=1531c81a"><script id="u-railjs" src="/decks/_shared/rail.js?v=1531c81a" defer></script></body>
 </html>

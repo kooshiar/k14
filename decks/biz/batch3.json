@@ -1,0 +1,44 @@
+{
+ "pfas": {
+  "type": "Add-in",
+  "problem": "Long-chain PFAS persist in drinking water",
+  "design": "Sorbent for PFAS in drinking water",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "shortpfas": {
+  "type": "Add-in",
+  "problem": "Short-chain PFAS pass today’s water filters",
+  "design": "Sorbent for short-chain PFAS",
+  "s0_smiles": "[O-]c1c2cc(Br)cc1Cc1cc(Br)cc(c1[O-])Cc1cc(Br)cc(c1[O-])Cc1cc(Br)cc(c1[O-])C2",
+  "today_best": "quaternary ammonium (resin site)"
+ },
+ "tfa": {
+  "type": "Add-in",
+  "problem": "The smallest forever chemical slips through water filters",
+  "design": "Sorbent that catches TFA in drinking water",
+  "s0_smiles": "C[N+](C)(CCNc1c(Nc2cccc(F)c2)c(=O)c1=O)CCNc1c(Nc2ccc(F)cc2F)c(=O)c1=O",
+  "today_best": "tren tris(phenylurea)"
+ },
+ "dioxane": {
+  "type": "Add-in",
+  "problem": "1,4-Dioxane slips through groundwater treatment",
+  "design": "Sorbent that traps dioxane in groundwater",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "boron": {
+  "type": "Add-in",
+  "problem": "Boron slips through desalination membranes",
+  "design": "Binder that pulls boron from desalinated water",
+  "s0_smiles": "O=C(O[NH2+]C(CO)(CO)CO)Oc1ccc(Cc2ccc(CO)cc2)cc1",
+  "today_best": "N-methylglucamine"
+ },
+ "selenate": {
+  "type": "Add-in",
+  "problem": "Selenium in mine water looks like sulfate",
+  "design": "Binder that picks selenate over sulfate",
+  "s0_smiles": "O=c1c(NCC[NH2+]CCNc2c(Nc3ccc(F)cc3F)c(=O)c2=O)c(Nc2cccc(F)c2)c1=O",
+  "today_best": "tren tris(phenylurea)"
+ }
+}

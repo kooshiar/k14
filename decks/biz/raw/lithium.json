@@ -1,0 +1,92 @@
+{
+ "key": "lithium",
+ "name": "Lithium over sodium",
+ "market": {
+  "usd_yr": 260000000,
+  "year": 2025,
+  "what": "Li-selective DLE materials (sorbents, ion-exchange resins, extractants) bought by brine projects, world",
+  "method": "avg of Mordor $162M (2025) and OG Analysis 12.4 kt x $29k/t = $360M (2026); reports differ ~2x",
+  "sources": [
+   "https://www.mordorintelligence.com/industry-reports/direct-lithium-extraction-functional-materials-market",
+   "https://www.oganalysis.com/industry-reports/direct-lithium-extraction-adsorbents-and-ionexchange-resins-market",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-lithium.pdf"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 340000000,
+  "logic": "DLE output ~250 kt LCE/yr by 2032 (62 kt 2025 at ~18%/yr) x ~$1,350/t: +5% Li recovery x $17k/t LCE ($850) + ~$500/t less Na polishing/IX opex (DLE opex $2.8-8.7k/t)",
+  "our_revenue_usd_yr": 20000000,
+  "revenue_logic": "~5% of a ~$400M DLE-materials market (2031) via sorbent/extractant sales or license to a resin maker",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty extractant/sorbent; resin makers (Sunresin) price ~$29k/t; licensed share lower cost",
+  "sources": [
+   "https://www.rff.org/publications/reports/can-emerging-industrial-technologies-compete-scoping-the-market-viability-of-direct-lithium-extraction-in-the-united-states/",
+   "https://www.datamintelligence.com/research-report/direct-lithium-extraction-market",
+   "https://tradingeconomics.com/commodity/lithium/news/496388"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 16,
+  "drivers": "EV/storage Li demand +146% 2024-30 (IEA); US Smackover and Salton Sea DLE builds; DLE capacity 62 kt to ~325 kt by 2035",
+  "deadline": "US Smackover DLE FIDs and first output 2026-2028 (SWA, Exxon)",
+  "sources": [
+   "https://www.iea.org/reports/lithium-2",
+   "https://www.datamintelligence.com/research-report/direct-lithium-extraction-market",
+   "https://www.rff.org/publications/reports/can-emerging-industrial-technologies-compete-scoping-the-market-viability-of-direct-lithium-extraction-in-the-united-states/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Lilac Solutions",
+   "EnergyX",
+   "Summit Nanotech",
+   "Adionics",
+   "Lithium Harvest",
+   "Volt Lithium",
+   "EkoSolve"
+  ],
+  "indirect_startups": [
+   "ElectraLith",
+   "Mangrove Lithium",
+   "Watercycle Technologies"
+  ],
+  "incumbents": [
+   "Sunresin",
+   "Jiangsu Jiuwu Hi-Tech",
+   "SLB",
+   "Eramet",
+   "Rio Tinto (Arcadium)",
+   "Albemarle",
+   "Koch Engineered Solutions",
+   "DuPont",
+   "Lanxess / Standard Lithium"
+  ],
+  "papers_3yr": null,
+  "paper_query": "lithium sodium selective extraction brine",
+  "groups_active": null,
+  "notes": "Crowded. Lilac $352M raised (Series C Jun 2026, DOE $100M award); EnergyX $450M GEM commitment; Summit $25.5M 2025 ($96M total)",
+  "sources": [
+   "https://tracxn.com/d/companies/lilac-solutions/__d3NbsIwBtEe-BASeqzK6nOiZ2wwvzefiBKfgEE-69hw",
+   "https://www.mining.com/web/summit-nanotech-receives-25-5-million-in-funding-for-lithium-extraction-tech/",
+   "https://www.naturetechmemos.com/p/top-7-direct-lithium-extraction-startups-in-2026"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 25000,
+  "synth": "1-2 step custom: s0 (2,4-dicumylphenol) is catalog; 2-3 variants by ortho/para substitution",
+  "test": "batch solvent extraction / sorption on synthetic Smackover-type brine (Na/Li >1000); Li, Na, K, Ca, Mg by ICP-OES; distribution ratios and Li/Na factor at a university hydromet lab",
+  "logic": "catalog 1 wk + custom 5 wk + tests 3 wk + formulation 1 wk; s0 ~$0.5k + 2 variants x $6k CRO + ~60 ICP-OES samples x $50 + lab time ~$9k",
+  "sources": [
+   "https://pubs.rsc.org/en/content/articlehtml/2025/gc/d4gc04760e"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "on-site pilot column/SX loop on real brine 6-12 mo (cycle life 1000+ cycles); developer DFS + FID; supply agreement with EPC/resin partner",
+  "sources": [
+   "https://www.rff.org/publications/reports/can-emerging-industrial-technologies-compete-scoping-the-market-viability-of-direct-lithium-extraction-in-the-united-states/"
+  ]
+ }
+}

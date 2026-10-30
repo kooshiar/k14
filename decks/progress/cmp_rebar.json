@@ -11,7 +11,10 @@
   "Easy to ship and store",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Dissolves in the water"
  ],
  "weights": [
   3,
@@ -23,6 +26,9 @@
   1,
   1,
   2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -42,34 +48,58 @@
     50,
     100,
     26,
-    83
+    83,
+    100,
+    50,
+    50
    ],
-   "overall": 53,
+   "overall": 55,
    "price": 2.2,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 50,
+     "score": 54,
      "rows": [
       {
        "name": "Holds the steel against salt",
-       "w": 20.0,
+       "w": 13.3,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Dissolves in pore water",
-       "w": 13.3,
+       "w": 8.9,
        "val": 68,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 6.7,
+       "w": 4.4,
        "val": 26,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.4,
+       "val": 50,
        "cut": 0,
        "ok": true
       }
@@ -170,34 +200,58 @@
     50,
     100,
     50,
-    86
+    86,
+    100,
+    0,
+    24
    ],
-   "overall": 30,
+   "overall": 32,
    "price": 1.26,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 9,
+     "score": 10,
      "rows": [
       {
        "name": "Holds the steel against salt",
-       "w": 20.0,
+       "w": 13.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Dissolves in pore water",
-       "w": 13.3,
+       "w": 8.9,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 6.7,
+       "w": 4.4,
        "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.4,
+       "val": 24,
        "cut": 0,
        "ok": true
       }
@@ -298,34 +352,58 @@
     50,
     100,
     36,
-    87
+    87,
+    100,
+    0,
+    0
    ],
-   "overall": 29,
+   "overall": 27,
    "price": 1.22,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 8,
+     "score": 7,
      "rows": [
       {
        "name": "Holds the steel against salt",
-       "w": 20.0,
+       "w": 13.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Dissolves in pore water",
-       "w": 13.3,
+       "w": 8.9,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 6.7,
+       "w": 4.4,
        "val": 36,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.4,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -426,7 +504,10 @@
     55,
     100,
     21,
-    81
+    81,
+    null,
+    null,
+    null
    ],
    "overall": 60,
    "price": 1.93,
@@ -547,7 +628,10 @@
     55,
     100,
     15,
-    83
+    83,
+    null,
+    null,
+    null
    ],
    "overall": 60,
    "price": 2.09,
@@ -668,7 +752,10 @@
     55,
     100,
     21,
-    79
+    79,
+    null,
+    null,
+    null
    ],
    "overall": 61,
    "price": 2.8,
@@ -789,7 +876,10 @@
     55,
     100,
     21,
-    79
+    79,
+    null,
+    null,
+    null
    ],
    "overall": 61,
    "price": 2.8,

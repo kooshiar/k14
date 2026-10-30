@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Problem Page Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E6E8EC;--g:#2E8A1F;--red:#B3261E;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden}
+.lb{font:500 17px "Geist Mono",monospace;color:var(--mut)}.sb{font-size:21px;color:var(--mut);margin-top:6px}
+.n{font:600 52px/1.05 Geist,sans-serif;letter-spacing:-.01em}
+.hero{font:600 104px/1 Geist,sans-serif;letter-spacing:-.025em}
+h1{margin:0;font:600 46px/1.15 Geist,sans-serif;letter-spacing:-.01em}
+.bot{width:26px;height:56px;border-radius:7px 7px 4px 4px;background:#D9DDE3;position:relative}.bot:before{content:'';position:absolute;left:9px;top:-12px;width:8px;height:14px;border-radius:2px;background:inherit}
+.bot.t{background:var(--red)}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+const F=[['Smell threshold','4 ng/L','TCA in wine'],['Yearly loss','>$1B','wine industry']];
+const bottles=(n,t,cols)=>`<div style="display:grid;grid-template-columns:repeat(${cols},26px);gap:22px 14px">${Array.from({length:n},(_,i)=>`<div class="bot ${i<t?'t':''}"></div>`).join('')}</div>`;
+const V={
+1(){ /* refined page 9: hero + title left, two facts right, moderate sizes */
+ return `<div style="display:grid;grid-template-columns:1.15fr 1fr;height:100%">
+ <div style="padding:0 72px 0 96px;display:flex;flex-direction:column;justify-content:center"><div class="hero" style="color:var(--red)">2–5%</div><h1 style="margin-top:22px">of the world's wine is spoiled by cork taint</h1></div>
+ <div style="background:#F7F6F2;padding:0 88px;display:flex;flex-direction:column;justify-content:center;gap:52px">${F.map(([l,n,s])=>`<div><div class="lb">${l}</div><div class="n" style="margin-top:8px">${n}</div><div class="sb">${s}</div></div>`).join('')}</div></div>`},
+2(){ /* title top, facts in one aligned row, first one emphasised */
+ return `<div style="padding:110px 104px">
+ <h1 style="font-size:58px;max-width:1150px">2–5% of the world's wine is spoiled by cork taint</h1>
+ <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;margin-top:110px;align-items:start">
+ <div style="border-top:3px solid var(--red);padding-top:22px"><div class="lb">Wine corked</div><div class="n" style="font-size:76px;color:var(--red);margin-top:10px">2–5%</div><div class="sb">of world wine</div></div>
+ ${F.map(([l,n,s])=>`<div style="border-top:3px solid var(--ink);padding-top:22px;margin-left:48px"><div class="lb">${l}</div><div class="n" style="margin-top:10px">${n}</div><div class="sb">${s}</div></div>`).join('')}</div></div>`},
+3(){ /* 100 bottles: up to 5 corked */
+ return `<div style="display:grid;grid-template-columns:1fr 1fr;height:100%">
+ <div style="padding:0 64px 0 96px;display:flex;flex-direction:column;justify-content:center"><h1 style="font-size:54px">Up to 5 in every 100 bottles are spoiled by cork taint</h1>
+ <div style="display:flex;gap:56px;margin-top:64px">${F.map(([l,n,s])=>`<div><div class="lb">${l}</div><div class="n" style="font-size:44px;margin-top:8px">${n}</div><div class="sb">${s}</div></div>`).join('')}</div></div>
+ <div style="display:flex;align-items:center;justify-content:center"><div style="transform:scale(.82)">${bottles(100,5,10)}</div></div></div>`},
+4(){ /* one statement + three equal stat columns, quiet */
+ return `<div style="padding:120px 104px;height:100%;display:flex;flex-direction:column">
+ <h1 style="font-size:58px;max-width:1150px">Cork taint spoils 2–5% of the world's wine</h1>
+ <div style="margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)">
+ ${[['Wine corked','2–5%','of world wine',1],...F].map(([l,n,s,h],i)=>`<div style="padding:34px ${i<2?'40px':'0'} 0 ${i?'40px':'0'};${i?'border-left:1px solid var(--line)':''}"><div class="lb">${l}</div><div class="n" style="margin-top:12px;${h?'color:var(--red)':''}">${n}</div><div class="sb">${s}</div></div>`).join('')}</div></div>`},
+5(){ /* bottles strip as the visual anchor, title above, facts below */
+ return `<div style="padding:96px 104px;height:100%;display:flex;flex-direction:column">
+ <h1 style="font-size:54px;max-width:1200px">2–5% of the world's wine is spoiled by cork taint</h1>
+ <div style="margin:96px 0 0;transform:scale(1.5);transform-origin:left top;width:66%">${bottles(30,1,30).replace('gap:22px 14px','gap:0 9px')}</div>
+ <div style="display:flex;gap:10px;align-items:center;margin-top:60px" class="lb"><span style="width:12px;height:12px;border-radius:3px;background:var(--red)"></span>1 in 20–50 bottles corked</div>
+ <div style="margin-top:auto;display:flex;gap:96px">${F.map(([l,n,s])=>`<div><div class="lb">${l}</div><div class="n" style="font-size:46px;margin-top:8px">${n}</div><div class="sb">${s}</div></div>`).join('')}</div></div>`}};
+const v=+(new URLSearchParams(location.search).get('v')||1);document.getElementById('s').innerHTML=(V[v]||V[1])();
+function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform=`scale(${s})`}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();
+</script></body></html>

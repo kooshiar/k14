@@ -1,0 +1,100 @@
+{
+ "key": "magrec",
+ "name": "Magnet scrap Nd recovery",
+ "market": {
+  "usd_yr": 1900000000,
+  "year": 2025,
+  "what": "Rare-earth oxide recovered from NdFeB magnet scrap, world (mostly China swarf)",
+  "method": "est. ~28 kt REO/yr (330 kt magnets, ~25-30% scrap, ~30% REO; Huahong alone 8.8 kt) x $68/kg recycled PrNd (SMM, Jun 2025)",
+  "sources": [
+   "https://news.metal.com/newscontent/103696189/2025-ndfeb-market-cost-pressures-and-export-policy-shiftssmm-analysis",
+   "https://www.metalnomist.com/2026/07/huahong-rare-earth-output-rises-as.html",
+   "https://news.metal.com/newscontent/103411982",
+   "https://www.fastmarkets.com/insights/rare-earth-magnet-recycling-technology-branches-out/"
+  ],
+  "confidence": "low",
+  "job_usd_yr": 560000000,
+  "job_what": "leach + solvent-extraction processing of NdFeB magnet scrap into separated REO, world (mostly China)",
+  "job_method": "est.: ~28 kt REO/yr from scrap x ~$20/kg processing (SX >$10/kg; magnet-feed toll $25-35/kg ReElement) = ~$0.56B; low confidence",
+  "job_sources": [
+   "https://thundersaidenergy.com/downloads/solvent-extraction-of-rare-earths-challenging-separations/",
+   "https://rareearthexchanges.com/?p=8065",
+   "https://www.metalnomist.com/2026/07/huahong-rare-earth-output-rises-as.html"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 60000000,
+  "logic": "Nd/Dy-selective pull straight from Fe-rich leach: +5% REO recovery ($3.4/kg) + skip Fe-removal step (~$4/kg est.) = ~$7.5/kg REO. x est. 8 kt REO/yr ex-China scrap by 2032 = $60M/yr ($210M if China counted)",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "30% of ex-China scrap REO (2.4 kt) x $2/kg extractant + licence",
+  "gross_margin_pct": 75,
+  "margin_logic": "simple 1-2 step amide, toll-made cheaply; licence share high",
+  "sources": [
+   "https://www.recyclingtoday.com/news/rare-earths-battery-metals-recycilng-recovery-idetechex-forecast-2046",
+   "https://news.metal.com/newscontent/103411982",
+   "https://www.fastmarkets.com/insights/rare-earth-magnet-recycling-technology-branches-out/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 18,
+  "drivers": "magnet recycling 2.8x by 2031 (IDTechEx); China Dy/Tb export controls Apr 2025; EU CRMA 25% recycling benchmark 2030; EV/robot motors",
+  "deadline": "DFARS 252.225-7052, 1 Jan 2027",
+  "sources": [
+   "https://www.recyclingtoday.com/news/rare-earths-battery-metals-recycilng-recovery-idetechex-forecast-2046",
+   "https://acquisition.gov/dfars/252.225-7052-restriction-acquisition-certain-magnets-tantalum-and-tungsten.",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-rare-earths.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Ionic Technologies",
+   "Cyclic Materials",
+   "Carester (Caremag)",
+   "REEcycle",
+   "Phoenix Tailings"
+  ],
+  "indirect_startups": [
+   "HyProMag",
+   "Noveon Magnetics",
+   "ReElement Technologies"
+  ],
+  "incumbents": [
+   "Zhejiang Huahong",
+   "Jinmeng Rare Earth",
+   "Shin-Etsu",
+   "Solvay",
+   "USA Rare Earth",
+   "Heraeus Remloy",
+   "Less Common Metals"
+  ],
+  "papers_3yr": null,
+  "paper_query": "NdFeB magnet scrap rare earth recovery",
+  "groups_active": null,
+  "notes": "TODGA is not the industrial choice; China swarf recycling is large (Huahong 8.8 kt REO 2025, +71%); end-of-life magnets <1% recycled. Carester EUR216M (Lacq, 2026); Cyclic $55M Series B (2025); Ionic $14.8M APC grant (2025).",
+  "sources": [
+   "https://www.businesswire.com/news/home/20250123234060/en/InMotion-Ventures-Invests-2-Million-in-Cyclic-Materials-Extending-Series-B-to-55-Million",
+   "https://projectblue.com/blue/news-analysis/1161/carester-secures-€216m-funding--for-rare-earth-recycling-and-refining-hub-",
+   "https://www.fastmarkets.com/insights/rare-earth-magnet-recycling-technology-branches-out/",
+   "https://www.metalnomist.com/2026/07/huahong-rare-earth-output-rises-as.html"
+  ]
+ },
+ "lab": {
+  "weeks": 9,
+  "usd": 25000,
+  "synth": "1-2 step custom: alkoxyacetamide from alkoxyacetic acid + dipropylamine; 3 variants",
+  "test": "Leach real NdFeB swarf; batch D for Nd, Pr, Dy, Fe, Co, B vs TODGA and P507; ICP-OES at a university lab",
+  "logic": "synth 5 wk, 3 x ~$5k = $15k (China CRO) + test 4 wk: scrap ~$0.5k, ~150 ICP-OES x $35-50 = ~$7k, misc ~$2.5k",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "bench + pilot run at a recycler (Ionic/Cyclic/Carester scale) 6-12 mo; oxide spec accepted by magnet maker 6-12 mo",
+  "sources": [
+   "https://www.fastmarkets.com/insights/rare-earth-magnet-recycling-technology-branches-out/",
+   "https://www.businesswire.com/news/home/20250123234060/en/InMotion-Ventures-Invests-2-Million-in-Cyclic-Materials-Extending-Series-B-to-55-Million"
+  ]
+ }
+}

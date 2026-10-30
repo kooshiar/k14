@@ -1,0 +1,81 @@
+{
+ "key": "dioxane",
+ "name": "1,4-Dioxane sorbent",
+ "market": {
+  "usd_yr": 300000000.0,
+  "year": 2025,
+  "what": "1,4-dioxane treatment for drinking water wells and groundwater (UV/ozone AOP, Ambersorb), mainly US",
+  "method": "Long Island 185 wells ~$840M capex over ~6 yr = ~$140M/yr + AOP O&M + rest of US (6.9% of 4,864 UCMR3 systems >0.35 ug/L) + site remediation; est.",
+  "sources": [
+   "https://longislandadvocate.com/suffolk-still-coping-with-14-dioxane-water-contamination/",
+   "https://tbrnewsmedia.com/suffolk-presents-new-plan-to-combat-14-dioxane/",
+   "https://clu-in.org/contaminantfocus/default.focus/sec/1,4-dioxane/cat/Occurrence/"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 150000000.0,
+  "logic": "AOP O&M $1.5-3.5/kgal vs sorbent ~$0.5-1 -> save ~$1.5/kgal on ~27 bn gal/yr (LI) = ~$40M; capex AOP $2.5M vs ~$1M vessel x ~500 US wells, annualized ~$50M; x2 for rest of US/remediation -> ~$150M/yr",
+  "our_revenue_usd_yr": 10000000.0,
+  "revenue_logic": "~10% of ~$100M/yr media/O&M pool by yr 7, via a system integrator (ECT2/Montrose style)",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty synthetic media like Ambersorb 560; small volume, high price",
+  "sources": [
+   "https://tbrnewsmedia.com/suffolk-presents-new-plan-to-combat-14-dioxane/",
+   "https://www.nj.gov/dep/watersupply/pdf/14-dioxane-pub-rev-treat-sub.pdf",
+   "https://www.wateronline.com/doc/ect-breaks-new-ground-in-treating-dioxane-0001"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "NY MCL 1 ug/L; Long Island buildout; EPA TSCA unreasonable-risk finding (Nov 2024, drinking-water cancer risk); CCL 5; CA NL 1 ug/L; est. CAGR",
+  "deadline": "NY MCL deferrals running out; TSCA risk-management rule pending (due Nov 2025, delayed)",
+  "sources": [
+   "https://www.wateronline.com/doc/epa-finalizes-risk-on-dioxane-what-water-utilities-must-know-0001",
+   "https://bclplaw.com/en-US/events-insights-news/14-dioxane-listed-as-an-epa-contaminant.html",
+   "https://tbrnewsmedia.com/suffolk-presents-new-plan-to-combat-14-dioxane/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Allonnia (1,4-D-Stroy microbes)"
+  ],
+  "incumbents": [
+   "DuPont (AmberSorb 560)",
+   "ECT2 (Montrose)",
+   "Trojan Technologies (Veralto)",
+   "Xylem",
+   "APTwater (HiPOx)",
+   "Calgon Carbon"
+  ],
+  "papers_3yr": 365,
+  "paper_query": "1,4-dioxane removal groundwater",
+  "groups_active": 40,
+  "notes": "AOP dominates Long Island (56 AOP systems built/in construction at SCWA). Ambersorb 560 is the only selective sorbent; lower life-cycle cost than AOP. Allonnia >$100M total, $20M+ Dec 2025",
+  "sources": [
+   "https://tbrnewsmedia.com/suffolk-presents-new-plan-to-combat-14-dioxane/",
+   "https://www.wateronline.com/doc/ect-breaks-new-ground-in-treating-dioxane-0001",
+   "https://business.mammothtimes.com/mammothtimes/article/bizwire-2025-12-10-allonnia-raises-more-than-20-million-to-accelerate-deployment-of-critical-materials-biotechnology"
+  ]
+ },
+ "lab": {
+  "weeks": 16,
+  "usd": 50000,
+  "synth": "macrocycle/polymer/resin: dioxane is neutral and small, needs a porous polymer or grafted bead",
+  "test": "batch isotherm + RSSCT on groundwater at 1-50 ug/L; 1,4-dioxane by EPA 522 (SPE GC/MS SIM) at Eurofins/Pace",
+  "logic": "10-12 wk synth with 3 variants ($30k) + 4 wk tests; ~60 EPA 522 x ~$150-250 (est.) = ~$12k + column work ~$8k",
+  "sources": [
+   "https://www.nemi.gov/methods/method_summary/11734/",
+   "https://www.eurofins.com/en-us/environment-testing/services/1-4-dioxane/"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "NSF/ANSI 61; NY DOH / county health dept design approval; 6-12 mo pilot vs AOP",
+  "sources": [
+   "https://www.waterworld.com/residential-commercial/article/14307504/going-through-the-process",
+   "https://tbrnewsmedia.com/suffolk-presents-new-plan-to-combat-14-dioxane/"
+  ]
+ }
+}

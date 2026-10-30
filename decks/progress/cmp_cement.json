@@ -11,7 +11,10 @@
   "Easy to ship and store",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Dissolves in the water"
  ],
  "weights": [
   3,
@@ -23,6 +26,9 @@
   1,
   1,
   2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -42,34 +48,58 @@
     50,
     100,
     47,
-    79
+    79,
+    100,
+    25,
+    16
    ],
-   "overall": 66,
+   "overall": 61,
    "price": 1.54,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 67,
+     "score": 55,
      "rows": [
       {
        "name": "Early strength",
-       "w": 17.1,
+       "w": 12.0,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Doesn\u2019t slow setting",
-       "w": 17.1,
+       "w": 12.0,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.7,
+       "w": 4.0,
        "val": 47,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.0,
+       "val": 25,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.0,
+       "val": 16,
        "cut": 0,
        "ok": true
       }
@@ -170,34 +200,58 @@
     50,
     100,
     50,
-    85
+    85,
+    100,
+    50,
+    47
    ],
-   "overall": 34,
+   "overall": 41,
    "price": 1.45,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 13,
+     "score": 20,
      "rows": [
       {
        "name": "Early strength",
-       "w": 17.1,
+       "w": 12.0,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Doesn\u2019t slow setting",
-       "w": 17.1,
+       "w": 12.0,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.7,
+       "w": 4.0,
        "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.0,
+       "val": 47,
        "cut": 0,
        "ok": true
       }
@@ -298,34 +352,58 @@
     50,
     100,
     41,
-    72
+    72,
+    100,
+    36,
+    50
    ],
-   "overall": 33,
+   "overall": 39,
    "price": 1.76,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 12,
+     "score": 19,
      "rows": [
       {
        "name": "Early strength",
-       "w": 17.1,
+       "w": 12.0,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Doesn\u2019t slow setting",
-       "w": 17.1,
+       "w": 12.0,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.7,
+       "w": 4.0,
        "val": 41,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.0,
+       "val": 36,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the water",
+       "w": 4.0,
+       "val": 50,
        "cut": 0,
        "ok": true
       }
@@ -426,7 +504,10 @@
     45,
     100,
     44,
-    79
+    79,
+    null,
+    null,
+    null
    ],
    "overall": 66,
    "price": 1.62,
@@ -554,7 +635,10 @@
     45,
     100,
     41,
-    79
+    79,
+    null,
+    null,
+    null
    ],
    "overall": 70,
    "price": 2.41,
@@ -682,7 +766,10 @@
     45,
     100,
     54,
-    80
+    80,
+    null,
+    null,
+    null
    ],
    "overall": 69,
    "price": 1.9,

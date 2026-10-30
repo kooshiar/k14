@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Scorecard Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E3E6EB;--g:#2E8A1F;--g2:#3F7F2C;--r:#C4271B;--t:#9AA1AD;--bg:#F6F5F1}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;padding:64px 72px;transform-origin:center;position:relative;overflow:hidden}
+h1{margin:0 0 56px;font:600 44px/1.1 Geist,sans-serif;letter-spacing:-.01em}
+.tag{display:inline-block;font:600 13px Geist,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:5px}
+.tag.today{background:#ECEEF1;color:#596070}.tag.ours{background:#E5F1DF;color:#2E6B1F}
+.num{font-family:"Geist Mono",monospace}
+.ok{color:var(--g)}.no{color:var(--r)}
+/* v1 columns */
+.v1{display:grid;grid-template-columns:150px repeat(4,1fr);column-gap:18px}
+.v1 .h{padding:0 0 18px}.v1 .nm{font:600 20px/1.2 Geist,sans-serif;margin:10px 0 6px;height:50px}.v1 .ov{font:600 52px/1 Geist,sans-serif}
+.v1 .lab{font:500 17px Geist,sans-serif;color:var(--mut);display:flex;align-items:center;height:44px}
+.v1 .cell{display:flex;align-items:center;gap:10px;height:44px}.v1 .bar{flex:1;height:10px;background:#EEF0F3;border-radius:5px;overflow:hidden}.v1 .bar b{display:block;height:100%}
+.v1 .cell span{width:36px;text-align:right;font:500 16px "Geist Mono",monospace}
+.v1 .pc{font-size:16px;line-height:1.45;padding-top:16px}.v1 .vd{margin-top:14px;font:600 17px Geist,sans-serif;padding:9px 12px;border-radius:7px}
+.vd.win{background:#2E8A1F;color:#fff}.vd.mid{background:#ECEEF1;color:#14161A}.vd.lose{background:#FBE6E3;color:#A3241A}
+/* v2 matrix */
+.v2{display:grid;grid-template-columns:200px repeat(4,1fr);gap:6px}
+.v2 .hd{padding:6px 10px 14px}.v2 .hd .nm{font:600 19px/1.2 Geist,sans-serif;margin-top:8px}.v2 .hd .ov{font:600 40px/1 Geist,sans-serif;margin-top:8px}
+.v2 .rl{font:500 17px Geist,sans-serif;color:var(--mut);display:flex;align-items:center;padding-left:4px}
+.v2 .c{height:52px;border-radius:7px;display:flex;align-items:center;justify-content:center;font:600 20px "Geist Mono",monospace}
+.v2 .tx{font-size:15px;line-height:1.35;padding:8px 10px;background:#F7F7F5;border-radius:7px;min-height:52px;display:flex;align-items:center}
+/* v3 head to head */
+.v3{display:grid;grid-template-columns:1.55fr 1fr;gap:40px}
+.v3 .big{border:1.5px solid var(--line);border-radius:14px;padding:28px 32px}
+.v3 .vs{display:grid;grid-template-columns:1fr 70px 1fr;align-items:end;margin-bottom:26px}
+.v3 .vs .ov{font:600 64px/1 Geist,sans-serif}.v3 .vs .nm{font:600 18px/1.25 Geist,sans-serif;margin-top:8px;min-height:44px}
+.v3 .vs .mid{text-align:center;font:600 22px Geist,sans-serif;color:var(--mut);padding-bottom:30px}
+.v3 .row{display:grid;grid-template-columns:1fr 150px 1fr;align-items:center;height:46px}
+.v3 .row .l{display:flex;justify-content:flex-end}.v3 .row .l b,.v3 .row .r b{display:block;height:14px;border-radius:7px}
+.v3 .row .lab{text-align:center;font:500 16px Geist,sans-serif;color:var(--mut)}
+.v3 .row .l span,.v3 .row .r span{font:500 15px "Geist Mono",monospace;margin:0 8px}
+.v3 .row .r{display:flex;align-items:center}.v3 .row .l{align-items:center}
+.v3 .side{display:flex;flex-direction:column;gap:18px}
+.v3 .sm{border:1.5px solid var(--line);border-radius:14px;padding:20px 24px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 16px}
+.v3 .sm .nm{font:600 18px Geist,sans-serif}.v3 .sm .ov{font:600 40px/1 Geist,sans-serif;grid-row:1/4;grid-column:2}.v3 .sm .pc{font-size:15px;color:var(--mut)}
+/* v4 dot strips */
+.v4 .hdr,.v4 .st{display:grid;grid-template-columns:330px 90px repeat(5,108px) 1fr;align-items:center;column-gap:10px}
+.v4 .hdr{font:500 16px Geist,sans-serif;color:var(--mut);padding:0 0 12px;text-align:center}.v4 .hdr div:first-child{text-align:left}
+.v4 .st{height:136px;border-top:1px solid var(--line)}
+.v4 .st .nm{font:600 20px/1.25 Geist,sans-serif}.v4 .st .ov{font:600 44px/1 Geist,sans-serif;text-align:center}
+.v4 .dot{margin:auto;border-radius:50%;display:flex;align-items:center;justify-content:center;font:600 14px "Geist Mono",monospace;color:#fff}
+.v4 .vt{font-size:15px;line-height:1.45;padding-left:12px}.v4 .vt b{font-size:17px}
+/* v5 verdict first */
+.v5{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.v5 .cd{border-radius:14px;border:1.5px solid var(--line);padding:24px 24px 22px;display:flex;flex-direction:column}
+.v5 .cd.best{border:2.5px solid var(--g)}
+.v5 .vd2{font:600 25px/1.2 Geist,sans-serif;min-height:92px;margin:14px 0 10px}
+.v5 .nm{font:500 15px/1.3 Geist,sans-serif;color:var(--mut);min-height:40px}
+.v5 ul{list-style:none;margin:16px 0 0;padding:0;font-size:16px;line-height:1.5;min-height:120px}.v5 li{display:flex;gap:8px}
+.v5 .sp{margin-top:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;align-items:end;height:96px}
+.v5 .sp div{display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end}.v5 .sp b{width:100%;border-radius:4px 4px 0 0}
+.v5 .sp span{font:500 12px Geist,sans-serif;color:var(--mut)}.v5 .ov5{font:600 30px/1 Geist,sans-serif}
+.v2 .tx.vd.win{background:#2E8A1F;color:#fff;font-weight:600}.v2 .tx.vd.lose{background:#FBE6E3;color:#A3241A;font-weight:600}.v2 .tx.vd.mid{background:#ECEEF1;font-weight:600}.v3 .row{height:58px}</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+/* Blade hardener (Evonik) R1-R3 data: factor sub-scores 0-100, 50 = best product today on that factor (box /workspace/k14/solutions/hardener) */
+const F=[['cleave','Recyclable'],['stiff','Stiffness'],['cure','Cures'],['hold','Holds in use'],['cost','Cost']];
+const P=[
+ {who:'today',name:'Recyclamine-type ketal diamine',ov:26,v:{cleave:50,hold:100,stiff:1,cure:100,cost:50},pros:['Recyclable in acid','Cures like standard'],cons:['Far too soft'],verdict:'Recyclable, too soft',cls:'lose'},
+ {who:'today',name:'IPDA (Vestamin IPD)',ov:16,v:{cleave:1,hold:100,stiff:50,cure:100,cost:31},pros:['Stiff, industry standard'],cons:['Not recyclable','Costs more'],verdict:'Standard, not recyclable',cls:'lose'},
+ {who:'ours',name:'Ketal amine A (cyclopentanone, aminocyclohexyl)',ov:85,v:{cleave:99,hold:100,stiff:70,cure:100,cost:49},pros:['Breaks ~100× faster in acid','Stiffer than both'],cons:['Not lab-tested yet'],verdict:'Best balance',cls:'win'},
+ {who:'ours',name:'Ketal amine B (A + methyl)',ov:80,v:{cleave:92,hold:100,stiff:65,cure:100,cost:42},pros:['Recyclable and stiff'],cons:['Costs a bit more than A'],verdict:'Backup to A',cls:'mid'}];
+const col=v=>v>=75?'#2E8A1F':v>=50?'#7FB069':v>=25?'#E8B4AC':'#C4271B';
+const T=o=>`<span class="tag ${o.who}">${o.who==='ours'?'Ours':'Today'}</span>`;
+const title='Recyclable blade hardener';
+const V={
+1(){return `<h1>${title}</h1><div class="v1"><div></div>${P.map(o=>`<div class="h">${T(o)}<div class="nm">${o.name.split(' (')[0]}</div><div class="ov ${o.who==='ours'?'ok':''}">${o.ov}</div></div>`).join('')}
+ ${F.map(([k,l])=>`<div class="lab">${l}</div>`+P.map(o=>`<div class="cell"><div class="bar"><b style="width:${o.v[k]}%;background:${col(o.v[k])}"></b></div><span>${o.v[k]}</span></div>`).join('')).join('')}
+ <div></div>${P.map(o=>`<div class="pc">${o.pros.map(x=>`<div class="ok">+ ${x}</div>`).join('')}${o.cons.map(x=>`<div class="no">− ${x}</div>`).join('')}<div class="vd ${o.cls}">${o.verdict}</div></div>`).join('')}</div>`},
+2(){const cell=v=>`<div class="c" style="background:${col(v)};color:${v>=50&&v<75?'#14161A':'#fff'}">${v}</div>`;
+ return `<h1>${title}</h1><div class="v2"><div></div>${P.map(o=>`<div class="hd">${T(o)}<div class="nm">${o.name.split(' (')[0]}</div><div class="ov ${o.who==='ours'?'ok':''}">${o.ov}</div></div>`).join('')}
+ ${F.map(([k,l])=>`<div class="rl">${l}</div>`+P.map(o=>cell(o.v[k])).join('')).join('')}
+ <div class="rl">Pros</div>${P.map(o=>`<div class="tx ok">${o.pros.join(' · ')}</div>`).join('')}
+ <div class="rl">Cons</div>${P.map(o=>`<div class="tx no">${o.cons.join(' · ')}</div>`).join('')}
+ <div class="rl">Verdict</div>${P.map(o=>`<div class="tx vd ${o.cls}" style="margin:0">${o.verdict}</div>`).join('')}</div>`},
+3(){const a=P[2],b=P[0];const sc=4.2;
+ return `<h1>${title}</h1><div class="v3"><div class="big"><div class="vs"><div>${T(a)}<div class="ov ok">${a.ov}</div><div class="nm">${a.name.split(' (')[0]}</div></div><div class="mid">vs</div><div style="text-align:right">${T(b)}<div class="ov">${b.ov}</div><div class="nm">${b.name}</div></div></div>
+ ${F.map(([k,l])=>{const x=a.v[k],y=b.v[k];return `<div class="row"><div class="l"><span>${x}</span><b style="width:${x*sc}px;background:${x>y+5?'#2E8A1F':x<y-5?'#C4271B':'#9AA1AD'}"></b></div><div class="lab">${l}</div><div class="r"><b style="width:${y*sc}px;background:#9AA1AD"></b><span>${y}</span></div></div>`}).join('')}</div>
+ <div class="side">${[P[3],P[1]].map(o=>`<div class="sm"><div>${T(o)}</div><div class="ov ${o.who==='ours'?'ok':''}">${o.ov}</div><div class="nm">${o.name.split(' (')[0]}</div><div class="pc"><span class="ok">+ ${o.pros[0]}</span> · <span class="no">− ${o.cons[0]}</span></div></div>`).join('')}
+ <div class="sm" style="border:none;background:#14161A;color:#fff"><div style="font:600 15px Geist;letter-spacing:.06em;text-transform:uppercase;color:#7CD164">Verdict</div><div class="nm" style="grid-column:1/3;font-size:24px">Ours A wins on recycling and stiffness</div></div></div></div>`},
+4(){const S=[...P].sort((x,y)=>y.ov-x.ov);
+ return `<h1>${title}</h1><div class="v4"><div class="hdr"><div></div><div>Score</div>${F.map(([,l])=>`<div>${l}</div>`).join('')}<div style="text-align:left;padding-left:12px">Verdict</div></div>
+ ${S.map(o=>`<div class="st"><div>${T(o)}<div class="nm" style="margin-top:8px">${o.name.split(' (')[0]}</div></div><div class="ov ${o.who==='ours'?'ok':''}">${o.ov}</div>
+ ${F.map(([k])=>{const v=o.v[k],d=24+v*.5;return `<div class="dot" style="width:${d}px;height:${d}px;background:${col(v)}">${d>40?v:''}</div>`}).join('')}
+ <div class="vt"><b class="${o.cls==='win'?'ok':o.cls==='lose'?'no':''}">${o.verdict}</b><br><span class="ok">+ ${o.pros[0]}</span><br><span class="no">− ${o.cons[0]}</span></div></div>`).join('')}</div>`},
+5(){return `<h1>${title}</h1><div class="v5">${P.map(o=>`<div class="cd ${o.cls==='win'?'best':''}">${T(o)}<div class="vd2 ${o.cls==='win'?'ok':o.cls==='lose'?'no':''}">${o.verdict}</div><div class="nm">${o.name}</div>
+ <ul>${o.pros.map(x=>`<li><span class="ok">✓</span>${x}</li>`).join('')}${o.cons.map(x=>`<li><span class="no">✗</span>${x}</li>`).join('')}</ul>
+ <div class="sp">${F.map(([k,l])=>`<div><b style="height:${Math.max(4,o.v[k]*.62)}px;background:${col(o.v[k])}"></b><span>${l.split(' ')[0]}</span></div>`).join('')}</div>
+ <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:14px"><span style="font:500 14px Geist;color:#596070">Score</span><span class="ov5 ${o.who==='ours'?'ok':''}">${o.ov}</span></div></div>`).join('')}</div>`}};
+const q=new URLSearchParams(location.search),v=+(q.get('v')||1);document.getElementById('s').innerHTML=(V[v]||V[1])();
+function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform=`scale(${s})`}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();
+</script></body></html>

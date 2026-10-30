@@ -1,0 +1,80 @@
+{
+ "key": "cement",
+ "name": "Early-strength cement additive",
+ "market": {
+  "usd_yr": 1000000000,
+  "year": 2025,
+  "what": "cement grinding aids and strength enhancers (alkanolamine-based), world",
+  "method": "3.8 Gt cement x ~50% treated x ~350 g/t = ~670 kt x ~$1.5/kg (est.) = ~$1.0B; reports say $5.3B (looks inflated)",
+  "sources": [
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cement.pdf",
+   "https://www.researchandmarkets.com/reports/6164556/cement-grinding-aid-performance-enhancers",
+   "https://markwideresearch.com/cement-grinding-aids-market"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 3000000000,
+  "logic": "5 pts less clinker at same 1-2 d strength: 5% x ($50 clinker - $15 SCM)/t = $1.75/t + CO2 0.04 t/t x ~$70 in EU; on ~1.5 Gt adopting = ~$3B/yr (est.)",
+  "our_revenue_usd_yr": 24000000,
+  "revenue_logic": "20 Mt cement/yr treated x 400 g/t x ~$3/kg = ~$24M (direct or via admixture partner)",
+  "gross_margin_pct": 50,
+  "margin_logic": "alkanolamine from ethyleneamine + EO, cheap inputs; price set by clinker savings",
+  "sources": [
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cement.pdf",
+   "https://www.citedrive.com/en/discovery/activation-of-lcsup3sup-binders-by-csh-nucleation-seeding-with-a-new-tailored-admixture-for-lowcarbon-cements"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 4,
+  "drivers": "clinker factor cuts (LC3, slag, limestone); EU CBAM + ETS free-allowance phase-out from 2026",
+  "deadline": "EU CBAM definitive period from 1 Jan 2026",
+  "sources": [
+   "https://www.researchandmarkets.com/reports/6164556/cement-grinding-aid-performance-enhancers",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cement.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "CarbonCure",
+   "Alcemy",
+   "Terra CO2",
+   "Sublime Systems",
+   "Brimstone",
+   "Hoffmann Green"
+  ],
+  "incumbents": [
+   "Sika (incl. MBCC, X-Seed)",
+   "Saint-Gobain (GCP, Chryso, Fosroc)",
+   "Mapei",
+   "Dow (TEA/TIPA)",
+   "Huntsman"
+  ],
+  "papers_3yr": null,
+  "paper_query": "low clinker cement early strength admixture",
+  "groups_active": null,
+  "notes": "Sika and Saint-Gobain dominate after 2022-25 M&A; C-S-H seeding is the incumbent early-strength fix",
+  "sources": [
+   "https://www.citedrive.com/en/discovery/activation-of-lcsup3sup-binders-by-csh-nucleation-seeding-with-a-new-tailored-admixture-for-lowcarbon-cements",
+   "https://www.techsciresearch.com/report/cement-grinding-aid-and-performance-enhancers-market/30343.html"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 18000,
+  "synth": "catalog or 1-step custom (hydroxyethyl/hydroxypropyl ethyleneamines), 3 variants x 100 g",
+  "test": "EN 196-1 mortar strength 1/2/7/28 d + isothermal calorimetry (ASTM C1702) + set time EN 196-3 in LC3/CEM II blends at a university cement lab",
+  "logic": "synth 4 wk + 6 wk tests (28 d cure); synth $5k + tests ~$12k (est.)",
+  "sources": [
+   "https://3dcp.fyi/farr_dher_silv.2024.EESiL3wACA/"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "ASTM C465 processing-addition test ~6 mo; EN 197-1 additive limits; plant mill trial + 28/90 d data 1 yr",
+  "sources": [
+   "https://www.researchandmarkets.com/reports/6164556/cement-grinding-aid-performance-enhancers"
+  ]
+ }
+}

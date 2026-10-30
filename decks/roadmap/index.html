@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Roadmap Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E3E6EB;--g:#2E8A1F;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;padding:88px 96px;transform-origin:center;position:relative;overflow:hidden}
+h1{margin:0 0 80px;font:600 62px/1.08 Geist,sans-serif;letter-spacing:-.02em;max-width:1300px}
+.mono{font-family:"Geist Mono",monospace}.ok{color:var(--g)}.m{color:var(--mut)}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+/* TCA cork taint binder: next steps (opportunities/cork page 7 data; months are planning estimates) */
+const ST=[{k:'Designed',what:'12 designs in simulation',t:[0,0],cost:null,done:true},
+          {k:'Make',what:'Top 10 made by a contract lab',t:[0,2],cost:null},
+          {k:'Lab tests',what:'TCA removal · aroma · taste panel · food contact',t:[2,6],cost:120},
+          {k:'Pilot',what:'Winery pilot with the first buyer',t:[6,12],cost:100}];
+const TITLE='From 10 designs to a winery pilot in 12 months';
+const V={
+1(){ /* milestone timeline */
+ const X=m=>110+m*97;
+ return `<h1>${TITLE}</h1><svg viewBox="0 0 1408 470" width="1408" height="470">
+ <line x1="${X(0)}" y1="210" x2="${X(12)}" y2="210" stroke="#E3E6EB" stroke-width="10" stroke-linecap="round"/>
+ <line x1="${X(0)}" y1="210" x2="${X(0)}" y2="210" stroke="#2E8A1F" stroke-width="10"/>
+ ${[0,2,4,6,8,10,12].map(m=>`<text x="${X(m)}" y="290" text-anchor="middle" font-family="Geist Mono" font-size="20" fill="#9AA1AD">${m===0?'now':'month '+m}</text>`).join('')}
+ ${ST.map((s,i)=>{const x=X(s.t[1]);return `<circle cx="${x}" cy="210" r="${s.done?22:18}" fill="${s.done?'#2E8A1F':'#fff'}" stroke="${s.done?'#2E8A1F':'#14161A'}" stroke-width="5"/>${s.done?`<path d="M${x-9} 210l6 6 12-13" stroke="#fff" stroke-width="5" fill="none"/>`:''}
+  <text x="${x}" y="${i%2?96:130}" text-anchor="middle" font-family="Geist" font-weight="600" font-size="32" fill="#14161A">${s.k}</text>
+  <text x="${x}" y="${i%2?136:170}" text-anchor="middle" font-family="Geist Mono" font-size="20" fill="#2E8A1F">${s.cost?'$'+s.cost+'k':''}</text>`}).join('')}
+ <text x="${X(12)}" y="380" text-anchor="end" font-family="Geist" font-weight="600" font-size="34" fill="#14161A">$220k to a pilot</text></svg>`},
+2(){ /* gantt */
+ const W=96;return `<h1>${TITLE}</h1><div style="display:grid;grid-template-columns:260px repeat(12,${W}px);row-gap:22px;align-items:center">
+ <div></div>${Array.from({length:12},(_,i)=>`<div class="mono m" style="font-size:18px;text-align:center">${i+1}</div>`).join('')}
+ ${ST.slice(1).map(s=>`<div><div style="font:600 30px Geist">${s.k}</div><div class="m" style="font-size:19px;margin-top:4px">${s.what.split(' · ')[0]}</div></div>
+ <div style="grid-column:2/14;display:grid;grid-template-columns:repeat(12,1fr);height:58px"><div style="grid-column:${1+s.t[0]}/${1+s.t[1]};border-radius:12px;background:${s.k==='Pilot'?'#2E8A1F':'#14161A'};color:#fff;display:flex;align-items:center;justify-content:flex-end;padding:0 20px;font:600 24px Geist">${s.cost?'$'+s.cost+'k':''}</div></div>`).join('')}
+ </div><div style="margin-top:56px;font:600 34px Geist;text-align:right">Total <span class="ok">$220k</span> · 12 months</div>`},
+3(){ /* staircase */
+ const S=ST.concat([{k:'First sale',what:'',t:[12,12]}]);return `<h1>${TITLE}</h1><div style="display:flex;align-items:flex-end;gap:16px;height:520px">
+ ${S.map((s,i)=>`<div style="flex:1;height:${110+i*95}px;background:${s.done?'#2E8A1F':i===S.length-1?'#14161A':'#F1F2F4'};border-radius:14px;padding:22px 24px;color:${s.done||i===S.length-1?'#fff':'#14161A'};display:flex;flex-direction:column">
+ <div style="font:600 30px Geist">${s.done?'✓ ':''}${s.k}</div><div style="font-size:18px;margin-top:6px;opacity:.8">${s.done?'now':i===S.length-1?'month 12+':'month '+s.t[1]}</div>${s.cost?`<div style="margin-top:auto;font:600 30px Geist" class="${s.done?'':'ok'}">$${s.cost}k</div>`:''}</div>`).join('')}</div>`},
+4(){ /* three big numbers + strip */
+ const C=[['10','designs made','month 2','—'],['4','lab tests, 3 rounds','month 6','$120k'],['1','winery pilot','month 12','$100k']];
+ return `<h1>${TITLE}</h1><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+ ${C.map(([n,l,m,c],i)=>`<div style="border-top:5px solid ${i===2?'#2E8A1F':'#14161A'};padding-top:26px"><div style="font:600 128px/1 Geist;letter-spacing:-.03em">${n}</div><div style="font:500 30px Geist;margin-top:14px">${l}</div>
+ <div style="display:flex;gap:28px;margin-top:30px;font:500 24px 'Geist Mono'"><span class="m">${m}</span><span class="ok">${c}</span></div></div>`).join('')}</div>`},
+5(){ /* funnel */
+ const F=[['12','designed',1],['10','made',.86],['3','pass lab tests',.55],['1','in a winery pilot',.3]];
+ return `<h1>${TITLE}</h1><div style="display:grid;grid-template-columns:1fr 340px;gap:40px;align-items:center">
+ <div style="display:flex;flex-direction:column;gap:14px">${F.map(([n,l,w],i)=>`<div style="display:flex;align-items:center;gap:22px"><div style="width:${w*780}px;height:84px;border-radius:12px;background:${i===0?'#2E8A1F':i===3?'#14161A':'#5A6270'};color:#fff;display:flex;align-items:center;padding:0 26px;font:600 44px Geist">${n}</div><div style="font:500 28px Geist">${l}</div></div>`).join('')}</div>
+ <div style="display:flex;flex-direction:column;gap:30px;border-left:2px solid #E3E6EB;padding-left:36px">${[['now','✓ simulation'],['month 2','made'],['month 6','tested · $120k'],['month 12','pilot · $100k']].map(([m,l])=>`<div><div class="mono m" style="font-size:20px">${m}</div><div style="font:600 26px Geist;margin-top:4px">${l}</div></div>`).join('')}</div></div>`}};
+const v=+(new URLSearchParams(location.search).get('v')||1);document.getElementById('s').innerHTML=(V[v]||V[1])();
+function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform=`scale(${s})`}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();
+</script></body></html>

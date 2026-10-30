@@ -7,7 +7,10 @@
   "US supply",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Dissolves in the electrolyte"
  ],
  "weights": [
   3,
@@ -15,6 +18,9 @@
   2,
   1,
   2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -30,34 +36,58 @@
     100,
     100,
     0,
-    35
+    35,
+    0,
+    21,
+    50
    ],
-   "overall": 33,
+   "overall": 29,
    "price": 1.19,
    "boxes": [
     {
      "box": "Performance",
      "mult": 45,
-     "score": 26,
+     "score": 19,
      "rows": [
       {
        "name": "Strength",
-       "w": 22.5,
-       "val": 50,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Selectivity",
        "w": 15.0,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
+       "name": "Selectivity",
+       "w": 10.0,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
        "name": "Holds more per kg",
-       "w": 7.5,
+       "w": 5.0,
        "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 5.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 5.0,
+       "val": 21,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the electrolyte",
+       "w": 5.0,
+       "val": 50,
        "cut": 0,
        "ok": true
       }
@@ -126,34 +156,51 @@
     null,
     100,
     50,
-    81
+    81,
+    100,
+    null,
+    0
    ],
-   "overall": 14,
+   "overall": 16,
    "price": 1.45,
    "boxes": [
     {
      "box": "Performance",
      "mult": 45,
-     "score": 2,
+     "score": 3,
      "rows": [
       {
        "name": "Strength",
-       "w": 22.5,
+       "w": 16.9,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Selectivity",
-       "w": 15.0,
+       "w": 11.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Holds more per kg",
-       "w": 7.5,
+       "w": 5.6,
        "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 5.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the electrolyte",
+       "w": 5.6,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -215,33 +262,57 @@
     null,
     100,
     0,
-    89
+    89,
+    40,
+    50,
+    0
    ],
-   "overall": 8,
+   "overall": 12,
    "price": 3.28,
    "boxes": [
     {
      "box": "Performance",
      "mult": 45,
-     "score": 1,
+     "score": 2,
      "rows": [
       {
        "name": "Strength",
-       "w": 22.5,
-       "val": 0,
-       "cut": 25,
-       "ok": false
-      },
-      {
-       "name": "Selectivity",
        "w": 15.0,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
+       "name": "Selectivity",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
        "name": "Holds more per kg",
-       "w": 7.5,
+       "w": 5.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 5.0,
+       "val": 40,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 5.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the electrolyte",
+       "w": 5.0,
        "val": 0,
        "cut": 0,
        "ok": true
@@ -304,33 +375,57 @@
     5,
     100,
     0,
-    60
+    60,
+    100,
+    28,
+    0
    ],
-   "overall": 5,
+   "overall": 8,
    "price": 3.4,
    "boxes": [
     {
      "box": "Performance",
      "mult": 45,
-     "score": 1,
+     "score": 2,
      "rows": [
       {
        "name": "Strength",
-       "w": 22.5,
-       "val": 0,
-       "cut": 25,
-       "ok": false
-      },
-      {
-       "name": "Selectivity",
        "w": 15.0,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
+       "name": "Selectivity",
+       "w": 10.0,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
        "name": "Holds more per kg",
-       "w": 7.5,
+       "w": 5.0,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 5.0,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 5.0,
+       "val": 28,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Dissolves in the electrolyte",
+       "w": 5.0,
        "val": 0,
        "cut": 0,
        "ok": true
@@ -390,25 +485,28 @@
    "fails": []
   },
   {
-   "label": "Design B",
+   "label": "Design G",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
     100,
     100,
-    36,
+    28,
     null,
     100,
-    10,
-    54
+    0,
+    77,
+    null,
+    null,
+    null
    ],
-   "overall": 58,
-   "price": 1.76,
+   "overall": 49,
+   "price": 2.4,
    "boxes": [
     {
      "box": "Performance",
      "mult": 45,
-     "score": 68,
+     "score": 46,
      "rows": [
       {
        "name": "Strength",
@@ -427,7 +525,7 @@
       {
        "name": "Holds more per kg",
        "w": 7.5,
-       "val": 10,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -436,12 +534,12 @@
     {
      "box": "Cost",
      "mult": 25,
-     "score": 36,
+     "score": 28,
      "rows": [
       {
        "name": "Cost per use",
        "w": 25.0,
-       "val": 36,
+       "val": 28,
        "cut": 25,
        "ok": true
       }
@@ -464,12 +562,12 @@
     {
      "box": "Fit & supply",
      "mult": 20,
-     "score": 54,
+     "score": 77,
      "rows": [
       {
        "name": "Easy to make",
        "w": 20.0,
-       "val": 54,
+       "val": 77,
        "cut": 0,
        "ok": true
       }
@@ -479,25 +577,28 @@
    "fails": []
   },
   {
-   "label": "Design A",
+   "label": "N-Octamethylspermidine",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
     100,
     100,
-    33,
+    29,
     null,
     100,
-    5,
-    60
+    0,
+    76,
+    null,
+    null,
+    null
    ],
-   "overall": 55,
-   "price": 1.94,
+   "overall": 49,
+   "price": 2.35,
    "boxes": [
     {
      "box": "Performance",
      "mult": 45,
-     "score": 61,
+     "score": 46,
      "rows": [
       {
        "name": "Strength",
@@ -516,7 +617,7 @@
       {
        "name": "Holds more per kg",
        "w": 7.5,
-       "val": 5,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -525,12 +626,12 @@
     {
      "box": "Cost",
      "mult": 25,
-     "score": 33,
+     "score": 29,
      "rows": [
       {
        "name": "Cost per use",
        "w": 25.0,
-       "val": 33,
+       "val": 29,
        "cut": 25,
        "ok": true
       }
@@ -553,12 +654,12 @@
     {
      "box": "Fit & supply",
      "mult": 20,
-     "score": 60,
+     "score": 76,
      "rows": [
       {
        "name": "Easy to make",
        "w": 20.0,
-       "val": 60,
+       "val": 76,
        "cut": 0,
        "ok": true
       }
@@ -578,7 +679,10 @@
     null,
     100,
     0,
-    70
+    70,
+    null,
+    null,
+    null
    ],
    "overall": 47,
    "price": 2.45,

@@ -1,0 +1,88 @@
+{
+ "key": "cosel",
+ "name": "Cobalt binder",
+ "market": {
+  "usd_yr": 130000000,
+  "year": 2025,
+  "what": "Co/Ni separation circuit (Cyanex 272/P507 SX) in black-mass hydromet, world",
+  "method": "~30% of ~$440M separation spend (Co ~60 kg/t BM, many scrub stages for Co/Ni). bottom-up est.: ~600 kt Ni/Co black mass refined (120 kt Ni at ~20% Ni) x ~$735/t separation cost [opex ~$340/t: NaOH saponification ~440 kg x $368/t, strip acid ~540 kg x $123/t, Na2SO4 handling, organic loss; capex charge ~$395/t: 35% SX share x 15%/yr of ~$5k/t-yr Asia or ~$26k/t-yr West (Li-Cycle $0.85-1B/35 kt)]",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://www.cobaltinstitute.org/wp-content/uploads/2026/05/Cobalt-Market-Report-2025.pdf",
+   "https://metalcharts.org/nickel-price-history/2025",
+   "https://www.intratec.us/solutions/primary-commodity-prices/commodity/caustic-soda-prices",
+   "https://www.intratec.us/solutions/primary-commodity-prices/commodity/sulfuric-acid-prices",
+   "https://fastmarkets.com/insights/li-cycle-closes-on-475-million-doe-loan-and-reports-stronger-revenue-growth",
+   "https://webthesis.biblio.polito.it/39506/1/tesi.pdf",
+   "https://www.diva-portal.org/smash/get/diva2:1549280/FULLTEXT01.pdf"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 65000000,
+  "logic": "Co-over-Ni binder cuts Co circuit cost 40% = $52M + 0.5% more Co/Ni of ~$2.8B = $14M",
+  "our_revenue_usd_yr": 3600000,
+  "revenue_logic": "$65M x 2.66 (2032 volumes) x 6% adoption x 35% capture",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty chelating sorbent/ligand",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://www.cobaltinstitute.org/wp-content/uploads/2026/05/Cobalt-Market-Report-2025.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 15,
+  "drivers": "recycled Co 30 kt (2024) -> 121 kt (2034); DRC export quotas tripled Co prices in 2025; low-Co cathodes cap Co per tonne",
+  "deadline": "EU Battery Reg: 90% Co recovery by 31 Dec 2027; 16% recycled Co in new batteries from 2031",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://www.cobaltinstitute.org/wp-content/uploads/2026/05/Cobalt-Market-Report-2025.pdf",
+   "https://eur-lex.europa.eu/eli/reg/2023/1542/oj"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "ReElement Technologies"
+  ],
+  "indirect_startups": [
+   "Nth Cycle",
+   "Ascend Elements",
+   "Mecaware",
+   "SiTration"
+  ],
+  "incumbents": [
+   "Syensqo (Cyanex 272)",
+   "Daihachi (PC-88A)",
+   "Chinese P507 makers",
+   "LANXESS (Lewatit TP 272)",
+   "Sunresin"
+  ],
+  "papers_3yr": null,
+  "paper_query": "cobalt nickel separation battery leachate",
+  "groups_active": null,
+  "notes": "Cyanex 272 is the benchmark (high Co/Ni factor, needs NaOH saponification); solid Cyanex-272 sorbents (<2% Ni co-uptake) are academic rivals",
+  "sources": [
+   "https://www.diva-portal.org/smash/get/diva2:1549280/FULLTEXT01.pdf",
+   "https://lanxess.com/en/products/brands/lewatit/industries/mining-and-metallurgy"
+  ]
+ },
+ "lab": {
+  "weeks": 16,
+  "usd": 55000,
+  "synth": "1-2 step custom Co ligand, grafted on silica/resin (3 variants)",
+  "test": "Co/Ni separation factor vs pH in real NMC leach, isotherms, column + strip, ICP-OES; university hydromet lab",
+  "logic": "ligand 6 wk $15-20k + grafting 4 wk $10-15k; test 6 wk ~300 ICP-OES x $40-50 + leach/columns ~$10k",
+  "sources": [
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf",
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://www.diva-portal.org/smash/get/diva2:1549280/FULLTEXT01.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "bench on real leach 3-6 mo; recycler pilot 6-12 mo; CoSO4 offtaker qualification 6-12 mo",
+  "sources": [
+   "https://www.vinnova.se/en/p/pilot-demonstration-of-a-circular-hydrometallurgical-recycling-process-for-battery-grade-recovery-of-metals-from-nmc-black-mass/"
+  ]
+ }
+}

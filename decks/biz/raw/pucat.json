@@ -1,0 +1,89 @@
+{
+ "key": "pucat",
+ "name": "PU foam recycling catalyst",
+ "market": {
+  "usd_yr": 8700000000,
+  "year": 2024,
+  "what": "Polyether polyols for flexible foam (what recycled polyol replaces), world",
+  "method": "~5.4 Mt/yr x ~$1.6/kg (est.) = $8.6B; matches $8.66B report; total polyether capacity 14.5 Mt",
+  "sources": [
+   "https://www.marketresearch.com/Bosson-Research-v4252/Global-Polyether-Polyols-Flexible-Foams-36124381",
+   "https://www.giiresearch.com/report/prco1761688-polyether-polyols-capacity-production-demand-price.html"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 30000000,
+  "job_what": "chemical recycling (glycolysis/acidolysis) of PU foam into polyol, processing spend, world",
+  "job_method": "est.: ~20 kt/yr foam chemically recycled (Rampf ~5 kt + 3.5 kt, Repsol 2 kt, Dow Renuva ~200k mattresses, others est.) x ~$1.5/kg processing (est.) = ~$30M; low confidence",
+  "job_sources": [
+   "https://www.repsol.com/en/sustainability/sustainability-pillars/environment/circular-economy/our-projects/chemical-recycling-of-polyurethane-foam/index.cshtml",
+   "https://plasteurope.com/news/RAMPF_GIESSHARZE_t218639",
+   "https://corporate.dow.com/en-us/news/press-releases/mattress-recycling-now-a-reality-with-startup-of-new-renuva-plant.html",
+   "https://link.springer.com/article/10.1007/s10163-022-01379-9"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 580000000,
+  "logic": "PU 18 Mt/yr, ~25% flexible foam. Recycle 1 Mt EoL foam/yr x 0.6 t polyol/t x ($1.6 virgin - $0.8 process, est.) = $0.48B + $100/t landfill/incineration avoided = $0.1B",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "15% of 1 Mt foam = 90 kt polyol x $1.6/kg x 4% royalty = $5.8M + catalyst 1 wt% x 150 kt x $5/kg = $7.5M",
+  "gross_margin_pct": 65,
+  "margin_logic": "License (90) plus organocatalyst sales (~50)",
+  "sources": [
+   "https://publica.fraunhofer.de/handle/publica/411228",
+   "https://www.isopa.org/wp-content/uploads/2022/09/EoL_Brochure_2021_EUROPUR.pdf",
+   "https://www.repsol.com/en/sustainability/sustainability-pillars/environment/circular-economy/our-projects/chemical-recycling-of-polyurethane-foam/index.cshtml"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 5,
+  "drivers": "EU: 30M mattresses/yr EoL (60% landfilled); ELV recycled-plastic targets (mass balance OK); EPR for furniture/mattresses; brand recycled-content goals",
+  "deadline": "EU ELV Regulation: 15% recycled plastic in new cars 6 yrs after entry into force (deal Dec 2025)",
+  "sources": [
+   "https://www.circularonline.co.uk/news/eu-agrees-tougher-end-of-life-vehicles-rules-to-boost-recycled-content-and-cut-material-losses/",
+   "https://www.isopa.org/wp-content/uploads/2022/09/EoL_Brochure_2021_EUROPUR.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Epoch Biodesign (enzymes)"
+  ],
+  "incumbents": [
+   "Covestro (Evocycle)",
+   "Dow (RENUVA)",
+   "BASF",
+   "Huntsman",
+   "Repsol + RAMPF Eco Solutions (Recpur)",
+   "H&S Anlagentechnik",
+   "Evonik (with Toyotsu, Sanyo)",
+   "Mitsui Chemicals"
+  ],
+  "papers_3yr": null,
+  "paper_query": "polyurethane foam glycolysis polyol recycling",
+  "groups_active": null,
+  "notes": "Majors own it; Repsol 2 kt/yr plant (EUR 12M, 2024); Evonik/Toyotsu/Sanyo Japan initiative Oct 2026. Patent filings 28 (2021) -> 96 (2024). No funded catalyst startup found",
+  "sources": [
+   "https://www.indianchemicalnews.com/recycling/evonik-toyotsu-chemiplas-and-sanyo-chemical-launch-japan-polyurethane-recycling-initiative-32265",
+   "https://www.patsnap.com/resources/blog/rd-blog/methanolysis-depolymerization-of-polyurethane-foam-waste-patent-landscape-patent-landscape/",
+   "https://www.pudaily.com/news/67340/polyurethane-recycling-gains-momentum-can-circular-technologies-achieve-commerci"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 30000,
+  "synth": "Catalog or 1-2 step organocatalyst/metal carboxylate, 3 variants",
+  "test": "Glycolysis/acidolysis of shredded mattress foam in lab reactor; polyol OH value ASTM D4274, viscosity ASTM D4878, amine content, GPC; re-foam box foam + ASTM D3574; university/PU lab",
+  "logic": "Catalysts 3-5 wk, $8k; depolymerization runs + polyol analytics 5 wk, ~$15k; re-foam + D3574 2 wk, ~$7k",
+  "sources": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11433504/",
+   "https://circularplasticsnl.org/wp-content/uploads/2024/03/liu-et-al-2024-polyurethane-foam-chemical-recycling-fast-acidolysis-with-maleic-acid-and-full-recovery-of-polyol.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "Pilot campaign with recycler 6-12 mo; foamer qualifies recycled polyol 6-12 mo; mattress/auto OEM acceptance",
+  "sources": [
+   "https://www.repsol.com/en/sustainability/sustainability-pillars/environment/circular-economy/our-projects/chemical-recycling-of-polyurethane-foam/index.cshtml"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 // Deck control box: shared by every deck; see rail.css.
 (()=>{if(document.querySelector('.u-rail'))return;const H=document.documentElement,q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
 const shared=location.pathname.startsWith('/share/');   // shared copies carry no links (Koosh 2026-10-21)
-const old=q('nav.alldecks'),links=shared?[]:old?[...old.querySelectorAll('a')].filter(a=>{const h=a.getAttribute('href')||'';return h&&h!=='#'}).map(a=>[a.getAttribute('href'),a.textContent.trim()]):[['/decks/','Decks'],['/decks/opportunities/','Spinoffs'],['/decks/progress/','Progress']];
+const old=q('nav.alldecks'),links=shared?[]:old?[...old.querySelectorAll('a')].filter(a=>{const h=a.getAttribute('href')||'';return h&&h!=='#'}).map(a=>[a.getAttribute('href'),a.textContent.trim()]).filter(([h,t])=>!/^\/decks\/opportunities\/?$/.test(h)&&t!=='Spinoffs'):[['/decks/','Decks'],['/decks/progress/','Progress']];   // no Spinoffs link: that page is obsolete (Koosh 2026-10-25)
 const R=document.createElement('div');R.className='u-rail';
 R.innerHTML='<div class="u-box u-set"></div><nav class="u-box u-links" aria-label="Links">'+links.map(([h,t])=>`<a href="${h}">${t}</a>`).join('')+(shared?'':'<button type="button" class="u-sh">Share</button>')+'</nav>';
 const set=R.querySelector('.u-set'),th=q('#thm'),sty=qa('.thm .sty');

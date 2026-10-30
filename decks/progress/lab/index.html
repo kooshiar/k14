@@ -1,0 +1,114 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Lab Tests · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E3E6EB;--bg:#F6F5F1;--card:#fff;--g:#2E8A1F;--r:#C2261C;--v:#7B4BE0;--navl:max(40px,calc((100vw - 1040px)/2 + 40px))}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 14px/1.35 Geist,ui-sans-serif,system-ui,sans-serif}
+.w{padding:40px var(--navl) 60px}
+.top{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+h1{font:600 32px/1.1 Geist,sans-serif;margin:0;letter-spacing:-.01em}
+.upd{color:var(--mut);font-size:13px}
+.hero{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 12px}.hero .tile{min-width:170px;padding:16px 20px}.hero .tile b{font-size:40px}.hero .tile span{font-size:14px}
+.tiles{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}.tiles .tile{background:#2A2E36;padding:7px 12px;min-width:84px}.tiles .tile b{font-size:16px}
+.tile{background:#14161A;color:#fff;border-radius:6px;padding:10px 14px;min-width:104px}
+.tile b{display:block;font:600 22px/1.1 Geist,sans-serif;color:#7CD164}.tile span{font-size:12px}
+.tile.v b{color:#B79BFF}.tile.r b{color:#FF8A80}
+.sets{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:26px}
+.set{background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:12px 14px;cursor:pointer}
+.set.on{border-color:var(--ink)}
+.set h3{margin:0 0 8px;font:600 15px/1.2 Geist,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.set .pc{font:600 26px/1 Geist,sans-serif}.set .pc small{font:500 12px Geist,sans-serif;color:var(--mut);margin-left:6px}
+.bar{height:6px;border-radius:3px;background:#ECEEF1;margin:10px 0 8px;display:flex;overflow:hidden}
+.bar i{display:block;height:100%}
+.set .meta{font-size:12px;color:var(--mut);display:flex;gap:10px}
+.flt{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:1.5px solid var(--line);background:var(--card);border-radius:5px;padding:5px 10px;font:500 13px Geist,sans-serif;cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+table{border-collapse:collapse;width:auto;background:var(--card);border-radius:8px;overflow:hidden}
+td{padding:10px 12px;border-top:1px solid var(--line);white-space:nowrap;vertical-align:middle}
+tr:first-child td{border-top:0}
+tbody tr:hover{background:#F1F6EC;cursor:pointer}
+.st{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:12px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.running .dot{background:var(--v);animation:pu 1.4s ease-in-out infinite}.done .dot{background:var(--g)}.queued .dot{background:#C6CCD5}
+.crashed .dot{background:var(--r)}.blocked .dot{background:#14161A}
+@keyframes pu{50%{box-shadow:0 0 0 5px rgba(123,75,224,.18)}}
+.name{max-width:260px;overflow:hidden;text-overflow:ellipsis;font-weight:600}
+.sk{font-size:12px;font-weight:500;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.num{font-family:"Geist Mono",monospace;font-size:13px;text-align:right}
+.pg{width:120px;height:8px;border-radius:4px;background:#ECEEF1;overflow:hidden;position:relative}
+.pg i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#7B4BE0,#A98BFF,#7B4BE0);background-size:200% 100%;animation:sh 1.6s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.ord{display:inline-flex;gap:2px}.ord i{width:7px;height:12px;border-radius:2px;display:block}
+.ok{color:var(--g);font-weight:600}.bad{color:var(--r);font-weight:600}
+.btn{border:1.5px solid var(--line);background:#fff;border-radius:5px;padding:4px 9px;font:500 12px Geist,sans-serif;cursor:pointer}
+#pop{position:fixed;inset:0;background:rgba(20,22,26,.35);display:none;align-items:center;justify-content:center;z-index:9}
+#pop .box{background:#fff;border-radius:10px;max-width:640px;width:calc(100% - 32px);padding:22px 24px;max-height:86vh;overflow:auto}
+#pop h2{margin:0 0 4px;font:600 20px/1.2 Geist,sans-serif}
+#pop .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+#pop dl{display:grid;grid-template-columns:140px 1fr;gap:7px 14px;margin:0 0 16px}#pop dt{color:var(--mut)}#pop dd{margin:0;word-break:break-word}
+#pop h4{margin:14px 0 8px;font:600 13px Geist,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+#pop .x{float:right;border:0;background:none;font-size:22px;cursor:pointer;line-height:1}
+.mono{font-family:"Geist Mono",monospace;font-size:12px}
+@media (max-width:900px){.sets{grid-template-columns:1fr 1fr}.tw{overflow-x:auto}}
+.sl{color:inherit;text-decoration:none}.sl:hover{text-decoration:underline}</style></head><body><div class="w">
+<div class="top"><h1>Lab tests</h1><span class="upd" id="upd"></span></div>
+<div class="hero" id="hero"></div>
+<div class="tiles" id="tiles"></div>
+<div class="sets" id="sets"></div>
+<div class="flt" id="flt"></div>
+<div class="tw"><table><tbody id="rows"></tbody></table></div>
+</div>
+<div id="pop" onclick="if(event.target===this)this.style.display='none'"><div class="box" id="popb"></div></div>
+<script>
+const SUP={'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','+':'⁺','-':'⁻'};
+const ion=s=>(s||'').replace(/^([A-Z][a-z]?)(\d?[+-])$/,(m,a,b)=>a+[...b].map(c=>SUP[c]).join('')).replace(/([^\d+-])([+-])$/,(m,a,b)=>a+SUP[b]);   // Cu2+ -> Cu²⁺; CF3CO2- -> CF3CO2⁻
+const host=s=>(s||'').replace(/\d?[+-]$/,'');
+const SL={running:'Running',done:'Done',queued:'Queued',crashed:'Crashed',blocked:'Blocked'};
+let D=null,FS='all',FT=null;
+const f1=v=>v==null?'–':(v>0?'+':'')+v.toFixed(1);
+const hm=s=>s==null?'–':s<3600?Math.round(s/60)+' min':(s/3600).toFixed(1)+' h';
+const usd=v=>v==null?'–':'$'+(v<1?v.toFixed(2):v.toFixed(1));
+const msteps=v=>v==null?'–':(v/1e6).toFixed(1)+'M';
+function ago(s){const m=Math.round((Date.now()-Date.parse(s))/6e4);return m<1?'just now':m<60?m+' min ago':Math.round(m/60)+' h ago'}
+function ord(r){if(!r.cmp)return '<span style="color:#C6CCD5">–</span>';let s='<span class="ord">';for(let k=0;k<r.cmp;k++)s+=`<i style="background:${k<r.right?'#2E8A1F':'#E58A82'}"></i>`;return s+'</span>'}
+function draw(){
+  const d=D,R=d.rows,c=s=>R.filter(r=>r.status===s).length;
+  document.getElementById('upd').textContent='updated '+ago(d.updated);
+  const T=d.total;if(T)document.getElementById('hero').innerHTML=[[T.examples,'lab tests'],[T.cmp.toLocaleString(),'comparisons'],[Math.round(100*T.right/T.cmp)+'%',T.right.toLocaleString()+' right']].map(([v,l])=>`<div class="tile"><b>${v}</b><span>${l}</span></div>`).join('');
+  const ng=(d.gpus||[]).filter(g=>g.state==='ready').length;
+  document.getElementById('tiles').innerHTML=[['v',ng+1,'GPUs'],['','$'+(d.per_h+0.89).toFixed(2),'per hour'],['',usd(d.usd),'spent on tests'],
+    ['v',c('running'),'running'],['',c('done'),'done'],['',c('queued'),'queued'],['r',c('crashed'),'crashed']].map(([k,v,l])=>`<div class="tile ${k}"><b>${v}</b><span>${l}</span></div>`).join('');
+  const O=d.orig;const oc=O&&O.cmp?`<div class="set" style="cursor:default"><h3 title="${O.what}"><a class="sl" href="set/?k=orig" onclick="event.stopPropagation()">${O.name}</a></h3><div class="pc" style="color:${O.right/O.cmp>=.75?'#2E8A1F':'#14161A'}">${Math.round(100*O.right/O.cmp)}%<small>${O.right}/${O.cmp} right</small></div><div class="bar"><i style="width:100%;background:#2E8A1F"></i></div><div class="meta"><span>${O.n}/${O.n} done</span><span>held-out ${O.held_out||''}</span></div></div>`:'';
+  document.getElementById('sets').innerHTML=oc+d.sets.map(s=>{const p=s.cmp?Math.round(100*s.right/s.cmp):null;
+    return `<div class="set ${FT===s.key?'on':''}" onclick="FT=FT==='${s.key}'?null:'${s.key}';draw()"><h3 title="${s.what}"><a class="sl" href="set/?k=${s.key}" onclick="event.stopPropagation()">${s.name}</a></h3>
+    <div class="pc" style="color:${p==null?'#C6CCD5':p>=75?'#2E8A1F':p>=60?'#14161A':'#C2261C'}">${p==null?'–':p+'%'}<small>${s.right}/${s.cmp} right</small></div>
+    <div class="bar"><i style="width:${100*s.done/s.n}%;background:#2E8A1F"></i><i style="width:${100*s.running/s.n}%;background:#7B4BE0"></i></div>
+    <div class="meta"><span>${s.done}/${s.n} done</span><span>${s.gpu_h} GPU-h</span><span>${usd(s.usd)}</span></div></div>`}).join('');
+  document.getElementById('flt').innerHTML=['all','running','done','queued','crashed','blocked'].map(s=>`<button class="chip ${FS===s?'on':''}" onclick="FS='${s}';draw()">${s==='all'?'All':SL[s]} ${s==='all'?R.length:c(s)}</button>`).join('');
+  const SN=Object.fromEntries(d.sets.map(s=>[s.key,s.name]));
+  const rows=R.filter(r=>(FS==='all'||r.status===FS)&&(!FT||r.set===FT));
+  document.getElementById('rows').innerHTML=rows.map((r,i)=>{
+    const p=r.status==='running'?`<div class="pg" title="${r.it??0} of 600 rounds"><i style="width:${Math.round(100*(r.it||0)/600)}%"></i></div>`:r.status==='done'?hm(r.sec):'';
+    const e=r.ours!=null&&r.lab!=null?r.ours-r.lab:null;
+    return `<tr class="${r.status}" onclick="det(${R.indexOf(r)})"><td><span class="st ${r.status}"><span class="dot"></span>${SL[r.status]}</span></td>
+      <td class="sk" title="${SN[r.set]}">${SN[r.set]}</td><td class="name" title="${r.id}">${host(r.host)} · ${ion(r.guest)}</td>
+      <td class="num" title="lab, kcal/mol">${f1(r.lab)}</td><td class="num" title="ours, kcal/mol" style="color:${r.ours==null?'#C6CCD5':'#14161A'}">${f1(r.ours)}</td>
+      <td title="${r.right}/${r.cmp} comparisons right">${ord(r)}</td><td>${p}</td><td class="num">${msteps(r.steps)}</td><td class="num">${usd(r.usd)}</td>
+      <td style="font-size:12px">${r.gpu||''}</td><td><button class="btn" onclick="event.stopPropagation();det(${R.indexOf(r)})">Details</button></td></tr>`}).join('');
+}
+function det(i){const r=D.rows[i],s=D.sets.find(x=>x.key===r.set);
+  const src=(r.source||[]).map(u=>`<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\//,'').slice(0,60)}</a>`).join('<br>');
+  document.getElementById('popb').innerHTML=`<button class="x" onclick="document.getElementById('pop').style.display='none'">×</button>
+  <h2>${host(r.host)} · ${ion(r.guest)}</h2><div class="sub">${s.name} · <span class="st ${r.status}"><span class="dot"></span>${SL[r.status]}</span></div>
+  <h4>What we test</h4><dl><dt>Binder</dt><dd>${r.host}<br><span class="mono">${r.host_smiles||''}</span></dd><dt>Target</dt><dd>${r.guest}<br><span class="mono">${r.guest_smiles||''}</span></dd>
+  <dt>Lab binding</dt><dd>${f1(r.lab)} kcal/mol</dd><dt>Lab conditions</dt><dd>${r.note||'–'}</dd><dt>Source</dt><dd>${src||'–'}</dd>${r.untuned?'<dt>Note</dt><dd>grabbing atoms not tuned in v5c</dd>':''}</dl>
+  <h4>Simulation</h4><dl><dt>Method</dt><dd>real water, fade-out (v5c)</dd><dt>Stages</dt><dd>${r.stages??'–'}</dd><dt>MD steps</dt><dd>${r.steps?r.steps.toLocaleString():'–'} (4 fs each)</dd>
+  <dt>Progress</dt><dd>${r.status==='running'?(r.it??0)+' of 600 rounds':r.status==='done'?'600 of 600 rounds':'–'}</dd><dt>GPU time</dt><dd>${hm(r.sec)} (shared by 4 runs per GPU)</dd>
+  <dt>Cost</dt><dd>${usd(r.usd)}</dd><dt>Machine</dt><dd>${r.gpu||'–'}</dd><dt>Attempts</dt><dd>${r.attempts}${r.fails?' · '+r.fails+' crashed':''}</dd></dl>
+  <h4>Result</h4><dl><dt>Ours</dt><dd>${f1(r.ours)} kcal/mol ${r.err!=null?'± '+r.err.toFixed(1):''}</dd><dt>Ours − lab</dt><dd>${r.ours!=null&&r.lab!=null?f1(r.ours-r.lab)+' kcal/mol':'–'}</dd>
+  <dt>Right order</dt><dd>${r.cmp?`<span class="${r.right/r.cmp>=.75?'ok':r.right/r.cmp<.5?'bad':''}">${r.right} of ${r.cmp}</span> comparisons with tests on the same binder or target`:'no comparisons yet'}</dd></dl>`;
+  document.getElementById('pop').style.display='flex'}
+function load(){fetch('../lab.json?'+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{D=d;draw()}).catch(()=>{})}
+load();setInterval(load,60000);
+</script></body></html>

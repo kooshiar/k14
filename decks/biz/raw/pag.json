@@ -1,0 +1,84 @@
+{
+ "key": "pag",
+ "name": "PFAS-free photoacid generator",
+ "market": {
+  "usd_yr": 200000000,
+  "year": 2024,
+  "what": "photoacid generators (PAG chemicals) sold into chip photoresists, world",
+  "method": "reports split: $171M (GIR, PAG chemical) vs $1.5B (semi PAG, likely resist-level); bottom-up est. PAG ~5-10% of $2.6B resist market = $130-260M; used ~$200M",
+  "sources": [
+   "https://www.marketresearch.com/GlobalInfoResearch-v4117/Global-Photo-Acid-Generator-PAG-38327515",
+   "https://www.gii.tw/report/anvi1684292-semiconductor-photoacid-generators-market-by.html",
+   "https://semiconductor-digest.com/?p=27703"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 300000000,
+  "logic": "keeps EU/US litho running past PFAS ban: replaces ~$200M PAG at ~1.5x price (avoids $25-60M per-material requalification spread over suppliers) = ~$0.3B/yr (est.)",
+  "our_revenue_usd_yr": 3000000,
+  "revenue_logic": "yr7: ~1.5% of PAG market (KrF / non-critical layers) via resist maker JDA + supply or 5-8% royalty = ~$3M; qualification 5-10+ yrs caps it",
+  "gross_margin_pct": 85,
+  "margin_logic": "high-value fine chemical ($k/kg) made by toll CRO, or royalty",
+  "sources": [
+   "https://www.semiconductors.org/wp-content/uploads/2023/06/FINAL-PAG-Case-Study.pdf",
+   "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12957/129572B/Disruptive-non-fluorinated-photoacid-generators-using-computational-chemistry-and-library/10.1117/12.3025297.short"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "chip resist demand (EUV, KrF fastest); EU universal PFAS restriction; 3M PFAS exit end-2025",
+  "deadline": "ECHA RAC/SEAC final opinion end-2026; EC decision ~2027; semi derogation likely 12-13.5 yrs",
+  "sources": [
+   "https://semiconductor-digest.com/?p=27703",
+   "https://public.cdxsystem.com/web/cdx/w/eu-pfas-restriction-rac-final-opinion-and-seac-draft-published",
+   "https://www.imec-int.com/en/articles/removing-pfas-semiconductor-manufacturing-resists-rinses"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Irresistible Materials (MTR resist, TOK investment 2026)"
+  ],
+  "incumbents": [
+   "Toyo Gosei",
+   "FUJIFILM Wako",
+   "San-Apro (Ga-PAG, PFAS-free)",
+   "Heraeus",
+   "Midori Kagaku",
+   "DuPont",
+   "Central Glass",
+   "JSR/Inpria (metal-oxide resist)",
+   "TOK",
+   "Shin-Etsu"
+  ],
+  "papers_3yr": null,
+  "paper_query": "non-fluorinated photoacid generator",
+  "groups_active": null,
+  "notes": "top 4 PAG makers hold >90%; DuPont runs a computational non-F PAG library and is commercializing non-PFAS KrF; imec program since 2023; San-Apro launched PFAS-free Ga-PAG Jun 2025",
+  "sources": [
+   "https://www.sanyo-chemical.co.jp/eng/archives/6650",
+   "https://ui.adsabs.harvard.edu/abs/2025SPIE13428E..22L/abstract",
+   "https://www.spie.org/news/getting-pfas-out-of-lithography-materials",
+   "https://www.marketresearch.com/GlobalInfoResearch-v4117/Global-Photo-Acid-Generator-PAG-38327515"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 45000,
+  "synth": "3-5 step custom: new non-F superacid anion (2-3 steps) + sulfonium/iodonium metathesis; 3 variants, 5-10 g each",
+  "test": "acid yield by dye titration (rhodamine B / coumarin 6) + DUV/EUV contrast curves and line/space litho at a university cleanroom or imec",
+  "logic": "synth 10 wk + test 8 wk; synth $20k + litho/metrology tool time ~$25k (est.)",
+  "sources": [
+   "https://www.semiconductors.org/wp-content/uploads/2023/06/FINAL-PAG-Case-Study.pdf",
+   "https://www.imec-int.com/en/articles/removing-pfas-semiconductor-manufacturing-resists-rinses"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 5,
+  "gates": "resist formulation 3-8 yrs; fab qualification ~10 yrs, $25-60M per material (SIA); first sale = eval lots / KrF niche",
+  "sources": [
+   "https://www.semiconductors.org/wp-content/uploads/2023/06/FINAL-PAG-Case-Study.pdf"
+  ]
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "key": "siloxane",
+ "name": "Siloxane sorbent",
+ "market": {
+  "usd_yr": 410000000,
+  "year": 2025,
+  "what": "siloxane removal systems for landfill, sewage and digester gas (units + media), world",
+  "method": "report: ~17,400 units x ~$24k = $410M (2025). Media cross-check (est.): ~26 bcm/yr siloxane-bearing raw gas x $2.5-11 per 1,000 m3 = $65-285M",
+  "sources": [
+   "https://marketresearch.com/LP-Information-Inc-v4134/Global-Siloxane-Removal-Systems-Growth-40613419",
+   "https://ojs.cvut.cz/ojs/index.php/ap/article/view/3788",
+   "https://www.iea.org/reports/renewables-2025/biogases"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 190000000,
+  "logic": "Media: carbon is the main opex; a sorbent with 2x capacity and no D5/TMS slip halves ~$150M media spend = $75M. Engines: dirty gas cuts overhaul interval 18k->7k h; est. 8 GW LFG/sewage engines x $14k/MW-yr avoided = ~$115M (est.)",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "~10% of est. $150M media spend at maturity, sold via system integrators",
+  "gross_margin_pct": 45,
+  "margin_logic": "specialty sorbent priced vs activated carbon at $2-4/kg; must win on $/1,000 m3",
+  "sources": [
+   "https://www.epa.gov/sites/default/files/2016-06/documents/08lopez.pdf",
+   "https://www.hinkleycenter.org/pdfs/2014-13_Tansel.pdf",
+   "https://www.epa.gov/node/147163"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "biogas +30% 2024-30 (IEA); RNG grid-injection specs; US biomethane to double by 2030; REPowerEU biomethane push",
+  "deadline": "",
+  "sources": [
+   "https://www.iea.org/reports/renewables-2025/biogases",
+   "https://qcintel.com/biofuels/article/iea-predicts-30-rise-in-biogas-demand-to-2030-warns-on-2050-target-30454.html",
+   "https://marketresearch.com/LP-Information-Inc-v4134/Global-Siloxane-Removal-Systems-Growth-40613419"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [],
+  "incumbents": [
+   "Parker Hannifin (BioGas MK)",
+   "Desotec",
+   "Calgon Carbon (Kuraray)",
+   "Jacobi Carbons",
+   "Unison Solutions",
+   "Venture Engineering & Construction"
+  ],
+  "papers_3yr": null,
+  "paper_query": "siloxane removal biogas adsorption",
+  "groups_active": null,
+  "notes": "No funded startup found; field is carbon vendors + skid makers. Carbon lets D5 and TMS slip through. Tansel study: for small sites carbon adsorption cost more than engine cleaning, so a cheaper sorbent opens sites",
+  "sources": [
+   "https://www.desotec.com/en/knowledge-hub/removing-siloxanes-from-landfill-biogas",
+   "https://ph.parker.com/dk/da/biogas-mk-siloxane-removal-system",
+   "https://pubs.kist.re.kr/handle/201004/88355"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 55000,
+  "synth": "porous polymer or grafted silica (est.; no early example yet), 2-3 variants: 10-16 wk class",
+  "test": "lab breakthrough of D4/D5/TMS in humid CH4/CO2 with toluene, GC-MS/FID, 3 regen cycles; university lab (no ASTM method)",
+  "logic": "synth 12 wk + tests 6 wk; $35k sorbent prep + ~$20k breakthrough/GC work",
+  "sources": [
+   "https://ojs.cvut.cz/ojs/index.php/ap/article/view/3788",
+   "https://www.hinkleycenter.org/pdfs/2014-13_Tansel.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "3-6 month side-stream pilot on real WWTP/landfill gas; meet engine OEM fuel Si limit and RNG tariff spec",
+  "sources": [
+   "https://waste360.com/landfill/the-challenges-siloxanes-pose-to-landfill-gas-to-energy-operations"
+  ]
+ }
+}

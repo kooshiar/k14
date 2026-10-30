@@ -1,0 +1,2396 @@
+{
+ "formaldehyde": {
+  "name": "Formaldehyde catcher",
+  "ours": 53,
+  "today": 63,
+  "today_name": "urea",
+  "ours_name": "L4-3",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": null
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 53
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 50,
+  "best_found_in": "v1 P1 design",
+  "started": "2026-10-15T22:14Z",
+  "finished": null
+ },
+ "cement": {
+  "name": "Cement booster",
+  "ours": 70,
+  "today": 61,
+  "today_name": "DEIPA",
+  "ours_name": "L2-17",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 66
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 70
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": null
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 69
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 91,
+  "best_found_in": "v1 P1 design",
+  "started": "2026-10-15T22:15Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "rebar": {
+  "name": "Rebar inhibitor",
+  "ours": 61,
+  "today": 55,
+  "today_name": "benzotriazole",
+  "ours_name": "L5-8",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 53
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 57
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 61
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 149,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-15T22:52Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "dioxane": {
+  "name": "Dioxane trap",
+  "ours": 67,
+  "today": 41,
+  "today_name": "beta-cyclodextrin",
+  "ours_name": "L5-21",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 58
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 67
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 120,
+  "best_found_in": "v1 P5 drop-in",
+  "started": "2026-10-15T22:58Z",
+  "finished": null
+ },
+ "boron": {
+  "name": "Boron catcher",
+  "ours": 68,
+  "today": 69,
+  "today_name": "catechol",
+  "ours_name": "L2-13",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 61
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 68
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 67
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 58
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 132,
+  "best_found_in": "v1 P5 drop-in",
+  "started": "2026-10-16T00:06Z",
+  "finished": null
+ },
+ "siloxane": {
+  "name": "Siloxane catcher",
+  "ours": 71,
+  "today": 58,
+  "today_name": "resorcin[4]arene",
+  "ours_name": "L2-5",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 69
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 71
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 70
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "running",
+    "score": null
+   }
+  ],
+  "designs": 142,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-16T00:11Z",
+  "finished": null
+ },
+ "mousy": {
+  "name": "Mousy wine fix",
+  "ours": 79,
+  "today": 54,
+  "today_name": "calix[4]arene",
+  "ours_name": "L2-47",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 73
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 79
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 79
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 75
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 65
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 184,
+  "best_found_in": "v1 P5 drop-in",
+  "started": "2026-10-16T13:46Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "selenate": {
+  "name": "Selenium catcher",
+  "ours": 37,
+  "today": 51,
+  "today_name": "sulfonato-calix[4]arene",
+  "ours_name": "L4-28",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 19
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 36
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 37
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 150,
+  "best_found_in": "v1 P5 drop-in",
+  "started": "2026-10-16T02:05Z",
+  "finished": null
+ },
+ "tfa": {
+  "name": "TFA trap",
+  "ours": 49,
+  "today": 44,
+  "today_name": "quaternary ammonium (resin site)",
+  "ours_name": "Design A",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 49
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 44
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 44
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 159,
+  "best_found_in": "v1 P4 cheaper",
+  "started": "2026-10-16T03:21Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "smoke": {
+  "name": "Smoke-taint remover",
+  "ours": 81,
+  "today": 54,
+  "today_name": "calix[4]arene",
+  "ours_name": "L5-24",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 73
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 72
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 78
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 71
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 81
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 181,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-16T04:32Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "heatcold": {
+  "name": "Heat and cold wraps",
+  "ours": 80,
+  "today": 68,
+  "today_name": "paraffin PCM blends (RT15, RT42)",
+  "ours_name": "hexadecane + lauric acid (15 \u00b0C); docosane + stearic acid (42 \u00b0C)",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 80
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 78
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-19T02:49Z",
+  "finished": "2026-10-19T02:49Z"
+ },
+ "cork": {
+  "name": "Cork taint remover",
+  "ours": 78,
+  "today": 53,
+  "today_name": "pillar[5]arene (OMe)",
+  "ours_name": "L5-21",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 72
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 72
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 58
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 67
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 78
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 158,
+  "best_found_in": "v1 P3 US-sourced",
+  "started": "2026-10-16T22:23Z",
+  "finished": "2026-10-23T17:11Z"
+ },
+ "pfas": {
+  "name": "PFAS trap",
+  "ours": 72,
+  "today": 42,
+  "today_name": "quaternary ammonium (resin site)",
+  "ours_name": "L3-19",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "products sold today",
+    "score": 71
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": 65
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": 72
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": false,
+    "state": "queued",
+    "score": 60
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 137,
+  "best_found_in": "v1 P3 US-sourced",
+  "started": "2026-10-20T14:09Z",
+  "finished": null
+ },
+ "lithium": {
+  "name": "Lithium catcher",
+  "ours": 40,
+  "today": 41,
+  "today_name": "12-crown-4",
+  "ours_name": "L2-52",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 40
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 122,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-17T00:54Z",
+  "finished": null
+ },
+ "co2": {
+  "name": "CO\u2082 capture",
+  "ours": 44,
+  "today": 39,
+  "today_name": "beta-cyclodextrin",
+  "ours_name": "L2-17",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 44
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 145,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-17T02:18Z",
+  "finished": null
+ },
+ "ethylene": {
+  "name": "Ethylene catcher",
+  "ours": 77,
+  "today": 66,
+  "today_name": "calix[4]arene",
+  "ours_name": "L5-3",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 66
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 71
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 75
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 67
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 77
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 175,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-17T03:27Z",
+  "finished": null
+ },
+ "rareearth": {
+  "name": "Rare-earth separator",
+  "ours": 49,
+  "today": 38,
+  "today_name": "TODGA",
+  "ours_name": "L5-3",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 39
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 49
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 138,
+  "best_found_in": "v1 P4 cheaper",
+  "started": "2026-10-18T03:11Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "plastic": {
+  "name": "Plastic-to-fuel catalyst",
+  "ours": 72,
+  "today": 73,
+  "today_name": "Pt on zeolite",
+  "ours_name": "Pt\u2013In (single atom)",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 72
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 65
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 68
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 68
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-18T04:15Z",
+  "finished": "2026-10-19T04:07Z"
+ },
+ "gold": {
+  "name": "Gold catcher",
+  "ours": 63,
+  "today": 44,
+  "today_name": "quaternary ammonium (resin site)",
+  "ours_name": "L5-15",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 59
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 63
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 176,
+  "best_found_in": "v1 P3 US-sourced",
+  "started": "2026-10-18T06:33Z",
+  "finished": null
+ },
+ "tmah": {
+  "name": "TMAH recovery",
+  "ours": 52,
+  "today": 47,
+  "today_name": "calix[4]arene",
+  "ours_name": "L2-44",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 52
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 143,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-18T04:57Z",
+  "finished": null
+ },
+ "cesium": {
+  "name": "Cesium catcher",
+  "ours": 60,
+  "today": 33,
+  "today_name": "calix[4]arene-crown-6",
+  "ours_name": "Design C",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 142,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-18T14:10Z",
+  "finished": null
+ },
+ "sulfur": {
+  "name": "Sulfur trap",
+  "ours": 61,
+  "today": 54,
+  "today_name": "beta-cyclodextrin",
+  "ours_name": "L2-21",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 57
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 61
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 186,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-18T15:31Z",
+  "finished": null
+ },
+ "phosphate": {
+  "name": "Phosphate catcher",
+  "ours": 20,
+  "today": 40,
+  "today_name": "quaternary ammonium (resin site)",
+  "ours_name": "Design A",
+  "fails": [
+   "Picks phosphate over chloride, bicarbonate",
+   "Catches phosphate",
+   "Stays in the filter"
+  ],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": false,
+    "state": "failed",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 125,
+  "best_found_in": "v1 P1 design",
+  "started": "2026-10-18T18:45Z",
+  "finished": null
+ },
+ "xenon": {
+  "name": "Xenon catcher",
+  "ours": 61,
+  "today": 59,
+  "today_name": "beta-cyclodextrin",
+  "ours_name": "L5-21",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 57
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 60
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 61
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 130,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-18T23:43Z",
+  "finished": null
+ },
+ "chalco": {
+  "name": "Copper leach booster",
+  "ours": 55,
+  "today": 63,
+  "today_name": "ethylene thiourea",
+  "ours_name": "Design B",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 55
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 44
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 44
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 46
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 109,
+  "best_found_in": "v1 P3 US-sourced",
+  "started": "2026-10-19T17:08Z",
+  "finished": null
+ },
+ "ammonium": {
+  "name": "Ammonium sensor binder",
+  "ours": 65,
+  "today": 58,
+  "today_name": "calix[4]arene",
+  "ours_name": "L2-56",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 41
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 65
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 64
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 41
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 54
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 167,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-19T16:28Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "psensor": {
+  "name": "Phosphate sensor binder",
+  "ours": 59,
+  "today": 53,
+  "today_name": "tren tris(phenylurea)",
+  "ours_name": "L4-17",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 58
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 54
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 58
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 59
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 190,
+  "best_found_in": "v1 P1 design",
+  "started": "2026-10-19T16:28Z",
+  "finished": null
+ },
+ "magrec": {
+  "name": "Magnet recycling extractant",
+  "ours": 51,
+  "today": 57,
+  "today_name": "Cyanex 272",
+  "ours_name": "L5-3",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 45
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 51
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 144,
+  "best_found_in": "v1 P4 cheaper",
+  "started": "2026-10-20T03:02Z",
+  "finished": null
+ },
+ "reecoal": {
+  "name": "Rare earths from coal waste",
+  "ours": 20,
+  "today": 31,
+  "today_name": "EDTA",
+  "ours_name": "Design A",
+  "fails": [
+   "Catches trace rare earths"
+  ],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 129,
+  "best_found_in": "v1 P4 cheaper",
+  "started": "2026-10-20T03:02Z",
+  "finished": null
+ },
+ "culoop": {
+  "name": "Copper loop inhibitor",
+  "ours": 68,
+  "today": 40,
+  "today_name": "mercaptobenzothiazole",
+  "ours_name": "Glutamate(2-)",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 68
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 56
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 55
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 55
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 149,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-21T13:57Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "lignin": {
+  "name": "Lignin to aromatics catalyst",
+  "ours": 88,
+  "today": 48,
+  "today_name": "Ru on carbon",
+  "ours_name": "Cu\u2013Mo\u2013Fe (2 of 9 top atoms)",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 79
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 80
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 72
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 88
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-21T17:49Z",
+  "finished": "2026-10-22T00:21Z"
+ },
+ "coolant": {
+  "name": "PFAS-free immersion fluid",
+  "ours": 50,
+  "today": 52,
+  "today_name": "ElectroCool EC-110",
+  "ours_name": "PAO 2",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 49
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-21T14:15Z",
+  "finished": "2026-10-21T23:13Z"
+ },
+ "ionomer": {
+  "name": "AEM ionomer cation",
+  "ours": 34,
+  "today": 42,
+  "today_name": "ASU spiro",
+  "ours_name": "CC1(c2ccccc2)CC[N+]2(CCCC2)CC1",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 34
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 34
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 34
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-23T04:47Z",
+  "finished": "2026-10-23T05:54Z"
+ },
+ "pucat": {
+  "name": "Foam recycling catalyst",
+  "ours": 50,
+  "today": 63,
+  "today_name": "NaOH (hydroxide)",
+  "ours_name": "tert-butoxide",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 50
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 50
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-23T04:33Z",
+  "finished": "2026-10-23T04:33Z"
+ },
+ "hardener": {
+  "name": "Recyclable epoxy hardener",
+  "ours": 85,
+  "today": 26,
+  "today_name": "Recyclamine-type ketal diamine",
+  "ours_name": "cyclopentanone ketal, aminocyclohexyl",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 85
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 85
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 85
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 75
+   },
+   {
+    "phase": "P5 drop-in",
+    "done": true,
+    "state": "done",
+    "score": 85
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": "2026-10-23T04:41Z",
+  "finished": "2026-10-23T04:53Z"
+ },
+ "polysulfide": {
+  "name": "Polysulfide binder",
+  "ours": 49,
+  "today": 29,
+  "today_name": "beta-cyclodextrin",
+  "ours_name": "Design G",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 49
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 47
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 47
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 100,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-23T02:44Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "shortpfas": {
+  "name": "Short-chain PFAS trap",
+  "ours": 69,
+  "today": 35,
+  "today_name": "quaternary ammonium (resin site)",
+  "ours_name": "L2-45",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 65
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 69
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 20
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": true,
+    "state": "done",
+    "score": null
+   }
+  ],
+  "designs": 118,
+  "best_found_in": "v1 P2 edits",
+  "started": "2026-10-23T08:06Z",
+  "finished": "2026-10-23T17:06Z"
+ },
+ "dyetrap": {
+  "name": "Dye trap for nylon recycling",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 18,
+  "best_found_in": "v1 P1 design",
+  "started": "2026-10-23T13:02Z",
+  "finished": null
+ },
+ "femob": {
+  "name": "Iron mobiliser",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "water MD",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": 17,
+  "best_found_in": "v1 P1 design",
+  "started": "2026-10-23T05:03Z",
+  "finished": null
+ },
+ "antiscale": {
+  "name": "Antiscalant at pH 13-14",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "pgmwater": {
+  "name": "PGM catcher",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "pgmchlor": {
+  "name": "Precious metal catcher",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "uranyl": {
+  "name": "Uranium from seawater",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "tmdiss": {
+  "name": "Cathode metal scavenger",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "cmpchel": {
+  "name": "Copper polishing chelator",
+  "ours": null,
+  "today": null,
+  "today_name": null,
+  "ours_name": null,
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P2 edits",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "queued",
+    "score": null
+   },
+   {
+    "phase": "P6 real-world check",
+    "done": false,
+    "state": "queued",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "pdscav": {
+  "name": "Palladium scavenger",
+  "ours": 80,
+  "today": 22,
+  "today_name": "thiourea resin",
+  "ours_name": "L2-52",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 56
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 80
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 76
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 56
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "nitrite": {
+  "name": "Nitrite scavenger",
+  "ours": 71,
+  "today": 62,
+  "today_name": "glycine",
+  "ours_name": "Design A",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 71
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 62
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 17
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": false,
+    "state": "nothing to do",
+    "score": null
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "ironmedia": {
+  "name": "Iron carrier",
+  "ours": 67,
+  "today": 62,
+  "today_name": "8-hydroxyquinoline",
+  "ours_name": "L3-21",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 38
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 40
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 67
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 54
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "tfaswap": {
+  "name": "TFA trap",
+  "ours": 69,
+  "today": 39,
+  "today_name": "tren tris(phenylurea)",
+  "ours_name": "Design B",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 69
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 49
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 49
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 48
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "endotox": {
+  "name": "Endotoxin binder",
+  "ours": 86,
+  "today": 26,
+  "today_name": "protamine fragment (Arg dipeptide)",
+  "ours_name": "Design A",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 86
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 53
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 26
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 25
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "chiral": {
+  "name": "Chiral selector",
+  "ours": 77,
+  "today": 33,
+  "today_name": "18-crown-6 tetracarboxylic acid",
+  "ours_name": "L3-32",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 38
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 42
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 77
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 42
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "cryo": {
+  "name": "DMSO-free cryoprotectant",
+  "ours": 40,
+  "today": 62,
+  "today_name": "proline",
+  "ours_name": "L2-40",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 37
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 40
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "nothing to do",
+    "score": null
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 28
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "abcap": {
+  "name": "Antibody capture ligand",
+  "ours": 73,
+  "today": 24,
+  "today_name": "MBI (mercaptobenzimidazole sulfonate)",
+  "ours_name": "L2-60",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 44
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 73
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": true,
+    "state": "done",
+    "score": 70
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 36
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ },
+ "vaxstab": {
+  "name": "Vaccine stabiliser",
+  "ours": 63,
+  "today": 69,
+  "today_name": "glycine",
+  "ours_name": "L2-13",
+  "fails": [],
+  "phases": [
+   {
+    "phase": "P1 design",
+    "done": true,
+    "state": "done",
+    "score": 36
+   },
+   {
+    "phase": "P2 edits",
+    "done": true,
+    "state": "done",
+    "score": 63
+   },
+   {
+    "phase": "P3 US-sourced",
+    "done": false,
+    "state": "nothing to do",
+    "score": null
+   },
+   {
+    "phase": "P4 cheaper",
+    "done": true,
+    "state": "done",
+    "score": 27
+   }
+  ],
+  "designs": null,
+  "best_found_in": null,
+  "started": null,
+  "finished": null
+ }
+}

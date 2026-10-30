@@ -1,0 +1,77 @@
+{
+ "key": "cmpchel",
+ "name": "Cu CMP chelator",
+ "market": {
+  "usd_yr": 600000000,
+  "year": 2025,
+  "what": "Copper + barrier CMP slurries, world",
+  "method": "TECHCET slurry $2.0B (2024) x ~28% Cu/barrier share (est.) = ~$0.56B; cross-check report $0.58B; other reports $1.1-1.2B",
+  "sources": [
+   "https://www.semiconductor-digest.com/techcet-projects-cmp-market-is-set-to-reach-3-6b-in-2025",
+   "https://www.globalgrowthinsights.com/market-reports/copper-barrier-cmp-slurries-market-117055",
+   "https://www.promarketreports.com/reports/copper-cmp-slurry-51611"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 150000000,
+  "logic": "~$150B/yr advanced-logic wafer value (TSMC ~$120B 2025, ~74% at <=7nm, + others) x 0.1% yield from less Cu corrosion/dishing/BTA residue = ~$150M (est.)",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "royalty ~3% x ~$170M of Cu slurry using it (~25% of 2032 market) = ~$5M, or chelator sold to slurry maker",
+  "gross_margin_pct": 75,
+  "margin_logic": "tiny volume, high-purity specialty or license",
+  "sources": [
+   "https://investor.tsmc.com/english/quarterly-results",
+   "https://www.semiconductor-digest.com/techcet-projects-cmp-market-is-set-to-reach-3-6b-in-2025"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 9,
+  "drivers": "more CMP steps for GAA, backside power, 3D NAND, hybrid bonding; TECHCET CMP consumables 8.6%/yr to 2029",
+  "deadline": "",
+  "sources": [
+   "https://www.semiconductor-digest.com/techcet-projects-cmp-market-is-set-to-reach-3-6b-in-2025"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Revasum"
+  ],
+  "incumbents": [
+   "Entegris (CMC Materials)",
+   "Fujimi",
+   "Resonac",
+   "DuPont/Qnity",
+   "Fujifilm",
+   "Merck KGaA (Versum)",
+   "Anji Microelectronics",
+   "Soulbrain",
+   "BASF (chelators)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "copper CMP slurry complexing agent",
+  "groups_active": null,
+  "notes": "Slurry makers own formulas and fab quals; glycine/citrate + BTA standard. Entry only via a slurry maker. China (Anji) growing fast.",
+  "sources": [
+   "https://www.semiconductor-digest.com/techcet-projects-cmp-market-is-set-to-reach-3-6b-in-2025"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 30000,
+  "synth": "catalog or 1-2 step custom (amino-acid/azole chelators), 3 variants",
+  "test": "Cu static etch + removal rate on blanket Cu wafers (200 mm benchtop polisher), ASTM G59 polarization, XPS residue; univ. CMP lab (e.g. Clarkson, U. Arizona)",
+  "logic": "4-6 wk synth + 4 wk polishing; 3 x ~$5k synth + ~$15k wafers (~$50-100 ea) and polisher time",
+  "sources": [
+   "https://www.astm.org/g0059-97r20.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "slurry maker eval 6-12 mo; fab qual on patterned wafers + PCN 12-24 mo",
+  "sources": [
+   "https://www.semiconductor-digest.com/techcet-projects-cmp-market-is-set-to-reach-3-6b-in-2025"
+  ]
+ }
+}

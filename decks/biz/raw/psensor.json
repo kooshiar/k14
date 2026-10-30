@@ -1,0 +1,80 @@
+{
+ "key": "psensor",
+ "name": "Phosphate probe",
+ "market": {
+  "usd_yr": 262000000,
+  "year": 2024,
+  "what": "phosphate analyzers (online wet-chemistry + lab/portable), world",
+  "method": "report value $262M (2024); est. bottom-up ~10k online units/yr x ~$20k + reagent sets ~$180 each = similar order. A $10.8B report figure was discarded as not credible",
+  "sources": [
+   "https://www.marketresearch.com/Bosson-Research-v4252/Global-Phosphate-Analyzer-Research-Status-41615501",
+   "https://hach.com/products/online-instruments/online-analyzers/phosphate-analyzers/phosphax-lr-chemistryreagents",
+   "https://www.hach.com/products/online-instruments/online-analyzers/phosphate-analyzers"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 500000000,
+  "logic": "Online PO4 control saved one WWTP $25-40k/yr ferric. Est. 20k P-limited plants worldwide without online control x ~$20k/yr chemical saved = $400M; plus ~$100M/yr less analyzer capex/reagents on the existing fleet (est.)",
+  "our_revenue_usd_yr": 10000000,
+  "revenue_logic": "est. 25k sensing caps/yr (new probes + 6-12 month refills) x $400 K14 share via OEM supply/license",
+  "gross_margin_pct": 70,
+  "margin_logic": "sensor membrane consumable; binder is mg per cap",
+  "sources": [
+   "https://www.ysi.com/ysi-blog/water-blogged-blog/2017/06/how-automated-orthophosphate-monitoring-cut-costs-by-25-percent",
+   "https://www.epa.gov/npdes/status-nutrient-requirements-npdes-permitted-facilities-majors-limits"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 5,
+  "drivers": "tighter P limits (US to 0.05 mg/L, EU UWWTD recast); real-time nutrient control; watershed monitoring",
+  "deadline": "2039: EU UWWTD tertiary (P) treatment at plants >=150k PE",
+  "sources": [
+   "https://www.marketresearch.com/Bosson-Research-v4252/Global-Phosphate-Analyzer-Research-Status-41615501",
+   "https://www.gminsights.com/industry-analysis/water-quality-analyzer-market",
+   "https://sswm.info/node/13492"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Aquamonitrix (microfluidic nutrient analyser, DCU/T.E. Labs)",
+   "Proteus Instruments (optical TP proxy)"
+  ],
+  "incumbents": [
+   "Hach (Phosphax sc, NP6000sc)",
+   "Endress+Hauser (CA80PH)",
+   "Xylem/YSI",
+   "Sea-Bird Scientific (HydroCycle-PO4)",
+   "Thermo Fisher (Orion)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "phosphate ion selective electrode water",
+  "groups_active": null,
+  "notes": "No commercial reagent-free phosphate ISE found; work is academic (UWM graphene sensor patent, Clemson/ASU/NCSU impedimetric).",
+  "sources": [
+   "https://uwm.edu/engineering/?p=21051",
+   "https://phys.org/news/2024-07-team-technique-nutrients-soil-faster.pdf",
+   "https://cordis.europa.eu/article/id/436473-a-revolutionary-technology-that-may-alter-how-we-monitor-water-quality"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 35000,
+  "synth": "1-2 step: bis-thiourea from catalog isothiocyanate + diamine, 3 variants",
+  "test": "PVC-membrane ISE; IUPAC selectivity (separate solution / fixed interference) vs Cl-, NO3-, SO4, HCO3; then real effluent vs EPA 365.1; university electrochemistry lab",
+  "logic": "synth 4 wk + membrane/electrode work 8 wk; 3 x $4k synth + ~$20k electrode testing + ~$3k EPA 365.1 reference samples",
+  "sources": [
+   "https://www.sigmaaldrich.com/PR/en/tech-docs/paper/340620",
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Nutrients-Lab-price-list-effective-3-1-2026.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "6-12 month drift/lifetime field trial with OEM; process-control use needs no EPA approval (compliance needs 40 CFR 136 methods)",
+  "sources": [
+   "https://www.epa.gov/cwa-methods",
+   "https://www.ysi.com/ysi-blog/water-blogged-blog/2020/10/tech-comparison-ise-vs-analyzer-for-ammonium-monitoring"
+  ]
+ }
+}

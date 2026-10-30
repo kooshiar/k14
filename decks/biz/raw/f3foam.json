@@ -1,0 +1,83 @@
+{
+ "key": "f3foam",
+ "name": "Fluorine-free foam surfactant",
+ "market": {
+  "usd_yr": 850000000,
+  "year": 2024,
+  "what": "firefighting foam concentrate (Class B AFFF + F3), world",
+  "method": "report $869M (2024); bottom-up ~110M L/yr x ~$7/L (bulk $25-45/gal) = ~$0.8B; other reports at $5.9B look inflated",
+  "sources": [
+   "https://www.coherentmarketinsights.com/market-insight/firefighting-foam-market-6165",
+   "https://www.credenceresearch.com/report/fire-fighting-foam-market",
+   "https://marketintelo.com/report/fluorine-free-firefighting-foam-market"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 300000000,
+  "logic": "NFPA 11 rate 0.16 gpm/ft2 for F3 vs 0.10 for AFFF: a surfactant giving AFFF-level film/fuel resistance cuts foam ~37% on ~$0.85B = ~$0.3B/yr, plus smaller tanks/pumps (not counted)",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "surfactant ~20% of concentrate cost = ~$170M; ~7% share sold to foam makers = ~$12M",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty surfactant (siloxane/glycoside class), 1-2 step from commodity inputs",
+  "sources": [
+   "https://tft.com/?p=17089",
+   "https://serdp-estcp.mil/projects/details/56d054a7-e040-40ea-a750-ee2be7bfdfe8/wp18-1519-project-overview"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 8,
+  "drivers": "forced AFFF replacement: EU Reg 2025/1988, US DoD/state bans, airports (FAA allows F3 since 2023)",
+  "deadline": "EU: portable extinguishers 23 Oct 2026; all uses except Seveso by 23 Oct 2030",
+  "sources": [
+   "https://www.ul.com/news/new-eu-restriction-pfas-firefighting-foams",
+   "https://www.cirs-group.com/en/chemicals/eu-adopts-ban-on-pfas-in-firefighting-foam-reach-regulation-amendment-to-take-full-effect-by-2030",
+   "https://marketintelo.com/report/fluorine-free-firefighting-foam-market"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Revive Environmental (AFFF destruction)",
+   "Aclarity (PFAS destruction)",
+   "374Water"
+  ],
+  "incumbents": [
+   "Perimeter Solutions (Solberg)",
+   "Johnson Controls (Chemguard, Ansul)",
+   "National Foam / Angus Fire",
+   "Dr. Sthamer",
+   "Fomtec",
+   "Bio-Ex",
+   "Auxquimia",
+   "Dow",
+   "Evonik"
+  ],
+  "papers_3yr": null,
+  "paper_query": "fluorine-free firefighting foam",
+  "groups_active": null,
+  "notes": "Solberg 3% MIL-SPEC SFFF first on DoD QPL (MIL-PRF-32725); NRL glycosiloxane surfactants matched AFFF on small jet-fuel pan fires",
+  "sources": [
+   "https://ir.perimeter-solutions.com/news-events/press-releases/detail/52/perimeter-solutions-solberg-3-mil-spec-sfff-is-first-fluorine-free-firefighting-foam-concentrate-on-dod-qualified-products-list",
+   "https://serdp-estcp.mil/projects/details/56d054a7-e040-40ea-a750-ee2be7bfdfe8/wp18-1519-project-overview"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 50000,
+  "synth": "1-2 step custom (e.g. hydrosilylation siloxane-glycoside), 3 variants x 50-100 g for foam batches",
+  "test": "surface/interfacial tension + spreading on heptane (ASTM D1331), expansion/drainage and small pan fire per EN 1568-3 / MIL-PRF-32725 at a fire lab (e.g. SwRI, Jensen Hughes)",
+  "logic": "synth 6 wk + foam formulation and fire tests 6 wk; synth $18k + fire test days ~$30k (est.)",
+  "sources": [
+   "https://www.ul.com/news/new-eu-restriction-pfas-firefighting-foams",
+   "https://serdp-estcp.mil/projects/details/ca71b7bd-553a-4804-9f6e-3aa84f27d94d/testing-of-new-fluorine-free-green-surfactant-mixtures-to-replace-afff-demonstration-plan"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "foam maker formulation 1 yr; EN 1568 / UL 162 / FM 5130 certs 6-12 mo; MIL-PRF-32725 QPL 1-2 yrs; TSCA PMN",
+  "sources": [
+   "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC-150-5210-6e-arff-ext-agents.pdf"
+  ]
+ }
+}

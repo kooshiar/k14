@@ -1,0 +1,79 @@
+{
+ "key": "antiscale",
+ "name": "pH 14 antiscalant",
+ "market": {
+  "usd_yr": 510000000,
+  "year": 2025,
+  "what": "EDTA (today's tool for Ca at pH 13-14), world; only a small slice is scale control in alkaline electrolysis",
+  "method": "QYR $514M (2025); ~106 kt/yr x ~$4.8/kg est. agrees; nearest real pH-14 antiscalant use is Bayer alumina (MAX HT, 18+ plants)",
+  "sources": [
+   "https://www.giiresearch.com/report/qyr1990815-global-ethylene-diamine-tetraacetic-acid-edta.html",
+   "https://19january2021snapshot.epa.gov/greenchemistry/presidential-green-chemistry-challenge-2012-greener-reaction-conditions-award_.html"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 20000000,
+  "logic": "est. 2033 electrochemical lime/cement ~2 Mt/yr; scale adds ~10% cell voltage + ~5% downtime ~ $10/t -> $20M/yr. Upside if it also works in Bayer liquor: $2-20M/yr saved per plant",
+  "our_revenue_usd_yr": 4000000,
+  "revenue_logic": "2 Mt x ~0.2 kg/t dose x $15/kg = $6M pool x ~60% share (few buyers)",
+  "gross_margin_pct": 50,
+  "margin_logic": "macrocycle costs more to make than phosphonates; small volume, sole-source add-in",
+  "sources": [
+   "https://www.canarymedia.com/articles/clean-industry/clean-cement-startup-sublime-cuts-jobs",
+   "https://19january2021snapshot.epa.gov/greenchemistry/presidential-green-chemistry-challenge-2012-greener-reaction-conditions-award_.html"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 10,
+  "drivers": "low-carbon cement demand (~8-11%/yr per reports); CBAM and ETS on cement; but Sublime paused Holyoke after DOE grant cut",
+  "deadline": "EU CBAM: first certificate surrender for 2026 cement imports in 2027",
+  "sources": [
+   "https://imarcgroup.com/green-cement-market",
+   "https://www.bostonglobe.com/2025/12/05/metro/trump-administration-cancelled-sublime-systems-federal-grant"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Sublime Systems",
+   "Equatic",
+   "Chement"
+  ],
+  "incumbents": [
+   "BASF (Trilon)",
+   "Nouryon (Dissolvine)",
+   "Syensqo (MAX HT)",
+   "Solenis",
+   "Ecolab/Nalco",
+   "Kemira",
+   "Italmatch (Dequest)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "calcium scale inhibitor alkaline electrolysis",
+  "groups_active": null,
+  "notes": "no startup found selling a pH-14 antiscalant; buyers fix fouling by process design. Sublime >$200M raised ($75M CRH/Holcim) but lost $87M DOE award, paused Dec 2025",
+  "sources": [
+   "https://www.esgtoday.com/crh-holcim-invest-75-million-in-low-carbon-cement-developer-sublime/",
+   "https://www.spglobal.com/energy/en/news-research/latest-news/fertilizers/121125-us-cement-maker-sublime-systems-pauses-holyoke-plant-after-losing-federal-grant",
+   "https://www.osti.gov/pages/servlets/purl/2483753"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 45000,
+  "synth": "macrocycle: calix[4]arene from catalog p-tBu-calixarene, 4-5 steps (dealkylation, upper-rim carboxyl, lower-rim amide arms); 3 variants",
+  "test": "static jar test per NACE TM0374 adapted to pH 13.5 with Ca(OH)2/CaCO3 supersaturation, ICP-OES Ca; then 200 h bench electrolyzer voltage-rise test; university or water-treatment lab",
+  "logic": "synth 13 wk + jar 2 wk + cell 3 wk; synth ~$30k + ICP ~$30-80/sample + cell test ~$10k",
+  "sources": [
+   "https://store.ampp.org/tm0374-2001-laboratory-screening-tests-to-determine-the-ability-of-scale-inhibitors-to-prevent-the-precipitation-of-calcium-sulfate-and-calcium-carbonate-from-solution-for-oil-and-gas-production-syste"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2.5,
+  "gates": "buyer bench + 1,000 h pilot electrolyzer; TSCA PMN (90 d) / REACH for new substance; depends on buyers restarting plants",
+  "sources": [
+   "https://neal.house.gov/2025/12/04/mayor-says-we-got-trumped-sublime-systems-pauses-work-in-holyoke/"
+  ]
+ }
+}

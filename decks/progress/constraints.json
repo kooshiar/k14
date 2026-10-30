@@ -10,7 +10,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to selenate (UMA, water).",
@@ -36,7 +39,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Stays out of water."
   ],
   "sim": [
    "Binding free energy to TFA (UMA, water).",
@@ -63,7 +72,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to 1,4-dioxane (UMA, water).",
@@ -87,7 +99,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Stays out of water."
   ],
   "sim": [
    "Binding free energy to guaiacol (UMA, water).",
@@ -113,7 +131,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Reaction free energy with boric acid (UMA, water).",
@@ -137,7 +158,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to D4 siloxane (UMA, gas phase).",
@@ -162,7 +186,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Stays out of water."
   ],
   "sim": [
    "Binding free energy to 2-acetyl-tetrahydropyridine (UMA, water).",
@@ -187,7 +217,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Dissolves in the water."
   ],
   "sim": [
    "Binds Al³⁺ and Fe³⁺ water sites (UMA).",
@@ -208,7 +244,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Reaction free energy with formaldehyde (UMA, water).",
@@ -229,7 +268,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Dissolves in the water."
   ],
   "sim": [
    "Binds the iron surface site (UMA, water).",
@@ -252,7 +297,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to 2,4,6-trichloroanisole (UMA, water).",
@@ -275,7 +323,13 @@
    "Safe for drinking water.",
    "Stays in the filter.",
    "Low cost per m³ of water.",
-   "Made from US raw materials."
+   "Made from US raw materials.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Stays out of water."
   ],
   "sim": [
    "Binding free energy to PFOA (UMA, water).",
@@ -301,7 +355,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to lithium (UMA, water).",
@@ -327,7 +384,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to CO2 (UMA, gas phase).",
@@ -352,7 +412,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to ethylene (UMA, gas phase).",
@@ -378,7 +441,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Dissolves in the oil phase."
   ],
   "sim": [
    "Binding free energy to neodymium (UMA, water).",
@@ -406,7 +475,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to gold chloride (UMA, water).",
@@ -434,7 +506,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to tetramethylammonium (UMA, water).",
@@ -461,7 +536,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to cesium (UMA, water).",
@@ -486,7 +564,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to 4,6-dimethyldibenzothiophene (UMA, oil model).",
@@ -511,7 +592,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to phosphate (UMA, water).",
@@ -539,7 +623,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to xenon (UMA, gas phase).",
@@ -563,7 +650,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binds the copper-sulfide site (UMA, water).",
@@ -588,7 +678,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Stays out of water."
   ],
   "sim": [
    "Binding free energy to ammonium (UMA, membrane model).",
@@ -615,7 +711,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to phosphate (UMA, membrane model).",
@@ -642,7 +741,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to neodymium (UMA, water).",
@@ -669,7 +771,10 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make."
   ],
   "sim": [
    "Binding free energy to neodymium (UMA, water).",
@@ -695,7 +800,13 @@
    "Made from US raw materials.",
    "Drops into today’s setup.",
    "Needs little new equipment.",
-   "Easy to ship and store."
+   "Easy to ship and store.",
+   "Allowed for sale.",
+   "Holds more per kg.",
+   "Easy to make.",
+   "Lasts in use.",
+   "Resists oxidation.",
+   "Dissolves in the water."
   ],
   "sim": [
    "Binds the copper site in water (UMA).",

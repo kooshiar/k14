@@ -1,0 +1,78 @@
+{
+ "key": "sulfur",
+ "name": "Last-sulfur diesel trap",
+ "market": {
+  "usd_yr": 520000000,
+  "year": 2024,
+  "what": "Hydrotreating catalyst used for diesel (ULSD) desulfurization, world",
+  "method": "Hydrotreating catalysts $1.29-1.39B (3 reports) x ~40% diesel share (est.) = $0.53B; cross-check est. 28 mb/d gasoil x 365 x ~$0.05/bbl catalyst = $0.51B",
+  "sources": [
+   "https://www.datamintelligence.com/research-report/hydrotreating-catalysts-market",
+   "https://www.reanin.com/reports/hydrotreating-catalysts-market",
+   "https://www.iea.org/reports/oil-2025"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 300000000,
+  "logic": "Sorbent pulls last 4,6-DMDBT (50->10 ppm) so HDS runs milder: ~1.9x less catalyst volume, est. ~30 scf/bbl less H2 (~$0.11/bbl at $1.5/kg) + catalyst ~$0.02/bbl = ~$0.13/bbl x 2.5 Gbbl/yr constrained units (25% of diesel, est.) = ~$0.3B. Must regenerate: 40 ppm S = ~5 g S/bbl",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "Sorbent priced at ~30% of value ($0.1B if all adopt) x ~5% adoption by yr 7 = ~$5M; plus fuel-cell logistic-fuel niche",
+  "gross_margin_pct": 55,
+  "margin_logic": "Specialty regenerable sorbent; organic receptor grafted on silica/resin, toll made",
+  "sources": [
+   "https://www.ogj.com/general-interest/companies/article/17221108/german-refiner-debottlenecks-diesel-hydrotreaters-for-new-sulfur-specs",
+   "https://theicct.org/sites/default/files/publications/Hart_Mathpro_ULSFstudy_final6nov2012_opt.pdf",
+   "https://www.iea.org/reports/global-hydrogen-review-2024"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 0.3,
+  "drivers": "Diesel demand flat to falling (EVs, LNG trucks); more sour/heavy crude and HVO co-processing keep HDS tight",
+  "deadline": "",
+  "sources": [
+   "https://hydrocarbonprocessing.com/news/2024/11/quarterly-gasoil-uses-rises-but-future-demand-set-to-be-weak/",
+   "https://www.iea.org/reports/oil-2025"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "SulfaTrap (2012, TDA spinout, sorbents for fuel-cell fuels)"
+  ],
+  "indirect_startups": [],
+  "incumbents": [
+   "Topsoe",
+   "Ketjen (Albemarle)",
+   "Shell Catalysts & Technologies",
+   "Axens",
+   "Advanced Refining Technologies (Chevron-Grace)",
+   "Sinopec (S Zorb)",
+   "Honeywell UOP"
+  ],
+  "papers_3yr": null,
+  "paper_query": "adsorptive desulfurization diesel dibenzothiophene",
+  "groups_active": null,
+  "notes": "Topsoe/Ketjen catalysts are the real rival: HDS keeps improving. Adsorptive ULSD at lab scale (CSIR-IIP/SINTEF). No funded diesel-polishing startup found",
+  "sources": [
+   "https://www.indiascienceandtechnology.gov.in/technologies/low-carbon-footprint-adsorptive-process-production-ultra-low-sulphur-diesel",
+   "https://aiche.org/conferences/aiche-annual-meeting/2014/proceeding/paper/380h-sulfatrap-sorbents-effective-sulfur-removal-fuel-cells-dimethyl-sulfide-mercaptan-and-cos-1"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 25000,
+  "synth": "1-2 step custom (bis-urea ammonium from isocyanate + polyamine) then graft on silica: s0 is insoluble in diesel, must be a solid sorbent",
+  "test": "Batch isotherms + breakthrough column with 4,6-DMDBT in dodecane and real ULSD feed; sulfur by ASTM D5453 UV fluorescence; 5 regen cycles; university lab",
+  "logic": "Synth+graft 3 variants 6-8 wk, $12-18k (CRO); tests 4 wk, ~$7k (~80 samples x $50-80)",
+  "sources": [
+   "https://www.astm.org/d5453-19a.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "Refinery slipstream pilot 6-12 mo; sorbent life and regen proof ~1 yr; partner licensor (Topsoe/Axens) or fuel-cell OEM",
+  "sources": [
+   "https://www.ogj.com/refining-processing/refining/article/17222464/special-report-poor-hydrotreater-reliability-can-reduce-ulsd-production"
+  ]
+ }
+}

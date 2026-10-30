@@ -1,0 +1,74 @@
+{
+ "key": "plating",
+ "name": "Packaging plating leveler",
+ "market": {
+  "usd_yr": 509000000,
+  "year": 2025,
+  "what": "Cu electroplating chemistry for advanced packaging (pillar, bump, RDL, TSV), world",
+  "method": "TECHCET 2025: Cu AP $509M of $1,373M plating chemicals; cross-check report $1.43B all AP plating, additives ~$0.3B",
+  "sources": [
+   "https://www.semiconductor-digest.com/rising-copper-demand-in-semiconductors-drives-plating-chemicals-for-advanced-packaging-and-interconnects/",
+   "https://www.openpr.com/news/4593562/advanced-packaging-electroplating-additives-market-poised"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 500000000,
+  "logic": "~$250B/yr AI chips through CoWoS-class packaging (2026 est., ~120k wafers/mo) x 0.2% yield from fewer plating voids = ~$500M (est.)",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "2032 Cu AP chemistry ~$900M x ~20% using our leveler x ~6% royalty = ~$11M; licensed to one chemistry house",
+  "gross_margin_pct": 85,
+  "margin_logic": "license/royalty or tiny-volume leveler sold to formulator",
+  "sources": [
+   "https://www.trendforce.com/news/?p=59316",
+   "https://www.itiger.com/hans/news/1194107866"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 10,
+  "drivers": "AI/HPC 2.5D/3D packaging; CoWoS 75k (2025) to 120-140k wafers/mo (2026); finer RDL, hybrid bonding, glass/panel substrates",
+  "deadline": "",
+  "sources": [
+   "https://www.semiconductor-digest.com/rising-copper-demand-in-semiconductors-drives-plating-chemicals-for-advanced-packaging-and-interconnects/",
+   "https://www.trendforce.com/news/?p=59316"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [],
+  "incumbents": [
+   "MacDermid Alpha (Element Solutions)",
+   "MKS Atotech",
+   "DuPont/Qnity",
+   "Moses Lake Industries",
+   "JCU",
+   "Uyemura",
+   "Ishihara Chemical",
+   "BASF (additive raw)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "copper electroplating leveler via filling",
+  "groups_active": null,
+  "notes": "3-4 chemistry houses own fab/OSAT quals; Atotech $40M Thailand plant; Moses Lake $100M Arizona R&D. No startup found selling levelers.",
+  "sources": [
+   "https://www.semiconductor-digest.com/rising-copper-demand-in-semiconductors-drives-plating-chemicals-for-advanced-packaging-and-interconnects/"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 35000,
+  "synth": "1-2 step custom (quaternary/imidazolium leveler), 3 variants; some catalog dyes as controls",
+  "test": "Hull cell + CV/CVS of additive effect; via-fill on patterned via/TSV coupons with cross-section SEM; univ. lab (e.g. Georgia Tech PRC)",
+  "logic": "5-6 wk CRO synth + 4 wk plating; 3 x ~$6k synth + ~$10k coupons + ~$5k cross-sections (~$300-500 ea)",
+  "sources": [
+   "https://www.semiconductor-digest.com/rising-copper-demand-in-semiconductors-drives-plating-chemicals-for-advanced-packaging-and-interconnects/"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "chemistry-house eval 6-12 mo; OSAT/foundry qual + reliability (TC, HAST) 12-18 mo",
+  "sources": [
+   "https://www.semiconductor-digest.com/rising-copper-demand-in-semiconductors-drives-plating-chemicals-for-advanced-packaging-and-interconnects/"
+  ]
+ }
+}

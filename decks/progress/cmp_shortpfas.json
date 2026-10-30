@@ -7,7 +7,10 @@
   "US supply",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Stays out of water"
  ],
  "weights": [
   3,
@@ -15,6 +18,9 @@
   2,
   1,
   2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -30,34 +36,58 @@
     null,
     100,
     50,
-    89
+    89,
+    100,
+    50,
+    0
    ],
-   "overall": 31,
+   "overall": 35,
    "price": 2.12,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 7,
+     "score": 9,
      "rows": [
       {
        "name": "Strength",
-       "w": 20.0,
+       "w": 13.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Selectivity",
-       "w": 13.3,
+       "w": 8.9,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 6.7,
+       "w": 4.4,
        "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 4.4,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -119,33 +149,57 @@
     100,
     100,
     0,
-    35
+    35,
+    0,
+    0,
+    0
    ],
-   "overall": 27,
+   "overall": 21,
    "price": 1.19,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 7,
+     "score": 4,
      "rows": [
       {
        "name": "Strength",
-       "w": 20.0,
+       "w": 13.3,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Selectivity",
-       "w": 13.3,
+       "w": 8.9,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Holds more per kg",
-       "w": 6.7,
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 4.4,
        "val": 0,
        "cut": 0,
        "ok": true
@@ -205,95 +259,6 @@
    "fails": []
   },
   {
-   "label": "Alpha-cyclodextrin",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    0,
-    0,
-    28,
-    null,
-    100,
-    0,
-    24
-   ],
-   "overall": 11,
-   "price": 2.5,
-   "boxes": [
-    {
-     "box": "Performance",
-     "mult": 40,
-     "score": 1,
-     "rows": [
-      {
-       "name": "Strength",
-       "w": 20.0,
-       "val": 0,
-       "cut": 25,
-       "ok": false
-      },
-      {
-       "name": "Selectivity",
-       "w": 13.3,
-       "val": 0,
-       "cut": 25,
-       "ok": false
-      },
-      {
-       "name": "Holds more per kg",
-       "w": 6.7,
-       "val": 0,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Cost",
-     "mult": 15,
-     "score": 28,
-     "rows": [
-      {
-       "name": "Cost per use",
-       "w": 15.0,
-       "val": 28,
-       "cut": 25,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Safety & rules",
-     "mult": 30,
-     "score": 100,
-     "rows": [
-      {
-       "name": "Allowed for sale",
-       "w": 30.0,
-       "val": 100,
-       "cut": 31,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Fit & supply",
-     "mult": 15,
-     "score": 24,
-     "rows": [
-      {
-       "name": "Easy to make",
-       "w": 15.0,
-       "val": 24,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    }
-   ],
-   "fails": []
-  },
-  {
    "label": "Pillar[5]arene (OMe)",
    "sub": "Sold today",
    "kind": "known",
@@ -304,34 +269,58 @@
     5,
     100,
     0,
-    60
+    60,
+    100,
+    0,
+    50
    ],
-   "overall": 10,
+   "overall": 15,
    "price": 3.4,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 1,
+     "score": 3,
      "rows": [
       {
        "name": "Strength",
-       "w": 20.0,
-       "val": 0,
-       "cut": 25,
-       "ok": false
-      },
-      {
-       "name": "Selectivity",
        "w": 13.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
-       "name": "Holds more per kg",
-       "w": 6.7,
+       "name": "Selectivity",
+       "w": 8.9,
        "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 4.4,
+       "val": 50,
        "cut": 0,
        "ok": true
       }
@@ -390,6 +379,119 @@
    "fails": []
   },
   {
+   "label": "Alpha-cyclodextrin",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    0,
+    0,
+    28,
+    null,
+    100,
+    0,
+    24,
+    0,
+    13,
+    0
+   ],
+   "overall": 12,
+   "price": 2.5,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 1,
+     "rows": [
+      {
+       "name": "Strength",
+       "w": 13.3,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Selectivity",
+       "w": 8.9,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 4.4,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 4.4,
+       "val": 13,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 4.4,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 28,
+     "rows": [
+      {
+       "name": "Cost per use",
+       "w": 15.0,
+       "val": 28,
+       "cut": 25,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Allowed for sale",
+       "w": 30.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 24,
+     "rows": [
+      {
+       "name": "Easy to make",
+       "w": 15.0,
+       "val": 24,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
    "label": "Design B",
    "sub": "Level 1",
    "kind": "design",
@@ -400,7 +502,10 @@
     null,
     100,
     41,
-    68
+    68,
+    null,
+    null,
+    null
    ],
    "overall": 65,
    "price": 1.98,
@@ -489,7 +594,10 @@
     null,
     100,
     0,
-    49
+    49,
+    null,
+    null,
+    null
    ],
    "overall": 20,
    "price": 2.83,
@@ -580,7 +688,10 @@
     null,
     100,
     36,
-    64
+    64,
+    null,
+    null,
+    null
    ],
    "overall": 69,
    "price": 2.02,

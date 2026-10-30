@@ -1,0 +1,267 @@
+{
+ "why": {
+  "rareearth": "Nd and La are hard to separate; China does most of it",
+  "magrec": "Magnet scrap holds Nd and Dy that are rarely recovered",
+  "reecoal": "Coal waste holds rare earths at low levels",
+  "lithium": "Lithium sits in brines full of sodium",
+  "tmdiss": "Recycled cathode leach mixes Ni, Co and Mn",
+  "phosphate": "Phosphate in farm runoff feeds algae blooms",
+  "mousy": "Mousy wine can’t be fixed once it forms",
+  "rebar": "Road salt rusts the steel inside concrete",
+  "tfa": "The smallest forever chemical slips through water filters",
+  "chalco": "Most copper ore resists cheap leaching",
+  "boron": "Boron slips through desalination membranes",
+  "smoke": "Wildfire smoke ruins wine; today’s fix strips flavor",
+  "cement": "Low-clinker cement loses early strength",
+  "selenate": "Selenium in mine water looks like sulfate",
+  "psensor": "Tracking phosphate takes a $29,000 analyzer",
+  "sulfur": "One stubborn sulfur molecule stays in diesel",
+  "hardener": "Epoxy wind blades can’t be recycled",
+  "culoop": "Liquid cooling loops corrode copper",
+  "shortpfas": "Short-chain PFAS pass today’s water filters",
+  "dyetrap": "Dyes block nylon recycling",
+  "coolant": "Immersion fluids are PFAS or flammable",
+  "lignin": "Lignin waste is burned, not turned into chemicals",
+  "polysulfide": "Polysulfides kill lithium-sulfur batteries",
+  "antiscale": "Scale clogs limestone electrolysis at pH 13–14",
+  "ammonium": "Ammonium probes are fooled by potassium",
+  "co2": "Humid air ruins most CO₂ sorbents",
+  "cork": "TCA cork taint ruins wine at parts per trillion",
+  "dioxane": "1,4-Dioxane slips through groundwater treatment",
+  "ethylene": "Ethylene gas ripens fruit too fast in storage",
+  "formaldehyde": "Wood panels release formaldehyde indoors",
+  "gold": "Gold recovery from e-waste still uses cyanide",
+  "pfas": "Long-chain PFAS persist in drinking water",
+  "siloxane": "Silicone from shampoos wrecks biogas engines",
+  "tmah": "Chip fabs dump toxic TMAH developer",
+  "xenon": "Xenon is rare and costly to recover from air",
+  "femob": "Hydrogen from rock stalls when iron stays locked",
+  "pgmwater": "Oilfield water carries traces of platinum metals",
+  "pgmchlor": "Chloride leaches mix precious metals",
+  "cmpchel": "Copper polishing slurries need cleaner chelators",
+  "pucat": "PU foam waste is hard to break back down",
+  "ionomer": "AEM electrolyzers lose their ionomer fast",
+  "plastic": "Mixed plastic waste is burned or landfilled",
+  "cosel": "Ni, Co and Mn leave black mass in one leach",
+  "copolish": "Battery-grade nickel allows only ppm cobalt",
+  "feal": "Iron and aluminium foul the battery leach",
+  "fscav": "Electrolyte salt leaves fluoride in the leach",
+  "nisel": "Nickel must leave the leach without solvents",
+  "mnsel": "Manganese rides along with cobalt and nickel"
+ },
+ "what": {
+  "rareearth": "Extractant that picks Nd over La",
+  "magrec": "Extractant that pulls Nd from magnet scrap",
+  "reecoal": "Extractant for trace rare earths in coal ash",
+  "lithium": "Binder that picks lithium over sodium",
+  "tmdiss": "Scavenger that pulls one cathode metal at a time",
+  "phosphate": "Binder that catches phosphate over chloride",
+  "mousy": "Binder that pulls the mousy taint from wine",
+  "rebar": "Inhibitor that keeps rebar from rusting",
+  "tfa": "Sorbent that catches TFA in drinking water",
+  "chalco": "Leach additive that frees copper from ore",
+  "boron": "Binder that pulls boron from desalinated water",
+  "smoke": "Binder that removes smoke taint, keeps flavor",
+  "cement": "Additive that brings back early strength",
+  "selenate": "Binder that picks selenate over sulfate",
+  "psensor": "Binder for a reagent-free phosphate probe",
+  "sulfur": "Trap for the last sulfur in diesel",
+  "hardener": "Hardener that splits in mild acid for recycling",
+  "culoop": "Corrosion inhibitor for copper loops",
+  "shortpfas": "Sorbent for short-chain PFAS",
+  "dyetrap": "Trap that pulls dye out of nylon",
+  "coolant": "PFAS-free immersion fluid blend",
+  "lignin": "Catalyst that turns lignin into aromatics",
+  "polysulfide": "Binder that holds polysulfides in the cathode",
+  "antiscale": "Antiscalant that works at pH 13–14",
+  "ammonium": "Binder that picks ammonium over potassium",
+  "co2": "Sorbent that catches CO₂ in humid air",
+  "cork": "Binder that removes TCA, keeps wine flavor",
+  "dioxane": "Sorbent that traps dioxane in groundwater",
+  "ethylene": "Trap that holds ethylene in fruit storage",
+  "formaldehyde": "Scavenger that locks formaldehyde in panels",
+  "gold": "Cyanide-free gold binder",
+  "pfas": "Sorbent for PFAS in drinking water",
+  "siloxane": "Sorbent that pulls siloxanes from biogas",
+  "tmah": "Binder that recovers TMAH from fab waste",
+  "xenon": "Sorbent that picks xenon over krypton",
+  "femob": "Additive that frees iron so rock makes hydrogen",
+  "pgmwater": "Binder that catches platinum metals in produced water",
+  "pgmchlor": "Binder that picks one precious metal in chloride",
+  "cmpchel": "Chelator for copper polishing slurry",
+  "pucat": "Catalyst that breaks PU foam into reusable polyol",
+  "ionomer": "Ionomer group that survives alkaline electrolysis",
+  "plastic": "Catalyst that turns mixed plastic into fuel",
+  "cosel": "Binder that drops cobalt, leaves nickel",
+  "copolish": "Resin group that strips the last cobalt",
+  "feal": "Resin group that holds Fe and Al, not Ni or Co",
+  "fscav": "Sorbent that pulls fluoride from acid sulfate",
+  "nisel": "Binder that drops nickel, leaves cobalt",
+  "mnsel": "Precipitant that takes manganese first"
+ },
+ "type": {
+  "rareearth": "Process",
+  "magrec": "Process",
+  "reecoal": "Process",
+  "lithium": "Process",
+  "gold": "Process",
+  "chalco": "Process",
+  "pgmwater": "Process",
+  "pgmchlor": "Process",
+  "tmdiss": "Process",
+  "tmah": "Process",
+  "femob": "Process",
+  "plastic": "Process",
+  "lignin": "Process",
+  "pucat": "Process",
+  "dyetrap": "Process",
+  "pfas": "Add-in",
+  "shortpfas": "Add-in",
+  "tfa": "Add-in",
+  "dioxane": "Add-in",
+  "boron": "Add-in",
+  "selenate": "Add-in",
+  "phosphate": "Add-in",
+  "siloxane": "Add-in",
+  "co2": "Add-in",
+  "xenon": "Add-in",
+  "sulfur": "Add-in",
+  "antiscale": "Add-in",
+  "cmpchel": "Add-in",
+  "mousy": "Product",
+  "smoke": "Product",
+  "cork": "Product",
+  "coolant": "Product",
+  "hardener": "Product",
+  "ionomer": "Product",
+  "polysulfide": "Product",
+  "cement": "Product",
+  "rebar": "Product",
+  "culoop": "Product",
+  "formaldehyde": "Product",
+  "ethylene": "Product",
+  "psensor": "Product",
+  "ammonium": "Product",
+  "cosel": "Process",
+  "copolish": "Process",
+  "feal": "Process",
+  "fscav": "Process",
+  "nisel": "Process",
+  "mnsel": "Process"
+ },
+ "est": {
+  "tmdiss": [
+   55,
+   60,
+   65
+  ],
+  "culoop": [
+   60,
+   55,
+   75
+  ],
+  "polysulfide": [
+   50,
+   60,
+   70
+  ],
+  "shortpfas": [
+   70,
+   75,
+   70
+  ],
+  "dyetrap": [
+   35,
+   70,
+   65
+  ],
+  "antiscale": [
+   35,
+   80,
+   55
+  ],
+  "coolant": [
+   70,
+   50,
+   70
+  ],
+  "hardener": [
+   60,
+   60,
+   70
+  ],
+  "lignin": [
+   55,
+   50,
+   50
+  ],
+  "pgmwater": [
+   45,
+   75,
+   60
+  ],
+  "pgmchlor": [
+   55,
+   60,
+   65
+  ],
+  "femob": [
+   40,
+   80,
+   50
+  ],
+  "cmpchel": [
+   60,
+   50,
+   70
+  ],
+  "pucat": [
+   55,
+   55,
+   65
+  ],
+  "ionomer": [
+   65,
+   55,
+   60
+  ],
+  "cosel": [
+   55,
+   60,
+   65
+  ],
+  "copolish": [
+   55,
+   60,
+   65
+  ],
+  "feal": [
+   55,
+   60,
+   65
+  ],
+  "fscav": [
+   55,
+   60,
+   65
+  ],
+  "nisel": [
+   55,
+   60,
+   65
+  ],
+  "mnsel": [
+   55,
+   60,
+   65
+  ]
+ },
+ "name": {
+  "cosel": "Cobalt binder",
+  "copolish": "Trace-cobalt polish",
+  "feal": "Fe/Al remover",
+  "fscav": "Fluoride sorbent",
+  "nisel": "Nickel binder",
+  "mnsel": "Manganese precipitant"
+ }
+}

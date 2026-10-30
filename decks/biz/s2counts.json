@@ -1,0 +1,377 @@
+{
+ "amine": {
+  "q": "(amine | \"capture solvent\") +(\"CO2 capture\" | \"carbon capture\") +(regeneration | degradation)",
+  "papers": 327,
+  "people": 38
+ },
+ "ammonium": {
+  "q": "ammonium +(\"ion-selective\" | ionophore | sensor) +potassium",
+  "papers": 37,
+  "people": 6
+ },
+ "antiscale": {
+  "q": "(\"scale inhibitor\" | antiscalant) +(alkaline | \"high pH\" | electrolysis)",
+  "papers": 22,
+  "people": 2
+ },
+ "boron": {
+  "q": "boron +(removal | rejection) +(desalination | seawater | \"reverse osmosis\")",
+  "papers": 74,
+  "people": 7
+ },
+ "cement": {
+  "q": "(\"early strength\" | accelerator) +(\"low clinker\" | \"calcined clay\" | LC3 | \"blended cement\")",
+  "papers": 43,
+  "people": 0
+ },
+ "chalco": {
+  "q": "chalcopyrite +(leaching) +(catalyst | additive | thiourea)",
+  "papers": 11,
+  "people": 0
+ },
+ "clayplas": {
+  "q": "(superplasticizer | polycarboxylate) +(clay | \"calcined clay\")",
+  "papers": 93,
+  "people": 10
+ },
+ "cmpchel": {
+  "q": "(\"chemical mechanical\" | CMP) +copper +(chelating | complexing | slurry)",
+  "papers": 84,
+  "people": 26
+ },
+ "co2": {
+  "q": "(\"direct air capture\" | DAC) +(sorbent | adsorbent) +(humidity | humid | water)",
+  "papers": 104,
+  "people": 16
+ },
+ "collector": {
+  "q": "flotation +collector +(chalcopyrite | copper) +pyrite",
+  "papers": 47,
+  "people": 3
+ },
+ "coolant": {
+  "q": "(\"immersion cooling\" | \"dielectric fluid\" | \"dielectric coolant\") +(\"data center\" | server | electronics)",
+  "papers": 194,
+  "people": 52
+ },
+ "copolish": {
+  "q": "cobalt +(removal | impurity) +(\"nickel sulfate\" | \"nickel sulphate\")",
+  "papers": 7,
+  "people": 0
+ },
+ "cork": {
+  "q": "(trichloroanisole | \"cork taint\") +wine",
+  "papers": 13,
+  "people": 0
+ },
+ "cosel": {
+  "q": "cobalt +nickel +separation +(battery | leachate | \"spent lithium\")",
+  "papers": 103,
+  "people": 2
+ },
+ "ctower": {
+  "q": "(\"cooling tower\" | \"cooling water\") +(\"scale inhibitor\" | \"corrosion inhibitor\" | phosphorus-free | \"non-phosphorus\")",
+  "papers": 42,
+  "people": 0
+ },
+ "culoop": {
+  "q": "copper +\"corrosion inhibitor\" +(coolant | \"liquid cooling\" | glycol)",
+  "papers": 7,
+  "people": 7
+ },
+ "dioxane": {
+  "q": "\"1,4-dioxane\" +(removal | treatment | adsorption)",
+  "papers": 91,
+  "people": 2
+ },
+ "dwr": {
+  "q": "(\"fluorine-free\" | \"non-fluorinated\" | \"PFAS-free\") +(\"water repellent\" | oleophobic | \"oil repellent\") +(textile | fabric)",
+  "papers": 42,
+  "people": 0
+ },
+ "dyetrap": {
+  "q": "(nylon | polyamide) +(decolorization | \"dye removal\" | \"color removal\") +recycling",
+  "papers": 3,
+  "people": 0
+ },
+ "elyte": {
+  "q": "\"electrolyte additive\" +(\"high voltage\" | \"high-voltage\" | \"fast charging\") +(cathode | lithium)",
+  "papers": 172,
+  "people": 29
+ },
+ "ethylene": {
+  "q": "ethylene +(scavenger | adsorbent | removal) +(fruit | postharvest | storage)",
+  "papers": 97,
+  "people": 0
+ },
+ "f3foam": {
+  "q": "(\"fluorine-free\" | \"PFAS-free\" | \"F3\") +(\"firefighting foam\" | \"fire-fighting foam\" | AFFF)",
+  "papers": 37,
+  "people": 10
+ },
+ "fbinder": {
+  "q": "(\"PVDF-free\" | \"fluorine-free\" | \"aqueous binder\" | \"water-based binder\") +cathode +(lithium | battery)",
+  "papers": 91,
+  "people": 11
+ },
+ "feal": {
+  "q": "(iron | aluminum | aluminium) +removal +(battery | \"spent lithium\") +(leachate | leaching)",
+  "papers": 33,
+  "people": 0
+ },
+ "femob": {
+  "q": "(\"geologic hydrogen\" | \"natural hydrogen\" | \"stimulated hydrogen\" | serpentinization) +(iron | Fe)",
+  "papers": 289,
+  "people": 46
+ },
+ "formaldehyde": {
+  "q": "formaldehyde +(scavenger | emission) +(\"wood panel\" | particleboard | plywood | MDF)",
+  "papers": 137,
+  "people": 22
+ },
+ "fscav": {
+  "q": "fluoride +removal +(battery | \"spent lithium\" | leachate)",
+  "papers": 46,
+  "people": 6
+ },
+ "fsurf": {
+  "q": "(\"fluorine-free\" | \"non-fluorinated\" | \"PFAS-free\") +(surfactant | \"wetting agent\")",
+  "papers": 39,
+  "people": 7
+ },
+ "gallium": {
+  "q": "gallium +(extraction | recovery | adsorption) +(Bayer | alumina | aluminate)",
+  "papers": 31,
+  "people": 4
+ },
+ "germanium": {
+  "q": "germanium +(extraction | recovery) +(zinc | residue | leach)",
+  "papers": 64,
+  "people": 18
+ },
+ "gold": {
+  "q": "gold +(\"cyanide-free\" | \"non-cyanide\" | thiosulfate | lixiviant) +(\"e-waste\" | \"printed circuit\" | PCB | electronic)",
+  "papers": 27,
+  "people": 0
+ },
+ "h2s": {
+  "q": "(\"H2S scavenger\" | \"hydrogen sulfide scavenger\" | triazine) +(oil | gas | pipeline)",
+  "papers": 234,
+  "people": 13
+ },
+ "hardener": {
+  "q": "(recyclable | degradable | cleavable | vitrimer) +epoxy +(\"wind blade\" | \"wind turbine\" | composite)",
+  "papers": 1166,
+  "people": 136
+ },
+ "ionomer": {
+  "q": "(\"anion exchange\" | AEM) +ionomer +(stability | durability)",
+  "papers": 184,
+  "people": 62,
+  "scanned": 184
+ },
+ "lignin": {
+  "q": "lignin +(depolymerization | hydrogenolysis) +(catalyst | monomers | aromatics)",
+  "papers": 530,
+  "people": 122,
+  "scanned": 530
+ },
+ "lithium": {
+  "q": "lithium +(selective | selectivity) +sodium +(brine | extraction | sorbent)",
+  "papers": 64,
+  "people": 0,
+  "scanned": 64
+ },
+ "lohc": {
+  "q": "(\"liquid organic hydrogen carrier\" | LOHC)",
+  "papers": 439,
+  "people": 110,
+  "scanned": 439
+ },
+ "lowdk": {
+  "q": "(\"low dielectric\" | \"low loss\" | \"dielectric loss\") +(laminate | \"copper clad\" | PCB | \"printed circuit\") +resin",
+  "papers": 46,
+  "people": 5,
+  "scanned": 46
+ },
+ "lube": {
+  "q": "(\"anti-wear\" | antiwear) +(ZDDP | ashless | \"zinc dialkyldithiophosphate\")",
+  "papers": 59,
+  "people": 1,
+  "scanned": 59
+ },
+ "magrec": {
+  "q": "(NdFeB | \"magnet scrap\" | \"permanent magnet\") +(recycling | recovery) +(\"rare earth\" | neodymium)",
+  "papers": 203,
+  "people": 39,
+  "scanned": 203
+ },
+ "mnsel": {
+  "q": "manganese +(recovery | separation) +(battery | \"spent lithium\" | leachate)",
+  "papers": 268,
+  "people": 15,
+  "scanned": 268
+ },
+ "mousy": {
+  "q": "mousy +(wine | \"off-flavor\" | \"off-flavour\")",
+  "papers": 10,
+  "people": 8,
+  "scanned": 10
+ },
+ "nisel": {
+  "q": "nickel +(selective | separation | recovery) +(battery | \"spent lithium\") +leachate",
+  "papers": 36,
+  "people": 0,
+  "scanned": 36
+ },
+ "oilcorr": {
+  "q": "\"corrosion inhibitor\" +(CO2 | H2S | sour | sweet) +(pipeline | oilfield | \"carbon steel\")",
+  "papers": 145,
+  "people": 22,
+  "scanned": 145
+ },
+ "pag": {
+  "q": "(\"photoacid generator\" | PAG) +(\"non-fluorinated\" | \"fluorine-free\" | \"PFAS-free\" | PFAS)",
+  "papers": 12,
+  "people": 12,
+  "scanned": 12
+ },
+ "pfas": {
+  "q": "(PFAS | PFOA | PFOS | perfluoro*) +(adsorption | adsorbent | sorbent) +(\"drinking water\" | water)",
+  "papers": 665,
+  "people": 84,
+  "scanned": 665
+ },
+ "pgmchlor": {
+  "q": "(platinum | palladium | rhodium) +separation +chloride +(extraction | extractant | adsorption)",
+  "papers": 9,
+  "people": 0,
+  "scanned": 9
+ },
+ "pgmwater": {
+  "q": "(\"platinum group\" | platinum | palladium) +\"produced water\"",
+  "papers": 9,
+  "people": 0,
+  "scanned": 9
+ },
+ "phosphate": {
+  "q": "phosphate +(selective | selectivity) +(adsorbent | sorbent | binder) +(runoff | wastewater | eutrophication)",
+  "papers": 85,
+  "people": 2,
+  "scanned": 85
+ },
+ "plastic": {
+  "q": "(\"mixed plastic\" | \"plastic waste\") +(pyrolysis | cracking) +catalyst +fuel",
+  "papers": 137,
+  "people": 1,
+  "scanned": 137
+ },
+ "plating": {
+  "q": "(electroplating | electrodeposition) +copper +(leveler | additive | suppressor) +(via | TSV | packaging)",
+  "papers": 82,
+  "people": 9,
+  "scanned": 82
+ },
+ "polysulfide": {
+  "q": "polysulfide +(binder | anchoring | trapping) +(\"lithium-sulfur\" | \"Li-S\")",
+  "papers": 565,
+  "people": 125,
+  "scanned": 565
+ },
+ "ppa": {
+  "q": "(\"polymer processing aid\" | \"processing aid\") +(fluoropolymer | \"fluorine-free\" | \"PFAS-free\" | \"melt fracture\")",
+  "papers": 12,
+  "people": 0,
+  "scanned": 12
+ },
+ "psensor": {
+  "q": "phosphate +(\"ion-selective\" | ionophore | sensor) +(water | electrode)",
+  "papers": 605,
+  "people": 52,
+  "scanned": 605
+ },
+ "pucat": {
+  "q": "polyurethane +(glycolysis | depolymerization | chemical recycling) +(polyol | foam)",
+  "papers": 119,
+  "people": 12,
+  "scanned": 119
+ },
+ "rareearth": {
+  "q": "(neodymium | praseodymium | lanthanum | \"rare earth\") +separation +(\"solvent extraction\" | extractant)",
+  "papers": 147,
+  "people": 11,
+  "scanned": 147
+ },
+ "rebar": {
+  "q": "(\"corrosion inhibitor\" | inhibitor) +(rebar | \"reinforcing steel\" | \"reinforced concrete\") +chloride",
+  "papers": 87,
+  "people": 14,
+  "scanned": 87
+ },
+ "reecoal": {
+  "q": "(\"rare earth\" | REE) +(\"coal fly ash\" | \"coal ash\" | \"coal refuse\" | \"coal waste\")",
+  "papers": 140,
+  "people": 17,
+  "scanned": 140
+ },
+ "refrig": {
+  "q": "(\"low GWP\" | \"low-GWP\") +refrigerant +(blend | mixture | alternative)",
+  "papers": 100,
+  "people": 11,
+  "scanned": 100
+ },
+ "selenate": {
+  "q": "(selenate | selenium) +removal +(\"mine water\" | mining | \"flue gas desulfurization\" | sulfate)",
+  "papers": 42,
+  "people": 5,
+  "scanned": 42
+ },
+ "shortpfas": {
+  "q": "(\"short-chain\" | PFBA | PFBS | GenX) +(PFAS | perfluoro*) +(adsorption | sorbent | removal)",
+  "papers": 341,
+  "people": 33,
+  "scanned": 341
+ },
+ "siloxane": {
+  "q": "siloxane +(removal | adsorption) +(biogas | \"landfill gas\")",
+  "papers": 20,
+  "people": 0,
+  "scanned": 20
+ },
+ "smoke": {
+  "q": "(\"smoke taint\" | \"smoke-tainted\" | \"smoke exposure\") +(wine | grape)",
+  "papers": 48,
+  "people": 23,
+  "scanned": 48
+ },
+ "sulfur": {
+  "q": "(\"adsorptive desulfurization\" | \"ultra-deep desulfurization\") +(diesel | dibenzothiophene | \"4,6-dimethyldibenzothiophene\")",
+  "papers": 49,
+  "people": 1,
+  "scanned": 49
+ },
+ "tfa": {
+  "q": "(\"trifluoroacetic acid\" | trifluoroacetate | TFA) +(\"drinking water\" | groundwater | \"water treatment\") +(removal | adsorption | occurrence)",
+  "papers": 8,
+  "people": 0,
+  "scanned": 8
+ },
+ "tmah": {
+  "q": "(TMAH | \"tetramethylammonium hydroxide\") +(wastewater | recovery | removal)",
+  "papers": 46,
+  "people": 0,
+  "scanned": 46
+ },
+ "tmdiss": {
+  "q": "(nickel | cobalt | manganese) +separation +(\"spent lithium\" | \"lithium-ion battery\") +(\"solvent extraction\" | extractant | selective)",
+  "papers": 63,
+  "people": 3,
+  "scanned": 63
+ },
+ "xenon": {
+  "q": "xenon +krypton +(separation | adsorbent | adsorption)",
+  "papers": 57,
+  "people": 7,
+  "scanned": 57
+ }
+}

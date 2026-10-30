@@ -1,0 +1,90 @@
+{
+ "key": "coolant",
+ "name": "PFAS-free immersion fluid",
+ "market": {
+  "usd_yr": 300000000,
+  "year": 2025,
+  "what": "Dielectric immersion fluids for data centers + crypto, world",
+  "method": "est. bottom-up ~1.5 GW/yr new immersion (~$1.0B systems) x ~7 L/kW x ~$15/L = ~$160M + 2-phase fluids ($80-200/L) and top-ups; reports say $0.8-2.4B but include EV/industrial",
+  "sources": [
+   "https://www.giiresearch.com/report/moi1851014-data-center-immersion-cooling-market-share.html",
+   "https://shop.engineeredfluids.com/collections/dielectric-coolants",
+   "https://alliancechemical.com/blogs/articles/two-phase-vs-single-phase-cooling-fluid-selection",
+   "https://dataintelo.com/report/immersion-cooling-fluid-market",
+   "https://www.gminsights.com/industry-analysis/immersion-cooling-fluids-market"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 125000000,
+  "logic": "if blend gives 2-phase-like cooling w/o PFAS: ~4 GW immersion 2030 (est.) x 0.03 PUE x 8,760 h x $0.08/kWh = ~$84M + ~0.4 GW 2-phase x 5 L/kW x ~$100/L saved / 5 yr = ~$40M",
+  "our_revenue_usd_yr": 35000000,
+  "revenue_logic": "2032 fluid market ~$1.2B (22%/yr) x ~3% share; blend made by toll blender",
+  "gross_margin_pct": 40,
+  "margin_logic": "blend of bought base stocks; specialty but volume-priced ($15-25/L)",
+  "sources": [
+   "https://alliancechemical.com/blogs/articles/post-novec-immersion-fluid-alternatives-2026",
+   "https://shop.engineeredfluids.com/products/ec-140"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 22,
+  "drivers": "3M Novec/Fluorinert exit end-2025; AI rack density; immersion systems ~$1.0B (2025) to ~$3.2B (2030)",
+  "deadline": "EU universal PFAS restriction decision ~2026-27; Minnesota PFAS-in-products ban 2032",
+  "sources": [
+   "https://www.giiresearch.com/report/moi1851014-data-center-immersion-cooling-market-share.html",
+   "https://www.techspray.com/3m-announcement-of-novec-phase-out-what-does-it-mean",
+   "https://www.patsnap.com/resources/blog/rd-blog/dielectric-fluids-for-immersion-cooling-patent-landscape/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Engineered Fluids (ElectroCool)"
+  ],
+  "indirect_startups": [
+   "LiquidStack",
+   "Submer",
+   "ZutaCore",
+   "Accelsius",
+   "Iceotope"
+  ],
+  "incumbents": [
+   "Chemours (Opteon 2P50)",
+   "Shell",
+   "ExxonMobil",
+   "Castrol",
+   "TotalEnergies",
+   "FUCHS",
+   "Cargill (NatureCool)",
+   "Lubrizol",
+   "Dow"
+  ],
+  "papers_3yr": null,
+  "paper_query": "\"immersion cooling\" dielectric fluid",
+  "groups_active": null,
+  "notes": "Oil majors dominate single-phase; Chemours leads 2-phase (HFO-based, still fluorinated); ZutaCore moving to Opteon SF33 interim. True non-fluorinated 2-phase fluid still in R&D. ZutaCore $100M Series C (2026).",
+  "sources": [
+   "https://www.datacenterdynamics.com/en/news/chemours-launches-two-phase-immersion-cooling-fluid/",
+   "https://alliancechemical.com/blogs/articles/post-novec-immersion-fluid-alternatives-2026",
+   "https://siliconangle.com/2026/06/02/zutacore-raises-100m-scale-waterless-cooling-ai-data-centers/"
+  ]
+ },
+ "lab": {
+  "weeks": 7,
+  "usd": 15000,
+  "synth": "catalog: blend of bought hydrocarbons/esters/ethers; 3 blend variants",
+  "test": "ASTM D877/D1816 dielectric breakdown, ASTM D92 flash point, ASTM D445 viscosity, thermal conductivity, boiling point; material compat soak; Intertek/SGS or univ.",
+  "logic": "1-2 wk buy+blend + 4-5 wk tests and compat soak; ~$1-2k chemicals + 3 blends x ~$2-3k test panel (est.) + ~$5k compat",
+  "sources": [
+   "https://www.astm.org/d0877_d0877m-19.html",
+   "https://www.astm.org/d0092-18.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "tank OEM (Submer, GRC, LiquidStack) + server OEM warranty sign-off ~1 yr; pilot tank 6-12 mo; SDS/REACH",
+  "sources": [
+   "https://alliancechemical.com/blogs/articles/post-novec-immersion-fluid-alternatives-2026"
+  ]
+ }
+}

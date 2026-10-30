@@ -1,0 +1,83 @@
+{
+ "key": "selenate",
+ "name": "Selenate binder for mines",
+ "market": {
+  "usd_yr": 500000000.0,
+  "year": 2025,
+  "what": "selenium treatment of mine water and coal-power FGD wastewater (bioreactors, IX, membranes), world",
+  "method": "Elk Valley: >US$1B invested + ~$500M more by end-2027 (~$250M/yr capex+opex) + US FGD/Appalachian coal/phosphate/refining ~$250M/yr (est.); TrendX report says $1.4B (looks high)",
+  "sources": [
+   "https://www.glencore.com/.rest/api/v1/documents/static/67667885-bc3e-482d-afe6-8e2ccdd48fd0/GLEN+EVR+Site+Visit+Presentation+-+3+EVR+Overview.pdf",
+   "https://fernie.com/blog/elk-valley-water-quality-plan-advances-as-evr-expands-water-treatment-capacity/",
+   "https://trendxinsights.com/syndicated-market-research-reports/selenium-removal-market/",
+   "https://advocacy.sba.gov/2025/10/06/epa-proposes-to-extend-clean-water-act-deadlines-for-steam-electric-power-generators/"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 150000000.0,
+  "logic": "bioreactors cost ~$30M per 300-400 gpm; EVR ~US$1B for ~78 ML/d; selenate-over-sulfate binder lets small IX + reduction replace big bio plants: ~30% cut on ~$500M/yr = ~$150M/yr",
+  "our_revenue_usd_yr": 12000000.0,
+  "revenue_logic": "sorbent sales + licence to a mine-water integrator; ~2.5% of ~$500M by yr 7",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty selective resin, small tonnage, priced on avoided capex",
+  "sources": [
+   "https://www.wateronline.com/doc/selenium-removal-technologies-a-review-0001",
+   "https://www.glencore.com/.rest/api/v1/documents/static/67667885-bc3e-482d-afe6-8e2ccdd48fd0/GLEN+EVR+Site+Visit+Presentation+-+3+EVR+Overview.pdf",
+   "https://magazine.cim.org/en/environment/solving-the-selenium-problem/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 5,
+  "drivers": "Elk Valley Water Quality Plan; BC fines ($3.6M); coal mine extensions; US ELG FGD selenium limits (deadlines extended 2025); est. (report 13.2% looks high)",
+  "deadline": "EVR full selenium compliance mid-2027 (EVWQP)",
+  "sources": [
+   "https://www.glencore.com/.rest/api/v1/documents/static/67667885-bc3e-482d-afe6-8e2ccdd48fd0/GLEN+EVR+Site+Visit+Presentation+-+3+EVR+Overview.pdf",
+   "https://www.biv.com/news/environment/bc-coal-giant-penalized-millions-for-treatment-delays-171-pollution-breaches-11321723",
+   "https://advocacy.sba.gov/2025/10/06/epa-proposes-to-extend-clean-water-act-deadlines-for-steam-electric-power-generators/",
+   "https://trendxinsights.com/syndicated-market-research-reports/selenium-removal-market/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [],
+  "incumbents": [
+   "Veolia (ABMet)",
+   "Envirogen (FBR)",
+   "BQE Water (Selen-IX)",
+   "Xylem/Evoqua",
+   "WesTech",
+   "Frontier Water Systems",
+   "WaterTectonics"
+  ],
+  "papers_3yr": null,
+  "paper_query": "selenate removal mine water",
+  "groups_active": null,
+  "notes": "OpenAlex count not run: free daily budget for this IP used up (429, resets midnight UTC); re-run. No 2012+ startup found; WashU/EPRI/WaterTectonics iron electrocoagulation ($1.25M DOE) is closest new approach. Sulfate competition is the known weak point of today's IX",
+  "sources": [
+   "https://source.washu.edu/2025/05/removing-selenium-from-water-takes-iron-strength/",
+   "https://www.miningmagazine.com/processing/news/1425887/bqe-water-commissions-selenium-removal-plant",
+   "https://www.envirogen.com/contaminants/selenium-water-treatment/",
+   "https://www.wateronline.com/doc/selenium-removal-technologies-a-review-0001"
+  ]
+ },
+ "lab": {
+  "weeks": 20,
+  "usd": 55000,
+  "synth": "3-5 step custom: bis-squaramide receptor with ammonium linker, then grafting to resin",
+  "test": "batch + column in synthetic mine water (Se 20-500 ug/L as selenate, sulfate 1-2 g/L); Se by ICP-MS (EPA 200.8), speciation by IC-ICP-MS",
+  "logic": "10-12 wk synth ($15-25k) + 4 wk grafting/3 variants ($10k) + 4-6 wk tests; ~200 ICP-MS x $43-80 (UConn, USF) = ~$12k + speciation",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "on-site pilot at a coal mine 6-12 mo; permit/regulator acceptance of new process; integrator partner",
+  "sources": [
+   "https://www.glencore.com/.rest/api/v1/documents/static/67667885-bc3e-482d-afe6-8e2ccdd48fd0/GLEN+EVR+Site+Visit+Presentation+-+3+EVR+Overview.pdf",
+   "https://www.miningmagazine.com/processing/news/1425887/bqe-water-commissions-selenium-removal-plant"
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Next Steps Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E6E8EC;--g:#2E8A1F;--red:#B3261E;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden}
+.lb{font:500 17px "Geist Mono",monospace;color:var(--mut)}.sb{font-size:21px;color:var(--mut);margin-top:6px}
+.n{font:600 52px/1.05 Geist,sans-serif;letter-spacing:-.01em}
+.hero{font:600 104px/1 Geist,sans-serif;letter-spacing:-.025em}
+h1{margin:0;font:600 46px/1.15 Geist,sans-serif;letter-spacing:-.01em}
+.bot{width:26px;height:56px;border-radius:7px 7px 4px 4px;background:#D9DDE3;position:relative}.bot:before{content:'';position:absolute;left:9px;top:-12px;width:8px;height:14px;border-radius:2px;background:inherit}
+.bot.t{background:var(--red)}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+/* page 7 next steps for TCA cork taint binder (data: problem deck page 7; months are planning estimates) */
+const S=[{k:'Make',d:'Top 10 designs made by a contract lab',a:0,b:2,c:null},{k:'Lab tests',d:'TCA removal · aroma · taste panel · food contact',a:2,b:6,c:120},{k:'Winery pilot',d:'With the first buyer',a:6,b:12,c:100}];
+const TT='From 10 designs to a winery pilot in 12 months';
+const frame=(body)=>`<div style="padding:96px 104px;height:100%;display:flex;flex-direction:column"><h1 style="font-size:54px;max-width:1250px">${TT}</h1><div style="margin-top:72px;flex:1;display:flex;flex-direction:column">${body}</div></div>`;
+const C=['#14161A','#5A6270','#2E8A1F'];
+const V={
+1(){ /* Gantt */
+ const W=1180,X=m=>m/12*W;
+ return frame(`<div style="display:grid;grid-template-columns:210px ${W}px;row-gap:34px;align-items:center">
+ <div></div><div style="position:relative;height:24px">${[0,2,4,6,8,10,12].map(m=>`<span class="mono" style="position:absolute;left:${X(m)}px;transform:translateX(-50%);font-size:17px;color:#9AA1AD">${m?'month '+m:'now'}</span>`).join('')}</div>
+ ${S.map((s,i)=>`<div style="font:600 27px Geist">${s.k}</div><div style="position:relative;height:84px;background:#F3F4F6;border-radius:10px"><div style="position:absolute;left:${X(s.a)}px;width:${X(s.b-s.a)}px;top:0;bottom:0;background:${C[i]};border-radius:10px;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:500 18px Geist"><span style="opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${s.b-s.a>3?s.d:''}</span><b style="font:600 22px Geist">${s.c?'$'+s.c+'k':''}</b></div></div>`).join('')}
+ </div><div style="margin-top:auto;display:flex;justify-content:flex-end;font:600 32px Geist">$220k · 12 months</div>`)},
+2(){ /* investor-deck milestone style: month inside the circle, each step in a box on a stem, alternating up/down */
+ const M=[{k:'Designed',m:'✓',s:'in simulation',done:1},{k:'Make',m:'2m',s:'top 10 designs'},{k:'Lab tests',m:'6m',s:'4 tests · $120k'},{k:'Winery pilot',m:'12m',s:'first buyer · $100k',last:1}];
+ return frame(`<div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);height:420px;margin-top:-30px">
+ <div style="position:absolute;left:12.5%;right:12.5%;top:50%;border-top:3px solid #DDE1E7"></div>
+ ${M.map((p,i)=>{const up=false,d=70,col=p.last?'#2E8A1F':p.done?'#2E8A1F':'#14161A';return `<div style="position:relative">
+ <div style="position:absolute;left:50%;${up?'bottom':'top'}:50%;height:${d}px;border-left:2px solid #9AA1AD"></div>
+ <div style="position:absolute;left:50%;transform:translateX(-50%);${up?'bottom':'top'}:calc(50% + ${d}px);width:calc(100% - 32px);max-width:300px;border:${p.last?'2.5px solid #2E8A1F':'1.5px solid #DDE1E7'};border-radius:10px;background:#fff;padding:18px 20px;text-align:center">
+ <div style="font:600 28px Geist;color:${p.last?'#2E8A1F':'#14161A'}">${p.k}</div><div style="font-size:19px;color:#596070;margin-top:6px">${p.s}</div></div>
+ <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:78px;height:78px;border-radius:50%;background:${p.done||p.last?col:'#fff'};border:3px solid ${col};display:grid;place-items:center;font:600 24px Geist;color:${p.done||p.last?'#fff':'#14161A'};z-index:2">${p.m}</div></div>`}).join('')}</div>
+ <div style="margin-top:auto;display:flex;justify-content:flex-end;font:600 32px Geist">$220k · 12 months</div>`)},
+3(){ /* title left, vertical timeline right */
+ const M=[{k:'Designed',m:'now',d:'12 designs in simulation',c:'',done:1},...S.map(s=>({k:s.k,m:'month '+s.b,d:s.d,c:s.c?'$'+s.c+'k':''}))];
+ return `<div style="display:grid;grid-template-columns:1fr 1fr;height:100%"><div style="padding:0 72px 0 96px;display:flex;align-items:center"><h1 style="font-size:54px">${TT}</h1></div>
+ <div style="background:#F7F6F2;padding:0 88px;display:flex;flex-direction:column;justify-content:center"><div style="position:relative;padding-left:46px">
+ <div style="position:absolute;left:13px;top:16px;bottom:16px;width:4px;background:#DDE1E7;border-radius:2px"></div>
+ ${M.map(p=>`<div style="position:relative;padding:0 0 38px"><div style="position:absolute;left:-46px;top:6px;width:30px;height:30px;border-radius:50%;background:${p.done?'#2E8A1F':'#fff'};border:5px solid ${p.done?'#2E8A1F':'#14161A'}"></div>
+ <div class="mono" style="font-size:16px;color:#9AA1AD">${p.m}</div><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 28px Geist">${p.k}</span><span class="mono" style="color:#2E8A1F;font-size:21px">${p.c}</span></div><div class="sb" style="font-size:18px">${p.d}</div></div>`).join('')}
+ <div style="font:600 30px Geist;border-top:1px solid #DDE1E7;padding-top:18px;display:flex;justify-content:space-between"><span>Total</span><span>$220k</span></div></div></div></div>`},
+4(){ /* Gantt + cost bar */
+ const W=1180,X=m=>m/12*W;
+ return frame(`<div style="display:grid;grid-template-columns:210px ${W}px;row-gap:20px;align-items:center">
+ <div class="lb">Time</div><div style="position:relative;height:56px">${S.map((s,i)=>`<div style="position:absolute;left:${X(s.a)}px;width:${X(s.b-s.a)-6}px;top:0;bottom:0;background:${C[i]};border-radius:10px;color:#fff;display:flex;align-items:center;padding:0 16px;font:600 21px Geist">${s.k}</div>`).join('')}</div>
+ <div></div><div style="position:relative;height:22px">${[0,2,6,12].map(m=>`<span class="mono" style="position:absolute;left:${X(m)}px;transform:translateX(${m===12?'-100%':m?'-50%':'0'});font-size:17px;color:#9AA1AD">${m?'month '+m:'now'}</span>`).join('')}</div>
+ <div class="lb" style="margin-top:40px">Cost</div><div style="display:flex;height:56px;margin-top:40px;width:${W}px">${S.filter(s=>s.c).map((s,i)=>`<div style="flex:${s.c};background:${C[i+1]};color:#fff;border-radius:10px;margin-right:6px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font:600 21px Geist"><span>${s.k}</span><span>$${s.c}k</span></div>`).join('')}</div>
+ </div><div style="margin-top:auto;display:flex;justify-content:flex-end;font:600 32px Geist">$220k · 12 months</div>`)},
+5(){ /* process flow with chevrons */
+ const M=[{k:'Designed',t:'now',d:'12 designs in simulation',c:'done',done:1},...S.map(s=>({k:s.k,t:(s.a?'month '+s.a+'–'+s.b:'month 0–'+s.b),d:s.d,c:s.c?'$'+s.c+'k':'—'}))];
+ return frame(`<div style="display:flex;gap:0;margin-top:30px">${M.map((p,i)=>`<div style="flex:1;position:relative;background:${p.done?'#2E8A1F':i===3?'#14161A':'#F1F2F4'};color:${p.done||i===3?'#fff':'#14161A'};padding:30px 34px 30px ${i?56:34}px;clip-path:polygon(0 0,calc(100% - 28px) 0,100% 50%,calc(100% - 28px) 100%,0 100%${i?',28px 50%':''});margin-left:${i?-20:0}px;height:250px;display:flex;flex-direction:column">
+ <div class="mono" style="font-size:16px;opacity:.7">${p.t}</div><div style="font:600 30px Geist;margin-top:10px">${p.done?'✓ ':''}${p.k}</div><div style="font-size:18px;margin-top:8px;opacity:.8;line-height:1.35">${p.d}</div><div style="margin-top:auto;font:600 26px Geist">${p.c}</div></div>`).join('')}</div>
+ <div style="margin-top:auto;display:flex;justify-content:flex-end;font:600 32px Geist">$220k · 12 months</div>`)}};
+const v=+(new URLSearchParams(location.search).get('v')||1);document.getElementById('s').innerHTML=(V[v]||V[1])();
+function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform=`scale(${s})`}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();
+</script></body></html>

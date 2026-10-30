@@ -1,0 +1,45 @@
+{
+ "tmdiss": {
+  "type": "Process",
+  "problem": "Recycled cathode leach mixes Ni, Co and Mn",
+  "design": "Scavenger that pulls one cathode metal at a time",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "nisel": {
+  "type": "Process",
+  "problem": "Recycled battery leach: nickel must be pulled away from cobalt and manganese",
+  "design": "Binder that picks nickel over cobalt and manganese",
+  "refinyx": true
+ },
+ "cosel": {
+  "type": "Process",
+  "problem": "Recycled battery leach: cobalt must be pulled from nickel-rich solution",
+  "design": "Binder that picks cobalt over nickel",
+  "refinyx": true
+ },
+ "copolish": {
+  "type": "Add-in",
+  "problem": "Battery-grade nickel sulfate must be polished to ppm cobalt",
+  "design": "Polishing binder for trace cobalt in nickel sulfate",
+  "refinyx": true
+ },
+ "feal": {
+  "type": "Add-in",
+  "problem": "Iron and aluminium removal loses nickel and cobalt in the waste cake",
+  "design": "Binder that removes Fe/Al without losing Ni/Co",
+  "refinyx": true
+ },
+ "fscav": {
+  "type": "Add-in",
+  "problem": "Fluoride from battery binder (PVDF) contaminates leach",
+  "design": "Sorbent that removes fluoride from battery leach",
+  "refinyx": true
+ },
+ "mnsel": {
+  "type": "Process",
+  "problem": "Manganese must be recovered from battery leach at battery grade",
+  "design": "Precipitant/binder for battery-grade manganese",
+  "refinyx": true
+ }
+}

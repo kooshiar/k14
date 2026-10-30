@@ -1,0 +1,367 @@
+{
+ "selenate": {
+  "designs": 150,
+  "by_phase": {
+   "v1 P5 drop-in": 40,
+   "v1 P2 edits": 60,
+   "v1 P4 cheaper": 30,
+   "v1 P1 design": 20
+  },
+  "best_found_in": "v1 P5 drop-in",
+  "best_smiles": "O=C(O)c1c(S(=O)(=O)[O-])cc2c(O)c1Cc1cc(S(=O)(=O)[O-])cc(c1O)Cc1cc(c(O)c(S(=O)(=O)[O-])c1)Cc1cc(S(=O)(=O)[O-])c(S(=O)(=O)O)c(c1O)C2"
+ },
+ "tfa": {
+  "designs": 159,
+  "by_phase": {
+   "v1 P4 cheaper": 6,
+   "v1 P1 design": 13,
+   "v1 P2 edits": 60,
+   "v1 P5 drop-in": 40,
+   "v1 P3 US-sourced": 40
+  },
+  "best_found_in": "v1 P4 cheaper",
+  "best_smiles": "C[N+](C)(C)c1ccc(Nc2c(Nc3c(Nc4c(Nc5cccc([N+](C)(C)C)c5)c(=O)c4=O)c(C(=O)O)cc4ccccc34)c(=O)c2=O)cc1"
+ },
+ "dioxane": {
+  "designs": 120,
+  "by_phase": {
+   "v1 P5 drop-in": 37,
+   "v1 P2 edits": 60,
+   "v1 P4 cheaper": 6,
+   "v1 P1 design": 17
+  },
+  "best_found_in": "v1 P5 drop-in",
+  "best_smiles": "OCC[C@H]1O[C@@H]2O[C@H]3[C@H](O)[C@@H](O)[C@@H](O[C@H]4[C@H](O)[C@@H](O)[C@@H](O[C@H]5[C@H](O)[C@@H](O)[C@@H](O[C@H]6[C@H](O)[C@@H](O)[C@@H](O[C@H]7[C@H](O)[C@@H](O)[C@@H](O[C@H]8[C@H](O)[C@@H](O)[C@@H](O[C@H]1[C@H](O)[C@H]2O)O[C@@H]8CO)O[C@@H]7CO)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO"
+ },
+ "smoke": {
+  "designs": 181,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P4 cheaper": 30,
+   "v1 P5 drop-in": 36,
+   "v1 P3 US-sourced": 38,
+   "v1 P1 design": 17
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "COc1c2cc(C[N+](C)(C)C)cc1Cc1cc(C[N+](C)(C)C)c(C(=O)O)c(c1OC)Cc1cc(C[N+](C)(C)C)cc(c1OC)Cc1c(OC)c(cc(C[N+](C)(C)C)c1OC)C2"
+ },
+ "boron": {
+  "designs": 132,
+  "by_phase": {
+   "v1 P5 drop-in": 6,
+   "v1 P4 cheaper": 30,
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 23,
+   "v1 P1 design": 13
+  },
+  "best_found_in": "v1 P5 drop-in",
+  "best_smiles": "O=S(=O)(O)c1c(O)cccc1O"
+ },
+ "siloxane": {
+  "designs": 142,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P4 cheaper": 3,
+   "v1 P3 US-sourced": 23,
+   "v1 P1 design": 20,
+   "v1 P5 drop-in": 36
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "O=C([O-])COc1c2cc(S(=O)(=O)[O-])cc1Cc1cc(S(=O)(=O)[O-])c(Cl)c(c1OCC(=O)[O-])Cc1cc(S(=O)(=O)[O-])c(CO)c(c1OCC(=O)[O-])Cc1cc(S(=O)(=O)[O-])cc(c1OCC(=O)[O-])C2"
+ },
+ "mousy": {
+  "designs": 184,
+  "by_phase": {
+   "v1 P5 drop-in": 36,
+   "v1 P1 design": 19,
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 39,
+   "v1 P4 cheaper": 30
+  },
+  "best_found_in": "v1 P5 drop-in",
+  "best_smiles": "OCC[C@H]1O[C@@H]2O[C@H]3[C@H](O)[C@@H](O)[C@@H](O[C@H]4[C@H](O)[C@@H](O)[C@@H](O[C@H]5[C@H](O)[C@@H](O)[C@@H](O[C@H]6[C@H](O)[C@@H](O)[C@@H](O[C@H]7[C@H](O)[C@@H](O)[C@@H](O[C@H]8[C@H](O)[C@@H](O)[C@@H](O[C@H]1[C@H](O)[C@H]2O)O[C@@H]8CO)O[C@@H]7CO)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO"
+ },
+ "cement": {
+  "designs": 91,
+  "by_phase": {
+   "v1 P1 design": 8,
+   "v1 P2 edits": 71,
+   "v1 P4 cheaper": 9,
+   "v1 P5 drop-in": 3
+  },
+  "best_found_in": "v1 P1 design",
+  "best_smiles": "CCC(O)CN(CC(O)C(C)O)CC(O)C(C)O"
+ },
+ "formaldehyde": {
+  "designs": 50,
+  "by_phase": {
+   "v1 P1 design": 19,
+   "v1 P2 edits": 27,
+   "v1 P4 cheaper": 3,
+   "v1 P5 drop-in": 1
+  },
+  "best_found_in": "v1 P1 design",
+  "best_smiles": "CC1CNCCN1"
+ },
+ "rebar": {
+  "designs": 149,
+  "by_phase": {
+   "v1 P2 edits": 75,
+   "v1 P3 US-sourced": 38,
+   "v1 P4 cheaper": 7,
+   "v1 P5 drop-in": 21,
+   "v1 P1 design": 8
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "O=S(=O)(O)c1ccc2sc(S)nc2c1S(=O)(=O)O"
+ },
+ "cork": {
+  "designs": 158,
+  "by_phase": {
+   "v1 P3 US-sourced": 27,
+   "v1 P2 edits": 60,
+   "v1 P1 design": 20,
+   "v1 P4 cheaper": 29,
+   "v1 P5 drop-in": 22
+  },
+  "best_found_in": "v1 P3 US-sourced",
+  "best_smiles": "CCOc1c2cc(C[N+](C)(C)C)cc1Cc1cc(C[N+](C)(C)C)cc(c1OCC)Cc1cc(C[N+](C)(C)C)cc(c1OCC)Cc1cc(C[N+](C)(C)C)cc(c1OCC)C2"
+ },
+ "pfas": {
+  "designs": 137,
+  "by_phase": {
+   "v1 P3 US-sourced": 30,
+   "v1 P2 edits": 60,
+   "v1 P1 design": 19,
+   "v1 P4 cheaper": 28
+  },
+  "best_found_in": "v1 P3 US-sourced",
+  "best_smiles": "COc1cc2c(OC)cc1Cc1cc(OC)c(cc1OC)Cc1c(OC)cc(c(OC)c1C)Cc1cc(OC)c(cc1OC)Cc1c(OC)cc(c(OC)c1C)C2"
+ },
+ "lithium": {
+  "designs": 122,
+  "by_phase": {
+   "v1 P2 edits": 57,
+   "v1 P3 US-sourced": 18,
+   "v1 P1 design": 18,
+   "v1 P4 cheaper": 29
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "C[N+](C)(C)Cc1cc2c(OS(=O)(=O)[O-])c(c1)Cc1cc(C[N+](C)(C)C)c(CO)c(c1OS(=O)(=O)[O-])Cc1cc(C[N+](C)(C)C)cc(c1OS(=O)(=O)[O-])Cc1c(N)c(C[N+](C)(C)C)cc(c1OS(=O)(=O)[O-])C2"
+ },
+ "co2": {
+  "designs": 145,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 21,
+   "v1 P4 cheaper": 30,
+   "v1 P1 design": 15,
+   "v1 P5 drop-in": 19
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "O=S(=O)([O-])Oc1c2cc(S(=O)(=O)[O-])cc1Cc1c(OS(=O)(=O)[O-])c(cc(S(=O)(=O)[O-])c1S(=O)(=O)O)Cc1cc(S(=O)(=O)[O-])c(S(=O)(=O)O)c(c1OS(=O)(=O)[O-])Cc1cc(S(=O)(=O)[O-])cc(c1OS(=O)(=O)[O-])C2"
+ },
+ "ethylene": {
+  "designs": 175,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P5 drop-in": 40,
+   "v1 P4 cheaper": 30,
+   "v1 P3 US-sourced": 28,
+   "v1 P1 design": 17
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "COc1cc2c(OC)cc1Cc1cc(OC)c(cc1OC)Cc1c(OC)cc(c(OC)c1Cl)Cc1cc(OC)c(cc1OC)Cc1c(OC)cc(c(OC)c1CO)C2"
+ },
+ "rareearth": {
+  "designs": 138,
+  "by_phase": {
+   "v1 P4 cheaper": 23,
+   "v1 P2 edits": 60,
+   "v1 P5 drop-in": 16,
+   "v1 P1 design": 15,
+   "v1 P3 US-sourced": 24
+  },
+  "best_found_in": "v1 P4 cheaper",
+  "best_smiles": "CCCN(C)C(=O)c1ccc2ccc3c(O)c(C(=O)O)c(C(=O)N(C)CC)nc3c2n1"
+ },
+ "gold": {
+  "designs": 176,
+  "by_phase": {
+   "v1 P3 US-sourced": 40,
+   "v1 P4 cheaper": 30,
+   "v1 P1 design": 20,
+   "v1 P2 edits": 60,
+   "v1 P5 drop-in": 26
+  },
+  "best_found_in": "v1 P3 US-sourced",
+  "best_smiles": "Cc1cc(S(=O)(=O)O)c(Cl)cc1NC(=S)NCCN(CCNC(=S)Nc1cc(F)cc(Cl)c1)CCNC(=S)Nc1cc(F)cc(Cl)c1"
+ },
+ "tmah": {
+  "designs": 143,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 40,
+   "v1 P1 design": 19,
+   "v1 P5 drop-in": 21,
+   "v1 P4 cheaper": 3
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "Cc1c(C[N+](C)(C)C)c(Cl)c2c(OCC(F)(F)F)c1Cc1cc(C[N+](C)(C)C)cc(c1OCC(F)(F)F)Cc1cc(C[N+](C)(C)C)cc(c1OCC(F)(F)F)Cc1cc(C[N+](C)(C)C)cc(c1OCC(F)(F)F)C2"
+ },
+ "cesium": {
+  "designs": 142,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 20,
+   "v1 P4 cheaper": 2,
+   "v1 P1 design": 20,
+   "v1 P5 drop-in": 40
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "Nc1c(S(=O)(=O)[O-])cc2c(OS(=O)(=O)[O-])c1Cc1cc(S(=O)(=O)[O-])cc(c1OS(=O)(=O)[O-])Cc1cc(S(=O)(=O)[O-])cc(c1OS(=O)(=O)[O-])Cc1c(OS(=O)(=O)[O-])c(cc(S(=O)(=O)[O-])c1S(=O)(=O)O)C2"
+ },
+ "sulfur": {
+  "designs": 186,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P4 cheaper": 30,
+   "v1 P1 design": 17,
+   "v1 P3 US-sourced": 39,
+   "v1 P5 drop-in": 40
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "COc1cc2c(OC)cc1Cc1cc(OC)c(cc1OC)Cc1cc(OC)c(c(S(=O)(=O)O)c1OC)Cc1cc(OC)c(c(OC)c1OC)Cc1cc(OC)c(cc1OC)C2"
+ },
+ "phosphate": {
+  "designs": 125,
+  "by_phase": {
+   "v1 P1 design": 16,
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 40,
+   "v1 P4 cheaper": 9
+  },
+  "best_found_in": "v1 P1 design",
+  "best_smiles": "NC(=[NH2+])c1cccc2cccc(NC=[NH2+])c12"
+ },
+ "xenon": {
+  "designs": 130,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 17,
+   "v1 P1 design": 14,
+   "v1 P4 cheaper": 3,
+   "v1 P5 drop-in": 36
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "C[N+](C)(C)Cc1cc2c(OCC(N)=O)c(c1)Cc1c(F)c(C[N+](C)(C)C)cc(c1OCC(N)=O)Cc1cc(C[N+](C)(C)C)cc(c1OCC(N)=O)Cc1c(OCC(N)=O)c(cc(C[N+](C)(C)C)c1S(=O)(=O)O)C2"
+ },
+ "chalco": {
+  "designs": 109,
+  "by_phase": {
+   "v1 P3 US-sourced": 32,
+   "v1 P2 edits": 60,
+   "v1 P1 design": 15,
+   "v1 P4 cheaper": 1,
+   "v1 P5 drop-in": 1
+  },
+  "best_found_in": "v1 P3 US-sourced",
+  "best_smiles": "CSC(=S)Sc1ccccc1S(=O)(=O)O"
+ },
+ "ammonium": {
+  "designs": 167,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P1 design": 18,
+   "v1 P4 cheaper": 30,
+   "v1 P3 US-sourced": 30,
+   "v1 P5 drop-in": 29
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "NC(=O)COc1c2cc(Br)cc1Cc1cc(Br)c(C(=O)O)c(c1OCC(N)=O)Cc1cc(Br)c(Cl)c(c1OCC(N)=O)Cc1cc(Br)cc(c1OCC(N)=O)C2"
+ },
+ "psensor": {
+  "designs": 190,
+  "by_phase": {
+   "v1 P1 design": 20,
+   "v1 P2 edits": 60,
+   "v1 P4 cheaper": 30,
+   "v1 P3 US-sourced": 40,
+   "v1 P5 drop-in": 40
+  },
+  "best_found_in": "v1 P1 design",
+  "best_smiles": "S=C(Nc1ccc2ccccc2c1)Nc1ccccc1NC(=S)Nc1cccc2ccccc12"
+ },
+ "magrec": {
+  "designs": 144,
+  "by_phase": {
+   "v1 P4 cheaper": 30,
+   "v1 P1 design": 17,
+   "v1 P3 US-sourced": 21,
+   "v1 P2 edits": 60,
+   "v1 P5 drop-in": 16
+  },
+  "best_found_in": "v1 P4 cheaper",
+  "best_smiles": "CCCN(CC)C(=O)c1ccc2ccc3ccc(C(=O)N(CC)CCC)nc3c2n1"
+ },
+ "reecoal": {
+  "designs": 129,
+  "by_phase": {
+   "v1 P4 cheaper": 30,
+   "v1 P2 edits": 60,
+   "v1 P1 design": 13,
+   "v1 P3 US-sourced": 19,
+   "v1 P5 drop-in": 7
+  },
+  "best_found_in": "v1 P4 cheaper",
+  "best_smiles": "CCCCN(CCCC)C(=O)c1ccc2ccc3cc(C(=O)O)c(C(=O)N(CCCC)CCCC)nc3c2n1"
+ },
+ "culoop": {
+  "designs": 149,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 26,
+   "v1 P5 drop-in": 40,
+   "v1 P1 design": 19,
+   "v1 P4 cheaper": 4
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "O=S(=O)(O)c1cc(C(F)(F)F)cc2nc(S)sc12"
+ },
+ "polysulfide": {
+  "designs": 100,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P1 design": 20,
+   "v1 P3 US-sourced": 20
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "COc1c2cc(C[N+](C)(C)C)cc1Cc1cc(C[N+](C)(C)C)c(S(=O)(=O)O)c(c1OC)Cc1cc(C[N+](C)(C)C)cc(c1OC)Cc1c(N)c(C[N+](C)(C)C)cc(c1OC)C2"
+ },
+ "femob": {
+  "designs": 17,
+  "by_phase": {
+   "v1 P1 design": 17
+  },
+  "best_found_in": "v1 P1 design",
+  "best_smiles": "CCCN(CC)C(=O)CP(=O)(CC)c1ccccc1"
+ },
+ "shortpfas": {
+  "designs": 118,
+  "by_phase": {
+   "v1 P2 edits": 60,
+   "v1 P3 US-sourced": 39,
+   "v1 P1 design": 19
+  },
+  "best_found_in": "v1 P2 edits",
+  "best_smiles": "Cc1cc2c(OS(=O)(=O)[O-])c(c1)Cc1c(O)c(C)cc(c1OS(=O)(=O)[O-])Cc1cc(C)c(C(=O)O)c(c1OS(=O)(=O)[O-])Cc1cc(C)cc(c1OS(=O)(=O)[O-])C2"
+ },
+ "dyetrap": {
+  "designs": 18,
+  "by_phase": {
+   "v1 P1 design": 18
+  },
+  "best_found_in": "v1 P1 design",
+  "best_smiles": "O=C([O-])c1cc2c(OS(=O)(=O)[O-])c(c1)Cc1cc(C(=O)[O-])cc(c1OS(=O)(=O)[O-])Cc1cc(C(=O)[O-])cc(c1OS(=O)(=O)[O-])Cc1cc(C(=O)[O-])cc(c1OS(=O)(=O)[O-])C2"
+ }
+}

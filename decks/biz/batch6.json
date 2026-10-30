@@ -1,0 +1,42 @@
+{
+ "culoop": {
+  "type": "Product",
+  "problem": "Liquid cooling loops corrode copper",
+  "design": "Corrosion inhibitor for copper loops",
+  "s0_smiles": "NC(CCC(=O)[O-])C(=O)[O-]",
+  "today_best": "benzotriazole"
+ },
+ "coolant": {
+  "type": "Product",
+  "problem": "Immersion fluids are PFAS or flammable",
+  "design": "PFAS-free immersion fluid blend",
+  "s0_smiles": null,
+  "today_best": "ElectroCool EC-110"
+ },
+ "ctower": {
+  "type": "Add-in",
+  "problem": "Data-center cooling towers need scale/corrosion control; phosphorus treatments face discharge limits",
+  "design": "Phosphorus-free scale and corrosion inhibitor for cooling towers",
+  "new": true
+ },
+ "tmah": {
+  "type": "Process",
+  "problem": "Chip fabs dump toxic TMAH developer",
+  "design": "Binder that recovers TMAH from fab waste",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "cmpchel": {
+  "type": "Add-in",
+  "problem": "Copper polishing slurries need cleaner chelators",
+  "design": "Chelator for copper polishing slurry",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "plating": {
+  "type": "Add-in",
+  "problem": "AI-chip packaging needs void-free copper plating in tiny vias; additives limit yield",
+  "design": "Copper plating leveler for advanced packaging",
+  "new": true
+ }
+}

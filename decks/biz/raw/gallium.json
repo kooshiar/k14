@@ -1,0 +1,99 @@
+{
+ "key": "gallium",
+ "name": "Gallium from Bayer liquor",
+ "market": {
+  "usd_yr": 315000000,
+  "year": 2025,
+  "what": "Primary low-purity gallium, world (99% China)",
+  "method": "900 t/yr x ~$350/kg blend (China ~$230-430, US import $580; West $2,500+ in 2026). Report cross-check $464M (2024, incl. refined)",
+  "sources": [
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gallium.pdf",
+   "https://www.materialsdispatch.com/en/blog/top-10-non-chinese-gallium-and-germanium-supply",
+   "https://galliumprice.com/market-data/",
+   "https://www.giiresearch.com/report/ires1806391-gallium-market-by-purity-grade-product-type-form.html"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 130000000,
+  "job_what": "extracting crude Ga from Bayer liquor (chelating resin + elution + electrowinning), world (99% China)",
+  "job_method": "~900 t/yr x ~$140/kg cash cost (China price ~1,700 yuan/kg = ~$235/kg; SMM ~40% gross margin) = ~$126M; Western new-build ~$620-700/kg (S&P); low-med confidence",
+  "job_sources": [
+   "https://news.metal.com/newscontent/103151925/2024-Gallium-Market-Brief-Analysis-%5BSMM-Germanium-Market-Analysis%5D",
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/critical-mineral-market-reports/Market%20Report%20-%20Gallium%20-%2008052026.pdf",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gallium.pdf"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 65000000,
+  "logic": "ex-China Bayer Ga by 2032 est. 250 t (Alcoa 100, Metlen 50, Rio 40, others 60). Better sorbent: +15 pts recovery (~40 t) x ~$1,000/kg = $40M + longer resin life/opex -$100/kg x 250 t = $25M",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "40% share x 250 t Ga x ~$50/kg Ga sorbent cost-in-use",
+  "gross_margin_pct": 65,
+  "margin_logic": "specialty grafted resin, made by a toll resin maker",
+  "sources": [
+   "https://www.materialsdispatch.com/en/blog/top-10-non-chinese-gallium-and-germanium-supply",
+   "https://stockhead.com.au/resources/how-alcoas-wagerup-gallium-push-could-unleash-a-wa-critical-minerals-wave/",
+   "https://www.sec.gov/Archives/edgar/data/863064/000162828025028805/ex06d07mr_indiumgallium.htm"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "GaN power/RF and defense; China export controls 2023, US ban Dec 2024; Alcoa FID Jul 2026; DOE TRACE-Ga",
+  "deadline": "27 Nov 2026: China's 1-yr suspension of its US Ga/Ge export ban ends",
+  "sources": [
+   "https://www.giiresearch.com/report/ires1806391-gallium-market-by-purity-grade-product-type-form.html",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gallium.pdf",
+   "https://www.materialsdispatch.com/en/blog/top-10-non-chinese-gallium-and-germanium-supply"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Supra Elemental Recovery"
+  ],
+  "indirect_startups": [
+   "Found Energy (Found Metals)",
+   "PHNX Materials",
+   "ElementUSA",
+   "Metallium"
+  ],
+  "incumbents": [
+   "Chinalco",
+   "Alcoa",
+   "Rio Tinto / Indium Corp",
+   "Metlen",
+   "Atlantic Alumina (Atalco)",
+   "Sunresin",
+   "Lanxess",
+   "Purolite (Ecolab)",
+   "Dowa"
+  ],
+  "papers_3yr": null,
+  "paper_query": "gallium extraction Bayer liquor",
+  "groups_active": null,
+  "notes": "Atlantic Alumina: $800M combined funding + $100M DoW (Aug 2026) for ion-exchange Ga; DOE TRACE-Ga $5.4M to 5 projects (Apr 2026); ElementUSA $29.9M DoW (2025); Supra raised $2M.",
+  "sources": [
+   "https://www.semiconductor-today.com/news_items/2026/apr/doe-trace-ga-150426.shtml",
+   "https://news.metal.com/en/newscontent/103756016-US-Based-Supra-to-Launch-Gallium-and-Scandium-Recovery-Project",
+   "https://xenospectrum.com/en/atalco-alumina-gallium-investment/",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gallium.pdf"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 50000,
+  "synth": "grafted chelating resin (chelator on polymer bead) must survive hot caustic; 3 variants",
+  "test": "Batch isotherm + column breakthrough in synthetic Bayer liquor (150-200 mg/L Ga, ~160 g/L NaOH, 60-80 g/L Al, 50-60 C), 10-cycle stability; ICP-OES; real liquor via refinery partner",
+  "logic": "synth 14 wk ~$35-40k + test 4 wk: ~200 ICP-OES x $40 = $8k + column rig ~$4k",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://www.umt.edu/environmental-biogeochemistry-lab/resources/um_ebl_price_list_20251001.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "side-stream pilot column at a refinery 6-12 mo; resin life in hot caustic; refinery FID (Alcoa took ~2 yr pilot to FID)",
+  "sources": [
+   "https://stockhead.com.au/resources/how-alcoas-wagerup-gallium-push-could-unleash-a-wa-critical-minerals-wave/",
+   "https://www.sec.gov/Archives/edgar/data/863064/000162828025028805/ex06d07mr_indiumgallium.htm"
+  ]
+ }
+}

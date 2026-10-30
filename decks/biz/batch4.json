@@ -1,0 +1,43 @@
+{
+ "phosphate": {
+  "type": "Add-in",
+  "problem": "Phosphate in farm runoff feeds algae blooms",
+  "design": "Binder that catches phosphate over chloride",
+  "s0_smiles": "c1ccc(C2=[NH+]C(c3ccccc3)c3c(ccc4ccccc34)N2)cc1",
+  "today_best": "quaternary ammonium (resin site)"
+ },
+ "psensor": {
+  "type": "Product",
+  "problem": "Tracking phosphate takes a $29,000 analyzer",
+  "design": "Binder for a reagent-free phosphate probe",
+  "s0_smiles": "O=[N+]([O-])c1cccc(NC(=S)NC2CCCCC2NC(=S)Nc2ccccc2)c1",
+  "today_best": "quaternary ammonium (resin site)"
+ },
+ "ammonium": {
+  "type": "Product",
+  "problem": "Ammonium probes are fooled by potassium",
+  "design": "Binder that picks ammonium over potassium",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "siloxane": {
+  "type": "Add-in",
+  "problem": "Silicone from shampoos wrecks biogas engines",
+  "design": "Sorbent that pulls siloxanes from biogas",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "co2": {
+  "type": "Add-in",
+  "problem": "Humid air ruins most CO₂ sorbents",
+  "design": "Sorbent that catches CO₂ in humid air",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "amine": {
+  "type": "Add-in",
+  "problem": "Carbon-capture amine solvents need too much steam and degrade",
+  "design": "Capture solvent with lower regeneration energy and degradation",
+  "new": true
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "key": "rebar",
+ "name": "Rebar corrosion inhibitor",
+ "market": {
+  "usd_yr": 480000000,
+  "year": 2025,
+  "what": "corrosion-inhibiting concrete admixtures + surface-applied inhibitors (calcium nitrite, amino alcohols, MCI), world",
+  "method": "report $479M (VMR says $1.30B, outlier); bottom-up est. ~0.1% of 14 bn m3/yr concrete x 15 L/m3 x ~$1.6/L = ~$0.35B",
+  "sources": [
+   "https://www.marketresearchintellect.com/product/concrete-corrosion-inhibitors-market/",
+   "https://www.prnewswire.com/news-releases/concrete-corrosion-inhibitors-market-to-reach-usd-3-02-billion-by-2033--driven-by-infrastructure-durability-requirements-corrosion-risk-mitigation-and-advanced-mixedpolymer-formulations--verified-market-research-302785779.html",
+   "https://usa.sika.com/en/construction-products/concrete/concrete-admixtures/durability-enhancement/corrosion-inhibitors/sika-cni.html"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 2500000000,
+  "logic": "US bridge corrosion $8.3B/yr direct (FHWA); world ~3x = ~$25B; better inhibitor on new and repaired salt-exposed concrete cuts that ~10% at maturity (est.)",
+  "our_revenue_usd_yr": 30000000,
+  "revenue_logic": "~6% share of ~$0.5B admixture market by yr 7 at price parity with calcium nitrite (~$20-25/m3)",
+  "gross_margin_pct": 50,
+  "margin_logic": "admixture sold through Sika/Saint-Gobain-type channels; small aryl phosphonate made in 1-2 steps",
+  "sources": [
+   "https://www.fhwa.dot.gov/publications/research/infrastructure/structures/04093/01.cfm",
+   "https://artbabridgereport.org/reports/2025-ARTBA-Bridge-Report.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "aging bridges ($260B repair backlog US, 41,677 poor bridges); de-icing salt; marine and coastal infrastructure",
+  "deadline": "",
+  "sources": [
+   "https://artbabridgereport.org/reports/2025-ARTBA-Bridge-Report.pdf",
+   "https://www.prnewswire.com/news-releases/concrete-corrosion-inhibitors-market-to-reach-usd-3-02-billion-by-2033--driven-by-infrastructure-durability-requirements-corrosion-risk-mitigation-and-advanced-mixedpolymer-formulations--verified-market-research-302785779.html"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Neuvokas (GatorBar basalt rebar)",
+   "Mateenbar (GFRP rebar)",
+   "Basilisk (self-healing concrete)",
+   "Giatec (sensors)"
+  ],
+  "incumbents": [
+   "Sika (FerroGard, CNI)",
+   "Saint-Gobain/GCP (DCI)",
+   "Cortec (MCI)",
+   "Fosroc",
+   "Euclid Chemical",
+   "Mapei"
+  ],
+  "papers_3yr": null,
+  "paper_query": "corrosion inhibitor rebar chloride concrete",
+  "groups_active": null,
+  "notes": "no funded startup found with a new molecular rebar inhibitor; Sika (owns MBS MasterLife) and Saint-Gobain/GCP dominate; the threat is non-steel rebar",
+  "sources": [
+   "https://gcpat.com/sites/gcpat.com/files/2017-08/DCI%20DataSheet.pdf",
+   "https://www.cortecvci.com/Publications/Papers/C2019-13434[4].pdf"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 30000,
+  "synth": "1-2 step custom aryl phosphite/phosphonate; 3 variants",
+  "test": "LPR/EIS in simulated pore solution (sat. Ca(OH)2 + NaCl) + ASTM G180 slurry test + ASTM C494 set/strength check; G109 macrocell beams run on for C1582 (months-years)",
+  "logic": "synth 5 wk + electrochem 4 wk + 28-day strength; synth ~$15k + tests ~$15k (est.)",
+  "sources": [
+   "https://store.astm.org/g0180-13r19.html",
+   "https://standards.iteh.ai/catalog/standards/astm/0477646c-d729-4e9c-9be9-5d4bc6841445/astm-c1582-c1582m-11-2017-e1"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "ASTM C1582 needs G109 macrocell data (long run); state DOT approved-product lists; TSCA PMN for new substance; faster via repair/parking market",
+  "sources": [
+   "https://library.ctr.utexas.edu/hostedPDFs/tti/0-4825-1.pdf",
+   "https://Transportation.Ky.Gov/Construction/Special Notes and Special Provisions/SPECIAL NOTE 2CC FOR CORROSION INHIBITORS.pdf"
+  ]
+ }
+}

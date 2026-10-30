@@ -1,0 +1,84 @@
+{
+ "key": "ctower",
+ "name": "P-free tower inhibitor",
+ "market": {
+  "usd_yr": 230000000,
+  "year": 2025,
+  "what": "Cooling-tower water treatment (scale, corrosion, biocide) at data centers, world",
+  "method": "est. US DC water ~25 bn gal/yr 2025 (17 in 2023, 38-73 in 2028) x COC 5 makeup ~31 bn gal x $3/kgal treatment = ~$95M; US ~40% of world -> ~$230M; all-industry reports $12.6-29.5B",
+  "sources": [
+   "https://legalectric.org/f/2025/09/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
+   "https://eaiwater.com/what-should-operating-a-cooling-towers-water-treatment-cost/",
+   "https://clearcomfort.com/cooling-tower-chemical-treatment-cost/",
+   "https://www.giiresearch.com/report/tbrc1703230-cooling-water-treatment-chemicals-global-market.html"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 170000000,
+  "logic": "P-free inhibitor that holds scale at COC 8 vs 4: world DC evaporation ~60 bn gal (est.) -> makeup 80 to 69, blowdown 20 to 9 bn gal; 11 bn gal x ($5 water + $10 sewer)/kgal = ~$170M; plus no P-removal at outfall",
+  "our_revenue_usd_yr": 10000000,
+  "revenue_logic": "2032 DC tower treatment ~$600M x ~30% actives value x ~50% P-free x ~12% share = ~$11M, sold to service cos",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty polymer/small-molecule active sold to formulators; service cos keep the markup",
+  "sources": [
+   "https://legalectric.org/f/2025/09/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
+   "https://cityofmi.org/department-public-works/page/water-sewer-rates",
+   "https://www.shreveportlawater.gov/195/Water-Sewer-Rates"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 17,
+  "drivers": "US DC water 17 bn gal (2023) to 38-73 bn gal (2028); P-impaired rivers get ~1 ppm P outfall limits; water scrutiny on AI sites",
+  "deadline": "EU Urban Wastewater Directive recast 2024/3019 (tighter P removal, phased to 2039); local P permit limits now",
+  "sources": [
+   "https://legalectric.org/f/2025/09/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
+   "https://www.power-eng.com/environmental-emissions/the-continuing-evolution-of-cooling-tower-water-treatment/",
+   "https://eur-lex.europa.eu/eli/dir/2024/3019/oj"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Clearcomfort",
+   "Dynamic Water Technologies",
+   "Gradiant"
+  ],
+  "incumbents": [
+   "Ecolab/Nalco (non-P programs, 3D TRASAR)",
+   "Veolia",
+   "Kurita",
+   "Solenis",
+   "ChemTreat (Veralto)",
+   "Italmatch",
+   "BWA Water Additives"
+  ],
+  "papers_3yr": null,
+  "paper_query": "\"cooling water\" \"phosphorus-free\" scale inhibitor",
+  "groups_active": null,
+  "notes": "Ecolab serves >1,000 data centers and is adding CoolIT ($4.75B, 2026); non-P polymer programs already sold by majors, so we must beat them at high COC. Gradiant raised $225M (2023).",
+  "sources": [
+   "https://finance.yahoo.com/markets/stocks/articles/ecolab-details-4-75b-coolit-194713185.html",
+   "https://kuritaamerica.com/the-splash/saint-johns-university-operations-meets-new-water-discharge-permit-limitations",
+   "https://docs.nrel.gov/docs/fy20osti/73940.pdf"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 35000,
+  "synth": "1-2 step custom (carboxylate/sulfonate small molecule or short oligomer), 3 variants",
+  "test": "AMPP/NACE TM0374 CaCO3 jar test + dynamic tube-blocking + ASTM D2688 coupons / LPR corrosion; then pilot cooling-tower rig; univ. or water-treatment lab",
+  "logic": "5-6 wk CRO synth + 6 wk tests; 3 x ~$6k synth + ~$10k scale/corrosion tests + ~$7k pilot rig",
+  "sources": [
+   "https://docs.nrel.gov/docs/fy20osti/73940.pdf",
+   "https://www.astm.org/d2688-15r22.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "field trial on one DC tower 3-6 mo; service co (Ecolab/ChemTreat) or operator approval; discharge permit check; no EPA registration (non-biocide)",
+  "sources": [
+   "https://docs.nrel.gov/docs/fy20osti/73940.pdf"
+  ]
+ }
+}

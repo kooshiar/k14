@@ -1,0 +1,85 @@
+{
+ "key": "phosphate",
+ "name": "Phosphate catcher",
+ "market": {
+  "usd_yr": 870000000,
+  "year": 2024,
+  "what": "chemicals and media sold to remove phosphate (WWTP iron/alum coagulants, P sorbents, lake binders), world",
+  "method": "avg of 2 reports: P-removing agents $890M (2024) and chemical-precipitation P removal $850M (2024); cross-check ferric chloride $978M x 60% water use = ~$590M. Selective sorbents are a small slice (Phoslock 2024 sales A$0.76M)",
+  "sources": [
+   "https://www.24chemicalresearch.com/reports/261850/global-high-efficient-phosphorus-removing-agent-forecast-market",
+   "https://www.wiseguyreports.com/reports/Phosphoru%20Removal%20And%20Recovery%20Solution%20Market",
+   "https://www.marketresearch.com/APO-Research-Inc-v4273/Global-Ferric-Chloride-Forecast-37574860",
+   "https://www.roic.ai/quote/PET.AX"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 900000000,
+  "logic": "Polishing to <=0.1 mg/L with alum costs $160-430/kg P. Est. 15 km3/yr effluent at tight limits x 0.4 g P/m3 = 6 kt P/yr; selective sorbent at ~$60/kg P saves ~$150/kg -> ~$0.9B/yr (est.). Ag drain filters today cost $100-1,300/kg P: extra upside not counted",
+  "our_revenue_usd_yr": 20000000,
+  "revenue_logic": "Polishing media spend if adopted ~6 kt P x $60/kg = $360M; K14 binder in a partner resin at ~5% share -> ~$18M, plus ag filter media ~$2M (est.)",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty grafted resin/media sold per m3; binder cost small vs resin price",
+  "sources": [
+   "https://pubs.rsc.org/en/content/articlelanding/2025/ew/d5ew00047e",
+   "https://www.pbl.nl/en/publications/global-nitrogen-and-phosphate-in-urban-wastewater-for-the-period-1970-to-2050",
+   "https://www.mdpi.com/2073-4441/13/6/797"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "EU UWWTD recast 2024/3019 (P 0.5-0.7 mg/L, tertiary at >=150k PE); US permits down to 0.05 mg/L; Lake Erie / H2Ohio runoff programs",
+  "deadline": "2039: EU UWWTD tertiary (P) treatment at all plants >=150k PE",
+  "sources": [
+   "https://sswm.info/node/13492",
+   "https://www.24chemicalresearch.com/reports/261850/global-high-efficient-phosphorus-removing-agent-forecast-market",
+   "https://www.wyso.org/news/2025-12-10/ohio-reduced-funding-for-its-signature-water-protection-program-what-happens-next"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "EutroPHIX (lake P binder)",
+   "CAPTure system (Kieser & Associates, ag drainage P filter)"
+  ],
+  "indirect_startups": [
+   "Phospholutions (P-efficient fertilizer, $32.5M raised)"
+  ],
+  "incumbents": [
+   "Kemira",
+   "Ecolab-Purolite (FerrIX A33E)",
+   "LANXESS (Lewatit FO 36)",
+   "SePRO / Phoslock",
+   "Veolia"
+  ],
+  "papers_3yr": null,
+  "paper_query": "phosphate selective sorbent runoff",
+  "groups_active": null,
+  "notes": "Iron/alum precipitation dominates and is cheap at 0.5-1 mg/L; the gap is ultra-low polishing and runoff. Hybrid iron-oxide resins (HAIX, FerrIX) are the bar. Phoslock sales collapsed to A$0.76M in 2024; H2Ohio cut from $270M to ~$165M",
+  "sources": [
+   "https://agfundernews.com/brief-phospholutions-lands-10-15m-to-help-more-farmers-around-the-world-manage-phosphorus-use",
+   "https://captured.eco/",
+   "https://www.thecentralvirginian.com/news/water-improvement-efforts-continue-at-lake-anna/article_1950b8bd-c46f-4b80-86bb-2d4f05a390be.html",
+   "https://www.kemira.com/investors/reports-and-presentations/annual-report-2024"
+  ]
+ },
+ "lab": {
+  "weeks": 16,
+  "usd": 45000,
+  "synth": "1-2 step custom: cyclic amidinium (aldehyde + diamine condensation), 3 variants; then grafting onto a resin bead adds ~6 wk",
+  "test": "binding vs Cl-/SO4 by NMR/ITC titration, then batch isotherms + small column in real effluent; orthophosphate by EPA 365.1 (university water lab)",
+  "logic": "synth 6 wk + grafting 6 wk + tests 4 wk; 3 x $6k synth + $15k grafting + ~300 EPA 365.1 samples at $7-22 (~$5k) + $7k ITC/column work",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Nutrients-Lab-price-list-effective-3-1-2026.pdf",
+   "https://www.abe.iastate.edu/soupir/files/2023/02/Water-Quality-Research-Laboratory-Method-Price-List_2023.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "resin-partner scale-up ~1 yr; WWTP or tile-drain pilot 1 season; fits NRCS 782 P removal practice for farm cost-share",
+  "sources": [
+   "https://agbmps.osu.edu/bmp/phosphorus-removal-structure-nrcs-782",
+   "https://agri.ohio.gov/wps/wcm/connect/gov/72bb0e72-9c1d-40b8-b894-e99340ee459a/H2Ohio_P+Removal+Structure+Program_Technology+RFP+2024_FINAL.pdf?CACHEID=ROOTWORKSPACE.Z18_K9I401S01H7F40QBNJU3SO1F56-72bb0e72-9c1d-40b8-b894-e99340ee459a-p98op3U&CONVERT_TO=url&MOD=AJPERES"
+  ]
+ }
+}

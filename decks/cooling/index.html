@@ -1,0 +1,180 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liquid cooling layers</title>
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#C6CCD5;--green:#2E8A1F;--blue:#2F6FD6;--oil:#F3D98B}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#ECEAE4;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+.slide{display:none;position:absolute;inset:0;margin:auto;width:min(96vw,170vh);height:min(54vw,92vh);background:#fff;border-radius:14px;padding:4.5% 5%;flex-direction:column}
+.slide.on{display:flex}
+h1{margin:0 0 6%;font-size:clamp(20px,3vw,44px);font-weight:600;letter-spacing:-.02em}
+.vis{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+svg{width:100%;height:100%}
+svg text{font-family:inherit}
+nav{position:fixed;right:18px;bottom:14px;display:flex;gap:8px;align-items:center;font:500 14px monospace;color:var(--mut)}
+nav button{border:1px solid var(--line);background:#fff;border-radius:6px;width:34px;height:30px;cursor:pointer;font-size:16px}
+.tb{border-collapse:collapse;width:88%;font-size:clamp(12px,1.45vw,22px)}.tb th,.tb td{padding:1.1% 2%;border-bottom:1px solid #E3E6EB;text-align:left}.tb thead th{font-weight:600;font-size:1.05em;border-bottom:2px solid #14161A}.tb tbody th{color:#596070;font-weight:500;width:22%}.tb td{font-weight:600}
+.g6{display:grid;grid-template-columns:1.1fr repeat(5,1fr);gap:10px;width:100%;font-size:clamp(11px,1.3vw,20px)}.gh{font-weight:600;padding:10px 4px;border-bottom:2px solid #14161A}.gh span{color:#596070;margin-right:8px}.gr{font-weight:600;display:flex;align-items:center}.gc{border:1px solid #C6CCD5;border-radius:10px;padding:16px 14px;min-height:7em;font-weight:500;line-height:1.35}
+.c2{display:grid;grid-template-columns:1fr 1fr;gap:5%;width:100%;font-size:clamp(11px,1.3vw,20px)}.ccol h3{margin:0 0 .8em;font-size:1.25em;font-weight:600}.cc{display:grid;grid-template-columns:30% 1fr 34%;gap:12px;align-items:baseline;padding:.75em 0;border-bottom:1px solid #E3E6EB}.cc b{font-weight:600}.cc span{color:#14161A}.cc i{font-style:normal;font-weight:600;text-align:right}
+</style></head><body>
+
+<section class="slide on"><h1>Liquid cooling in three layers</h1><div class="vis"><svg viewBox="0 0 1500 520"><line x1="250.0" y1="50" x2="1280.0" y2="50" stroke="#C6CCD5" stroke-width="2"/><line x1="250.0" y1="50" x2="250.0" y2="130" stroke="#C6CCD5" stroke-width="1.6"/><rect x="181.0" y="28" width="138" height="44" rx="22" fill="#fff" stroke="#14161A" stroke-width="1.6"/><text x="205.0" y="57" font-size="20" fill="#596070" font-weight="600">1</text><text x="225.0" y="57" font-size="22" font-weight="600">System</text><rect x="50" y="130" width="400" height="370" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/><rect x="100" y="180" width="120" height="210" rx="6" fill="#F6F7F9" stroke="#14161A" stroke-width="2"/><rect x="113" y="195" width="94" height="32" rx="3" fill="#fff" stroke="#C6CCD5"/><rect x="126" y="207" width="34" height="11" fill="#14161A"/><rect x="124" y="200" width="38" height="7" fill="#DCE8F8" stroke="#2F6FD6"/><rect x="113" y="243" width="94" height="32" rx="3" fill="#fff" stroke="#C6CCD5"/><rect x="126" y="255" width="34" height="11" fill="#14161A"/><rect x="124" y="248" width="38" height="7" fill="#DCE8F8" stroke="#2F6FD6"/><rect x="113" y="291" width="94" height="32" rx="3" fill="#fff" stroke="#C6CCD5"/><rect x="126" y="303" width="34" height="11" fill="#14161A"/><rect x="124" y="296" width="38" height="7" fill="#DCE8F8" stroke="#2F6FD6"/><rect x="113" y="339" width="94" height="32" rx="3" fill="#fff" stroke="#C6CCD5"/><rect x="126" y="351" width="34" height="11" fill="#14161A"/><rect x="124" y="344" width="38" height="7" fill="#DCE8F8" stroke="#2F6FD6"/><path d="M228 190 V380" stroke="#2F6FD6" stroke-width="5"/><path d="M260 210 V390 H400 V210" fill="none" stroke="#14161A" stroke-width="2.5"/><rect x="262" y="245" width="136" height="143" fill="#F3D98B" opacity=".75"/><rect x="280" y="222" width="20" height="150" rx="2" fill="#fff" stroke="#14161A" stroke-width="1.5"/><rect x="284" y="288" width="12" height="18" fill="#14161A"/><rect x="320" y="222" width="20" height="150" rx="2" fill="#fff" stroke="#14161A" stroke-width="1.5"/><rect x="324" y="288" width="12" height="18" fill="#14161A"/><rect x="360" y="222" width="20" height="150" rx="2" fill="#fff" stroke="#14161A" stroke-width="1.5"/><rect x="364" y="288" width="12" height="18" fill="#14161A"/><text x="160" y="435" font-size="18" font-weight="600" text-anchor="middle">Direct-to-chip</text><text x="330" y="435" font-size="18" font-weight="600" text-anchor="middle">Immersion</text><line x1="780.0" y1="50" x2="780.0" y2="130" stroke="#C6CCD5" stroke-width="1.6"/><rect x="691.5" y="28" width="177" height="44" rx="22" fill="#fff" stroke="#14161A" stroke-width="1.6"/><text x="715.5" y="57" font-size="20" fill="#596070" font-weight="600">2</text><text x="735.5" y="57" font-size="22" font-weight="600">Materials</text><rect x="595.0" y="130" width="370" height="360" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/><rect x="665.0" y="180" width="70" height="185" fill="#DCE8F8"/><rect x="665.0" y="365" width="70" height="63" fill="#B9D0F2"/><rect x="665.0" y="428" width="70" height="7" fill="#2E8A1F"/><rect x="825.0" y="180" width="70" height="255" fill="#2E8A1F"/><line x1="1280.0" y1="50" x2="1280.0" y2="130" stroke="#C6CCD5" stroke-width="1.6"/><rect x="1204.5" y="28" width="151" height="44" rx="22" fill="#fff" stroke="#14161A" stroke-width="1.6"/><text x="1228.5" y="57" font-size="20" fill="#596070" font-weight="600">3</text><text x="1248.5" y="57" font-size="22" font-weight="600">Designs</text><rect x="1110.0" y="130" width="340" height="340" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/><path d="M1170.0 240 H1390.0" stroke="#B87333" stroke-width="18" stroke-linecap="round"/><circle cx="1185.0" cy="218" r="9" fill="#2E8A1F"/><circle cx="1225.0" cy="218" r="9" fill="#2E8A1F"/><circle cx="1265.0" cy="218" r="9" fill="#2E8A1F"/><circle cx="1305.0" cy="218" r="9" fill="#2E8A1F"/><circle cx="1345.0" cy="218" r="9" fill="#2E8A1F"/><circle cx="1385.0" cy="218" r="9" fill="#2E8A1F"/><path d="M1210.0 300 V420 H1350.0 V300" fill="none" stroke="#14161A" stroke-width="2.5"/><rect x="1212.0" y="340" width="136" height="78" fill="#DCEFD6"/><rect x="1265.0" y="315" width="30" height="90" rx="2" fill="#14161A"/><circle cx="1235.0" cy="375" r="6" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1300.0" cy="365" r="6" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><text x="700.0" y="468" font-size="17" font-weight="600" text-anchor="middle">Water + glycol</text><text x="860.0" y="468" font-size="17" font-weight="600" text-anchor="middle">Boiling fluid</text><text x="1280.0" y="280" font-size="17" font-weight="600" text-anchor="middle">Copper inhibitor</text><text x="1280.0" y="448" font-size="17" font-weight="600" text-anchor="middle">PFAS-free fluid</text></svg></div></section>
+
+<section class="slide"><h1>Liquid cooling money: backlog, sales, market</h1><div class="vis"><svg viewBox="0 0 1500 440"><text x="540" y="51" font-size="21" text-anchor="end">Vertiv backlog (all products), end 2024</text><rect x="560" y="28" width="417.6" height="34" fill="#B9D0F2"/><text x="989.6" y="52" font-size="22" font-weight="600">$7.2B</text><text x="540" y="119" font-size="21" text-anchor="end">Vertiv backlog (all products), end 2025</text><rect x="560" y="96" width="870.0" height="34" fill="#2F6FD6"/><text x="1442.0" y="120" font-size="22" font-weight="600">$15B</text><text x="540" y="187" font-size="21" text-anchor="end">Boyd Thermal liquid-cooling sales, 2026 plan</text><rect x="560" y="164" width="87.0" height="34" fill="#596070"/><text x="659.0" y="188" font-size="22" font-weight="600">$1.5B</text><text x="540" y="255" font-size="21" text-anchor="end">CoolIT sales, next 12 months (Mar 2026)</text><rect x="560" y="232" width="31.900000000000002" height="34" fill="#596070"/><text x="603.9" y="256" font-size="22" font-weight="600">$0.55B</text><text x="540" y="323" font-size="21" text-anchor="end">Liquid-cooling market, 2025</text><rect x="560" y="300" width="127.60000000000001" height="34" fill="#2E8A1F"/><rect x="687.6" y="300" width="156.60000000000002" height="34" fill="#2E8A1F" opacity=".35"/><text x="856.2" y="324" font-size="22" font-weight="600">$2.2–4.9B</text><circle cx="530" cy="402" r="9" fill="#C2261C"/><text x="560" y="410" font-size="22" font-weight="600">3M exits Novec and Fluorinert fluids, end of 2025</text></svg></div></section>
+
+<section class="slide"><h1>Liquid cooling acquisitions, 2024–2026</h1><div class="vis"><svg viewBox="0 0 1500 458"><text x="580" y="51" font-size="21" text-anchor="end">Eaton buys Boyd Thermal, Nov 2025</text><rect x="600" y="28" width="551.0" height="34" fill="#14161A"/><text x="1163.0" y="52" font-size="22" font-weight="600">$9.5B</text><text x="580" y="119" font-size="21" text-anchor="end">Ecolab buys CoolIT, Mar 2026</text><rect x="600" y="96" width="275.5" height="34" fill="#14161A"/><text x="887.5" y="120" font-size="22" font-weight="600">$4.75B</text><text x="580" y="187" font-size="21" text-anchor="end">Vertiv buys PurgeRite (loop flushing), Dec 2025</text><rect x="600" y="164" width="58.0" height="34" fill="#14161A"/><rect x="658.0" y="164" width="14.5" height="34" fill="#14161A" opacity=".35"/><text x="684.5" y="188" font-size="22" font-weight="600">$1.0B + up to $0.25B</text><text x="580" y="255" font-size="21" text-anchor="end">Schneider buys 75% of Motivair, Oct 2024</text><rect x="600" y="232" width="49.3" height="34" fill="#14161A"/><text x="661.3" y="256" font-size="22" font-weight="600">$0.85B</text><text x="580" y="323" font-size="21" text-anchor="end">Daikin buys Chilldyne, Nov 2025</text><text x="600" y="324" font-size="22" font-weight="600" fill="#596070">price not disclosed</text><text x="580" y="391" font-size="21" text-anchor="end">Trane buys LiquidStack, Feb 2026</text><text x="600" y="392" font-size="22" font-weight="600" fill="#596070">price not disclosed</text></svg></div></section>
+
+<section class="slide"><h1>From data-center power bill to our revenue, 2030</h1><div class="vis"><svg viewBox="0 0 1500 450"><text x="616" y="50" font-size="23" font-weight="600" text-anchor="end">World data-center electricity bill</text><text x="616" y="78" font-size="18" fill="#596070" text-anchor="end">945 TWh (IEA, 2030) × $0.09/kWh</text><rect x="640" y="30" width="714" height="44" fill="#14161A"/><text x="1368" y="62" font-size="26" font-weight="600">$85B</text><text x="616" y="136" font-size="23" font-weight="600" text-anchor="end">Cooling share</text><text x="616" y="164" font-size="18" fill="#596070" text-anchor="end">15% (IEA range 7–30%)</text><rect x="640" y="116" width="108" height="44" fill="#2F6FD6"/><text x="762" y="148" font-size="26" font-weight="600">$13B</text><text x="616" y="222" font-size="23" font-weight="600" text-anchor="end">Liquid-cooled part</text><text x="616" y="250" font-size="18" fill="#596070" text-anchor="end">40% (est.)</text><rect x="640" y="202" width="43" height="44" fill="#2F6FD6"/><text x="697" y="234" font-size="26" font-weight="600">$5.1B</text><text x="616" y="308" font-size="23" font-weight="600" text-anchor="end">Saved by a better fluid</text><text x="616" y="336" font-size="18" fill="#596070" text-anchor="end">10% (est.)</text><rect x="640" y="288" width="4" height="44" fill="#2E8A1F"/><text x="658" y="320" font-size="26" font-weight="600">$510M</text><text x="616" y="394" font-size="23" font-weight="600" text-anchor="end">Our revenue</text><text x="616" y="422" font-size="18" fill="#596070" text-anchor="end">25% of savings (est.)</text><rect x="640" y="374" width="4" height="44" fill="#2E8A1F"/><text x="658" y="406" font-size="26" font-weight="600">$130M</text></svg></div></section>
+
+<section class="slide"><h1>1 · System: direct-to-chip or immersion</h1><div class="vis">
+<svg viewBox="0 0 1400 600">
+  <text x="350" y="30" font-size="28" font-weight="600" text-anchor="middle">Direct-to-chip</text>
+  <text x="1050" y="30" font-size="28" font-weight="600" text-anchor="middle">Immersion</text>
+
+  <!-- rack with servers, cold plates, manifold pipes -->
+  <rect x="150" y="70" width="330" height="400" rx="8" fill="#F6F7F9" stroke="#14161A" stroke-width="2.5"/>
+  <g>
+    <rect x="175" y="95" width="280" height="70" rx="4" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/>
+    <rect x="215" y="125" width="70" height="22" fill="#14161A"/><rect x="210" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <rect x="325" y="125" width="70" height="22" fill="#14161A"/><rect x="320" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <path d="M290 118 H320 M400 118 H515" stroke="#2F6FD6" stroke-width="4" fill="none"/>
+  </g>
+  <g transform="translate(0,90)">
+    <rect x="175" y="95" width="280" height="70" rx="4" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/>
+    <rect x="215" y="125" width="70" height="22" fill="#14161A"/><rect x="210" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <rect x="325" y="125" width="70" height="22" fill="#14161A"/><rect x="320" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <path d="M290 118 H320 M400 118 H515" stroke="#2F6FD6" stroke-width="4" fill="none"/>
+  </g>
+  <g transform="translate(0,180)">
+    <rect x="175" y="95" width="280" height="70" rx="4" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/>
+    <rect x="215" y="125" width="70" height="22" fill="#14161A"/><rect x="210" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <rect x="325" y="125" width="70" height="22" fill="#14161A"/><rect x="320" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <path d="M290 118 H320 M400 118 H515" stroke="#2F6FD6" stroke-width="4" fill="none"/>
+  </g>
+  <g transform="translate(0,270)">
+    <rect x="175" y="95" width="280" height="70" rx="4" fill="#fff" stroke="#C6CCD5" stroke-width="1.5"/>
+    <rect x="215" y="125" width="70" height="22" fill="#14161A"/><rect x="210" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <rect x="325" y="125" width="70" height="22" fill="#14161A"/><rect x="320" y="111" width="80" height="14" rx="3" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+    <path d="M290 118 H320 M400 118 H515" stroke="#2F6FD6" stroke-width="4" fill="none"/>
+  </g>
+  <g transform="translate(437,148)" stroke="#596070" stroke-width="1.6" fill="#fff"><circle r="11"/><path d="M0 0 L0 -9 M0 0 L8 5 M0 0 L-8 5"/></g><g transform="translate(437,238)" stroke="#596070" stroke-width="1.6" fill="#fff"><circle r="11"/><path d="M0 0 L0 -9 M0 0 L8 5 M0 0 L-8 5"/></g><g transform="translate(437,328)" stroke="#596070" stroke-width="1.6" fill="#fff"><circle r="11"/><path d="M0 0 L0 -9 M0 0 L8 5 M0 0 L-8 5"/></g><g transform="translate(437,418)" stroke="#596070" stroke-width="1.6" fill="#fff"><circle r="11"/><path d="M0 0 L0 -9 M0 0 L8 5 M0 0 L-8 5"/></g><path d="M515 100 V420" stroke="#2F6FD6" stroke-width="8"/>
+  <path d="M515 420 V500 H560" stroke="#2F6FD6" stroke-width="8" fill="none"/>
+  <rect x="560" y="470" width="150" height="60" rx="6" fill="#fff" stroke="#14161A" stroke-width="2"/><text x="635" y="507" font-size="18" font-weight="600" text-anchor="middle">Coolant pump</text>
+  <!-- fans: remaining heat to air -->
+  <g font-size="19" font-weight="600" fill="#14161A">
+    <text x="150" y="60">Rack</text>
+    <text x="100" y="136" text-anchor="end">Server</text><path d="M108 130 H175" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="100" y="206" text-anchor="end">Cold plate</text><path d="M108 200 H210" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="100" y="244" text-anchor="end">GPU</text><path d="M108 238 H215" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="100" y="424" text-anchor="end">Fans</text><path d="M108 418 H426" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="528" y="260">Pipes</text>
+    <text x="760" y="136" text-anchor="end">Server</text><path d="M768 130 H850" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="760" y="266" text-anchor="end">GPU</text><path d="M768 260 H860" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="760" y="386" text-anchor="end">Fluid</text><path d="M768 380 H830" stroke="#8A919E" stroke-width="1.4"/>
+    <text x="760" y="466" text-anchor="end">Tank</text><path d="M768 460 H800" stroke="#8A919E" stroke-width="1.4"/>
+  </g>
+
+  <!-- immersion tank -->
+  <path d="M800 90 V470 H1300 V90" fill="none" stroke="#14161A" stroke-width="3"/>
+  <rect x="803" y="150" width="494" height="317" fill="#F3D98B" opacity=".7"/>
+  <g fill="#fff" stroke="#14161A" stroke-width="2">
+    <rect x="850" y="110" width="44" height="330" rx="4"/><rect x="930" y="110" width="44" height="330" rx="4"/><rect x="1010" y="110" width="44" height="330" rx="4"/><rect x="1090" y="110" width="44" height="330" rx="4"/><rect x="1170" y="110" width="44" height="330" rx="4"/>
+  </g>
+  <g fill="#14161A"><rect x="860" y="240" width="24" height="40"/><rect x="940" y="240" width="24" height="40"/><rect x="1020" y="240" width="24" height="40"/><rect x="1100" y="240" width="24" height="40"/><rect x="1180" y="240" width="24" height="40"/></g>
+  <path d="M1300 300 H1340 V500 H1260" stroke="#B88A1E" stroke-width="8" fill="none"/>
+  <rect x="1180" y="470" width="80" height="60" rx="6" fill="#fff" stroke="#14161A" stroke-width="2"/><text x="1220" y="507" font-size="18" font-weight="600" text-anchor="middle">Pump</text>
+
+  <!-- comparison rows -->
+  <g font-size="22">
+    <text x="700" y="565" fill="#596070" text-anchor="middle">Liquid</text>
+    <text x="350" y="565" font-weight="600" text-anchor="middle">Water + glycol, in pipes</text>
+    <text x="1050" y="565" font-weight="600" text-anchor="middle">Oil or boiling fluid, whole server</text>
+    <text x="700" y="598" fill="#596070" text-anchor="middle">Heat to liquid</text>
+    <text x="350" y="598" font-weight="600" text-anchor="middle">~70–80%, rest by fans</text>
+    <text x="1050" y="598" font-weight="600" text-anchor="middle">~100%, no fans</text>
+  </g>
+</svg></div></section>
+
+<section class="slide"><h1>1 · System: four setups</h1><div class="vis">
+<svg viewBox="0 0 1400 620">
+  <!-- column / row labels -->
+  <text x="530" y="24" font-size="26" font-weight="600" text-anchor="middle">Stays liquid</text>
+  <text x="1080" y="24" font-size="26" font-weight="600" text-anchor="middle">Boils</text>
+  <text x="120" y="190" font-size="24" font-weight="600" text-anchor="end">Inside</text><text x="120" y="220" font-size="24" font-weight="600" text-anchor="end">cold plate</text>
+  <text x="120" y="470" font-size="24" font-weight="600" text-anchor="end">Chips</text><text x="120" y="500" font-size="24" font-weight="600" text-anchor="end">in the liquid</text>
+
+  <!-- 1 direct-to-chip water-glycol -->
+  <rect x="270" y="50" width="520" height="270" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.6"/>
+  <rect x="340" y="200" width="200" height="34" rx="4" fill="#14161A"/><text x="440" y="223" font-size="16" fill="#fff" text-anchor="middle">chip</text>
+  <rect x="330" y="160" width="220" height="40" rx="6" fill="#DCE8F8" stroke="#2F6FD6" stroke-width="2"/>
+  <path d="M360 160 V95 H640 V250 H520 V200" fill="none" stroke="#2F6FD6" stroke-width="5"/>
+  <circle cx="640" cy="175" r="14" fill="#2F6FD6"/>
+  <text x="530" y="290" font-size="22" font-weight="600" text-anchor="middle">Water + glycol</text>
+  <text x="680" y="80" font-size="18" fill="#2E8A1F" font-weight="600">$1.85B</text>
+
+  <!-- 2 two-phase direct-to-chip refrigerant -->
+  <rect x="830" y="50" width="520" height="270" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.6"/>
+  <rect x="900" y="200" width="200" height="34" rx="4" fill="#14161A"/><text x="1000" y="223" font-size="16" fill="#fff" text-anchor="middle">chip</text>
+  <rect x="890" y="160" width="220" height="40" rx="6" fill="#EEF0F3" stroke="#596070" stroke-width="2"/>
+  <circle cx="940" cy="180" r="6" fill="#fff" stroke="#596070" stroke-width="2"/><circle cx="985" cy="174" r="8" fill="#fff" stroke="#596070" stroke-width="2"/><circle cx="1035" cy="182" r="5" fill="#fff" stroke="#596070" stroke-width="2"/><circle cx="1075" cy="176" r="7" fill="#fff" stroke="#596070" stroke-width="2"/>
+  <path d="M920 160 V95 H1200 V250 H1080 V200" fill="none" stroke="#596070" stroke-width="5"/>
+  <text x="1090" y="290" font-size="22" font-weight="600" text-anchor="middle">Refrigerant</text>
+
+  <!-- 3 single-phase immersion oil -->
+  <rect x="270" y="340" width="520" height="270" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.6"/>
+  <path d="M370 380 V550 H690 V380" fill="none" stroke="#14161A" stroke-width="3"/>
+  <rect x="373" y="410" width="314" height="138" fill="#F3D98B" opacity=".75"/>
+  <rect x="440" y="395" width="26" height="130" rx="3" fill="#14161A"/><rect x="517" y="395" width="26" height="130" rx="3" fill="#14161A"/><rect x="594" y="395" width="26" height="130" rx="3" fill="#14161A"/>
+  <text x="530" y="585" font-size="22" font-weight="600" text-anchor="middle">Oil</text>
+
+  <!-- 4 two-phase immersion -->
+  <rect x="830" y="340" width="520" height="270" rx="12" fill="#fff" stroke="#C6CCD5" stroke-width="1.6"/>
+  <path d="M930 380 V550 H1250 V380" fill="none" stroke="#14161A" stroke-width="3"/>
+  <rect x="933" y="430" width="314" height="118" fill="#DCEFD6"/>
+  <rect x="1000" y="395" width="26" height="130" rx="3" fill="#14161A"/><rect x="1077" y="395" width="26" height="130" rx="3" fill="#14161A"/><rect x="1154" y="395" width="26" height="130" rx="3" fill="#14161A"/>
+  <circle cx="1045" cy="470" r="6" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1050" cy="445" r="8" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1125" cy="480" r="5" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1130" cy="452" r="7" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1205" cy="465" r="6" fill="#fff" stroke="#2E8A1F" stroke-width="2"/>
+  <text x="1090" y="585" font-size="22" font-weight="600" text-anchor="middle">Fluid that boils at ~50 °C</text>
+  <text x="1240" y="370" font-size="18" fill="#2E8A1F" font-weight="600" text-anchor="end">$375M</text>
+</svg></div></section>
+
+<section class="slide"><h1>2 · Materials: what is in each liquid</h1><div class="vis">
+<svg viewBox="0 0 1400 470"><text x="185.0" y="34" font-size="24" font-weight="600" text-anchor="middle">Water + glycol</text><rect x="110" y="60" width="150" height="281" fill="#DCE8F8" stroke="#fff" stroke-width="2"/><text x="185.0" y="205" font-size="19" font-weight="600" fill="#14161A" text-anchor="middle">74%</text><text x="274" y="207" font-size="18" fill="#14161A">Water</text><rect x="110" y="341" width="150" height="95" fill="#B9D0F2" stroke="#fff" stroke-width="2"/><text x="185.0" y="393" font-size="19" font-weight="600" fill="#14161A" text-anchor="middle">25%</text><text x="274" y="395" font-size="18" fill="#14161A">Glycol</text><rect x="110" y="436" width="150" height="10" fill="#2E8A1F" stroke="#fff" stroke-width="2"/><text x="274" y="447" font-size="18" font-weight="600" fill="#2E8A1F">Inhibitor &lt;1%</text><text x="505.0" y="34" font-size="24" font-weight="600" text-anchor="middle">Refrigerant</text><rect x="430" y="60" width="150" height="380" fill="#E4E7EC" stroke="#fff" stroke-width="2"/><text x="505.0" y="254" font-size="19" font-weight="600" fill="#14161A" text-anchor="middle">100%</text><text x="594" y="256" font-size="18" fill="#14161A">Refrigerant</text><text x="825.0" y="34" font-size="24" font-weight="600" text-anchor="middle">Oil</text><rect x="750" y="60" width="150" height="376" fill="#F3D98B" stroke="#fff" stroke-width="2"/><text x="825.0" y="252" font-size="19" font-weight="600" fill="#14161A" text-anchor="middle">99%</text><text x="914" y="254" font-size="18" fill="#14161A">Base oil</text><rect x="750" y="436" width="150" height="10" fill="#C9A43C" stroke="#fff" stroke-width="2"/><text x="914" y="447" font-size="18" font-weight="600" fill="#14161A">Additives &lt;1%</text><text x="1145.0" y="34" font-size="24" font-weight="600" text-anchor="middle">Boiling fluid</text><rect x="1070" y="60" width="150" height="380" fill="#2E8A1F" stroke="#fff" stroke-width="2"/><text x="1145.0" y="254" font-size="19" font-weight="600" fill="#fff" text-anchor="middle">100%</text><text x="1234" y="256" font-size="18" fill="#14161A">Fluorinated fluid</text><text x="1234" y="282.0" font-size="16" fill="#2E8A1F" font-weight="600">being phased out</text></svg>
+</div></section>
+
+<section class="slide"><h1>2 · Materials: what each liquid must do</h1><div class="vis"><table class="tb"><thead><tr><th></th><th>Copper inhibitor</th><th>Boiling fluid</th></tr></thead><tbody><tr><th>Main job</th><td>Keeps copper from rusting</td><td>Boils at ~50 °C, carries heat</td></tr><tr><th>Electrical</th><td>Low conductivity</td><td>Does not conduct</td></tr><tr><th>Lifetime</th><td>5+ years at 40–65 °C</td><td>Years of boiling, no breakdown</td></tr><tr><th>Clogging</th><td>No deposits in 0.1 mm channels</td><td>No residue on boards</td></tr><tr><th>Other materials</th><td>Brass, steel, aluminum, seals</td><td>Plastics, seals, boards</td></tr><tr><th>Safety</th><td>Low toxicity, low dose</td><td>No fire, no PFAS</td></tr></tbody></table></div></section>
+
+<section class="slide"><h1>3 · Designs: two molecules we can make</h1><div class="vis">
+<svg viewBox="0 0 1400 560">
+  <rect x="60" y="20" width="600" height="520" rx="14" fill="#fff" stroke="#C6CCD5" stroke-width="1.6"/>
+  <text x="360" y="80" font-size="30" font-weight="600" text-anchor="middle">Copper inhibitor</text>
+  <path d="M170 150 H550" stroke="#B87333" stroke-width="26" stroke-linecap="round"/>
+  <g fill="#2E8A1F"><circle cx="200" cy="125" r="11"/><circle cx="260" cy="125" r="11"/><circle cx="320" cy="125" r="11"/><circle cx="380" cy="125" r="11"/><circle cx="440" cy="125" r="11"/><circle cx="500" cy="125" r="11"/></g>
+  <g fill="#2F6FD6" opacity=".5"><circle cx="230" cy="215" r="8"/><circle cx="330" cy="230" r="8"/><circle cx="430" cy="210" r="8"/><circle cx="520" cy="235" r="8"/></g>
+  <text x="140" y="320" font-size="22" fill="#596070">Liquid</text><text x="580" y="320" font-size="22" font-weight="600" text-anchor="end">Water + glycol</text>
+  <text x="140" y="370" font-size="22" fill="#596070">Job</text><text x="580" y="370" font-size="22" font-weight="600" text-anchor="end">Keep copper from rusting</text>
+  <text x="140" y="420" font-size="22" fill="#596070">Share of liquid</text><text x="580" y="420" font-size="22" font-weight="600" text-anchor="end">&lt;1%</text>
+  <text x="360" y="500" font-size="40" font-weight="600" fill="#2E8A1F" text-anchor="middle">$74M / yr</text>
+
+  <rect x="740" y="20" width="600" height="520" rx="14" fill="#fff" stroke="#C6CCD5" stroke-width="1.6"/>
+  <text x="1040" y="80" font-size="30" font-weight="600" text-anchor="middle">PFAS-free fluid</text>
+  <path d="M900 110 V250 H1180 V110" fill="none" stroke="#14161A" stroke-width="3"/>
+  <rect x="903" y="160" width="274" height="88" fill="#DCEFD6"/>
+  <rect x="1010" y="125" width="60" height="100" rx="3" fill="#14161A"/>
+  <circle cx="985" cy="190" r="7" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1095" cy="200" r="6" fill="#fff" stroke="#2E8A1F" stroke-width="2"/><circle cx="1100" cy="172" r="8" fill="#fff" stroke="#2E8A1F" stroke-width="2"/>
+  <text x="820" y="320" font-size="22" fill="#596070">Liquid</text><text x="1260" y="320" font-size="22" font-weight="600" text-anchor="end">The whole bath</text>
+  <text x="820" y="370" font-size="22" fill="#596070">Job</text><text x="1260" y="370" font-size="22" font-weight="600" text-anchor="end">Boil at ~50 °C, no PFAS, no fire</text>
+  <text x="820" y="420" font-size="22" fill="#596070">Share of liquid</text><text x="1260" y="420" font-size="22" font-weight="600" text-anchor="end">100%</text>
+  <text x="1040" y="500" font-size="40" font-weight="600" fill="#2E8A1F" text-anchor="middle">$56M / yr</text>
+</svg></div></section>
+
+<section class="slide"><h1>Who else works on these two molecules</h1><div class="vis"><div class="c2"><div class="ccol"><h3>PFAS-free fluid</h3><div class="cc"><b>Orbital Industries</b><span>AI-designed PFAS-free fluid</span><i>$50M · May 2026</i></div><div class="cc"><b>ZutaCore</b><span>Two-phase hardware, PFAS-free fluid promised</span><i>$100M · Jun 2026</i></div><div class="cc"><b>Infinium</b><span>Fluid made from CO₂ + hydrogen</span><i>Entered Jan 2025</i></div><div class="cc"><b>Chemours</b><span>HFO fluid, still fluorinated</span><i>Large chemical maker</i></div></div><div class="ccol"><h3>Copper inhibitor</h3><div class="cc"><b>Dow</b><span>DOWFROST LC 25 coolant</span><i>Large chemical maker</i></div><div class="cc"><b>Dober</b><span>COOLWAVE coolant</span><i>Chemical maker</i></div><div class="cc"><b>Omen AI</b><span>Coolant sensors: corrosion, bacteria</span><i>$31M · Jun 2026</i></div><div class="cc"><b>Startups designing inhibitors</b><span>None found</span><i></i></div></div></div></div></section>
+
+<section class="slide"><h1>How our design system handles each molecule</h1><div class="vis"><div class="g6"><div></div><div class="gh">Needs</div><div class="gh">Formulation</div><div class="gh">Properties</div><div class="gh">Environment</div><div class="gh">Physics models</div><div class="gr">Copper inhibitor</div><div class="gc">No rust for 5+ years, low dose</div><div class="gc">&lt;1% in water + glycol</div><div class="gc">Sticks to copper, stays dissolved</div><div class="gc">40–65 °C water + glycol on copper</div><div class="gc">Copper–nitrogen bond strength</div><div class="gr">PFAS-free fluid</div><div class="gc">No PFAS, no fire, no conduction</div><div class="gc">100% of the bath</div><div class="gc">Boils ~50 °C, does not conduct</div><div class="gc">Boiling on hot chips, plastics</div><div class="gc">Forces between molecules</div></div></div></section>
+
+
+
+<nav><button id="p">&larr;</button><span id="n"></span><button id="x">&rarr;</button></nav>
+<script>
+const s=[...document.querySelectorAll('.slide')];let i=0;const n=document.getElementById('n');
+const go=k=>{i=Math.max(0,Math.min(s.length-1,k));s.forEach((e,j)=>e.classList.toggle('on',j===i));n.textContent=(i+1)+' / '+s.length};
+document.getElementById('p').onclick=()=>go(i-1);document.getElementById('x').onclick=()=>go(i+1);
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')go(i+1);if(e.key==='ArrowLeft')go(i-1)});go(0);
+</script></body></html>

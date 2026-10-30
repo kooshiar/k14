@@ -1,0 +1,106 @@
+{
+ "key": "dwr",
+ "name": "PFAS-free oil repellent",
+ "type": "Product",
+ "problem": "PFAS bans hit fabric finishes, and fluorine-free ones don't repel oil",
+ "design": "Fluorine-free repellent finish that repels oil as well as water",
+ "market": {
+  "usd_yr": 1100000000,
+  "year": 2024,
+  "what": "textile water/oil repellent finishes (C6 fluorocarbon + fluorine-free: wax, silicone, dendrimer, PU, acrylic), world",
+  "method": "F-free $580M (QYResearch 2024) + fluorinated est. ~$0.5B; bottom-up: 68 kt F-free x ~$8.5/kg = $0.58B + est. ~50 kt C6 x ~$10/kg = $0.5B; China list prices F-free $5-15/kg, C6 $10-15/kg; reports range $0.74B (Valuates 2023) to $2.2B (FMI 2025)",
+  "sources": [
+   "https://www.gii.tw/report/qyr1868002-textile-fluorine-free-water-repellent-global.html",
+   "https://www.prnewswire.com/news-releases/water-repellant-for-textile-market-size-to-grow-usd-1153-4-million-by-2030-at-a-cagr-of-6-4--valuates-reports-302258690.html",
+   "https://www.marketresearchreports.com/reports/global-fluorine-free-durable-water-repellent-dwr-fabric-coatings-market-strategic-research-report",
+   "https://www.futuremarketinsights.com/reports/water-repellent-textile-finishes-market",
+   "https://leman88.en.made-in-china.com/product-group/OotGyaZTClVg/Fluorine-free-water-repellent-1.html",
+   "https://leman88.en.made-in-china.com/product-group/jeRfdtJPCDkO/C6-Fluorine-water-repellent-1.html"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 1000000000,
+  "logic": "est.: ~$0.5B/yr C6 finish spend on fabrics that need oil/chemical repellency has no PFAS-free fix (F-free = AATCC 118 grade 0); keeps oil-repellent goods sellable (chem-splash PPE $1.57B 2024, workwear, military, upholstery, car seats) ~ +$0.5B; total ~$1B",
+  "our_revenue_usd_yr": 30000000,
+  "revenue_logic": "2 kt/yr (~4% of est. 50 kt C6 volume) x $15/kg (C6 price level + small premium), sold via toll maker or chem partner",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty emulsion at C6 price on cheap acrylate/siloxane raw materials; toll-made",
+  "sources": [
+   "https://www.sciencedirect.com/science/article/abs/pii/S0045653517317940",
+   "https://www.imarcgroup.com/chemical-protective-clothing-market",
+   "https://www.tricorp.com/en/blogs/knowledge-base/en-13034-protection-against-liquid-chemicals"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "PFAS bans: CA AB 1817 (2025, 50 ppm TOF 2027, severe-wet outdoor 2028), NY 2025, Maine 2026, France clothing 2026 / all textiles 2030, EU PFHxA REACH, EU universal PFAS restriction pending",
+  "deadline": "EU PFHxA limit: consumer clothing 10 Oct 2026, other textiles Oct 2027",
+  "sources": [
+   "https://www.gii.tw/report/qyr1868002-textile-fluorine-free-water-repellent-global.html",
+   "https://www.millernash.com/industry-news/the-latest-on-californias-pfas-laws-regulating-textile-articles-and-how-to-prepare-for-upcoming-deadlines",
+   "https://projetcelsius.com/en/blog/pfas-ban-france-eu/",
+   "https://www.bdlaw.com/publications/new-eu-pfhxa-limits-take-effect-amid-expanding-pfas-rules-for-apparel-and-textiles/",
+   "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402462"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "DRYFIBER (Cornell spinout, with AGC)",
+   "Green Theme Technologies (Empel)",
+   "H&B Materials",
+   "Matregenix"
+  ],
+  "indirect_startups": [
+   "Amphitex (PFAS-free membranes)"
+  ],
+  "incumbents": [
+   "Chemours (Capstone, Teflon EcoElite, Zelan)",
+   "Daikin (Unidyne, Unidyne XF)",
+   "AGC (AsahiGuard)",
+   "Archroma (Smartrepel; Phobotex ex-Huntsman)",
+   "Rudolf (Bionic Finish Eco)",
+   "CHT",
+   "Tanatex",
+   "Dow",
+   "HeiQ (Eco Dry)",
+   "NICCA",
+   "Transfar",
+   "Dymatic",
+   "Sciessent",
+   "Beyond Surface Technologies"
+  ],
+  "papers_3yr": null,
+  "paper_query": "fluorine-free oil repellent textile finish",
+  "groups_active": null,
+  "notes": "Strongest: AGC + DRYFIBER, first non-fluorinated oil/water repellent, launch 2026 (no grade published); Matregenix claims AATCC 118 grade 2; GTT $6M Series C Nov 2024; H&B $2.4M pre-seed (water only); Toronto 'fletched' PDMS still uses CF3 (PFAS); Fashion for Good DW(O)R-X benchmark 2026 (adidas, C&A, SGS)",
+  "sources": [
+   "https://www.textileworld.com/textile-world/nonwovens-technical-textiles/2025/03/agc-chemicals-and-dryfiber-develop-first-non-fluorinated-oil-water-repellent-for-nonwoven-fabrics-and-technical-textiles/",
+   "https://www.matregenix.com/blog/pfas-free-oleophobic-coatings-for-textiles",
+   "https://www.hometextilestoday.com/ingredients/new-funding-boosts-u-s-supplier-of-pfas-free-textile-finishing-accelerating-growth/",
+   "https://www.trysignalbase.com/news/funding/hb-materials-secures-2",
+   "https://www.nature.com/nature-index/article/10.1038/s41467-025-62119-9",
+   "https://fashionunited.com/news/business/fashion-for-good-launches-industry-project-to-benchmark-pfas-alternatives/2026080673956"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 45000,
+  "synth": "polymer: 1-2 step custom low-surface-energy monomer (branched alkyl/siloxane side chain) x3 variants, then emulsion comb copolymer; durability needs a polymer, not a small molecule",
+  "test": "pad-dry-cure on PES + cotton; AATCC 22 spray, AATCC 118 oil (target grade >=4; F-free today = 0), AATCC 193 water/alcohol, AATCC 130 soil release, after 0/10/20 AATCC 135 washes; Hohenstein, SGS, Intertek or NC State Textiles",
+  "logic": "monomers 6 wk + polymerization/formulation 6 wk + finishing/tests 6 wk; 3 x $6k CRO + $15k polymer/emulsion + ~$12k application and ~150 tests at ~$40-60/test",
+  "sources": [
+   "https://www3.ctahr.hawaii.edu/lins/text_serv_cards.html",
+   "https://members.aatcc.org/store/tm118/528/",
+   "https://www.dtnw.de/wp-content/uploads/2025/06/1074-Oil-Abweisung-englisch.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "ECO PASSPORT/bluesign screen + ZDHC Gateway L3 ~6 mo; mill pad trials + brand wash/wear tests 1-2 yr; PPE re-cert to EN 13034 (o-xylene repellency) 6-12 mo",
+  "sources": [
+   "https://www.oeko-tex.com/en/news/press-releases/zdhc-recognizes-oeko-tex-eco-passport-as-a-level-3-indicator-of-zdhc-mrsl-conformance/",
+   "https://www.tricorp.com/en/blogs/knowledge-base/en-13034-protection-against-liquid-chemicals"
+  ]
+ }
+}

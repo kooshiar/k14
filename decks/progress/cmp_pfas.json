@@ -9,7 +9,10 @@
   "US supply",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Stays out of water"
  ],
  "weights": [
   3,
@@ -19,6 +22,9 @@
   2,
   1,
   2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -36,41 +42,65 @@
     null,
     100,
     50,
-    89
+    89,
+    100,
+    50,
+    0
    ],
-   "overall": 43,
+   "overall": 42,
    "price": 2.12,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 20,
+     "score": 19,
      "rows": [
       {
        "name": "Picks PFAS over natural organics",
-       "w": 15.0,
+       "w": 10.9,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Catches ppt PFAS",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Stays in the filter",
-       "w": 10.0,
+       "w": 7.3,
        "val": 63,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
        "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -141,41 +171,65 @@
     5,
     100,
     0,
-    60
+    60,
+    100,
+    0,
+    50
    ],
-   "overall": 41,
+   "overall": 38,
    "price": 3.4,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 35,
+     "score": 29,
      "rows": [
       {
        "name": "Picks PFAS over natural organics",
-       "w": 15.0,
+       "w": 10.9,
        "val": 44,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Catches ppt PFAS",
-       "w": 10.0,
+       "w": 7.3,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Stays in the filter",
-       "w": 10.0,
+       "w": 7.3,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
        "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 50,
        "cut": 0,
        "ok": true
       }
@@ -253,7 +307,10 @@
     100,
     100,
     0,
-    35
+    35,
+    0,
+    0,
+    0
    ],
    "overall": 12,
    "price": 1.19,
@@ -265,28 +322,49 @@
      "rows": [
       {
        "name": "Picks PFAS over natural organics",
-       "w": 15.0,
+       "w": 10.9,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Catches ppt PFAS",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Stays in the filter",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
        "val": 0,
        "cut": 0,
        "ok": true
@@ -365,7 +443,10 @@
     null,
     100,
     13,
-    81
+    81,
+    null,
+    null,
+    null
    ],
    "overall": 71,
    "price": 2.88,
@@ -470,7 +551,10 @@
     null,
     100,
     9,
-    80
+    80,
+    null,
+    null,
+    null
    ],
    "overall": 72,
    "price": 2.97,
@@ -575,7 +659,10 @@
     null,
     100,
     0,
-    51
+    51,
+    null,
+    null,
+    null
    ],
    "overall": 60,
    "price": 2.83,

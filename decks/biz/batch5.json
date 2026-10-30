@@ -1,0 +1,44 @@
+{
+ "mousy": {
+  "type": "Product",
+  "problem": "Mousy wine can’t be fixed once it forms",
+  "design": "Binder that pulls the mousy taint from wine",
+  "s0_smiles": "c1ccc(-c2ccc[nH+]c2)cc1",
+  "today_best": "calix[4]arene"
+ },
+ "smoke": {
+  "type": "Product",
+  "problem": "Wildfire smoke ruins wine; today’s fix strips flavor",
+  "design": "Binder that removes smoke taint, keeps flavor",
+  "s0_smiles": "COc1cc(OC)c2cc1C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C2CCC(=O)[O-]",
+  "today_best": "resorcin[4]arene"
+ },
+ "cork": {
+  "type": "Product",
+  "problem": "TCA cork taint ruins wine at parts per trillion",
+  "design": "Binder that removes TCA, keeps wine flavor",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "ethylene": {
+  "type": "Product",
+  "problem": "Ethylene gas ripens fruit too fast in storage",
+  "design": "Trap that holds ethylene in fruit storage",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "formaldehyde": {
+  "type": "Product",
+  "problem": "Wood panels release formaldehyde indoors",
+  "design": "Scavenger that locks formaldehyde in panels",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "dyetrap": {
+  "type": "Process",
+  "problem": "Dyes block nylon recycling",
+  "design": "Trap that pulls dye out of nylon",
+  "s0_smiles": "O=S(=O)([O-])Oc1c2cccc1Cc1cccc(c1OS(=O)(=O)[O-])Cc1cccc(c1OS(=O)(=O)[O-])Cc1cccc(c1OS(=O)(=O)[O-])C2",
+  "today_best": "calix[4]arene"
+ }
+}

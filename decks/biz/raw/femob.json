@@ -1,0 +1,78 @@
+{
+ "key": "femob",
+ "name": "Iron release for rock H2",
+ "market": {
+  "usd_yr": 150000000000,
+  "year": 2024,
+  "what": "hydrogen made today (mostly grey, from gas/coal) that stimulated rock H2 would replace, world; stimulated H2 sales today ~0",
+  "method": "IEA: ~100 Mt H2 x ~$1.5/kg (grey $0.8-4.6/kg; China coal ~$1.5/kg) = ~$150B",
+  "sources": [
+   "https://www.iea.org/reports/global-hydrogen-review-2025/demand",
+   "https://renewablewatch.in/2025/09/21/global-hydrogen-review-2025-iea/"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 2000000,
+  "job_what": "stimulation chemicals/additives bought for stimulated geologic H2 pilots, world (no commercial wells yet)",
+  "job_method": "est.: ~$10-15M/yr pilot spend (ARPA-E $20M program over ~2-3 yr + Vema $13M seed, Eden etc.) x ~10-20% chemicals share = ~$2M/yr; low confidence",
+  "job_sources": [
+   "https://www.businesswire.com/news/home/20240213921002/en/Eden-Announces-1.4-Million-in-ARPA-E-Awards-to-Develop-Stimulated-Geologic-Hydrogen-Technologies",
+   "https://h2-view.com/story/vema-hydrogen-secures-13m-to-bring-1-kg-hydrogen-to-market/2121924.article",
+   "https://www.psu.edu/news/earth-and-mineral-sciences/story/11m-arpa-e-award-fund-project-exploring-potential-geologic"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 1000000000,
+  "logic": "if stimulated H2 reaches ~1 Mt/yr (est., ~2035) at <$1/kg vs grey ~$1.5-2/kg + ~10 kg CO2/kg x $50/t: ~$1/kg x 1 Mt = $1B/yr; additive that frees Fe(II) sets rate and yield",
+  "our_revenue_usd_yr": 3000000,
+  "revenue_logic": "year 7 ~0.1 Mt/yr stimulated H2 (est.) x additive budget ~$0.10/kg H2 = $10M; K14 ~30% via supply/license to developers",
+  "gross_margin_pct": 50,
+  "margin_logic": "bulk injected chemical must cost <$0.1/kg H2, so priced near commodity unless recycled or catalytic",
+  "sources": [
+   "https://sustainabilitymag.com/globenewswire/3230886",
+   "https://arpa-e.energy.gov/sites/default/files/documents/files/GeologicHydrogen_ET_Project%20Descriptions_FINAL.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 2,
+  "drivers": "H2 demand ~100 Mt growing slowly; clean H2 needs <$1/kg; ARPA-E $20M stimulated-H2 program (16 projects); Japan offtakers; first pilot wells 2026",
+  "deadline": "US 45V credit only for projects starting construction before 1 Jan 2028",
+  "sources": [
+   "https://www.iea.org/reports/global-hydrogen-review-2025/demand",
+   "https://h2-tech.com/articles/2025/july-2025/hydrogen-economist/us-confirms-early-sunset-for-hydrogen-tax-credits/",
+   "https://arpa-e.energy.gov/sites/default/files/documents/files/GeologicHydrogen_ET_Project%20Descriptions_FINAL.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": ["Vema Hydrogen", "Eden GeoPower", "GeoKiln"],
+  "indirect_startups": ["Koloma", "Mantle8", "Snowfox Discovery", "Gold H2", "HyTerra"],
+  "incumbents": ["SLB", "Air Liquide", "Linde", "Air Products"],
+  "papers_3yr": null,
+  "paper_query": "stimulated geologic hydrogen serpentinization iron",
+  "groups_active": null,
+  "notes": "Vema (water + catalyst into ultramafic rock) closest: $13M seed Feb 2025, 2 pilot wells Quebec Feb 2026, <$1/kg claim, commercial 2028; Koloma $400M+ (natural H2); Snowfox $30M A; Mantle8 ~$34M A May 2026",
+  "sources": [
+   "https://www.axios.com/pro/climate-deals/2025/02/18/vema-seed-stimulated-geologic-hydrogen",
+   "https://enkiai.com/hydrogen/koloma-geologic-hydrogen-funding/",
+   "https://cleantech.com/half-a-billion-dollars-into-the-ground-why-geologic-hydrogen-is-changing-its-approach/",
+   "https://getech.com/news/geokiln-selects-getech-to-advance-stimulated-geologic-hydrogen-development/"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 35000,
+  "synth": "catalog first (chelators, pH/redox modifiers), then 1-2 step custom ligands; 3 variants",
+  "test": "hydrothermal batch reactors (Parr) with olivine/serpentinite powder + brine + additive at 80-200 C for 4-8 wk; H2 by headspace GC; Fe(II)/Fe(III) by Mossbauer or XRD/titration; university geochem lab",
+  "logic": "catalog 1 wk + custom 5 wk (overlaps) + reactor runs 8 wk + analysis 2 wk; reagents ~$1k + 2 x $6k CRO + reactor/GC time ~$15k + mineral analysis ~$7k",
+  "sources": [
+   "https://eesa.lbl.gov/?p=998",
+   "https://metaltechnews.com/story/2024/04/03/tech-bytes/squeezing-hydrogen-out-of-iron-rich-rocks/1701.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 5,
+  "gates": "core-flood tests at reservoir P/T 6-12 mo; field pilot with a developer 1-2 yr; UIC injection permit (Class V/II) for additive; groundwater toxicity review",
+  "sources": [
+   "https://h2-tech.com/news/2026/02-26/online-exclusive-advancing-engineered-mineral-hydrogen-with-quebec-pilot-wells/"
+  ]
+ }
+}

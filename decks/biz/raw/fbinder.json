@@ -1,0 +1,108 @@
+{
+ "key": "fbinder",
+ "name": "Fluorine-free cathode binder",
+ "type": "Product",
+ "problem": "Battery cathodes are glued with PVDF, a PFAS made with toxic NMP solvent",
+ "design": "Fluorine-free binder polymer that holds high-nickel cathodes at 4.4 V",
+ "market": {
+  "usd_yr": 1400000000,
+  "year": 2025,
+  "what": "battery-grade PVDF cathode binder plus battery NMP solvent purchases, world (China ~83% of cells)",
+  "method": "PVDF ~90 kt (China 78.7 kt CICC + est. 12 kt ex-China) x ~$9.5k/t China, ~$18k/t ex-China = ~$0.95B; + battery NMP est. ~half of $1.1-1.2B NMP market = ~$0.5B; check: binder reports $2.1-2.7B x 45% PVDF = $0.9-1.2B",
+  "sources": [
+   "https://finance.sina.com.cn/stock/hkstock/ggscyd/2025-11-21/doc-infycykc8911273.shtml",
+   "https://www.marketresearchreports.com/reports/global-pvdf-binders-lithium-battery-cathode-market-strategic-research-report",
+   "https://chinaevhome.com/2026/01/15/global-lithium-ion-battery-shipments-hit-2280-5-gwh-in-2025-china-accounts-for-82-8/",
+   "https://straitsresearch.com/report/battery-binder-market",
+   "https://www.psmarketresearch.com/market-analysis/battery-electrode-binder-market-report",
+   "https://www.persistencemarketresearch.com/mediarelease/n-methyl-2-pyrrolidone-market.asp"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 3500000000,
+  "logic": "est. if binder also runs in water: ~$1.5/kWh saved (drying + NMP recovery ~10 kWh elec/kg NMP, dryer/recovery capex, NMP make-up) x 2,280 GWh = ~$3.4B; plus no PFAS compliance risk",
+  "our_revenue_usd_yr": 16000000,
+  "revenue_logic": "yr 7: high-Ni cells est. ~1,750 GWh x 25 t/GWh = ~44 kt binder; 2% share = ~880 t x ~$18/kg",
+  "gross_margin_pct": 50,
+  "margin_logic": "specialty polymer from toll maker; must price near ternary PVDF (~$17/kg China), so margin capped",
+  "sources": [
+   "https://www.osti.gov/pages/biblio/1394420-technical-economic-analysis-solvent-based-lithium-ion-electrode-drying-water-nmp",
+   "https://www.mdpi.com/2313-0105/10/1/39",
+   "https://finance.sina.com.cn/stock/hkstock/ggscyd/2025-11-21/doc-infycykc8911273.shtml"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 20,
+  "drivers": "Li-ion 2,280 GWh 2025 to ~6,000 GWh 2030 (EVTank, ~21%/yr); PVDF price spikes on R142b quota (Nov 2025 up); OEM PFAS-free pull. EU push is weak: batteries get 13.5-yr fluoropolymer derogation in 2025 dossier",
+  "deadline": "EU SEAC final PFAS opinion end-2026; battery binder ban not before ~2040 if 13.5-yr derogation holds; Minnesota PFAS-in-products ban 2032",
+  "sources": [
+   "https://chinaevhome.com/2026/01/15/global-lithium-ion-battery-shipments-hit-2280-5-gwh-in-2025-china-accounts-for-82-8/",
+   "https://www.kemi.se/download/18.64e3bd9619a0f45982cfff/1761213262828/What%20you%20need%20to%20know%20about%20the%20updated%20PFAS%20restriction%20dossier-Updated-2025-10-23.pdf",
+   "https://www.echa.europa.eu/-/echa-s-socio-economic-analysis-committee-agrees-its-draft-opinion-on-pfas-restriction-proposal",
+   "https://www.cls.cn/detail/881864",
+   "https://www.pca.state.mn.us/get-engaged/pfas-in-products"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Westra Materials",
+   "Nanoramic (Neocarbonix)"
+  ],
+  "indirect_startups": [
+   "AM Batteries",
+   "LiCAP Technologies",
+   "Sakuu (Kavian)",
+   "Tesla/Maxwell dry electrode (in-house)"
+  ],
+  "incumbents": [
+   "Arkema (Kynar)",
+   "Syensqo (Solef)",
+   "Kureha",
+   "Daikin",
+   "Dongyue",
+   "Shanghai Huayi 3F",
+   "Zhejiang Juhua",
+   "Zeon",
+   "JSR/ENEOS",
+   "Resonac",
+   "Nippon A&L",
+   "Ashland",
+   "BASF (Licity)",
+   "Hansol Chemical"
+  ],
+  "papers_3yr": null,
+  "paper_query": "PVDF replacement binder lithium cathode",
+  "groups_active": null,
+  "notes": "Nanoramic strongest: $44M Dec 2024 (GM Ventures, Samsung Ventures), shipping 2026; Westra (2020, Sweden) EUR 6.5M EIC + EUR 3.8M Sep 2025, 9 to 65 t/yr plant. Dry-electrode players (AM Batteries $30M Series B) still use PTFE, also a PFAS. Hansol/POSTECH aramid binder 2024",
+  "sources": [
+   "https://prnewswire.com/news-releases/nanoramic-raises-44-million-funding-co-led-by-gm-ventures-and-catalus-capital-with-participation-from-samsung-ventures-to-advance-the-commercialization-of-neocarbonix-302329555.html",
+   "https://finder.techleap.nl/news/feed/westra-materials-secures-3-8m-funding",
+   "https://pulse2.com/am-batteries-lithium-ion-dry-electrode-company-raises-30-million/",
+   "https://battery-tech.net/battery-markets-news/sakuu-spac-business-combination/",
+   "https://www.bestmag.co.uk/licap-secures-grant-to-scale-dry-electrode-tech/",
+   "https://www.eurekalert.org/news-releases/1057597",
+   "https://www.iws.fraunhofer.de/en/technologyfields/battery-technology/fredy.html"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 55000,
+  "synth": "polymer: 1-2 step functional monomer + radical copolymerization, 3 variants x 20-50 g; university or CRO polymer lab",
+  "test": "NMC811 slurry (water or NMP) and coating, 180 deg peel (ASTM D903 style), coin cells 3.0-4.4 V, ~200 cycles vs PVDF control; then small pouch; university battery lab or CRO (e.g. CIDETEC)",
+  "logic": "synth 8-10 wk + coat/peel 2 wk + cycling 6-8 wk; synth ~$30k + electrodes/cells/cycler time ~$25k (est.; small-lab electrode+coin cell ~$75 each)",
+  "sources": [
+   "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aesr.202300149",
+   "https://cium.um.edu.my/img/files/APPLICATION%20FORM_BATTERY%20TESTING%20LABORATORY.pdf",
+   "https://energystorage.cidetec.es/build/web/img/ouroffer/pdf/Testing-and-characterization-of-batteries.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "cell maker pouch/cylinder samples 1 yr; pilot-line coating + A/B samples 1-2 yr; first order likely ESS/consumer cells; auto C/D samples + PPAP 4-6 yr",
+  "sources": [
+   "https://volta.foundation/committees/committees-materials-qualification/committee-insights-paper-july-2026/",
+   "https://currentcells.com/article/silicon-anode-batteries-explained"
+  ]
+ }
+}

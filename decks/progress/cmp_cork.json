@@ -12,7 +12,10 @@
   "Easy to ship and store",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Stays out of water"
  ],
  "weights": [
   2,
@@ -25,6 +28,9 @@
   1,
   1,
   2,
+  1,
+  1,
+  1,
   1,
   1
  ],
@@ -45,41 +51,65 @@
     50,
     100,
     29,
-    60
+    60,
+    100,
+    22,
+    0
    ],
-   "overall": 62,
+   "overall": 53,
    "price": 3.4,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 56,
+     "score": 37,
      "rows": [
       {
        "name": "Removes cork taint (TCA)",
-       "w": 10.0,
+       "w": 7.3,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Keeps fruit and floral aroma",
-       "w": 15.0,
+       "w": 10.9,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 10.0,
+       "w": 7.3,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
        "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 22,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -181,40 +211,64 @@
     50,
     100,
     50,
-    66
+    66,
+    100,
+    50,
+    50
    ],
-   "overall": 44,
+   "overall": 50,
    "price": 3.36,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 18,
+     "score": 25,
      "rows": [
       {
        "name": "Removes cork taint (TCA)",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and floral aroma",
-       "w": 15.0,
+       "w": 10.9,
        "val": 27,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 10.0,
+       "w": 7.3,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
        "val": 50,
        "cut": 0,
        "ok": true
@@ -317,41 +371,65 @@
     50,
     100,
     15,
-    35
+    35,
+    0,
+    15,
+    0
    ],
-   "overall": 16,
+   "overall": 17,
    "price": 1.19,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 1,
+     "score": 2,
      "rows": [
       {
        "name": "Removes cork taint (TCA)",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and floral aroma",
-       "w": 15.0,
+       "w": 10.9,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
        "val": 15,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -453,7 +531,10 @@
     50,
     100,
     46,
-    58
+    58,
+    null,
+    null,
+    null
    ],
    "overall": 72,
    "price": 4.36,
@@ -589,7 +670,10 @@
     35,
     100,
     28,
-    45
+    45,
+    null,
+    null,
+    null
    ],
    "overall": 67,
    "price": 2.71,
@@ -718,7 +802,10 @@
     50,
     100,
     49,
-    61
+    61,
+    null,
+    null,
+    null
    ],
    "overall": 78,
    "price": 3.77,
@@ -847,7 +934,10 @@
     50,
     100,
     49,
-    61
+    61,
+    null,
+    null,
+    null
    ],
    "overall": 78,
    "price": 3.77,

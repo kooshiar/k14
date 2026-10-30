@@ -1,0 +1,5 @@
+{
+ "_about": "Projects tagged blocked (Koosh 2026-10-23): topics likely to trigger the Opus 5.5 safety classifier (biology/medical, nuclear materials). Kept as-is, not deleted; excluded from new work (rounds, queues, reasoning). Same idea as web/decks_blocked (health, food, livestock, 2026-10).",
+ "bio_medical": ["pdscav", "nitrite", "ironmedia", "tfaswap", "endotox", "chiral", "cryo", "abcap", "vaxstab", "gout", "joint", "crp", "heatcold"],
+ "nuclear": ["uranyl", "cesium"]
+}

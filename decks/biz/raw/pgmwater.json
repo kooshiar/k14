@@ -1,0 +1,78 @@
+{
+ "key": "pgmwater",
+ "name": "PGMs from produced water",
+ "market": {
+  "usd_yr": 700000,
+  "year": 2025,
+  "what": "PGM (Pt+Pd) content of world oilfield produced water; none is recovered or sold today",
+  "method": "est. ~290 Mbbl/d water (250-328 cited) = 16.8 bn m3/yr x ~1 ng/L PGM (Bakken below detection; reducing brines <0.1 ppb) = ~17 kg/yr x ~$42/g",
+  "sources": [
+   "https://www.researchgate.net/publication/348684432_Characterization_and_Treatment_of_Bakken_Oilfield_Produced_Water_as_a_Potential_Source_of_Value-added_Elements",
+   "https://www.osti.gov/biblio/860876",
+   "https://atlas-scientific.com/blog/what-is-produced-water/",
+   "https://tradingeconomics.com/commodity/palladium/news/498645"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 0,
+  "logic": "1 ng/L = $0.04 of PGM per 1,000 m3 water vs ~$1/bbl ($6/m3) handling and >$0.05/m3 sorbent contact cost; even 100x richer water does not pay",
+  "our_revenue_usd_yr": 0,
+  "revenue_logic": "no buyer: metal value per m3 below cost of contact; only a niche if a field shows ug/L PGM (none found)",
+  "gross_margin_pct": 60,
+  "margin_logic": "moot; would be a specialty grafted resin if any demand appeared",
+  "sources": [
+   "https://www.naturalgasintel.com/articles/119110-permian-alone-holds-12b-produced-water-market-potential-says-raymond-james",
+   "https://www.osti.gov/biblio/2386956"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 5,
+  "drivers": "Permian water 20 Mbbl/d (2024) to 26 Mbbl/d by 2030; disposal limits push reuse and mineral recovery (Li, Br, I), not PGMs",
+  "deadline": "",
+  "sources": [
+   "https://jpt.spe.org/twa/balancing-growth-and-risk-why-water-management-is-the-permian-basins-biggest-challenge",
+   "https://wrp.beg.utexas.edu/episode/managing-produced-water-in-the-texas-permian-will-remain-a-long-term-challenge"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Element3",
+   "Altillion",
+   "Gradiant"
+  ],
+  "incumbents": [
+   "Johnson Matthey",
+   "Heraeus",
+   "BASF (PGM refining)",
+   "Select Water Solutions",
+   "NGL Energy Partners"
+  ],
+  "papers_3yr": null,
+  "paper_query": "platinum group metals oilfield produced water",
+  "groups_active": null,
+  "notes": "No one targets PGMs in produced water; brine-mineral startups chase Li/I/Br (Element3 Series A; Altillion $5M seed)",
+  "sources": [
+   "https://chemistryforsustainability.org/community-news/element3-resources-raises-248-million-sustainable-lithium-extraction-technology",
+   "https://pulse2.com/altillion-raises-5-million-to-extract-critical-minerals-from-oilfield-wastewater-and-industrial-brines/"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 40000,
+  "synth": "grafted resin: thiol/thiourea ligand on polymer or silica bead, because ng/L capture needs a solid sorbent",
+  "test": "field assay of real produced water for Pt/Pd first (ICP-MS after preconcentration), then spiked-brine column uptake at 100k+ mg/L TDS; university ICP-MS lab",
+  "logic": "resin 12 wk + tests 2 wk; resin $25k + ~100 ICP-MS with preconcentration x $80 + water sampling/shipping ~$7k",
+  "sources": [
+   "https://www.osti.gov/servlets/purl/2386956"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 6,
+  "gates": "first prove a field with recoverable PGM (none known); pilot skid on SWD site 1 yr; refiner offtake for loaded resin",
+  "sources": [
+   "https://www.gwpc.org/wp-content/uploads/2025/07/Class-II-Murray.pdf"
+  ]
+ }
+}

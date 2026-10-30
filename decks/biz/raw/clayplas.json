@@ -1,0 +1,106 @@
+{
+ "key": "clayplas",
+ "name": "Clay-tolerant superplasticizer",
+ "type": "Add-in",
+ "problem": "Clay in low-carbon cement and dirty sand soaks up superplasticizer, so concrete stiffens",
+ "design": "Clay-tolerant superplasticizer that keeps concrete flowing",
+ "market": {
+  "usd_yr": 7500000000,
+  "year": 2025,
+  "what": "PCE superplasticizers incl. clay-tolerant grades and sacrificial agents, world; China ~half; part of $21-23B concrete admixtures",
+  "method": "reports $6.6-7.9B (2025); bottom-up: China ~16 Mt (20% soln) x ¥1,765/t = $3.9B (Sobute 1.05 Mt at ~6.5% share) + rest of world 2.1 Gt cement x ~0.08% PCE solids x ~$2.5/kg = $4.2B (est.) = ~$8B",
+  "sources": [
+   "https://www.marketresearchfuture.com/reports/polycarboxylate-ether-superplasticizer-market-39447",
+   "https://www.360researchreports.com/market-reports/polycarboxylate-superplasticizers-market-203101",
+   "https://paper.cnstock.com/html/2025-04/29/content_2060388.htm",
+   "https://pdf.dfcfw.com/pdf/H3_AP202203011549868323_1.pdf",
+   "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-cement.pdf",
+   "https://www.fortunebusinessinsights.com/concrete-admixtures-market-102832",
+   "https://www.imarcgroup.com/concrete-admixtures-market"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 700000000,
+  "logic": "less overdose: ~1/3 of $7.5B PCE goes into clay-hit mixes (China >80% manufactured sand, India, LC3) at ~40% extra dose = ~$0.7B; halve it = $0.35B. More clay: ~70 LC3 plants x ~1 Mt x 5 pts less clinker = 3.5 Mt clinker x (0.85 t CO2 x $85 + ~$15) = $0.3B (est.)",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "license to a mid-tier PCE maker (China/India) 3% x ~$200M sales = $6M + own sacrificial agent ~2 kt/yr x $3/kg = $6M (est.)",
+  "gross_margin_pct": 50,
+  "margin_logic": "royalty ~90%; agent sold into price-war PCE market ~35-40%; Sika material margin 54.9% (2025)",
+  "sources": [
+   "https://www.mdpi.com/1996-1944/18/11/2662",
+   "https://sciencedirect.com/science/article/abs/pii/S0008884620316148",
+   "https://www.mordorintelligence.com/industry-reports/calcined-clay-cement-rheology-modifiers-market",
+   "https://cbamguide.com/carbon/eu-ets/",
+   "https://www.globenewswire.com/news-release/2026/02/20/3241673/0/en/SIKA-REPORTS-FULL-YEAR-2025-RESULTS-EXECUTING-PLAN-TO-ACCELERATE-GROWTH.html"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 5,
+  "drivers": "LC3/calcined clay scale-up (~35 plants running, ~35 building; Holcim 0.5 Mt in H1 2025); EU ETS ~€75-85/t; manufactured sand in China/India; China volumes falling",
+  "deadline": "EU CBAM definitive phase and free-allocation cut start 1 Jan 2026",
+  "sources": [
+   "https://www.marketresearchfuture.com/reports/limestone-calcined-clay-cement-market-36475",
+   "https://www.holcim.com/who-we-are/our-stories/scaling-calcined-clay-for-sustainable-building",
+   "https://www.mordorintelligence.com/industry-reports/calcined-clay-cement-rheology-modifiers-market",
+   "https://www.chinabaogao.com/detail/755835.html",
+   "https://cbamguide.com/carbon/eu-ets/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Concretene"
+  ],
+  "indirect_startups": [
+   "Alcemy",
+   "Carbon Upcycling",
+   "Brimstone",
+   "Sublime Systems",
+   "Partanna",
+   "Terra CO2",
+   "Chement",
+   "ECOPlanet"
+  ],
+  "incumbents": [
+   "Sika (incl. MBCC/Master Builders)",
+   "Saint-Gobain (Chryso, GCP, Fosroc)",
+   "Mapei",
+   "Kao",
+   "Nippon Shokubai",
+   "Sobute",
+   "Kezhijie",
+   "Hongqiang"
+  ],
+  "papers_3yr": null,
+  "paper_query": "polycarboxylate superplasticizer calcined clay",
+  "groups_active": null,
+  "notes": "Sika strongest: CHF 11.2B sales 2025, has ViscoCrete calcined-clay line; Saint-Gobain sells CLARENA clay-mitigation range, bought Fosroc $1.025B (2025); China fragmented (CR3 ~15%); no funded startup found on a new clay-tolerant PCE molecule; Concretene (graphene admixture) £3M; Alcemy $10M",
+  "sources": [
+   "https://cze.sika.com/dam/dms/corporate/q/glo-sika-concrete-viscocrete-calcined-clay.pdf",
+   "https://th.gcpat.com/solutions/products/clarena-concrete-admixture-technologies-clay-mitigation",
+   "https://www.fosroc.com/news/saint-gobain-completes-the-acquisition-of-fosroc",
+   "https://vestbee.com/blog/articles/concretene-secures-3-m",
+   "https://siliconcanals.com/german-alcemy-picks-up-10m/"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 35000,
+  "synth": "polymer: PCE comb copolymer by aqueous radical polymerization (HPEG/TPEG macromonomer + acrylic acid + design comonomer), 1-2 step, cheap monomers; or 1-2 step cationic sacrificial agent; 3 variants",
+  "test": "mini-slump / flow table (ASTM C1437, EN 1015-3) and Marsh cone on paste/mortar with 1-3% montmorillonite sand and LC3 binder; PCE adsorption on clay by TOC; ASTM C109 / EN 196-1 mortar strength 1-28 d; university concrete lab",
+  "logic": "synth 6-8 wk + tests 6 wk (28-d cubes); synth ~$20k (polymer CRO, low end) + lab time ~$10k + ~90 cubes x $30 + TOC ~40 x $50 (est.)",
+  "sources": [
+   "https://mccmeetingspublic.blob.core.usgovcloudapi.net/madisonal-meet-8e812f55b553452f953e17b0a53a4792/ITEM-Attachment-002-31d5cb217517432cb9597d842f269c7d.pdf",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC13117992/",
+   "https://www.mdpi.com/1996-1944/18/11/2662"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "EN 934-2 CE marking (type tests + notified-body FPC audit) or ASTM C494 (strength to 6 mo/1 yr); ready-mix/precast plant trials 3-6 mo; admixture-maker license deal",
+  "sources": [
+   "https://www.appluslaboratories.com/global/en/what-we-do/service-sheet/ce-marking-of-admixtures",
+   "https://store.astm.org/c0494_c0494m-19.html"
+  ]
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "key": "collector",
+ "name": "Selective copper collector",
+ "type": "Add-in",
+ "problem": "Copper flotation loses 10-15% of copper to tailings and drags pyrite into the concentrate",
+ "design": "Flotation collector that grabs copper sulfides and rejects pyrite",
+ "market": {
+  "usd_yr": 1200000000,
+  "year": 2025,
+  "what": "thiol collectors for sulfide ores (xanthates, dithiophosphates, thionocarbamates, MBT, phosphines), world; copper is the largest slice",
+  "method": "xanthate ~372 kt x ~$1.7/kg = $0.63B + other thiols est. ~$0.5B; check: reports put collectors at 36% of $3.4-5.8B reagents = $1.2-2.1B; copper slice bottom-up 3.3 Bt ore x ~35 g/t (est.) x $2.5/kg = ~$0.3B",
+  "sources": [
+   "https://www.prnewswire.com/news-releases/global-xanthates-market-will-reach-a-valuation-of-us-6246-mn-by-2025-631495473.html",
+   "https://www.snsinsider.com/reports/flotation-reagents-market-7763",
+   "https://www.credenceresearch.com/report/flotation-reagents-market",
+   "https://marketintelo.com/report/xanthate-collector-market",
+   "https://www.made-in-china.com/products-search/hot-china-products/Xanthate_Price.html",
+   "https://www.mckinsey.com/industries/metals-and-mining/our-insights/bridging-the-copper-supply-gap"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 2700000000,
+  "logic": "18.4 Mt Cu in concentrate at ~87% recovery; +1 pt recovery = +0.21 Mt Cu x ~$12.5k/t net (LME ~$14.4k less TC/RC, payables) = $2.6B; less pyrite = higher conc grade, ~3% less conc freight est. $0.1B",
+  "our_revenue_usd_yr": 24000000,
+  "revenue_logic": "3-5 concentrators, ~150 Mt ore/yr (~4.5% of world Cu ore) x 20 g/t = 3 kt x $8/kg premium price; ~17% of the mines' +1 pt value",
+  "gross_margin_pct": 55,
+  "margin_logic": "1-2 step thiocarbamate type, toll-made at ~$3-4/kg est.; priced as specialty vs $1.5-2.4/kg xanthate",
+  "sources": [
+   "https://www.uvrn.org/research/global-copper-mine-production-record-2025-trackers-converge",
+   "https://www.reporteminero.cl/noticia/noticias/2026/10/precio-cobre-retroceso-diario-bolsa-londres-655-centavos-dolar",
+   "https://www.min-eng.com/flotation25/drafts/session5/silva.pdf",
+   "https://dealroom.co/news/162162-giraffe-bio-raises-6-4m-to-squeeze-more-copper-from-existing-mines/",
+   "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10105713"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 2.7,
+  "drivers": "S&P: Cu demand 28 Mt (2025) to 42 Mt (2040), AI data centers + grid + EVs; IEA 30% mined-supply gap by 2035; concentrator grades down 1.22% to 0.69% since 2002; xanthate CS2 hazard pressure (AU, water quality)",
+  "deadline": "",
+  "sources": [
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_January%202026.pdf",
+   "https://www.engineeringnews.co.za/article/lack-of-geographic-diversification-in-critical-minerals-supply-a-cause-for-concern-iea-report-shows-2025-05-21",
+   "https://www.rshq.qld.gov.au/safety-notices/mines/xanthates-in-mining",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11277360/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Giraffe Bio"
+  ],
+  "indirect_startups": [
+   "Jetti Resources",
+   "Ceibo",
+   "Nuton (Rio Tinto venture)",
+   "Allonnia"
+  ],
+  "incumbents": [
+   "Syensqo (Aero/Aerophine, ex-Cytec)",
+   "Orica",
+   "Clariant (Hostaflot)",
+   "BASF",
+   "Nouryon",
+   "Chevron Phillips (Orfom)",
+   "Senmin",
+   "Qixia Tongda / Tieling / Qingdao xanthate makers",
+   "Kemcore (distributor)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "chalcopyrite pyrite flotation collector selectivity",
+  "groups_active": null,
+  "notes": "Syensqo strongest (Aerophine, SmartFloat AI dosing); Giraffe Bio $6.4M seed Oct 2026 (BHP Ventures), claims up to +5% Cu vs 1-2% norm; no startup found designing new synthetic collector molecules; Chinese xanthate sets price floor",
+  "sources": [
+   "https://www.syensqo.com/en/brands/aerophine",
+   "https://www.solvay.com/en/news/solvay-marks-milestone-digital-mining-journey-smartfloat-solution-more-efficient-and",
+   "https://dealroom.co/news/162162-giraffe-bio-raises-6-4m-to-squeeze-more-copper-from-existing-mines/",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12026903/"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 60000,
+  "synth": "1-2 step custom: thionocarbamate / dithiophosphinate from isothiocyanate or chlorophosphine + alcohol/amine; 3 variants, 20-50 g each",
+  "test": "Hallimond tube microflotation on pure chalcopyrite vs pyrite (zeta/contact angle); then Denver-cell batch rougher+cleaner tests on a real porphyry ore with Cu/Fe/S assays vs SIBX/IPETC; ALS, SGS, Base Met Labs or a university lab",
+  "logic": "synth 5 wk + microflotation 3 wk + batch floats 6 wk; 3 x $6k CRO + microflotation ~$8k + ~25 batch tests x ~$1.2k with assays (est.) + mineralogy ~$4k",
+  "sources": [
+   "https://www.alsglobal.com/en/metallurgy-and-mineral-processing/flotation",
+   "https://jktech.com.au/services/laboratory/flotation-testing",
+   "https://www.ausimm.com/globalassets/insights-and-resources/minerals-processing-toolbox/anderson0503.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "mine ore lab program 3-6 mo; plant on/off trial 1-3 mo after baseline (small gains need stats); reagent safety/SDS and tailings water check; then supply contract, often via a reagent distributor",
+  "sources": [
+   "https://onemine.org/documents/plant-scale-trial-of-isobutyl-xanthate-at-raglan-concentrator-using-reference-distributions",
+   "https://www.min-eng.com/flotation25/drafts/session3/marufu.pdf",
+   "https://www.clariant.com/Corporate/Case-Studies/Mining/2012/12/Selective-Hostaflot-F-Collector-Improves-Copper-Concentrate-Quality"
+  ]
+ }
+}

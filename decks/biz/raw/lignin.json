@@ -1,0 +1,98 @@
+{
+ "key": "lignin",
+ "name": "Lignin-to-aromatics catalyst",
+ "market": {
+  "usd_yr": 12800000000,
+  "year": 2024,
+  "what": "Phenol (what lignin phenolics replace, e.g. in PF resins), world",
+  "method": "11-12.2 Mt/yr (avg 11.6 Mt) x ~$1.1/kg = $12.8B",
+  "sources": [
+   "https://www.chemanalyst.com/industry-report/phenol-market-184",
+   "https://coalitiongreenwichuat.crisil.com/content/dam/crisil/our-analysis/views-and-commentaries/sectorvector/2025/06/phenol-phenom.pdf"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 880000000,
+  "job_what": "lignin sold for chemical use today (lignosulfonates + kraft lignin), world; no lignin depolymerization catalyst sold commercially",
+  "job_method": "lignosulfonates ~1.65 Mt/yr = ~$0.80B (2023 report) + kraft lignin sold ~0.1 Mt x ~$0.8/kg (est.) = ~$0.08B; low-med confidence",
+  "job_sources": [
+   "https://www.gii.tw/report/kbv1522060-global-lignosulfonates-market-size-share-trends.html",
+   "https://www.researchandmarkets.com/report/lignin-sulfonate",
+   "https://marketresearch.com/QYResearch-Group-v3531/Global-Lignin-Sales-36309643"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 600000000,
+  "logic": "Kraft lignin ~55 Mt/yr, 98% burned. Pull 5 Mt (~10%): 0.35 t aromatics/t x $1,100 = $385/t, minus $60 lost fuel value, minus ~$200 processing (est.) = ~$125/t x 5 Mt = $0.6B",
+  "our_revenue_usd_yr": 8000000,
+  "revenue_logic": "2-3 plants, 125 kt lignin/yr by yr 7 -> 44 kt aromatics x $1.1/kg = $48M x 5% royalty = $2.4M + catalyst ~1 kg/t x $50/kg = $6M",
+  "gross_margin_pct": 70,
+  "margin_logic": "Mix of license (90) and supported-metal catalyst sales (~50)",
+  "sources": [
+   "https://bioresources.cnr.ncsu.edu/resources/biorefinery-review-wide-reaching-products-through-kraft-lignin/",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC9562980/",
+   "https://pubs.rsc.org/en/content/articlelanding/2023/ee/d3ee00965c"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 3,
+  "drivers": "Phenol demand +2-3%/yr; bio-based phenol for PF resins (Stora Enso Lineo); RCF lignin oil MSP now ~EUR 1,000/t",
+  "deadline": "",
+  "sources": [
+   "https://coalitiongreenwichuat.crisil.com/content/dam/crisil/our-analysis/views-and-commentaries/sectorvector/2025/06/phenol-phenom.pdf",
+   "https://pubs.rsc.org/en/content/articlelanding/2023/ee/d3ee00965c"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Vertoro",
+   "Bloom Biorenewables",
+   "Lignolix"
+  ],
+  "indirect_startups": [
+   "Lignin Industries",
+   "Lixea",
+   "Lignopure",
+   "RenFuel",
+   "SunCarbon"
+  ],
+  "incumbents": [
+   "Stora Enso",
+   "Borregaard",
+   "Suzano",
+   "UPM",
+   "Domtar",
+   "Valmet (LignoBoost)",
+   "Andritz (LignoCity)",
+   "Ingevity",
+   "BASF",
+   "Johnson Matthey",
+   "Clariant"
+  ],
+  "papers_3yr": null,
+  "paper_query": "lignin depolymerization catalyst aromatic monomers",
+  "groups_active": null,
+  "notes": "Very crowded science. Bloom $14.7M Series A Apr 2025; Lignin Industries EUR 3.9M May 2025. Economics hinge on monomer yield from real kraft lignin",
+  "sources": [
+   "https://pitchbook.com/profiles/company/228786-58",
+   "https://www.eu-startups.com/2025/05/swedish-greentech-startup-lignin-industries-fuels-the-renol-ution-with-e3-9-million-to-fight-fossil-plastics/"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 45000,
+  "synth": "Supported metal catalyst (Ni/Mo/Ru on carbon or oxide) by impregnation from catalog supports, 3 variants; heterogeneous, so no CRO route",
+  "test": "Batch autoclave hydrogenolysis (Parr) of kraft lignin (Indulin AT) and birch wood RCF; monomer yield by GC-FID/GC-MS, GPC, HSQC NMR; recycle test; university lab",
+  "logic": "Catalyst prep + characterization 4-6 wk, $12k; reactor runs + analytics 8 wk, ~$30k; $3k lignin/consumables",
+  "sources": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC9562980/",
+   "https://pubs.acs.org/ascecg/article/12/45/16638/143717/Improved-Reductive-Catalytic-Fractionation-of"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 5,
+  "gates": "Continuous pilot 1-2 yr; demo at pulp mill/biorefinery; resin buyer qualifies lignin phenolics 1 yr",
+  "sources": [
+   "https://www.valmet.com/media/articles/up-and-running/new-technology/PEERS1stLignoBoostPlants"
+  ]
+ }
+}

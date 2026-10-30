@@ -1,0 +1,112 @@
+{
+ "key": "fsurf",
+ "name": "Fluorine-free wetting agent",
+ "type": "Add-in",
+ "problem": "PFAS bans hit fluorosurfactants that coatings, inks and electronics need for wetting",
+ "design": "Fluorine-free surfactant that wets as well as a fluorosurfactant",
+ "market": {
+  "usd_yr": 690000000,
+  "year": 2025,
+  "what": "fluorosurfactants for wetting/leveling/anti-crater in coatings, inks, adhesives, electronics, cleaners, oilfield; world; excl. foam, PFAS polymerization aids, textile repellents",
+  "method": "non-foam wetting uses = 63% of sales (GMI split); GMI $1.5B x 63% = $945M, report cluster ~$0.70B (Fortune, MRFR, Straits, FactMR) x 63% = $440M, avg $690M; bottom-up 12-15 kt capacity x 85% use x ~60% x ~$100/kg ≈ $700M",
+  "sources": [
+   "https://www.gminsights.com/industry-analysis/fluorosurfactant-market",
+   "https://www.fortunebusinessinsights.com/fluorosurfactant-market-102344",
+   "https://straitsresearch.com/report/fluorosurfactants-market",
+   "https://www.factmr.com/report/fluorosurfactant-market",
+   "https://www.indexbox.io/blog/fluorinated-surfactant-compounds-market-forecast-to-2035-growth-driven-by-semiconductor-miniaturization-and-low-persistence-grades/",
+   "https://www.alibaba.com/showroom/fluorosurfactant.html"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 500000000,
+  "logic": "buyers pay ~$100/kg (China bulk $85-250) for fluoro vs ~$5-15/kg hydrocarbon wetters (est.) for the last 5-10 mN/m (fluoro 15-20, trisiloxane 20-25, hydrocarbon 25-38); ~6 kt/yr x ~$85/kg paid for function ≈ $500M kept without PFAS; silicone/hydrocarbon swaps need higher dose and fail some uses (Evonik)",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "1% of PFAS-free slip/leveling additive market ~$1.5B in 2033 ($849M 2026 at 8.9%/yr) ≈ $15M ≈ 250 t/yr x $60/kg; check: DIC targets ¥5B (~$33M) for Megaface EFS by FY2030",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty additive used at 0.05-0.5% dose, priced on function; toll-made by CRO/CMO; lower if licensed through an additive house",
+  "sources": [
+   "https://www.alibaba.com/showroom/fluorosurfactant.html",
+   "https://www.sciencedirect.com/science/article/pii/S0001868614001390",
+   "https://pubs.acs.org/doi/10.1021/acs.langmuir.5b00336",
+   "https://www.pcimag.com/articles/114455-replacing-fluorine-based-additives-in-coating-formulations",
+   "https://lifestyle.kbew98country.com/story/78936/pfas-free-slip-and-leveling-coating-additives-market-forecast-2036-market-to-reach-usd-1992-5-mn-by-2036-at-8-9-cagr/",
+   "https://www.dic-global.com/en/news/2023/products/20230731182329.html"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "fluoro sales only +2.4%/yr but PFAS-free wetting/leveling +6-9%/yr; Chemours Capstone discontinued early 2025; 3M PFAS exit end-2025; EU PFHxA limits on consumer mixtures from Oct 2026; EU universal PFAS restriction; MN/ME product bans",
+  "deadline": "EU universal PFAS restriction: SEAC final opinion end-2026, then Commission vote; MN and ME bans on all PFAS products 1 Jan 2032",
+  "sources": [
+   "https://www.gminsights.com/industry-analysis/fluorosurfactant-market",
+   "https://www.lucintel.com/de/wetting-additive-market.aspx",
+   "https://www.chempoint.com/products/catalog/chemours/capstone-fluorosurfactants",
+   "https://adhesivesmag.com/articles/99901-3m-intends-to-discontinue-pfas-manufacturing-by-the-end-of-2025",
+   "https://regask.com/eu-tightens-pfas-limits-consumer-goods/",
+   "https://www.arnoldporter.com/en/perspectives/advisories/2026/03/echa-committees-advance-broad-pfas-restriction-under-reach",
+   "https://www.pca.state.mn.us/sites/default/files/AmarasLaw-Factsheet.pdf",
+   "https://www.maine.gov/dep/spills/topics/pfas/PFAS-products/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Locus Fermentation Solutions",
+   "Holiferm",
+   "Dispersa",
+   "AmphiStar",
+   "Sironix Renewables"
+  ],
+  "incumbents": [
+   "DIC (Megaface, EFS PFAS-free)",
+   "AGC (Surflon)",
+   "Daikin",
+   "Chemours (Capstone, discontinued)",
+   "3M (exited 2025)",
+   "Syensqo",
+   "Merck (Tivida)",
+   "Synthomer/Omnova (PolyFox)",
+   "Dynax",
+   "ICT (Thetawet)",
+   "BYK/Altana",
+   "Evonik (Tego, Surfynol)",
+   "Dow (ElecPure PRF 200C)",
+   "Momentive (CoatOSil)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "fluorine-free surfactant replacing fluorosurfactants",
+  "groups_active": null,
+  "notes": "No funded startup found making a drop-in fluoro-free wetting agent; biosurfactant startups target cleaning. Strongest: DIC EFS (2023, ¥5B target FY2030), Evonik/BYK/Momentive silicone swaps. Bristol/Hirosaki 'hedgehog' C/Si surfactants near PFAS surface tension, working with French and Chinese firms",
+  "sources": [
+   "https://www.dic-global.com/en/products/megaface/pfas-free/",
+   "https://www.evonik.com/en/company/businesslines/ca/sustainability-coating-additives/evonik-s-sustainable-alternatives-for-pfas.html",
+   "https://www.chempoint.com/en-ca/insights/fluorosurfactant-alternatives-coatosil-additives",
+   "https://www.dow.com/en-us/pdp.elecpure-prf-200c-surfactant.593000z.html",
+   "https://www.bristol.ac.uk/news/2025/april/pfas.html",
+   "https://tracxn.com/d/trending-business-models/startups-in-biosurfactants/__U8cPc1hBzU5HYBI84XyGmJtrcYrFWpGQ6HSv9-vtdqU/companies"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 30000,
+  "synth": "1-2 step custom: branched 'hedgehog' hydrocarbon or trisiloxane-hydrocarbon hybrid from catalog alcohols/siloxanes; 3 variants + catalog controls (Surfynol, trisiloxane, a fluoro benchmark)",
+  "test": "static surface tension ASTM D1331 (Wilhelmy/du Noüy); dynamic surface tension by bubble pressure (10 ms-10 s); contact angle on PE/PTFE/oily steel; crater and leveling drawdowns on oil-contaminated panels in 2 waterborne coatings; university colloid lab or coatings CRO",
+  "logic": "CRO 5-6 wk + tests/formulation 4 wk; 3 x $6k CRO = $18k + contact angle ~€450/sample x 8 ≈ $4k + surface tension runs ~$2k + drawdowns/formulation ~$6k",
+  "sources": [
+   "https://measurlabs.com/products/contact-angle/",
+   "https://www.nitt.edu/home/rc/sif/list_of_instruments/Force Tensiometer -Charge Calculation Details-R3.pdf",
+   "https://pubs.acs.org/doi/10.1021/acs.langmuir.5b00336"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "formulator trials in each paint/ink 6-18 mo (est.); chip and display fabs 1 to several yrs per layer (SIA); TSCA PMN averaged 665 days in 2025, so use LVE (≤10 t/yr) or polymer exemption; REACH none <1 t/yr, 1-10 t fee €2,078 plus data",
+  "sources": [
+   "https://semiconductors.org/wp-content/uploads/2023/06/FINAL-Surfactants-Case-Study.pdf",
+   "https://americanchemistry.com/better-policy-regulation/chemical-management/toxic-substances-control-act-tsca/tsca-new-chemicals-review-tracking",
+   "https://www.cirs-group.com/en/chemicals/official-announcement-19-increase-in-registration-fees-under-eu-reach-regulation"
+  ]
+ }
+}

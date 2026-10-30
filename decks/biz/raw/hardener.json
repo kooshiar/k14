@@ -1,0 +1,81 @@
+{
+ "key": "hardener",
+ "name": "Recyclable blade hardener",
+ "market": {
+  "usd_yr": 500000000,
+  "year": 2025,
+  "what": "amine hardener in wind-blade epoxy systems, world (whole blade epoxy system ~$1.2-1.5B)",
+  "method": "165 GW x ~3 t epoxy system/MW (est.; sources say up to 4.25) = ~495 kt x ~25% hardener = ~124 kt x ~$4/kg (est.)",
+  "sources": [
+   "https://powerphilippines.com/global-wind-capacity-hit-record-165-gw-in-2025-gwec/",
+   "https://www.reportsanddata.com/report-detail/special-epoxy-resin-for-wind-turbine-blades-market",
+   "https://www.researchandmarkets.com/reports/5731104/wind-turbine-blade-epoxy-resin-global-market"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 350000000,
+  "logic": "165 GW x ~7 t blade/MW = ~1.16 Mt/yr made recyclable x ~$300/t end-of-life value ($150 avoided landfill/kiln + $150 recovered glass/resin, est.) = ~$0.35B/yr; plus ~10% plant scrap now",
+  "our_revenue_usd_yr": 20000000,
+  "revenue_logic": "~2% of 124 kt wind hardener = 2.5 kt x ~$8/kg premium = ~$20M (or license to resin maker)",
+  "gross_margin_pct": 45,
+  "margin_logic": "specialty amine: 2-3 step from cheap ketone/aminocyclohexanol, sells at ~2x commodity hardener",
+  "sources": [
+   "https://www.siemensgamesa.com/global/en/home/explore/journal/recyclable-blade.html",
+   "https://zenodo.org/records/11172546/files/IEA%20Wind%20Task%2045%20-%20Deliverable%204.2%20-%20Guideline%20for%20Legislation%20and%20Policy%20on%20End-of-Life%20Wind%20Turbine%20Blade%20Waste%20.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "wind build-out (165 GW 2025, record); landfill bans (DE, NL, AT, FI); France rotor recyclability rules; OEM zero-waste pledges",
+  "deadline": "France: 55% of rotor mass recyclable for permits after 1 Jan 2025",
+  "sources": [
+   "https://powerphilippines.com/global-wind-capacity-hit-record-165-gw-in-2025-gwec/",
+   "https://www.assemblee-nationale.fr/dyn/16/questions/QANR5L16QE7082.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Mallinda (vitrimer)"
+  ],
+  "indirect_startups": [
+   "Carbon Rivers",
+   "Continuum",
+   "Regen Fiber"
+  ],
+  "incumbents": [
+   "Aditya Birla (Recyclamine)",
+   "Swancor (EzCiclo)",
+   "Olin",
+   "Westlake Epoxy",
+   "Huntsman",
+   "Kukdo",
+   "Arkema (Elium thermoplastic)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "recyclable epoxy hardener wind blade",
+  "groups_active": null,
+  "notes": "Siemens Gamesa RecyclableBlade ~100 units by 2025; all Swancor resin to SGRE recyclable from 2026; Vestas pushes solvolysis for any epoxy (threat)",
+  "sources": [
+   "https://www.offshorewind.biz/2024/03/20/swancor-to-supply-recyclable-resins-for-siemens-gamesas-recyclableblades",
+   "https://freeindependentnews.com/in-2022-scientists-unveiled-a-wind-turbine-material-that-could-be-recycled-into-gummy-bear-ingredients-four-years-later-where-did-the-idea-go/"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 40000,
+  "synth": "3-5 step custom: protected aminocyclohexanol + ketalization + deprotection; 3 variants x 100 g for panels",
+  "test": "DSC Tg (ASTM D3418), DMA (ASTM D7028), infusion viscosity/pot life, GF laminate ILSS (ASTM D2344), mild-acid digestion mass loss",
+  "logic": "synth 9 wk + cure/mechanics/digestion 5 wk; synth $20k + composites lab tests ~$20k (est.)",
+  "sources": [
+   "https://www.siemensgamesa.com/global/en/home/explore/journal/recyclable-blade.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "DNV resin type approval 1-2 yrs; OEM coupon + subcomponent + full blade test (IEC 61400-23) 2-3 yrs; earlier sales in sports/marine composites",
+  "sources": [
+   "https://www.compositesworld.com/news/swancor-siemens-gamesa-solidify-recyclable-wind-blade-partnership"
+  ]
+ }
+}

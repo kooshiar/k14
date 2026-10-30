@@ -221,7 +221,7 @@
  "cement": {
   "ours": 70,
   "ours_name": "L2-17",
-  "theirs": 66,
+  "theirs": 61,
   "theirs_name": "DEIPA",
   "l1": 66,
   "l2": 70,
@@ -339,26 +339,47 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 67,
+    "score": 55,
     "rows": [
      {
       "name": "Early strength",
-      "w": 17.1,
+      "w": 12.0,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Doesn\u2019t slow setting",
-      "w": 17.1,
+      "w": 12.0,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 5.7,
+      "w": 4.0,
       "val": 47,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 4.0,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 4.0,
+      "val": 25,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the water",
+      "w": 4.0,
+      "val": 16,
       "cut": 0,
       "ok": true
      }
@@ -447,7 +468,7 @@
  "rebar": {
   "ours": 61,
   "ours_name": "L5-8",
-  "theirs": 53,
+  "theirs": 55,
   "theirs_name": "benzotriazole",
   "l1": 53,
   "l2": 57,
@@ -558,26 +579,47 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 50,
+    "score": 54,
     "rows": [
      {
       "name": "Holds the steel against salt",
-      "w": 20.0,
+      "w": 13.3,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Dissolves in pore water",
-      "w": 13.3,
+      "w": 8.9,
       "val": 68,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 6.7,
+      "w": 4.4,
       "val": 26,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 4.4,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 4.4,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the water",
+      "w": 4.4,
+      "val": 50,
       "cut": 0,
       "ok": true
      }
@@ -1624,52 +1666,73 @@
   "ours_fails": []
  },
  "tfa": {
-  "ours": 56,
-  "ours_name": "L2-37",
-  "theirs": 46,
+  "ours": 49,
+  "ours_name": "Design A",
+  "theirs": 44,
   "theirs_name": "quaternary ammonium (resin site)",
-  "l1": 54,
-  "l2": 56,
+  "l1": 49,
+  "l2": 44,
   "l3": 20,
-  "l4": 47,
+  "l4": 44,
   "l5": 20,
   "ours_boxes": [
    {
     "box": "Performance",
     "mult": 40,
-    "score": 59,
+    "score": 41,
     "rows": [
      {
       "name": "Picks TFA over chloride and sulfate",
-      "w": 13.3,
+      "w": 10.0,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Catches ppt TFA",
-      "w": 8.9,
-      "val": 90,
+      "w": 6.7,
+      "val": 49,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Stays in the filter",
-      "w": 8.9,
+      "w": 6.7,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Frees up for reuse",
-      "w": 4.4,
+      "w": 3.3,
       "val": 100,
       "cut": 0,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 4.4,
+      "w": 3.3,
+      "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.3,
+      "val": 100,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.3,
       "val": 0,
       "cut": 0,
       "ok": true
@@ -1679,12 +1742,12 @@
    {
     "box": "Cost",
     "mult": 15,
-    "score": 40,
+    "score": 41,
     "rows": [
      {
       "name": "Cost per m\u00b3 of water",
       "w": 10.0,
-      "val": 30,
+      "val": 31,
       "cut": 25,
       "ok": true
      },
@@ -1721,12 +1784,12 @@
    {
     "box": "Fit & supply",
     "mult": 15,
-    "score": 39,
+    "score": 40,
     "rows": [
      {
       "name": "Drops into today\u2019s setup",
       "w": 7.5,
-      "val": 28,
+      "val": 29,
       "cut": 0,
       "ok": true
      },
@@ -1740,7 +1803,7 @@
      {
       "name": "Easy to make",
       "w": 3.8,
-      "val": 71,
+      "val": 73,
       "cut": 0,
       "ok": true
      }
@@ -1751,40 +1814,61 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 24,
+    "score": 22,
     "rows": [
      {
       "name": "Picks TFA over chloride and sulfate",
-      "w": 13.3,
+      "w": 10.0,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Catches ppt TFA",
-      "w": 8.9,
+      "w": 6.7,
       "val": 0,
       "cut": 25,
       "ok": false
      },
      {
       "name": "Stays in the filter",
-      "w": 8.9,
+      "w": 6.7,
       "val": 63,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Frees up for reuse",
-      "w": 4.4,
+      "w": 3.3,
       "val": 100,
       "cut": 0,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 4.4,
+      "w": 3.3,
       "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.3,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.3,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.3,
+      "val": 0,
       "cut": 0,
       "ok": true
      }
@@ -1866,8 +1950,8 @@
  "smoke": {
   "ours": 81,
   "ours_name": "L5-24",
-  "theirs": 52,
-  "theirs_name": "pillar[5]arene (OMe)",
+  "theirs": 54,
+  "theirs_name": "calix[4]arene",
   "l1": 73,
   "l2": 72,
   "l3": 78,
@@ -1984,33 +2068,54 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 36,
+    "score": 30,
     "rows": [
      {
       "name": "Removes the smoke taint",
-      "w": 10.0,
-      "val": 9,
+      "w": 7.3,
+      "val": 0,
       "cut": 25,
       "ok": false
      },
      {
       "name": "Keeps fruit and oak aroma",
-      "w": 15.0,
+      "w": 10.9,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Leaves nothing in the wine",
-      "w": 10.0,
+      "w": 7.3,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 5.0,
-      "val": 29,
+      "w": 3.6,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.6,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.6,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.6,
+      "val": 50,
       "cut": 0,
       "ok": true
      }
@@ -2019,12 +2124,12 @@
    {
     "box": "Cost",
     "mult": 15,
-    "score": 46,
+    "score": 49,
     "rows": [
      {
       "name": "Cost per bottle",
       "w": 7.5,
-      "val": 43,
+      "val": 49,
       "cut": 0,
       "ok": true
      },
@@ -2061,12 +2166,12 @@
    {
     "box": "Fit & supply",
     "mult": 15,
-    "score": 43,
+    "score": 80,
     "rows": [
      {
       "name": "US supply",
       "w": 3.0,
-      "val": 5,
+      "val": 100,
       "cut": 0,
       "ok": true
      },
@@ -2087,7 +2192,7 @@
      {
       "name": "Easy to make",
       "w": 3.0,
-      "val": 60,
+      "val": 66,
       "cut": 0,
       "ok": true
      }
@@ -2097,25 +2202,25 @@
   "ours_fails": []
  },
  "mousy": {
-  "ours": 80,
-  "ours_name": "L3-28",
-  "theirs": 61,
-  "theirs_name": "pillar[5]arene (OMe)",
-  "l1": 74,
+  "ours": 79,
+  "ours_name": "L2-47",
+  "theirs": 54,
+  "theirs_name": "calix[4]arene",
+  "l1": 73,
   "l2": 79,
-  "l3": 80,
+  "l3": 79,
   "l4": 75,
   "l5": 65,
   "ours_boxes": [
    {
     "box": "Performance",
     "mult": 40,
-    "score": 89,
+    "score": 86,
     "rows": [
      {
       "name": "Removes the mousy taint",
       "w": 8.0,
-      "val": 94,
+      "val": 82,
       "cut": 25,
       "ok": true
      },
@@ -2143,7 +2248,7 @@
      {
       "name": "Holds more per kg",
       "w": 4.0,
-      "val": 53,
+      "val": 51,
       "cut": 0,
       "ok": true
      }
@@ -2194,12 +2299,12 @@
    {
     "box": "Fit & supply",
     "mult": 15,
-    "score": 61,
+    "score": 60,
     "rows": [
      {
       "name": "Drops into today\u2019s setup",
       "w": 7.5,
-      "val": 56,
+      "val": 55,
       "cut": 0,
       "ok": true
      },
@@ -2213,7 +2318,7 @@
      {
       "name": "Easy to make",
       "w": 3.8,
-      "val": 91,
+      "val": 83,
       "cut": 0,
       "ok": true
      }
@@ -2224,40 +2329,61 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 54,
+    "score": 30,
     "rows": [
      {
       "name": "Removes the mousy taint",
-      "w": 8.0,
-      "val": 50,
+      "w": 6.2,
+      "val": 0,
       "cut": 25,
-      "ok": true
+      "ok": false
      },
      {
       "name": "Keeps fruit and floral aroma",
-      "w": 12.0,
-      "val": 49,
+      "w": 9.2,
+      "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Keeps the color",
-      "w": 8.0,
-      "val": 50,
+      "w": 6.2,
+      "val": 33,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Leaves nothing in the wine",
-      "w": 8.0,
+      "w": 6.2,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 4.0,
-      "val": 29,
+      "w": 3.1,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.1,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.1,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.1,
+      "val": 50,
       "cut": 0,
       "ok": true
      }
@@ -2266,12 +2392,12 @@
    {
     "box": "Cost",
     "mult": 15,
-    "score": 46,
+    "score": 49,
     "rows": [
      {
       "name": "Cost per bottle",
       "w": 7.5,
-      "val": 43,
+      "val": 49,
       "cut": 0,
       "ok": true
      },
@@ -2308,12 +2434,12 @@
    {
     "box": "Fit & supply",
     "mult": 15,
-    "score": 43,
+    "score": 80,
     "rows": [
      {
       "name": "US supply",
       "w": 3.0,
-      "val": 5,
+      "val": 100,
       "cut": 0,
       "ok": true
      },
@@ -2334,7 +2460,7 @@
      {
       "name": "Easy to make",
       "w": 3.0,
-      "val": 60,
+      "val": 66,
       "cut": 0,
       "ok": true
      }
@@ -3095,7 +3221,7 @@
  "cork": {
   "ours": 78,
   "ours_name": "L5-21",
-  "theirs": 62,
+  "theirs": 53,
   "theirs_name": "pillar[5]arene (OMe)",
   "l1": 72,
   "l2": 72,
@@ -3213,33 +3339,54 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 56,
+    "score": 37,
     "rows": [
      {
       "name": "Removes cork taint (TCA)",
-      "w": 10.0,
+      "w": 7.3,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Keeps fruit and floral aroma",
-      "w": 15.0,
+      "w": 10.9,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Leaves nothing in the wine",
-      "w": 10.0,
+      "w": 7.3,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 5.0,
+      "w": 3.6,
       "val": 29,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.6,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.6,
+      "val": 22,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.6,
+      "val": 0,
       "cut": 0,
       "ok": true
      }
@@ -5586,12 +5733,12 @@
  "ammonium": {
   "ours": 65,
   "ours_name": "L2-56",
-  "theirs": 57,
+  "theirs": 58,
   "theirs_name": "calix[4]arene",
-  "l1": 55,
+  "l1": 41,
   "l2": 65,
   "l3": 64,
-  "l4": 54,
+  "l4": 41,
   "l5": 54,
   "ours_boxes": [
    {
@@ -5729,43 +5876,64 @@
     "rows": [
      {
       "name": "Picks ammonium over potassium",
-      "w": 13.8,
+      "w": 11.0,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Picks ammonium over sodium",
-      "w": 9.2,
+      "w": 7.3,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Fast, reversible reading",
-      "w": 9.2,
+      "w": 7.3,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Stays in the sensor membrane",
-      "w": 13.8,
+      "w": 11.0,
       "val": 100,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Catches ammonium",
-      "w": 4.6,
+      "w": 3.7,
       "val": 0,
       "cut": 0,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 4.6,
+      "w": 3.7,
       "val": 33,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.7,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.7,
+      "val": 21,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.7,
+      "val": 50,
       "cut": 0,
       "ok": true
      }
@@ -6336,7 +6504,7 @@
  "pfas": {
   "ours": 72,
   "ours_name": "L3-19",
-  "theirs": 43,
+  "theirs": 42,
   "theirs_name": "quaternary ammonium (resin site)",
   "l1": 71,
   "l2": 65,
@@ -6433,33 +6601,54 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 20,
+    "score": 19,
     "rows": [
      {
       "name": "Picks PFAS over natural organics",
-      "w": 15.0,
+      "w": 10.9,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Catches ppt PFAS",
-      "w": 10.0,
+      "w": 7.3,
       "val": 0,
       "cut": 25,
       "ok": false
      },
      {
       "name": "Stays in the filter",
-      "w": 10.0,
+      "w": 7.3,
       "val": 63,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 5.0,
+      "w": 3.6,
       "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 3.6,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 3.6,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 3.6,
+      "val": 0,
       "cut": 0,
       "ok": true
      }
@@ -6808,11 +6997,11 @@
   "scored": 47
  },
  "polysulfide": {
-  "ours": 58,
-  "ours_name": "Design B",
-  "theirs": 33,
+  "ours": 49,
+  "ours_name": "Design G",
+  "theirs": 29,
   "theirs_name": "beta-cyclodextrin",
-  "l1": 58,
+  "l1": 49,
   "l2": 47,
   "l3": 47,
   "l4": null,
@@ -6821,7 +7010,7 @@
    {
     "box": "Performance",
     "mult": 45,
-    "score": 68,
+    "score": 46,
     "rows": [
      {
       "name": "Strength",
@@ -6840,7 +7029,7 @@
      {
       "name": "Holds more per kg",
       "w": 7.5,
-      "val": 10,
+      "val": 0,
       "cut": 0,
       "ok": true
      }
@@ -6849,12 +7038,12 @@
    {
     "box": "Cost",
     "mult": 25,
-    "score": 36,
+    "score": 28,
     "rows": [
      {
       "name": "Cost per use",
       "w": 25.0,
-      "val": 36,
+      "val": 28,
       "cut": 25,
       "ok": true
      }
@@ -6877,12 +7066,12 @@
    {
     "box": "Fit & supply",
     "mult": 20,
-    "score": 54,
+    "score": 77,
     "rows": [
      {
       "name": "Easy to make",
       "w": 20.0,
-      "val": 54,
+      "val": 77,
       "cut": 0,
       "ok": true
      }
@@ -6893,26 +7082,47 @@
    {
     "box": "Performance",
     "mult": 45,
-    "score": 26,
+    "score": 19,
     "rows": [
      {
       "name": "Strength",
-      "w": 22.5,
-      "val": 50,
-      "cut": 25,
-      "ok": true
-     },
-     {
-      "name": "Selectivity",
       "w": 15.0,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
+      "name": "Selectivity",
+      "w": 10.0,
+      "val": 50,
+      "cut": 25,
+      "ok": true
+     },
+     {
       "name": "Holds more per kg",
-      "w": 7.5,
+      "w": 5.0,
       "val": 0,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 5.0,
+      "val": 0,
+      "cut": 25,
+      "ok": false
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 5.0,
+      "val": 21,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Dissolves in the electrolyte",
+      "w": 5.0,
+      "val": 50,
       "cut": 0,
       "ok": true
      }
@@ -6973,7 +7183,7 @@
  "shortpfas": {
   "ours": 69,
   "ours_name": "L2-45",
-  "theirs": 31,
+  "theirs": 35,
   "theirs_name": "quaternary ammonium (resin site)",
   "l1": 65,
   "l2": 69,
@@ -7056,26 +7266,47 @@
    {
     "box": "Performance",
     "mult": 40,
-    "score": 7,
+    "score": 9,
     "rows": [
      {
       "name": "Strength",
-      "w": 20.0,
+      "w": 13.3,
       "val": 0,
       "cut": 25,
       "ok": false
      },
      {
       "name": "Selectivity",
-      "w": 13.3,
+      "w": 8.9,
       "val": 50,
       "cut": 25,
       "ok": true
      },
      {
       "name": "Holds more per kg",
-      "w": 6.7,
+      "w": 4.4,
       "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Lasts in use",
+      "w": 4.4,
+      "val": 100,
+      "cut": 25,
+      "ok": true
+     },
+     {
+      "name": "Resists oxidation",
+      "w": 4.4,
+      "val": 50,
+      "cut": 0,
+      "ok": true
+     },
+     {
+      "name": "Stays out of water",
+      "w": 4.4,
+      "val": 0,
       "cut": 0,
       "ok": true
      }

@@ -12,7 +12,10 @@
   "Easy to ship and store",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Stays out of water"
  ],
  "weights": [
   2,
@@ -26,145 +29,12 @@
   1,
   2,
   1,
+  1,
+  1,
+  1,
   1
  ],
  "options": [
-  {
-   "label": "Pillar[5]arene (OMe)",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    9,
-    50,
-    100,
-    100,
-    43,
-    5,
-    100,
-    50,
-    50,
-    100,
-    29,
-    60
-   ],
-   "overall": 52,
-   "price": 3.4,
-   "boxes": [
-    {
-     "box": "Performance",
-     "mult": 40,
-     "score": 36,
-     "rows": [
-      {
-       "name": "Removes the smoke taint",
-       "w": 10.0,
-       "val": 9,
-       "cut": 25,
-       "ok": false
-      },
-      {
-       "name": "Keeps fruit and oak aroma",
-       "w": 15.0,
-       "val": 50,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Leaves nothing in the wine",
-       "w": 10.0,
-       "val": 100,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Holds more per kg",
-       "w": 5.0,
-       "val": 29,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Cost",
-     "mult": 15,
-     "score": 46,
-     "rows": [
-      {
-       "name": "Cost per bottle",
-       "w": 7.5,
-       "val": 43,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Equipment cost",
-       "w": 7.5,
-       "val": 50,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Safety & rules",
-     "mult": 30,
-     "score": 100,
-     "rows": [
-      {
-       "name": "Food-safe",
-       "w": 18.0,
-       "val": 100,
-       "cut": 65,
-       "ok": true
-      },
-      {
-       "name": "Allowed for sale",
-       "w": 12.0,
-       "val": 100,
-       "cut": 31,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Fit & supply",
-     "mult": 15,
-     "score": 43,
-     "rows": [
-      {
-       "name": "US supply",
-       "w": 3.0,
-       "val": 5,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Drops into today\u2019s setup",
-       "w": 6.0,
-       "val": 100,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Easy to ship and store",
-       "w": 3.0,
-       "val": 50,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Easy to make",
-       "w": 3.0,
-       "val": 60,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    }
-   ],
-   "fails": []
-  },
   {
    "label": "Calix[4]arene",
    "sub": "Sold today",
@@ -181,40 +51,64 @@
     50,
     100,
     50,
-    66
+    66,
+    100,
+    50,
+    50
    ],
-   "overall": 48,
+   "overall": 54,
    "price": 3.36,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 22,
+     "score": 30,
      "rows": [
       {
        "name": "Removes the smoke taint",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and oak aroma",
-       "w": 15.0,
+       "w": 10.9,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 10.0,
+       "w": 7.3,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
        "val": 50,
        "cut": 0,
        "ok": true
@@ -302,6 +196,166 @@
    "fails": []
   },
   {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    9,
+    50,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50,
+    100,
+    29,
+    60,
+    100,
+    22,
+    0
+   ],
+   "overall": 47,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 27,
+     "rows": [
+      {
+       "name": "Removes the smoke taint",
+       "w": 7.3,
+       "val": 9,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Keeps fruit and oak aroma",
+       "w": 10.9,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 7.3,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.6,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 22,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
    "label": "Resorcin[4]arene",
    "sub": "Sold today",
    "kind": "known",
@@ -317,7 +371,10 @@
     50,
     100,
     41,
-    58
+    58,
+    100,
+    0,
+    0
    ],
    "overall": 26,
    "price": 3.22,
@@ -329,29 +386,50 @@
      "rows": [
       {
        "name": "Removes the smoke taint",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and oak aroma",
-       "w": 15.0,
+       "w": 10.9,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 10.0,
+       "w": 7.3,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
        "val": 41,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -453,41 +531,65 @@
     50,
     100,
     15,
-    35
+    35,
+    0,
+    15,
+    0
    ],
-   "overall": 23,
+   "overall": 22,
    "price": 1.19,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 4,
+     "score": 3,
      "rows": [
       {
        "name": "Removes the smoke taint",
-       "w": 10.0,
+       "w": 7.3,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Keeps fruit and oak aroma",
-       "w": 15.0,
+       "w": 10.9,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 10.0,
+       "w": 7.3,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Holds more per kg",
-       "w": 5.0,
+       "w": 3.6,
        "val": 15,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.6,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.6,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.6,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -589,7 +691,10 @@
     50,
     100,
     51,
-    91
+    91,
+    null,
+    null,
+    null
    ],
    "overall": 78,
    "price": 3.08,
@@ -718,7 +823,10 @@
     50,
     100,
     48,
-    91
+    91,
+    null,
+    null,
+    null
    ],
    "overall": 71,
    "price": 3.2,
@@ -847,7 +955,10 @@
     50,
     100,
     49,
-    63
+    63,
+    null,
+    null,
+    null
    ],
    "overall": 81,
    "price": 3.79,
@@ -976,7 +1087,10 @@
     50,
     100,
     49,
-    63
+    63,
+    null,
+    null,
+    null
    ],
    "overall": 81,
    "price": 3.79,

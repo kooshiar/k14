@@ -1,0 +1,81 @@
+{
+ "key": "tfa",
+ "name": "TFA water sorbent",
+ "market": {
+  "usd_yr": 400000000.0,
+  "year": 2026,
+  "what": "EU drinking-water PFAS treatment spend that TFA removal would sell into (TFA-capable RO today ~8% of it)",
+  "method": "Bluefield EUR3.6B over 2026-36 for 10 EU countries = ~EUR0.36B/yr (~$0.4B); TFA-specific RO slice ~$30M/yr; est.",
+  "sources": [
+   "https://www.bluefieldresearch.com/ns/new-eu-pfas-limits-activate-e3-6-billion-drinking-water-treatment-opportunity/",
+   "https://www.eureau.org/resources/position-papers/8167-eureau-position-paper-on-tfa/file"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 840000000.0,
+  "logic": "EU public supply ~28 bn m3/yr (Germany 5.3 bn x pop. ratio, est.); ~10% above ~2 ug/L TFA (PAN: tap 0.37-3.3 ug/L, avg 1.18) = 2.8 bn m3; sorbent vs RO saves ~$0.3/m3 (RO + 20-30% extra raw water, brine) -> ~$0.84B/yr; far more if 0.1 ug/L applies",
+  "our_revenue_usd_yr": 30000000.0,
+  "revenue_logic": "2.8 bn m3 x ~$0.1/m3 media = ~$0.3B/yr sorbent pool; 10% share as first TFA-selective media by yr 7 (only if a limit is set)",
+  "gross_margin_pct": 60,
+  "margin_logic": "no selective substitute; custom receptor on resin, toll-made",
+  "sources": [
+   "https://www.pan-europe.info/sites/pan-europe.info/files/public/resources/reports/Report_TFA_The%20Forever%20Chemical%20%20in%20the%20Water%20We%20Drink.pdf",
+   "https://www.eureau.org/resources/position-papers/8167-eureau-position-paper-on-tfa/file",
+   "https://www.umweltbundesamt.de/daten/wasser/wasserressourcen-ihre-nutzung",
+   "https://dce.au.dk/fileadmin/dce.au.dk/Udgivelser/Videnskabelige_rapporter_600-699/SR676.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 15,
+  "drivers": "ECHA RAC: TFA Repr. 1B + vPvM (Jun 2026, sent to Commission Oct 2026) -> relevant pesticide metabolite (0.1 ug/L); DK binding 9 ug/L; NL guide 2.2 ug/L; rising TFA in groundwater; est. CAGR",
+  "deadline": "CLP harmonised classification adoption by Commission (est. 2027-28)",
+  "sources": [
+   "https://www.pan-europe.info/press-releases/2026/06/confirmed-echa-classifies-tfa-highly-hazardous-early-life-development-all",
+   "https://www.eureau.org/resources/position-papers/8167-eureau-position-paper-on-tfa/file",
+   "https://www.fluorocarbons.org/regulation/eu-sector-specific-regulation/water/",
+   "https://chemtrust.org/tfa-everywhere-and-forever-faq/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Oxyle"
+  ],
+  "incumbents": [
+   "DuPont (FilmTec RO)",
+   "Toray",
+   "Veolia",
+   "Lanxess",
+   "Ecolab Purolite"
+  ],
+  "papers_3yr": 6445,
+  "paper_query": "trifluoroacetic acid removal water",
+  "groups_active": 200,
+  "notes": "count inflated by TFA used as lab reagent (re-run with tighter query advised); groups capped at 200. No TFA-selective sorbent on market; UBA: no proportionate-cost method known; RO only option. UIUC electrosorption is academic. Oxyle $16M seed (destruction)",
+  "sources": [
+   "https://chemtrust.org/tfa-everywhere-and-forever-faq/",
+   "https://naturalrefrigerants.com/university-of-illinois-researchers-develop-economical-way-to-remove-tfa-from-water/",
+   "https://www.chemeurope.com/en/news/1185462"
+  ]
+ },
+ "lab": {
+  "weeks": 20,
+  "usd": 55000,
+  "synth": "3-5 step custom: bis-squaramide with quaternary ammonium linker, then grafting to resin bead",
+  "test": "batch isotherm and small column at 1-10 ug/L TFA in tap-water background (chloride, sulfate, bicarbonate); TFA by IC-MS/MS DIN 38407-53 or LC-MS/MS (Eurofins, MSU)",
+  "logic": "10-12 wk synth ($15-25k) + 4 wk grafting/variants ($10k) + 4-6 wk tests; ~80 samples x ~$130-250 (MSU single-analyte $131) = ~$15k",
+  "sources": [
+   "https://www.metrohm.com/en/applications/application-notes/aa-m-001-100/an-m-017.html",
+   "https://www.canr.msu.edu/pfas-research/uploads/CPR_Fee%20Schedule_v1.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "binding TFA limit must exist; UBA/4MS approval of treatment material; utility pilot ~12 mo",
+  "sources": [
+   "https://www.eureau.org/resources/position-papers/8167-eureau-position-paper-on-tfa/file",
+   "https://www.pan-europe.info/press-releases/2026/06/confirmed-echa-classifies-tfa-highly-hazardous-early-life-development-all"
+  ]
+ }
+}

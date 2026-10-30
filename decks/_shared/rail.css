@@ -10,12 +10,12 @@
 .u-rail .nav button{width:30px!important;height:30px!important;flex:none;border:0!important;background:#F3F4F6!important;border-radius:5px!important;color:#3A3F4A!important;cursor:pointer}
 .u-rail .nav span{flex:1;min-width:0!important;font-size:12px!important;text-align:center;padding:0!important;color:#3A3F4A!important}
 body > nav.alldecks,body > a.alldecks,body > .thm{display:none!important}
-@media screen and (min-width:701px){.stage{padding:16px 160px 16px 16px!important}.slide{width:min(100%,calc((100vh - 32px)*16/9))!important}}
+@media screen and (min-width:701px){.stage:not(#stage){padding:16px 160px 16px 16px!important}html:not([data-style="2"]) .stage:not(#stage)>.slide{width:min(100%,calc((100vh - 32px)*16/9))!important}}   /* #stage = fixed 1600x900 decks (tech, customers): never resized */
 @media (max-width:700px){.u-rail{top:auto;bottom:12px;transform:none;width:auto;flex-direction:row}.u-set,.u-links{display:none}}
 html[data-theme=dark] .u-box,html[data-theme=dark] .u-rail .nav{background:#1E2127!important;border-color:#2C3038!important}
 html[data-theme=dark] .u-set button,html[data-theme=dark] .u-rail .nav button{background:#2A2D33!important;color:#D5D9E0!important}
 html[data-theme=dark] .u-set button.on{background:#ECEDEE!important;color:#16171A!important}html[data-theme=dark] .u-links a,html[data-theme=dark] .u-links button,html[data-theme=dark] .u-rail .nav span{color:#D5D9E0!important}
-html.fb .u-rail{display:none!important}html.fb .stage{padding:0!important}html.fb .slide{width:min(100vw,calc(100vh*16/9))!important;border-radius:0!important;box-shadow:none!important}
+html.fb .u-rail{display:none!important}html.fb .stage:not(#stage){padding:0!important}html.fb .stage:not(#stage)>.slide{width:min(100vw,calc(100vh*16/9))!important;border-radius:0!important;box-shadow:none!important}
 @media print{.u-rail,#u-x{display:none!important}}
 #u-x{display:none;position:fixed;right:12px;top:12px;z-index:30;width:34px;height:34px;border-radius:8px;border:1px solid #DDE1E7;background:rgba(255,255,255,.9);color:#3A3F4A;cursor:pointer}html.fb #u-x{display:block}
 

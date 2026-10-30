@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Comms · K14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site/frame.css">
+<style>
+main{min-height:calc(100vh - 121px)}
+.g{max-width:1040px;margin:0 auto;padding:48px 40px 64px;display:flex;flex-direction:column;gap:22px}   /* same width and side padding as the nav bar (.wrap), so the left edges line up */
+@media (max-width:900px){.g{padding-left:16px;padding-right:16px}}
+h1{margin:0;font-weight:600;font-size:28px;letter-spacing:-.03em;line-height:1.05}
+.tm{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:start}
+.col{display:flex;flex-direction:column;gap:10px;min-width:0}
+.bx{background:#FFFFFF;border:1px solid #CDD2DA;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.bx h2{margin:0;padding:10px 16px;background:#EEF1F5;border-bottom:1px solid #CDD2DA;font-weight:600;font-size:15px;letter-spacing:-.015em;color:var(--ink)}
+.bx ul{padding:0 16px}.bx ul.scr{overflow-y:auto;overscroll-behavior:contain}
+.bx ul:last-of-type{padding-bottom:4px}
+.bx h2 a{color:inherit;text-decoration:none;display:flex;justify-content:space-between;align-items:baseline;gap:10px}.bx h2 a:hover{text-decoration:underline}
+.bx h2 a span{font-family:var(--mono);font-size:11px;font-weight:400;color:var(--mute)}
+ul{list-style:none;margin:0;padding:0}
+li+li a{border-top:1px solid var(--rule)}
+li a{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;padding:8px 0;color:var(--ink);text-decoration:none}
+li a:hover b{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+b{font-weight:500;font-size:14px;letter-spacing:-.005em}
+li span{font-family:var(--mono);font-size:11px;color:var(--mute)}
+.more[hidden]{display:none}
+.mb{align-self:flex-start;margin:4px 16px 12px;font:500 12px/1 var(--font);padding:7px 10px;border-radius:8px;border:1px solid var(--sep);background:#FFFFFF;color:var(--ink);cursor:pointer}
+@media (max-width:720px){.tm{grid-template-columns:1fr}}
+.bx li.none span{display:block;padding:10px 14px;color:#7C8494;font-size:13px}</style>
+<style>.bx h3.sub{margin:14px 0 6px;padding:0 14px;font:500 12px/1 var(--mono,ui-monospace);letter-spacing:.06em;text-transform:uppercase;color:#7C8494}</style><style id="collapse">.bx details summary{list-style:none;cursor:pointer}.bx details summary::-webkit-details-marker{display:none}.bx details summary h2{display:flex;justify-content:space-between;align-items:baseline}.bx details summary h2 span{font:400 11px var(--mono);color:var(--mute);transition:transform .15s}.bx details[open] summary h2 span{transform:rotate(90deg)}.bx details:not([open]) summary h2{border-bottom:0}.bx .all{margin:0;padding:6px 16px 12px;font:500 12px var(--mono)}.bx .all a{color:var(--mute)}</style><style id="dtab">.dt{display:flex;align-items:baseline;gap:22px}.dt a{font:500 15px/1 var(--mono,ui-monospace);color:#596070;text-decoration:none}.dt a:hover{color:#181818}.g{max-width:1240px!important}@media (max-width:1000px){.tm{grid-template-columns:1fr 1fr!important}}@media (max-width:640px){.tm{grid-template-columns:1fr!important}}</style></head>
+<body>
+<header class="site"><div class="bar"><nav class="wrap"><a class="logo" href="/">97A</a><div class="tabs"><a href="/apps/">Applications</a><a href="/technology/">Technology</a></div><a data-cta href="/contact/">Contact</a></nav></div></header>
+<main><div class="g">
+<div class="dt"><a href="/decks/">Decks</a><h1>Comms</h1></div>
+<div class="tm"><div class="col"><section class="bx frm"><h2>Forms</h2><ul><li><a href="/join/"><b>Founder form</b><span>8 pages</span></a></li><li><a href="/lab/"><b>Scientist form</b><span>3 pages</span></a></li></ul></section><section class="bx frm"><h2>Form answers</h2><ul><li><a href="/decks/answers"><b>Founder answers</b><span>live</span></a></li><li><a href="/decks/scientists"><b>Scientist answers</b><span>live</span></a></li></ul></section></div></div></div></main>
+
+<footer class="site"><div class="wrap"><span class="logo"><img src="/site/mark.svg" alt="">K14</span><span>© 2026</span></div></footer>
+<script>(()=>{const u=document.querySelector(".bx ul.scr");if(!u)return;const fit=()=>{const li=u.children;if(li.length>6){u.style.maxHeight="none";u.style.maxHeight=(li[5].getBoundingClientRect().bottom-u.getBoundingClientRect().top+2)+"px"}};addEventListener("load",fit);addEventListener("resize",fit);fit()})();</script></body>
+</html>

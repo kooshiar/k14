@@ -19,12 +19,16 @@ if (cta) {
   const client = async () => sb || (sb = (await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm')).createClient(SB.url, SB.key));
   const decksTab = on => {
     let a = nav.querySelector('.tabs a[data-decks]');
+    if (on && a && !nav.querySelector('.tabs a[data-comms]')) { const c = document.createElement('a'); c.href = '/decks/comms/'; c.dataset.comms = ''; c.textContent = 'Comms'; a.after(c); }
     if (on && !a) {
       a = document.createElement('a'); a.href = '/decks/'; a.dataset.decks = ''; a.textContent = 'Decks';
       if (location.pathname.startsWith('/decks')) a.className = 'on';
       nav.querySelector('.tabs').append(a);
+      const c = document.createElement('a'); c.href = '/decks/comms/'; c.dataset.comms = ''; c.textContent = 'Comms';   // forms and answers, Google sign-in only
+      if (location.pathname.startsWith('/decks/comms')) { c.className = 'on'; a.className = ''; }
+      nav.querySelector('.tabs').append(c);
     }
-    if (!on && a) a.remove();
+    if (!on && a) { a.remove(); const c = nav.querySelector('.tabs a[data-comms]'); if (c) c.remove(); }
   };
   const face = user => {
     const pic = user && user.user_metadata && user.user_metadata.avatar_url;
@@ -42,9 +46,12 @@ if (cta) {
     const r = await fetch('/api/session', { method: 'POST', headers: { Authorization: `Bearer ${session.access_token}` } })
       .then(x => x.json()).catch(() => ({}));
     decksTab(!!r.decks); ls.set(FLAG, r.decks ? '1' : null);
-    if (r.decks && document.querySelector('[data-gate]')) location.reload();   // the deck password page: now open
+    if (r.decks && document.querySelector('[data-gate]')) { try { sessionStorage.setItem('k14_gate', '1'); } catch {} location.reload(); }   // gate page: retry once (comms needs the Google cookie)   // the deck password page: now open
   }
-  if (ls.get(STORE) || /access_token=|[?&]code=/.test(location.href)) check();
+  // speed: the session check loads supabase-js and calls two servers, so a signed-in visitor runs it at most every 15 minutes
+  const fresh = (() => { try { return Date.now() - (+sessionStorage.getItem('k14_chk') || 0) < 9e5; } catch { return false; } })();
+  if (/access_token=|[?&]code=/.test(location.href) || (ls.get(STORE) && (!fresh || (document.querySelector('[data-gate]') && !sessionStorage.getItem('k14_gate'))))) { try { sessionStorage.setItem('k14_chk', Date.now()); } catch {} check(); }
+  else if (ls.get(STORE)) { try { const u = JSON.parse(ls.get(STORE)).user; face(u); } catch {} }
 
   who.addEventListener('click', async () => {
     const c = await client();

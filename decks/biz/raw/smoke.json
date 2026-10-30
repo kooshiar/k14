@@ -1,0 +1,82 @@
+{
+ "key": "smoke",
+ "name": "Smoke taint remover",
+ "market": {
+  "usd_yr": 15000000,
+  "year": 2025,
+  "what": "smoke-taint remediation of wine (RO + resin/carbon services, MIP filtration, carbon fining), mainly US/CA/AU",
+  "method": "est.: ~12 ML/yr treated in avg year x ~$1.2/L (RO $1.70/gal/pass = $0.45/L x 2-3 passes + media); amaea alone 1.4 ML in 2 yrs",
+  "sources": [
+   "https://wineandbeersupply.com/pages/mobile-reverse-osmosis-pricing",
+   "https://wineindustryadvisor.com/2025/09/18/remediating-smoke-impacted-wine-new-molecular-filtration-tech-allows-winemakers-to-reclaim-value/",
+   "https://winetitles.com.au/molecularly-imprinted-polymers-successfully-remove-smoke-taint-in-wine/"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 150000000,
+  "logic": "est.: avg smoke loss ~$0.5B/yr (CA 2020 alone $3.7B; AU 2019-20 60 kt grapes, ~A$110M sales) x ~30% recoverable if taint removed without flavor loss",
+  "our_revenue_usd_yr": 3000000,
+  "revenue_logic": "avg 20 ML/yr treatable x 30% share x $0.5/L (half of RO cost)",
+  "gross_margin_pct": 65,
+  "margin_logic": "specialty adsorbent media, reusable/regenerable; service partner takes part",
+  "sources": [
+   "https://www.kqed.org/science/1976483/wildfire-smoke-the-greatest-challenge-facing-california-wine-industry",
+   "https://www.thedrinksbusiness.com/2020/03/estimated-4-of-australias-grape-crop-damaged-by-fire-and-smoke/",
+   "https://fortune.com/2023/09/30/wildfires-wine-west-coast-california-oregon-smoky-grapes/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 2,
+  "drivers": "more extreme fires (UNEP: +14% by 2030, +30% by 2050); wine volume itself falling ~3%/yr",
+  "deadline": "",
+  "sources": [
+   "https://www.unep.org/resources/report/spreading-wildfire-rising-threat-extraordinary-landscape-fires",
+   "https://winetitles.com.au/global-wine-consumption-at-its-lowest-in-over-sixty-years/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "amaea (NZ, 2011; MIP filter VPx, 1.4 ML treated, 47+ clients)"
+  ],
+  "indirect_startups": [
+   "Wine Secrets (AU; RO/adsorbent taint service)"
+  ],
+  "incumbents": [
+   "VA Filtration",
+   "VAF Memstar",
+   "Laffort",
+   "Lallemand",
+   "Enartis",
+   "Scott Labs"
+  ],
+  "papers_3yr": null,
+  "paper_query": "smoke taint wine removal",
+  "groups_active": null,
+  "notes": "amaea strongest: approved US/CA/NZ, Wine Australia rollout 2025 via VAF Memstar; FSANZ A1332 resin application. Bound glycosides (rebound) still unsolved.",
+  "sources": [
+   "https://wineindustryadvisor.com/2024/11/12/winnovation-award-2024-amaea-a-breakthrough-in-smoke-taint-removal/",
+   "https://www.wineaustralia.com/news/articles/smoke-remediation-technology-a-step-closer-to-rollout-in-australia",
+   "https://mta-sts.foodstandards.gov.au/food-standards-code/applications/a1332-cross-linked-polyester-resins-adsorbent-processing-aid-wine"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 30000,
+  "synth": "1-2 step custom: resorcinarene one-pot condensation + ester hydrolysis, 3 variants; immobilize for filter use",
+  "test": "real smoke-tainted wine: free volatile phenols GC-MS + glycosides LC-MS/MS (ETS, AWRI); aroma esters GC-MS; sensory triangle ISO 4120",
+  "logic": "synth 6 wk ~$12k; 4 wk tests: 30 x ~$250 = $7.5k (est.), sensory ~$5k, formulation ~$5k",
+  "sources": [
+   "https://www.washingtonwine.org/wp-content/uploads/2021/08/Smoke_Lab_List_08.12.21145048.pdf",
+   "https://pubmed.ncbi.nlm.nih.gov/40058909/"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "TTB + FDA food-contact (resin) ~1 yr; FSANZ processing-aid ~1 yr; trial on 1 fire vintage (fire years unpredictable)",
+  "sources": [
+   "https://mta-sts.foodstandards.gov.au/food-standards-code/applications/a1332-cross-linked-polyester-resins-adsorbent-processing-aid-wine",
+   "https://www.wineaustralia.com/news/articles/smoke-remediation-technology-a-step-closer-to-rollout-in-australia"
+  ]
+ }
+}

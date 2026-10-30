@@ -1,0 +1,88 @@
+{
+ "key": "elyte",
+ "name": "High-voltage electrolyte additive",
+ "market": {
+  "usd_yr": 500000000,
+  "year": 2025,
+  "what": "new-type film-forming electrolyte additives (LiPO2F2, LiDFOB, DTD, LiBOB...), world, excl. LiFSI and bulk VC/FEC",
+  "method": "29.4 kt x ~$17/kg = RMB 3.56B (~$0.50B); QYR $1.04B (2024) incl. LiFSI; all additives incl. VC/FEC ~$1.9B (Grand View)",
+  "sources": [
+   "https://www.chinabaogao.com/market/202609/816238.html",
+   "https://www.gii.tw/report/qyr1580123-global-new-lithium-battery-electrolyte-additives.html",
+   "https://www.grandviewresearch.com/industry-analysis/battery-electrolyte-additives-market-report"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 2300000000,
+  "logic": "est. ~0.5 TWh/yr NMC+LCO cells could run higher cut-off voltage; +5% usable energy x ~$90/kWh cell = $2.3B/yr; longer fast-charge life is extra",
+  "our_revenue_usd_yr": 26000000,
+  "revenue_logic": "2032 est. 1.2 TWh high-V cells x 1.1 kg electrolyte/kWh x 0.5 wt% = 6.5 kt; 10% share x $40/kg",
+  "gross_margin_pct": 55,
+  "margin_logic": "premium additive priced above LiPO2F2; Chinese makers push prices down; license to an electrolyte maker gives 90 on royalty",
+  "sources": [
+   "https://zhuanlan.zhihu.com/p/1991196553889740624",
+   "https://www1.hkexnews.hk/app/sehk/2026/108444/a132061/sehk26041601970.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 23,
+  "drivers": "Li-ion demand 2.26 TWh (2025) to ~6.3 TWh (2030); new additives 29 kt to 91 kt by 2030; fast-charge EVs, 4.5V+ LCO",
+  "deadline": "China GB 38031-2025 (no fire, no explosion; test after 300 fast charges) mandatory 1 Jul 2026",
+  "sources": [
+   "https://www1.hkexnews.hk/app/sehk/2026/108444/a132061/sehk26041601970.pdf",
+   "https://www.chinabaogao.com/market/202609/816238.html",
+   "https://www.tuv.com/regulations-and-standards/en/china-new-version-ev-battery-safety-standard-to-take-effect-in-july-2026.html"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "SES AI (Molecular Universe)",
+   "Aionics",
+   "Chemix"
+  ],
+  "indirect_startups": [
+   "Forge Nano (ALD cathode coatings)",
+   "QuantumScape",
+   "Factorial Energy",
+   "Mitra Chem"
+  ],
+  "incumbents": [
+   "Tinci",
+   "Capchem",
+   "Shinghwa",
+   "Huasheng Lithium",
+   "Yongtai Tech",
+   "Soulbrain",
+   "Enchem",
+   "MU Ionic Solutions",
+   "Central Glass"
+  ],
+  "papers_3yr": null,
+  "paper_query": "electrolyte additive high voltage cathode",
+  "groups_active": null,
+  "notes": "crowded field. SES AI public and JV with Hisun for AI-found electrolytes; Chemix $20M Series A; Aionics ~$12M total. Chinese incumbents own VC/LiPO2F2 capacity; VC price went RMB 45k->230k/t in a year",
+  "sources": [
+   "https://www.barchart.com/story/news/35426974/ses-ai-signs-term-sheet-to-establish-joint-venture-to-commercially-supply-materials-discovered-by-molecular-universe",
+   "https://citris-uc.org/chemix-raises-20m-in-series-a-funding/",
+   "https://libattery.ofweek.com/2026-08/ART-36002-8420-30697949.html"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 35000,
+  "synth": "1-2 step custom (small fluorinated/sulfur/boron molecules; some catalog analogs); 3 variants",
+  "test": "NMC811/graphite or LCO 4.5V dry pouch cells, formation + 300 cycles at 4.4-4.5V and 45C, EIS, gas volume; university or contract battery lab",
+  "logic": "synth 5 wk + cycling 9 wk; synth 3 x ~$5k = $15k + 24 cells x ~$200/channel/month x 2.5 mo = $12k + cells/analysis ~$8k",
+  "sources": [
+   "https://www.rit.edu/batterydevelopment/testing-pricing"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2.5,
+  "gates": "cell-maker material qual 6-12 mo; customer cell program 1-2 yr (consumer faster, EV 3-4 yr with PPAP); toll make via electrolyte maker",
+  "sources": [
+   "https://autotechinsight.spglobal.com/news/5284568/ses-ai-joins-hisun-new-energy-materials-for-electrolyte-production-venture"
+  ]
+ }
+}

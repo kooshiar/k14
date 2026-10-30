@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23 16:13",
+ "updated": "2026-10-30 17:15",
  "rows": [
   {
    "key": "formaldehyde",
@@ -40,16 +40,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -34.92,
     "dG": -34.92,
     "smiles": "CN(CCO)CCF"
    },
    "created": "2026-10-15T22:15Z",
-   "finished": null
+   "finished": "2026-10-25T12:26Z"
   },
   {
    "key": "rebar",
@@ -65,16 +65,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -97.52,
     "dG": -104.16,
     "smiles": "CN(CCO)CCF"
    },
    "created": "2026-10-15T22:52Z",
-   "finished": null
+   "finished": "2026-10-25T14:00Z"
   },
   {
    "key": "dioxane",
@@ -140,16 +140,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -16.71,
     "dG": -40.74,
     "smiles": "O=C([O-])COc1c2cc(S(=O)(=O)[O-])cc1Cc1cc(S(=O)(=O)[O-])cc(c1OCC(=O)[O-])Cc1cc(S(=O)(=O)[O-])cc(c1OCC(=O)[O-])Cc1cc(S(=O)(=O)[O-])cc(c1OCC(=O)[O-])C2"
    },
    "created": "2026-10-16T00:11Z",
-   "finished": null
+   "finished": "2026-10-25T21:19Z"
   },
   {
    "key": "mousy",
@@ -165,16 +165,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -6.15,
     "dG": -13.37,
     "smiles": "C[N+](C)(C)CCC[N+](C)(C)Cc1ccc(C[N+](C)(C)C)cc1"
    },
    "created": "2026-10-16T13:46Z",
-   "finished": null
+   "finished": "2026-10-25T16:55Z"
   },
   {
    "key": "selenate",
@@ -215,16 +215,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": 1.47,
     "dG": -17.34,
     "smiles": "NC(=[NH2+])c1cccc2cccc(NC=[NH2+])c12"
    },
    "created": "2026-10-16T03:21Z",
-   "finished": null
+   "finished": "2026-10-29T22:48Z"
   },
   {
    "key": "smoke",
@@ -240,16 +240,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -1.58,
     "dG": 1.08,
     "smiles": "CCC1c2cc(c(OC)cc2OC)C(CC)c2cc(c(OC)cc2OC)C(CC)c2cc(c(OC)cc2OC)C(CC)c2cc1c(OC)cc2OC"
    },
    "created": "2026-10-16T04:32Z",
-   "finished": null
+   "finished": "2026-10-25T18:59Z"
   },
   {
    "key": "heatcold",
@@ -267,14 +267,14 @@
    "phase5_stage": "",
    "phase6": null,
    "phase6_stage": "",
-   "state": "done",
+   "state": "blocked",
    "best": {
     "score": -79,
     "dG": null,
     "smiles": "myristic acid + palmitic acid + stearic acid"
    },
    "created": "2026-10-19T02:49Z",
-   "finished": "2026-10-19T02:49Z"
+   "finished": null
   },
   {
    "key": "cork",
@@ -290,16 +290,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -32.26,
     "dG": -85.67,
     "smiles": "COc1cc(OC)c2cc1C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C2CCC(=O)[O-]"
    },
    "created": "2026-10-16T22:23Z",
-   "finished": null
+   "finished": "2026-10-29T23:19Z"
   },
   {
    "key": "pfas",
@@ -315,8 +315,8 @@
    "phase4_stage": "queued",
    "phase5": 0,
    "phase5_stage": "queued",
-   "phase6": 0,
-   "phase6_stage": "queued",
+   "phase6": 100,
+   "phase6_stage": "done",
    "state": "running",
    "best": {
     "score": -10.59,
@@ -424,7 +424,7 @@
     "smiles": "CCCN(C)C(=O)c1ccc2ccc3ccc(C(=O)N(C)CCC)nc3c2n1"
    },
    "created": "2026-10-18T03:11Z",
-   "finished": "2026-10-23T16:08Z"
+   "finished": "2026-10-25T12:02Z"
   },
   {
    "key": "plastic",
@@ -445,7 +445,7 @@
    "state": "done",
    "best": null,
    "created": "2026-10-18T04:15Z",
-   "finished": "2026-10-19T04:07Z"
+   "finished": "2026-10-29T20:47Z"
   },
   {
    "key": "gold",
@@ -513,7 +513,7 @@
    "phase5_stage": "done",
    "phase6": 0,
    "phase6_stage": "queued",
-   "state": "waiting",
+   "state": "blocked",
    "best": {
     "score": -22.83,
     "dG": 12.46,
@@ -636,16 +636,16 @@
    "phase4_stage": "done",
    "phase5": 100,
    "phase5_stage": "done",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -18.45,
     "dG": -10.66,
     "smiles": "NC(=O)COc1c2cc(Br)cc1Cc1cc(Br)cc(c1OCC(N)=O)Cc1cc(Br)cc(c1OCC(N)=O)Cc1cc(Br)cc(c1OCC(N)=O)C2"
    },
    "created": "2026-10-19T16:28Z",
-   "finished": null
+   "finished": "2026-10-24T23:41Z"
   },
   {
    "key": "psensor",
@@ -745,7 +745,7 @@
     "smiles": "Sc1nc2ccccc2s1"
    },
    "created": "2026-10-21T13:57Z",
-   "finished": "2026-10-23T16:04Z"
+   "finished": "2026-10-27T03:49Z"
   },
   {
    "key": "lignin",
@@ -766,7 +766,7 @@
    "state": "done",
    "best": null,
    "created": "2026-10-21T17:49Z",
-   "finished": "2026-10-22T00:21Z"
+   "finished": "2026-10-29T15:16Z"
   },
   {
    "key": "coolant",
@@ -791,7 +791,7 @@
     "smiles": "PAO 2"
    },
    "created": "2026-10-21T14:15Z",
-   "finished": "2026-10-21T23:13Z"
+   "finished": "2026-10-28T19:33Z"
   },
   {
    "key": "ionomer",
@@ -812,7 +812,7 @@
    "state": "done",
    "best": null,
    "created": "2026-10-23T04:47Z",
-   "finished": "2026-10-23T05:54Z"
+   "finished": "2026-10-29T15:12Z"
   },
   {
    "key": "pucat",
@@ -833,7 +833,7 @@
    "state": "done",
    "best": null,
    "created": "2026-10-23T04:33Z",
-   "finished": "2026-10-23T04:33Z"
+   "finished": "2026-10-29T15:15Z"
   },
   {
    "key": "hardener",
@@ -854,7 +854,7 @@
    "state": "done",
    "best": null,
    "created": "2026-10-23T04:41Z",
-   "finished": "2026-10-23T04:53Z"
+   "finished": "2026-10-29T15:04Z"
   },
   {
    "key": "polysulfide",
@@ -870,16 +870,16 @@
    "phase4_stage": "",
    "phase5": null,
    "phase5_stage": "",
-   "phase6": 50,
-   "phase6_stage": "running",
-   "state": "running",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": -109.13,
     "dG": -226.48,
     "smiles": "C[N+](C)(CCNC(N)=[NH2+])CCNC(N)=[NH2+]"
    },
    "created": "2026-10-23T02:44Z",
-   "finished": null
+   "finished": "2026-10-30T13:13Z"
   },
   {
    "key": "shortpfas",
@@ -895,16 +895,16 @@
    "phase4_stage": "",
    "phase5": null,
    "phase5_stage": "",
-   "phase6": 0,
-   "phase6_stage": "queued",
-   "state": "waiting",
+   "phase6": 100,
+   "phase6_stage": "done",
+   "state": "done",
    "best": {
     "score": 212.93,
     "dG": -165.22,
     "smiles": "Cc1cc2c(OS(=O)(=O)[O-])c(c1)Cc1cc(C)cc(c1OS(=O)(=O)[O-])Cc1cc(C)cc(c1OS(=O)(=O)[O-])Cc1cc(C)cc(c1OS(=O)(=O)[O-])C2"
    },
    "created": "2026-10-23T08:06Z",
-   "finished": null
+   "finished": "2026-10-25T11:16Z"
   },
   {
    "key": "dyetrap",
@@ -912,8 +912,8 @@
    "sub": "textile recycling",
    "phase1": 100,
    "phase1_stage": "done",
-   "phase2": 0,
-   "phase2_stage": "queued",
+   "phase2": 100,
+   "phase2_stage": "done",
    "phase3": 0,
    "phase3_stage": "queued",
    "phase4": null,
@@ -974,7 +974,7 @@
    "phase6_stage": "queued",
    "state": "queued",
    "best": null,
-   "created": null,
+   "created": "2026-10-25T05:04Z",
    "finished": null
   },
   {
@@ -995,7 +995,7 @@
    "phase6_stage": "queued",
    "state": "queued",
    "best": null,
-   "created": null,
+   "created": "2026-10-25T15:45Z",
    "finished": null
   },
   {
@@ -1016,7 +1016,7 @@
    "phase6_stage": "queued",
    "state": "queued",
    "best": null,
-   "created": null,
+   "created": "2026-10-25T15:45Z",
    "finished": null
   },
   {
@@ -1035,7 +1035,7 @@
    "phase5_stage": "",
    "phase6": 0,
    "phase6_stage": "queued",
-   "state": "queued",
+   "state": "blocked",
    "best": null,
    "created": null,
    "finished": null
@@ -1058,7 +1058,7 @@
    "phase6_stage": "queued",
    "state": "queued",
    "best": null,
-   "created": null,
+   "created": "2026-10-25T15:45Z",
    "finished": null
   },
   {
@@ -1079,12 +1079,12 @@
    "phase6_stage": "queued",
    "state": "queued",
    "best": null,
-   "created": null,
+   "created": "2026-10-26T01:25Z",
    "finished": null
   }
  ],
  "phase1": 86,
- "phase2": 80,
+ "phase2": 82,
  "phase3": 79,
  "done": true,
  "phase4": 97,

@@ -1,0 +1,97 @@
+{
+ "key": "plastic",
+ "name": "Mixed plastic-to-fuel catalyst",
+ "market": {
+  "usd_yr": 440000000,
+  "year": 2025,
+  "what": "Plastic pyrolysis oil sold, world",
+  "method": "~1.3 Mt/yr input (Fraunhofer EU 262 kt x 5) x ~70% oil yield (est.) = 0.9 Mt x ~$480/t = $0.44B",
+  "sources": [
+   "https://www.digitalrefining.com/article/1003437/from-landfill-to-polymers-pyrolysis-as-a-path-to-plastic-circularity",
+   "https://www.expertmarketresearch.com/price-forecast/pyrolysis-oil-price-trends"
+  ],
+  "confidence": "low",
+  "job_usd_yr": 8000000,
+  "job_what": "catalyst used in plastic pyrolysis/cracking to fuel oil, world (much pyrolysis is thermal, no catalyst)",
+  "job_method": "est.: ~1.3 Mt/yr plastic pyrolysed x ~1-3 kg catalyst/t x ~$3/kg (E-cat $0.35-0.9/kg, zeolites higher) = ~$4-12M; report $1.8B 'chem-recycling catalyst' not credible; low confidence",
+  "job_sources": [
+   "https://nxtbook.com/catalyst/catalystreview/the_catalyst_review_november_2023/index.php?startid=3",
+   "https://www.indexbox.io/store/world-fcc-equilibrium-catalyst-market-analysis-forecast-size-trends-and-insights/",
+   "https://www.digitalrefining.com/article/1003437/from-landfill-to-polymers-pyrolysis-as-a-path-to-plastic-circularity"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 900000000,
+  "logic": "Fleet ~5 Mt/yr input by ~2032 (est.); catalyst adds +10 pts liquid yield (0.1 t x $600) and diesel-range, low-Cl quality (+$150/t on 0.8 t) = ~$180/t x 5 Mt = $0.9B",
+  "our_revenue_usd_yr": 9000000,
+  "revenue_logic": "Catalyst use ~2 kg/t (est., FCC-like makeup) x 5 Mt = 10 kt x $6/kg = $60M market x 15% share",
+  "gross_margin_pct": 40,
+  "margin_logic": "Modified zeolite, toll made; FCC-type catalysts run 30-45%",
+  "sources": [
+   "https://www.fuelsandlubes.com/fli-article/pyrolysis-recycling-technology-promises-and-challenges-in-2024/",
+   "https://pubs.acs.org/acsodf/article/10/6/5744/3651985/Catalytic-Pyrolysis-Oil-from-Landfilled-Plastics"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 12,
+  "drivers": "Pyrolysis capacity projected 1.3 -> 2.1 Mt but many delays (Lux); EU RED III counts recycled-carbon fuels; fuel route does not count as recycling under PPWR",
+  "deadline": "EU PPWR recycled content 2030 (35% non-contact plastic; fuel output does not count)",
+  "sources": [
+   "https://www.wastetodaymagazine.com/news/plastic-pyrolysis-chemical-recycling-disappointing-lux-research-2024/",
+   "https://www.tomra.com/news-and-media/news/2025/recycled-content-targets-what-the-ppwr-means-for-packagings-future",
+   "https://www.lastbeachcleanup.org/globalchemicalrecyclingplantcounter"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "BioBTX",
+   "Aduro Clean Technologies",
+   "Encina",
+   "Quantafuel"
+  ],
+  "indirect_startups": [
+   "Plastic Energy",
+   "Pryme",
+   "Mura Technology",
+   "Licella",
+   "PureCycle",
+   "Novoloop",
+   "Samsara Eco"
+  ],
+  "incumbents": [
+   "ExxonMobil (Exxtend)",
+   "Honeywell UOP (UpCycle)",
+   "BASF (ChemCycling)",
+   "LyondellBasell (MoReTec)",
+   "Shell",
+   "SABIC",
+   "Clariant",
+   "W.R. Grace"
+  ],
+  "papers_3yr": null,
+  "paper_query": "mixed plastic waste catalytic pyrolysis fuel",
+  "groups_active": null,
+  "notes": "Most crowded science of the batch. Exxon 500 kt/yr catalytic plant at Baytown (2024 start). Lux: pyrolysis delivery disappointing; fuel is the lowest-value outlet",
+  "sources": [
+   "https://www.wastetodaymagazine.com/news/plastic-pyrolysis-chemical-recycling-disappointing-lux-research-2024/",
+   "https://cen.acs.org/environment/recycling/Amid-controversy-industry-goes-plastics-pyrolysis/100/i36"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 45000,
+  "synth": "Catalog zeolite (ZSM-5/Y) + desilication or Ni/Co impregnation, 3-5 variants; solid catalyst, no CRO route",
+  "test": "Lab fixed/fluid-bed pyrolysis of PE/PP/PS/PET/PVC mix at 450-550 C; liquid yield, simdist ASTM D2887, Cl ASTM D7359, PIONA ASTM D6730, coke/deactivation over cycles; university lab",
+  "logic": "Catalyst prep + XRD/BET 5 wk, $12k; reactor runs + analytics 8 wk, ~$30k; $3k feed",
+  "sources": [
+   "https://pubs.acs.org/acsodf/article/10/6/5744/3651985/Catalytic-Pyrolysis-Oil-from-Landfilled-Plastics"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "Pilot at pyrolysis operator ~1 yr; catalyst qualification + scale-up by toll maker; offtaker fuel/feed specs, ISCC PLUS for the plant",
+  "sources": [
+   "https://www.fuelsandlubes.com/fli-article/pyrolysis-recycling-technology-promises-and-challenges-in-2024/"
+  ]
+ }
+}

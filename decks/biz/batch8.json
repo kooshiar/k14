@@ -1,0 +1,42 @@
+{
+ "polysulfide": {
+  "type": "Product",
+  "problem": "Polysulfides kill lithium-sulfur batteries",
+  "design": "Binder that holds polysulfides in the cathode",
+  "s0_smiles": "C[N+](C)(C)Cc1ccc(NC(=O)NCC[NH+](CCNC(=S)Nc2ccc(C[N+](C)(C)C)cc2)CCNC(=S)Nc2ccc(C[N+](C)(C)C)cc2)cc1",
+  "today_best": "tren tris(phenylurea)"
+ },
+ "elyte": {
+  "type": "Product",
+  "problem": "High-voltage and fast-charge Li-ion cells degrade at the electrode surface",
+  "design": "Electrolyte additive that protects high-voltage cathodes",
+  "new": true
+ },
+ "ionomer": {
+  "type": "Product",
+  "problem": "AEM electrolyzers lose their ionomer fast",
+  "design": "Ionomer group that survives alkaline electrolysis",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "lohc": {
+  "type": "Product",
+  "problem": "Hydrogen is costly to ship; liquid carriers need too much heat to release H2",
+  "design": "Liquid organic hydrogen carrier with low release heat",
+  "new": true
+ },
+ "antiscale": {
+  "type": "Add-in",
+  "problem": "Scale clogs limestone electrolysis at pH 13–14",
+  "design": "Antiscalant that works at pH 13–14",
+  "s0_smiles": "NC(=O)COc1c2cc(C(=O)[O-])cc1Cc1cc(C(=O)[O-])cc(c1OCC(N)=O)Cc1cc(C(=O)[O-])cc(c1OCC(N)=O)Cc1cc(C(=O)[O-])cc(c1OCC(N)=O)C2",
+  "today_best": "EDTA"
+ },
+ "rebar": {
+  "type": "Product",
+  "problem": "Road salt rusts the steel inside concrete",
+  "design": "Inhibitor that keeps rebar from rusting",
+  "s0_smiles": "O=[PH](O)Oc1ccc(P(=O)([O-])[O-])cc1",
+  "today_best": "MEA"
+ }
+}

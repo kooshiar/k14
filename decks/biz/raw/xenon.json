@@ -1,0 +1,88 @@
+{
+ "key": "xenon",
+ "name": "Xenon/krypton sorbent",
+ "market": {
+  "usd_yr": 250000000,
+  "year": 2025,
+  "what": "Xenon gas, world",
+  "method": "avg of bottom-up ~65-70 t/yr x ~$3,000/kg = $0.2B and IMARC $0.30B (reports range $0.26-0.44B)",
+  "sources": [
+   "https://indico.slac.stanford.edu/event/8015/contributions/7640/attachments/3480/9651/Lindner-kton_workshop.pdf",
+   "https://www.imarcgroup.com/xenon-gas-market",
+   "https://www.imarcgroup.com/xenon-price-trend"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 130000000,
+  "job_what": "cost of recovering and separating Xe from Kr/air (rare-gas units + cryogenic Kr/Xe purification), world",
+  "job_method": "est.: ~65 t/yr Xe x ~$2,000/kg cost (~2/3 of ~$3,000/kg price; price range $5-20/L = $850-3,400/kg; energy 70-80% of cost) = ~$130M; low confidence",
+  "job_sources": [
+   "https://indico.slac.stanford.edu/event/8015/contributions/7640/attachments/3480/9651/Lindner-kton_workshop.pdf",
+   "https://journals.uran.ua/tarp/article/view/25386",
+   "https://www.imarcgroup.com/xenon-price-trend"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 60000000,
+  "logic": "only ~1/5 of ~500 big ASUs recover Kr/Xe (retrofit ~EUR80M). Cheap Xe-selective bed on LOX purge at more ASUs: +30 t/yr x $3,000/kg = $90M gross, ~$60M net of their costs",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "~20 ASU installs x ~$0.25M/yr sorbent + licence",
+  "gross_margin_pct": 60,
+  "margin_logic": "MOF/cage sorbent toll-made; sold as packed beds",
+  "sources": [
+   "https://indico.slac.stanford.edu/event/8015/contributions/7640/attachments/3480/9651/Lindner-kton_workshop.pdf",
+   "https://www.gasworld.com/feature/the-impact-on-rare-gases-due-to-the-russian-invasion-of-ukraine-2/2093993.article/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 4,
+  "drivers": "3D NAND and sensor etch, satellite thrusters; lost Ukraine supply; Starlink moved to Kr/Ar",
+  "deadline": "",
+  "sources": [
+   "https://indico.slac.stanford.edu/event/8015/contributions/7640/attachments/3480/9651/Lindner-kton_workshop.pdf",
+   "https://www.imarcgroup.com/xenon-gas-market",
+   "https://rmis.jrc.ec.europa.eu/uploads/JRC130349_01_rare_gases.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "NuMat Technologies",
+   "Promethean Particles",
+   "novoMOF"
+  ],
+  "incumbents": [
+   "Linde",
+   "Air Liquide",
+   "Air Products",
+   "Messer",
+   "Taiyo Nippon Sanso",
+   "Hangyang",
+   "Iceblick"
+  ],
+  "papers_3yr": null,
+  "paper_query": "xenon krypton separation adsorbent",
+  "groups_active": null,
+  "notes": "No startup focused on Xe/Kr; MOF makers could enter (NuMat ~$115M raised, Series C ext. 2025). Research leaders: PNNL (SBMOF-1), Liverpool (CC3 cage). Gas majors own the ASUs and the channel.",
+  "sources": [
+   "https://www.caplight.com/company/numat-technologies",
+   "https://indico.slac.stanford.edu/event/8015/contributions/7640/attachments/3480/9651/Lindner-kton_workshop.pdf"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 52000,
+  "synth": "MOF or porous organic cage, scaled to 10-20 g; 3 variants",
+  "test": "Xe, Kr, N2, O2, CO2 isotherms at 273/298 K (Micromeritics-type, ~$500-1,200/sample) + humid breakthrough with 400 ppm Xe/40 ppm Kr in air at a university lab",
+  "logic": "synth 14 wk ~$35k + test 4 wk: 15 isotherms x ~$800 = $12k + breakthrough runs ~$5k",
+  "sources": [
+   "https://www.micromeritics.com/wp-content/uploads/PTA-price-list2018_v15.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "gas-major evaluation; pilot bed on an ASU purge ~1 yr; design-in on new ASUs 2-3 yr; fab Xe-recycle qualification 1-2 yr",
+  "sources": [
+   "https://indico.slac.stanford.edu/event/8015/contributions/7640/attachments/3480/9651/Lindner-kton_workshop.pdf"
+  ]
+ }
+}

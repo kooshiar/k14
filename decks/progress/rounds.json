@@ -1,0 +1,1166 @@
+{
+ "culoop": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-27T03:49:00Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T03:49:00Z",
+     "finished": "2026-10-27T03:54:04Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-27T03:54:04Z",
+     "finished": "2026-10-27T03:55:15Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-27T03:55:15Z",
+     "finished": "2026-10-27T03:55:18Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-27T03:55:18Z",
+     "finished": "2026-10-27T03:59:02Z",
+     "ok": true,
+     "code": 0
+    },
+    "spotcheck": {
+     "started": "2026-10-27T03:59:02Z",
+     "queued": true
+    }
+   },
+   "finished": "2026-10-27T03:59:02Z",
+   "blocked_by": [
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "cosel": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-27T13:31:11Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T13:31:11Z",
+     "finished": "2026-10-27T20:34:48Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-27T20:34:48Z",
+     "finished": "2026-10-27T20:57:59Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-27T20:57:59Z",
+     "finished": "2026-10-27T20:58:31Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-27T20:58:31Z",
+     "finished": "2026-10-27T21:03:21Z",
+     "ok": true,
+     "code": 0
+    },
+    "spotcheck": {
+     "started": "2026-10-27T21:03:21Z",
+     "queued": true
+    }
+   },
+   "finished": "2026-10-27T21:03:21Z",
+   "blocked_by": [
+    "round checks fail: ['B10', 'B11', 'B13']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "round made with recipe a56782291bb7, physics suite ran on b3ebbba8c5b2",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "copolish": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-27T21:04:09Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T21:04:09Z",
+     "finished": "2026-10-28T01:57:32Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-28T01:57:32Z",
+     "finished": "2026-10-28T02:24:34Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-28T02:24:34Z",
+     "finished": "2026-10-28T02:25:04Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-28T02:25:04Z",
+     "finished": "2026-10-28T02:29:21Z",
+     "ok": true,
+     "code": 0
+    },
+    "spotcheck": {
+     "started": "2026-10-28T02:29:21Z",
+     "queued": true
+    }
+   },
+   "finished": "2026-10-28T02:29:21Z",
+   "blocked_by": [
+    "round checks fail: ['B10', 'B11', 'B13']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "round made with recipe a56782291bb7, physics suite ran on b3ebbba8c5b2",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "feal": {
+  "r1": {
+   "state": "running",
+   "step": "physics",
+   "started": "2026-10-28T02:29:21Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-28T02:29:21Z"
+    }
+   },
+   "finished": "2026-10-27T06:50:40Z"
+  }
+ },
+ "nisel": {
+  "r1": {
+   "state": "running",
+   "step": "physics",
+   "started": "2026-10-28T19:05:20Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-28T19:05:20Z"
+    }
+   },
+   "finished": "2026-10-27T07:20:50Z"
+  }
+ },
+ "mnsel": {
+  "r1": {
+   "state": "failed",
+   "step": null,
+   "started": "2026-10-27T07:20:50Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T07:20:50Z",
+     "finished": "2026-10-27T08:07:13Z",
+     "ok": false,
+     "code": 1
+    }
+   },
+   "finished": "2026-10-27T08:07:13Z"
+  }
+ },
+ "fscav": {
+  "r1": {
+   "state": "failed",
+   "step": null,
+   "started": "2026-10-27T08:07:13Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T08:07:13Z",
+     "finished": "2026-10-27T08:30:40Z",
+     "ok": false,
+     "code": 1
+    }
+   },
+   "finished": "2026-10-27T08:30:40Z"
+  }
+ },
+ "femob": {
+  "r1": {
+   "state": "failed",
+   "step": null,
+   "started": "2026-10-27T10:04:08Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T10:04:08Z",
+     "finished": "2026-10-27T10:53:22Z",
+     "ok": false,
+     "code": 1
+    }
+   },
+   "finished": "2026-10-27T10:53:22Z"
+  }
+ },
+ "tmdiss": {
+  "r1": {
+   "state": "failed",
+   "step": null,
+   "started": "2026-10-27T10:53:22Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T10:53:22Z",
+     "finished": "2026-10-27T11:49:54Z",
+     "ok": false,
+     "code": 1
+    }
+   },
+   "finished": "2026-10-27T11:49:54Z"
+  }
+ },
+ "chalco": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-27T11:49:54Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-27T11:49:54Z",
+     "finished": "2026-10-27T11:55:25Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-27T11:55:25Z",
+     "finished": "2026-10-27T11:56:32Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-27T11:56:32Z",
+     "finished": "2026-10-27T11:56:35Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-27T11:56:35Z",
+     "finished": "2026-10-27T12:00:09Z",
+     "ok": true,
+     "code": 0
+    },
+    "spotcheck": {
+     "started": "2026-10-27T12:00:09Z",
+     "queued": true
+    }
+   },
+   "finished": "2026-10-27T12:00:09Z",
+   "blocked_by": [
+    "round checks fail: ['B11', 'B13', 'B17']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "lignin": {
+  "r1": {
+   "state": "done",
+   "step": null,
+   "started": "2026-10-27T08:30:40Z",
+   "finished": "2026-10-27T10:04:07Z",
+   "steps": {
+    "level1": {
+     "started": "2026-10-27T08:30:40Z",
+     "finished": "2026-10-27T09:15:55Z",
+     "ok": true,
+     "code": 0
+    },
+    "level2": {
+     "started": "2026-10-27T09:15:55Z",
+     "finished": "2026-10-27T09:39:32Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-27T09:39:32Z",
+     "finished": "2026-10-27T09:46:19Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-27T09:46:19Z",
+     "finished": "2026-10-27T10:04:07Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "ours": 88,
+   "ours_name": "Cu-Mo2",
+   "theirs": 54,
+   "theirs_name": "Ni",
+   "designs": 111,
+   "why": [
+    "breaks C-O bonds: 100 vs 1",
+    "sulfur tolerance: 93 vs 50",
+    "keeps rings: 62 vs 50"
+   ],
+   "cmp": {
+    "o": {
+     "co": 100,
+     "ring": 62,
+     "sulf": 93,
+     "cost": 96,
+     "us": 82,
+     "mixed": 100
+    },
+    "t": {
+     "co": 1,
+     "ring": 50,
+     "sulf": 50,
+     "cost": 98,
+     "us": 82,
+     "mixed": 100
+    },
+    "tn": "Ni"
+   }
+  },
+  "r2": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T15:15:17Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:56:26Z",
+     "finished": "2026-10-29T15:09:54Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T15:09:54Z",
+     "finished": "2026-10-29T15:15:17Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:56:26Z",
+   "ours": 95,
+   "ours_name": "Cu-Mo2-Sn1",
+   "theirs": null,
+   "theirs_name": null,
+   "designs": 45,
+   "why": [
+    "sulfur tolerance: 100 vs 33",
+    "keeps rings: 98 vs 68",
+    "cost: 94 vs 85"
+   ],
+   "cmp": {
+    "o": {
+     "co": 100,
+     "ring": 98,
+     "sulf": 100,
+     "cost": 94,
+     "us": 67,
+     "mixed": 100
+    },
+    "t": {
+     "co": 100,
+     "ring": 68,
+     "sulf": 33,
+     "cost": 85,
+     "us": 68,
+     "mixed": 100
+    },
+    "tn": "Re"
+   }
+  }
+ },
+ "coolant": {
+  "r1": {
+   "state": "done",
+   "step": null,
+   "started": "2026-10-27T03:59:03Z",
+   "finished": "2026-10-27T03:59:03Z",
+   "steps": {
+    "level1": {
+     "started": "2026-10-27T03:59:03Z",
+     "finished": "2026-10-27T03:59:03Z",
+     "ok": true,
+     "code": 0
+    },
+    "level2": {
+     "started": "2026-10-27T03:59:03Z",
+     "finished": "2026-10-27T03:59:03Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-27T03:59:03Z",
+     "finished": "2026-10-27T03:59:03Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-27T03:59:03Z",
+     "finished": "2026-10-27T03:59:03Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-27T03:59:03Z",
+     "finished": "2026-10-27T03:59:03Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "ours": 50,
+   "ours_name": "60% PAO 2 + 40% polyol ester 4.4",
+   "theirs": 52,
+   "theirs_name": "ElectroCool EC-110",
+   "designs": 22
+  },
+  "r2": {
+   "state": "done",
+   "step": null,
+   "started": "2026-10-28T19:29:41Z",
+   "finished": "2026-10-28T19:29:41Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-28T19:29:41Z",
+     "finished": "2026-10-28T19:29:41Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "ours": 50,
+   "ours_name": "75% PAO 2 + 25% polyol ester 4.4",
+   "theirs": null,
+   "theirs_name": null,
+   "designs": 5
+  },
+  "r3": {
+   "state": "stopped"
+  }
+ },
+ "pucat": {
+  "r1": {
+   "state": "done",
+   "step": null,
+   "started": "2026-10-28T19:29:41Z",
+   "finished": "2026-10-28T19:29:54Z",
+   "steps": {
+    "level1": {
+     "started": "2026-10-28T19:29:41Z",
+     "finished": "2026-10-28T19:29:50Z",
+     "ok": true,
+     "code": 0
+    },
+    "level2": {
+     "started": "2026-10-28T19:29:50Z",
+     "finished": "2026-10-28T19:29:52Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-28T19:29:52Z",
+     "finished": "2026-10-28T19:29:53Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-28T19:29:53Z",
+     "finished": "2026-10-28T19:29:54Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-28T19:29:54Z",
+     "finished": "2026-10-28T19:29:54Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "ours": 50,
+   "ours_name": "tert-butoxide",
+   "theirs": 63,
+   "theirs_name": "NaOH (hydroxide)",
+   "designs": 35,
+   "cmp": {
+    "o": {
+     "base": 41,
+     "stable": 100,
+     "recover": 100,
+     "cost": 23
+    },
+    "t": {
+     "base": 50,
+     "stable": 100,
+     "recover": 100,
+     "cost": 50
+    },
+    "tn": "NaOH (hydroxide)"
+   }
+  },
+  "r2": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T14:54:06Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:54:04Z",
+     "finished": "2026-10-29T14:54:05Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T14:54:05Z",
+     "finished": "2026-10-29T14:54:06Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-29T14:54:06Z",
+     "finished": "2026-10-29T14:54:06Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-29T14:54:06Z",
+     "finished": "2026-10-29T14:54:06Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:54:04Z",
+   "ours": 50,
+   "ours_name": "tert-butoxide +Me1 +Me2",
+   "theirs": 63,
+   "theirs_name": "NaOH (hydroxide)",
+   "designs": 6,
+   "cmp": {
+    "o": {
+     "base": 48,
+     "stable": 100,
+     "recover": 100,
+     "cost": 14
+    },
+    "t": {
+     "base": 50,
+     "stable": 100,
+     "recover": 100,
+     "cost": 50
+    },
+    "tn": "NaOH (hydroxide)"
+   }
+  },
+  "r3": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T14:55:19Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:55:15Z",
+     "finished": "2026-10-29T14:55:18Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T14:55:18Z",
+     "finished": "2026-10-29T14:55:18Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-29T14:55:18Z",
+     "finished": "2026-10-29T14:55:18Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-29T14:55:18Z",
+     "finished": "2026-10-29T14:55:19Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:55:15Z",
+   "ours": 47,
+   "ours_name": "tert-butoxide +Me1 +Me2 +Me3",
+   "theirs": 63,
+   "theirs_name": "NaOH (hydroxide)",
+   "designs": 19,
+   "cmp": {
+    "o": {
+     "base": 47,
+     "stable": 100,
+     "recover": 100,
+     "cost": 10
+    },
+    "t": {
+     "base": 50,
+     "stable": 100,
+     "recover": 100,
+     "cost": 50
+    },
+    "tn": "NaOH (hydroxide)"
+   }
+  }
+ },
+ "hardener": {
+  "r1": {
+   "state": "done",
+   "step": null,
+   "started": "2026-10-28T19:29:41Z",
+   "steps": {
+    "level1": {
+     "started": "2026-10-28T19:29:41Z",
+     "finished": "2026-10-28T19:38:03Z",
+     "ok": true,
+     "code": 0
+    },
+    "level2": {
+     "started": "2026-10-28T19:38:03Z",
+     "finished": "2026-10-28T19:40:39Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-28T19:40:39Z",
+     "finished": "2026-10-28T19:40:40Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-28T19:40:40Z",
+     "finished": "2026-10-28T19:40:40Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-28T19:40:40Z",
+     "finished": "2026-10-28T19:40:41Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "finished": "2026-10-28T19:40:41Z",
+   "ours": 85,
+   "ours_name": "cyclopentanone ketal, aminocyclohexyl",
+   "theirs": 26,
+   "theirs_name": "Recyclamine-type ketal diamine",
+   "designs": 111,
+   "why": [
+    "stiffness: 70 vs 1",
+    "breaks in acid: 99 vs 50"
+   ],
+   "cmp": {
+    "o": {
+     "cleave": 99,
+     "hold": 100,
+     "stiff": 70,
+     "cure": 100,
+     "cost": 49
+    },
+    "t": {
+     "cleave": 50,
+     "hold": 100,
+     "stiff": 1,
+     "cure": 100,
+     "cost": 50
+    },
+    "tn": "Recyclamine-type ketal diamine"
+   }
+  },
+  "r3": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T15:01:56Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:57:17Z",
+     "finished": "2026-10-29T15:01:55Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T15:01:55Z",
+     "finished": "2026-10-29T15:01:55Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-29T15:01:55Z",
+     "finished": "2026-10-29T15:01:56Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-29T15:01:56Z",
+     "finished": "2026-10-29T15:01:56Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:57:17Z",
+   "ours": 76,
+   "ours_name": "cyclopentanone ketal, aminophenyl +Me1 +Me2 +Me3",
+   "theirs": 26,
+   "theirs_name": "Recyclamine-type ketal diamine",
+   "designs": 35,
+   "why": [
+    "stiffness: 57 vs 1",
+    "breaks in acid: 97 vs 50"
+   ],
+   "cmp": {
+    "o": {
+     "cleave": 97,
+     "hold": 100,
+     "stiff": 57,
+     "cure": 60,
+     "cost": 47
+    },
+    "t": {
+     "cleave": 50,
+     "hold": 100,
+     "stiff": 1,
+     "cure": 100,
+     "cost": 50
+    },
+    "tn": "Recyclamine-type ketal diamine"
+   }
+  },
+  "r2": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T14:56:40Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:54:05Z",
+     "finished": "2026-10-29T14:56:39Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T14:56:39Z",
+     "finished": "2026-10-29T14:56:40Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-29T14:56:40Z",
+     "finished": "2026-10-29T14:56:40Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-29T14:56:40Z",
+     "finished": "2026-10-29T14:56:40Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:54:05Z",
+   "ours": 78,
+   "ours_name": "cyclopentanone ketal, aminocyclohexyl +Me1 +Me8",
+   "theirs": 26,
+   "theirs_name": "Recyclamine-type ketal diamine",
+   "designs": 13,
+   "why": [
+    "stiffness: 61 vs 1",
+    "breaks in acid: 100 vs 50"
+   ],
+   "cmp": {
+    "o": {
+     "cleave": 100,
+     "hold": 91,
+     "stiff": 61,
+     "cure": 100,
+     "cost": 36
+    },
+    "t": {
+     "cleave": 50,
+     "hold": 100,
+     "stiff": 1,
+     "cure": 100,
+     "cost": 50
+    },
+    "tn": "Recyclamine-type ketal diamine"
+   }
+  }
+ },
+ "ionomer": {
+  "r1": {
+   "state": "done",
+   "step": null,
+   "started": "2026-10-28T19:40:41Z",
+   "steps": {
+    "level1": {
+     "started": "2026-10-28T19:40:41Z",
+     "finished": "2026-10-28T19:47:33Z",
+     "ok": true,
+     "code": 0
+    },
+    "level2": {
+     "started": "2026-10-28T19:47:33Z",
+     "finished": "2026-10-28T19:55:19Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-28T19:55:19Z",
+     "finished": "2026-10-28T19:55:19Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-28T19:55:19Z",
+     "finished": "2026-10-28T19:55:20Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-28T19:55:20Z",
+     "finished": "2026-10-28T19:55:21Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "finished": "2026-10-28T19:55:21Z",
+   "ours": 32,
+   "ours_name": "CC1(c2ccccc2)CC[N+]2(CCCCC2)CC1",
+   "theirs": 42,
+   "theirs_name": "ASU spiro",
+   "designs": 91,
+   "cmp": {
+    "o": {
+     "alk": 37,
+     "ox": 44,
+     "cond": 31,
+     "cost": 12
+    },
+    "t": {
+     "alk": 50,
+     "ox": 50,
+     "cond": 48,
+     "cost": 14
+    },
+    "tn": "ASU spiro"
+   }
+  },
+  "r3": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T15:06:50Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:57:08Z",
+     "finished": "2026-10-29T15:06:50Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T15:06:50Z",
+     "finished": "2026-10-29T15:06:50Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-29T15:06:50Z",
+     "finished": "2026-10-29T15:06:50Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-29T15:06:50Z",
+     "finished": "2026-10-29T15:06:50Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:57:08Z",
+   "ours": 37,
+   "ours_name": "CCCC1(c2ccccc2)CC[N+]2(CCCCC2)CC1",
+   "theirs": 42,
+   "theirs_name": "ASU spiro",
+   "designs": 52,
+   "cmp": {
+    "o": {
+     "alk": 100,
+     "ox": 19,
+     "cond": 27,
+     "cost": 12
+    },
+    "t": {
+     "alk": 50,
+     "ox": 50,
+     "cond": 48,
+     "cost": 14
+    },
+    "tn": "ASU spiro"
+   }
+  },
+  "r2": {
+   "state": "done",
+   "step": null,
+   "finished": "2026-10-29T14:56:51Z",
+   "steps": {
+    "level2": {
+     "started": "2026-10-29T14:52:57Z",
+     "finished": "2026-10-29T14:56:51Z",
+     "ok": true,
+     "code": 0
+    },
+    "level3": {
+     "started": "2026-10-29T14:56:51Z",
+     "finished": "2026-10-29T14:56:51Z",
+     "ok": true,
+     "code": 0
+    },
+    "level4": {
+     "started": "2026-10-29T14:56:51Z",
+     "finished": "2026-10-29T14:56:51Z",
+     "ok": true,
+     "code": 0
+    },
+    "level5": {
+     "started": "2026-10-29T14:56:51Z",
+     "finished": "2026-10-29T14:56:51Z",
+     "ok": true,
+     "code": 0
+    }
+   },
+   "started": "2026-10-29T14:52:57Z",
+   "ours": 31,
+   "ours_name": "CCC1(c2ccccc2)CC[N+]2(CCCCC2)CC1",
+   "theirs": 42,
+   "theirs_name": "ASU spiro",
+   "designs": 25,
+   "cmp": {
+    "o": {
+     "alk": 45,
+     "ox": 34,
+     "cond": 29,
+     "cost": 11
+    },
+    "t": {
+     "alk": 50,
+     "ox": 50,
+     "cond": 48,
+     "cost": 14
+    },
+    "tn": "ASU spiro"
+   }
+  }
+ },
+ "tfa": {
+  "r1": {
+   "state": "running",
+   "step": "physics",
+   "started": "2026-10-29T18:02:55Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-29T18:02:55Z"
+    }
+   },
+   "finished": "2026-10-28T22:43:45Z"
+  }
+ },
+ "cork": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-28T22:43:45Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-28T22:43:45Z",
+     "finished": "2026-10-29T04:07:51Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-29T04:07:51Z",
+     "finished": "2026-10-29T05:02:44Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-29T05:02:44Z",
+     "finished": "2026-10-29T05:06:34Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-29T05:06:34Z",
+     "finished": "2026-10-29T05:12:35Z",
+     "ok": true,
+     "code": 0
+    },
+    "spotcheck": {
+     "started": "2026-10-29T05:12:36Z",
+     "queued": true
+    }
+   },
+   "finished": "2026-10-29T05:12:36Z",
+   "blocked_by": [
+    "round checks fail: ['B9', 'B11', 'B13']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "round made with recipe a56782291bb7, physics suite ran on b3ebbba8c5b2",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "lithium": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-29T05:12:36Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-29T05:12:36Z",
+     "finished": "2026-10-29T11:10:04Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-29T11:10:04Z",
+     "finished": "2026-10-29T11:31:46Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-29T11:31:46Z",
+     "finished": "2026-10-29T11:31:59Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-29T11:31:59Z",
+     "finished": "2026-10-29T11:35:08Z",
+     "ok": true,
+     "code": 0
+    },
+    "spotcheck": {
+     "started": "2026-10-29T11:35:08Z",
+     "queued": true
+    }
+   },
+   "finished": "2026-10-29T11:35:08Z",
+   "blocked_by": [
+    "round checks fail: ['B13']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "round made with recipe f3935ab2e70a, physics suite ran on b3ebbba8c5b2",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "phosphate": {
+  "r1": {
+   "state": "paused",
+   "step": "physics",
+   "started": "2026-10-29T11:35:08Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-29T11:35:08Z"
+    }
+   }
+  }
+ },
+ "plastic": {
+  "r1": {
+   "state": "running",
+   "step": "level2",
+   "started": "2026-10-29T15:29:41Z",
+   "finished": "2026-10-29T14:39:23Z",
+   "steps": {
+    "level1": {
+     "started": "2026-10-29T15:29:41Z",
+     "finished": "2026-10-29T18:04:13Z",
+     "ok": true,
+     "code": 0
+    },
+    "level2": {
+     "started": "2026-10-29T18:04:13Z"
+    }
+   }
+  }
+ },
+ "boron": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-29T15:07:22Z",
+   "finished": "2026-10-29T15:13:11Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-29T15:07:22Z",
+     "finished": "2026-10-29T15:12:14Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-29T15:12:14Z",
+     "finished": "2026-10-29T15:13:05Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-29T15:13:05Z",
+     "finished": "2026-10-29T15:13:11Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-29T15:13:11Z",
+     "finished": "2026-10-29T15:13:11Z",
+     "ok": false,
+     "code": 1
+    }
+   },
+   "blocked_by": [
+    "round checks fail: ['B13']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "round made with recipe f3935ab2e70a, physics suite ran on b3ebbba8c5b2",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ },
+ "formaldehyde": {
+  "r1": {
+   "state": "physics-done",
+   "step": null,
+   "started": "2026-10-29T15:02:32Z",
+   "steps": {
+    "physics": {
+     "started": "2026-10-29T15:02:32Z",
+     "finished": "2026-10-29T15:04:35Z",
+     "ok": true,
+     "code": 0
+    },
+    "today": {
+     "started": "2026-10-29T15:04:35Z",
+     "finished": "2026-10-29T15:05:15Z",
+     "ok": true,
+     "code": 0
+    },
+    "check": {
+     "started": "2026-10-29T15:05:15Z",
+     "finished": "2026-10-29T15:05:16Z",
+     "ok": true,
+     "code": 0
+    },
+    "scaleup": {
+     "started": "2026-10-29T15:05:16Z",
+     "finished": "2026-10-29T15:05:16Z",
+     "ok": false,
+     "code": 1
+    }
+   },
+   "finished": "2026-10-29T15:05:16Z",
+   "blocked_by": [
+    "round checks fail: ['B13']",
+    "physics suite for recipe v3 fails: ['A1', 'A3', 'A4', 'A5', 'A6', 'A7']",
+    "round made with recipe f3935ab2e70a, physics suite ran on b3ebbba8c5b2",
+    "recipe code changed since the physics suite ran: rerun it"
+   ]
+  }
+ }
+}

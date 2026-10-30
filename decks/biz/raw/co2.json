@@ -1,0 +1,85 @@
+{
+ "key": "co2",
+ "name": "Humid-air CO2 sorbent",
+ "market": {
+  "usd_yr": 430000000,
+  "year": 2024,
+  "what": "direct air capture (DAC) removal credits contracted per year, world",
+  "method": "0.841 Mt contracted in 2024 x ~$516/t weighted DAC price = ~$430M; 2025 H1 doubled 2024 H1. Sorbent sales today are far smaller (only 1,186 t delivered by mid-2025)",
+  "sources": [
+   "https://www.cdr.fyi/blog/direct-air-capture-market-snapshot-2025",
+   "https://www.regreener.earth/blog/carbon-removal-credit-prices"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 125000000,
+  "logic": "Water co-desorption drives the heat penalty. Est. 1.5 GJ/t less heat x $10/GJ = $15/t, plus sorbent life 2->4 yr at ~$15/kg (~$10/t) = $25/t x est. 5 Mt/yr DAC (~2032) = $125M",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "sorbent spend est. ~$20/t x 5 Mt = $100M; K14 sorbent/license at 15% share",
+  "gross_margin_pct": 45,
+  "margin_logic": "engineered sorbent sold per kg; DAC buyers push price toward $15/kg",
+  "sources": [
+   "https://www.osti.gov/servlets/purl/1906132",
+   "https://carbondioxide-removal.eu/2026/08/05/gu-li-2026-humid-air-competitive-adsorption-invalidates-conventional-sorbent-screening-criteria-for-direct-air-capture/",
+   "https://carbonherald.com/iea-net-zero-roadmap-carbon-capture-capacity/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 40,
+  "drivers": "45Q raised to $180/t for DAC (OBBBA, Jul 2025); Microsoft/Frontier buying; but DOE hub cuts (Oct 2025) and Climeworks 22% layoffs; very uncertain",
+  "deadline": "45Q: construction must begin before 1 Jan 2033",
+  "sources": [
+   "https://www.globalccsinstitute.com/u-s-preserves-and-increases-45q-credit-in-one-big-beautiful-bill-act/",
+   "https://heatmap.news/politics/doe-dac-hubs",
+   "https://www.bloomberg.com/news/articles/2025-05-21/carbon-removal-startup-climeworks-is-cutting-22-of-staff"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Atoco (COF-999, humid-stable)",
+   "Avnos (hybrid DAC)",
+   "Skytree",
+   "Octavia Carbon",
+   "Sirona Technologies"
+  ],
+  "indirect_startups": [
+   "Heirloom (limestone)",
+   "Holocene (liquid)",
+   "CarbonCapture Inc.",
+   "Mission Zero (electrochemical)",
+   "Airhive"
+  ],
+  "incumbents": [
+   "Climeworks",
+   "1PointFive / Carbon Engineering (Occidental)",
+   "Svante (sorbent supplier to Climeworks Gen 3)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "direct air capture sorbent humidity",
+  "groups_active": null,
+  "notes": "Climeworks Gen 3 (Svante structured sorbent): half the energy, 2x capacity, 1,300+ cycles. COF-999 (Yaghi/Atoco) 100 cycles in humid air. Top 3 suppliers hold 80% of contracted tonnes.",
+  "sources": [
+   "https://climeworks.com/press-release/real-world-testing-proves-gen3-efficiency-leap-with-svantes-structure",
+   "https://news.berkeley.edu/2024/10/23/capturing-carbon-from-the-air-just-got-easier/",
+   "https://www.cdr.fyi/blog/direct-air-capture-market-snapshot-2025"
+  ]
+ },
+ "lab": {
+  "weeks": 20,
+  "usd": 60000,
+  "synth": "amine-grafted porous polymer / COF (est.; no early example yet): 10-16 wk class, 2-3 variants",
+  "test": "CO2 uptake at 400 ppm, 25 C, 20-80% RH by humid TGA/DVS co-adsorption + 100-cycle TVSA; university lab or Surface Measurement Systems service",
+  "logic": "synth 14 wk + tests 6 wk; $40k sorbent prep + ~$20k humid isotherms and cycling",
+  "sources": [
+   "https://surfacemeasurementsystems.com/wp-content/uploads/2023/11/Influence-of-humidity-on-CO2-solid-sorbent-performance-insight-and-challenges.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "1,000+ cycle stability; kg-to-tonne scale-up; 6-12 month pilot module with a DAC developer",
+  "sources": [
+   "https://climeworks.com/press-release/real-world-testing-proves-gen3-efficiency-leap-with-svantes-structure"
+  ]
+ }
+}

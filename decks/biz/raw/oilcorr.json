@@ -1,0 +1,83 @@
+{
+ "key": "oilcorr",
+ "name": "Green pipeline corrosion inhibitor",
+ "market": {
+  "usd_yr": 2000000000,
+  "year": 2024,
+  "what": "Oilfield corrosion inhibitors for CO2/H2S production lines, world",
+  "method": "Bottom-up: (97 mb/d oil + 250 mb/d water) ~55 Mt/d fluids x 25 ppm product (est.) = 0.5 Mt/yr x ~$4/kg (est.) = $2.0B; matches $1.89B report (others $2.6-4.6B)",
+  "sources": [
+   "https://www.intelmarketresearch.com/oilfield-corrosion-inhibitor-market-11568",
+   "https://www.promarketreports.com/reports/oil-and-gas-corrosion-inhibitor-69398",
+   "https://pubs.rsc.org/en/content/articlehtml/2023/va/d2va00282e"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 500000000,
+  "logic": "Same protection at 20% lower dose x $2.0B = $0.4B; + offshore operators avoid substitution-driven switches to weaker inhibitors (failure risk) est. $0.1B",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "Sell active to service company: ~150 kt/yr actives x ~1.3% share x ~$8/kg = ~$15M",
+  "gross_margin_pct": 50,
+  "margin_logic": "Specialty intermediate, toll made from fatty acids/amines; service firms keep formulation margin",
+  "sources": [
+   "https://assets.publishing.service.gov.uk/media/6762db59e6ff7c8a1fde9b03/Chemical_subsitution_letter_2024.pdf",
+   "https://oap.ospar.org/en/versions/2209-en-1-0-0-impacts-offshore-oil-and-gas-industry/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 4,
+  "drivers": "Offshore/deepwater sour fields; OSPAR substitution; UK/Norway: corrosion inhibitors are the largest substitutable discharge with fewest swaps",
+  "deadline": "OSPAR 2006/3 substitution goal 1 Jan 2026 (missed; yearly UK reports due 27 Feb 2026)",
+  "sources": [
+   "https://assets.publishing.service.gov.uk/media/6762db59e6ff7c8a1fde9b03/Chemical_subsitution_letter_2024.pdf",
+   "https://oap.ospar.org/en/ospar-assessments/quality-status-reports/qsr-2023/thematic-assessments/offshore-industry/response",
+   "https://www.intelmarketresearch.com/oilfield-corrosion-inhibitor-market-11568"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Locus Fermentation Solutions (bio-based oilfield chemicals)"
+  ],
+  "indirect_startups": [
+   "Gecko Robotics (inspection)"
+  ],
+  "incumbents": [
+   "ChampionX (SLB)",
+   "Baker Hughes",
+   "Halliburton Multi-Chem",
+   "Clariant Oil Services",
+   "Nouryon",
+   "Dorf Ketal",
+   "Innospec",
+   "Stepan",
+   "Croda"
+  ],
+  "papers_3yr": null,
+  "paper_query": "corrosion inhibitor CO2 H2S pipeline",
+  "groups_active": null,
+  "notes": "Big service firms own the field and the trial access. Locus FS raised >$40M in 2025 ($100M valuation). Many academic 'green inhibitor' papers, few pass HOCNF and sour tests",
+  "sources": [
+   "https://pulse2.com/locus-fermentation-solutions-40-million/",
+   "https://www.stepan.com/content/dam/stepan-dot-com/webdam/website-product-documents/literature/oilfield/green-corrosion-inhibitors.pdf"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 50000,
+  "synth": "1-2 step custom (amide/imidazoline or amino-acid surfactant from catalog acids/amines), 3 variants",
+  "test": "Bubble-cell LPR (ASTM G59) and rotating cylinder (ASTM G185) under CO2 and CO2/H2S at a corrosion lab (e.g. Ohio U ICMT, Intertek); HOCNF ecotox screen: OECD 306, ISO 10253 Skeletonema, ISO 14669 Acartia, OECD 117",
+  "logic": "Synth 5-6 wk, $15k; corrosion tests 4-6 wk, ~$18k (est.); ecotox screen 4 wk in parallel, ~$17k (est.)",
+  "sources": [
+   "https://www.cefas.co.uk/data-and-publications/ocns/downloads-and-useful-links/criteria-for-accepting-alternative-toxicity-data-to-support-an-hocnf-application",
+   "https://aquatech.dhigroup.com/wp-content/uploads/2025/11/2025-10-09-MARINE-Ecotoxicology-Testing-Flyer.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2.5,
+  "gates": "Full GLP HOCNF + OCNS/Norway registration 3-6 mo; operator lab qual then field trial with coupons/ER probes 6-12 mo; TSCA/REACH for new active",
+  "sources": [
+   "https://oilandgasukenvironmentallegislation.co.uk/contents/Topic_Files/Offshore/Production_chemicals.htm"
+  ]
+ }
+}

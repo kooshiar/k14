@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Layers and Engines · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>html,body{margin:0;height:100%;background:#fff}svg{position:fixed;inset:0;width:100%;height:100%}
+text{font-family:Geist,sans-serif;fill:#14161A}.m{font-family:"Geist Mono",monospace;fill:#596070}</style></head>
+<body><svg id="s" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet"></svg>
+<script>
+const L = ['Business', 'Product', 'Chemistry', 'Physics'], E = ['Discovery', 'Requirements', 'Design', 'Physics mapping', 'Compute'];
+const INK = '#14161A', G = '#2E8A1F', LN = '#C9CED6', CO = '#1F4FFF', NI = '#2FA36B', O = '#E10600';
+const t = (x, y, s, o = {}) => `<text x="${x}" y="${y}" text-anchor="${o.a || 'middle'}" font-size="${o.z || 24}" font-weight="${o.w || 500}" ${o.c ? `style="fill:${o.c}"` : ''} class="${o.m ? 'm' : ''}">${s}</text>`;
+const pill = (x, y, s, g) => { const w = s.length * 10.5 + 40; return `<rect x="${x - w / 2}" y="${y - 21}" width="${w}" height="42" rx="21" fill="${g ? G : INK}"/>${t(x, y + 7, s, { z: 19, c: '#fff' })}`; };
+const arrow = (x1, y1, x2, y2, c = '#9AA1AD') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="2.5" marker-end="url(#ah)"/>`;
+const DEF = `<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9AA1AD"/></marker></defs>`;
+// small pictures, centred on (x, y), about 150 px
+const PIC = {
+  Business: (x, y) => `<g transform="translate(${x - 75},${y - 60})"><path d="M0 120V55l30 20V55l30 20V55l30 20V20h22v100z" fill="#fff" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/><rect x="92" y="0" width="14" height="22" fill="${INK}"/>
+    <circle cx="132" cy="40" r="22" fill="${G}"/>${t(132, 50, '$', { z: 28, w: 600, c: '#fff' })}</g>`,
+  Product: (x, y) => `<g transform="translate(${x},${y})"><rect x="-36" y="-70" width="72" height="140" rx="12" fill="#fff" stroke="${INK}" stroke-width="3"/>
+    ${[[-16,-45],[10,-48],[-4,-25],[18,-20],[-18,0],[6,2],[-6,24],[16,28],[-16,48],[8,50]].map(([a, b]) => `<circle cx="${a}" cy="${b}" r="9" fill="#E9F2E4" stroke="${G}" stroke-width="2"/>`).join('')}
+    <circle cx="-4" cy="-25" r="4.5" fill="${CO}"/><circle cx="16" cy="28" r="4.5" fill="${CO}"/>${arrow(0, -110, 0, -76)}${arrow(0, 76, 0, 108)}</g>`,
+  Chemistry: (x, y) => `<g transform="translate(${x - 12},${y})"><polygon points="-38,0 -19,-33 19,-33 38,0 19,33 -19,33" fill="none" stroke="${INK}" stroke-width="3"/>
+    <path d="M38 0L64 -18L84 -4M38 0L64 18L84 4" fill="none" stroke="${INK}" stroke-width="3"/><circle cx="84" cy="-4" r="6" fill="${O}"/><circle cx="84" cy="4" r="6" fill="${O}"/>
+    <circle cx="100" cy="0" r="14" fill="${CO}"/>${t(x - x + 100, 42, 'Co', { z: 18, c: CO })}<circle cx="-80" cy="0" r="14" fill="${NI}" opacity=".35"/>${t(-80, 42, 'Ni', { z: 18, c: '#7A8290' })}</g>`,
+  Physics: (x, y) => `<g transform="translate(${x},${y})"><path d="M-80 -60 C-60 70 -30 40 0 40 C40 40 50 -10 90 -20" fill="none" stroke="${G}" stroke-width="3"/>
+    <circle cx="-12" cy="-40" r="16" fill="${CO}"/><line x1="4" y1="-40" x2="26" y2="-40" stroke="${INK}" stroke-width="4"/><circle cx="38" cy="-40" r="12" fill="${O}"/>${t(0, 82, 'energy vs distance', { z: 16, m: 1 })}</g>`
+};
+const V = {
+1(){ /* same problem in 4 languages: each layer states the constraint its own way */
+  const X = [300, 640, 980, 1320], C = [['< $80 / t', 'to clean nickel'], ['< 50 ppm', 'cobalt left'], ['Co ✓  Ni ✗', 'grab only cobalt'], ['ΔG<tspan font-size="22" baseline-shift="sub">Co</tspan> < ΔG<tspan font-size="22" baseline-shift="sub">Ni</tspan>', 'in water']];
+  let h = DEF;
+  X.forEach((x, i) => { h += `<rect x="${x - 135}" y="300" width="270" height="300" rx="18" fill="#fff" stroke="${LN}" stroke-width="2"/>${t(x, 350, `${i + 1}`, { z: 18, m: 1 })}${t(x, 388, L[i], { z: 30, w: 600 })}
+    <line x1="${x - 95}" y1="420" x2="${x + 95}" y2="420" stroke="#E6E8EC" stroke-width="2"/>${t(x, 500, C[i][0], { z: 40, w: 600, c: i === 3 ? G : INK })}${t(x, 545, C[i][1], { z: 20, c: '#596070' })}`; });
+  [90, ...X.map(x => x + 135)].forEach((x0, i) => { const x1 = i < 4 ? X[i] - 135 : 1560, xm = (x0 + x1) / 2;
+    h += arrow(x0 + 4, 450, x1 - 6, 450) + pill(xm, i % 2 ? 690 : 230, E[i], i === 4) + `<line x1="${xm}" y1="${i % 2 ? 668 : 252}" x2="${xm}" y2="${i % 2 ? 462 : 438}" stroke="${LN}" stroke-width="1.5" stroke-dasharray="4 5"/>`; });
+  return h; },
+2(){ /* zoom from plant to atoms; engines on one row above, each linked to the layer before and after it (zigzag) */
+  const X = [350, 650, 950, 1250], EX = [200, 500, 800, 1100, 1400], R = 128, CY = 560, EY = 250, S = ['10 m', '10 cm', '1 nm', '1 Å'];
+  const big = (x, y, s) => { const w = 250; return `<rect x="${x - w / 2}" y="${y - 30}" width="${w}" height="60" rx="30" fill="${INK}"/>${t(x, y + 9, s, { z: 24, c: '#fff' })}`; };
+  const link = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${LN}" stroke-width="2.5"/>`;
+  const edge = (cx, ex) => { const dx = ex - cx, dy = EY - CY, k = R / Math.hypot(dx, dy); return [cx + dx * k, CY + dy * k]; };
+  let h = DEF;
+  EX.forEach((ex, i) => { if (i > 0){ const [x, y] = edge(X[i - 1], ex); h += link(ex, EY + 30, x, y); } if (i < 4){ const [x, y] = edge(X[i], ex); h += link(ex, EY + 30, x, y); } });
+  X.forEach((x, i) => { h += `<circle cx="${x}" cy="${CY}" r="${R}" fill="#fff" stroke="${INK}" stroke-width="2.5"/>${PIC[L[i]](x, CY)}${t(x, CY + R + 58, L[i], { z: 30, w: 600 })}${t(x, CY + R + 92, S[i], { z: 20, m: 1 })}`; });
+  EX.forEach((ex, i) => { h += big(ex, EY, E[i]); });
+  return h; },
+3(){ /* ground core: going deeper = more fundamental; one path drills through every layer */
+  const Y = [170, 330, 490, 650, 810], F = ['#F7F5F0', '#ECE8DF', '#DCD6CA', '#C8C0B1'];
+  const wave = (y, k) => `M80 ${y} C 400 ${y - 18 + k * 6}, 800 ${y + 20}, 1150 ${y - 6} S 1500 ${y + 12}, 1520 ${y}`;
+  let h = DEF;
+  for (let i = 0; i < 4; i++) h += `<path d="${wave(Y[i], i)} L1520 ${Y[4]} L80 ${Y[4]} Z" fill="${F[i]}"/>`;
+  h += `<path d="${wave(Y[0], 0)}" fill="none" stroke="${INK}" stroke-width="2"/>`;
+  L.forEach((l, i) => { h += t(130, (Y[i] + Y[i + 1]) / 2 + 10, l, { z: 32, w: 600, a: 'start' }); });
+  h += `<line x1="1000" y1="70" x2="1000" y2="${Y[4] - 8}" stroke="${INK}" stroke-width="4"/>`;
+  E.forEach((e, i) => { const y = i < 4 ? Y[i] + (i ? 4 : 0) : Y[4] - 20; h += `<circle cx="1000" cy="${y}" r="13" fill="${i === 4 ? G : INK}" stroke="#fff" stroke-width="3"/>${t(1032, y + (i === 0 ? -14 : 8), e, { z: 24, a: 'start', c: i === 4 ? G : INK, w: 600 })}`; });
+  return h; },
+4(){ /* constraints nest: physics sits inside chemistry inside product inside business; the design walks inward */
+  const R = [400, 300, 200, 100], cx = 800, cy = 450, F = ['#FAF9F6', '#F1EFE9', '#E6E2D9', '#D8D2C5'];
+  let h = DEF;
+  R.forEach((r, i) => { h += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${F[i]}" stroke="${LN}" stroke-width="2"/>${t(cx, cy - r + 50, L[i], { z: i === 3 ? 26 : 30, w: 600 })}`; });
+  const a = Math.PI * 0.80, P = r => [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+  const [x0, y0] = P(500); h += `<line x1="${x0}" y1="${y0}" x2="${cx}" y2="${cy}" stroke="${INK}" stroke-width="3.5"/>`;
+  [450, ...R.slice(1), 0].forEach((r, i) => { const [x, y] = i === 0 ? P(R[0]) : i === 4 ? [cx, cy] : P(r);
+    h += `<circle cx="${x}" cy="${y}" r="13" fill="${i === 4 ? G : INK}" stroke="#fff" stroke-width="3"/>`;
+    h += i === 4 ? t(cx + 30, cy + 8, E[4], { z: 24, w: 600, a: 'start', c: G }) : t(x - 26, y + 8, E[i], { z: 24, w: 600, a: 'end' }); });
+  return h; }};
+const v = +(new URLSearchParams(location.search).get('v') || 1); document.getElementById('s').innerHTML = (V[v] || V[1])();
+</script></body></html>

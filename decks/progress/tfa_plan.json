@@ -1,0 +1,88 @@
+{
+ "problem": "tfa",
+ "round": 1,
+ "hosts": [
+  [
+   "design1",
+   "C[N+](C)(C)Cc1ccc2cc(C[N+](C)(C)Cc3cccc([N+](C)(C)C)c3)ccc2c1",
+   -52.9
+  ],
+  [
+   "design2",
+   "C[n+]1ccc(-c2cc[n+](C)cc2)cc1",
+   5.85
+  ],
+  [
+   "design3",
+   "NC(=[NH2+])CCCNC=[NH2+]",
+   6.34
+  ],
+  [
+   "design4",
+   "NC(=[NH2+])Cc1cccc(CNC=[NH2+])c1",
+   7.69
+  ],
+  [
+   "design5",
+   "O=C(NCC[NH+](CCNC(=O)Nc1ccc([N+](=O)[O-])cc1)CCNC(=O)Nc1ccc([N+](=O)[O-])cc1)Nc1ccc([N+](=O)[O-])cc1",
+   8.28
+  ],
+  [
+   "design6",
+   "C[NH2+]Cc1ccccc1",
+   8.39
+  ],
+  [
+   "design7",
+   "C#CC[NH2+]Cc1ccccc1",
+   8.88
+  ],
+  [
+   "design8",
+   "C[N+](C)(CCNc1c(Nc2cccc(F)c2)c(=O)c1=O)CCNc1c(Nc2ccc(F)cc2F)c(=O)c1=O",
+   14.99
+  ],
+  [
+   "today:quaternary ammonium (resin site)",
+   "C[N+](C)(C)Cc1ccccc1",
+   null
+  ],
+  [
+   "today:beta-cyclodextrin",
+   "OC[C@H]1O[C@@H]2O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@@H]3CO)O[C@H]1[C@H](O)[C@H]2O",
+   null
+  ],
+  [
+   "today:tren tris(phenylurea)",
+   "N(CCNC(=O)Nc1ccccc1)(CCNC(=O)Nc1ccccc1)CCNC(=O)Nc1ccccc1",
+   null
+  ],
+  [
+   "today:pillar[5]arene (OMe)",
+   "COc1cc2c(OC)cc1Cc1cc(OC)c(Cc3cc(OC)c(Cc4cc(OC)c(Cc5cc(OC)c(C2)cc5OC)cc4OC)cc3OC)cc1OC",
+   null
+  ]
+ ],
+ "guests": [
+  [
+   "T",
+   "trifluoroacetate",
+   "[O-]C(=O)C(F)(F)F"
+  ],
+  [
+   "L0",
+   "chloride",
+   "[Cl-]"
+  ],
+  [
+   "L1",
+   "sulfate",
+   "O=S(=O)([O-])[O-]"
+  ],
+  [
+   "L2",
+   "nitrate",
+   "[O-][N+](=O)[O-]"
+  ]
+ ]
+}

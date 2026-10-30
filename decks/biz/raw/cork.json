@@ -1,0 +1,89 @@
+{
+ "key": "cork",
+ "name": "TCA cork taint binder",
+ "market": {
+  "usd_yr": 1830000000,
+  "year": 2024,
+  "what": "wine cork stoppers (natural + technical), world; TCA control is built into price",
+  "method": "Amorim stoppers EUR 713M (75.9% of 939M) / 42% unit share (5.5 of 13 bn) = ~EUR 1.7B = $1.83B; NDtech TCA-screened cork EUR 500/1000 vs EUR 300-400 plain",
+  "sources": [
+   "https://www.amorim.com/en/investors/financial-information/annual-report/corticeira-amorim-2024fy-sales-fall-by-47-impacted-by-unfavourable-global-context/5262/",
+   "https://www.amorimcork.com/en/about-us/",
+   "https://www.amorim.com/xms/files/v1/Documentacao/About_cork_stoppers_final_LR.pdf",
+   "https://www.jancisrobinson.com/articles/corks-fight-back"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 90000000,
+  "job_what": "TCA removal/screening of cork stoppers (steam, supercritical CO2, per-cork GC screening) plus TCA remediation of wine, world",
+  "job_method": "est.: NDtech ~50M corks x ~EUR 0.15 premium = EUR 8M + Diam ~2 bn closures x ~EUR 0.015 Diamant treatment (est.) = EUR 30M + steam/screening on ~11 bn other stoppers x ~EUR 0.003 (est.) = EUR 33M + wine remediation <EUR 5M = ~EUR 75M = ~$90M; low confidence",
+  "job_sources": [
+   "https://www.thedrinksbusiness.com/2016/06/amorims-ndtech-a-game-changer-for-cork/",
+   "https://www.jancisrobinson.com/articles/corks-fight-back",
+   "https://kalkinemedia.com/news/world-news/oeneo-2024-2025-annual-results-recurring-operating-margin-improved-to-149-growth-in-net-profit-and-free-cash-flow",
+   "https://hauserpack.com/wp-content/uploads/2022/01/Diam-Diamant-Process.pdf"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 800000000,
+  "logic": "est.: 13 bn corks x ~1% tainted x ~$12/bottle = ~$1.6B lost/yr; scavenger in closure or bulk wine cuts 50% = $0.8B",
+  "our_revenue_usd_yr": 11000000,
+  "revenue_logic": "1 bn stoppers (8%) x $0.01 add-in (vs NDtech premium EUR 0.10-0.20) = $10M; + bulk TCA/TBA wine remediation ~$1M",
+  "gross_margin_pct": 65,
+  "margin_logic": "additive sold to cork makers; tiny dose per stopper",
+  "sources": [
+   "https://www.winespectator.com/articles/report-claims-less-than-1-percent-of-corks-are-noticeably-tainted-40516",
+   "https://en.wikipedia.org/wiki/Cork_taint",
+   "https://www.jancisrobinson.com/articles/corks-fight-back"
+  ]
+ },
+ "trend": {
+  "cagr_pct": -1,
+  "drivers": "wine consumption down (214 Mhl 2024, ~208 Mhl 2025); premium and sparkling wines (TCA felt at 0.5 ng/L) push zero-TCA demand",
+  "deadline": "",
+  "sources": [
+   "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025_1.pdf",
+   "https://www.interempresas.net/Vitivinicola/567462-Vinos-espumosos-y-No-Low-una-sensibilidad-aumentada-frente-al-TCA.html"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "amaea (NZ, 2011; MIP wine filtration platform, could extend)"
+  ],
+  "incumbents": [
+   "Amorim (Naturity, NDtech)",
+   "Diam Bouchage/Oeneo (CO2 cleaned)",
+   "Cork Supply (DS100+)",
+   "MASILVA",
+   "Vinventions",
+   "VA Filtration (TCA/TBA removal)",
+   "Oenobrands (Extraferm D'tox)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "trichloroanisole wine removal",
+  "groups_active": null,
+  "notes": "Cork makers own the fix (thermal desorption up to 99%, per-cork GC screening). No 2012+ startup with a TCA binder found. Yeast-wall fining removes ~60-78% haloanisoles.",
+  "sources": [
+   "https://grandespagos.com/en/2024/04/16/new-technologies-for-the-control-of-tca-in-corks/",
+   "https://oenobrands.com/solution/oenological-default/cork-taint/",
+   "https://www.just-food.com/contractors/separator/va-filtration/"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 30000,
+  "synth": "1-2 step custom host (cavitand/cyclodextrin-type), 3 variants; s0 not set yet",
+  "test": "TCA-spiked wine 2-10 ng/L, SPME-GC-MS/MS (ETS/AWRI); releasable TCA cork soak ISO 20752; aroma GC-MS; sensory triangle ISO 4120",
+  "logic": "synth 6 wk ~$15k; 4 wk tests: 40 x ~$150 = $6k (est.), sensory ~$5k, cork soak trials ~$4k",
+  "sources": [
+   "https://cdn.shopify.com/s/files/1/1158/6548/files/SPME-Screening_for_TCA2023.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "co-development with a cork maker; food-contact (EU 1935/2004, FDA FCN ~1 yr); 12-mo bottle-aging trials",
+  "sources": [
+   "https://www.amorim.com/en/investors/financial-information/annual-report/corticeira-amorim-2024fy-sales-fall-by-47-impacted-by-unfavourable-global-context/5262/"
+  ]
+ }
+}

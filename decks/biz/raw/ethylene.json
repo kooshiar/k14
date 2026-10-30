@@ -1,0 +1,84 @@
+{
+ "key": "ethylene",
+ "name": "Ethylene trap for fruit",
+ "market": {
+  "usd_yr": 400000000,
+  "year": 2025,
+  "what": "ethylene control in produce storage/transport: 1-MCP + ethylene scavengers (KMnO4, Pd-zeolite, catalytic), world",
+  "method": "1-MCP ~$250M (AgroFresh $162M 2022 + generics, est.) + scavengers $154M (LP Info 2025); reports of $5.5-12.8B judged too high",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1592016/000159201623000006/agfs-20221231.htm",
+   "https://www.marketresearch.com/LP-Information-Inc-v4134/Global-Ethylene-Scavenger-Growth-40687829",
+   "https://www.giiresearch.com/report/smrc1818049-ethylene-scavengers-market-forecasts-global.html",
+   "https://imarcgroup.com/ethylene-absorber-market"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 1600000000,
+  "logic": "est.: ~100 Mt/yr climacteric produce stored or shipped cold x ~$800/t x 2 pts less loss = $1.6B; fruit/veg loss ~22% (FAO)",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "3 Mt produce/yr x ~$5/t trap media (1-MCP ~$25-35/t at $8-12 per 330 kg bin)",
+  "gross_margin_pct": 55,
+  "margin_logic": "sorbent cartridges; cheap KMnO4 caps price",
+  "sources": [
+   "https://www.frontiersin.org/articles/10.3389/fhort.2025.1529040/full",
+   "https://fruitnet.com/fresh-produce-journal/the-smart-solution/134728.article",
+   "https://goodfruit.com/no-rate-change-for-mcp"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "food-loss goals (SDG 12.3), longer cold chains, organic fruit (1-MCP not allowed)",
+  "deadline": "",
+  "sources": [
+   "https://www.giiresearch.com/report/smrc1818049-ethylene-scavengers-market-forecasts-global.html",
+   "https://www.marketresearch.com/LP-Information-Inc-v4134/Global-Ethylene-Scavenger-Growth-40687829"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "It's Fresh! (UK, 2010; ~$25M raised)",
+   "Ryp Labs (ex-StixFresh)"
+  ],
+  "indirect_startups": [
+   "Hazel Technologies (1-MCP sachets, ~$91M)",
+   "Apeel (coatings)",
+   "Strella Biotech (ripeness sensors, $26M)",
+   "Ripelocker (low-pressure storage)"
+  ],
+  "incumbents": [
+   "AgroFresh (SmartFresh)",
+   "Janssen PMP (Fysium)",
+   "Bioconservacion (Bi-On)",
+   "Purafil"
+  ],
+  "papers_3yr": null,
+  "paper_query": "ethylene scavenger fruit storage",
+  "groups_active": null,
+  "notes": "1-MCP leader AgroFresh (private since 2023). Crowded field, cheap KMnO4 baseline.",
+  "sources": [
+   "https://agfundernews.com/food-waste-startup-hazel-technologies-raises-oversubscribed-13m-series-b-to-scale-up-production.html",
+   "https://www.fooddive.com/news/hazel-technologies-raises-70m-for-packets-to-prevent-food-waste/598268/",
+   "https://www.geekwire.com/2026/watching-fruit-ripen-pays-off-seattle-ag-tech-startup-strella-lands-4-25m/",
+   "https://globalaginvesting.com/uk-tech-startup-its-fresh-raises-6-7m-to-grow-food-waste-reduction-platform/"
+  ]
+ },
+ "lab": {
+  "weeks": 16,
+  "usd": 43000,
+  "synth": "Cu(I)/Ag(I) host or MOF-type sorbent, 3 variants (MOF/polymer tier); s0 not set yet",
+  "test": "ethylene isotherm + breakthrough 1-100 ppm at 0-5 C, 90% RH (GC-FID); fruit storage trial (banana/kiwi/tomato) 3-4 wk, firmness/color; e.g. UC Davis Postharvest",
+  "logic": "synth 10 wk ~$25k; tests 6 wk: gas sorption ~$8k + fruit trial ~$10k (est.)",
+  "sources": [
+   "https://www.sciencedirect.com/science/article/pii/S2772502225005724"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "cold-room scrubber: no food approval, 1 packhouse season pilot; in-pack sachet: EU 450/2009 active packaging + FDA FCN (~2 yr)",
+  "sources": [
+   "https://www.sciencedirect.com/science/article/pii/S2772502225005724"
+  ]
+ }
+}

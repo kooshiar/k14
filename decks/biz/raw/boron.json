@@ -1,0 +1,81 @@
+{
+ "key": "boron",
+ "name": "Boron binder for desal",
+ "market": {
+  "usd_yr": 450000000.0,
+  "year": 2025,
+  "what": "extra boron-removal step in seawater RO (2nd pass at high pH, boron-selective resins), world",
+  "method": "109M m3/d contracted desal x ~50% SWRO (est.) x 0.8 online x 365 = ~16 bn m3/yr; ~40% needs a boron step (est.) = 6.4 bn m3 x ~$0.07/m3 extra = ~$450M/yr",
+  "sources": [
+   "https://www.techsciresearch.com/report/seawater-desalination-market/20239.html",
+   "https://www.sciencedirect.com/science/article/abs/pii/S001191641100083X",
+   "https://www.usbr.gov/research/dwpr/reportpdfs/report127.pdf"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 220000000.0,
+  "logic": "binder polishing a split stream instead of pH-10 2nd pass (caustic, acid, ~0.2-0.3 kWh/m3, brine) saves ~$0.035/m3 x 6.4 bn m3 = ~$220M/yr; 2-pass total $0.45-0.55/m3 today",
+  "our_revenue_usd_yr": 18000000.0,
+  "revenue_logic": "~4% of ~$450M boron-step spend by yr 7 as resin via licensee/toll maker",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty chelating resin vs NMG resins (DuPont, Purolite, Mitsubishi); price pressure from Chinese resin makers",
+  "sources": [
+   "https://www.sciencedirect.com/science/article/abs/pii/S001191641100083X",
+   "https://www.researchgate.net/publication/229311599_Removal_of_boron_from_SWRO_permeate_by_boron_selective_ion_exchange_resins_containing_N-methyl_glucamine_groups"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "Gulf/N. Africa SWRO megaprojects; desal water for irrigation (Spain, Israel) needs B <=0.3-0.5 mg/L; reports 9.1%/yr desal market",
+  "deadline": "",
+  "sources": [
+   "https://www.techsciresearch.com/report/seawater-desalination-market/20239.html",
+   "https://www.globenewswire.com/news-release/2022/10/28/2543706/0/en/Water-Desalination-Market-Size-to-hit-USD-29-1-billion-2030-Key-Companies-Price-Trends-PESTEL-Analysis-Growth-Opportunities-Demand-Key-Leaders-and-Future-Business-Plan-Adroit-Marke.html",
+   "https://cris.bgu.ac.il/en/publications/advanced-treatment-options-to-remove-boron-from-seawater/",
+   "https://link.springer.com/article/10.1007/s00271-024-00957-z"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [],
+  "incumbents": [
+   "DuPont (FilmTec, AmberLite PWA10)",
+   "Ecolab Purolite (S108)",
+   "Mitsubishi Chemical (Diaion CRB03/05)",
+   "Lanxess",
+   "Toray",
+   "Nitto Hydranautics",
+   "LG Chem",
+   "Sunresin"
+  ],
+  "papers_3yr": 1106,
+  "paper_query": "boron removal seawater desalination",
+  "groups_active": 200,
+  "notes": "groups capped at 200. No startup found; strongest new idea is boron-selective electrosorption (U Michigan/Rice, Nature Water 2025, academic). Incumbent fix is membranes + pH swing, sold inside big EPC tenders",
+  "sources": [
+   "https://www.gpsdaily.com/reports/New_technology_reduces_costs_and_chemicals_in_seawater_desalination_999.html",
+   "https://upcommons.upc.edu/bitstreams/96606d8a-1cb6-436a-803e-d769f8fe2ae2/download",
+   "https://www.dupont.com/products/amberlitepwa10.html"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 45000,
+  "synth": "1-2 step custom (TRIS-type polyol binder from catalog TRIS) + grafting to resin bead",
+  "test": "batch + column on real or synthetic SWRO permeate (0.8-1.5 mg/L B, pH 7-8), regeneration cycles; boron by ICP-OES/ICP-MS (EPA 200.7) at a university lab",
+  "logic": "6 wk synth ($6-8k) + 6 wk grafting/3 variants ($20k) + 6 wk tests; ~200 samples x $32-80 (UConn, USF) = ~$10k + labor",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3.5,
+  "gates": "NSF/ANSI 61 or local potable approval; 6-12 mo pilot at an SWRO plant; design-in to EPC tenders",
+  "sources": [
+   "https://www.waterworld.com/residential-commercial/article/14307504/going-through-the-process",
+   "https://www.sciencedirect.com/science/article/abs/pii/S001191641100083X"
+  ]
+ }
+}

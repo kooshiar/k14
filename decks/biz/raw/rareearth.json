@@ -1,0 +1,99 @@
+{
+ "key": "rareearth",
+ "name": "Nd/La separation",
+ "market": {
+  "usd_yr": 7450000000,
+  "year": 2025,
+  "what": "Separated NdPr oxide, world (84% made in China)",
+  "method": "108 kt/yr NdPr oxide demand x $69/kg 2025 avg (USGS); spot ~$104/kg Oct 2026 (SMM)",
+  "sources": [
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/critical-mineral-market-reports/Market%20Report%20-%20NdPr%20-%2008052026.pdf",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-rare-earths.pdf",
+   "https://www.metal.com/rare-earth-oxides/201102250162"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 2200000000,
+  "job_what": "NdPr solvent-extraction separation cost (extractant make-up + SX opex, or toll fee), world",
+  "job_method": "108 kt/yr NdPr oxide x ~$20/kg separation (est.; SX typically >$10/kg, China low end; Western toll $25-35/kg ReElement 2025) = ~$2.2B; low-med confidence",
+  "job_sources": [
+   "https://thundersaidenergy.com/downloads/solvent-extraction-of-rare-earths-challenging-separations/",
+   "https://rareearthexchanges.com/?p=8065",
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/critical-mineral-market-reports/Market%20Report%20-%20NdPr%20-%2008052026.pdf"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 100000000,
+  "logic": "La-Ce/Pr-Nd cut takes ~80 SX stages (SGS); 2x better Nd/La selectivity cuts that cut ~40%, ~13% of all stages, ~$1/kg TREO of $8/kg refining cost (Iluka). x est. 100 kt/yr ex-China separation by 2032 = $100M/yr",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "30% of ex-China capacity (30 kt TREO) x $0.40/kg licence + extractant supply",
+  "gross_margin_pct": 80,
+  "margin_logic": "mostly licence (90%); extractant toll-made and resold at 50-60%",
+  "sources": [
+   "https://onemine.org/documents/commissioning-of-a-mini-ree-sx-pilot-plant-at-sgs-minerals-lakefield-site",
+   "https://www.iluka.com/media/qx4hjxxd/6dec24-eneabba-rare-earths-positive-outcome-of-funding-discussions-and-updated-economics-presentation.pdf",
+   "https://thundersaidenergy.com/downloads/solvent-extraction-of-rare-earths-challenging-separations/",
+   "https://www.alibaba.com/product-detail/2-Ethylhexyl-2-Ethylhexyl-Phosphate-PC88A_60605864206.html"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "EV, wind, robot motor magnets; China export controls Apr/Oct 2025; US $110/kg NdPr price floor (MP, 2025); western separation build-out",
+  "deadline": "DFARS 252.225-7052: no China-separated NdFeB in US defense items from 1 Jan 2027",
+  "sources": [
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/critical-mineral-market-reports/Market%20Report%20-%20NdPr%20-%2008052026.pdf",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-rare-earths.pdf",
+   "https://acquisition.gov/dfars/252.225-7052-restriction-acquisition-certain-magnets-tantalum-and-tungsten."
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Phoenix Tailings",
+   "ReElement Technologies"
+  ],
+  "indirect_startups": [
+   "REEgen"
+  ],
+  "incumbents": [
+   "Lynas",
+   "MP Materials",
+   "Solvay",
+   "Neo Performance (Silmet)",
+   "Iluka",
+   "China Northern Rare Earth",
+   "China Rare Earth Group",
+   "Shenghe",
+   "Syensqo (Cyanex 572)",
+   "P507 makers (China)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "neodymium lanthanum separation solvent extraction",
+  "groups_active": null,
+  "notes": "Today's industrial best is P507/PC88A or Cyanex 572, not TODGA. Hardest split is Nd/Pr (beta ~1.4), Nd/La is easier. Phoenix Tailings $116.6M Series B (2025); Ucore RapidSX (not a startup) $27M DoD; Ames Lab NEAREST neutral ligands at mixer-settler scale.",
+  "sources": [
+   "https://www.businesswire.com/news/home/20250430735778/en/Rare-Earth-Metals-Refining-Company-Phoenix-Tailings-Closes-on-Additional-$33M-in-Funding-From-Strategic-Investors-Bringing-the-Round-up-to-$76M-to-Support-Rare-Earth-Metal-Independence",
+   "https://investornews.com/critical-minerals-rare-earths/ucore-advances-louisiana-rare-earth-separation-with-expanded-defense-funding/",
+   "https://www.ameslab.gov/cmi/research-highlights/nearest-neutral-ligand-based-ree-separation-technology-scaling-neutral",
+   "https://www.e3s-conferences.org/10.1051/e3sconf/202126602005"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 40000,
+  "synth": "3-5 step custom: phenanthroline-2,9-dicarboxamide core then amidation; 3 alkyl variants share the core",
+  "test": "Batch distribution ratios D and separation factors Nd/La, Nd/Pr vs P507 in HCl/HNO3 feed, ICP-OES at a university lab",
+  "logic": "synth 10 wk ~$30k (3 variants, China CRO) + test 4 wk: ~150 ICP-OES x $35-50 = ~$7k + feeds/reagents ~$3k",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "mini-pilot SX campaign (SGS/ANSTO/SRC, ~80 stages) ~1 yr; extractant loss and stability data; trial in a separator's circuit and oxide spec 1-2 yr; licence/supply deal",
+  "sources": [
+   "https://onemine.org/documents/commissioning-of-a-mini-ree-sx-pilot-plant-at-sgs-minerals-lakefield-site",
+   "https://www.ansto.gov.au/products-services/minerals/consultancy/capabilities",
+   "https://apegs.ca/features-saskatchewan-research-council"
+  ]
+ }
+}

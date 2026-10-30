@@ -1,0 +1,2094 @@
+[
+ {
+  "name": "Aclarity",
+  "apps": [
+   "PFAS & TFA"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Electrochemical PFAS destruction for leachate, wastewater",
+  "relation": "sell",
+  "raised_m": 19.2,
+  "linkedin": "https://www.linkedin.com/company/aclaritywater",
+  "fit": "Researched",
+  "website": "https://www.aclaritywater.com",
+  "hq": "Mansfield, USA",
+  "founded": 2017,
+  "employees": "11-50",
+  "stage": "Series A",
+  "source": "https://www.bioinc.org/news/2023/11/3/aclarity-secures-16m-in-series-a-funding-to-deploy-low-energy-pfas-forever-chemical-destruction-solution",
+  "country": "USA",
+  "kw": "PFAS, forever chemicals, perfluoroalkyl substances, PFOA, PFOS, short-chain PFAS, PFAS destruction, electrochemical oxidation, EO, boron-doped diamond electrodes, landfill leachate, industrial wastewater, foam fractionate, RO concentrate, municipal utilities, landfill operators, water treatment, EPA PFAS MCL, mineralization, defluorination, Octa system, mobile treatment units, PFAS concentrate destruction, ion exchange regenerant, water reuse, environmental services"
+ },
+ {
+  "name": "Addis Energy",
+  "apps": [],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "project": "Underground ammonia catalysts",
+  "hard": "Mineral redox in water, high heat and pressure",
+  "linkedin": "https://www.linkedin.com/company/addisenergy",
+  "founded": 2024,
+  "raised_m": 17.3,
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Iron(III) ligand that strips the passivating oxide off the rock face",
+  "website": "https://www.addisenergy.com",
+  "hq": "Somerville, USA",
+  "stage": "Seed",
+  "source": "https://www.businesswire.com/news/home/20251204221115/en/Addis-Energy-Secures-$8.3M-to-Scale-its-Transformative-Approach-to-Low-Cost-Ammonia-Production",
+  "kw": "geologic ammonia, underground ammonia production, engineered subsurface reactor, iron-rich rock, olivine, basalt, mafic and ultramafic rock, ferrous iron oxidation, nitrate reduction, mineral redox, iron(III) ligand, passivation layer, oxide removal, reservoir stimulation, high temperature brine, fertilizer, low-carbon ammonia, green ammonia, Haber-Bosch alternative, nitrogen, oil and gas drilling, in-situ reactor"
+ },
+ {
+  "name": "Akash Systems",
+  "apps": [],
+  "cats": [
+   "Semiconductor materials"
+  ],
+  "why": [
+   "Diamond-GaN interface thermal conductance"
+  ],
+  "why_not": [],
+  "product": "Diamond-cooled chips and servers",
+  "buyer": "Data centers, satellites",
+  "stage": "Series A + CHIPS Act award",
+  "raised_m": null,
+  "hq": "Oakland, USA",
+  "website": "https://akashsystems.com",
+  "source": "https://www.axios.com/2024/11/13/akash-systems-chips-act",
+  "fit": "Researched",
+  "country": "USA",
+  "linkedin": "https://www.linkedin.com/company/akash-systems",
+  "founded": 2017,
+  "kw": "diamond cooling, GaN-on-diamond, gallium nitride, thermal management, heat spreader, synthetic diamond, CVD diamond, chip cooling, AI servers, GPU cooling, data centers, satellite communications, RF power amplifiers, satellite radios, space electronics, semiconductor packaging, CHIPS Act, hyperscalers, telecom, thermal interface, junction temperature, power density, defense electronics, LEO satellites, ground stations"
+ },
+ {
+  "name": "Allium Engineering",
+  "apps": [
+   "Rebar"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Stainless-steel-clad corrosion-resistant rebar",
+  "relation": "sell",
+  "raised_m": 24.75,
+  "fit": "Researched",
+  "stage": "Series A",
+  "source": "https://www.caplight.com/company/allium-engineering",
+  "website": "https://www.alliumeng.com",
+  "hq": "Billerica, USA",
+  "country": "USA",
+  "kw": "corrosion-resistant rebar, stainless-steel-clad rebar, clad steel reinforcement, chloride corrosion, concrete reinforcement, bridges, marine structures, parking garages, road salt, deicing salts, infrastructure durability, epoxy-coated rebar alternative, galvanized rebar alternative, steel mills, DOT, civil engineering, construction materials, highway agencies, long service life, steel cladding, metallurgical bond"
+ },
+ {
+  "name": "Allonnia",
+  "apps": [
+   "Dioxane"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Microbial 1,4-dioxane groundwater bioremediation",
+  "relation": "sell",
+  "raised_m": 110.65,
+  "fit": "Researched",
+  "website": "https://www.allonnia.com",
+  "linkedin": "https://www.linkedin.com/company/allonnia",
+  "hq": "Boston, USA",
+  "founded": 2019,
+  "stage": "Series A",
+  "source": "https://pulse2.com/allonnia-bio-ingenuity-company-brings-in-30-million-in-funding/amp/",
+  "country": "USA",
+  "kw": "1,4-dioxane, groundwater remediation, bioremediation, microbial degradation, bioaugmentation, chlorinated solvents, emerging contaminants, PFAS, surface active foam fractionation, SAFF, landfill leachate, contaminated sites, Superfund, environmental consultants, engineered biology, wastewater, mining water, water treatment, 1,4-D, cyclic ether, co-contaminants, TCE, site cleanup, Department of Defense sites, ex-situ treatment, in-situ treatment"
+ },
+ {
+  "name": "Alsym Energy",
+  "apps": [],
+  "cats": [
+   "Batteries & energy storage"
+  ],
+  "why": [
+   "Aqueous electrolytes and lithium-free electrode chemistry"
+  ],
+  "why_not": [],
+  "product": "Non-flammable water-based batteries",
+  "buyer": "Grid, marine, industry",
+  "stage": "Series C",
+  "raised_m": 110,
+  "hq": "Woburn, USA",
+  "website": "https://www.alsym.com",
+  "source": "https://pulse2.com/alsym-energy-78-million-raised-to-develop-next-gen-non-flammable-rechargeable-batteries",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2015,
+  "employees": "51-200",
+  "kw": "water-based battery, aqueous battery, non-flammable battery, lithium-free, cobalt-free, metal oxide cathode, grid storage, stationary energy storage, long-duration storage, marine batteries, shipping, industrial decarbonization, utilities, data center backup, safe battery chemistry, low-cost storage, Alsym Green, sodium-based electrolyte, thermal runaway, fire safety, ships, ports, India, manufacturing scale-up"
+ },
+ {
+  "name": "AmiNIC",
+  "apps": [
+   "Freshness"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Handheld biogenic amine meat freshness sensor",
+  "relation": "sell",
+  "linkedin": "https://www.linkedin.com/company/aminic",
+  "fit": "Researched",
+  "hq": "Denmark",
+  "founded": 2015,
+  "stage": "Early-stage VC + EU grants",
+  "source": "https://pitchbook.com/profiles/company/268527-70",
+  "country": "Denmark",
+  "kw": "biogenic amines, meat freshness, fish freshness, spoilage detection, handheld sensor, histamine, putrescine, cadaverine, volatile amines, TVB-N, food safety, food quality testing, colorimetric sensor, retailers, meat processors, food inspectors, shelf life, food waste, electrochemical sensor, portable analyzer, seafood, poultry, quality control"
+ },
+ {
+  "name": "Aquafortus",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Pair design, two targets at once"
+  ],
+  "website": "https://aquafortus.com",
+  "fit": "Worth a call",
+  "problem": "Absorbent and regenerant pair that pulls water out of 5–6 M brine",
+  "hq": "Auckland, New Zealand",
+  "founded": 2016,
+  "raised_m": 24.5,
+  "stage": "Series A",
+  "source": "https://www.watertechonline.com/industry/article/14290233/water-technology-company-aquafortus-raises-17m",
+  "country": "New Zealand",
+  "kw": "brine concentration, zero liquid discharge, ZLD, hypersaline brine, water recovery, solvent extraction, draw solution, absorbent regenerant, crystallization, lithium brine, mining wastewater, produced water, desalination brine, industrial wastewater, mineral recovery, salt recovery, evaporation alternative, low-energy dewatering, AFT, thermal evaporation replacement, membrane brine, waste minimization, New Zealand"
+ },
+ {
+  "name": "Avnos",
+  "apps": [
+   "CO₂ capture"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Hybrid DAC capturing CO2 and water",
+  "relation": "sell",
+  "raised_m": 53,
+  "linkedin": "https://www.linkedin.com/company/avnos-inc",
+  "fit": "Researched",
+  "website": "https://www.avnos.com",
+  "hq": "Los Angeles, USA",
+  "founded": 2020,
+  "stage": "Series A",
+  "source": "https://www.esgtoday.com/cleantech-startup-avnos-raises-36-million-to-capture-carbon-and-water-from-atmosphere/",
+  "country": "USA",
+  "kw": "direct air capture, DAC, hybrid DAC, HDAC, CO2 removal, water production, sorbent, moisture swing, carbon removal credits, CDR, 45Q, DAC hubs, geologic storage, carbon dioxide capture, water-positive DAC, climate tech, sorbent cycling, heat and electricity, water co-production, arid regions, Southern California, carbon removal buyers, Microsoft, JetBlue, offtake, low-carbon fuels, climate policy, IRA"
+ },
+ {
+  "name": "Biome Makers",
+  "apps": [
+   "Mousy wine"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Wine microbiome sequencing to flag spoilage microbes",
+  "relation": "sell",
+  "fit": "Researched",
+  "website": "https://biomemakers.com",
+  "hq": "El Macero, USA",
+  "founded": 2015,
+  "raised_m": 22.94,
+  "stage": "Series B",
+  "source": "https://agfundernews.com/biome-makers-gets-15m-to-help-farmers-tap-into-soil-microbiome",
+  "country": "USA",
+  "kw": "wine microbiome, soil microbiome, DNA sequencing, metagenomics, spoilage microbes, Brettanomyces, lactic acid bacteria, acetic acid bacteria, winery quality control, vineyard soil health, BeCrop, agriculture analytics, growers, winemakers, fermentation, food and beverage testing, 16S, ITS, amplicon sequencing, bioindicators, crop health, AI analytics, food safety, laboratory services, sustainable agriculture, regenerative farming"
+ },
+ {
+  "name": "Bloom Biorenewables",
+  "apps": [
+   "Formaldehyde"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Adhesive-grade lignin to replace synthetic resins",
+  "relation": "compete",
+  "raised_m": 21,
+  "fit": "Researched",
+  "website": "https://www.bloombiorenewables.com",
+  "hq": "Marly, Switzerland",
+  "founded": 2019,
+  "stage": "Series A",
+  "source": "https://www.amcor.com/media/news/amcor-lift-off-bloom-biorenewables-series-a-funding",
+  "country": "Switzerland",
+  "kw": "lignin, biorefinery, adhesive-grade lignin, aldehyde-assisted fractionation, lignocellulose, hemicellulose sugars, bio-based resins, phenol-formaldehyde replacement, wood adhesives, plywood, particleboard, bio-aromatics, cosmetics ingredients, flavors and fragrances, renewable chemicals, forestry residues, wood panel makers, aromatic monomers, xylose, cellulose pulp, platform chemicals, green chemistry, EPFL spinout, Switzerland, adhesive makers"
+ },
+ {
+  "name": "Boston Metal",
+  "apps": [],
+  "cats": [
+   "Advanced materials & coatings"
+  ],
+  "why": [
+   "Inert anode alloys and electrolyte design"
+  ],
+  "why_not": [],
+  "product": "Molten oxide electrolysis steel, metals",
+  "buyer": "Steelmakers, miners",
+  "stage": "Series C",
+  "raised_m": 410,
+  "hq": "Woburn, USA",
+  "website": "https://www.bostonmetal.com",
+  "source": "https://www.technologyreview.com/2026/05/20/1137523/boston-metal-funding-critical-metals/",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2012,
+  "kw": "molten oxide electrolysis, MOE, green steel, low-carbon steel, iron ore, inert anode, electrowinning, steel decarbonization, critical metals, ferroalloys, niobium, tantalum, vanadium, mining waste, tin slag, steelmakers, miners, metals production, Brazil, electrolysis cell, decarbonized steel, primary iron, scope 3 emissions, automakers, high-value metals, MIT spinout, ArcelorMittal, Vale"
+ },
+ {
+  "name": "Breaking",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Needs them to accept a chemical beside the microbe"
+  ],
+  "project": "Enzymes that break down mixed plastics",
+  "hard": "Carbon-carbon backbones",
+  "linkedin": "https://www.linkedin.com/company/breakingco",
+  "founded": 2024,
+  "raised_m": 10.5,
+  "fit": "Worth a call",
+  "problem": "Iron or manganese pro-oxidant ligand that sits on a polyolefin surface",
+  "website": "https://www.breaking.com",
+  "hq": "Boston, USA",
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://dallasinnovates.com/breaking-a-plastic-degradation-startup-emerges-from-stealth-with-10-5m-after-gestating-at-colossal/",
+  "country": "USA",
+  "kw": "plastic degradation, microbial plastic breakdown, X-32 microbe, polyolefins, polyethylene, polypropylene, PET, nylon, mixed plastic waste, carbon-carbon backbone, pro-oxidant, iron or manganese catalyst, oxo-degradation, biodegradation, landfill, ocean plastic, waste management, Colossal Biosciences spinout, synthetic biology, microplastics, plastic pollution, enzymatic degradation, polymer oxidation, recycling alternative"
+ },
+ {
+  "name": "CURA Climate",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Their CTO works on ML for materials"
+  ],
+  "project": "Electrodes for limestone electrolysis",
+  "hard": "High pH, calcium scaling",
+  "linkedin": "https://www.linkedin.com/company/curaclimate",
+  "founded": 2025,
+  "raised_m": 11.0,
+  "fit": "Worth a call",
+  "problem": "Antiscalant for calcium ions and calcite faces at pH 13–14, over magnesium",
+  "hq": "Calgary, Canada",
+  "stage": "Seed",
+  "source": "https://startupsmagazine.co.uk/cura-climate-raises-10m-to-advance-its-decarbonised-cement-technology",
+  "country": "Canada",
+  "kw": "low-carbon cement, decarbonized cement, limestone electrolysis, electrochemical lime production, calcium hydroxide, calcium carbonate, clinker, CO2 capture, high pH, scaling, antiscalant, calcite, electrodes, cement plants, concrete, construction materials, carbon-free cement, Portland cement, decarbonised cement, lime kiln replacement, process emissions, scale inhibitor, alkaline electrolysis, Canada"
+ },
+ {
+  "name": "Candid Therapeutics",
+  "apps": [],
+  "cats": [
+   "Therapeutics (wet-lab biotech)"
+  ],
+  "why": [
+   "Antibody affinity and developability tuning"
+  ],
+  "why_not": [],
+  "product": "T-cell engager antibodies, autoimmunity",
+  "buyer": "Pharma partners, patients",
+  "stage": "Late private; Nasdaq reverse merger with Rallybio pending",
+  "raised_m": 875,
+  "hq": "San Diego, USA",
+  "website": "https://www.candidrx.com",
+  "source": "https://www.biopharmadive.com/news/candid-therapeutics-biotech-startup-launch-bispecific-t-cell-engagers-autoimmune/726104/",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2024,
+  "kw": "T-cell engagers, TCE, bispecific antibodies, autoimmune disease, B-cell depletion, CD20, CD19, BCMA, lupus, rheumatoid arthritis, immunology, biologics, antibody therapeutics, drug development, clinical trials, pharma partners, licensing, bispecifics, trispecifics, plasma cells, systemic sclerosis, myasthenia gravis, immune reset, in-licensing, biotech startup, San Diego"
+ },
+ {
+  "name": "CarbonCapture Inc.",
+  "apps": [
+   "CO₂ capture"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Modular solid-sorbent DAC machines, swappable sorbents",
+  "relation": "sell",
+  "raised_m": 80,
+  "linkedin": "https://www.linkedin.com/company/carbon-capture-inc",
+  "fit": "Researched",
+  "website": "https://www.carboncapture.com",
+  "hq": "Los Angeles, USA",
+  "founded": 2019,
+  "stage": "Series A",
+  "source": "https://salestools.io/en/blog/carboncapture-raises-80m-series-a",
+  "country": "USA",
+  "kw": "direct air capture, DAC, modular DAC, solid sorbent, swappable sorbent cartridges, zeolite, amine sorbent, temperature vacuum swing, CO2 removal, carbon removal credits, CDR, geologic sequestration, 45Q, Project Bison, DAC hubs, climate tech, Wyoming, Alberta, open-system DAC, sorbent upgrades, factory-built modules, low-cost DAC, carbon credits, removal buyers, Frontier"
+ },
+ {
+  "name": "ChEmpower",
+  "apps": [
+   "TMAH recovery"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Abrasive-free polishing chelator for copper, over tantalum nitride, cobalt and ruthenium",
+  "raised_m": 24.0,
+  "hq": "Beaverton, USA",
+  "stage": "Series A",
+  "source": "https://www.businesswire.com/news/home/20250424283840/en/",
+  "kw": "chemical mechanical planarization, CMP, abrasive-free polishing, functional polishing pad, Chakra pad, CMP slurry replacement, copper interconnects, barrier layers, tantalum nitride, cobalt, ruthenium, chelators, semiconductor fabs, advanced packaging, HBM, AI chips, wafer polishing, water reduction, chip manufacturing, dielectric CMP, through-silicon vias, TSV, hybrid bonding, defectivity, consumables, Intel alumni, Oregon"
+ },
+ {
+  "name": "ChemFinity",
+  "apps": [
+   "Gold catcher"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "linkedin": "https://www.linkedin.com/company/chemfinitytech",
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Ligand for iridium, platinum and palladium in acidic produced water, over iron at 1000×",
+  "raised_m": 7.0,
+  "website": "https://www.chemfinitytech.com",
+  "hq": "Brooklyn, USA",
+  "founded": 2022,
+  "stage": "Seed",
+  "source": "https://www.tryfundable.ai/company/chemfinity-technologies",
+  "kw": "metal recovery, critical minerals, porous polymer sorbents, selective ligands, platinum group metals, PGMs, iridium, platinum, palladium, lithium, produced water, acidic wastewater, mining effluent, metal-organic frameworks, adsorbents, e-waste recycling, refining, hydrometallurgy, electrolyzer catalysts, COFs, covalent organic frameworks, gold, rare earths, wastewater metal removal, lab-to-pilot, NYC"
+ },
+ {
+  "name": "Claros Technologies",
+  "apps": [
+   "PFAS & TFA"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "PFAS capture plus UV photochemical destruction",
+  "relation": "sell",
+  "raised_m": 84.5,
+  "linkedin": "https://www.linkedin.com/company/clarostech",
+  "fit": "Researched",
+  "website": "https://clarostechnologies.com",
+  "hq": "Minneapolis, USA",
+  "founded": 2018,
+  "stage": "Series B",
+  "source": "https://raising.fi/news/claros-technologies-series-b-july-2026",
+  "country": "USA",
+  "kw": "PFAS, forever chemicals, PFAS capture, PFAS destruction, UV photochemical destruction, UV reductive defluorination, sorbent, industrial wastewater, landfill leachate, textile PFAS, firefighting foam, AFFF, municipal water, manufacturers, Minnesota, EPA PFAS rules, water treatment, photochemistry, short-chain PFAS, PFAS analytics, manufacturing effluent, treatment systems, pilot units, regulatory compliance"
+ },
+ {
+  "name": "Concretene",
+  "apps": [
+   "Cement"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Graphene admixture boosting concrete strength",
+  "relation": "compete",
+  "raised_m": 15.1,
+  "fit": "Researched",
+  "website": "https://www.kadma.co.uk",
+  "linkedin": "https://uk.linkedin.com/company/kadma-advanced-materials",
+  "hq": "Manchester, UK",
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://www.crunchbase.com/organization/concretene",
+  "country": "UK",
+  "kw": "graphene, graphene-enhanced concrete, concrete admixture, compressive strength, cement reduction, low-carbon concrete, nanomaterials, Levidian, Kadma, graphene oxide, construction, ready-mix concrete, contractors, embodied carbon, University of Manchester, dispersion, durability, crack resistance, reduced cement content, precast concrete, cement makers, Manchester, specifiers, sustainability targets, scope 3"
+ },
+ {
+  "name": "Cyclopure",
+  "apps": [
+   "PFAS",
+   "PFAS & TFA",
+   "TFA",
+   "dioxane"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Cyclodextrin PFAS adsorbent (DEXSORB), all chain lengths",
+  "relation": "compete",
+  "raised_m": 10,
+  "linkedin": "https://www.linkedin.com/company/cyclopure-inc.",
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Cyclodextrin cavity for ultrashort PFAS, TFA and 1,4-dioxane, over natural organics",
+  "website": "https://www.cyclopure.com",
+  "hq": "Evanston, USA",
+  "founded": 2016,
+  "employees": "11-50",
+  "stage": "Series B",
+  "source": "https://www.greentechmedia.com/industry/read/cyclopure-announces-series-b-funding-and-selection-by-c-en-as-394777",
+  "kw": "PFAS, forever chemicals, cyclodextrin, DEXSORB, adsorbent media, short-chain PFAS, ultrashort PFAS, TFA, trifluoroacetic acid, GenX, PFOA, PFOS, 1,4-dioxane, drinking water, point-of-use filters, municipal utilities, PFAS testing, activated carbon alternative, ion exchange alternative, beta-cyclodextrin, polymer adsorbent, rapid uptake, home filters, pitcher filters, wastewater, landfill leachate"
+ },
+ {
+  "name": "DePoly",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Reaction is run cold, not catalytic"
+  ],
+  "linkedin": "https://linkedin.com/company/depoly",
+  "fit": "Worth a call",
+  "problem": "Room-temperature ester-cleaving reagent for PET, over dyes, PVC and elastane",
+  "website": "https://www.depoly.co",
+  "hq": "Sion, Switzerland",
+  "founded": 2020,
+  "employees": "11-50",
+  "raised_m": 30,
+  "stage": "Seed",
+  "source": "https://tech.eu/2025/04/29/depoly-secures-23m-seed-to-launch-pet-recycling-plant-in-switzerland/",
+  "country": "Switzerland",
+  "kw": "PET recycling, chemical recycling, depolymerization, room-temperature depolymerization, terephthalic acid, PTA, monoethylene glycol, MEG, polyester textiles, mixed plastic waste, ester hydrolysis, dyes, PVC, elastane, packaging, fashion brands, circular economy, Switzerland, solvolysis, chemical depolymerization, textile waste, bottle waste, colored PET, recycled PET, rPET, PET producers"
+ },
+ {
+  "name": "Debut",
+  "apps": [],
+  "cats": [
+   "Industrial enzymes & biomanufacturing"
+  ],
+  "why": [
+   "Enzyme cascades for fragrance and actives"
+  ],
+  "why_not": [],
+  "product": "Cell-free biomade beauty actives",
+  "buyer": "Cosmetics brands",
+  "stage": "Series B",
+  "raised_m": 86.2,
+  "hq": "San Diego, USA",
+  "website": "https://debutbio.com",
+  "source": "https://cosmeticsdesign-europe.com/Article/2023/06/21/Biotech-company-Debut-secures-Series-B-funding-through-L-Oreal-venture-capital-fund-BOLD",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2019,
+  "employees": "101-250",
+  "kw": "cell-free biomanufacturing, biomade ingredients, beauty actives, cosmetic ingredients, synthetic biology, enzymatic synthesis, fermentation, skincare, clean beauty, ingredient supplier, L'Oreal partnership, bio-based actives, personal care brands, biocatalysis, fermentation-free, sustainable ingredients, cosmetic actives, skincare products, haircare, nature-identical molecules, bioactive compounds, consumer brands, contract manufacturing"
+ },
+ {
+  "name": "Dioxycle",
+  "apps": [
+   "Plastic-to-fuel catalyst"
+  ],
+  "cats": [
+   "Catalysts & green chemistry"
+  ],
+  "why": [
+   "Matched problem, no AI team",
+   "Copper catalysts selective for ethylene"
+  ],
+  "why_not": [],
+  "product": "CO2-to-ethylene electrolyzers",
+  "buyer": "Steel, chemical plants",
+  "stage": "Series A",
+  "raised_m": 17.0,
+  "hq": "Paris, France",
+  "website": "https://www.dioxycle.com",
+  "source": "https://www.esgtoday.com/sustainable-chemicals-startup-dioxycle-raises-17-million",
+  "project": "Copper catalysts, CO2 → ethylene",
+  "hard": "Product selectivity at high current",
+  "linkedin": "https://www.linkedin.com/company/dioxycle",
+  "valuation": null,
+  "fit": "Best fit",
+  "country": "France",
+  "problem": "Copper-alloy surface: CO–CO coupling to ethylene, hydrogen evolution suppressed",
+  "founded": 2021,
+  "employees": "11-50",
+  "kw": "CO2 electrolysis, CO2-to-ethylene, carbon monoxide electrolysis, electrolyzers, copper catalysts, CO-CO coupling, hydrogen evolution suppression, steel mill off-gas, carbon utilization, CCU, e-chemicals, ethylene, ethanol, chemical plants, steelmakers, low-carbon chemicals, gas fermentation, tandem electrolysis, membrane electrode assembly, MEA, gas diffusion electrode, ethylene production, chemical feedstock, France, US"
+ },
+ {
+  "name": "Electric Hydrogen",
+  "apps": [],
+  "cats": [
+   "Catalysts & green chemistry"
+  ],
+  "why": [
+   "Low-iridium catalysts and durable membranes"
+  ],
+  "why_not": [
+   "Only match is an iridium recycling ligand, a side quest for them"
+  ],
+  "product": "100 MW PEM electrolyzer plants",
+  "buyer": "Green hydrogen developers",
+  "stage": "Series C",
+  "raised_m": 600,
+  "hq": "Devens, USA",
+  "website": "https://eh2.com",
+  "source": "https://techcrunch.com/2023/10/03/electric-hydrogen-is-the-green-hydrogen-industrys-first-unicorn",
+  "project": "Low-iridium electrolyzer catalysts",
+  "hard": "Durability in acid",
+  "linkedin": "https://www.linkedin.com/company/electric-h2",
+  "valuation": "$1B (2023)",
+  "fit": "Not for us",
+  "country": "USA",
+  "founded": 2020,
+  "employees": "201-500",
+  "kw": "PEM electrolyzers, proton exchange membrane, green hydrogen, 100 MW electrolyzer plant, HYPRPlant, iridium, platinum catalysts, water electrolysis, hydrogen developers, green ammonia, e-fuels, steel, refineries, 45V tax credit, renewable hydrogen, utilities, electrolyzer stack, balance of plant, industrial-scale hydrogen, power-to-x, renewable power, Texas, Massachusetts"
+ },
+ {
+  "name": "Elementium Materials",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "MIT advisors will benchmark hard"
+  ],
+  "project": "Li-ion and Na-ion electrolytes",
+  "hard": "Interface reactions at the electrodes",
+  "linkedin": "https://www.linkedin.com/company/elementium-materials-inc",
+  "founded": 2024,
+  "raised_m": 11.0,
+  "fit": "Worth a call",
+  "problem": "Additive chelating manganese, nickel and cobalt ions over lithium, stable to 4.5 V",
+  "hq": "Katy, USA",
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://www.axios.com/pro/climate-deals/2026/03/06/elementium-11-million-battery-materials",
+  "country": "USA",
+  "kw": "battery electrolytes, lithium-ion electrolytes, sodium-ion electrolytes, electrolyte additives, high voltage cathodes, 4.5 V, transition metal dissolution, manganese, nickel, cobalt, chelating additives, SEI, CEI, electrode interface, cell makers, EV batteries, energy storage, Texas, electrolyte salts, solvents, cathode electrolyte interface, cycle life, battery safety, high nickel cathode"
+ },
+ {
+  "name": "EnergyX",
+  "apps": [
+   "Lithium"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Membrane DLE plants and lithium refining",
+  "relation": "sell",
+  "raised_m": 150,
+  "linkedin": "https://www.linkedin.com/company/energyx",
+  "fit": "Researched",
+  "website": "https://www.energyx.com",
+  "hq": "Austin, USA",
+  "founded": 2018,
+  "employees": "51-200",
+  "stage": "Series B",
+  "source": "https://en.wikipedia.org/wiki/Energy_Exploration_Technologies",
+  "country": "USA",
+  "kw": "direct lithium extraction, DLE, lithium refining, membranes, ion-selective membranes, LiTAS, lithium brine, salar, Smackover, oilfield brine, lithium carbonate, lithium hydroxide, battery materials, EV supply chain, critical minerals, Chile, Arkansas, lithium-ion conductive membranes, solvent extraction, mining partners, lithium producers, salars, battery makers, automakers, GM Ventures"
+ },
+ {
+  "name": "Enko",
+  "apps": [],
+  "cats": [
+   "Agriculture inputs"
+  ],
+  "why": [
+   "Target-selective, low-toxicity pesticide molecules"
+  ],
+  "why_not": [
+   "Competitor: DEL screening, machine learning and their own physics-based simulation"
+  ],
+  "product": "New crop protection active ingredients",
+  "buyer": "Agrochemical majors",
+  "stage": "Series C",
+  "raised_m": 140,
+  "hq": "Mystic, USA",
+  "website": "https://www.enko.ag",
+  "source": "https://eightroads.com/en/news/crop-health-company-enko-raises-80-million",
+  "project": "New crop protection molecules",
+  "hard": "Selective, low toxicity",
+  "linkedin": "https://www.linkedin.com/company/enko-ag",
+  "valuation": "$320M (2022)",
+  "fit": "Not for us",
+  "country": "USA",
+  "founded": 2017,
+  "employees": "11-50",
+  "kw": "crop protection, new active ingredients, fungicides, herbicides, insecticides, DNA-encoded libraries, chemical discovery, target-based discovery, agrochemicals, Syngenta, Bayer partners, growers, pest resistance, ag biotech, molecule screening, machine learning, novel chemistry, crop disease, fungicide resistance, insect resistance, weed control, regulatory approval, EPA registration, agricultural biotech, licensing, Mystic Connecticut"
+ },
+ {
+  "name": "Enlaza Therapeutics",
+  "apps": [],
+  "cats": [
+   "Therapeutics (wet-lab biotech)"
+  ],
+  "why": [
+   "Covalent warhead placement on protein binders"
+  ],
+  "why_not": [],
+  "product": "Covalent protein drugs for cancer",
+  "buyer": "Pharma partners, patients",
+  "stage": "Series A",
+  "raised_m": 161,
+  "hq": "San Diego, USA",
+  "website": "https://enlazatx.com",
+  "source": "https://www.businesswire.com/news/home/20240430950707/en/Enlaza-Therapeutics-Raises-100-Million-through-Its-Series-A-Financing-Led-by-the-Life-Sciences-Group-of-J.P.-Morgan-Private-Capital",
+  "fit": "Researched",
+  "country": "USA",
+  "linkedin": "https://www.linkedin.com/company/enlaza-therapeutics",
+  "founded": 2020,
+  "employees": "51-200",
+  "kw": "covalent biologics, covalent protein drugs, War-Lock platform, oncology, cancer, immunology, antibody alternatives, protein engineering, targeted therapy, pharma partners, drug development, clinical trials, covalent binders, solid tumors, immune cell engagers, T-cell engagers, biologics, durable target engagement, half-life, biotech, licensing, preclinical, San Diego"
+ },
+ {
+  "name": "Epoch Biodesign",
+  "apps": [],
+  "cats": [
+   "Industrial enzymes & biomanufacturing"
+  ],
+  "why": [
+   "Enzymes for nylon and mixed plastics"
+  ],
+  "why_not": [],
+  "product": "Plastic-depolymerizing enzymes and plant",
+  "buyer": "Fashion, packaging brands",
+  "stage": "Series A",
+  "raised_m": 50,
+  "hq": "London, UK",
+  "website": "https://www.epochbiodesign.com",
+  "source": "https://tech.eu/2025/03/05/epoch-biodesign-raises-18-3m-to-transform-plastic-waste-into-valuable-resources/",
+  "fit": "Researched",
+  "country": "UK",
+  "founded": 2019,
+  "employees": "51-200",
+  "kw": "plastic-eating enzymes, enzymatic recycling, depolymerization, PET, polyester, nylon, polyurethane, biorecycling, monomers, textile recycling, packaging waste, fashion brands, circular economy, AI enzyme design, plastic waste, enzyme engineering, enzymatic depolymerization, polymer recycling, textile waste, mixed plastics, bio-recycled monomers, recycling plants, London, nylon recycling, monomer recovery"
+ },
+ {
+  "name": "Estes Energy",
+  "apps": [
+   "Rebar inhibitor"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "project": "Magnesium alloy parts",
+  "hard": "Strength vs. corrosion",
+  "linkedin": "https://www.linkedin.com/company/estes-energy",
+  "founded": 2024,
+  "raised_m": 20.0,
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Magnesium corrosion inhibitor: sticks to Mg(OH)₂, blocks hydrogen in chloride water",
+  "website": "https://estes.energy",
+  "hq": "San Francisco, USA",
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://www.press.bmwgroup.com/usa/article/detail/T0451534EN_US/bmw-i-ventures-co-leads-investment-in-estes-energy-to-advance-state-of-the-art-battery-technology",
+  "kw": "battery pack platform, chemistry-agnostic battery packs, LFP, lithium iron phosphate, nickel cells, pack materials, magnesium alloy parts, magnesium corrosion, chloride corrosion, hydrogen evolution, lightweight structures, defense, aviation, marine, rail, off-highway, OEMs, battery manufacturing, BMW i Ventures, Fortescue, Fortescue Ventures, pack integration, US manufacturing"
+ },
+ {
+  "name": "Evertree",
+  "apps": [
+   "Formaldehyde"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Rapeseed-protein binder booster for wood panels",
+  "relation": "compete",
+  "raised_m": 26,
+  "fit": "Researched",
+  "hq": "Venette, France",
+  "founded": 2016,
+  "employees": "11-50",
+  "source": "https://www.chemicalprocessing.com/industrynews/2016/avril-joint-venture-aims-at-wood-panel-industry/",
+  "country": "France",
+  "kw": "rapeseed protein, plant protein binder, bio-based adhesives, wood panels, particleboard, MDF, plywood, urea-formaldehyde reduction, formaldehyde-free, resin booster, oilseed, Avril, Cargill, panel makers, furniture, construction materials, protein-based binder, partial resin replacement, wood composites, panel board, emissions reduction, bio-based content, France, wood adhesives, sustainable binders"
+ },
+ {
+  "name": "Flexell Space",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Light absorption and ion drift inside the device"
+  ],
+  "project": "Radiation-hard perovskite solar cells",
+  "hard": "Proton damage, ion migration",
+  "linkedin": "https://www.linkedin.com/company/flexellspace",
+  "founded": 2024,
+  "raised_m": 25.0,
+  "fit": "Not for us",
+  "website": "https://flexellspace.com",
+  "hq": "Uiwang, South Korea",
+  "employees": "11-50",
+  "stage": "Series A",
+  "source": "https://www.linkedin.com/company/flexellspace",
+  "country": "South Korea",
+  "kw": "space solar cells, perovskite solar cells, radiation-hard photovoltaics, flexible solar, proton radiation damage, ion migration, satellites, LEO constellations, space power, lightweight solar arrays, thin-film PV, South Korea, aerospace, flexible substrate, power per weight, encapsulation, space qualification, small satellites, space agencies"
+ },
+ {
+  "name": "Fluxnium",
+  "apps": [
+   "Cesium catcher"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "website": "https://www.fluxnium.com",
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Uranyl ligand on fibre at 3 ppb uranium, over 2 ppb vanadium in seawater",
+  "raised_m": 7.0,
+  "hq": "Santa Monica, USA",
+  "stage": "Seed",
+  "source": "https://www.trysignalbase.com/news/funding/fluxnium-inc-raises-7m-seed-round",
+  "kw": "uranium from seawater, uranium extraction, amidoxime polymer fibers, adsorbent fibers, uranyl, vanadium competition, offshore buoys, elution, yellowcake, nuclear fuel supply chain, domestic uranium, DOE national labs, Constellation Energy, nuclear utilities, critical minerals, seawater mining, ocean uranium, ocean mining, nuclear power, fuel security"
+ },
+ {
+  "name": "Fortera",
+  "apps": [
+   "Cement"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Bolt-on CO2-mineralized low-carbon cement",
+  "relation": "sell",
+  "raised_m": 149.9,
+  "fit": "Researched",
+  "website": "https://www.forteraglobal.com",
+  "hq": "San Jose, USA",
+  "founded": 2019,
+  "stage": "Series D",
+  "source": "https://www.caplight.com/company/fortera",
+  "country": "USA",
+  "linkedin": "https://www.linkedin.com/company/fortera",
+  "employees": "51-200",
+  "kw": "low-carbon cement, CO2 mineralization, recarbonation, reactive calcium carbonate, ReCarb, vaterite, bolt-on cement plant, supplementary cementitious material, clinker reduction, cement kiln CO2, carbon capture and utilization, cement producers, concrete, construction, calcined limestone, cement plant retrofit, CO2 reuse, carbon utilization, lower clinker, embodied carbon, ready-mix, California"
+ },
+ {
+  "name": "Fresh Inset",
+  "apps": [
+   "Ethylene"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "1-MCP insets blocking ethylene in produce",
+  "relation": "compete",
+  "raised_m": 6.0,
+  "linkedin": "https://www.linkedin.com/company/fresh-inset",
+  "fit": "Researched",
+  "website": "https://freshinset.com",
+  "hq": "Toruń, Poland",
+  "founded": 2018,
+  "employees": "11-50",
+  "stage": "Series B",
+  "source": "https://www.cbinsights.com/company/fresh-inset/financials",
+  "country": "Poland",
+  "kw": "1-MCP, 1-methylcyclopropene, ethylene blocker, Vidre+, ripening control, produce shelf life, post-harvest, fruits and vegetables, packaging inserts, food waste, growers, packhouses, retailers, distributors, cold chain, Poland, ethylene inhibition, controlled ripening, freshness extension, fruit packaging, clamshells, apples, berries, avocados, flowers, export, cold storage, supermarkets, food loss"
+ },
+ {
+  "name": "GlycoSurf",
+  "apps": [
+   "Rare-earth separator"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "linkedin": "https://www.linkedin.com/company/glycosurf-llc",
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Glycolipid head group for neodymium and dysprosium, over lanthanum and cerium",
+  "raised_m": null,
+  "website": "https://www.glycosurf.com",
+  "hq": "Salt Lake City, USA",
+  "founded": 2013,
+  "employees": "2-10",
+  "stage": "Grant-funded",
+  "source": "https://www.cbinsights.com/company/glycosurf/financials",
+  "kw": "glycolipids, biosurfactants, rhamnolipids, sustainable surfactants, rare earth separation, neodymium, dysprosium, lanthanum, cerium, solvent extraction alternative, metal flotation, critical minerals, magnet supply chain, mining, personal care, agriculture, Utah, glycolipid surfactants, green chemistry, biodegradable surfactants, rare earth elements, REE separation, mineral processing, separation chemistry, Salt Lake City"
+ },
+ {
+  "name": "Group14 Technologies",
+  "apps": [],
+  "cats": [
+   "Batteries & energy storage"
+  ],
+  "why": [
+   "Porous carbon scaffold and silicon deposition chemistry"
+  ],
+  "why_not": [
+   "Their own pain is mechanical, out of reach"
+  ],
+  "product": "Silicon-carbon battery anode material",
+  "buyer": "Battery cell makers",
+  "stage": "Series D",
+  "raised_m": 1000,
+  "hq": "Woodinville, USA",
+  "website": "https://www.group14.technology",
+  "source": "https://www.cleantechalliance.org/2025/08/20/group14-raises-463m-bolsters-global-footprint-amid-clean-tech-headwinds/",
+  "project": "Silicon-carbon anode scaffolds",
+  "hard": "Disordered, amorphous structure",
+  "linkedin": "https://www.linkedin.com/company/group14-technologies",
+  "valuation": "$1B (2022)",
+  "fit": "Worth a call",
+  "problem": "Additive that sticks to silicon and not to graphite or the cathode oxide",
+  "country": "USA",
+  "founded": 2015,
+  "employees": "201-500",
+  "kw": "silicon-carbon anode, SCC55, silicon anode, lithium-ion batteries, porous carbon scaffold, silane CVD, energy density, fast charging, EV batteries, consumer electronics, battery cell makers, electrolyte additives, SEI, graphite replacement, Moses Lake, battery materials, SCC55, anode powder, battery plants, South Korea, SK, Porsche, drop-in material"
+ },
+ {
+  "name": "Hazel Technologies",
+  "apps": [
+   "Ethylene"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "1-MCP releasing sachets for produce",
+  "relation": "license",
+  "raised_m": 87,
+  "linkedin": "https://www.linkedin.com/company/hazel-technologies",
+  "fit": "Researched",
+  "website": "https://www.hazeltechnologies.com",
+  "hq": "Chicago, USA",
+  "founded": 2015,
+  "employees": "51-200",
+  "stage": "Series C",
+  "source": "https://impactalpha.com/hazel-technologies-raises-70-million-for-packaging-that-curbs-food-spoilage/",
+  "country": "USA",
+  "kw": "1-MCP, 1-methylcyclopropene, ethylene inhibitor, sachets, post-harvest, produce shelf life, fruit ripening, avocados, apples, cut flowers, food waste, packers, growers, distributors, retailers, cold chain, USDA, slow release, packaging sachets, Hazel 100, shelf life extension, pears, bananas, stone fruit, cold chain, food loss, exporters, supply chain, Chicago"
+ },
+ {
+  "name": "Heirloom",
+  "apps": [],
+  "cats": [
+   "Carbon capture & climate materials"
+  ],
+  "why": [
+   "Faster carbonation of mineral sorbents"
+  ],
+  "why_not": [],
+  "product": "Limestone direct air capture",
+  "buyer": "Carbon removal buyers",
+  "stage": "Series B",
+  "raised_m": 204,
+  "hq": "Brisbane, USA",
+  "website": "https://www.heirloomcarbon.com",
+  "source": "https://pulse2.com/heirloom-direct-air-capture-company-raises-150-million-series-b",
+  "fit": "Researched",
+  "country": "USA",
+  "linkedin": "https://www.linkedin.com/company/heirloom-carbon",
+  "founded": 2020,
+  "employees": "51-200",
+  "kw": "direct air capture, DAC, limestone, calcium oxide, calcium hydroxide, mineral carbonation, kiln calcination, electric kiln, CO2 removal, carbon removal credits, CDR, geologic storage, concrete storage, 45Q, Louisiana DAC hub, Microsoft, Frontier buyers, Oxide looping, calcium looping, carbonation trays, robotic trays, CarbonCure, renewable electricity, carbon removal, Louisiana, California"
+ },
+ {
+  "name": "Hexigone Inhibitors",
+  "apps": [
+   "Rebar"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "On-demand corrosion inhibitor additives for coatings",
+  "relation": "compete",
+  "raised_m": 2.5,
+  "fit": "Researched",
+  "website": "https://www.hexigone.com",
+  "linkedin": "https://www.linkedin.com/company/hexigone-inhibitors",
+  "hq": "Port Talbot, UK",
+  "founded": 2016,
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://www.capitallaw.co.uk/?p=8163",
+  "country": "UK",
+  "kw": "corrosion inhibitors, smart coatings, on-demand release, chromate replacement, zinc phosphate replacement, Intelli-ion, anticorrosive pigments, paints and coatings, steel protection, aluminum, aerospace, automotive, marine, coating formulators, REACH, metal protection, corrosion protection, active inhibitors, ion exchange pigment, primer additives, steel structures, wind turbines, offshore, rail, Wales"
+ },
+ {
+  "name": "Hycamite",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Carbon quality is out of reach"
+  ],
+  "linkedin": "https://www.linkedin.com/company/hycamite-ltd",
+  "fit": "Worth a call",
+  "problem": "Methane pyrolysis alloy: low coking, sellable carbon",
+  "website": "https://hycamite.com",
+  "hq": "Kokkola, Finland",
+  "founded": 2020,
+  "employees": "51-200",
+  "raised_m": 76.8,
+  "stage": "Series A",
+  "source": "https://www.magnussonlaw.com/energy/magnusson-advised-hycamite-on-financing-round-of-44-million-euros-to-support-production-of-low-carbon-hydrogen-and-solid-carbon/",
+  "country": "Finland",
+  "kw": "methane pyrolysis, catalytic methane decomposition, turquoise hydrogen, low-emission hydrogen, solid carbon, graphite, carbon nanomaterials, battery anode graphite, catalyst alloy, coking, natural gas, biogas, Finland, steel, chemicals, industrial hydrogen, carbon co-products, catalytic decomposition, carbon black, battery materials, graphite production, hydrogen plant, industrial gases, steelmakers, Kokkola"
+ },
+ {
+  "name": "Hyme Energy",
+  "apps": [
+   "Heat and cold wraps"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "fit": "Best fit",
+  "country": "Denmark",
+  "problem": "Sodium–potassium hydroxide eutectic blend plus a steel inhibitor at 400–600 °C",
+  "raised_m": 30.0,
+  "website": "https://hyme.energy",
+  "hq": "Copenhagen, Denmark",
+  "founded": 2021,
+  "stage": "Venture (€8M round, 2023)",
+  "source": "https://techsavvy.media/en/young-energy-startup-secures-another-e8m-now-they-have-raised-over-e28m-in-two-years/",
+  "employees": "11-50",
+  "kw": "molten hydroxide salt, thermal energy storage, sodium hydroxide, potassium hydroxide, eutectic salt, high temperature heat, 400-600 C, industrial process heat, steam, steel corrosion, corrosion inhibitor, power-to-heat, long-duration energy storage, district heating, utilities, Denmark, salt storage, heat batteries, renewable heat, decarbonized steam, food industry, chemical industry"
+ },
+ {
+  "name": "Innoscentia",
+  "apps": [
+   "Freshness"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Color-changing spoilage-gas ink food labels",
+  "relation": "compete",
+  "raised_m": 2.4,
+  "linkedin": "https://www.linkedin.com/company/innoscentia-ab",
+  "fit": "Researched",
+  "website": "https://www.innoscentia.com",
+  "hq": "Malmö, Sweden",
+  "founded": 2015,
+  "employees": "2-10",
+  "stage": "Seed",
+  "source": "https://oresundstartups.com/tag/innoscentia/",
+  "country": "Sweden",
+  "kw": "food freshness labels, spoilage indicator, color-changing ink, printed sensors, amines, spoilage gases, meat, fish, dynamic expiry date, smart packaging, food waste, retailers, packaging converters, Sweden, volatile amines, freshness indicators, color change, intelligent packaging, printed electronics, labels, chilled food, meat packaging, food brands, supermarkets, Malmo"
+ },
+ {
+  "name": "Irresistible Materials",
+  "apps": [],
+  "cats": [
+   "Semiconductor materials"
+  ],
+  "why": [
+   "Resist molecules for sub-nm EUV patterning"
+  ],
+  "why_not": [
+   "EUV chemistry needs excited states"
+  ],
+  "product": "EUV photoresists",
+  "buyer": "Chip fabs, resist suppliers",
+  "stage": "Strategic round (TOK, 2026)",
+  "raised_m": null,
+  "hq": "Birmingham, UK",
+  "website": "https://www.irresistiblematerials.com",
+  "source": "https://www.osborneclarke.com/node/28221",
+  "project": "EUV photoresist molecules",
+  "hard": "Sub-nm patterning, radiation chemistry",
+  "linkedin": "https://www.linkedin.com/company/irresistible-materials",
+  "valuation": null,
+  "fit": "Not for us",
+  "country": "UK",
+  "founded": 2010,
+  "employees": "2-10",
+  "kw": "EUV photoresist, extreme ultraviolet lithography, multi-trigger resist, MTR, spin-on carbon, hardmask, line edge roughness, high NA EUV, chip fabs, resist suppliers, semiconductor materials, advanced nodes, lithography, metal-containing resist, chemically amplified resist, CAR, resolution, sensitivity, defectivity, patterning, logic chips, memory chips, wafer fabs, ASML, high-NA, sub-2 nm"
+ },
+ {
+  "name": "Lilac Solutions",
+  "apps": [
+   "Lithium"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Ion-exchange beads for brine lithium extraction",
+  "relation": "compete",
+  "raised_m": 315,
+  "linkedin": "https://www.linkedin.com/company/lilac-solutions-inc.",
+  "fit": "Researched",
+  "website": "https://lilacsolutions.com",
+  "hq": "Oakland, USA",
+  "founded": 2016,
+  "employees": "51-200",
+  "stage": "Series C",
+  "source": "https://autotechinsight.ihsmarkit.com/news/5274281/lithium-extraction-technology-startup-lilac-solutions-raises-145-million-in-series-c-funding",
+  "country": "USA",
+  "kw": "direct lithium extraction, DLE, ion-exchange beads, lithium brine, salar, Great Salt Lake, geothermal brine, lithium carbonate, lithium chloride, battery materials, EV supply chain, critical minerals, mining, Nevada, Argentina, ion exchange, lithium selectivity, brine reinjection, lithium producers, salar projects, mining companies, battery supply chain, automakers"
+ },
+ {
+  "name": "Lithium Harvest",
+  "apps": [
+   "Lithium"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Lithium extraction from oilfield wastewater",
+  "relation": "sell",
+  "raised_m": null,
+  "linkedin": "https://www.linkedin.com/company/lithium-harvest-company",
+  "fit": "Researched",
+  "website": "https://lithiumharvest.com",
+  "hq": "Aalborg, Denmark",
+  "founded": 2020,
+  "employees": "11-50",
+  "stage": "Public (OTC, ex-Sustainable Projects Group)",
+  "source": "https://www.renaissancecapital.com/IPO-Center/News/105129/Early-stage-lithium-company-Lithium-Harvest-files-for-a-$20-million-NYSE-up",
+  "country": "Denmark",
+  "kw": "lithium extraction, oilfield wastewater, produced water, direct lithium extraction, DLE, lithium hydroxide, lithium carbonate, oil and gas operators, water recycling, wastewater reuse, battery materials, critical minerals, Denmark, brine processing, oilfield brine, wastewater recycling, oil and gas, geothermal brine, water reuse, lithium hydroxide monohydrate, battery supply chain"
+ },
+ {
+  "name": "Lyten",
+  "apps": [],
+  "cats": [
+   "Batteries & energy storage"
+  ],
+  "why": [
+   "Matched problem, no AI team",
+   "Polysulfide-trapping carbon hosts and electrolytes"
+  ],
+  "why_not": [],
+  "product": "Lithium-sulfur cells, 3D graphene",
+  "buyer": "Drones, defense, storage",
+  "stage": "Series C",
+  "raised_m": 625,
+  "hq": "San Jose, USA",
+  "website": "https://lyten.com",
+  "source": "https://mercomindia.com/lyten-raises-over-200-million-in-equity-funding",
+  "project": "Sulfur hosts for Li-S cells",
+  "hard": "Polysulfide shuttle",
+  "linkedin": "https://www.linkedin.com/company/lyten-inc",
+  "valuation": "$1.3B (2025)",
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Electrolyte additive binding Li₂S₄₋₈, over TFSI⁻ and free Li⁺",
+  "founded": 2015,
+  "employees": "501-1000",
+  "kw": "lithium-sulfur batteries, Li-S, 3D graphene, polysulfides, polysulfide shuttle, electrolyte additives, lithium-metal anode, LiTFSI, drones, defense, satellites, energy storage, battery manufacturing, Northvolt assets, lightweight batteries, lithium-sulfur cells, sulfur cathode, carbon materials, graphene composites, lightweight cells, energy storage systems, battery recycling, aerospace, EV batteries"
+ },
+ {
+  "name": "Mantel",
+  "apps": [],
+  "cats": [
+   "Carbon capture & climate materials"
+  ],
+  "why": [
+   "Molten salt chemistry and corrosion-resistant materials"
+  ],
+  "why_not": [],
+  "product": "Molten-borate high-temperature carbon capture",
+  "buyer": "Heavy industry, power",
+  "stage": "Series A",
+  "raised_m": 30,
+  "hq": "Cambridge, USA",
+  "website": "https://www.mantelcapture.com",
+  "source": "https://www.businesswire.com/news/home/20240905759272/en/Mantel-Secures-%2430-Million-to-Bring-Low-Cost-Energy-Efficient-Carbon-Capture-to-the-Heavy-Industrial-Sector",
+  "fit": "Researched",
+  "country": "USA",
+  "linkedin": "https://www.linkedin.com/company/mantelcapture",
+  "founded": 2022,
+  "employees": "11-50",
+  "kw": "carbon capture, point-source capture, molten borate, molten salt sorbent, high-temperature capture, heat recovery, steam co-production, cement, steel, pulp and paper, power plants, heavy industry, CO2 capture cost, MIT spinout, molten salt, boron chemistry, sorption, heat integration, combined heat and power, industrial boilers, refineries, waste-to-energy, Cambridge Massachusetts, pilot plant"
+ },
+ {
+  "name": "Maverick X",
+  "apps": [
+   "Copper leach booster"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "website": "https://www.maverickx.com",
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Neutral-pH copper lixiviant that attacks chalcopyrite and not pyrite",
+  "raised_m": 19.0,
+  "linkedin": "https://www.linkedin.com/company/maverickx-company",
+  "hq": "Austin, USA",
+  "founded": 2022,
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://seedtable.com/companies/maverickx/funding-rounds/seed-2025-04",
+  "kw": "copper leaching, lixiviant, chalcopyrite, pyrite, primary copper sulfide, heap leaching, neutral pH leaching, hydrometallurgy, copper recovery, tailings, mining, miners, critical minerals, sustainable mining, copper ore, low-grade ore, primary sulfides, leach recovery, pyrite selectivity, oxidative leaching, ferric, heap leach pads, copper mines, Chile, Arizona, copper cathode, SX-EW, Texas"
+ },
+ {
+  "name": "Micropep",
+  "apps": [],
+  "cats": [
+   "Agriculture inputs"
+  ],
+  "why": [
+   "Peptide stability and field persistence"
+  ],
+  "why_not": [],
+  "product": "Micropeptide crop protection products",
+  "buyer": "Growers, agrochemical partners",
+  "stage": "Series B",
+  "raised_m": 60,
+  "hq": "Toulouse, France",
+  "website": "https://micro-pep.com",
+  "source": "https://www.businesswire.com/news/home/20240926870742/en/Micropep-Closes-Series-B-Round-at-40M-After-Supplemental-Funding-Raised-From-Corteva-and-Sparkfood",
+  "fit": "Researched",
+  "country": "France",
+  "linkedin": "https://www.linkedin.com/company/micropep-technologies",
+  "founded": 2016,
+  "employees": "11-50",
+  "kw": "micropeptides, peptide-based crop protection, biopesticides, biofungicides, bioherbicides, gene regulation, crop yield, agricultural biologicals, growers, agrochemical partners, residue-free, France, peptides, fungicides, herbicides, natural molecules, biocontrol, crop disease, weed control, regulatory approval, agrochemical companies, partnerships, sustainable agriculture, Toulouse, plant microRNA, reduced chemical inputs"
+ },
+ {
+  "name": "Mimica (Mimica Lab)",
+  "apps": [
+   "Freshness"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Tactile food expiry label",
+  "relation": "compete",
+  "raised_m": 2.0,
+  "fit": "Researched",
+  "website": "https://www.mimicalab.com",
+  "linkedin": "https://www.linkedin.com/company/mimica",
+  "hq": "Dullingham, UK",
+  "stage": "Seed",
+  "source": "https://www.cbinsights.com/company/mimica-lab/financials",
+  "country": "UK",
+  "kw": "food expiry labels, tactile indicator, bump label, gelatin-based indicator, temperature-dependent spoilage indicator, dynamic shelf life, juice, dairy, meat, food waste, packaging, retailers, food brands, UK, smart labels, freshness indicator, spoilage, cold chain, temperature abuse, use-by date, Mimica Touch, food brands, supermarkets, visually impaired"
+ },
+ {
+  "name": "Moa Technology",
+  "apps": [],
+  "cats": [
+   "Agriculture inputs"
+  ],
+  "why": [
+   "Herbicide hits on novel plant targets"
+  ],
+  "why_not": [],
+  "product": "Herbicides with new modes of action",
+  "buyer": "Agrochemical majors",
+  "stage": "Series C",
+  "raised_m": 91,
+  "hq": "Oxford, UK",
+  "website": "https://www.moa-technology.com",
+  "source": "https://agfundernews.com/moa-nets-44m-series-b-funding-to-launch-the-next-generation-of-herbicides",
+  "fit": "Researched",
+  "country": "UK",
+  "founded": 2017,
+  "kw": "herbicides, new modes of action, weed resistance, herbicide resistance, crop protection, agrochemical discovery, target identification, glyphosate resistance, weeds, agrochemical majors, growers, Oxford spinout, herbicide discovery, mode of action discovery, plant biology, chemistry screening, weed management, broadleaf weeds, grass weeds, resistant weeds, agrochemical partners, licensing, regulatory approval, crop protection pipeline, UK"
+ },
+ {
+  "name": "Nexstrom",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Crystal growth and defects across a wafer"
+  ],
+  "project": "300mm 2D semiconductor wafers",
+  "hard": "Defect-free growth at wafer scale",
+  "linkedin": "https://www.linkedin.com/company/nexstrom",
+  "founded": 2024,
+  "raised_m": 12.0,
+  "fit": "Not for us",
+  "website": "https://nexstrom.com",
+  "hq": "Singapore, Singapore",
+  "employees": "11-50",
+  "stage": "Seed",
+  "source": "https://salestools.io/da/report/nexstrom-raises-12m-seed-september-2026",
+  "country": "Singapore",
+  "kw": "2D semiconductors, 2D materials, transition metal dichalcogenides, TMD, MoS2, WSe2, 300 mm wafers, wafer-scale growth, MOCVD, CVD, epitaxy, crystal defects, atomically thin channels, beyond-silicon transistors, advanced logic, chip fabs, foundries, semiconductor materials, Singapore, semiconductor manufacturing, chip makers, device scaling, materials growth, thin films"
+ },
+ {
+  "name": "Niron Magnetics",
+  "apps": [],
+  "cats": [
+   "Advanced materials & coatings"
+  ],
+  "why": [
+   "Iron nitride phase stability and coercivity"
+  ],
+  "why_not": [
+   "Magnetism of a solid"
+  ],
+  "product": "Rare-earth-free iron nitride magnets",
+  "buyer": "Auto, electronics OEMs",
+  "stage": "Strategic round ($150M, 2025)",
+  "raised_m": 236.0,
+  "hq": "Minneapolis, USA",
+  "website": "https://www.nironmagnetics.com",
+  "source": "https://www.automotivepowertraintechnologyinternational.com/news/electric-powertrain-technologies/gm-and-stellantis-among-investors-in-rare-earth-free-permanent-magnet-developer.html",
+  "project": "Stable iron nitride magnets",
+  "hard": "Breaks down when heated",
+  "linkedin": "https://www.linkedin.com/company/niron-magnetics-inc.",
+  "valuation": null,
+  "fit": "Not for us",
+  "country": "USA",
+  "founded": 2014,
+  "employees": "51-200",
+  "kw": "iron nitride magnets, rare-earth-free magnets, permanent magnets, Fe16N2, neodymium replacement, NdFeB alternative, electric motors, EV motors, speakers, consumer electronics, industrial motors, auto OEMs, critical minerals, magnet supply chain, magnet manufacturing, iron, nitrogen, abundant materials, domestic supply chain, motor makers, wind turbines, Minnesota"
+ },
+ {
+  "name": "NordShield",
+  "apps": [
+   "Fish odor"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Wood-based antimicrobial anti-odor textile finish",
+  "relation": "compete",
+  "raised_m": 4.96,
+  "linkedin": "https://www.linkedin.com/company/nordshield",
+  "fit": "Researched",
+  "website": "https://nordshield.com",
+  "hq": "Espoo, Finland",
+  "founded": 2016,
+  "employees": "11-50",
+  "stage": "Series A",
+  "source": "https://pitchbook.com/profiles/company/319443-58",
+  "country": "Finland",
+  "kw": "antimicrobial finish, anti-odor textile treatment, wood-based, rosin, pine resin, bio-based biocide, silver-free, textiles, sportswear, hygiene products, coatings, packaging, textile mills, apparel brands, Finland, pine rosin, natural biocide, textile finish, anti-odor, antimicrobial coatings, sustainable chemicals, nonwovens, footwear, home textiles, medical textiles, surface coatings, coating suppliers"
+ },
+ {
+  "name": "Noya",
+  "apps": [
+   "CO₂ capture"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Amine-coated carbon monolith DAC systems",
+  "relation": "sell",
+  "raised_m": 22,
+  "linkedin": "https://www.linkedin.com/company/noya-carbon",
+  "fit": "Researched",
+  "website": "https://noya.co",
+  "hq": "Oakland, USA",
+  "founded": 2020,
+  "employees": "11-50",
+  "stage": "Series A",
+  "source": "https://www.esgtoday.com/carbon-removal-startup-noya-raises-11-million-to-accelerate-direct-air-capture-solution",
+  "country": "USA",
+  "kw": "direct air capture, DAC, amine sorbent, carbon monolith, cooling towers, CO2 removal, carbon removal credits, CDR, geologic storage, distributed DAC, climate tech, cooling tower retrofit, industrial cooling towers, carbon removal, amine-coated monolith, sorbent regeneration, low cost, CO2 sales, CO2 storage, carbon credits, startup, Oakland, California"
+ },
+ {
+  "name": "Nuada",
+  "apps": [
+   "Humid CO₂ trap"
+  ],
+  "cats": [
+   "Carbon capture & climate materials"
+  ],
+  "why": [
+   "Matched problem, no AI team",
+   "MOF selection for flue-gas CO2"
+  ],
+  "why_not": [],
+  "product": "MOF vacuum-swing carbon capture",
+  "buyer": "Cement, industrial emitters",
+  "stage": "Series A",
+  "raised_m": 15.0,
+  "hq": "Belfast, UK",
+  "website": "https://nuadaco2.com",
+  "source": "https://www.thechemicalengineer.com/news/mof-capture-firm-secures-34m-funding-for-uk-ccs-pilot/",
+  "project": "MOFs for vacuum-swing capture",
+  "hard": "Stability over many cycles",
+  "linkedin": "https://www.linkedin.com/company/nuadaco2",
+  "valuation": null,
+  "fit": "Best fit",
+  "country": "UK",
+  "problem": "CO₂ binder that holds at 0.05–0.15 bar vacuum swing, over water and SO₂",
+  "founded": 2012,
+  "employees": "51-200",
+  "kw": "carbon capture, point-source capture, metal-organic frameworks, MOF, vacuum swing adsorption, VSA, CO2 sorbent, flue gas, water tolerance, SO2 tolerance, cement plants, lime, industrial emitters, steel, waste-to-energy, Belfast, solid sorbent, adsorption, pressure swing, carbon capture cost, retrofit, flue gas capture, CCUS, lime kilns, energy efficient capture, UK, Europe"
+ },
+ {
+  "name": "Odyssey Therapeutics",
+  "apps": [],
+  "cats": [
+   "Therapeutics (wet-lab biotech)"
+  ],
+  "why": [
+   "Selective small-molecule binding and ADMET"
+  ],
+  "why_not": [],
+  "product": "Small molecules for autoimmune disease",
+  "buyer": "Pharma partners, patients",
+  "stage": "Series D",
+  "raised_m": 700,
+  "hq": "Boston, USA",
+  "website": "https://odysseytx.com",
+  "source": "https://odysseytx.com/odyssey-therapeutics-announces-oversubscribed-213-million-series-d-financing-to-advance-clinical-pipeline-for-autoimmune-diseases/",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2021,
+  "kw": "small molecules, autoimmune disease, inflammatory disease, immunology, oncology, kinase inhibitors, precision medicine, RIPK2, drug discovery, pharma partners, clinical trials, immunology drug discovery, precision immunology, inflammation, oral drugs, biotech, licensing, Boston, drug candidates, inflammatory bowel disease, kinase, small molecule pipeline, preclinical, clinical stage"
+ },
+ {
+  "name": "PCN Materials",
+  "apps": [
+   "Thirdhand smoke"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Visible-light photocatalytic TiO2 for indoor air",
+  "relation": "compete",
+  "linkedin": "https://www.linkedin.com/company/pcnanomaterials",
+  "fit": "Researched",
+  "hq": "Heraklion, Greece",
+  "founded": 2019,
+  "stage": "Seed",
+  "source": "https://forth.gr/en/news/show/&tid=1666",
+  "country": "Greece",
+  "website": "https://pcnmaterials.com",
+  "kw": "photocatalysis, visible-light photocatalyst, titanium dioxide, TiO2, indoor air purification, VOC removal, formaldehyde, NOx, self-cleaning coatings, antimicrobial surfaces, paints, air purifiers, HVAC, building materials, Greece, photocatalytic coatings, visible light active, nanoparticles, TiO2 doping, air quality, pollutant degradation, NOx removal, antibacterial, coatings, paint makers, building owners, HVAC makers"
+ },
+ {
+  "name": "Paragraf",
+  "apps": [],
+  "cats": [
+   "Semiconductor materials"
+  ],
+  "why": [
+   "Graphene growth and dielectric interface chemistry"
+  ],
+  "why_not": [],
+  "product": "Wafer-scale graphene electronic devices",
+  "buyer": "Sensor and chip OEMs",
+  "stage": "Series C",
+  "raised_m": 139,
+  "hq": "Huntingdon, UK",
+  "website": "https://www.paragraf.com",
+  "source": "https://www.graphene-info.com/paragraf-raises-55-million-expand-graphene-chip-production",
+  "fit": "Researched",
+  "country": "UK",
+  "founded": 2015,
+  "employees": "51-200",
+  "kw": "graphene electronics, wafer-scale graphene, graphene Hall sensors, magnetic sensors, graphene field-effect transistors, GFET, biosensors, semiconductor devices, quantum, cryogenic sensors, sensor OEMs, chip OEMs, UK, graphene growth, MOCVD graphene, graphene devices, magnetic field sensing, electric vehicles, batteries, current sensors, healthcare diagnostics, semiconductor fabs, UK manufacturing, Cambridge"
+ },
+ {
+  "name": "Peak Energy",
+  "apps": [],
+  "cats": [
+   "Batteries & energy storage"
+  ],
+  "why": [
+   "Sodium cathodes and hard-carbon anodes"
+  ],
+  "why_not": [],
+  "product": "Grid-scale sodium-ion storage systems",
+  "buyer": "Utilities, IPPs",
+  "stage": "Series B",
+  "raised_m": 173,
+  "hq": "Burlingame, USA",
+  "website": "https://peakenergy.com",
+  "source": "https://peakenergy.com/news/latest/xora-innovation-leads-55m-series-a-funding-round-in-us-battery-maker-peak-energy",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2023,
+  "kw": "sodium-ion batteries, Na-ion, grid-scale energy storage, BESS, passive cooling, sodium iron pyrophosphate, NFPP, lithium-free, utilities, independent power producers, IPPs, renewable integration, stationary storage, domestic manufacturing, sodium-ion cells, NFPP cathode, battery energy storage systems, grid batteries, low degradation, no active cooling, renewable energy, solar, wind, data centers, US manufacturing"
+ },
+ {
+  "name": "Phoenix Tailings",
+  "apps": [],
+  "cats": [
+   "Advanced materials & coatings"
+  ],
+  "why": [
+   "Low-waste separation and reduction chemistry"
+  ],
+  "why_not": [],
+  "product": "Rare earth metals and alloys",
+  "buyer": "Magnet makers, defense",
+  "stage": "Series B",
+  "raised_m": 117,
+  "hq": "Exeter, USA",
+  "website": "https://phoenixtailings.com",
+  "source": "https://pulse2.com/phoenix-tailings-40-2-million-raised-for-accelerating-u-s-production-of-rare-earth-metals",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2019,
+  "kw": "rare earth metals, rare earth alloys, rare earth refining, metallization, neodymium, praseodymium, dysprosium, terbium, NdPr, magnet supply chain, mine tailings, recycling, critical minerals, magnet makers, defense, solvent extraction alternative, rare earth oxides, metal reduction, electrowinning, low-waste refining, rare earth magnets, permanent magnets, EV motors, wind turbines, US supply chain"
+ },
+ {
+  "name": "Phospholutions",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Fertiliser margins are thin"
+  ],
+  "linkedin": "https://www.linkedin.com/company/phospholutions",
+  "fit": "Worth a call",
+  "problem": "Phosphate sorbent that releases only to root exudates, over sulfate and silicate",
+  "website": "https://www.phospholutions.com",
+  "hq": "State College, USA",
+  "founded": 2016,
+  "raised_m": 32.75,
+  "stage": "Series B",
+  "source": "https://www.worldfertilizer.com/phosphates/10082023/phospholutions-raises-funds-to-accelerate-commercialisation-of-higher-efficiency-fertilizers/",
+  "country": "USA",
+  "kw": "phosphorus fertilizer, enhanced efficiency fertilizer, RhizoSorb, phosphate sorbent, slow release, root exudates, phosphate runoff, nutrient loss, eutrophication, turf, golf courses, crops, growers, fertilizer blenders, sulfate, silicate, phosphorus efficiency, fertilizer coating, soil phosphorus, phosphate fixation, crop nutrition, nutrient management, water quality, Penn State spinout"
+ },
+ {
+  "name": "Pivot Bio",
+  "apps": [],
+  "cats": [
+   "Agriculture inputs"
+  ],
+  "why": [
+   "Nitrogenase regulation and microbe protein engineering"
+  ],
+  "why_not": [],
+  "product": "Nitrogen-fixing microbes for crops",
+  "buyer": "Corn and wheat growers",
+  "stage": "Series D",
+  "raised_m": 617,
+  "hq": "Berkeley, USA",
+  "website": "https://www.pivotbio.com",
+  "source": "https://www.citybiz.co/article/104682/pivot-bio-raises-430m-in-series-d/",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2011,
+  "employees": "201-500",
+  "kw": "nitrogen-fixing microbes, biological nitrogen, PROVEN 40, synthetic fertilizer replacement, corn, wheat, sorghum, ag biologicals, gene-edited microbes, nitrous oxide reduction, nitrate runoff, growers, seed dealers, microbial nitrogen, nitrogen fixation, root microbes, fertilizer reduction, crop yield, ag biologicals, farm inputs, greenhouse gas emissions, row crops, Midwest farmers, seed treatment, in-furrow"
+ },
+ {
+  "name": "Puraffinity",
+  "apps": [
+   "PFAS & TFA",
+   "PFAS trap"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Selective PFAS adsorbent media",
+  "relation": "compete",
+  "raised_m": 26,
+  "linkedin": "https://uk.linkedin.com/company/puraffinity",
+  "fit": "Best fit",
+  "country": "UK",
+  "problem": "Short-chain PFAS ligand for PFBA, PFBS and PFHxA, over humic acids",
+  "website": "https://www.puraffinity.com",
+  "hq": "London, UK",
+  "founded": 2015,
+  "stage": "Series A",
+  "source": "https://www.watermagazine.co.uk/2024/09/11/puraffinity-appoints-new-ceo-and-secures-6-73-million-investment/",
+  "kw": "PFAS, forever chemicals, PFAS adsorbent, selective media, functionalized sorbent, short-chain PFAS, PFBA, PFBS, PFHxA, PFOA, PFOS, drinking water, groundwater, AFFF, firefighting foam, water utilities, activated carbon alternative, ion exchange alternative, UK, Puraffinity PFAS media, functionalized adsorbents, high capacity, groundwater remediation, airports, military bases, wastewater"
+ },
+ {
+  "name": "Ryp Labs",
+  "apps": [
+   "Ethylene"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Shelf-life extending produce stickers and labels",
+  "relation": "license",
+  "raised_m": 19.4,
+  "linkedin": "https://www.linkedin.com/company/stixfresh",
+  "fit": "Researched",
+  "website": "https://ryplabs.com",
+  "hq": "Bothell, USA",
+  "founded": 2017,
+  "source": "https://www.vcbacked.co/company/ryp-labs",
+  "country": "USA",
+  "kw": "produce shelf life, stickers and labels, vapor release, natural antimicrobials, post-harvest, fruit, berries, avocados, food waste, packaging, growers, retailers, distributors, StixFresh, shelf life extension, freshness stickers, plant extracts, vapor release, mold reduction, spoilage reduction, post-harvest technology, food waste reduction, produce packaging, grocers, fruit exporters, supply chain, Washington"
+ },
+ {
+  "name": "Samsara Eco",
+  "apps": [],
+  "cats": [
+   "Industrial enzymes & biomanufacturing"
+  ],
+  "why": [
+   "Faster, thermostable plastic-degrading enzymes"
+  ],
+  "why_not": [
+   "Their AI is enzymes only, never offer a better enzyme"
+  ],
+  "product": "Enzymatic recycling of nylon, polyester",
+  "buyer": "Apparel, packaging brands",
+  "stage": "Series A+",
+  "raised_m": 107.0,
+  "hq": "Canberra, Australia",
+  "website": "https://samsaraeco.com",
+  "source": "https://samsaraeco.com/news/samsara-eco-secures-100m-in-series-a-funding-to-help-end-plastic-waste",
+  "project": "Plastic-degrading enzymes",
+  "hard": "Activity vs. thermal stability",
+  "linkedin": "https://www.linkedin.com/company/samsara-eco",
+  "valuation": null,
+  "fit": "Worth a call",
+  "problem": "Disperse-dye trap in the nylon-6,6 depolymerisate, over the monomers",
+  "country": "Australia",
+  "founded": 2021,
+  "kw": "enzymatic recycling, nylon 6,6, nylon 6, polyester, PET, depolymerization, textile-to-textile recycling, monomers, disperse dyes, dye removal, plastic waste, apparel brands, packaging brands, lululemon, circular economy, Australia, engineered enzymes, nylon recycling, polyester recycling, depolymerisate, monomer purification, apparel, fashion brands, textile recycling, recycling plants, Canberra"
+ },
+ {
+  "name": "Seloxium",
+  "apps": [
+   "Gold catcher"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "website": "https://www.seloxium.com",
+  "fit": "Best fit",
+  "country": "UK",
+  "problem": "Ligand for rhodium, palladium and gold in chloride leach, over copper, iron and aluminium",
+  "raised_m": 10.0,
+  "hq": "Oxford, UK",
+  "founded": 2022,
+  "stage": "Seed",
+  "source": "https://www.cbinsights.com/company/seloxium/financials",
+  "kw": "precious metal recovery, selective ligands, rhodium, palladium, platinum, gold, PGMs, chloride leach, hydrometallurgy, autocatalyst recycling, e-waste, refining, copper, iron, aluminium separation, critical metals, Oxford spinout, precious metal refining, metal separation, ligand design, solvent extraction, leach liquors, scrap recycling, refiners, catalysts, electronics recycling, critical minerals, UK"
+ },
+ {
+  "name": "Sila Nanotechnologies",
+  "apps": [],
+  "cats": [
+   "Batteries & energy storage"
+  ],
+  "why": [
+   "Silicon-carbon composites with low swelling"
+  ],
+  "why_not": [],
+  "product": "Titan Silicon anode powder",
+  "buyer": "EV and device OEMs",
+  "stage": "Series C+",
+  "raised_m": 1600,
+  "hq": "Alameda, USA",
+  "website": "https://www.silanano.com",
+  "source": "https://www.electrive.com/2026/07/22/sila-raises-300-million-to-expand-us-silicon-anode-production/",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2011,
+  "kw": "silicon anode, Titan Silicon, nano-composite silicon, lithium-ion batteries, graphite replacement, energy density, EV batteries, consumer electronics, Mercedes-Benz, Panasonic, battery materials, Moses Lake, battery cell makers, silicon composite, anode material, battery energy density, fast charge, battery makers, EV makers, wearables, smartphones, battery supply chain, Washington, Alameda"
+ },
+ {
+  "name": "Solugen",
+  "apps": [],
+  "cats": [
+   "Catalysts & green chemistry"
+  ],
+  "why": [
+   "Enzyme and metal catalysts for new molecules"
+  ],
+  "why_not": [],
+  "product": "Bio-based chemicals via enzyme-metal catalysis",
+  "buyer": "Water treatment, industrial",
+  "stage": "Series C+",
+  "raised_m": 640,
+  "hq": "Houston, USA",
+  "website": "https://solugen.com",
+  "source": "https://nbcchicago.com/news/business/money-report/solugen-locks-in-214-million-energy-department-loan-to-build-a-bioforge-for-sustainable-chemicals-production/3462840",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2016,
+  "employees": "51-200",
+  "kw": "bio-based chemicals, chemienzymatic process, enzyme-metal catalysis, glucose oxidation, glucaric acid, hydrogen peroxide, Bioforge, water treatment chemicals, scale inhibitors, corrosion inhibitors, concrete admixtures, oil and gas chemicals, agriculture, industrial chemicals, Houston, organic acids, bio-based alternatives, petrochemical replacement, oxidase enzymes, metal catalysts, chemical manufacturing, Minnesota, ADM"
+ },
+ {
+  "name": "Sora Fuel",
+  "apps": [
+   "Plastic-to-fuel catalyst"
+  ],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "project": "Air-to-jet-fuel electrolyzer catalysts",
+  "hard": "CO/H₂ selectivity, long-term stability",
+  "linkedin": "https://www.linkedin.com/company/sora-fuel",
+  "founded": 2024,
+  "raised_m": 20.6,
+  "fit": "Best fit",
+  "country": "USA",
+  "problem": "Cathode alloy for bicarbonate CO₂ to carbon monoxide, hydrogen side reaction off",
+  "website": "https://www.sorafuel.com",
+  "hq": "Boston, USA",
+  "stage": "Seed",
+  "source": "https://pulse2.com/sora-fuel-14-6-million-raised-to-scale-air-to-jet-fuel-technology",
+  "kw": "air-to-jet fuel, sustainable aviation fuel, SAF, e-fuels, direct air capture, CO2 electrolysis, bicarbonate electrolysis, carbon monoxide, syngas, Fischer-Tropsch, cathode catalysts, hydrogen evolution suppression, airlines, synthetic kerosene, jet fuel, aviation, carbon capture, CO2 to CO, electrochemical reduction, carbon-neutral fuels, airline offtake, fuel producers, Boston"
+ },
+ {
+  "name": "Sorbenta",
+  "apps": [
+   "PFAS & TFA"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Regenerable PFAS-selective ion exchange resins",
+  "relation": "compete",
+  "raised_m": 0.4,
+  "fit": "Researched",
+  "source": "https://www.businesswire.com/news/home/20260326888312/en/Sorbenta-Wins-Lex-Generalis-Pitch-Competition-at-AUTM-2026-Annual-Meeting",
+  "website": null,
+  "kw": "PFAS, forever chemicals, PFAS-selective ion exchange, regenerable resin, ion exchange resin, short-chain PFAS, drinking water, groundwater, water utilities, PFAS removal, resin regeneration, water treatment, PFAS ion exchange, anion exchange, PFAS-selective resin, regeneration, reusable resin, PFAS concentrate, groundwater treatment, utilities, AUTM pitch, startup, US"
+ },
+ {
+  "name": "Spiritus",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Their CEO came from AI"
+  ],
+  "linkedin": "https://www.linkedin.com/company/spiritus-cdr",
+  "fit": "Worth a call",
+  "problem": "Polymer-amine air-capture sorbent, low-temperature release, under $10 per kg",
+  "website": "https://spiritus.com",
+  "hq": "White Rock, USA",
+  "founded": 2022,
+  "raised_m": 42.5,
+  "stage": "Series A",
+  "source": "https://www.esgtoday.com/spiritus-raises-30-million-to-scale-solution-to-slash-cost-of-dac-carbon-removal",
+  "country": "USA",
+  "kw": "direct air capture, DAC, passive DAC, polymer amine sorbent, low-temperature desorption, low-cost sorbent, CO2 removal, carbon removal credits, CDR, geologic storage, Wyoming, climate tech, sorbent, polymer sorbent, low temperature regeneration, passive contactors, ambient air, carbon removal, carbon credits, low-cost DAC, Orchard, Wyoming, Frontier"
+ },
+ {
+  "name": "Steric",
+  "apps": [
+   "Smoke taint"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Electromagnetic-field wine processing for smoke-affected wine",
+  "relation": "sell",
+  "raised_m": 6.8,
+  "linkedin": "https://www.linkedin.com/company/stericsystems/",
+  "fit": "Researched",
+  "website": "https://steric.com",
+  "hq": "Culver City, USA",
+  "founded": 2018,
+  "stage": "Seed",
+  "source": "https://wineindustryadvisor.com/2025/10/07/steric-closes-3-5-million-seed-round-to-shake-up-wine-and-spirits-industry/",
+  "country": "USA",
+  "kw": "wine processing, smoke taint, smoke-affected wine, electromagnetic field treatment, accelerated aging, spirits aging, volatile phenols, guaiacol, wineries, distilleries, beverage processing, wildfire smoke, flavor improvement, electromagnetic processing, wine and spirits, wine quality, smoke compounds, off-flavors, aging acceleration, maturation, barrel aging alternative, whiskey, distillers, winemakers, beverage industry, Los Angeles"
+ },
+ {
+  "name": "Strella Biotechnology",
+  "apps": [
+   "Ethylene"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Ethylene sensors predicting fruit ripeness",
+  "relation": "sell",
+  "raised_m": 11.3,
+  "linkedin": "https://www.linkedin.com/company/strellabiotechnology",
+  "fit": "Researched",
+  "website": "https://strellabiotech.com",
+  "hq": "Philadelphia, USA",
+  "founded": 2018,
+  "employees": "11-50",
+  "stage": "Series A",
+  "source": "https://pci.upenn.edu/category/i-corps/page/3/",
+  "country": "USA",
+  "kw": "ethylene sensors, fruit ripeness monitoring, post-harvest, apples, pears, controlled atmosphere storage, cold storage, IoT sensors, produce supply chain, packers, growers, distributors, food waste, ripening rooms, ripeness prediction, ethylene monitoring, controlled atmosphere, CA storage, apple storage, cold chain, packing houses, fruit quality, waste reduction, sensors, Philadelphia"
+ },
+ {
+  "name": "Sublime Systems",
+  "apps": [
+   "Cement"
+  ],
+  "cats": [
+   "Carbon capture & climate materials"
+  ],
+  "why": [
+   "Calcium silicate binder phases and admixtures"
+  ],
+  "why_not": [],
+  "product": "Electrochemical low-carbon cement",
+  "buyer": "Concrete, construction firms",
+  "stage": "Series A + strategic",
+  "raised_m": 131,
+  "hq": "Somerville, USA",
+  "website": "https://sublime-systems.com",
+  "source": "https://globalcement.com/news/15834-sublime-systems-raises-us-40m-in-funding-for-electrolysis-cement-production-process",
+  "relation": "sell",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2020,
+  "employees": "51-200",
+  "kw": "low-carbon cement, electrochemical cement, electrochemical calcination, kiln-free cement, calcium silicate, Portland cement replacement, decarbonized cement, ready-mix concrete, construction, embodied carbon, MIT spinout, Holcim, Microsoft, Sublime Cement, calcium source, non-carbonate rock, ambient temperature, electrolyzer, low-carbon concrete, Massachusetts, cement buyers, builders, contractors, government procurement, Buy Clean"
+ },
+ {
+  "name": "Summit Nanotech (Summit Lithium Technologies)",
+  "apps": [
+   "Lithium"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Sorbent DLE system with water recycling",
+  "relation": "sell",
+  "raised_m": 97,
+  "linkedin": "https://ca.linkedin.com/company/summit-nanotech",
+  "fit": "Researched",
+  "website": "https://summitlithium.tech",
+  "hq": "Calgary, Canada",
+  "founded": 2018,
+  "stage": "Series A2",
+  "source": "https://betakit.com/summit-nanotech-secures-50-million-usd-to-scale-lithium-extraction-for-ev-production/",
+  "country": "Canada",
+  "kw": "direct lithium extraction, DLE, sorbent DLE, Denaliq, water recycling, lithium brine, salar, lithium carbonate, lithium chloride, battery materials, EV supply chain, critical minerals, mining, Chile, Canada, lithium recovery, sorbent technology, brine reinjection, water reuse, lithium producers, salar brines, mining companies, Calgary"
+ },
+ {
+  "name": "Sustaera",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "No news since 2021, check they are alive"
+  ],
+  "linkedin": "https://www.linkedin.com/company/sustaera",
+  "fit": "Worth a call",
+  "problem": "Air-capture amine group with the least oxidative and urea degradation",
+  "website": "https://www.sustaera.com",
+  "hq": "Cary, USA",
+  "founded": 2021,
+  "raised_m": 12.5,
+  "stage": "Series A",
+  "source": "https://www.businesswire.com/news/home/20211216005309/en/Sustaera-Closes-$10-million-Series-A-Financing-to-Develop-Low-Cost-Direct-Air-Capture-Technology",
+  "country": "USA",
+  "kw": "direct air capture, DAC, amine sorbent, monolith contactor, oxidative degradation, urea formation, sorbent stability, CO2 removal, carbon removal credits, CDR, geologic storage, renewable-powered DAC, climate tech, ceramic monolith, sorbent degradation, carbon removal, carbon credits, low-cost DAC, renewable energy, North Carolina, sorbent lifetime"
+ },
+ {
+  "name": "Svante",
+  "apps": [],
+  "cats": [
+   "Carbon capture & climate materials"
+  ],
+  "why": [
+   "MOF sorbents with humidity tolerance"
+  ],
+  "why_not": [
+   "Own modelling team: grand-canonical Monte Carlo, DFT molecular dynamics, ML potentials"
+  ],
+  "product": "MOF sorbent filters for capture",
+  "buyer": "Cement, steel, DAC",
+  "stage": "Series E",
+  "raised_m": 500,
+  "hq": "Burnaby, Canada",
+  "website": "https://svanteinc.com",
+  "source": "https://svanteinc.com/2022/12/15/chevron-invests-in-carbon-capture-and-removal-technology-company-svante/",
+  "project": "MOF sorbents for humid flue gas",
+  "hard": "Water competes with CO2",
+  "linkedin": "https://www.linkedin.com/company/svantesolutions",
+  "valuation": "$1B (2022)",
+  "fit": "Not for us",
+  "country": "Canada",
+  "founded": 2007,
+  "employees": "201-500",
+  "kw": "carbon capture, solid sorbent filters, metal-organic frameworks, MOF, CALF-20, rapid temperature swing adsorption, point-source capture, flue gas, cement, steel, hydrogen, direct air capture, DAC, filter manufacturing, Canada, nano-engineered sorbent, structured sorbent, filter modules, rotary contactor, carbon capture plants, CCUS, industrial emitters, cement plants, filter factory, Burnaby"
+ },
+ {
+  "name": "Swift Solar",
+  "apps": [],
+  "cats": [
+   "Advanced materials & coatings"
+  ],
+  "why": [
+   "Stable perovskite compositions and passivation layers"
+  ],
+  "why_not": [
+   "Light absorption and ion drift inside the device"
+  ],
+  "product": "Perovskite tandem solar panels",
+  "buyer": "Solar developers, OEMs",
+  "stage": "Series A",
+  "raised_m": 44,
+  "hq": "San Carlos, USA",
+  "website": "https://www.swiftsolar.com",
+  "source": "https://perovskite-info.com/swift-solar-announces-27-million-series-funding-round",
+  "project": "Stable perovskite compositions",
+  "hard": "Ion migration, decomposition",
+  "linkedin": "https://www.linkedin.com/company/swift-solar",
+  "valuation": null,
+  "fit": "Not for us",
+  "country": "USA",
+  "founded": 2017,
+  "kw": "perovskite solar, perovskite-silicon tandem, tandem solar panels, thin-film photovoltaics, high-efficiency PV, perovskite stability, solar modules, solar developers, OEMs, rooftop solar, utility-scale solar, perovskite cells, tandem modules, efficiency, durability, solar manufacturing, US manufacturing, solar panels, utility solar, residential solar, commercial solar, Stanford spinout, MIT"
+ },
+ {
+  "name": "Syzygy Plasmonics",
+  "apps": [],
+  "cats": [
+   "Catalysts & green chemistry"
+  ],
+  "why": [
+   "Plasmonic photocatalysts for reforming reactions"
+  ],
+  "why_not": [],
+  "product": "Light-driven photocatalytic chemical reactors",
+  "buyer": "Hydrogen, fuels producers",
+  "stage": "Series C + bridge",
+  "raised_m": 136.8,
+  "hq": "Houston, USA",
+  "website": "https://plasmonics.tech",
+  "source": "https://news.rice.edu/news/2022/rice-u-technology-startup-syzygy-plasmonics-raises-76-million-latest-funding-round",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2017,
+  "kw": "photocatalysis, plasmonic catalysts, light-driven reactors, photoreactors, ammonia cracking, hydrogen production, dry reforming, CO2 and methane to syngas, low-carbon hydrogen, e-fuels, sustainable aviation fuel, NovaSAF, fuels producers, chemical plants, photocatalytic reactors, LED-powered reactors, plasmonic nanoparticles, renewable electricity, hydrogen, chemicals, fuels, industrial reactors, Houston"
+ },
+ {
+  "name": "Terra CO2",
+  "apps": [
+   "Cement"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Silicate-rock cement replacement (SCM) plants",
+  "relation": "sell",
+  "raised_m": 206.5,
+  "fit": "Researched",
+  "website": "https://www.terraco2.com",
+  "hq": "Golden, USA",
+  "founded": 2016,
+  "stage": "Series B",
+  "source": "https://www.businesswire.com/news/home/20250702426008/en/Terra-CO2-Announces-Additional-Series-B-Funding-to-Scale-Sustainable-Cement-Production",
+  "country": "USA",
+  "kw": "supplementary cementitious material, SCM, silicate rock, OPUS, cement replacement, fly ash replacement, slag replacement, low-carbon concrete, pozzolan, clinker reduction, ready-mix concrete, cement producers, construction, embodied carbon, supplementary cementitious materials, natural pozzolan, silicate rocks, cement blends, Portland cement reduction, concrete producers, cement companies, low-carbon cement, Colorado"
+ },
+ {
+  "name": "Thintronics",
+  "apps": [],
+  "cats": [
+   "Semiconductor materials"
+  ],
+  "why": [
+   "Low-k, low-loss polymer dielectric design"
+  ],
+  "why_not": [
+   "Dielectric loss and bulk polymer behaviour"
+  ],
+  "product": "Low-loss insulator films for packaging",
+  "buyer": "Chip, PCB, AI-server makers",
+  "stage": "Series A",
+  "raised_m": 26.0,
+  "hq": "Berkeley, USA",
+  "website": "https://www.thintronics.com",
+  "source": "https://www.businesswire.com/news/home/20240424926089/en/Thintronics-Inc.-Closes-23M-Series-A-Financing-Round-Led-by-Maverick-Capital-and-Translink-Capital",
+  "project": "Low-k polymer dielectrics",
+  "hard": "Low loss vs. heat stability",
+  "linkedin": "https://www.linkedin.com/company/thintronics",
+  "valuation": null,
+  "fit": "Not for us",
+  "country": "USA",
+  "founded": 2019,
+  "kw": "low-loss dielectric, insulator films, build-up film, ABF alternative, advanced packaging, IC substrates, printed circuit boards, PCB, signal loss, high-speed interconnects, AI servers, 5G, 6G, chip packaging, semiconductor materials, dielectric films, low dielectric constant, low dissipation factor, substrate materials, chip packaging, data center, high-frequency signals, AI accelerators, Berkeley"
+ },
+ {
+  "name": "Tulum Energy",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Catalyst-free by design; their value sits in carbon shape"
+  ],
+  "project": "Methane pyrolysis catalysts",
+  "hard": "Coking, molten-media chemistry",
+  "linkedin": "https://www.linkedin.com/company/tulumenergy",
+  "founded": 2024,
+  "raised_m": 27.0,
+  "fit": "Not for us",
+  "website": "https://www.tulumenergy.com",
+  "hq": "Milan, Italy",
+  "stage": "Seed",
+  "source": "https://www.businesswire.com/news/home/20250708275704/en",
+  "country": "Italy",
+  "kw": "methane pyrolysis, turquoise hydrogen, electric arc furnace, plasma, natural gas cracking, solid carbon, carbon black, graphite, low-carbon hydrogen, biogas, steelmaking equipment, Techint, Ternium, steel, ammonia, industrial hydrogen, EAF, Mexico pilot, hydrogen production, hydrogen without CO2, high-temperature cracking, carbon products, refineries, chemical plants, gas utilities, Italy"
+ },
+ {
+  "name": "Vema Hydrogen",
+  "apps": [],
+  "cats": [],
+  "why": [
+   "Matched problem, no AI team"
+  ],
+  "why_not": [],
+  "project": "Catalysts for hydrogen from iron-rich rock",
+  "hard": "Mineral surfaces, brine, high heat and pressure",
+  "linkedin": "https://www.linkedin.com/company/vema-hydrogen",
+  "founded": 2024,
+  "raised_m": 13.0,
+  "fit": "Best fit",
+  "country": "France",
+  "problem": "Iron chelator that keeps iron mobile in 200–300 °C brine, over magnesium and calcium",
+  "website": "https://www.vema.earth",
+  "hq": "Paris, France",
+  "stage": "Seed",
+  "source": "https://www.esgtoday.com/vema-hydrogen-raises-13-million-for-solution-to-produce-clean-hydrogen-at-under-1-kg/",
+  "kw": "engineered mineral hydrogen, stimulated geologic hydrogen, serpentinization, iron-rich rock, ultramafic rock, olivine, ferrous iron, high temperature brine, iron chelator, magnesium, calcium, subsurface reactor, clean hydrogen, low-cost hydrogen, drilling, Quebec, geologic hydrogen, mineral hydrogen, hydrogen from rock, natural hydrogen, hydrogen wells, oil and gas services"
+ },
+ {
+  "name": "Verdox",
+  "apps": [
+   "CO₂ capture"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Sells a competing product"
+  ],
+  "product": "Electroswing adsorption carbon capture material",
+  "relation": "compete",
+  "raised_m": 80,
+  "linkedin": "https://www.linkedin.com/company/verdox",
+  "fit": "Researched",
+  "website": "https://verdox.com",
+  "hq": "Woburn, USA",
+  "founded": 2019,
+  "stage": "Venture (round unnamed)",
+  "source": "https://www.esgtoday.com/carbon-capture-startup-verdox-raises-80-million-from-bill-gates-breakthrough-energy-and-others/",
+  "country": "USA",
+  "kw": "electroswing adsorption, electrochemical carbon capture, redox-active polymers, quinones, CO2 capture, direct air capture, DAC, point-source capture, low-energy capture, carbon removal, industrial emitters, MIT spinout, electrochemical swing, redox carriers, electrodes, carbon removal, flue gas capture, low energy, renewable electricity, cement, steel, carbon capture equipment, Woburn"
+ },
+ {
+  "name": "Vestaron",
+  "apps": [],
+  "cats": [
+   "Agriculture inputs"
+  ],
+  "why": [
+   "Stable, potent insecticidal peptide variants"
+  ],
+  "why_not": [],
+  "product": "Peptide-based bioinsecticides",
+  "buyer": "Growers, distributors",
+  "stage": "Series C + 2025 round",
+  "raised_m": 228.7,
+  "hq": "Durham, USA",
+  "website": "https://www.vestaron.com",
+  "source": "https://agbioinvestor.com/?p=146893",
+  "fit": "Researched",
+  "country": "USA",
+  "founded": 2005,
+  "kw": "peptide insecticides, bioinsecticides, Spear, spider venom peptides, biopesticides, crop protection, insect resistance management, organic farming, growers, distributors, agricultural biologicals, residue-free, peptide biopesticides, insect control, crop protection, biological insecticides, insect neurotoxins, mode of action, organic agriculture, vegetables, fruits, row crops, specialty crops, Spear Lep, Spear T, Durham North Carolina"
+ },
+ {
+  "name": "Waga Energy",
+  "apps": [
+   "Siloxane"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Landfill gas to biomethane units (WAGABOX)",
+  "relation": "sell",
+  "raised_m": 128,
+  "linkedin": "https://www.linkedin.com/company/waga-energy",
+  "fit": "Researched",
+  "website": "https://waga-energy.com",
+  "hq": "Meylan, France",
+  "founded": 2015,
+  "stage": "Acquired",
+  "source": "https://eqtgroup.com/news/eqt-completes-tender-offer-on-waga-energy",
+  "country": "France",
+  "kw": "landfill gas, biomethane, renewable natural gas, RNG, WAGABOX, cryogenic distillation, membrane separation, methane upgrading, landfill operators, gas grid injection, waste management, methane emissions, France, Canada, US, landfill methane, gas purification, biomethane plants, RNG producers, landfill owners, gas utilities, energy transition, Meylan"
+ },
+ {
+  "name": "X-Therma",
+  "apps": [],
+  "cats": [],
+  "why": [],
+  "why_not": [
+   "Peptoid chains are long for our funnel"
+  ],
+  "fit": "Worth a call",
+  "problem": "Peptoid blocker for the ice prism and basal faces",
+  "website": "https://x-therma.com",
+  "hq": "Richmond, USA",
+  "founded": 2014,
+  "raised_m": 45.3,
+  "stage": "Series B",
+  "source": "https://pulse2.com/x-therma-22-4-million-funding/",
+  "country": "USA",
+  "kw": "cryopreservation, cryoprotectant, peptoids, ice recrystallization inhibition, antifreeze proteins, ice crystal faces, DMSO-free, cell therapy, organ preservation, tissue banking, biobanking, cold chain, biopharma, regenerative medicine, XT-ViVo, cryoprotectant solutions, cell banking, biopreservation, ice nucleation, ice growth, ice crystals, low toxicity, Richmond California"
+ },
+ {
+  "name": "waterStrider Treatment",
+  "apps": [
+   "Selenium"
+  ],
+  "cats": [],
+  "why": [],
+  "why_not": [],
+  "product": "Electrochemical mine water treatment, selenium to <1 ppb",
+  "relation": "sell",
+  "linkedin": "https://ca.linkedin.com/company/waterstrider-treatment-inc",
+  "fit": "Researched",
+  "website": "https://waterstridertmt.com",
+  "hq": "Vancouver, Canada",
+  "founded": 2020,
+  "source": "https://techcouver.com/2025/03/12/how-this-b-c-startups-electrochemical-tech-helps-clean-up-water-at-mines/",
+  "country": "Canada",
+  "kw": "mine water treatment, selenium removal, electrochemical treatment, electrocoagulation, nitrate removal, metals removal, selenate, coal mining, metal mining, effluent compliance, sub-ppb selenium, mining companies, Canada, water treatment, electrochemical reactor, selenium compliance, mine effluent, wastewater, low chemicals, metal mining, coal mining, mining regulations, water quality, British Columbia"
+ }
+]

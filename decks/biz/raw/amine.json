@@ -1,0 +1,94 @@
+{
+ "key": "amine",
+ "name": "Low-steam capture solvent",
+ "market": {
+  "usd_yr": 3250000000,
+  "year": 2024,
+  "what": "gas-treating amines (MEA, MDEA, blends) for gas sweetening and CO2 capture, world",
+  "method": "avg of 3 reports: FMI $3.23B (2024), GII $3.3B (2024), GMI $3.19B (2023); MDEA alone $754M. CCS solvent make-up is only ~$3/t CO2 (1.75 kg/t x $1,700/t MEA)",
+  "sources": [
+   "https://prnewswire.co.uk/news-releases/gas-treating-amine-market-valuation-to-reach-us-5-630-5-million-by-2034-amid-growing-energy-demand-and-implementation-of-environmental-regulations-future-market-insights-302117991.html",
+   "https://www.gminsights.com/industry-analysis/gas-treating-amine-market",
+   "https://thundersaidenergy.com/downloads/ccs-amine-degradation-rates/"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 420000000,
+  "job_what": "solvents sold for CO2 capture (post-combustion and industrial capture), world",
+  "job_method": "avg Fact.MR $444M & GMI $400M (2025); bottom-up make-up only ~50 Mt/yr captured x ~$3/t = ~$0.15B, rest is first fills; med-low confidence",
+  "job_sources": [
+   "https://www.24-7pressrelease.com/press-release/536282/carbon-capture-amine-solvents-market-set-to-surpass-usd-103-billion-by-2036-as-industrial-carbon-capture-projects-shift-from-pilot-programs-to-commercial-deployment",
+   "https://www.gminsights.com/industry-analysis/post-combustion-solvents-market",
+   "https://www.gasworld.com/story/global-ccus-projects-pipeline-is-maturing-says-iea/2155454.article",
+   "https://thundersaidenergy.com/downloads/ccs-amine-degradation-rates/"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 770000000,
+  "logic": "MEA 3.7 GJ/t, KS-type ~3.0, target ~2.3. Save 0.7 GJ/t x ~$7/GJ steam (est.) = $5/t + $2/t less degradation/reclaiming = $7/t x est. 110 Mt/yr post-combustion amine capture by 2030 (64 Mtpa op 2025 x5, ~35% post-combustion) = $770M",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "license via EPC/technology partner: ~$1.5/t royalty x 8 Mt/yr captured with K14 solvent + solvent supply margin (est.)",
+  "gross_margin_pct": 85,
+  "margin_logic": "mostly license royalty; solvent made by partner",
+  "sources": [
+   "https://www.mhi.com/products/engineering/co2plants_process.html",
+   "https://www.globalccsinstitute.com/carbon-capture-stays-the-course-despite-global-headwinds-with-54-rise-in-operational-projects/",
+   "https://thundersaidenergy.com/downloads/ccs-amine-degradation-rates/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 38,
+  "drivers": "CCS capture capacity 5x 2025->2030 (GCCSI); 45Q $85/t point source; EU/UK/Norway CCS clusters; gas-treating amines ~5.7%/yr",
+  "deadline": "45Q: construction must begin before 1 Jan 2033",
+  "sources": [
+   "https://www.globalccsinstitute.com/carbon-capture-stays-the-course-despite-global-headwinds-with-54-rise-in-operational-projects/",
+   "https://www.globalccsinstitute.com/u-s-preserves-and-increases-45q-credit-in-one-big-beautiful-bill-act/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Entropy Inc. (Entropy23 amine, Glacier CCS)"
+  ],
+  "indirect_startups": [
+   "Capsol Technologies (hot potassium carbonate)",
+   "Mantel (molten borate, $30M Series A 2024)",
+   "Svante (solid sorbent)"
+  ],
+  "incumbents": [
+   "Shell CANSOLV",
+   "Mitsubishi Heavy Industries (KS-21)",
+   "SLB Capturi (Aker)",
+   "Fluor (Econamine FG+)",
+   "BASF (OASE blue)",
+   "Carbon Clean",
+   "ION Clean Energy"
+  ],
+  "papers_3yr": null,
+  "paper_query": "amine CO2 capture solvent regeneration energy degradation",
+  "groups_active": null,
+  "notes": "Licensors own the market; new solvents need long pilots. ION Clean Energy (founded 2008) raised $45M led by Chevron in 2024.",
+  "sources": [
+   "https://www.utilitydive.com/news/chevron-leads-45m-investment-carbon-removal-ion-clean-energy-carbon-direct/712943/",
+   "https://finsmes.com/2024/09/mantel-raises-30m-in-series-a-funding.html",
+   "https://advantageog.mediaroom.com/2022-07-05-Entropy-Inc-Announces-Commissioning-of-the-First-Phase-of-the-200,000-TPA-Glacier-CCS-Project-and-Provides-Corporate-Update"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 45000,
+  "synth": "catalog or 1-2 step custom amines (hindered/diamine blends), 3 variants",
+  "test": "CO2 cyclic capacity 40/120 C (VLE screening), heat of absorption by calorimetry, oxidative (O2+Fe, 55-70 C) and thermal (135-150 C, sealed) degradation with LC-MS; e.g. UT Austin, NTNU/SINTEF",
+  "logic": "synth 6 wk + tests 8 wk; 3 x $6k synth + ~$27k screening and degradation runs",
+  "sources": [
+   "https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3106994",
+   "https://www.frontiersin.org/articles/10.3389/fenrg.2024.1325212/full"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 5,
+  "gates": "mini-pilot then 6-12 month pilot at NCCC or TCM Mongstad; emissions/nitrosamine permit; licensor or EPC adoption into FEED",
+  "sources": [
+   "https://www.nationalcarboncapturecenter.com/",
+   "https://www.mhi.com/products/engineering/co2plants_process.html"
+  ]
+ }
+}

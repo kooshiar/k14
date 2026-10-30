@@ -1,0 +1,83 @@
+{
+ "key": "tmah",
+ "name": "TMAH recovery binder",
+ "market": {
+  "usd_yr": 1000000000,
+  "year": 2025,
+  "what": "Electronic-grade TMAH (photoresist developer) bought by fabs + LCD, world",
+  "method": "avg of reports $0.67B (2024), $1.18B (2025), $1.3B (2024); >250 kt/yr TMAH solution used",
+  "sources": [
+   "https://www.24chemicalresearch.com/reports/291226/global-tetramethylammonium-hydroxide-solution-forecast-market-2025-2032-378",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10051574/",
+   "https://www.verifiedmarketresearch.com/product/electronic-grade-tetramethyl-ammonium-hydroxide-tmah-market/"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 180000000,
+  "logic": "30% of ~$1.0B TMAH buy displaced by recovered TMAH = $300M, net of ~40% recovery cost = ~$180M; less toxic TMAH to bio-treatment (not counted)",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "recovery media spend ~10% of $300M recovered value = $30M x ~40% share; sold to recovery operators (Chang Chun, Organo)",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty sorbent/resin consumable",
+  "sources": [
+   "https://esg.tsmc.com/en-US/articles/346",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10051574/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "more litho layers, new fabs (US, JP, TW); TSMC recycling saves 24 kt/yr new TMAH; toxic TMAH effluent limits",
+  "deadline": "Taiwan science-park TMAH effluent limit 60 ppm (in force)",
+  "sources": [
+   "https://www.24chemicalresearch.com/reports/291226/global-tetramethylammonium-hydroxide-solution-forecast-market-2025-2032-378",
+   "https://esg.tsmc.com/en-US/articles/346",
+   "https://esg.tsmc.com/en-US/articles/172"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Gradiant"
+  ],
+  "incumbents": [
+   "Tokuyama",
+   "Sachem",
+   "Chang Chun",
+   "Sanfu Chemical",
+   "Transcene",
+   "Organo",
+   "Kurita",
+   "DuPont (Amberlite resins)",
+   "Purolite (Ecolab)",
+   "Mitsubishi Gas Chemical"
+  ],
+  "papers_3yr": null,
+  "paper_query": "tetramethylammonium hydroxide wastewater recovery",
+  "groups_active": null,
+  "notes": "TSMC + Chang Chun/Sanfu already regenerate e-grade TMAH by electrolysis + filtration (Fab 14B Oct 2024, -24 kt/yr new buy); ion-exchange route known. Room is dilute (<100 ppm) streams. Gradiant raised $225M (2023).",
+  "sources": [
+   "https://esg.tsmc.com/en-US/articles/346",
+   "https://www.taipeitimes.com/News/biz/archives/2024/11/14/2003826854",
+   "https://www.researchgate.net/publication/274310119_Strategies_for_Tetramethylammonium_Hydroxide_TMAH_Recovery_and_Recycling"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 45000,
+  "synth": "macrocycle/grafted resin: TMA+ host (calixarene/cucurbituril-type) on a support, 2-3 variants",
+  "test": "batch isotherms + column breakthrough on simulated fab waste (TMA+ vs NH4+, Na+); TMA+ by cation ion chromatography; ASTM D2187 resin capacity; univ. lab",
+  "logic": "10-12 wk synth/grafting + 3-4 wk tests; ~$35k synth + ~$10k IC (~$50-100/sample) and columns",
+  "sources": [
+   "https://www.astm.org/d2187-17.html",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10051574/"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "pilot at recovery operator 6-12 mo; if reused in fab: SEMI-grade metals/purity + fab PCN qual 1-2 yr",
+  "sources": [
+   "https://esg.tsmc.com/en-US/articles/346"
+  ]
+ }
+}

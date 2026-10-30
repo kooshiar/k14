@@ -1,0 +1,91 @@
+{
+ "key": "reecoal",
+ "name": "Coal ash rare earths",
+ "market": {
+  "usd_yr": 165000000,
+  "year": 2025,
+  "what": "US imports of rare-earth compounds and metals (what US coal-REE output would replace); no commercial coal-ash REE sales yet",
+  "method": "USGS MCS 2026 import value; cross-check: US accessible coal ash holds ~$8.4B REE (one-off stock); Ramaco Brook plans 1 kt/yr TREO from ~2028",
+  "sources": [
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-rare-earths.pdf",
+   "https://www.jsg.utexas.edu/news/?p=23834",
+   "https://ramacoresources.com/wp-content/uploads/2025/07/Ramaco-PEA-Report-Jul-2025.pdf"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 3000000,
+  "job_what": "extraction of REE from coal ash/waste at pilot plants (reagents + processing), US-led; no commercial sales",
+  "job_method": "est.: ~$30M/yr pilot funding (DOE $17M + $10M in 2024, $75M awards 2026 over multi-yr) x ~10% extraction opex share = ~$3M; low confidence",
+  "job_sources": [
+   "https://reshorenow.org/library/12778/DOE-awarding-17M-to-3-projects-to-produce-rare-earth-elements-from-coal-based-resources",
+   "https://www.alcircle.com/news/us-doe-funds-75m-to-five-projects-to-recover-aluminium-rare-earth-from-coal-waste-120245",
+   "https://ramacoresources.com/wp-content/uploads/2025/07/Ramaco-PEA-Report-Jul-2025.pdf"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 55000000,
+  "logic": "coal-REE opex ~$185k/t oxide, 85% reagents (Ramaco PEA). Selective trace-REE extractant cuts reagent use ~10% = $18.5k/t x est. 3 kt/yr US coal-REE output by 2033 = $55M/yr",
+  "our_revenue_usd_yr": 4500000,
+  "revenue_logic": "50% share of 3 kt TREO x ~$3/kg TREO (fill + make-up + licence)",
+  "gross_margin_pct": 65,
+  "margin_logic": "3-5 step extractant, toll-made; specialty pricing",
+  "sources": [
+   "https://ramacoresources.com/wp-content/uploads/2025/07/Ramaco-PEA-Report-Jul-2025.pdf",
+   "https://acaa-usa.org/wp-content/uploads/2025/12/News-Release-Coal-Ash-Production-and-Use-2024.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "NdPr demand +6%/yr; DOE $134M non-traditional REE NOFO (2025) and ~$1B critical minerals program; 45X 10% credit; 63.6 Mt/yr new US coal ash + ~1.9 Bt stored",
+  "deadline": "DFARS 252.225-7052, 1 Jan 2027",
+  "sources": [
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/critical-mineral-market-reports/Market%20Report%20-%20NdPr%20-%2008052026.pdf",
+   "https://rareearthexchanges.com/news/coal-ash-extraction/",
+   "https://acaa-usa.org/wp-content/uploads/2025/12/News-Release-Coal-Ash-Production-and-Use-2024.pdf",
+   "https://www.jsg.utexas.edu/news/?p=23834"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Phoenix Tailings",
+   "ReElement Technologies"
+  ],
+  "indirect_startups": [
+   "REEgen"
+  ],
+  "incumbents": [
+   "Ramaco Resources",
+   "Energy Fuels",
+   "MP Materials",
+   "Syensqo",
+   "Lanxess"
+  ],
+  "papers_3yr": null,
+  "paper_query": "rare earth extraction coal fly ash",
+  "groups_active": null,
+  "notes": "Ramaco PEA: Sc+Ga+Ge = 83% of revenue, REE only 17%; an REE-only extractant has limited pull, one that also takes Sc would matter more. Busy academic field, few buyers.",
+  "sources": [
+   "https://ramacoresources.com/wp-content/uploads/2025/07/Ramaco-PEA-Report-Jul-2025.pdf",
+   "https://www.vccafe.com/the-rare-earth-renaissance-2026-deeptech-allocation/",
+   "https://rareearthexchanges.com/news/coal-ash-extraction/"
+  ]
+ },
+ "lab": {
+  "weeks": 15,
+  "usd": 45000,
+  "synth": "3-5 step custom: phenanthroline diamide, 3 variants share the core",
+  "test": "Acid leach of real Class F fly ash (ASTM C618 ash from a utility); D and REE/Fe/Al/Ca selectivity vs D2EHPA at 50-300 mg/L REE; ICP-MS for 15 REE",
+  "logic": "synth 10 wk ~$30k + test 5 wk: leach work ~$5k, ~150 ICP-MS x $45-70 = ~$9k",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 4,
+  "gates": "testwork with Hazen/Ramaco-type pilot 1 yr; must lock into flowsheet before plant build (~2027-28) or wait for next plant; DOE-funded pilot 1-2 yr",
+  "sources": [
+   "https://ramacoresources.com/wp-content/uploads/2025/07/Ramaco-PEA-Report-Jul-2025.pdf",
+   "https://rareearthexchanges.com/news/coal-ash-extraction/"
+  ]
+ }
+}

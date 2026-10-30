@@ -1,0 +1,40 @@
+{
+ "pag": {
+  "type": "Product",
+  "problem": "Chip photoresists use PFAS photoacid generators (PFOS/PFBS-type) facing bans",
+  "design": "PFAS-free photoacid generator for chip resists",
+  "new": true
+ },
+ "ppa": {
+  "type": "Add-in",
+  "problem": "Plastic film extrusion uses fluoropolymer processing aids (PFAS) being phased out",
+  "design": "PFAS-free polymer processing aid",
+  "new": true
+ },
+ "f3foam": {
+  "type": "Product",
+  "problem": "PFAS firefighting foams (AFFF) are being banned; fluorine-free foams underperform on fuel fires",
+  "design": "Fluorine-free surfactant for firefighting foam",
+  "new": true
+ },
+ "refrig": {
+  "type": "Product",
+  "problem": "HFO refrigerants count as PFAS in the EU proposal; need non-fluorinated low-GWP options",
+  "design": "Non-PFAS low-GWP refrigerant blend",
+  "new": true
+ },
+ "hardener": {
+  "type": "Product",
+  "problem": "Epoxy wind blades can’t be recycled",
+  "design": "Hardener that splits in mild acid for recycling",
+  "s0_smiles": "NC1CCC(OC2(OC3CCC(N)CC3)CCCC2)CC1",
+  "today_best": "Recyclamine-type ketal diamine"
+ },
+ "cement": {
+  "type": "Product",
+  "problem": "Low-clinker cement loses early strength",
+  "design": "Additive that brings back early strength",
+  "s0_smiles": "OCCNCCN(CCO)CCO",
+  "today_best": "glycerol"
+ }
+}

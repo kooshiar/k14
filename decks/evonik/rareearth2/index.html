@@ -255,4 +255,4 @@ function go(i){cur=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=
 prev.onclick=()=>go(cur-1);next.onclick=()=>go(cur+1);
 addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(cur+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(cur-1)}});
 const mh=/^#p(\d+)$/.exec(location.hash);go(mh?+mh[1]-1:0);
-</script><style id="plgap">.txt .pl{position:static!important;align-self:flex-start!important;margin:0 0 1.6cqw!important}</style><link rel="stylesheet" id="u-railcss" href="/decks/_shared/rail.css?v=8282fa81"><script id="u-railjs" src="/decks/_shared/rail.js?v=8282fa81" defer></script></body></html>
+</script><style id="plgap">.txt .pl{position:static!important;align-self:flex-start!important;margin:0 0 1.6cqw!important}</style><link rel="stylesheet" id="u-railcss" href="/decks/_shared/rail.css?v=1531c81a"><script id="u-railjs" src="/decks/_shared/rail.js?v=1531c81a" defer></script></body></html>

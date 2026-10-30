@@ -1,0 +1,242 @@
+{
+ "/decks/foundation/": {
+  "h": "63422b434147d220a52f97896f4cb18c",
+  "ts": 0
+ },
+ "/decks/edu/layer2/": {
+  "h": "45998552911157b4fad844e22afad02a",
+  "ts": 1793311681
+ },
+ "/decks/agentic/": {
+  "h": "f0ef46d956b6e477276c070bb93fc7de",
+  "ts": 0
+ },
+ "/decks/process/": {
+  "h": "5b6f395ef9d9f59d8c9caef6d7b42c66",
+  "ts": 0
+ },
+ "/decks/progress/": {
+  "h": "d526c357661e9537f7246430a79c59bf",
+  "ts": 1793373715
+ },
+ "/decks/biz/": {
+  "h": "593b3e1506f34b2e86f9d94fee7b509b",
+  "ts": 1793116754
+ },
+ "/decks/customers/": {
+  "h": "cdc7733af1bed225c83585d962d28849",
+  "ts": 1793121393
+ },
+ "/decks/design/": {
+  "h": "43234be6218b1308efc291778843fa23",
+  "ts": 1793378324
+ },
+ "/decks/investors/": {
+  "h": "a5fa50d424924d9a4f09ff5e035835b1",
+  "ts": 1793379770
+ },
+ "/decks/sales/": {
+  "h": "c6c3a88dd004a4c005cb75241703f2e5",
+  "ts": 0
+ },
+ "/decks/founders/": {
+  "h": "9233ab07b25e50f201129ca01b051d65",
+  "ts": 0
+ },
+ "/decks/partners/amd/": {
+  "h": "cab58350c400c561cca98f278f5d138e",
+  "ts": 1793042727
+ },
+ "/decks/partners/evonik/": {
+  "h": "7e9f59955ed1edde0bed51c3d17bcabe",
+  "ts": 1793042727
+ },
+ "/decks/partners/cemvita/": {
+  "h": "c27dcdfd95a4e2d5da9b3991584f7659",
+  "ts": 1793042727
+ },
+ "/decks/partners/refinyx/": {
+  "h": "fb20ce518bb452a98668195a4a4d354d",
+  "ts": 1793042727
+ },
+ "/decks/top/": {
+  "h": "bff386ec986f56110a2846ee28a1d78d",
+  "ts": 1792980713
+ },
+ "/apps/": {
+  "h": "82a516618eb9530d3f87dcf0212979b4",
+  "ts": 1793380711
+ },
+ "/decks/opportunities/pfas/": {
+  "h": "2879091c2de4357793586951271de6db",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/smoke/": {
+  "h": "5a6048a501ab8f7da63fd7dc91359718",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/dioxane/": {
+  "h": "436221859185c06fb44c9892a74c28c9",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/cork/": {
+  "h": "b3fdde9d07e6c6bfe7a3ee33d8f515f7",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/mousy/": {
+  "h": "6d47c60aa8c4b94d29241278bb451fdd",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/gold/": {
+  "h": "8fa6e70938f716d53d4297bf63a99805",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/siloxane/": {
+  "h": "7b4926ad62eb7c07b77da0b8dab99fd7",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/rareearth/": {
+  "h": "91f6b965c49db0f4b664d3ba039af9d8",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/ethylene/": {
+  "h": "f8f82e7f7dfa64b924d0838d9119357f",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/cement/": {
+  "h": "8b657f2c9b475bb7ff1009bb44cb3660",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/ammonium/": {
+  "h": "13edb7939eac0cd09e4234fab42ff6f5",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/sulfur/": {
+  "h": "ea241ef68c640e45838989b16125ace2",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/rebar/": {
+  "h": "42819d1514b87954502adaa8b4e051a7",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/psensor/": {
+  "h": "525c176027d7a33a47f937450bb9530d",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/tmah/": {
+  "h": "a20e37e266ece8dcba92fa53005c2c39",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/tfa/": {
+  "h": "db8192366fc848d54dc65f9ff9811475",
+  "ts": 1793378552
+ },
+ "/decks/opportunities/co2/": {
+  "h": "50b645067cb11ca9b52875c2a604acd3",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/xenon/": {
+  "h": "1df628613c855d7dec49a3ac32d24713",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/lithium/": {
+  "h": "256c9d143e67b84620298e68d92f633c",
+  "ts": 1793378552
+ },
+ "/decks/opportunities/boron/": {
+  "h": "c5538ace60f46ce22678dbe2b58d21e6",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/magrec/": {
+  "h": "d12644e672826c3eeb740ce3d94c54a4",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/chalco/": {
+  "h": "12516fff2ccaa671acad16c8d2086cbd",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/formaldehyde/": {
+  "h": "eb3e6d2ee0b7a8819faa949dbf0e9436",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/reecoal/": {
+  "h": "ece4f46cfba9c2ac321c750ee4941677",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/selenate/": {
+  "h": "c9b4dc144ee7c050fd8f8882630b964c",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/phosphate/": {
+  "h": "9f7c315550c36fc61502471978b81a4b",
+  "ts": 1793378856
+ },
+ "/decks/opportunities/smoketest/": {
+  "h": "d2681743f91c6cea7e5bda79270f37da",
+  "ts": 0
+ },
+ "/decks/opportunities/plastic/": {
+  "h": "8eaad0ada41b25754d20ba7ca8af0381",
+  "ts": 0
+ },
+ "/decks/opportunities/cesium/": {
+  "h": "dd72d3b60d159c340754355eac75de31",
+  "ts": 0
+ },
+ "/decks/bio/pdscav/": {
+  "h": "9d9f2c48b14e540d4b67346bf866b34e",
+  "ts": 0
+ },
+ "/decks/bio/nitrite/": {
+  "h": "92a8d8ca7c9cd608d904add509b87d1a",
+  "ts": 0
+ },
+ "/decks/bio/ironmedia/": {
+  "h": "3905a0e39251b64165a924198c2fb6d6",
+  "ts": 0
+ },
+ "/decks/bio/tfaswap/": {
+  "h": "293564116df06bf9250e9795e84273c5",
+  "ts": 0
+ },
+ "/decks/bio/endotox/": {
+  "h": "afee4c6532fbb9f3d9f6e3f2d1f842c9",
+  "ts": 0
+ },
+ "/decks/bio/chiral/": {
+  "h": "d71cdb77b9e240a65f506b259435725e",
+  "ts": 0
+ },
+ "/decks/bio/cryo/": {
+  "h": "b981641698488aa989480262b9ccd5ef",
+  "ts": 0
+ },
+ "/decks/bio/abcap/": {
+  "h": "11842c78ecd6481879259b46ea83cd02",
+  "ts": 0
+ },
+ "/decks/bio/vaxstab/": {
+  "h": "7a167e9faea1425b8db5cabf35b093f3",
+  "ts": 0
+ },
+ "/decks/opportunities/": {
+  "h": "acba7ff898b555e25bc2844df9c1e211",
+  "ts": 0
+ },
+ "/join/": {
+  "h": "97e768421759eee62caa682e284c7225",
+  "ts": 1793380711
+ },
+ "/lab/": {
+  "h": "166c8c579d8e3c0b3070daae3a0e1530",
+  "ts": 1793380711
+ },
+ "/decks/progress/lab/": {
+  "h": "40167ef85d5bbc03eb79ed855b0e5757",
+  "ts": 1793375909
+ },
+ "/decks/progress/v5/": {
+  "h": "3ea0dafbbc1db7df5d908d2da09e57e2",
+  "ts": 1793208908
+ }
+}

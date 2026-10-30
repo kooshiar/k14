@@ -1,0 +1,99 @@
+{
+ "key": "pfas",
+ "name": "PFAS drinking-water sorbent",
+ "market": {
+  "usd_yr": 1600000000.0,
+  "year": 2025,
+  "what": "PFAS removal media and systems for drinking water (GAC, IX, new sorbents), world",
+  "method": "reports put PFAS treatment at $2.1-2.8B (2025); GAC+IX ~70% -> ~$1.6B; cross-check: US O&M at full compliance $0.76-1.01B/yr (AWWA/B&V) + EU EUR3.6B/10 yr",
+  "sources": [
+   "https://www.datamintelligence.com/research-report/pfas-filtration-technologies-market",
+   "https://virtuemarketresearch.com/report/pfas-water-treatment-market",
+   "https://www.grandviewresearch.com/industry-analysis/pfas-treatment-market-report",
+   "https://www.awwa.org/wp-content/uploads/Final-Technical-Memorandum-Updating-National-Cost-Estimate-for-PFAS-Standards-using-UCMR-5.pdf",
+   "https://www.bluefieldresearch.com/ns/new-eu-pfas-limits-activate-e3-6-billion-drinking-water-treatment-opportunity/"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 500000000.0,
+  "logic": "media O&M: US $0.76-1.01B/yr + EU ~$0.4B/yr = ~$1.2B/yr; sorbent with ~3x GAC bed life cuts change-outs ~40% -> ~$0.5B/yr (smaller vessels also trim $37-48B US capex; not counted)",
+  "our_revenue_usd_yr": 35000000.0,
+  "revenue_logic": "~1.5% of ~$2.4B media market by yr 7, sold through a water-treatment major (Kurita/Cyclopure-style deal)",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty sorbent priced well above GAC (~$3-5/kg), toll-made; partner takes distribution cut",
+  "sources": [
+   "https://www.awwa.org/wp-content/uploads/Final-Technical-Memorandum-Updating-National-Cost-Estimate-for-PFAS-Standards-using-UCMR-5.pdf",
+   "https://www.bluefieldresearch.com/ns/new-eu-pfas-limits-activate-e3-6-billion-drinking-water-treatment-opportunity/",
+   "https://gabelli.com/research/forever-chemicals-2025-update/",
+   "https://cyclopure.com/kurita-invests-in-cyclopure-to-accelerate-pfas-business-expansion/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 10,
+  "drivers": "EPA 4 ppt PFOA/PFOS; EU DWD 0.1 ug/L sum-20 from Jan 2026; utility buildout (AWK ~$1B, WTRG ~$450M)",
+  "deadline": "EPA PFOA/PFOS MCL compliance 2031 (extended from 2029)",
+  "sources": [
+   "https://www.datamintelligence.com/research-report/pfas-filtration-technologies-market",
+   "https://thedriller.com/articles/93146-costs-of-complying-with-pfas-rules-estimated-to-be-double-epas-figures",
+   "https://gabelli.com/research/forever-chemicals-2025-update/",
+   "https://www.bluefieldresearch.com/ns/new-eu-pfas-limits-activate-e3-6-billion-drinking-water-treatment-opportunity/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Cyclopure",
+   "Puraffinity",
+   "Sorbenta"
+  ],
+  "indirect_startups": [
+   "Claros Technologies",
+   "Oxyle",
+   "374Water",
+   "Aclarity",
+   "Allonnia",
+   "Gradiant"
+  ],
+  "incumbents": [
+   "Calgon Carbon (Kuraray)",
+   "Ecolab Purolite",
+   "DuPont",
+   "Lanxess",
+   "Xylem/Evoqua",
+   "Veolia",
+   "Jacobi",
+   "CETCO (Minerals Technologies)"
+  ],
+  "papers_3yr": 2384,
+  "paper_query": "PFAS adsorption drinking water",
+  "groups_active": 200,
+  "notes": "groups capped at 200 by per-page=200 (true count higher). GAC/IX already meet 4 ppt for long-chain, so the bar is cost per m3. Puraffinity $25.8M raised, NSF 61 for G400+ (2026); Cyclopure ~$10M + Kurita stake and US exclusive (2025-26); Claros $55M Series B; Oxyle $16M seed",
+  "sources": [
+   "https://tracxn.com/d/companies/cyclopure/__qsD6L7FXRibgKIMv_SQHlM0FbacA3ET9YPQg5p6w5LA",
+   "https://cyclopure.com/kurita-invests-in-cyclopure-to-accelerate-pfas-business-expansion/",
+   "https://www.puraffinity.com/",
+   "https://sorbentainc.com/",
+   "https://pulse2.com/claros-technologies-raises-55-million-series-b-to-commercialize-pfas-destruction-technology/",
+   "https://www.chemeurope.com/en/news/1185462"
+  ]
+ },
+ "lab": {
+  "weeks": 18,
+  "usd": 55000,
+  "synth": "macrocycle/polymer/resin: active site must be fixed on a bead or polymer to be usable in a column",
+  "test": "batch isotherms + rapid small-scale column test (RSSCT, ASTM D6586) on spiked tap water; PFAS by EPA 533/537.1 (e.g. MSU Center for PFAS Research)",
+  "logic": "12-14 wk resin synth with 3 variants ($30k) + 4-5 wk tests; ~40 EPA 533 samples x $241 = ~$10k + RSSCT/isotherm labor ~$15k",
+  "sources": [
+   "https://www.canr.msu.edu/pfas-research/uploads/CPR_Fee%20Schedule_v1.pdf",
+   "https://www.newmoa.org/wp-content/uploads/2023/02/PFAS-Treatment-with-Single-use-Ion-Exchange-Case-Histories-Review-Cost-Benefit-Analysis-vs-Alternative-Technologies.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "NSF/ANSI 61 (lab test 2-3 wk, full listing ~6-12 mo est.); utility pilot vs GAC 6-12 mo; state approval",
+  "sources": [
+   "https://www.waterworld.com/residential-commercial/article/14307504/going-through-the-process",
+   "https://www.puraffinity.com/"
+  ]
+ }
+}

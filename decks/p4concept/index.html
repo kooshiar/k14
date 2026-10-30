@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Scoring Page Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E6E8EC;--g:#2E8A1F;--red:#B3261E;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden}
+.lb{font:500 17px "Geist Mono",monospace;color:var(--mut)}.sb{font-size:21px;color:var(--mut);margin-top:6px}
+.n{font:600 52px/1.05 Geist,sans-serif;letter-spacing:-.01em}
+.hero{font:600 104px/1 Geist,sans-serif;letter-spacing:-.025em}
+h1{margin:0;font:600 46px/1.15 Geist,sans-serif;letter-spacing:-.01em}
+.bot{width:26px;height:56px;border-radius:7px 7px 4px 4px;background:#D9DDE3;position:relative}.bot:before{content:'';position:absolute;left:9px;top:-12px;width:8px;height:14px;border-radius:2px;background:inherit}
+.bot.t{background:var(--red)}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+const L=(hero,title,right,col)=>`<div style="display:grid;grid-template-columns:1.15fr 1fr;height:100%">
+ <div style="padding:0 72px 0 96px;display:flex;flex-direction:column;justify-content:center">${hero?`<div class="hero" style="color:${col||'var(--ink)'}">${hero}</div>`:''}<h1 style="margin-top:${hero?22:0}px;${hero?'':'font-size:56px'}">${title}</h1></div>
+ <div style="background:#F7F6F2;padding:0 80px;display:flex;flex-direction:column;justify-content:center;gap:40px">${right}</div></div>`;
+const fact=(l,n,s,sz)=>`<div><div class="lb">${l}</div><div class="n" style="margin-top:8px;${sz?'font-size:'+sz+'px':''}">${n}</div>${s?`<div class="sb">${s}</div>`:''}</div>`;
+const G=[['Performance',40,['Removes cork taint (TCA)','Keeps fruit and floral aroma','Leaves nothing in the wine','Holds more per kg']],['Safety & rules',30,['Food-safe','Allowed for sale']],['Cost',15,['Cost per bottle','Equipment cost']],['Fit & supply',15,["Drops into today's setup",'Easy to ship and store','Easy to make']]];
+const GC=['#2E8A1F','#14161A','#5A6270','#9AA1AD'];
+const fin=`function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform='scale('+s+')'}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();`;
+const D=[['Performance',40,'#2E8A1F',['Binds TCA in water','Picks TCA over fruit ester (10×)','Picks TCA over rose alcohol (100×)','Picks TCA over vanillin (10×)','Stays bound in water MD']],
+ ['Safety & rules',30,'#14161A',['No toxic groups (13 alerts)','Stays out of the wine (logP)']],
+ ['Cost',15,'#5A6270',['Cost per use']],
+ ['Fit & supply',15,'#8C93A0',['No imported F or I atoms','Cheaper edits, same quality','Small edits of today’s product']]];
+const pack=(it,n)=>{const k=Math.ceil(it.length/n);const o=[];for(let i=0;i<it.length;i+=k)o.push(it.slice(i,i+k).join(' · '));return o};   /* bundle items into fewer lines when a slice is short */
+const SUB={'Performance':[['Removes cork taint (TCA)',10],['Keeps fruit and floral aroma',15],['Leaves nothing in the wine',10],['Holds more per kg',5]],
+ 'Safety & rules':[['Food-safe',18],['Allowed for sale',12]],'Cost':[['Cost per bottle',8],['Equipment cost',8]],
+ 'Fit & supply':[["Drops into today\u2019s setup",8],['Easy to ship and store',4],['Easy to make',4]]};   /* sub-weights per criterion (page 4 original) */
+const TT='Our system scores every design on 11 checks in 4 dimensions';
+const box=(d,big)=>`<div style="background:${d[2]};color:#fff;border-radius:12px;padding:${big?'24px 26px':'18px 20px'};display:flex;flex-direction:column;overflow:hidden">
+ <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><span style="font:600 ${big?28:22}px Geist">${d[0]}</span><span style="font:600 ${big?34:24}px Geist">${d[1]}%</span></div>
+ <div style="margin-top:12px;font-size:${big?19:16}px;line-height:1.45;opacity:.9">${d[3].join('<br>')}</div></div>`;
+const tree=(h)=>`<div style="display:grid;grid-template-columns:40fr 60fr;gap:10px;height:${h}px">${box(D[0],1)}<div style="display:grid;grid-template-rows:1fr 1fr;gap:10px">${box(D[1],1)}<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">${box(D[2])}${box(D[3])}</div></div></div>`;
+const V={
+1(){ /* flow + treemap */
+ const st=(t,s,c)=>`<div style="background:${c||'#fff'};color:${c?'#fff':'var(--ink)'};border-radius:12px;padding:18px 22px;border:1px solid ${c||'#E6E8EC'}"><div style="font:600 26px Geist">${t}</div><div style="font-size:17px;margin-top:4px;opacity:.75">${s}</div></div>`;
+ return `<div style="display:grid;grid-template-columns:420px 1fr;height:100%;gap:0">
+ <div style="padding:0 40px 0 88px;display:flex;flex-direction:column;justify-content:center;gap:14px"><h1 style="font-size:40px;margin-bottom:30px">${TT}</h1>${st('1 design','from 433 made')}<div style="text-align:center;color:var(--mut);font:600 22px Geist">↓</div>${st('11 checks','in 4 dimensions →')}<div style="text-align:center;color:var(--mut);font:600 22px Geist">↓</div>${st('1 score, 0–100','50 = best sold today','#14161A')}</div>
+ <div style="background:#F7F6F2;padding:72px 72px;display:flex;align-items:center">${tree(640)}</div></div>`},
+2(){ /* title left, treemap right (accepted page layout) */
+ return `<div style="display:grid;grid-template-columns:520px 1fr;height:100%"><div style="padding:0 48px 0 96px;display:flex;align-items:center"><h1 style="font-size:50px">${TT}</h1></div><div style="background:#F7F6F2;padding:72px 72px;display:flex;align-items:center">${tree(660)}</div></div>`},
+3(){ /* one tall stacked column, checks beside each slice */
+ let y=0;const H=640;return `<div style="display:grid;grid-template-columns:1.05fr 1fr;height:100%">
+ <div style="padding:0 72px 0 96px;display:flex;flex-direction:column;justify-content:center"><h1 style="font-size:52px">${TT}</h1></div>
+ <div style="background:#F7F6F2;display:grid;grid-template-columns:110px 1fr;gap:26px;padding:0 72px;align-items:center"><div style="display:flex;flex-direction:column;gap:6px;height:${H}px">${D.map(d=>`<div style="flex:${d[1]};background:${d[2]};border-radius:8px;color:#fff;display:flex;align-items:center;justify-content:center;font:600 26px Geist">${d[1]}%</div>`).join('')}</div>
+ <div style="display:flex;flex-direction:column;gap:6px;height:${H}px">${D.map(d=>`<div style="flex:${d[1]};display:flex;flex-direction:column;justify-content:center"><div style="font:600 25px Geist">${d[0]}</div><ul style="margin:6px 0 0;padding:0 0 0 20px;font-size:18px;line-height:1.5;color:var(--mut);width:520px">${pack(SUB[d[0]].map(([n,w])=>n+'\u00a0<span class="mono" style="color:#9AA1AD;font-size:15px">'+w+'%</span>'),Math.max(1,Math.floor(d[1]/8))).map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></div></div>`},
+4(){ /* every check a tile, area = its share */
+ const tiles=D.flatMap(d=>d[3].map(c=>[c,d[1]/d[3].length,d[2],d[0]]));
+ return L('','Our system scores every design on 11 checks in 4 dimensions',`<div style="display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;width:620px">${tiles.map(([c,w,col])=>`<div style="background:${col};color:#fff;border-radius:9px;padding:12px 14px;width:${Math.round(Math.sqrt(w)*54)}px;height:${Math.round(Math.sqrt(w)*54)}px;font-size:${w>7?16:13}px;line-height:1.3;display:flex;flex-direction:column;justify-content:space-between"><span>${c}</span><b style="font:600 ${w>7?20:15}px Geist">${w.toFixed(0)}%</b></div>`).join('')}</div>
+ <div style="display:flex;gap:18px;flex-wrap:wrap" class="sb">${D.map(d=>`<span style="display:flex;align-items:center;gap:6px"><i style="width:12px;height:12px;border-radius:3px;background:${d[2]}"></i>${d[0]} ${d[1]}%</span>`).join('')}</div>`)},
+5(){ /* the score as a recipe: blocks sized by weight */
+ return `<div style="padding:110px 96px;height:100%;display:flex;flex-direction:column"><h1 style="font-size:52px;max-width:1200px">${TT}</h1>
+ <div style="display:flex;align-items:stretch;gap:14px;margin-top:80px;height:200px"><div style="width:190px;background:#14161A;color:#fff;border-radius:12px;display:flex;flex-direction:column;justify-content:center;padding:0 24px"><div style="font:600 30px Geist">Score</div><div style="font-size:17px;opacity:.75;margin-top:4px">0–100</div></div><div style="display:flex;align-items:center;font:600 40px Geist;color:var(--mut)">=</div>
+ ${D.map((d,i)=>`${i?'<div style="display:flex;align-items:center;font:600 34px Geist;color:var(--mut)">+</div>':''}<div style="flex:${d[1]};background:${d[2]};color:#fff;border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;justify-content:space-between"><b style="font:600 36px Geist">${d[1]}%</b><span style="font:600 21px Geist">${d[0]}</span></div>`).join('')}</div>
+ <div style="display:flex;gap:14px;margin-top:22px;padding-left:${190+14+40+14}px">${D.map((d,i)=>`${i?'<div style="width:34px"></div>':''}<div style="flex:${d[1]};font-size:16px;line-height:1.45;color:var(--mut)">${d[3].join('<br>')}</div>`).join('')}</div></div>`}};
+const v=+(new URLSearchParams(location.search).get('v')||1);
+Promise.resolve(typeof PRE==='function'?PRE():null).then(()=>{document.getElementById('s').innerHTML=(V[v]||V[1])();eval(fin)});
+</script></body></html>

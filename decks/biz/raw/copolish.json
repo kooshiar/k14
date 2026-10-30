@@ -1,0 +1,76 @@
+{
+ "key": "copolish",
+ "name": "Trace-cobalt polish",
+ "market": {
+  "usd_yr": 10000000,
+  "year": 2025,
+  "what": "Co polishing of recycled battery-grade NiSO4 to <=50 ppm Co (extra SX scrub stages or IX resins), world",
+  "method": "est.: ~120 kt recycled Ni x ~$80/t Ni polishing cost",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://fastmarkets.com/?p=29161",
+   "https://lanxess.com/en/products/brands/lewatit/industries/mining-and-metallurgy"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 7000000,
+  "logic": "halve polishing cost ($5M) + avoid off-spec NiSO4 discount (2% of ~$1.9B NiSO4 x 5% = $2M)",
+  "our_revenue_usd_yr": 750000,
+  "revenue_logic": "$7M x 2.66 (2032) x 10% adoption x 40% capture; primary MHP-to-NiSO4 polishing (~8x larger) is upside outside recycling",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty polishing resin, small volume",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 16,
+  "drivers": "recycled Ni sulfate grows with black mass; recycled Ni ~10% of China NiSO4 feed (2026)",
+  "deadline": "EU recycled content 6% Ni from 2031",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+   "https://news.metal.com/en/newscontent/103690918-Resonance-of-Seasonal-Demand-Recovery-and-Raw-Material-Disruptions-2025-Review-and-2026-Outlook-for-Battery-Grade-Nickel"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Ascend Elements (makes mixed pCAM, no pure NiSO4 needed)"
+  ],
+  "incumbents": [
+   "LANXESS (Lewatit TP 272, VP OC 1026)",
+   "Purolite/Ecolab (solvent-impregnated resins)",
+   "Sunresin",
+   "Syensqo (Cyanex 272 scrub)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "cobalt removal nickel sulfate solution",
+  "groups_active": null,
+  "notes": "weak pain: Co is a cathode metal, so trace Co matters only when NiSO4 is sold to spec; existing resins work",
+  "sources": [
+   "https://lanxess.com/en/products/brands/lewatit/industries/mining-and-metallurgy",
+   "https://www.purolite.com/zh/index/core-technologies/industry/hydrometallurgy/Battery-Metals/Battery-Recycling",
+   "https://www.ascendelements.com/ascend-elements-raises-542-million/"
+  ]
+ },
+ "lab": {
+  "weeks": 16,
+  "usd": 50000,
+  "synth": "grafted resin: 1-2 step Co ligand on resin (3 variants)",
+  "test": "breakthrough on 100+ g/L NiSO4 spiked to 0.1-1 g/L Co, ppm Co by ICP-MS/OES, Ni loss; university lab",
+  "logic": "ligand+grafting 10 wk $30k; columns 6 wk + ~250 ICP x $50 = $20k",
+  "sources": [
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf",
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "drop-in column test on plant NiSO4 3-6 mo; 6-12 mo plant trial; NiSO4 spec sign-off",
+  "sources": [
+   "https://lanxess.com/en/products/brands/lewatit/industries/mining-and-metallurgy"
+  ]
+ }
+}

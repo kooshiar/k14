@@ -1,0 +1,42 @@
+{
+ "rareearth": {
+  "type": "Process",
+  "problem": "Nd and La are hard to separate; China does most of it",
+  "design": "Extractant that picks Nd over La",
+  "s0_smiles": "CCCCN(CC)C(=O)c1ccc2ccc3ccc(C(=O)N(CC)CCCC)[nH+]c3c2[nH+]1",
+  "today_best": "TODGA"
+ },
+ "magrec": {
+  "type": "Process",
+  "problem": "Magnet scrap holds Nd and Dy that are rarely recovered",
+  "design": "Extractant that pulls Nd from magnet scrap",
+  "s0_smiles": "CCCCCCOCC(=O)N(CCC)CCC",
+  "today_best": "TODGA"
+ },
+ "reecoal": {
+  "type": "Process",
+  "problem": "Coal waste holds rare earths at low levels",
+  "design": "Extractant for trace rare earths in coal ash",
+  "s0_smiles": "CCN(C)C(=O)c1ccc2ccc3ccc(C(=O)N(C)CC)[nH+]c3c2[nH+]1",
+  "today_best": "D2EHPA"
+ },
+ "gallium": {
+  "type": "Process",
+  "problem": "China restricts gallium exports; Ga sits at ~200 mg/L in alumina Bayer liquor",
+  "design": "Extractant/sorbent that picks gallium from Bayer liquor",
+  "new": true
+ },
+ "germanium": {
+  "type": "Process",
+  "problem": "China restricts germanium exports; Ge sits in zinc refinery residues",
+  "design": "Extractant that recovers germanium from zinc leach",
+  "new": true
+ },
+ "xenon": {
+  "type": "Add-in",
+  "problem": "Xenon is rare and costly to recover from air",
+  "design": "Sorbent that picks xenon over krypton",
+  "s0_smiles": null,
+  "today_best": null
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "key": "feal",
+ "name": "Fe/Al remover",
+ "market": {
+  "usd_yr": 95000000,
+  "year": 2025,
+  "what": "Fe/Al removal step in black-mass hydromet: Ni/Co/Li lost in hydroxide cake + neutralising reagents, world",
+  "method": "est.: 2% of ~$4.0B recovered Ni+Co+Li value lost in cake ($80M; lab losses 4-5%, <1% without Al) + ~$25/t x 600 kt BM reagents/filtration ($15M)",
+  "sources": [
+   "https://www.nature.com/articles/s41598-021-02019-2",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10698013/",
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://www.cobaltinstitute.org/wp-content/uploads/2026/05/Cobalt-Market-Report-2025.pdf"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 65000000,
+  "logic": "cut Ni/Co/Li loss 2% -> 0.5%: 1.5% x $4.0B = $60M + less cake washing/disposal ~$5M",
+  "our_revenue_usd_yr": 6000000,
+  "revenue_logic": "drop-in add-in: $65M x 2.66 (2032) x 10% adoption x 35% capture",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty precipitant/sorbent, competes with phosphate route and Sunresin resins",
+  "sources": [
+   "https://www.nature.com/articles/s41598-021-02019-2",
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 15,
+  "drivers": "black mass growth; EU recovery targets push yield; more Al/Fe from LFP-mixed and pack scrap",
+  "deadline": "EU Battery Reg: 90% Ni/Co, 50% Li recovery by 31 Dec 2027 (95%/80% by 2031)",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://eur-lex.europa.eu/eli/reg/2023/1542/oj"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Ascend Elements",
+   "cylib",
+   "tozero"
+  ],
+  "incumbents": [
+   "Sunresin (Fe-removal resins for LIB leach)",
+   "LANXESS (Lewatit TP 260)",
+   "Purolite/Ecolab",
+   "lime/NaOH/phosphate reagent suppliers"
+  ],
+  "papers_3yr": null,
+  "paper_query": "iron aluminum removal battery leach solution",
+  "groups_active": null,
+  "notes": "phosphate precipitation (Aalto) already shows near-zero Ni/Co loss at pH 4; Sunresin sells Fe-removal resin systems for LIB leach",
+  "sources": [
+   "https://www.seplite.com/iron-removal-technology-of-hydrometallurgical-lithium-battery-leaching-solution/",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10698013/"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 25000,
+  "synth": "1-2 step custom (e.g. phosphonate/hydroxamate binder), 3 variants",
+  "test": "neutralisation jar tests on real NMC leach pH 3-5, Ni/Co/Li in cake by ICP-OES, filtration rate; university hydromet lab",
+  "logic": "synth 6 wk ~$15k (CRO China/India); test 4 wk ~150 ICP x $40-50 + leach ~$3k",
+  "sources": [
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf",
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "plant-liquor bench 3 mo; 6-12 mo plant trial; no product spec change",
+  "sources": [
+   "https://eur-lex.europa.eu/eli/reg/2023/1542/oj"
+  ]
+ }
+}

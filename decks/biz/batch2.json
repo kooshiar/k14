@@ -1,0 +1,44 @@
+{
+ "lithium": {
+  "type": "Process",
+  "problem": "Lithium sits in brines full of sodium",
+  "design": "Binder that picks lithium over sodium",
+  "s0_smiles": "CC(C)(c1ccccc1)c1ccc(O)c(C(C)(C)c2ccccc2)c1",
+  "today_best": "12-crown-4"
+ },
+ "chalco": {
+  "type": "Process",
+  "problem": "Most copper ore resists cheap leaching",
+  "design": "Leach additive that frees copper from ore",
+  "s0_smiles": "CCCNC(=S)NC(=O)[O-]",
+  "today_best": "ethylene thiourea"
+ },
+ "gold": {
+  "type": "Process",
+  "problem": "Gold recovery from e-waste still uses cyanide",
+  "design": "Cyanide-free gold binder",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "pgmwater": {
+  "type": "Process",
+  "problem": "Oilfield water carries traces of platinum metals",
+  "design": "Binder that catches platinum metals in produced water",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "pgmchlor": {
+  "type": "Process",
+  "problem": "Chloride leaches mix precious metals",
+  "design": "Binder that picks one precious metal in chloride",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "femob": {
+  "type": "Process",
+  "problem": "Hydrogen from rock stalls when iron stays locked",
+  "design": "Additive that frees iron so rock makes hydrogen",
+  "s0_smiles": null,
+  "today_best": null
+ }
+}

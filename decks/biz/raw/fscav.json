@@ -1,0 +1,75 @@
+{
+ "key": "fscav",
+ "name": "Fluoride sorbent",
+ "market": {
+  "usd_yr": 75000000,
+  "year": 2025,
+  "what": "fluoride control in black-mass hydromet: leach defluorination (Ca/Al salts, Zr sorbents) + F-driven heat treatment, world",
+  "method": "est.: ~$40/t x 600 kt BM leach defluorination ($24M) + heat treatment $200-500/t on ~150 kt BM that must reach <=0.4% water-soluble F ($52M)",
+  "sources": [
+   "https://www.fastmarkets.com/?p=93942",
+   "https://pubs.rsc.org/en/content/articlepdf/2025/ma/d5ma00545k",
+   "https://news.metal.com/en/newscontent/103382959",
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 60000000,
+  "logic": "per t BM: ~$40 less Li lost as LiF + ~$20 less Ca-salt sludge + skip part of F roasting -> ~$100/t x 600 kt, haircut to $60M",
+  "our_revenue_usd_yr": 5600000,
+  "revenue_logic": "$60M x 2.66 (2032) x 10% adoption x 35% capture as sorbent sales",
+  "gross_margin_pct": 50,
+  "margin_logic": "inorganic/Zr-type sorbent; Chinese Zr resins cap price",
+  "sources": [
+   "https://www.mdpi.com/1996-1944/18/23/5475",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12692901/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 15,
+  "drivers": "black mass growth; China 'fluoride wall' on imports; overseas intermediate processing; LFP leach also needs F removal",
+  "deadline": "China GB/T 45203-2024 (in force mid-2025): water-soluble F <=0.1-0.4% in imported black mass",
+  "sources": [
+   "https://www.fastmarkets.com/uploads/2025/03/Black-Mass-slides-March-2025.pdf",
+   "https://news.metal.com/en/newscontent/103987659-smm-analysis-one-year-after-china-reopened-black-mass-imports-whats-really-changed"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "thermal defluorination/pyrolysis pretreatment providers (est.)"
+  ],
+  "incumbents": [
+   "Sunresin (Zr-loaded F-removal resin for LIB recycling)",
+   "lime and aluminium-salt suppliers",
+   "activated alumina makers"
+  ],
+  "papers_3yr": null,
+  "paper_query": "fluoride removal battery leaching solution",
+  "groups_active": null,
+  "notes": "La-Zr sorbents reach <5 mg/L F (Ca route ~20 mg/L) with little Li/Ni/Co uptake; Sunresin already sells Zr resin",
+  "sources": [
+   "https://www.seplite.com/resin-based-fluoride-and-calcium-magnesium-removal-for-lithium-battery-recycling-process-streams/",
+   "https://www.mdpi.com/1996-1944/18/23/5475"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 25000,
+  "synth": "1-2 step inorganic/Zr-La or Zr-MOF sorbent, cheap precursors, 3 variants",
+  "test": "F isotherms in real leach pH 2-5 by ion-selective electrode/ion chromatography (EPA 300.0), Li/Ni/Co uptake by ICP-OES, 5 regeneration cycles",
+  "logic": "synth 4-6 wk ~$8k; test 4 wk ~200 F + ICP analyses x $30-50 + leach ~$5k",
+  "sources": [
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf",
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "plant-liquor bench 3 mo; 6-12 mo side-stream trial; Li2CO3 F spec check",
+  "sources": [
+   "https://www.fastmarkets.com/?p=93942"
+  ]
+ }
+}

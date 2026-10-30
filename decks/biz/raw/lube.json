@@ -1,0 +1,83 @@
+{
+ "key": "lube",
+ "name": "Ashless anti-wear additive",
+ "market": {
+  "usd_yr": 740000000,
+  "year": 2024,
+  "what": "ZDDP anti-wear additive in engine, gear and hydraulic oils, world",
+  "method": "Bottom-up: 40 Mt lubes x ~45% engine oil x ~1% ZDDP = 180 kt + ~30 kt industrial = 210 kt x ~$3.5/kg (China list $2.3-3.1k/t) = $0.74B; reports say $2.4-3.4B (likely overstated)",
+  "sources": [
+   "https://statista.com/statistics/817902/lubricants-demand-worldwide-by-region/",
+   "https://www.gminsights.com/industry-analysis/zinc-dialkyldithiophosphates-additive-market",
+   "https://m.madeinchina.com/mall/show-Additive-Zinc-Dioctyl-Primary-Alkyl-Dithiophosphate-Zddp-Antioxidant-and-Corrosion-Inhibitor-T203-Brake-Fluid-Additive-Petroleum-Additive-Antioxidant_446406.html"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 600000000,
+  "logic": "P-free AW stops catalyst poisoning: est. 5% PGM cut on ~$10B/yr gasoline autocat PGM = $0.5B; + copper-safe, low-conductivity AW for EV/hybrid e-fluids est. $0.1B",
+  "our_revenue_usd_yr": 20000000,
+  "revenue_logic": "Supply/license to additive majors: ~1.5% of 210 kt ZDDP-equivalent = 3 kt x ~$7/kg = ~$20M",
+  "gross_margin_pct": 60,
+  "margin_logic": "Specialty additive (50-75); majors take package margin",
+  "sources": [
+   "https://matthey.com/pgm-market-report",
+   "https://www.globalformulation.com/antiwear-additives-zddp-alternatives/",
+   "https://www.researchgate.net/publication/409564478_A_brief_review_of_the_rapid_transformation_of_driveline_lubricants_for_hybrid_electric_and_electric_vehicles"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 15,
+  "drivers": "EV/hybrid e-fluids (reports 27-31%/yr) vs flat ZDDP (~4%/yr); P cap 0.08% in API SP/GF-6/GF-7; longer catalyst durability rules",
+  "deadline": "Euro 7 for new car types 29 Nov 2026 (longer emission durability)",
+  "sources": [
+   "https://www.polarismarketresearch.com/industry-analysis/electric-vehicle-fluids-market",
+   "https://www.iea.org/reports/global-ev-outlook-2025",
+   "https://www.gminsights.com/industry-analysis/zinc-dialkyldithiophosphates-additive-market"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Tribonex (tribofilm additive)"
+  ],
+  "indirect_startups": [],
+  "incumbents": [
+   "Lubrizol",
+   "Infineum",
+   "Afton Chemical",
+   "Chevron Oronite",
+   "BASF",
+   "Lanxess",
+   "Vanderbilt Chemicals",
+   "King Industries",
+   "Syensqo (Duraphos, CYPHOS ionic liquids)",
+   "Croda"
+  ],
+  "papers_3yr": null,
+  "paper_query": "ashless anti-wear additive ZDDP",
+  "groups_active": null,
+  "notes": "4 additive majors gate the market; ORNL ionic-liquid AW work licensed. Thin academic field, but buyers are an oligopoly",
+  "sources": [
+   "https://www.ornl.gov/technology/202205091",
+   "https://www.syensqo.com/en/solutions-market/industrial/lubricants/advancing-electric-vehicle-industry"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 30000,
+  "synth": "1-2 step custom (amine phosphate, borate ester or thiadiazole), 3 variants",
+  "test": "Four-ball wear ASTM D4172, copper corrosion ASTM D130, SRV ASTM D6425, conductivity, RPVOT ASTM D2272 in PAO/Group III base; commercial lube lab",
+  "logic": "Synth 5-6 wk, $18k; blend + tests 3-4 wk, ~$10k (four-ball $99-199/sample) + formulation $2k",
+  "sources": [
+   "https://powderfulsolutions.com/lab",
+   "https://store.astm.org/d4172-20.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "TSCA PMN/REACH; e-fluid/industrial bench + rig tests 1-2 yr for first order; engine-oil API/ILSAC engine tests ~$1-2M, 5+ yr, paid by partner",
+  "sources": [
+   "https://www.globalformulation.com/antiwear-additives-zddp-alternatives/"
+  ]
+ }
+}

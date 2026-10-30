@@ -1,0 +1,103 @@
+{
+ "key": "lowdk",
+ "type": "Product",
+ "problem": "AI-server boards need laminates with very low signal loss at 112-224 Gb/s.",
+ "design": "Low-loss crosslinker monomer for PPE/hydrocarbon PCB resins.",
+ "name": "Low-loss laminate resin",
+ "market": {
+  "usd_yr": 700000000,
+  "year": 2025,
+  "what": "low/ultra-low-loss resins for high-speed CCL (electronic PPE, hydrocarbon, BMI, active ester, styrenic crosslinkers), world",
+  "method": "PPO 4,558 t x ~$90/kg (SABIC 650k RMB/t) = $410M + hydrocarbon 1,216 t x ~$60-140/kg = ~$120M + BMI/ester/crosslinkers est. ~$170M; check: PPO-for-CCL report $1.2B (all grades); 2026 PPO ~8,000 t x 800k RMB/t = ~$0.9B",
+  "sources": [
+   "https://www.itiger.com/news/1186857210",
+   "https://news.chemnet.com/news-6228.html",
+   "https://m.21jingji.com/article/20260526/herald/c999daa376d1554ddfd1cc8466fcced9.html",
+   "https://www.sina.cn/news/detail/5314471858017854.html",
+   "https://www.verifiedmarketreports.com/product/ppo-resin-for-copper-clad-laminate-ccl-market/",
+   "https://static.cninfo.com.cn/finalpage/2026-04-23/1225148129.PDF"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 300000000,
+  "logic": "est.: lower Df (M8 0.0012-0.0016 -> M9 ~0.0006 at 10 GHz) cuts retimers on ~20% of links: 20% x $852M (Astera 2025 rev) = $170M; + Q-glass ($50/m) swapped for NE-glass ($25-30/m) on part of M9 cloth ~ $130M",
+  "our_revenue_usd_yr": 20000000,
+  "revenue_logic": "est.: low-loss resin ~25 kt/yr by 2032 (7 kt 2025 at ~20%/yr); crosslinker ~20 wt% = 5 kt; 5% share = 250 t x $80/kg",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty monomer made by CMO; M9 resin makers report >35-45% GM, prices up 20-30% for AI grades",
+  "sources": [
+   "https://www.queenems.com/blog/m9-ccl-guide-nvidia-ai-server-pcb-standards/",
+   "https://asteralabs.gcs-web.com/news-releases/news-release-details/astera-labs-reports-fourth-quarter-and-full-year-2025-financial",
+   "https://www.semicone.com/article-466.html",
+   "https://m.21jingji.com/article/20260526/herald/c999daa376d1554ddfd1cc8466fcced9.html"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 20,
+  "drivers": "AI server PCB 18.7%/yr (Prismark 24-29); AI server CCL 21.4%/yr; PPO + hydrocarbon demand +42% in 2025; 112G->224G SerDes, 800G->1.6T; SABIC outage 2026 doubled supply risk",
+  "deadline": "M9 boards (1.6T switches, next-gen GPU/ASIC) mass production H2 2026",
+  "sources": [
+   "https://www.itiger.com/news/1186857210",
+   "https://www.intelmarketresearch.com/ai-server-copper-clad-laminate-market-60434",
+   "https://www.bestpcbs.com/blog/2026/09/m8-vs-m9-ccl/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Thintronics"
+  ],
+  "indirect_startups": [
+   "Ayar Labs",
+   "Lightmatter",
+   "Point2 Technology"
+  ],
+  "incumbents": [
+   "SABIC (NORYL SA9000)",
+   "Asahi Kasei",
+   "Mitsubishi Gas Chemical (OPE-2St)",
+   "Shengquan",
+   "Dongcai (EMT)",
+   "Tongyu",
+   "Cray Valley (Ricon)",
+   "Resonac",
+   "Shin-Etsu",
+   "Panasonic Megtron",
+   "Doosan",
+   "EMC",
+   "ITEQ",
+   "Shengyi",
+   "Rogers"
+  ],
+  "papers_3yr": null,
+  "paper_query": "low dielectric loss resin copper clad laminate",
+  "groups_active": null,
+  "notes": "SABIC ~70% of e-grade PPE; Chinese makers scaling fast (Shengquan 1.5+2 kt PPO, Dongcai 3.5 kt hydrocarbon line 2026; Dongcai high-speed resin rev 591M RMB 2025, +125%); Thintronics $24M Series A 2024 + up to $50M CHIPS LOI Jul 2026, aims at substrate ILD not CCL",
+  "sources": [
+   "https://news.chemnet.com/news-6228.html",
+   "https://static.cninfo.com.cn/finalpage/2026-04-23/1225148129.PDF",
+   "https://www.businesswire.com/news/home/20240424926089/en/",
+   "https://www.lw.com/en/news/2026/07/latham-watkins-advises-thintronics-on-financing-with-the-department-of-commerce-for-chips-incentives"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 35000,
+  "synth": "1-2 step custom: styrenic/vinylbenzyl crosslinker (BVPE/OPE-2St class) from vinylbenzyl chloride + core; 3 variants",
+  "test": "cure with PPE (SA9000) into plaques; Dk/Df at 10 GHz by split-post resonator (IEC 61189-2-721) or split cylinder (IPC-TM-650 2.5.5.13); Tg by DMA, TGA, water uptake; TAMU iEMSL or Rogers-type test lab",
+  "logic": "synth 6 wk + cure/plaques 4 wk + tests 2 wk; 3 x $6k CRO + formulation/curing ~$10k + SPDR ~12 samples at $300 first/$200 next ~$3k + DMA/TGA ~$4k",
+  "sources": [
+   "https://iemsl.engr.tamu.edu/services/material-characterization-services",
+   "https://www.ipc.org/sites/default/files/test_methods_docs/2-5-5-13.pdf",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352225"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "est.: laminate maker prepreg/CCL trial + IPC-4101 slash sheet + UL 94 V-0 ~1 yr; PCB fab + server OEM board qual 1-2 yr",
+  "sources": [
+   "https://iconnect007.com/article/109695/microtek-laboratories-china-completes-first-usa-ipc4101e-validation-services-test-program/109698/milaero",
+   "https://m.21jingji.com/article/20260526/herald/c999daa376d1554ddfd1cc8466fcced9.html"
+  ]
+ }
+}

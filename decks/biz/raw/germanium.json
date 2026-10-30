@@ -1,0 +1,99 @@
+{
+ "key": "germanium",
+ "name": "Germanium from zinc leach",
+ "market": {
+  "usd_yr": 690000000,
+  "year": 2025,
+  "what": "Refined germanium (metal + GeO2), world, primary + recycled",
+  "method": "~230 t/yr (145 t China) x ~$3,000/kg blend (2025 avg GeO2 $2,500, metal $4,100 Europe). Reports say $0.2-0.4B at older prices",
+  "sources": [
+   "https://investingermanium.com/supply-chain/",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-germanium.pdf",
+   "https://www.materialsdispatch.com/en/blog/top-10-non-chinese-gallium-and-germanium-supply",
+   "https://www.gii.co.jp/report/go138719-germanium.html"
+  ],
+  "confidence": "med",
+  "job_usd_yr": 50000000,
+  "job_what": "recovering Ge from zinc leach residues/solutions (leach + tannin precipitation or SX), world primary",
+  "job_method": "est.: ~160 t/yr primary Ge x ~$300/kg (tannin 11-30 g/g Ge x $4-5.5/kg = ~$60-150/kg + leach/roast ~$150-250/kg est.) = ~$50M; low confidence",
+  "job_sources": [
+   "https://jmmab.com/1450-53392500005d-2/",
+   "https://dir.tridge.com/prices/tannic-acid",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-germanium.pdf"
+  ]
+ },
+ "value": {
+  "created_usd_yr": 80000000,
+  "logic": "ex-China Ge from zinc circuits by 2032 est. 100 t (Korea Zinc 44, Teck doubling, Titan 13, Nyrstar Hobart). +15 pts recovery (~18 t) x $4,000/kg = $72M + less tannin/reagent ~$8M",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "40% share x 100 t Ge x ~$120/kg (3% of Ge value) extractant + licence",
+  "gross_margin_pct": 75,
+  "margin_logic": "small-volume specialty extractant + licence",
+  "sources": [
+   "https://www.materialsdispatch.com/en/blog/top-10-non-chinese-gallium-and-germanium-supply",
+   "https://www.koreaherald.com/article/10708747",
+   "https://www.canadianminingjournal.com/news/canada-set-to-back-tecks-bc-smelter-to-boost-germanium-output-report/",
+   "https://www.mining.com/titan-teck-team-up-to-explore-germanium-recovery-from-zinc-mine-waste/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 4,
+  "drivers": "fiber for AI data centers, defense IR optics, satellite solar cells; China export licences 2023, US ban Dec 2024; price +~2x 2024-25",
+  "deadline": "27 Nov 2026: China's 1-yr suspension of its US Ga/Ge export ban ends",
+  "sources": [
+   "https://www.gii.co.jp/report/go138719-germanium.html",
+   "https://dri.co.jp/auto/report/lucintel/240417-germanium-market-report-trends-forecast-and.html",
+   "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-germanium.pdf",
+   "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/critical-mineral-market-reports/Market%20Report%20-%20Germanium%20-%2008052026.pdf"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "ReElement Technologies",
+   "Metallium (Flash Metals)"
+  ],
+  "incumbents": [
+   "Umicore",
+   "Teck",
+   "5N Plus",
+   "Korea Zinc",
+   "Nyrstar",
+   "Yunnan Chihong Zn&Ge",
+   "Yunnan Lincang Xinyuan",
+   "JSC Germanium",
+   "BASF (LIX 63)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "germanium recovery zinc leach residue",
+  "groups_active": null,
+  "notes": "No molecule startups found; field is smelters + grants: Korea Zinc $7.4B Crucible (44 t/yr Ge ~2029), 5N Plus $18.1M (2026), Canada backing Teck Trail expansion. Today: tannin precipitation, LIX 63 or hydroxamic acid SX.",
+  "sources": [
+   "https://www.koreaherald.com/article/10708747",
+   "https://www.semiconductor-today.com/news_items/2026/jan/5n-300126.shtml",
+   "https://www.canadianminingjournal.com/news/canada-set-to-back-tecks-bc-smelter-to-boost-germanium-output-report/",
+   "https://samsearch.co/government-contracting-news/dla-awards-1m-sbir-contract-to-metallium-for-critical-minerals-recovery-101748",
+   "https://www.researchgate.net/publication/392004911_Recovery_of_germanium_from_zinc_smelting_leachates_a_review"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 25000,
+  "synth": "1-2 step custom: chelating extractant (hydroxamic/oxime type, est.), 3 variants",
+  "test": "Batch D vs acid, Ge/Fe/Zn/As selectivity, NaOH strip, synthetic + real zinc leach (Ge 0.1-0.5 g/L, Fe 10-30 g/L) vs LIX 63; ICP-OES/ICP-MS",
+  "logic": "synth 6 wk, 3 x ~$5k = $15k + test 4 wk: ~150 ICP x $50 = ~$7.5k + feeds ~$2.5k",
+  "sources": [
+   "https://environmental-sciences-engineering-center.media.uconn.edu/wp-content/uploads/sites/3703/2026/03/Metals-Lab-price-list-effective-3-1-2026.pdf",
+   "https://usf.edu/arts-sciences/departments/geosciences/documents/website/icp-lab-pricing-update-for-2024-2025.pdf",
+   "https://www.sciencedirect.com/science/article/abs/pii/0304386X76900050"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "smelter bench + pilot SX on a bleed stream 6-12 mo; Ge concentrate spec accepted by refiner (Umicore/5N Plus)",
+  "sources": [
+   "https://www.canadianminingjournal.com/news/canada-set-to-back-tecks-bc-smelter-to-boost-germanium-output-report/",
+   "https://www.semiconductor-today.com/news_items/2026/jan/5n-300126.shtml"
+  ]
+ }
+}

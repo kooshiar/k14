@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Problem Deck Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#DDE1E7;--g:#2E8A1F;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden}
+.mono{font-family:"Geist Mono",monospace}
+/* A: title left, visual right */
+.A{display:grid;grid-template-columns:600px 1fr;height:100%}
+.A .t{padding:96px 56px 96px 88px;display:flex;align-items:center;border-right:1px solid #EEF0F3}
+.A h1{margin:0;font:600 60px/1.08 Geist,sans-serif;letter-spacing:-.02em}
+.A .v{padding:88px 88px 88px 72px;display:flex;flex-direction:column;justify-content:center;gap:22px}
+.A .tile{display:grid;grid-template-columns:260px 1fr;align-items:baseline;border-bottom:1px solid #EEF0F3;padding:18px 0}
+.A .tile .big{font:600 80px/1 Geist,sans-serif;letter-spacing:-.01em}.A .tile .lb{font:500 19px "Geist Mono",monospace;color:var(--mut)}.A .tile .sb{font-size:24px;color:var(--mut);margin-top:6px}
+/* B: title top, visual quieter */
+.B{padding:88px 96px;height:100%;display:flex;flex-direction:column}
+.B h1{margin:0 0 72px;font:600 72px/1.05 Geist,sans-serif;letter-spacing:-.02em;max-width:1300px}
+.B .row{display:grid;gap:56px}
+.B .tile .lb{font:500 18px "Geist Mono",monospace;color:var(--mut)}.B .tile .big{font:500 64px/1.1 Geist,sans-serif;color:#3A3F4A;margin:10px 0 6px}.B .tile .sb{font-size:22px;color:var(--mut)}
+.B .tile{border-top:2px solid var(--ink);padding-top:18px}
+/* C: hero number + title left, supporting visual right */
+.C{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.C .t{padding:88px 64px 88px 88px;display:flex;flex-direction:column;justify-content:center}
+.C .hero{font:600 150px/.9 Geist,sans-serif;letter-spacing:-.03em;color:var(--g)}.C h1{margin:28px 0 0;font:600 44px/1.15 Geist,sans-serif;letter-spacing:-.01em}
+.C .v{background:#F7F6F2;padding:88px 80px;display:flex;flex-direction:column;justify-content:center;gap:26px}
+.C .mini .lb{font:500 18px "Geist Mono",monospace;color:var(--mut)}.C .mini .big{font:600 72px/1.05 Geist,sans-serif;margin-top:6px}.C .mini .sb{font-size:22px;color:var(--mut)}
+/* shared needs / scoring visuals */
+.grp{display:grid;gap:14px}.grp h4{margin:0 0 8px;font:600 25px Geist,sans-serif;display:flex;justify-content:space-between}.grp h4 span{font:500 16px "Geist Mono",monospace;color:var(--g)}
+.grp ul{margin:0;padding:0;list-style:none;font-size:23px;line-height:1.55;color:#3A3F4A}
+.wbar{display:flex;height:64px;border-radius:10px;overflow:hidden}.wbar div{display:flex;align-items:center;justify-content:center;color:#fff;font:600 18px Geist,sans-serif}
+.chk{margin:0;padding:0;list-style:none;font-size:21px;line-height:1.5;color:#3A3F4A;counter-reset:c}.chk li{display:flex;gap:12px}.chk li:before{counter-increment:c;content:counter(c);font:500 15px "Geist Mono",monospace;color:var(--mut);width:22px;text-align:right;padding-top:2px}
+.mkt{display:flex;align-items:flex-end;gap:40px;height:300px}.mkt .b{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:18px;color:var(--mut)}.mkt .b i{display:block;width:150px;border-radius:8px 8px 0 0}.mkt .b em{font:600 34px Geist,sans-serif;font-style:normal;color:var(--ink)}
+.tm{display:grid;grid-template-columns:40fr 30fr;grid-template-rows:1fr 1fr;gap:10px;height:440px}.tm div{border-radius:10px;padding:18px 20px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.tm b{font:600 22px Geist,sans-serif}.tm span{font-size:19px;line-height:1.4;opacity:.92}.tm em{font:600 30px Geist,sans-serif;font-style:normal}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+const COL=['#2E8A1F','#14161A','#5A6270','#9AA1AD'];
+fetch('cork14.json').then(r=>r.json()).then(D=>{
+const q=new URLSearchParams(location.search),c=(q.get('c')||'A').toUpperCase(),p=q.get('p')||'1',d=D[p];
+const pc=s=>parseFloat(s)||0;
+const needs=()=>`<div class="grp">${d.boxes.map(([h,l])=>`<div><h4>${h}</h4><ul>${l.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div>`;
+const W=D['4'].wb;
+const wbar=()=>`<div class="wbar">${W.map(([b,m],i)=>`<div style="flex:${pc(m)};background:${COL[i]}">${b} ${m}</div>`).join('')}</div>`;
+let html='';
+if(c==='A'){
+  let v='';
+  if(p==='1'||p==='2')v=d.tiles.map(([lb,big,sb])=>`<div class="tile"><div><div class="lb">${lb}</div><div class="sb">${sb}</div></div><div class="big">${big}</div></div>`).join('');
+  if(p==='3')v=`<div class="grp" style="grid-template-columns:1fr 1fr;gap:34px 48px">${d.boxes.map(([h,l])=>`<div><h4>${h}</h4><ul>${l.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div>`;
+  if(p==='4')v=`${wbar()}<ol class="chk" style="margin-top:22px">${d.sim.slice(0,8).map(x=>`<li>${x}</li>`).join('')}</ol>`;
+  html=`<div class="A"><div class="t"><h1>${d.title}</h1></div><div class="v">${v}</div></div>`;
+}
+if(c==='B'){
+  let v='';
+  if(p==='1'||p==='2')v=`<div class="row" style="grid-template-columns:repeat(${d.tiles.length},1fr)">${d.tiles.map(([lb,big,sb])=>`<div class="tile"><div class="lb">${lb}</div><div class="big">${big}</div><div class="sb">${sb}</div></div>`).join('')}</div>`;
+  if(p==='3')v=`<div class="row" style="grid-template-columns:repeat(4,1fr)">${d.boxes.map(([h,l])=>`<div class="tile"><div class="lb">${h}</div><ul style="margin:14px 0 0;padding:0;list-style:none;font-size:23px;line-height:1.6;color:#3A3F4A">${l.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div>`;
+  if(p==='4')v=`${wbar()}<div class="row" style="grid-template-columns:1fr 1fr;margin-top:40px"><ol class="chk">${d.sim.slice(0,6).map(x=>`<li>${x}</li>`).join('')}</ol><ol class="chk" start="7" style="counter-reset:c 6">${d.sim.slice(6,11).map(x=>`<li>${x}</li>`).join('')}</ol></div>`;
+  html=`<div class="B"><h1>${d.title}</h1>${v}</div>`;
+}
+if(c==='C'){
+  let hero='',v='',t=d.title;
+  if(p==='1'){hero=d.tiles[0][1];t="of the world's wine is spoiled by cork taint";v=d.tiles.slice(1).map(([lb,big,sb])=>`<div class="mini"><div class="lb">${lb}</div><div class="big">${big}</div><div class="sb">${sb}</div></div>`).join('')}
+  if(p==='2'){hero='$748M';t='wine fining market in 2024';v=`<div class="mkt"><div class="b"><em>$748M</em><i style="height:260px;background:#14161A"></i>market</div><div class="b"><em>$2–7M</em><i style="height:14px;background:#2E8A1F"></i>our share a year</div></div><div class="mini"><div class="lb">First buyers</div><div class="big" style="font-size:32px">Wineries with tainted lots</div></div>`}
+  if(p==='3'){hero='11';t='things buyers judge it on, in 4 groups';v=`<div class="tm">${W.map(([b,m,rows],i)=>`<div style="background:${COL[i]};${i===2?'grid-row:1/3;grid-column:2':''}"><b>${b}</b><span>${rows.map(r=>r[0]).join(' · ')}</span><em>${m}</em></div>`).join('')}</div>`.replace('grid-template-columns:40fr 30fr','')}
+  if(p==='4'){hero='11';t='checks simulated per design';v=`${wbar()}<ol class="chk" style="margin-top:10px">${d.sim.slice(0,7).map(x=>`<li>${x}</li>`).join('')}</ol>`}
+  html=`<div class="C"><div class="t"><div class="hero">${hero}</div><h1>${t}</h1></div><div class="v">${v}</div></div>`;
+}
+document.getElementById('s').innerHTML=html;fit()});
+function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform=`scale(${s})`}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));
+</script></body></html>

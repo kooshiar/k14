@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Page 6 Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E6E8EC;--g:#2E8A1F;--red:#A3241A;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden;padding:84px 104px}
+h1{margin:0;font:600 46px/1.12 Geist,sans-serif;letter-spacing:-.015em;max-width:1300px}
+.mono{font-family:"Geist Mono",monospace}.tag{font:500 13px "Geist Mono";letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:5px}
+.tT{background:#ECEEF1;color:#596070}.tO{background:#E5F1DF;color:#2E6B1F}
+.cell{height:40px;border-radius:7px;display:flex;align-items:center;justify-content:center;font:600 19px "Geist Mono"}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+// lignin catalyst (problem_deck.py P['lignin']): sub-scores 0-100, weights, groups
+const COLS = [['Today', 'Ni on carbon', 54, { co:28, ring:50, sulf:50, cost:98, us:82, mixed:100 }], ['Today', 'Ru on carbon', 48, { co:50, ring:28, sulf:32, cost:70, us:60, mixed:100 }],
+              ['Ours', 'Cu-Mo2-Sn1', 95, { co:100, ring:98, sulf:100, cost:94, us:67, mixed:100 }], ['Ours', 'Cu-Mo2-Zn1', 90, { co:100, ring:74, sulf:100, cost:94, us:67, mixed:100 }]];
+const W = { co:3, ring:2, sulf:2, cost:2, us:1, mixed:1 }, TW = 11;
+const LAB = { co:'Breaks C–O bonds', ring:'Keeps aromatic rings', sulf:'Tolerates sulfur', cost:'Metal cost', us:'US-sourced metals', mixed:'Stays mixed (alloy)' };
+const DIM = [['Performance', ['co', 'ring']], ['Durability', ['sulf']], ['Cost', ['cost']], ['Fit & supply', ['us', 'mixed']]];
+const pct = ks => Math.round(100 * ks.reduce((s, k) => s + W[k], 0) / TW), dim = (v, ks) => Math.round(ks.reduce((s, k) => s + v[k] * W[k], 0) / ks.reduce((s, k) => s + W[k], 0));
+const hc = v => 'background:' + (v >= 75 ? '#2E8A1F;color:#fff' : v >= 50 ? '#7FB069;color:#14161A' : v >= 25 ? '#E8B4AC;color:#14161A' : '#C4271B;color:#fff');
+const sc = s => s > 54 ? 'var(--g)' : s === 54 ? 'var(--ink)' : 'var(--red)';
+const TITLE = 'Our best catalyst scores 95. The best sold today, Ni on carbon, scores 54.';
+const head = (lw) => `<div></div>` + COLS.map(([w, n]) => `<div style="padding:0 8px 10px"><span class="tag ${w === 'Ours' ? 'tO' : 'tT'}">${w}</span><div style="font:600 18px Geist;margin-top:9px">${n}</div></div>`).join('')
+  + `<div style="font:600 19px Geist;display:flex;align-items:center">Overall score</div>` + COLS.map(([, , s]) => `<div style="padding:0 8px;font:600 38px Geist;color:${sc(s)}">${s}</div>`).join('');
+const V = {
+1(){ /* grouped heat-map: each dimension row, its factors indented under it */
+  let r = '';
+  DIM.forEach(([d, ks]) => {
+    r += `<div style="display:flex;align-items:center;font:600 19px Geist;margin-top:10px">${d}<span class="mono" style="color:#9AA1AD;font-size:14px;margin-left:8px">${pct(ks)}%</span></div>` + COLS.map(c => `<div class="cell" style="margin-top:10px;${hc(dim(c[3], ks))}">${dim(c[3], ks)}</div>`).join('');
+    if (ks.length > 1) ks.forEach(k => { r += `<div style="display:flex;align-items:center;padding-left:22px;font:400 17px Geist;color:var(--mut)">${LAB[k]}</div>` + COLS.map(c => `<div class="cell" style="height:30px;font-size:15px;opacity:.75;${hc(c[3][k])}">${c[3][k]}</div>`).join(''); });
+  });
+  return `<h1>${TITLE}</h1><div style="display:grid;grid-template-columns:250px repeat(4,1fr);gap:6px 7px;margin-top:36px">${head()}${r}</div>`; },
+2(){ /* every factor its own row; the dimension is a bracket on the left */
+  const P = (c, r, st, html, span = 1) => `<div style="grid-column:${c};grid-row:${r} / span ${span};${st}">${html}</div>`;
+  let g = '', r = 1;
+  COLS.forEach(([w, n], i) => { g += P(i + 3, r, 'padding:0 8px 10px', `<span class="tag ${w === 'Ours' ? 'tO' : 'tT'}">${w}</span><div style="font:600 18px Geist;margin-top:9px">${n}</div>`); }); r++;
+  g += P('1 / span 2', r, 'display:flex;align-items:center;font:600 19px Geist', 'Overall score');
+  COLS.forEach(([, , s], i) => { g += P(i + 3, r, `padding:0 8px;font:600 38px Geist;color:${sc(s)}`, s); }); r++;
+  DIM.forEach(([d, ks]) => {
+    g += P(1, r, 'display:flex;align-items:center;border-right:2px solid #C9CED6;margin:6px 16px 0 0;font:600 18px Geist', d, ks.length);
+    ks.forEach(k => { g += P(2, r, 'display:flex;align-items:center;font:400 18px Geist;margin-top:6px', `${LAB[k]}<span class="mono" style="color:#9AA1AD;font-size:13px;margin-left:8px">${Math.round(100 * W[k] / TW)}%</span>`);
+      COLS.forEach((c, i) => { g += P(i + 3, r, 'margin-top:6px', `<div class="cell" style="${hc(c[3][k])}">${c[3][k]}</div>`); }); r++; });
+  });
+  return `<h1>${TITLE}</h1><div style="display:grid;grid-template-columns:160px 250px repeat(4,1fr);column-gap:7px;margin-top:40px">${g}</div>`; },
+3(){ /* dumbbell: each factor a 0-100 line; best today (ring) vs our best (dot), line coloured by who leads */
+  const X = v => 360 + v * 8.8, T = COLS[0], O = COLS[2];
+  let r = '', y = 0, first = true;
+  DIM.forEach(([d, ks]) => { y += 20; r += `<div style="position:absolute;left:0;top:${y}px;font:600 19px Geist">${d}</div>`; y += 38;
+    ks.forEach(k => { const a = T[3][k], b = O[3][k];
+      r += `<div style="position:absolute;left:24px;top:${y - 11}px;font:400 17px Geist;color:var(--mut)">${LAB[k]}</div><div style="position:absolute;left:${X(0)}px;width:880px;top:${y}px;border-top:2px solid #F1F2F4"></div>`;
+      r += `<div style="position:absolute;left:${X(Math.min(a, b))}px;width:${Math.abs(b - a) * 8.8}px;top:${y - 2}px;height:6px;background:${b >= a ? '#BFDDB4' : '#F0C4BE'}"></div>`;
+      r += `<div style="position:absolute;left:${X(a) - 11}px;top:${y - 11}px;width:22px;height:22px;border-radius:50%;border:3px solid #14161A;background:#fff"></div><div style="position:absolute;left:${X(b) - 11}px;top:${y - 11}px;width:22px;height:22px;border-radius:50%;background:#2E8A1F"></div>`;
+      if (first){ r += `<div style="position:absolute;left:${X(a) - 80}px;width:160px;text-align:center;top:${y - 44}px;font:500 15px Geist">${T[1]}</div><div style="position:absolute;left:${X(b) - 80}px;width:160px;text-align:center;top:${y - 44}px;font:500 15px Geist;color:#2E8A1F">${O[1]}</div>`; first = false; }
+      y += 42; }); });
+  return `<h1>${TITLE}</h1><div style="position:relative;height:560px;margin-top:40px">${r}${[0, 50, 100].map(v => `<div class="mono" style="position:absolute;left:${X(v) - 20}px;width:40px;text-align:center;top:${y + 6}px;font-size:14px;color:#9AA1AD">${v}</div>`).join('')}</div>`; },
+4(){ /* one box per dimension (width = weight); inside, each factor: best today vs our best as two bars */
+  const T = COLS[0], O = COLS[2];
+  const bx = DIM.map(([d, ks]) => `<div style="flex:${Math.max(pct(ks), 14)};border:1.5px solid #DDE1E7;border-radius:12px;padding:22px 22px 18px;display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline"><b style="font:600 22px Geist">${d}</b><span class="mono" style="font-size:14px;color:#9AA1AD">${pct(ks)}%</span></div>
+    ${ks.map(k => `<div><div style="font:400 16px Geist;color:var(--mut);margin-bottom:8px;white-space:nowrap">${LAB[k]}</div>
+      ${[[T, '#9AA1AD'], [O, '#2E8A1F']].map(([c, col]) => `<div style="display:flex;align-items:center;gap:10px;margin-top:5px"><span class="mono" style="width:44px;font-size:12px;color:#9AA1AD">${col === '#2E8A1F' ? 'OURS' : 'TODAY'}</span><div style="flex:1;height:14px;background:#F1F2F4;border-radius:99px;overflow:hidden"><i style="display:block;height:100%;width:${c[3][k]}%;background:${col};border-radius:99px"></i></div><b class="mono" style="width:34px;text-align:right;font-size:15px;color:${col === '#2E8A1F' ? '#2E8A1F' : '#14161A'}">${c[3][k]}</b></div>`).join('')}</div>`).join('')}</div>`).join('');
+  const key = [[T, '#9AA1AD', 'Today'], [O, '#2E8A1F', 'Ours']].map(([c, col, w]) => `<span style="display:inline-flex;align-items:center;gap:8px;margin-right:28px;font:500 17px Geist"><i style="width:28px;height:12px;border-radius:99px;background:${col}"></i>${c[1]} · ${c[2]}</span>`).join('');
+  return `<h1>${TITLE}</h1><div style="display:flex;gap:18px;margin-top:56px;align-items:flex-start">${bx}</div>`; }};
+const v = +(new URLSearchParams(location.search).get('v') || 1); document.getElementById('s').innerHTML = (V[v] || V[1])();
+function fit(){ const w = document.documentElement.clientWidth || innerWidth, h = document.documentElement.clientHeight || innerHeight; if (!w || !h) return; const s = Math.min(w / 1640, h / 940); document.getElementById('s').style.transform = `scale(${s})`; }
+addEventListener('resize', fit); new ResizeObserver(() => fit()).observe(document.documentElement); addEventListener('load', fit); [50, 300, 1000].forEach(t => setTimeout(fit, t)); fit();
+</script></body></html>

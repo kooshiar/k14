@@ -1,0 +1,48 @@
+{
+ "sulfur": {
+  "type": "Add-in",
+  "problem": "One stubborn sulfur molecule stays in diesel",
+  "design": "Trap for the last sulfur in diesel",
+  "s0_smiles": "O=C(NCC[NH2+]CCNC(=O)Nc1ccccc1)Nc1ccccc1",
+  "today_best": "beta-cyclodextrin"
+ },
+ "oilcorr": {
+  "type": "Add-in",
+  "problem": "Oil and gas pipes corrode from CO2/H2S; offshore rules ban toxic inhibitors",
+  "design": "Low-toxicity corrosion inhibitor for CO2/H2S pipelines",
+  "new": true
+ },
+ "h2s": {
+  "type": "Add-in",
+  "problem": "Triazine H2S scavengers cause scale and fouling in oil and gas",
+  "design": "Non-triazine H2S scavenger",
+  "new": true
+ },
+ "lube": {
+  "type": "Add-in",
+  "problem": "ZDDP anti-wear additive poisons catalysts and fails in EV fluids",
+  "design": "Ashless anti-wear additive for EV and engine oils",
+  "new": true
+ },
+ "lignin": {
+  "type": "Process",
+  "problem": "Lignin waste is burned, not turned into chemicals",
+  "design": "Catalyst that turns lignin into aromatics",
+  "s0_smiles": null,
+  "today_best": "Ru"
+ },
+ "pucat": {
+  "type": "Process",
+  "problem": "PU foam waste is hard to break back down",
+  "design": "Catalyst that breaks PU foam into reusable polyol",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "plastic": {
+  "type": "Process",
+  "problem": "Mixed plastic waste is burned or landfilled",
+  "design": "Catalyst that turns mixed plastic into fuel",
+  "s0_smiles": null,
+  "today_best": null
+ }
+}

@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Needs Page Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E6E8EC;--g:#2E8A1F;--red:#B3261E;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden}
+.lb{font:500 17px "Geist Mono",monospace;color:var(--mut)}.sb{font-size:21px;color:var(--mut);margin-top:6px}
+.n{font:600 52px/1.05 Geist,sans-serif;letter-spacing:-.01em}
+.hero{font:600 104px/1 Geist,sans-serif;letter-spacing:-.025em}
+h1{margin:0;font:600 46px/1.15 Geist,sans-serif;letter-spacing:-.01em}
+.bot{width:26px;height:56px;border-radius:7px 7px 4px 4px;background:#D9DDE3;position:relative}.bot:before{content:'';position:absolute;left:9px;top:-12px;width:8px;height:14px;border-radius:2px;background:inherit}
+.bot.t{background:var(--red)}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+const L=(hero,title,right,col)=>`<div style="display:grid;grid-template-columns:1.15fr 1fr;height:100%">
+ <div style="padding:0 72px 0 96px;display:flex;flex-direction:column;justify-content:center">${hero?`<div class="hero" style="color:${col||'var(--ink)'}">${hero}</div>`:''}<h1 style="margin-top:${hero?22:0}px;${hero?'':'font-size:56px'}">${title}</h1></div>
+ <div style="background:#F7F6F2;padding:0 80px;display:flex;flex-direction:column;justify-content:center;gap:40px">${right}</div></div>`;
+const fact=(l,n,s,sz)=>`<div><div class="lb">${l}</div><div class="n" style="margin-top:8px;${sz?'font-size:'+sz+'px':''}">${n}</div>${s?`<div class="sb">${s}</div>`:''}</div>`;
+const G=[['Performance',40,['Removes cork taint (TCA)','Keeps fruit and floral aroma','Leaves nothing in the wine','Holds more per kg']],['Safety & rules',30,['Food-safe','Allowed for sale']],['Cost',15,['Cost per bottle','Equipment cost']],['Fit & supply',15,["Drops into today's setup",'Easy to ship and store','Easy to make']]];
+const GC=['#2E8A1F','#14161A','#5A6270','#9AA1AD'];
+const fin=`function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform='scale('+s+')'}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();`;
+const V={
+1(){return L('11','things buyers judge it on, in 4 groups',G.map(([g,w,it])=>`<div><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 26px Geist">${g}</span><span class="lb" style="color:var(--g)">${w}%</span></div><div class="sb" style="margin-top:6px;line-height:1.45">${it.join(' · ')}</div></div>`).join(''))},
+2(){return L('40%','of the score is performance: remove TCA, keep the aroma',G.map(([g,w],i)=>`<div><div style="display:flex;justify-content:space-between" class="sb"><span style="color:var(--ink);font-weight:600">${g}</span><span>${w}%</span></div><div style="height:14px;background:#E6E8EC;border-radius:7px;margin-top:8px"><div style="width:${w*2.2}%;height:100%;background:${GC[i]};border-radius:7px"></div></div></div>`).join(''))},
+3(){return L('11','things buyers judge it on, in 4 groups',G.map(([g,w,it])=>`<div style="display:grid;grid-template-columns:1fr auto;align-items:center"><div><div style="font:600 26px Geist">${g}</div><div style="display:flex;gap:7px;margin-top:10px">${it.map(()=>`<span style="width:16px;height:16px;border-radius:50%;background:var(--ink)"></span>`).join('')}</div></div><div class="n" style="font-size:44px">${w}%</div></div>`).join(''))},
+4(){return L('','Buyers judge it on 11 things in 4 groups',`<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">${G.map(([g,w,it],i)=>`<div style="background:#fff;border-radius:12px;padding:22px 24px;border-top:5px solid ${GC[i]}"><div style="display:flex;justify-content:space-between;font:600 23px Geist"><span>${g}</span><span style="color:var(--mut)">${w}%</span></div><div class="sb" style="font-size:18px;margin-top:8px;line-height:1.45">${it.join('<br>')}</div></div>`).join('')}</div>`)},
+5(){return L('11','things buyers judge it on, in 4 groups',`<div style="display:flex;height:56px;border-radius:10px;overflow:hidden">${G.map(([g,w],i)=>`<div style="flex:${w};background:${GC[i]};color:#fff;display:flex;align-items:center;justify-content:center;font:600 18px Geist">${w}%</div>`).join('')}</div>
+ <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:-22px" class="sb">${G.map(([g],i)=>`<span style="display:flex;align-items:center;gap:6px"><i style="width:12px;height:12px;border-radius:3px;background:${GC[i]}"></i>${g}</span>`).join('')}</div>
+ <div><div class="lb">Weighs most</div>${[['Food-safe',18],['Keeps fruit and floral aroma',15],['Allowed for sale',12]].map(([n,w])=>`<div style="display:flex;justify-content:space-between;font:500 24px Geist;margin-top:12px"><span>${n}</span><span class="mono" style="color:var(--mut)">${w}%</span></div>`).join('')}</div>`)}};
+const v=+(new URLSearchParams(location.search).get('v')||1);
+Promise.resolve(typeof PRE==='function'?PRE():null).then(()=>{document.getElementById('s').innerHTML=(V[v]||V[1])();eval(fin)});
+</script></body></html>

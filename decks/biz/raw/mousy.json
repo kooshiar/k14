@@ -1,0 +1,80 @@
+{
+ "key": "mousy",
+ "name": "Mousy wine fix",
+ "market": {
+  "usd_yr": 500000,
+  "year": 2025,
+  "what": "curative mousy-taint treatments (yeast-hull adsorbents, e.g. SpringFix Mousy), world",
+  "method": "est.: natural/no-SO2 wine ~1% of 226 Mhl = 2.3 Mhl x ~10% mousy = 0.23 Mhl x 40 g/hL x ~$45/kg = ~$0.4M; +cider/sour beer ~$0.1M",
+  "sources": [
+   "https://themorningclaret.com/p/the-complete-guide-to-mousiness",
+   "https://www.vinetur.com/en/2025110492951/global-wine-production-hits-60-year-low-at-2258-million-hectoliters-amid-climate-and-supply-pressures.html",
+   "https://fermentis.com/en/product/springfix-mousy/",
+   "https://scottlabsltd.com/en-us/siy-cell-hulls-20-kg-35--15069",
+   "https://www.bkwine.com/features/winemaking-viticulture/mousiness-in-wine/"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 115000000,
+  "logic": "est.: 0.23 Mhl mousy wine/yr x ~$1,000/hL ex-cellar (natural wine) x ~50% value lost (dump, downgrade, returns) = ~$115M; today's best fix removes only 30-46%",
+  "our_revenue_usd_yr": 1500000,
+  "revenue_logic": "treat 40% of 0.23 Mhl = 92k hL x $15/hL = $1.4M; + cider/beer ~$0.1M",
+  "gross_margin_pct": 70,
+  "margin_logic": "tiny volume, high price per hL; binder cost ~$3-5/hL at 5-10 g/hL",
+  "sources": [
+   "https://fermentis.com/en/product/springfix-mousy/",
+   "https://www.jancisrobinson.com/articles/demystifying-mousiness",
+   "https://themorningclaret.com/p/the-complete-guide-to-mousiness"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "low/no-SO2, organic and natural wine growth (organic wine volume +7% in 2024) while total wine shrinks",
+  "deadline": "",
+  "sources": [
+   "https://www.vinetur.com/en/20260618102941/organic-wine-sales-keep-rising-as-the-global-wine-market-shrinks.html",
+   "https://www.vinetur.com/en/2025110492951/global-wine-production-hits-60-year-low-at-2258-million-hectoliters-amid-climate-and-supply-pressures.html"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "amaea (NZ, 2011; MIP filtration for taints, could extend)"
+  ],
+  "incumbents": [
+   "Fermentis/Lesaffre (SpringFix Mousy)",
+   "Lallemand",
+   "Laffort",
+   "Oenobrands",
+   "Novonesis (bioprotection cultures)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "mousy off-flavor wine",
+  "groups_active": null,
+  "notes": "Only product on market is Fermentis yeast hulls, 30-46% removal at 40 g/hL. No startup found. Research small (AWRI, ISVV Bordeaux, Campden BRI).",
+  "sources": [
+   "https://fermentis.com/en/product/springfix-mousy/",
+   "https://www.infowine.com/en/new-analytical-method-for-mousy-compound/",
+   "https://oeno-one.eu/article/view/7481"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 24000,
+  "synth": "catalog core (3-phenylpyridinium class) + 2 custom 1-2 step variants, then graft on insoluble support for wine use",
+  "test": "spiked + real mousy wine (ATHP/ETHP/APY 20-100 ug/L); HPLC-MS (AWRI method) or SBSE-GC-MS at AWRI/ISVV; aroma GC-MS; sensory triangle test ISO 4120",
+  "logic": "synth+grafting 8 wk, ~$14k; analysis 30 x ~$200 = $6k (est.); sensory ~$4k",
+  "sources": [
+   "https://www.infowine.com/en/new-analytical-method-for-mousy-compound/",
+   "https://ives-technicalreviews.eu/article/view/7867"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2.5,
+  "gates": "US TTB treating-material approval + FDA food-contact for resin ~1 yr; EU needs OIV/EU 2019/934 listing (3-5 yr); winery trials 1 vintage; natural-wine makers wary of additives",
+  "sources": [
+   "https://fermentis.com/en/product/springfix-mousy/"
+  ]
+ }
+}

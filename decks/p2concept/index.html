@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Market Page Concepts · K14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#14161A;--mut:#596070;--line:#E6E8EC;--g:#2E8A1F;--red:#B3261E;--bg:#E9E6DF}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);font-family:Geist,ui-sans-serif,system-ui,sans-serif;color:var(--ink)}
+.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.slide{flex:none;width:1600px;height:900px;background:#fff;border-radius:18px;transform-origin:center;position:relative;overflow:hidden}
+.lb{font:500 17px "Geist Mono",monospace;color:var(--mut)}.sb{font-size:21px;color:var(--mut);margin-top:6px}
+.n{font:600 52px/1.05 Geist,sans-serif;letter-spacing:-.01em}
+.hero{font:600 104px/1 Geist,sans-serif;letter-spacing:-.025em}
+h1{margin:0;font:600 46px/1.15 Geist,sans-serif;letter-spacing:-.01em}
+.bot{width:26px;height:56px;border-radius:7px 7px 4px 4px;background:#D9DDE3;position:relative}.bot:before{content:'';position:absolute;left:9px;top:-12px;width:8px;height:14px;border-radius:2px;background:inherit}
+.bot.t{background:var(--red)}
+</style></head><body><div class="stage"><div class="slide" id="s"></div></div>
+<script>
+/* page 2 market, built on the accepted page-1 layout: hero + title left, quiet panel right */
+const L=(hero,title,right,col)=>`<div style="display:grid;grid-template-columns:1.15fr 1fr;height:100%">
+ <div style="padding:0 72px 0 96px;display:flex;flex-direction:column;justify-content:center"><div class="hero" style="color:${col||'var(--ink)'}">${hero}</div><h1 style="margin-top:22px">${title}</h1></div>
+ <div style="background:#F7F6F2;padding:0 88px;display:flex;flex-direction:column;justify-content:center;gap:52px">${right}</div></div>`;
+const fact=(l,n,s,sz)=>`<div><div class="lb">${l}</div><div class="n" style="margin-top:8px;${sz?'font-size:'+sz+'px':''}">${n}</div><div class="sb">${s}</div></div>`;
+const V={
+1(){return L('$748M','wine fining market in 2024',fact('Our share a year','$2–7M','tainted-lot treatment')+fact('First buyers','Wineries','with tainted lots'))},
+2(){return L('$748M','wine fining market in 2024',`<div><div class="lb">Our share a year</div>
+ <div style="margin-top:18px;height:40px;background:#DDE1E7;border-radius:6px;position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:1%;min-width:8px;background:var(--g);border-radius:6px 0 0 6px"></div></div>
+ <div style="display:flex;justify-content:space-between;margin-top:12px"><span class="n" style="font-size:40px;color:var(--g)">$2–7M</span><span class="sb">of $748M</span></div></div>`+fact('First buyers','Wineries','with tainted lots'))},
+3(){return L('$2–7M','a year for us, in a $748M wine fining market',fact('Market 2024','$748M','wine fining agents')+fact('First buyers','Wineries','with tainted lots'),'var(--g)')},
+4(){const sq=(w,c)=>`<div style="width:${w}px;height:${w}px;background:${c};border-radius:6px"></div>`;
+ return L('$748M','wine fining market in 2024',`<div style="display:flex;align-items:flex-end;gap:28px">${sq(260,'#DDE1E7')}<div style="display:flex;flex-direction:column;gap:10px">${sq(22,'var(--g)')}<div class="lb">our share</div><div class="n" style="font-size:40px;color:var(--g)">$2–7M</div><div class="sb">a year</div></div></div>`+fact('First buyers','Wineries','with tainted lots'))},
+5(){return L('$748M','wine fining market in 2024',`<div><div class="lb">Who buys first</div><div class="n" style="margin-top:8px;font-size:44px">Wineries with tainted lots</div></div>`+fact('Our share a year','$2–7M','tainted-lot treatment'))}};
+const v=+(new URLSearchParams(location.search).get('v')||1);document.getElementById('s').innerHTML=(V[v]||V[1])();
+function fit(){const w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;if(!w||!h)return;const s=Math.min(w/1640,h/940);document.getElementById('s').style.transform=`scale(${s})`}addEventListener('resize',fit);new ResizeObserver(()=>fit()).observe(document.documentElement);addEventListener('load',fit);[50,300,1000].forEach(t=>setTimeout(fit,t));fit();
+</script></body></html>

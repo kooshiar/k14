@@ -1,0 +1,452 @@
+{
+ "rareearth": {
+  "type": "Process",
+  "problem": "Nd and La are hard to separate; China does most of it",
+  "design": "Extractant that picks Nd over La",
+  "s0_smiles": "CCCCN(CC)C(=O)c1ccc2ccc3ccc(C(=O)N(CC)CCCC)[nH+]c3c2[nH+]1",
+  "today_best": "TODGA"
+ },
+ "magrec": {
+  "type": "Process",
+  "problem": "Magnet scrap holds Nd and Dy that are rarely recovered",
+  "design": "Extractant that pulls Nd from magnet scrap",
+  "s0_smiles": "CCCCCCOCC(=O)N(CCC)CCC",
+  "today_best": "TODGA"
+ },
+ "reecoal": {
+  "type": "Process",
+  "problem": "Coal waste holds rare earths at low levels",
+  "design": "Extractant for trace rare earths in coal ash",
+  "s0_smiles": "CCN(C)C(=O)c1ccc2ccc3ccc(C(=O)N(C)CC)[nH+]c3c2[nH+]1",
+  "today_best": "D2EHPA"
+ },
+ "lithium": {
+  "type": "Process",
+  "problem": "Lithium sits in brines full of sodium",
+  "design": "Binder that picks lithium over sodium",
+  "s0_smiles": "CC(C)(c1ccccc1)c1ccc(O)c(C(C)(C)c2ccccc2)c1",
+  "today_best": "12-crown-4"
+ },
+ "tmdiss": {
+  "type": "Process",
+  "problem": "Recycled cathode leach mixes Ni, Co and Mn",
+  "design": "Scavenger that pulls one cathode metal at a time",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "phosphate": {
+  "type": "Add-in",
+  "problem": "Phosphate in farm runoff feeds algae blooms",
+  "design": "Binder that catches phosphate over chloride",
+  "s0_smiles": "c1ccc(C2=[NH+]C(c3ccccc3)c3c(ccc4ccccc34)N2)cc1",
+  "today_best": "quaternary ammonium (resin site)"
+ },
+ "mousy": {
+  "type": "Product",
+  "problem": "Mousy wine can’t be fixed once it forms",
+  "design": "Binder that pulls the mousy taint from wine",
+  "s0_smiles": "c1ccc(-c2ccc[nH+]c2)cc1",
+  "today_best": "calix[4]arene"
+ },
+ "rebar": {
+  "type": "Product",
+  "problem": "Road salt rusts the steel inside concrete",
+  "design": "Inhibitor that keeps rebar from rusting",
+  "s0_smiles": "O=[PH](O)Oc1ccc(P(=O)([O-])[O-])cc1",
+  "today_best": "MEA"
+ },
+ "tfa": {
+  "type": "Add-in",
+  "problem": "The smallest forever chemical slips through water filters",
+  "design": "Sorbent that catches TFA in drinking water",
+  "s0_smiles": "C[N+](C)(CCNc1c(Nc2cccc(F)c2)c(=O)c1=O)CCNc1c(Nc2ccc(F)cc2F)c(=O)c1=O",
+  "today_best": "tren tris(phenylurea)"
+ },
+ "chalco": {
+  "type": "Process",
+  "problem": "Most copper ore resists cheap leaching",
+  "design": "Leach additive that frees copper from ore",
+  "s0_smiles": "CCCNC(=S)NC(=O)[O-]",
+  "today_best": "ethylene thiourea"
+ },
+ "boron": {
+  "type": "Add-in",
+  "problem": "Boron slips through desalination membranes",
+  "design": "Binder that pulls boron from desalinated water",
+  "s0_smiles": "O=C(O[NH2+]C(CO)(CO)CO)Oc1ccc(Cc2ccc(CO)cc2)cc1",
+  "today_best": "N-methylglucamine"
+ },
+ "smoke": {
+  "type": "Product",
+  "problem": "Wildfire smoke ruins wine; today’s fix strips flavor",
+  "design": "Binder that removes smoke taint, keeps flavor",
+  "s0_smiles": "COc1cc(OC)c2cc1C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C(CCC(=O)[O-])c1cc(c(OC)cc1OC)C2CCC(=O)[O-]",
+  "today_best": "resorcin[4]arene"
+ },
+ "cement": {
+  "type": "Product",
+  "problem": "Low-clinker cement loses early strength",
+  "design": "Additive that brings back early strength",
+  "s0_smiles": "OCCNCCN(CCO)CCO",
+  "today_best": "glycerol"
+ },
+ "selenate": {
+  "type": "Add-in",
+  "problem": "Selenium in mine water looks like sulfate",
+  "design": "Binder that picks selenate over sulfate",
+  "s0_smiles": "O=c1c(NCC[NH2+]CCNc2c(Nc3ccc(F)cc3F)c(=O)c2=O)c(Nc2cccc(F)c2)c1=O",
+  "today_best": "tren tris(phenylurea)"
+ },
+ "psensor": {
+  "type": "Product",
+  "problem": "Tracking phosphate takes a $29,000 analyzer",
+  "design": "Binder for a reagent-free phosphate probe",
+  "s0_smiles": "O=[N+]([O-])c1cccc(NC(=S)NC2CCCCC2NC(=S)Nc2ccccc2)c1",
+  "today_best": "quaternary ammonium (resin site)"
+ },
+ "sulfur": {
+  "type": "Add-in",
+  "problem": "One stubborn sulfur molecule stays in diesel",
+  "design": "Trap for the last sulfur in diesel",
+  "s0_smiles": "O=C(NCC[NH2+]CCNC(=O)Nc1ccccc1)Nc1ccccc1",
+  "today_best": "beta-cyclodextrin"
+ },
+ "hardener": {
+  "type": "Product",
+  "problem": "Epoxy wind blades can’t be recycled",
+  "design": "Hardener that splits in mild acid for recycling",
+  "s0_smiles": "NC1CCC(OC2(OC3CCC(N)CC3)CCCC2)CC1",
+  "today_best": "Recyclamine-type ketal diamine"
+ },
+ "culoop": {
+  "type": "Product",
+  "problem": "Liquid cooling loops corrode copper",
+  "design": "Corrosion inhibitor for copper loops",
+  "s0_smiles": "NC(CCC(=O)[O-])C(=O)[O-]",
+  "today_best": "benzotriazole"
+ },
+ "shortpfas": {
+  "type": "Add-in",
+  "problem": "Short-chain PFAS pass today’s water filters",
+  "design": "Sorbent for short-chain PFAS",
+  "s0_smiles": "[O-]c1c2cc(Br)cc1Cc1cc(Br)cc(c1[O-])Cc1cc(Br)cc(c1[O-])Cc1cc(Br)cc(c1[O-])C2",
+  "today_best": "quaternary ammonium (resin site)"
+ },
+ "dyetrap": {
+  "type": "Process",
+  "problem": "Dyes block nylon recycling",
+  "design": "Trap that pulls dye out of nylon",
+  "s0_smiles": "O=S(=O)([O-])Oc1c2cccc1Cc1cccc(c1OS(=O)(=O)[O-])Cc1cccc(c1OS(=O)(=O)[O-])Cc1cccc(c1OS(=O)(=O)[O-])C2",
+  "today_best": "calix[4]arene"
+ },
+ "coolant": {
+  "type": "Product",
+  "problem": "Immersion fluids are PFAS or flammable",
+  "design": "PFAS-free immersion fluid blend",
+  "s0_smiles": null,
+  "today_best": "ElectroCool EC-110"
+ },
+ "lignin": {
+  "type": "Process",
+  "problem": "Lignin waste is burned, not turned into chemicals",
+  "design": "Catalyst that turns lignin into aromatics",
+  "s0_smiles": null,
+  "today_best": "Ru"
+ },
+ "polysulfide": {
+  "type": "Product",
+  "problem": "Polysulfides kill lithium-sulfur batteries",
+  "design": "Binder that holds polysulfides in the cathode",
+  "s0_smiles": "C[N+](C)(C)Cc1ccc(NC(=O)NCC[NH+](CCNC(=S)Nc2ccc(C[N+](C)(C)C)cc2)CCNC(=S)Nc2ccc(C[N+](C)(C)C)cc2)cc1",
+  "today_best": "tren tris(phenylurea)"
+ },
+ "antiscale": {
+  "type": "Add-in",
+  "problem": "Scale clogs limestone electrolysis at pH 13–14",
+  "design": "Antiscalant that works at pH 13–14",
+  "s0_smiles": "NC(=O)COc1c2cc(C(=O)[O-])cc1Cc1cc(C(=O)[O-])cc(c1OCC(N)=O)Cc1cc(C(=O)[O-])cc(c1OCC(N)=O)Cc1cc(C(=O)[O-])cc(c1OCC(N)=O)C2",
+  "today_best": "EDTA"
+ },
+ "ammonium": {
+  "type": "Product",
+  "problem": "Ammonium probes are fooled by potassium",
+  "design": "Binder that picks ammonium over potassium",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "co2": {
+  "type": "Add-in",
+  "problem": "Humid air ruins most CO₂ sorbents",
+  "design": "Sorbent that catches CO₂ in humid air",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "cork": {
+  "type": "Product",
+  "problem": "TCA cork taint ruins wine at parts per trillion",
+  "design": "Binder that removes TCA, keeps wine flavor",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "dioxane": {
+  "type": "Add-in",
+  "problem": "1,4-Dioxane slips through groundwater treatment",
+  "design": "Sorbent that traps dioxane in groundwater",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "ethylene": {
+  "type": "Product",
+  "problem": "Ethylene gas ripens fruit too fast in storage",
+  "design": "Trap that holds ethylene in fruit storage",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "formaldehyde": {
+  "type": "Product",
+  "problem": "Wood panels release formaldehyde indoors",
+  "design": "Scavenger that locks formaldehyde in panels",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "gold": {
+  "type": "Process",
+  "problem": "Gold recovery from e-waste still uses cyanide",
+  "design": "Cyanide-free gold binder",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "pfas": {
+  "type": "Add-in",
+  "problem": "Long-chain PFAS persist in drinking water",
+  "design": "Sorbent for PFAS in drinking water",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "siloxane": {
+  "type": "Add-in",
+  "problem": "Silicone from shampoos wrecks biogas engines",
+  "design": "Sorbent that pulls siloxanes from biogas",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "tmah": {
+  "type": "Process",
+  "problem": "Chip fabs dump toxic TMAH developer",
+  "design": "Binder that recovers TMAH from fab waste",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "xenon": {
+  "type": "Add-in",
+  "problem": "Xenon is rare and costly to recover from air",
+  "design": "Sorbent that picks xenon over krypton",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "femob": {
+  "type": "Process",
+  "problem": "Hydrogen from rock stalls when iron stays locked",
+  "design": "Additive that frees iron so rock makes hydrogen",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "pgmwater": {
+  "type": "Process",
+  "problem": "Oilfield water carries traces of platinum metals",
+  "design": "Binder that catches platinum metals in produced water",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "pgmchlor": {
+  "type": "Process",
+  "problem": "Chloride leaches mix precious metals",
+  "design": "Binder that picks one precious metal in chloride",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "cmpchel": {
+  "type": "Add-in",
+  "problem": "Copper polishing slurries need cleaner chelators",
+  "design": "Chelator for copper polishing slurry",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "pucat": {
+  "type": "Process",
+  "problem": "PU foam waste is hard to break back down",
+  "design": "Catalyst that breaks PU foam into reusable polyol",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "ionomer": {
+  "type": "Product",
+  "problem": "AEM electrolyzers lose their ionomer fast",
+  "design": "Ionomer group that survives alkaline electrolysis",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "plastic": {
+  "type": "Process",
+  "problem": "Mixed plastic waste is burned or landfilled",
+  "design": "Catalyst that turns mixed plastic into fuel",
+  "s0_smiles": null,
+  "today_best": null
+ },
+ "nisel": {
+  "type": "Process",
+  "problem": "Recycled battery leach: nickel must be pulled away from cobalt and manganese",
+  "design": "Binder that picks nickel over cobalt and manganese",
+  "refinyx": true
+ },
+ "cosel": {
+  "type": "Process",
+  "problem": "Recycled battery leach: cobalt must be pulled from nickel-rich solution",
+  "design": "Binder that picks cobalt over nickel",
+  "refinyx": true
+ },
+ "copolish": {
+  "type": "Add-in",
+  "problem": "Battery-grade nickel sulfate must be polished to ppm cobalt",
+  "design": "Polishing binder for trace cobalt in nickel sulfate",
+  "refinyx": true
+ },
+ "feal": {
+  "type": "Add-in",
+  "problem": "Iron and aluminium removal loses nickel and cobalt in the waste cake",
+  "design": "Binder that removes Fe/Al without losing Ni/Co",
+  "refinyx": true
+ },
+ "fscav": {
+  "type": "Add-in",
+  "problem": "Fluoride from battery binder (PVDF) contaminates leach",
+  "design": "Sorbent that removes fluoride from battery leach",
+  "refinyx": true
+ },
+ "mnsel": {
+  "type": "Process",
+  "problem": "Manganese must be recovered from battery leach at battery grade",
+  "design": "Precipitant/binder for battery-grade manganese",
+  "refinyx": true
+ },
+ "gallium": {
+  "type": "Process",
+  "problem": "China restricts gallium exports; Ga sits at ~200 mg/L in alumina Bayer liquor",
+  "design": "Extractant/sorbent that picks gallium from Bayer liquor",
+  "new": true
+ },
+ "germanium": {
+  "type": "Process",
+  "problem": "China restricts germanium exports; Ge sits in zinc refinery residues",
+  "design": "Extractant that recovers germanium from zinc leach",
+  "new": true
+ },
+ "f3foam": {
+  "type": "Product",
+  "problem": "PFAS firefighting foams (AFFF) are being banned; fluorine-free foams underperform on fuel fires",
+  "design": "Fluorine-free surfactant for firefighting foam",
+  "new": true
+ },
+ "pag": {
+  "type": "Product",
+  "problem": "Chip photoresists use PFAS photoacid generators (PFOS/PFBS-type) facing bans",
+  "design": "PFAS-free photoacid generator for chip resists",
+  "new": true
+ },
+ "ppa": {
+  "type": "Add-in",
+  "problem": "Plastic film extrusion uses fluoropolymer processing aids (PFAS) being phased out",
+  "design": "PFAS-free polymer processing aid",
+  "new": true
+ },
+ "plating": {
+  "type": "Add-in",
+  "problem": "AI-chip packaging needs void-free copper plating in tiny vias; additives limit yield",
+  "design": "Copper plating leveler for advanced packaging",
+  "new": true
+ },
+ "elyte": {
+  "type": "Product",
+  "problem": "High-voltage and fast-charge Li-ion cells degrade at the electrode surface",
+  "design": "Electrolyte additive that protects high-voltage cathodes",
+  "new": true
+ },
+ "ctower": {
+  "type": "Add-in",
+  "problem": "Data-center cooling towers need scale/corrosion control; phosphorus treatments face discharge limits",
+  "design": "Phosphorus-free scale and corrosion inhibitor for cooling towers",
+  "new": true
+ },
+ "oilcorr": {
+  "type": "Add-in",
+  "problem": "Oil and gas pipes corrode from CO2/H2S; offshore rules ban toxic inhibitors",
+  "design": "Low-toxicity corrosion inhibitor for CO2/H2S pipelines",
+  "new": true
+ },
+ "h2s": {
+  "type": "Add-in",
+  "problem": "Triazine H2S scavengers cause scale and fouling in oil and gas",
+  "design": "Non-triazine H2S scavenger",
+  "new": true
+ },
+ "lube": {
+  "type": "Add-in",
+  "problem": "ZDDP anti-wear additive poisons catalysts and fails in EV fluids",
+  "design": "Ashless anti-wear additive for EV and engine oils",
+  "new": true
+ },
+ "lohc": {
+  "type": "Product",
+  "problem": "Hydrogen is costly to ship; liquid carriers need too much heat to release H2",
+  "design": "Liquid organic hydrogen carrier with low release heat",
+  "new": true
+ },
+ "refrig": {
+  "type": "Product",
+  "problem": "HFO refrigerants count as PFAS in the EU proposal; need non-fluorinated low-GWP options",
+  "design": "Non-PFAS low-GWP refrigerant blend",
+  "new": true
+ },
+ "amine": {
+  "type": "Add-in",
+  "problem": "Carbon-capture amine solvents need too much steam and degrade",
+  "design": "Capture solvent with lower regeneration energy and degradation",
+  "new": true
+ },
+ "dwr": {
+  "type": "Product",
+  "problem": "PFAS bans hit fabric finishes, and fluorine-free ones don't repel oil",
+  "design": "Fluorine-free repellent finish that repels oil as well as water",
+  "new": true
+ },
+ "lowdk": {
+  "type": "Product",
+  "problem": "AI-server boards need laminates with very low signal loss at 112-224 Gb/s.",
+  "design": "Low-loss crosslinker monomer for PPE/hydrocarbon PCB resins.",
+  "new": true
+ },
+ "fbinder": {
+  "type": "Product",
+  "problem": "Battery cathodes are glued with PVDF, a PFAS made with toxic NMP solvent",
+  "design": "Fluorine-free binder polymer that holds high-nickel cathodes at 4.4 V",
+  "new": true
+ },
+ "fsurf": {
+  "type": "Add-in",
+  "problem": "PFAS bans hit fluorosurfactants that coatings, inks and electronics need for wetting",
+  "design": "Fluorine-free surfactant that wets as well as a fluorosurfactant",
+  "new": true
+ },
+ "collector": {
+  "type": "Add-in",
+  "problem": "Copper flotation loses 10-15% of copper to tailings and drags pyrite into the concentrate",
+  "design": "Flotation collector that grabs copper sulfides and rejects pyrite",
+  "new": true
+ },
+ "clayplas": {
+  "type": "Add-in",
+  "problem": "Clay in low-carbon cement and dirty sand soaks up superplasticizer, so concrete stiffens",
+  "design": "Clay-tolerant superplasticizer that keeps concrete flowing",
+  "new": true
+ }
+}

@@ -13,7 +13,10 @@
   "Easy to ship and store",
   "Allowed for sale",
   "Holds more per kg",
-  "Easy to make"
+  "Easy to make",
+  "Lasts in use",
+  "Resists oxidation",
+  "Stays out of water"
  ],
  "weights": [
   2,
@@ -28,153 +31,12 @@
   1,
   2,
   1,
+  1,
+  1,
+  1,
   1
  ],
  "options": [
-  {
-   "label": "Pillar[5]arene (OMe)",
-   "sub": "Sold today",
-   "kind": "known",
-   "vals": [
-    50,
-    49,
-    50,
-    100,
-    100,
-    43,
-    5,
-    100,
-    50,
-    50,
-    100,
-    29,
-    60
-   ],
-   "overall": 61,
-   "price": 3.4,
-   "boxes": [
-    {
-     "box": "Performance",
-     "mult": 40,
-     "score": 54,
-     "rows": [
-      {
-       "name": "Removes the mousy taint",
-       "w": 8.0,
-       "val": 50,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Keeps fruit and floral aroma",
-       "w": 12.0,
-       "val": 49,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Keeps the color",
-       "w": 8.0,
-       "val": 50,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Leaves nothing in the wine",
-       "w": 8.0,
-       "val": 100,
-       "cut": 25,
-       "ok": true
-      },
-      {
-       "name": "Holds more per kg",
-       "w": 4.0,
-       "val": 29,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Cost",
-     "mult": 15,
-     "score": 46,
-     "rows": [
-      {
-       "name": "Cost per bottle",
-       "w": 7.5,
-       "val": 43,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Equipment cost",
-       "w": 7.5,
-       "val": 50,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Safety & rules",
-     "mult": 30,
-     "score": 100,
-     "rows": [
-      {
-       "name": "Food-safe",
-       "w": 18.0,
-       "val": 100,
-       "cut": 65,
-       "ok": true
-      },
-      {
-       "name": "Allowed for sale",
-       "w": 12.0,
-       "val": 100,
-       "cut": 31,
-       "ok": true
-      }
-     ]
-    },
-    {
-     "box": "Fit & supply",
-     "mult": 15,
-     "score": 43,
-     "rows": [
-      {
-       "name": "US supply",
-       "w": 3.0,
-       "val": 5,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Drops into today\u2019s setup",
-       "w": 6.0,
-       "val": 100,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Easy to ship and store",
-       "w": 3.0,
-       "val": 50,
-       "cut": 0,
-       "ok": true
-      },
-      {
-       "name": "Easy to make",
-       "w": 3.0,
-       "val": 60,
-       "cut": 0,
-       "ok": true
-      }
-     ]
-    }
-   ],
-   "fails": []
-  },
   {
    "label": "Calix[4]arene",
    "sub": "Sold today",
@@ -192,47 +54,71 @@
     50,
     100,
     50,
-    66
+    66,
+    100,
+    50,
+    50
    ],
-   "overall": 49,
+   "overall": 54,
    "price": 3.36,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 24,
+     "score": 30,
      "rows": [
       {
        "name": "Removes the mousy taint",
-       "w": 8.0,
+       "w": 6.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and floral aroma",
-       "w": 12.0,
+       "w": 9.2,
        "val": 50,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Keeps the color",
-       "w": 8.0,
+       "w": 6.2,
        "val": 33,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 8.0,
+       "w": 6.2,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 4.0,
+       "w": 3.1,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.1,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.1,
        "val": 50,
        "cut": 0,
        "ok": true
@@ -320,6 +206,174 @@
    "fails": []
   },
   {
+   "label": "Pillar[5]arene (OMe)",
+   "sub": "Sold today",
+   "kind": "known",
+   "vals": [
+    50,
+    49,
+    50,
+    100,
+    100,
+    43,
+    5,
+    100,
+    50,
+    50,
+    100,
+    29,
+    60,
+    100,
+    22,
+    0
+   ],
+   "overall": 54,
+   "price": 3.4,
+   "boxes": [
+    {
+     "box": "Performance",
+     "mult": 40,
+     "score": 39,
+     "rows": [
+      {
+       "name": "Removes the mousy taint",
+       "w": 6.2,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps fruit and floral aroma",
+       "w": 9.2,
+       "val": 49,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Keeps the color",
+       "w": 6.2,
+       "val": 50,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Leaves nothing in the wine",
+       "w": 6.2,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Holds more per kg",
+       "w": 3.1,
+       "val": 29,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.1,
+       "val": 22,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Cost",
+     "mult": 15,
+     "score": 46,
+     "rows": [
+      {
+       "name": "Cost per bottle",
+       "w": 7.5,
+       "val": 43,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Equipment cost",
+       "w": 7.5,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Safety & rules",
+     "mult": 30,
+     "score": 100,
+     "rows": [
+      {
+       "name": "Food-safe",
+       "w": 18.0,
+       "val": 100,
+       "cut": 65,
+       "ok": true
+      },
+      {
+       "name": "Allowed for sale",
+       "w": 12.0,
+       "val": 100,
+       "cut": 31,
+       "ok": true
+      }
+     ]
+    },
+    {
+     "box": "Fit & supply",
+     "mult": 15,
+     "score": 43,
+     "rows": [
+      {
+       "name": "US supply",
+       "w": 3.0,
+       "val": 5,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Drops into today\u2019s setup",
+       "w": 6.0,
+       "val": 100,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to ship and store",
+       "w": 3.0,
+       "val": 50,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Easy to make",
+       "w": 3.0,
+       "val": 60,
+       "cut": 0,
+       "ok": true
+      }
+     ]
+    }
+   ],
+   "fails": []
+  },
+  {
    "label": "Resorcin[4]arene",
    "sub": "Sold today",
    "kind": "known",
@@ -336,48 +390,72 @@
     50,
     100,
     41,
-    58
+    58,
+    100,
+    0,
+    0
    ],
-   "overall": 31,
+   "overall": 30,
    "price": 3.22,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 8,
+     "score": 7,
      "rows": [
       {
        "name": "Removes the mousy taint",
-       "w": 8.0,
+       "w": 6.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and floral aroma",
-       "w": 12.0,
+       "w": 9.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps the color",
-       "w": 8.0,
+       "w": 6.2,
        "val": 45,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 8.0,
+       "w": 6.2,
        "val": 100,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
-       "w": 4.0,
+       "w": 3.1,
        "val": 41,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.1,
+       "val": 100,
+       "cut": 25,
+       "ok": true
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.1,
+       "val": 0,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.1,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -480,48 +558,72 @@
     50,
     100,
     15,
-    35
+    35,
+    0,
+    15,
+    0
    ],
-   "overall": 15,
+   "overall": 16,
    "price": 1.19,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 1,
+     "score": 2,
      "rows": [
       {
        "name": "Removes the mousy taint",
-       "w": 8.0,
+       "w": 6.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps fruit and floral aroma",
-       "w": 12.0,
+       "w": 9.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Keeps the color",
-       "w": 8.0,
+       "w": 6.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Leaves nothing in the wine",
-       "w": 8.0,
+       "w": 6.2,
        "val": 0,
        "cut": 25,
        "ok": false
       },
       {
        "name": "Holds more per kg",
-       "w": 4.0,
+       "w": 3.1,
        "val": 15,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Lasts in use",
+       "w": 3.1,
+       "val": 0,
+       "cut": 25,
+       "ok": false
+      },
+      {
+       "name": "Resists oxidation",
+       "w": 3.1,
+       "val": 15,
+       "cut": 0,
+       "ok": true
+      },
+      {
+       "name": "Stays out of water",
+       "w": 3.1,
+       "val": 0,
        "cut": 0,
        "ok": true
       }
@@ -608,31 +710,34 @@
    "fails": []
   },
   {
-   "label": "Design A",
+   "label": "Design C",
    "sub": "Level 1",
    "kind": "design",
    "vals": [
     100,
-    100,
+    95,
     100,
     65,
-    86,
-    56,
+    82,
+    51,
     null,
-    54,
+    56,
     50,
     35,
     100,
-    62,
-    77
+    50,
+    82,
+    null,
+    null,
+    null
    ],
-   "overall": 74,
-   "price": 2.5,
+   "overall": 73,
+   "price": 2.92,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 92,
+     "score": 88,
      "rows": [
       {
        "name": "Removes the mousy taint",
@@ -644,7 +749,7 @@
       {
        "name": "Keeps fruit and floral aroma",
        "w": 12.0,
-       "val": 100,
+       "val": 95,
        "cut": 25,
        "ok": true
       },
@@ -658,14 +763,14 @@
       {
        "name": "Leaves nothing in the wine",
        "w": 8.0,
-       "val": 86,
+       "val": 82,
        "cut": 25,
        "ok": true
       },
       {
        "name": "Holds more per kg",
        "w": 4.0,
-       "val": 62,
+       "val": 50,
        "cut": 0,
        "ok": true
       }
@@ -674,12 +779,12 @@
     {
      "box": "Cost",
      "mult": 15,
-     "score": 53,
+     "score": 50,
      "rows": [
       {
        "name": "Cost per bottle",
        "w": 7.5,
-       "val": 56,
+       "val": 51,
        "cut": 0,
        "ok": true
       },
@@ -716,12 +821,12 @@
     {
      "box": "Fit & supply",
      "mult": 15,
-     "score": 53,
+     "score": 55,
      "rows": [
       {
        "name": "Drops into today\u2019s setup",
        "w": 7.5,
-       "val": 54,
+       "val": 56,
        "cut": 0,
        "ok": true
       },
@@ -735,7 +840,7 @@
       {
        "name": "Easy to make",
        "w": 3.8,
-       "val": 77,
+       "val": 82,
        "cut": 0,
        "ok": true
       }
@@ -745,36 +850,39 @@
    "fails": []
   },
   {
-   "label": "L3-28",
-   "sub": "Level 3 \u00b7 US-sourced",
+   "label": "L2-47",
+   "sub": "Level 2",
    "kind": "design",
    "vals": [
-    94,
+    82,
     100,
     100,
     100,
     80,
     51,
     null,
-    56,
+    55,
     50,
     50,
     100,
-    53,
-    91
+    51,
+    83,
+    null,
+    null,
+    null
    ],
-   "overall": 80,
-   "price": 3.02,
+   "overall": 79,
+   "price": 2.9,
    "boxes": [
     {
      "box": "Performance",
      "mult": 40,
-     "score": 89,
+     "score": 86,
      "rows": [
       {
        "name": "Removes the mousy taint",
        "w": 8.0,
-       "val": 94,
+       "val": 82,
        "cut": 25,
        "ok": true
       },
@@ -802,7 +910,7 @@
       {
        "name": "Holds more per kg",
        "w": 4.0,
-       "val": 53,
+       "val": 51,
        "cut": 0,
        "ok": true
       }
@@ -853,12 +961,12 @@
     {
      "box": "Fit & supply",
      "mult": 15,
-     "score": 61,
+     "score": 60,
      "rows": [
       {
        "name": "Drops into today\u2019s setup",
        "w": 7.5,
-       "val": 56,
+       "val": 55,
        "cut": 0,
        "ok": true
       },
@@ -872,7 +980,7 @@
       {
        "name": "Easy to make",
        "w": 3.8,
-       "val": 91,
+       "val": 83,
        "cut": 0,
        "ok": true
       }
@@ -898,7 +1006,10 @@
     50,
     100,
     25,
-    48
+    48,
+    null,
+    null,
+    null
    ],
    "overall": 75,
    "price": 2.86,
@@ -1035,7 +1146,10 @@
     50,
     100,
     38,
-    42
+    42,
+    null,
+    null,
+    null
    ],
    "overall": 65,
    "price": 3.78,

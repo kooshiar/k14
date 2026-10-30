@@ -1,0 +1,87 @@
+{
+ "key": "chalco",
+ "name": "Chalcopyrite leach aid",
+ "market": {
+  "usd_yr": 2800000000,
+  "year": 2025,
+  "what": "leach reagents (mostly sulfuric acid) bought by copper heap/dump leach ops, world; the budget a leach additive sells into",
+  "method": "est. 4.7 Mt SX-EW Cu x ~4 t acid/t Cu x ~$150/t = $2.8B; check: Chile alone 8.5 Mt acid x $165/t = $1.4B",
+  "sources": [
+   "https://www.hellenicshippingnews.com/?p=1130956",
+   "https://plusmining.com/en/2026/05/05/copper-expert-chinese-sulfuric-acid-restrictions-could-represent-33-of-production-costs/",
+   "https://metalswire.net/news-of-the-week/global-copper-mine-production-grows-steadily-latin-america-dominates-output"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 5000000000,
+  "logic": "CRU: catalyst-leach TAM 4.9-7.2 Mt Cu/yr; if additives unlock 0.5 Mt/yr extra Cu x ~$10k/t margin (LME $14.7k/t less ~$4.4k/t leach cost) = $5B/yr",
+  "our_revenue_usd_yr": 22000000,
+  "revenue_logic": "Jetti-style value share: 1-2 mine partners, 30 kt/yr extra Cu x $14.7k/t x 5% share",
+  "gross_margin_pct": 75,
+  "margin_logic": "value-priced additive dosed at mM levels; reagent cost small vs copper value",
+  "sources": [
+   "https://www.jettiresources.com/2021/05/cru-study-defines-total-addressable-market-for-jetti-resources-as-234mt-of-copper-by-2050/",
+   "https://www.fastmarkets.com/insights/live-futures-report-10-10-lme-metals-consolidate-nickel-pauses-after-upside-break/",
+   "https://www.miningweekly.com/article/freeport-targets-low-cost-copper-gains-with-leaching-technologies-2025-01-27"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 2,
+  "drivers": "grid/EV copper demand; IEA sees 30% mined-supply gap by 2035; falling grades; Freeport leach output 200 Mlb (2025) to 800 Mlb target 2030; Chile acid squeeze 2026",
+  "deadline": "",
+  "sources": [
+   "https://www.iea.org/news/diversification-is-the-cornerstone-of-energy-security-yet-critical-minerals-are-moving-in-the-opposite-direction",
+   "https://www.skillings.net/freeport-weighs-4-5b-bagdad-expansion-as-leach-output-rises/"
+  ]
+ },
+ "competition": {
+  "direct_startups": [
+   "Jetti Resources",
+   "Ceibo"
+  ],
+  "indirect_startups": [
+   "Endolith",
+   "Still Bright",
+   "Nuton (Rio Tinto venture)"
+  ],
+  "incumbents": [
+   "Freeport-McMoRan (in-house additives)",
+   "BHP",
+   "Anglo American",
+   "Glencore Technology (Albion)",
+   "Syensqo (Acorga)",
+   "BASF (LIX)",
+   "Kemira"
+  ],
+  "papers_3yr": null,
+  "paper_query": "chalcopyrite heap leaching catalyst",
+  "groups_active": null,
+  "notes": "Jetti strongest: $100M Series D at $2.5B, BHP/Freeport backed, thiocarbonyl (ETU-type) patents with UBC = FTO risk for thiourea designs; Ceibo $30M+ Series B, demo cathode Jun 2025; Endolith $13.5M; Still Bright $18.7M seed 2025",
+  "sources": [
+   "https://www.mining.com/web/jetti-raises-funds-at-2-5-billion-value/",
+   "https://www.bloomberg.com/news/articles/2025-06-03/bhp-backed-startup-delivers-first-copper-at-chile-leaching-plant",
+   "https://www.mining.com/us-biomining-startup-raises-13-5m-in-seed-funding/",
+   "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12247266"
+  ]
+ },
+ "lab": {
+  "weeks": 16,
+  "usd": 45000,
+  "synth": "1-2 step custom: s0 is an N-acyl thiourea/thiocarbamate; 3 variants from isothiocyanate + amine",
+  "test": "stirred-reactor leach of chalcopyrite concentrate (2 mM additive, ORP/pH held, vs ETU and blank), Cu by ICP-OES/AAS; then mini-column leach on low-grade ore; UBC/ALS/SGS hydromet labs",
+  "logic": "synth 5 wk + reactor tests 3 wk + mini-columns ~8 wk; 3 x $6k CRO + reactor work ~$7k + columns ~$20k (est.)",
+  "sources": [
+   "https://katalog.lib.cas.cz/KNAV/EdsRecord/edselp,S0304386X20301742",
+   "https://www.alsglobal.com/cs/metallurgy-and-mineral-processing/hydrometallurgical-testwork/dump-or-heap-leaching"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "large columns on mine ore 6-12 mo; test heap/crib 1 yr; toxicity and SX-EW circuit compatibility check; value-share deal",
+  "sources": [
+   "https://www.mining.com/teck-to-trial-jetti-resources-copper-catalyst/",
+   "https://www.investmets.com/copper-industry-ready-for-leach-3-0-jetti-boss/"
+  ]
+ }
+}

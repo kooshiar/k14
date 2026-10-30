@@ -1,0 +1,78 @@
+{
+ "key": "ammonium",
+ "name": "Ammonium probe binder",
+ "market": {
+  "usd_yr": 250000000,
+  "year": 2025,
+  "what": "online ammonia/ammonium measurement for wastewater (analyzers + ISE electrodes), world",
+  "method": "online NH3-N analyzer report $185M (2025) + est. ISE electrode refills ~$65M (est. 60k probes x NH4 + K electrodes at ~$525 each every 18-24 months)",
+  "sources": [
+   "https://www.marketresearchintellect.com/product/online-ammonia-nitrogen-analyzer-market/",
+   "https://www.ysi.com/Product/id-107-044Y/VARiON-Plus-NH4-Electrode",
+   "https://www.ysi.com/varion"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 200000000,
+  "logic": "US aeration power $1.43B/yr; world est. 4x = $5.7B. ABAC saves 10-20%. K-proof ISE lets ABAC run near 0-1 mg/L on est. 25% more load: $5.7B x 25% x 12% = $170M; plus no K compensation electrode (~$525) and fewer wet analyzers (~$30M est.)",
+  "our_revenue_usd_yr": 6000000,
+  "revenue_logic": "est. 40k ammonium electrodes/yr x ~$150 K14 share (ionophore supply/license to OEMs)",
+  "gross_margin_pct": 75,
+  "margin_logic": "ionophore is mg per electrode; sold as licensed consumable",
+  "sources": [
+   "https://www.process-worldwide.com/us-wastewater-treatment-4-of-plants-account-for-66-of-aeration-energy-consumption-a-474325/",
+   "https://www.ysi.com/File Library/Documents/Application Notes/Online-Ammonium-Sensor-Placement-for-Improved-Ammonia-Based-Aeration-Control.pdf",
+   "https://www.xylem.com/en-ie/making-waves/water-utilities-news/brockton-ma-wastewater-facility-achieves-45-energy-savings-with-innovative-sensor-technology/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 6,
+  "drivers": "WWTP energy cost; N limits (EU UWWTD recast N removal at >=150k PE); ABAC adoption; fertigation/hydroponics sensing",
+  "deadline": "2039: EU UWWTD tertiary (N) treatment at plants >=150k PE",
+  "sources": [
+   "https://www.marketresearchintellect.com/product/online-ammonia-nitrogen-analyzer-market/",
+   "https://sswm.info/node/13492"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Aquamonitrix (microfluidic NH4/NO3/PO4 analyser)"
+  ],
+  "incumbents": [
+   "Hach (A-ISE sc, AN-ISE sc)",
+   "Xylem/YSI/WTW (VARiON Plus)",
+   "Endress+Hauser (ISEmax)",
+   "Thermo Fisher (Orion)",
+   "Merck/Sigma-Aldrich (nonactin ionophore)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "ammonium selective electrode potassium interference",
+  "groups_active": null,
+  "notes": "Nonactin is the standard ionophore, log K(NH4,K) only -0.9 to -1.3, so OEMs add a K compensation electrode. Best academic crown ethers ~6x10^-2. No funded startup found on the ionophore itself",
+  "sources": [
+   "https://pubs.rsc.org/lv/content/articlehtml/2020/an/d0an00327a",
+   "https://www.sigmaaldrich.com/PR/en/tech-docs/paper/340620",
+   "https://pubs.acs.org/acsodf/article/9/48/47453/357588/Printed-Potentiometric-Ammonium-Sensors-for"
+  ]
+ },
+ "lab": {
+  "weeks": 14,
+  "usd": 50000,
+  "synth": "3-5 step custom (est.): tripodal/crown-type receptor, no early example yet; 3 variants",
+  "test": "PVC-membrane ISE; IUPAC selectivity log K(NH4,K) target < -2.5 (nonactin -0.9 to -1.3); drift in real influent; university electrochemistry lab",
+  "logic": "synth 10 wk + electrode tests 4 wk; 2-3 variants x $10-15k synth + ~$15k testing",
+  "sources": [
+   "https://pubs.rsc.org/lv/content/articlehtml/2020/an/d0an00327a"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "OEM field trial 6-12 months (electrode life >=12 months); OEM product release cycle ~1 yr",
+  "sources": [
+   "https://www.ysi.com/varion",
+   "https://www.ysi.com/ysi-blog/water-blogged-blog/2020/10/tech-comparison-ise-vs-analyzer-for-ammonium-monitoring"
+  ]
+ }
+}

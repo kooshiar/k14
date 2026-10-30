@@ -1,0 +1,85 @@
+{
+ "key": "ppa",
+ "name": "PFAS-free processing aid",
+ "market": {
+  "usd_yr": 500000000,
+  "year": 2024,
+  "what": "fluoropolymer polymer processing aids (active) for PE film, pipe, wire, world",
+  "method": "bottom-up est.: 46 Mt LLDPE x ~65% film x ~70% PPA-treated = ~21 Mt x 500 ppm = ~10 kt x ~$35/kg (est.) = $370M, +~30% other extrusion; M&M says $1.53B (likely incl. masterbatch)",
+  "sources": [
+   "https://www.marketsandmarkets.com/Market-Reports/fluoropolymer-processing-aid-market-94932274.html",
+   "https://chemanalyst.com/industry-report/low-density-polyethylene-market-2955",
+   "https://www.ulprospector.com/additives/en/datasheet/253823/3m-dynamar-polymer-processing-additive-fx-5927"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 250000000,
+  "logic": "today's PFAS-free PPAs need 0.1-0.3% vs 100-800 ppm FP and 20-60 min to clear melt fracture; a drop-in that matches FP keeps ~2% output on ~21 Mt film x ~$0.5/kg conversion value = ~$0.2B + lower dose ~$0.05B (est.)",
+  "our_revenue_usd_yr": 12000000,
+  "revenue_logic": "active sold to masterbatchers (Ampacet, Avient...) at ~2.5% share of ~$0.5B = ~$12M",
+  "gross_margin_pct": 55,
+  "margin_logic": "specialty additive, cheap organic feedstocks, but many PFAS-free rivals push price",
+  "sources": [
+   "https://www.specialchem.com/polymer-additives/guide/ingenia-non-pfas-polymer-processing-aids",
+   "https://www.polyestertime.com/pfas-free-processing-aid-polyolefins/",
+   "https://www.researchgate.net/publication/389920376_Non-PFAS_polymer_processing_aids_Slip_velocity_measurements_and_time-to-clear_studies_in_blown_film_extrusion"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 3.5,
+  "drivers": "PE film/flexible packaging growth; EU PPWR PFAS limit in food packaging; 3M exit from PFAS (Dynamar) end-2025",
+  "deadline": "EU PPWR PFAS limit in food-contact packaging from 12 Aug 2026",
+  "sources": [
+   "https://packagingeurope.com/ampacet-pfas-free-polymer-processing-aid-masterbatches-help-you-comply-with-new-packaging-and-packaging-waste-regulation/12502.article",
+   "https://news.3m.com/2022-12-20-3M-to-Exit-PFAS-Manufacturing-by-the-End-of-2025",
+   "https://www.marketsandmarkets.com/Market-Reports/fluoropolymer-processing-aid-market-94932274.html"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [],
+  "incumbents": [
+   "Clariant (AddWorks PPA)",
+   "Ampacet",
+   "Avient",
+   "Dow (silicone PPA)",
+   "Tosaf",
+   "Baerlocher",
+   "BYK",
+   "Ingenia Polymers",
+   "Silike",
+   "Chemours (Viton FreeFlow)",
+   "Arkema (Kynar)",
+   "Daikin",
+   "Syensqo"
+  ],
+  "papers_3yr": null,
+  "paper_query": "fluoropolymer processing aid replacement",
+  "groups_active": null,
+  "notes": "crowded: most masterbatchers launched PFAS-free PPAs 2023-2025; no molecule startup found; edge must be lower dose / faster clearing",
+  "sources": [
+   "https://www.plasticstoday.com/packaging/clariant-launches-pfas-free-processing-aid-for-polyolefin-films",
+   "https://www.plasticstoday.com/packaging/dow-launches-silicone-based-ppa-as-pfas-free-alternative-for-film-packaging",
+   "https://www.marketsandmarkets.com/Market-Reports/fluoropolymer-processing-aid-market-94932274.html"
+  ]
+ },
+ "lab": {
+  "weeks": 10,
+  "usd": 30000,
+  "synth": "catalog or 1-2 step custom (functional oligomer/amphiphile), 1-5 kg needed for film trials",
+  "test": "capillary rheometer melt-fracture onset (ASTM D3835) + lab blown-film time-to-clear at a compounder/polymer lab",
+  "logic": "synth 5 wk + compounding/rheology/film 5 wk; synth $10k + masterbatch + film line days ~$20k (est.)",
+  "sources": [
+   "https://www.researchgate.net/publication/389920376_Non-PFAS_polymer_processing_aids_Slip_velocity_measurements_and_time-to-clear_studies_in_blown_film_extrusion",
+   "https://multimedia.3m.com/mws/media/991388O/mwd-amount-ppa-required-suppress-sharkskin-melt-fracture-lldpe.pdf"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "converter line trials 6-12 mo; FDA food-contact + EU 10/2011 listing (new substance via EFSA adds 2-3 yrs); TSCA PMN",
+  "sources": [
+   "https://www.specialchem.com/polymer-additives/guide/ingenia-non-pfas-polymer-processing-aids"
+  ]
+ }
+}

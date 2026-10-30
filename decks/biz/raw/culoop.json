@@ -1,0 +1,87 @@
+{
+ "key": "culoop",
+ "name": "Copper loop inhibitor",
+ "market": {
+  "usd_yr": 100000000,
+  "year": 2026,
+  "what": "Inhibited PG25 coolant for direct-to-chip (TCS) loops, world",
+  "method": "est. ~9 GW new DLC IT (65k NVL72-class racks x 0.13 MW + others) x ~1 L/kW fill x ~$8/L = ~$75M + recharge/top-up on base ~$25M",
+  "sources": [
+   "https://longportapp.cn/news/269012729",
+   "https://alliancechemical.com/blogs/articles/gpu-thermal-density-b200-gb200-coolant-flow-specs",
+   "https://www.krayden.com/products/dowfrost-lc-25",
+   "https://www.delloro.com/news/data-center-liquid-cooling-market-to-approach-7-billion-by-2029-as-ai-deployments-accelerate/"
+  ],
+  "confidence": "low"
+ },
+ "value": {
+  "created_usd_yr": 200000000,
+  "logic": "~25 GW DLC base by 2030 (est.) x ~$8k/MW-yr: fewer inhibitor tests/recharges and flushes (~$3k) + fewer clog/leak outages (~$5k; 54% of big outages >$100k)",
+  "our_revenue_usd_yr": 15000000,
+  "revenue_logic": "2032 DLC coolant ~$400M x ~20% inhibitor-package value x ~20% share = ~$16M, sold to blenders (Dow, Dober, Castrol)",
+  "gross_margin_pct": 60,
+  "margin_logic": "specialty inhibitor package, small volume, sold to coolant blenders",
+  "sources": [
+   "https://www.opencompute.org/documents/guidelines-for-using-water-based-transfer-fluids-in-single-phase-cold-plate-based-liquid-cooled-racks-final-pdf/",
+   "https://uptimeinstitute.com/resources/research-and-reports/annual-outage-analysis-2024",
+   "https://www.delloro.com/news/data-center-liquid-cooling-market-to-approach-7-billion-by-2029-as-ai-deployments-accelerate/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 24,
+  "drivers": "AI racks 120-130 kW need cold plates; DLC revenue +85-156% y/y in 2025; Dell'Oro ~$3B (2025) to ~$7B (2029)",
+  "deadline": "",
+  "sources": [
+   "https://www.delloro.com/news/data-center-liquid-cooling-market-to-approach-7-billion-by-2029-as-ai-deployments-accelerate/",
+   "https://www.fierce-network.com/cloud/theres-no-stopping-liquid-cooling-train",
+   "https://longportapp.cn/news/269012729"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Corintis",
+   "ZutaCore",
+   "JetCool (Flex)",
+   "Accelsius"
+  ],
+  "incumbents": [
+   "Dow (DOWFROST LC 25)",
+   "Dober (Coolwave DC-25)",
+   "Castrol (ON PG 25)",
+   "Ecolab/Nalco (3D TRASAR for DLC)",
+   "Valvoline",
+   "Shell",
+   "Lubrizol",
+   "BASF"
+  ],
+  "papers_3yr": null,
+  "paper_query": "\"liquid cooling\" copper corrosion inhibitor",
+  "groups_active": null,
+  "notes": "Ecolab buying CoolIT for $4.75B (Mar 2026, ~$550M rev) bundles cold plates + fluid + monitoring; ZutaCore $100M Series C (Jun 2026); Corintis $25M A1. BTA depletes into hoses (OCP).",
+  "sources": [
+   "https://finance.yahoo.com/markets/stocks/articles/ecolab-details-4-75b-coolit-194713185.html",
+   "https://siliconangle.com/2026/06/02/zutacore-raises-100m-scale-waterless-cooling-ai-data-centers/",
+   "https://www.venturelab.swiss/Corintis-secured-additional-USD-25M-Series-A1-funding-to-accelerate-its-global-expansion",
+   "https://www.galvnews.com/dober-s-coolwave-dc-25-earns-open-compute-project-ocp-inspired-recognition-for-data-center/article_0bdf2fce-ed2e-53c7-9fab-f0304e6f29ff.html"
+  ]
+ },
+ "lab": {
+  "weeks": 8,
+  "usd": 15000,
+  "synth": "catalog (s0 = glutamate class; amino-acid/azole analogs buyable); 3 variants + PG25 blends",
+  "test": "ASTM D1384 glassware corrosion (Cu, brass, solder, Al, steel; 336 h) + ASTM G59 polarization + Cu release by ICP-MS; contract lab (e.g. Intertek, SwRI) or univ.",
+  "logic": "2 wk buy+blend + ~2 wk D1384 + 2-3 wk electrochem/ICP; ~$1k compounds + 3-4 fluids x ~$2-3k D1384 (est.) + ~$2k ICP/electrochem",
+  "sources": [
+   "https://www.astm.org/d1384-05r19.html",
+   "https://www.astm.org/g0059-97r20.html"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 2,
+  "gates": "elastomer/material compat 1000 h + OCP-style fluid spec; cold-plate/CDU OEM and server OEM approval ~1-1.5 yr; pilot loop 6 mo",
+  "sources": [
+   "https://www.opencompute.org/documents/guidelines-for-using-water-based-transfer-fluids-in-single-phase-cold-plate-based-liquid-cooled-racks-final-pdf/"
+  ]
+ }
+}

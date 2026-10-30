@@ -1,0 +1,434 @@
+{
+ "Cobalt binder": {
+  "market_usd": 7200000000.0,
+  "market_what": "Li-ion battery recycling revenue, world 2024 (GMI)",
+  "market_source": "https://gminsights.com/industry-analysis/lithium-ion-battery-recycling-market",
+  "gain_pct": 4,
+  "gain_basis": "replaces Co solvent-extraction circuit: ~1/3 of SX cost, SX ~12% of recycler revenue",
+  "value_usd": 288000000,
+  "confidence": "low"
+ },
+ "Trace-cobalt polish": {
+  "market_usd": 3100000000.0,
+  "market_what": "nickel sulfate sales, all grades, world 2024",
+  "market_source": "https://www.credenceresearch.com/report/nickel-sulfate-market",
+  "gain_pct": 0.5,
+  "gain_basis": "polishing resin is a small cost step; ppm Co already met by existing chelating resins",
+  "value_usd": 15500000,
+  "confidence": "low"
+ },
+ "Fe/Al remover": {
+  "market_usd": 7200000000.0,
+  "market_what": "Li-ion battery recycling revenue, world 2024",
+  "market_source": "https://gminsights.com/industry-analysis/lithium-ion-battery-recycling-market",
+  "gain_pct": 1.5,
+  "gain_basis": "cuts Ni/Co lost in Fe/Al hydroxide cake (~1–3% of payable metal)",
+  "value_usd": 108000000,
+  "confidence": "low"
+ },
+ "Fluoride sorbent": {
+  "market_usd": 7200000000.0,
+  "market_what": "Li-ion battery recycling revenue, world 2024",
+  "market_source": "https://gminsights.com/industry-analysis/lithium-ion-battery-recycling-market",
+  "gain_pct": 0.5,
+  "gain_basis": "F⁻ removal is a minor reagent/filter step today (Ca/Al precipitation)",
+  "value_usd": 36000000,
+  "confidence": "low"
+ },
+ "Nickel binder": {
+  "market_usd": 7200000000.0,
+  "market_what": "Li-ion battery recycling revenue, world 2024",
+  "market_source": "https://gminsights.com/industry-analysis/lithium-ion-battery-recycling-market",
+  "gain_pct": 3,
+  "gain_basis": "replaces Ni SX or crystallization stage: ~1/4 of SX cost",
+  "value_usd": 216000000,
+  "confidence": "low"
+ },
+ "Manganese precipitant": {
+  "market_usd": 7200000000.0,
+  "market_what": "Li-ion battery recycling revenue, world 2024",
+  "market_source": "https://gminsights.com/industry-analysis/lithium-ion-battery-recycling-market",
+  "gain_pct": 2,
+  "gain_basis": "replaces Mn D2EHPA SX stage, the smallest-value metal",
+  "value_usd": 144000000,
+  "confidence": "low"
+ },
+ "Rare-earth separator": {
+  "market_usd": 4900000000.0,
+  "market_what": "NdPr oxide sales, world 2025",
+  "market_source": "https://www.wiseguyreports.com/reports/ndpr-oxide-market",
+  "gain_pct": 7,
+  "gain_basis": "separation ~15–20% of NdPr cost; better extractant halves mixer stages",
+  "value_usd": 343000000,
+  "confidence": "medium"
+ },
+ "Magnet recycling": {
+  "market_usd": 590000000.0,
+  "market_what": "rare-earth recycling market, world 2025",
+  "market_source": "https://www.datamintelligence.com/research-report/rare-earth-recycling-market",
+  "gain_pct": 10,
+  "gain_basis": "drops iron cleanup steps and acid; iron is 64% of scrap",
+  "value_usd": 59000000,
+  "confidence": "medium"
+ },
+ "Rare earths from coal": {
+  "market_usd": 4900000000.0,
+  "market_what": "NdPr oxide sales, world 2025 (what coal REE would sell into)",
+  "market_source": "https://www.wiseguyreports.com/reports/ndpr-oxide-market",
+  "gain_pct": 1,
+  "gain_basis": "ash grade 0.03–0.06% REE; at best a small, high-cost slice of supply",
+  "value_usd": 49000000,
+  "confidence": "low"
+ },
+ "Lithium catcher": {
+  "market_usd": 5000000000.0,
+  "market_what": "brine lithium output value, ~30% of 240 kt Li at $14k/t LCE, 2024",
+  "market_source": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-lithium.pdf",
+  "gain_pct": 4,
+  "gain_basis": "higher recovery, fewer steps on high-Mg brine vs ponds/current DLE sorbents",
+  "value_usd": 200000000,
+  "confidence": "low"
+ },
+ "Gold catcher": {
+  "market_usd": 3900000000.0,
+  "market_what": "gold share (35%) of $11.1B e-waste precious-metal recovery, 2025",
+  "market_source": "https://www.gminsights.com/industry-analysis/precious-metals-e-waste-recovery-market",
+  "gain_pct": 3,
+  "gain_basis": "replaces cyanide/aqua-regia step; refining ~5–8% of metal value, plus yield",
+  "value_usd": 117000000,
+  "confidence": "low"
+ },
+ "Copper leach booster": {
+  "market_usd": 42000000000.0,
+  "market_what": "SX-EW copper, 4.6 Mt (ICSG 2023) at ~$9.1k/t",
+  "market_source": "https://icsg.org/copper-factbook/",
+  "gain_pct": 3,
+  "gain_basis": "extra recovery from chalcopyrite heaps; Freeport targets +800 Mlb/yr from additives",
+  "value_usd": 1260000000,
+  "confidence": "low"
+ },
+ "PGM from produced water": {
+  "market_usd": 5000000.0,
+  "market_what": "gross PGM value in US produced water (Bakken: below detection)",
+  "market_source": "https://www.eurekalert.org/news-releases/1036343",
+  "gain_pct": 20,
+  "gain_basis": "ng/L levels; even a perfect sorbent recovers almost nothing",
+  "value_usd": 1000000,
+  "confidence": "low"
+ },
+ "Precious metal splitter": {
+  "market_usd": 6900000000.0,
+  "market_what": "PGM refining market, world 2025",
+  "market_source": "https://www.wiseguyreports.com/reports/pgm-refining-market",
+  "gain_pct": 5,
+  "gain_basis": "fewer SX/precipitation steps, shorter metal lock-up (Rh takes months)",
+  "value_usd": 345000000,
+  "confidence": "low"
+ },
+ "Cathode metal scavenger": {
+  "market_usd": 7200000000.0,
+  "market_what": "Li-ion battery recycling revenue, world 2024",
+  "market_source": "https://gminsights.com/industry-analysis/lithium-ion-battery-recycling-market",
+  "gain_pct": 1,
+  "gain_basis": "trace Cu/Fe/Al cleanup of precursor liquor; existing resins mostly work",
+  "value_usd": 72000000,
+  "confidence": "low"
+ },
+ "TMAH recovery": {
+  "market_usd": 1020000000.0,
+  "market_what": "electronic-grade TMAH sales, world 2025",
+  "market_source": "https://www.marketresearchforecast.com/reports/electronic-grade-tetramethyl-ammonium-hydroxide-tmah-62327",
+  "gain_pct": 10,
+  "gain_basis": "on-site reuse replaces fresh TMAH + disposal at part of fab volume",
+  "value_usd": 102000000,
+  "confidence": "medium"
+ },
+ "Iron mobiliser": {
+  "market_usd": 300000000.0,
+  "market_what": "geologic/stimulated H₂ spend per year (Koloma $394M raised; DOE $20M)",
+  "market_source": "https://www.spglobal.com/energy/en/news-research/latest-news/energy-transition/012425-geologic-hydrogen-explorer-koloma-with-400-mil-in-funding-quiet-on-next-step",
+  "gain_pct": 5,
+  "gain_basis": "faster Fe²⁺ release raises H₂ per well; pre-commercial, no product sales yet",
+  "value_usd": 15000000,
+  "confidence": "low"
+ },
+ "Plastic-to-fuel catalyst": {
+  "market_usd": 480000000.0,
+  "market_what": "plastic pyrolysis segment of chemical recycling, 2024",
+  "market_source": "https://tools.prnewswire.com/en-us/live/20813/release/20260427EN43993",
+  "gain_pct": 10,
+  "gain_basis": "more fuel-range oil, less wax/gas, survives chlorine",
+  "value_usd": 48000000,
+  "confidence": "low"
+ },
+ "Lignin catalyst": {
+  "market_usd": 1040000000.0,
+  "market_what": "lignin product sales, world 2024",
+  "market_source": "https://www.businesswire.com/news/home/20240719303374/en/Global-Lignin-Market-Analysis-Size-Trends-and-Forecasts-2023-2024-2029-Businesses-Expanding-RD-Activities-to-Expand-Product-Portfolios-and-Increase-their-Market-Share---ResearchAndMarkets.com",
+  "gain_pct": 2,
+  "gain_basis": "lignin-to-aromatics not commercial; most lignin is burned for energy",
+  "value_usd": 20800000,
+  "confidence": "low"
+ },
+ "Foam recycling catalyst": {
+  "market_usd": 510000000.0,
+  "market_what": "PU recycling, 1.3 Mt at $394/t, 2024",
+  "market_source": "https://pdf.marketpublishers.com/bosson_research/global-polyurethane-pu-recycling-market-bosson.pdf",
+  "gain_pct": 5,
+  "gain_basis": "faster glycolysis, cleaner polyol allows higher recycled share",
+  "value_usd": 25500000,
+  "confidence": "low"
+ },
+ "Dye trap (nylon)": {
+  "market_usd": 4200000000.0,
+  "market_what": "recycled nylon sales, world 2024",
+  "market_source": "https://www.emergenresearch.com/ar/industry-report/recycled-nylon-market",
+  "gain_pct": 2,
+  "gain_basis": "dye removal is a small step; depolymerization routes already handle dyes",
+  "value_usd": 84000000,
+  "confidence": "low"
+ },
+ "PFAS trap": {
+  "market_usd": 2130000000.0,
+  "market_what": "PFAS filtration market, world 2025",
+  "market_source": "https://prnewswire.co.uk/news-releases/pfas-filtration-market-worth-2-99-billion-by-2030--exclusive-report-by-marketsandmarkets-302436941.html",
+  "gain_pct": 10,
+  "gain_basis": "selective media lasts longer: fewer GAC/IX change-outs, the main O&M cost",
+  "value_usd": 213000000,
+  "confidence": "medium"
+ },
+ "Short-chain PFAS trap": {
+  "market_usd": 2130000000.0,
+  "market_what": "PFAS filtration market, world 2025",
+  "market_source": "https://prnewswire.co.uk/news-releases/pfas-filtration-market-worth-2-99-billion-by-2030--exclusive-report-by-marketsandmarkets-302436941.html",
+  "gain_pct": 5,
+  "gain_basis": "short chains break through GAC first; better media extends bed life",
+  "value_usd": 106500000,
+  "confidence": "medium"
+ },
+ "TFA trap": {
+  "market_usd": 2130000000.0,
+  "market_what": "PFAS filtration market, world 2025 (TFA itself unregulated in US)",
+  "market_source": "https://prnewswire.co.uk/news-releases/pfas-filtration-market-worth-2-99-billion-by-2030--exclusive-report-by-marketsandmarkets-302436941.html",
+  "gain_pct": 2,
+  "gain_basis": "only EU 'PFAS total' rule touches TFA; today near-zero spend on TFA",
+  "value_usd": 42600000,
+  "confidence": "low"
+ },
+ "Dioxane trap": {
+  "market_usd": 150000000.0,
+  "market_what": "US 1,4-dioxane drinking-water treatment/yr (Long Island: $840M capex + $30M/yr)",
+  "market_source": "https://www.citizenscampaign.org/whats-new-at-cce/2019/10/30/earth-matters-emerging-contaminants-in-long-islands-groundwater-get-more-attention",
+  "gain_pct": 25,
+  "gain_basis": "sorbent instead of UV-AOP: less power and peroxide",
+  "value_usd": 37500000,
+  "confidence": "low"
+ },
+ "Boron catcher": {
+  "market_usd": 330000000.0,
+  "market_what": "boron 2nd-pass cost: ~60 Mm³/d SWRO × half needing it × $0.03/m³",
+  "market_source": "https://cris.bgu.ac.il/en/publications/a-new-energy-efficient-approach-for-boron-removal-from-swro-plant/",
+  "gain_pct": 40,
+  "gain_basis": "boron sorbent polish replaces partial second RO pass, net of media cost",
+  "value_usd": 132000000,
+  "confidence": "medium"
+ },
+ "Selenium catcher": {
+  "market_usd": 400000000.0,
+  "market_what": "selenium water treatment/yr: Teck ~$150–250M/yr + US coal FGD, other mines",
+  "market_source": "https://wildsight.ca/2024/03/19/the-elk-valleys-6-4-billion-pollution-problem/",
+  "gain_pct": 20,
+  "gain_basis": "selective sorbent vs slow bioreactors in high-sulfate water",
+  "value_usd": 80000000,
+  "confidence": "low"
+ },
+ "Phosphate catcher": {
+  "market_usd": 1690000000.0,
+  "market_what": "phosphorus recovery chemicals, world 2025",
+  "market_source": "https://growthmarketreports.com/report/phosphorus-recovery-chemical-market",
+  "gain_pct": 5,
+  "gain_basis": "reusable sorbent vs single-use Fe/Al salts; sells recovered P",
+  "value_usd": 84500000,
+  "confidence": "low"
+ },
+ "Siloxane catcher": {
+  "market_usd": 160000000.0,
+  "market_what": "siloxane removal systems, world 2025",
+  "market_source": "https://www.marketresearchintellect.com/product/siloxane-removal-systems-market/",
+  "gain_pct": 20,
+  "gain_basis": "regenerable media vs single-use carbon change-outs",
+  "value_usd": 32000000,
+  "confidence": "medium"
+ },
+ "CO₂ capture": {
+  "market_usd": 114000000.0,
+  "market_what": "direct air capture market, world 2024",
+  "market_source": "https://www.psmarketresearch.com/market-analysis/direct-air-capture-market",
+  "gain_pct": 15,
+  "gain_basis": "less water uptake cuts regeneration energy, ~30% of DAC opex",
+  "value_usd": 17100000,
+  "confidence": "medium"
+ },
+ "Xenon catcher": {
+  "market_usd": 286000000.0,
+  "market_what": "xenon gas sales, world 2025",
+  "market_source": "https://www.persistencemarketresearch.com/market-research/xenon-gas-market.asp",
+  "gain_pct": 10,
+  "gain_basis": "small capture units add supply outside giant cryogenic plants",
+  "value_usd": 28600000,
+  "confidence": "medium"
+ },
+ "Sulfur trap": {
+  "market_usd": 3200000000.0,
+  "market_what": "hydrodesulfurization catalyst sales, world 2024",
+  "market_source": "https://www.imarcgroup.com/hydrodesulfurization-catalysts-market",
+  "gain_pct": 3,
+  "gain_basis": "polishing last ppm lets hydrotreaters run milder, longer catalyst life",
+  "value_usd": 96000000,
+  "confidence": "low"
+ },
+ "Antiscalant pH 13–14": {
+  "market_usd": 500000.0,
+  "market_what": "antiscalant use in electrochemical cement (Sublime, 30 kt/yr first plant)",
+  "market_source": "https://globalcement.com/news/17445-sublime-systems-preparing-to-build-first-commercial-scale-plant-in-2026",
+  "gain_pct": 30,
+  "gain_basis": "one-company niche today; less scaling downtime",
+  "value_usd": 150000,
+  "confidence": "low"
+ },
+ "Copper polishing chelator": {
+  "market_usd": 740000000.0,
+  "market_what": "copper CMP slurry sales, world 2024",
+  "market_source": "https://www.marketresearch.com/Bosson-Research-v4252/Global-CMP-Copper-Slurry-Research-40660130",
+  "gain_pct": 3,
+  "gain_basis": "chelator is one ingredient; better Cu/barrier selectivity, fewer defects",
+  "value_usd": 22200000,
+  "confidence": "low"
+ },
+ "Mousy wine fix": {
+  "market_usd": 748000000.0,
+  "market_what": "wine fining agent sales, world 2024",
+  "market_source": "https://www.gminsights.com/industry-analysis/wine-fining-agent-market",
+  "gain_pct": 2,
+  "gain_basis": "mousy wine is a niche of natural wine; little fining spend touches it",
+  "value_usd": 14960000,
+  "confidence": "low"
+ },
+ "Smoke-taint remover": {
+  "market_usd": 600000000.0,
+  "market_what": "avg yearly smoke-taint loss (CA 2020 alone $3.7B, ~1 in 6 yrs)",
+  "market_source": "https://fortune.com/2023/09/30/wildfires-wine-west-coast-california-oregon-smoky-grapes/",
+  "gain_pct": 10,
+  "gain_basis": "treatment salvages some lots; most loss is unpicked grapes",
+  "value_usd": 60000000,
+  "confidence": "low"
+ },
+ "Cork taint remover": {
+  "market_usd": 1000000000.0,
+  "market_what": "yearly cork-taint loss, world wine (>$1B)",
+  "market_source": "https://www.northwestwinereport.com/2023/02/how-big-of-issue-is-cork-taint-really.html",
+  "gain_pct": 3,
+  "gain_basis": "most TCA now screened at cork plant; treatment saves detected lots",
+  "value_usd": 30000000,
+  "confidence": "low"
+ },
+ "PFAS-free coolant": {
+  "market_usd": 375000000.0,
+  "market_what": "two-phase data-center immersion cooling, world 2024",
+  "market_source": "https://www.giiresearch.com/report/fbs1887063-two-phase-data-center-liquid-immersion-cooling.html",
+  "gain_pct": 15,
+  "gain_basis": "replaces fluorinated fluids being phased out (3M exit), ~1/3 of system cost",
+  "value_usd": 56250000,
+  "confidence": "low"
+ },
+ "Recyclable epoxy hardener": {
+  "market_usd": 2200000000.0,
+  "market_what": "wind-blade epoxy resin sales, world 2024",
+  "market_source": "https://marketresearch.com/APO-Research-Inc-v4273/Global-Epoxy-Resin-Wind-Turbine-38196846",
+  "gain_pct": 3,
+  "gain_basis": "recyclability worth ~end-of-life landfill/cut-up cost; rivals exist (RecyclableBlade, Elium)",
+  "value_usd": 66000000,
+  "confidence": "low"
+ },
+ "AEM ionomer": {
+  "market_usd": 68000000.0,
+  "market_what": "AEM electrolyser sales, world 2024",
+  "market_source": "https://giikorea.co.kr/report/qyr1873658-anion-exchange-membrane-aem-electrolyser-global.html",
+  "gain_pct": 10,
+  "gain_basis": "ionomer life is the gating issue; ionomer ~15% of stack",
+  "value_usd": 6800000,
+  "confidence": "low"
+ },
+ "Polysulfide binder": {
+  "market_usd": 42000000.0,
+  "market_what": "lithium-sulfur battery sales, world 2024",
+  "market_source": "https://www.polarismarketresearch.com/industry-analysis/lithium-sulfur-battery-market",
+  "gain_pct": 10,
+  "gain_basis": "longer cycle life from less shuttle; tiny market",
+  "value_usd": 4200000,
+  "confidence": "low"
+ },
+ "Cement booster": {
+  "market_usd": 15000000000.0,
+  "market_what": "clinker cost in cement made with performance additives: ~400 Mt × 75% clinker × $50/t (estimate)",
+  "market_source": "https://www.giikorea.co.kr/report/qyr1861258-cement-grinding-aids-global-market-share-ranking.html",
+  "gain_pct": 2,
+  "gain_basis": "early strength lets makers cut ~5 pts more clinker; partial uptake",
+  "value_usd": 300000000.0,
+  "confidence": "low"
+ },
+ "Rebar inhibitor": {
+  "market_usd": 8300000000.0,
+  "market_what": "yearly corrosion cost of US highway bridges alone (NACE/FHWA study); world concrete repair is larger",
+  "market_source": "https://www.fhwa.dot.gov/publications/research/infrastructure/structures/04045/",
+  "gain_pct": 2,
+  "gain_basis": "better inhibitor in new and repaired decks delays rust repairs; slow uptake",
+  "value_usd": 166000000.0,
+  "confidence": "low"
+ },
+ "Copper loop inhibitor": {
+  "market_usd": 185000000.0,
+  "market_what": "corrosion-driven cost in direct-to-chip loops: coolant changes, filters, cold-plate clogs and leaks, ~10% of $1.85B DLC spend, 2024 (estimate)",
+  "market_source": "https://www.gminsights.com/industry-analysis/direct-to-chip-liquid-cooling-market",
+  "gain_pct": 40,
+  "gain_basis": "inhibitor that keeps copper clean cuts fluid changes and cold-plate failures; downtime on $3M GPU racks not counted",
+  "value_usd": 74000000,
+  "confidence": "low"
+ },
+ "Formaldehyde catcher": {
+  "market_usd": 1100000000.0,
+  "market_what": "formaldehyde scavenger sales, world 2025",
+  "market_source": "https://www.marketresearch.com/GlobalInfoResearch-v4117/Global-Formaldehyde-Scavengers-Manufacturers-Regions-41328266",
+  "gain_pct": 5,
+  "gain_basis": "meets lower limits without weakening boards: less extra resin",
+  "value_usd": 55000000,
+  "confidence": "low"
+ },
+ "Ethylene catcher": {
+  "market_usd": 5000000000.0,
+  "market_what": "fruit and vegetables lost to over-ripening in storage and shipping, world (estimate from FAO post-harvest loss)",
+  "market_source": "https://www.fao.org/platform-food-loss-waste/en/",
+  "gain_pct": 2,
+  "gain_basis": "works at 0 °C and ppb, food-safe vs permanganate: fewer spoiled loads",
+  "value_usd": 100000000.0,
+  "confidence": "low"
+ },
+ "Phosphate sensor binder": {
+  "market_usd": 200000000.0,
+  "market_what": "phosphate analyzer sales, world 2025",
+  "market_source": "https://www.giiresearch.com/report/ires1914183-phosphate-analyzers-market-by-instrument-type.html",
+  "gain_pct": 10,
+  "gain_basis": "reagent-free probe replaces part of $29k wet-chem analyzers and upkeep",
+  "value_usd": 20000000,
+  "confidence": "low"
+ },
+ "Ammonium sensor binder": {
+  "market_usd": 290000000.0,
+  "market_what": "ammonium sensor sales, world 2025",
+  "market_source": "https://www.researchandmarkets.com/reports/6036631/ammonium-sensor-global-market-insights",
+  "gain_pct": 10,
+  "gain_basis": "no potassium error: less drift, fewer recalibrations",
+  "value_usd": 29000000,
+  "confidence": "medium"
+ }
+}

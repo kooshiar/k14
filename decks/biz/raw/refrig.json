@@ -1,0 +1,85 @@
+{
+ "key": "refrig",
+ "name": "Non-PFAS refrigerant blend",
+ "market": {
+  "usd_yr": 3000000000,
+  "year": 2025,
+  "what": "HFO and HFO-blend refrigerants (R-1234yf, R-454B, R-513A, R-1234ze...), world",
+  "method": "Chemours Opteon $1.26B (2025) + Solstice/Honeywell similar (est. ~$1.2B) + Arkema, Daikin, China ~$0.5B; cross-check: R-1234yf alone $1.27B (2024 report)",
+  "sources": [
+   "https://refindustry.com/news/chemours-posts-2025-loss-opteon-refrigerants-sales-rise-56/",
+   "https://www.sec.gov/Archives/edgar/data/2064953/000206495326000008/sols-20251231.htm",
+   "https://www.intelmarketresearch.com/hfo-yf-market-market-15026"
+  ],
+  "confidence": "med"
+ },
+ "value": {
+  "created_usd_yr": 450000000,
+  "logic": "non-PFAS blend (R-32/R-152a/HC/CO2 class) taking 25% of ~$3B HFO at ~60% lower $/kg = ~$0.45B/yr; also avoids TFA (not counted)",
+  "our_revenue_usd_yr": 5000000,
+  "revenue_logic": "license blend patent to a gas maker; ~4% royalty on ~$125M blend sales at yr7 = ~$5M",
+  "gross_margin_pct": 90,
+  "margin_logic": "license/royalty; blends of commodity gases, partner makes and sells",
+  "sources": [
+   "https://naturalrefrigerants.com/news/echas-updated-pfas-proposal-retains-most-restrictions-on-pfas-refrigerants/",
+   "https://refindustry.com/news/chemours-posts-2025-loss-opteon-refrigerants-sales-rise-56/"
+  ]
+ },
+ "trend": {
+  "cagr_pct": 7,
+  "drivers": "AIM Act + EU F-gas 2024/573 shift to low GWP; EU PFAS/TFA concern; but EU study suggests refrigerants may be exempted",
+  "deadline": "EU F-gas: GWP<150 in many split ACs/heat pumps from 2027; PFAS decision ~2027",
+  "sources": [
+   "https://naturalrefrigerants.com/news/more-regulation-of-f-gases-may-be-needed-because-of-tfa-link-says-echas-updated-pfas-proposal/",
+   "https://www.coolingpost.com/world-news/eu-study-recommends-excluding-refrigerants-from-pfas-restrictions/",
+   "https://www.intelmarketresearch.com/hfo-yf-market-market-15026"
+  ]
+ },
+ "competition": {
+  "direct_startups": [],
+  "indirect_startups": [
+   "Blue Frontier",
+   "Phononic",
+   "Barocal",
+   "MagnoTherm",
+   "Exergyn",
+   "Transaera"
+  ],
+  "incumbents": [
+   "Chemours",
+   "Solstice (ex-Honeywell)",
+   "Arkema",
+   "Daikin",
+   "Koura (Orbia)",
+   "Zhejiang Juhua",
+   "Sinochem Lantian",
+   "A-Gas",
+   "Linde / Air Liquide (CO2, HC)"
+  ],
+  "papers_3yr": null,
+  "paper_query": "low GWP refrigerant blend",
+  "groups_active": null,
+  "notes": "incumbents own most blend patents; natural refrigerants (R-290, R-744) are the default non-PFAS route; solid-state cooling startups raised large rounds",
+  "sources": [
+   "https://naturalrefrigerants.com/european-chemical-agency-publishes-proposal-to-restrict-pfas-chemicals-including-some-f-gases-and-tfa/",
+   "https://www.sec.gov/Archives/edgar/data/2064953/000206495326000008/sols-20251231.htm"
+  ]
+ },
+ "lab": {
+  "weeks": 12,
+  "usd": 80000,
+  "synth": "catalog: blend of known gases (no new molecule; new molecules would need $1M+ tox for ASHRAE 34)",
+  "test": "flammability ASTM E681, VLE/glide, drop-in capacity and COP in a psychrometric/calorimeter rig (AHRI 210/240 or SAE J2765) at an HVAC test lab",
+  "logic": "blend modeling 2 wk + E681 3 wk + rig 6 wk; gases ~$3k + E681 ~$15k for 3 blends + rig rental ~$60k (est.)",
+  "sources": [
+   "https://www.coolingpost.com/world-news/eu-study-recommends-excluding-refrigerants-from-pfas-restrictions/"
+  ]
+ },
+ "sale": {
+  "years_to_first_sale": 3,
+  "gates": "ASHRAE 34 / ISO 817 number ~1 yr; EPA SNAP 1-2 yrs; IEC/UL 60335-2-40 charge limits; OEM qual 2-3 yrs (MAC 3-5)",
+  "sources": [
+   "https://www.mcc-hvac.com/blog/understanding-pfas-and-refrigerant-standards-in-europe"
+  ]
+ }
+}
