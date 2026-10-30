@@ -17,6 +17,7 @@ header.site{background:var(--bg)}
 .bar nav .logo img{width:24px; height:24px; display:block}
 .bar .tabs{display:flex; gap:28px}
 .bar .tabs a.on{color:var(--txt)}
+.bar nav .priv{margin-left:auto; display:flex; gap:28px} .bar nav .priv a.on{color:var(--txt)} .bar nav .priv ~ [data-cta]{margin-left:0}   /* signed-in pages, right side */
 .bar{border-bottom:1px solid rgba(236,237,238,.1)}
 .bar nav{position:relative}
 .bar nav .who{all:unset; cursor:pointer; margin-left:-26px; width:26px; height:26px; display:grid; place-items:center; color:var(--txt2); border-radius:99px}

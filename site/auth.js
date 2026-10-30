@@ -17,18 +17,15 @@ if (cta) {
 
   let sb = null;
   const client = async () => sb || (sb = (await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm')).createClient(SB.url, SB.key));
+  // signed-in pages (Decks, Comms) sit on the right, before Contact; public tabs (Apps, About) stay on the left
   const decksTab = on => {
-    let a = nav.querySelector('.tabs a[data-decks]');
-    if (on && a && !nav.querySelector('.tabs a[data-comms]')) { const c = document.createElement('a'); c.href = '/decks/comms/'; c.dataset.comms = ''; c.textContent = 'Comms'; a.after(c); }
-    if (on && !a) {
-      a = document.createElement('a'); a.href = '/decks/'; a.dataset.decks = ''; a.textContent = 'Decks';
-      if (location.pathname.startsWith('/decks')) a.className = 'on';
-      nav.querySelector('.tabs').append(a);
-      const c = document.createElement('a'); c.href = '/decks/comms/'; c.dataset.comms = ''; c.textContent = 'Comms';   // forms and answers, Google sign-in only
-      if (location.pathname.startsWith('/decks/comms')) { c.className = 'on'; a.className = ''; }
-      nav.querySelector('.tabs').append(c);
-    }
-    if (!on && a) { a.remove(); const c = nav.querySelector('.tabs a[data-comms]'); if (c) c.remove(); }
+    let p = nav.querySelector('.priv');
+    if (!on) { if (p) p.remove(); return; }
+    if (!p) { p = document.createElement('span'); p.className = 'priv'; cta.before(p); }
+    nav.querySelectorAll('.tabs a[data-decks], .tabs a[data-comms]').forEach(x => p.append(x));
+    const comms = location.pathname.startsWith('/decks/comms');
+    if (!p.querySelector('[data-decks]')) { const x = document.createElement('a'); x.href = '/decks/'; x.dataset.decks = ''; x.textContent = 'Decks'; if (location.pathname.startsWith('/decks') && !comms) x.className = 'on'; p.prepend(x); }
+    if (!p.querySelector('[data-comms]')) { const x = document.createElement('a'); x.href = '/decks/comms/'; x.dataset.comms = ''; x.textContent = 'Comms'; if (comms) x.className = 'on'; p.append(x); }   // forms and answers, Google sign-in only
   };
   const face = user => {
     const pic = user && user.user_metadata && user.user_metadata.avatar_url;
