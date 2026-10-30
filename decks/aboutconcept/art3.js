@@ -5,7 +5,7 @@
 // 7 · still graphs, depth by shade   8 · the designed part dark, the rest light   9 · graphs turning slowly
 (async () => {
 const V = +(new URLSearchParams(location.search).get('v') || 1);
-if (V < 7) return;
+if (V < 7 || V > 9) return;   // 10+: art4.js
 document.body.classList.add('nv', 'nv3', 'v' + V);
 document.querySelector('h1').textContent = 'Khayyam split the cubic. We split the molecule.';
 document.querySelector('.us h2').remove(); document.querySelector('.join').remove();

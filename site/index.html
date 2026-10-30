@@ -141,14 +141,16 @@ const stage = new Stage($('gl'), null, { minimal:true, look:new URLSearchParams(
 stage.load(f).then(() => { stage.ov = { svg:$('ov') }; });
 
 // applications: two rows of molecule tiles (as many columns of ~83 px as fit), then a box that opens all apps
-const row = $('row'), ORDER = [...HOME.map(s => APPS.find(a => a.slug === s)), ...APPS.filter(a => !HOME.includes(a.slug))];
+const row = $('row'), BASE = [...HOME.map(s => APPS.find(a => a.slug === s)), ...APPS.filter(a => !HOME.includes(a.slug))];
+const RANK = { solved:0, solving:1, queued:2, open:3 };   // solved apps first, then solving, then the picked list (status DB, live)
+const order = () => BASE.map((a, i) => [a, i]).sort((u, v) => RANK[stateOf(u[0], LIVE)] - RANK[stateOf(v[0], LIVE)] || u[1] - v[1]).map(x => x[0]);
 let views = [], hot = -1, last = performance.now(), LIVE = null;
 (function loop(t){ if (hot >= 0 && views[hot]) views[hot].tick(t - last); last = t; requestAnimationFrame(loop); })(last);
 function fill(){
   const W = row.clientWidth, gap = innerWidth <= 900 ? 14 : 20, cols = Math.max(3, Math.floor((W + gap) / (83 + gap)));
   if (row.dataset.cols == cols) { views.forEach(v => v.draw()); return; }
   row.dataset.cols = cols; row.style.setProperty('--cols', cols);
-  const picks = ORDER.slice(0, cols * 2 - 1);
+  const picks = order().slice(0, cols * 2 - 1);
   row.innerHTML = picks.map(a => { const s = stateOf(a, LIVE);   // solved, solving, queued, open (site/status.js)
     return `<a class="card s-${s}" href="/apps/${a.slug}/" data-st="${s}" data-pk="${a.pk || ''}"><canvas></canvas><div><b>${a.short}</b><small>${a.cs}</small><small class="sl">${LABEL[s]}</small></div></a>`; }).join('')
     + `<a class="card more" href="/apps/"><span class="mbox">+${APPS.length - picks.length}</span><div><b>All apps</b><small>${APPS.length}</small></div></a>`;
@@ -161,7 +163,7 @@ function fill(){
   });
 }
 addEventListener('resize', fill); fill();
-follow(m => { if (m) LIVE = m; paint([...row.querySelectorAll('.card:not(.more)')], m); });
+follow(m => { if (!m || JSON.stringify(m) === JSON.stringify(LIVE)) return; LIVE = m; delete row.dataset.cols; fill(); });   // status changed: re-pick and re-order
 
 
 // technology diagram: connectors drawn from the boxes' positions (side by side on wide screens, stacked on phones)
