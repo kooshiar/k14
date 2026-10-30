@@ -25,7 +25,7 @@ const cell = (t, j, art) => `<div class="c" style="--cb:${COL[j]}; --c:${TXT[j]}
 document.querySelector('.grid').innerHTML = '<span class="rl">Layer</span>' + ['Physics', 'Chemistry', 'Biology'].map((t, j) => cell(t, j, true)).join('')
   + ROWS.map(([lab, v]) => `<span class="rl">${lab}</span>` + v.map((t, j) => cell(t, j)).join('')).join('');
 
-const M = await fetch('mols.json').then(r => r.json());
+const M = await fetch('mols.json?v=dd5edaea').then(r => r.json());
 let seed = 11; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
 const atoms = m => m.e.map((e, i) => ({ e, p: [m.x[3 * i], m.x[3 * i + 1], m.x[3 * i + 2]] }));
 const rot = (p, a, b) => { const x1 = p[0] * Math.cos(a) + p[2] * Math.sin(a), z1 = -p[0] * Math.sin(a) + p[2] * Math.cos(a);

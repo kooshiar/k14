@@ -22,7 +22,7 @@ const cell = (t, j, art) => `<div class="c" style="--cb:${COL[j]}">${art ? `<can
 document.querySelector('.grid').innerHTML = '<span class="rl">Layer</span>' + ['Physics', 'Chemistry', 'Biology'].map((t, j) => cell(t, j, true)).join('')
   + ROWS.map(([lab, v]) => `<span class="rl">${lab}</span>` + v.map((t, j) => cell(t, j)).join('')).join('');
 
-const M = await fetch('mols.json').then(r => r.json());
+const M = await fetch('mols.json?v=dd5edaea').then(r => r.json());
 const MOL = { 1: M.phys, 2: M.chem, 3: M.bio };
 // dark (designed) part per layer for version 8: the molecule, the molecule in its host, the barstar chain
 const HI = { 1: () => true, 2: i => M.chem.g.includes(i), 3: i => M.bio.c[i] === 1 };

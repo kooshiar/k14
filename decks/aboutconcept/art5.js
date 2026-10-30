@@ -15,7 +15,7 @@ const cell = (t, j, art) => `<div class="c" style="--cb:${COL[j]}">${art ? `<can
 document.querySelector('.grid').innerHTML = '<span class="rl">Layer</span>' + ['Physics', 'Chemistry', 'Biology'].map((t, j) => cell(t, j, true)).join('')
   + ROWS.map(([lab, v]) => `<span class="rl">${lab}</span>` + v.map((t, j) => cell(t, j)).join('')).join('');
 
-const M = await fetch('mols.json').then(r => r.json());
+const M = await fetch('mols.json?v=dd5edaea').then(r => r.json());
 const INK = '20,22,26', WH = '255,255,255';
 let seed = 5; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
 const SHARE = { 1:.55, 2:.8, 3:1 };   // drawing height per layer, one baseline: bigger left to right
