@@ -150,7 +150,10 @@ function fill(){
   const W = row.clientWidth, gap = innerWidth <= 900 ? 14 : 20, cols = Math.max(3, Math.floor((W + gap) / (83 + gap)));
   if (row.dataset.cols == cols) { views.forEach(v => v.draw()); return; }
   row.dataset.cols = cols; row.style.setProperty('--cols', cols);
-  const picks = order().slice(0, cols * 2 - 1);
+  // solved apps spread over the two rows (not side by side); the rest keep their order (solving first)
+  const n = cols * 2 - 1, all = order(), sv = all.filter(a => stateOf(a, LIVE) === 'solved').slice(0, n), rest = all.filter(a => !sv.includes(a));
+  const at = new Set(sv.map((_, k) => Math.floor((k + .5) * n / sv.length))), picks = [];
+  for (let i = 0, a = 0, b = 0; i < n; i++) picks.push(at.has(i) && a < sv.length ? sv[a++] : rest[b++]);
   row.innerHTML = picks.map(a => { const s = stateOf(a, LIVE);   // solved, solving, queued, open (site/status.js)
     return `<a class="card s-${s}" href="/apps/${a.slug}/" data-st="${s}" data-pk="${a.pk || ''}"><canvas></canvas><div><b>${a.short}</b><small>${a.cs}</small><small class="sl">${LABEL[s]}</small></div></a>`; }).join('')
     + `<a class="card more" href="/apps/"><span class="mbox">+${APPS.length - picks.length}</span><div><b>All apps</b><small>${APPS.length}</small></div></a>`;
