@@ -31,11 +31,12 @@
   .eq{font-family:var(--mono); font-size:13px; color:#111}
   /* K14: colour on dark; one colour per scale step, the same in every row */
   .us{background:var(--bg); color:var(--txt)} .us h2{color:var(--dim)}
-  .grid{display:grid; grid-template-columns:64px repeat(4, minmax(0, 1fr)); gap:6px 6px; align-items:stretch}
+  .grid{display:grid; grid-template-columns:64px minmax(0, .9fr) minmax(0, 1fr) minmax(0, 1.2fr); gap:6px 6px; align-items:stretch}   /* one column per layer, ranges */
   .grid .rl{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--dim); align-self:center}
   .c{border-radius:10px; padding:9px 10px 10px; display:flex; flex-direction:column; gap:2px; min-width:0; color:#14161A}
   .c b{font-weight:600; font-size:17px; letter-spacing:-.02em; line-height:1.1; white-space:nowrap}
   .c span{font-size:12px; line-height:1.25; opacity:.8}
+  .c.n b{font-size:15px}
   .s1{background:#B9A6FF} .s2{background:#8CC8FF} .s3{background:#8FCB72} .s4{background:#FFC46B}
   .span2{grid-column:span 2}
   .join{display:flex; align-items:center; gap:10px; margin-top:2px; font-size:13px; color:var(--txt2)}
@@ -78,22 +79,19 @@
         <span class="rl">Layer</span>
         <div class="c s1"><b>Physics</b><span>electrons, forces</span></div>
         <div class="c s2"><b>Chemistry</b><span>bonds, reactions</span></div>
-        <div class="c s3 span2" style="background:linear-gradient(90deg, #8FCB72, #FFC46B)"><b>Biology</b><span>proteins, cells</span></div>
-        <span class="rl">Size</span>
-        <div class="c s1"><b>1 Å</b><span>atom</span></div>
-        <div class="c s2"><b>10 Å</b><span>molecule</span></div>
-        <div class="c s3"><b>100 Å</b><span>protein</span></div>
-        <div class="c s4"><b>1,000 Å</b><span>assembly</span></div>
+        <div class="c s3" style="background:linear-gradient(90deg, #8FCB72, #FFC46B)"><b>Biology</b><span>proteins, cells</span></div>
         <span class="rl">Atoms</span>
-        <div class="c s1"><b>10</b><span>ion, small molecule</span></div>
-        <div class="c s2"><b>10²</b><span>cage, catalyst</span></div>
-        <div class="c s3"><b>10⁴</b><span>protein, crystal</span></div>
-        <div class="c s4"><b>10⁶</b><span>material</span></div>
+        <div class="c s1 n"><b>1–300</b></div>
+        <div class="c s2 n"><b>10²–10⁶</b></div>
+        <div class="c s3 n" style="background:linear-gradient(90deg, #8FCB72, #FFC46B)"><b>10³–10⁸</b></div>
+        <span class="rl">Size</span>
+        <div class="c s1 n"><b>1–20 Å</b></div>
+        <div class="c s2 n"><b>10–200 Å</b></div>
+        <div class="c s3 n" style="background:linear-gradient(90deg, #8FCB72, #FFC46B)"><b>10–10⁴ Å</b></div>
         <span class="rl">Time</span>
-        <div class="c s1"><b>10⁻¹⁵ s</b><span>bonds vibrate</span></div>
-        <div class="c s2"><b>10⁻¹² s</b><span>groups turn</span></div>
-        <div class="c s3"><b>10⁻⁹ s</b><span>molecules bind</span></div>
-        <div class="c s4"><b>10⁻⁶ s</b><span>machines move</span></div>
+        <div class="c s1 n"><b>10⁻¹⁵–10⁻¹⁰ s</b></div>
+        <div class="c s2 n"><b>10⁻¹⁵–10⁻⁷ s</b></div>
+        <div class="c s3 n" style="background:linear-gradient(90deg, #8FCB72, #FFC46B)"><b>10⁻¹²–10⁻³ s</b></div>
       </div>
       <div class="join"><i>✦</i>Each block has its own AI model. A design agent joins them into one answer.</div>
     </section>

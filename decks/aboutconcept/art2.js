@@ -4,7 +4,7 @@
 // 4 · drawings inside the colour cells   5 · drawings on the dark panel above the cells   6 · no boxes, colour text only
 (() => {
 const V = +(new URLSearchParams(location.search).get('v') || 1);
-if (V < 4) return;
+if (V < 4 || V > 6) return;   // 7-9: art3.js
 document.body.classList.add('nv', 'v' + V);
 const TITLE = { 4:'Khayyam split the cubic. We split the molecule.', 5:'Split it right, and every piece has an answer.', 6:'Solve the pieces, and the whole follows.' };
 document.querySelector('h1').textContent = TITLE[V];
