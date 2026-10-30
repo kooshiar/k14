@@ -43,6 +43,22 @@
   /* layer images (concept): one abstract picture per layer, growing in size and atom count */
   .art{display:block; width:100%; height:78px; margin:-2px 0 6px}
   .v3 .art{background:#14161A; border-radius:7px; margin:0 0 8px}
+  /* versions 4-6 (art2.js): more air on top, one-line title, numbers only, drawings that grow left to right */
+  .nv main.wrap{padding-block:60px 32px}
+  .nv h1{font-size:clamp(30px, 3.1vw, 44px); max-width:none; letter-spacing:-.035em}
+  .nv .lede{margin-top:22px; max-width:720px}
+  .nv .pair{margin-top:48px}
+  @media (min-width:901px){ .nv .pair{grid-template-columns:minmax(0, .78fr) minmax(0, 1.22fr)} .nv .grid{grid-template-columns:52px repeat(4, minmax(0, 1fr))} }
+  .nv .panel{padding:24px 26px}
+  .nv .grid{gap:8px}
+  .nv .c{padding:10px 12px 11px; gap:6px; justify-content:flex-end; background:var(--cb)}
+  .nv .c b{font-size:16px}
+  .art2{display:block; width:100%; height:124px; color:#14161A}
+  .v5 .art2{height:132px; color:#ECEDEE}
+  .v6 .c{background:linear-gradient(90deg, var(--c), var(--c)) top / 100% 2px no-repeat; border-radius:0; padding:9px 2px 4px; color:var(--c)}
+  .v6 .c.span2{background:linear-gradient(90deg, #8FCB72, #FFC46B) top / 100% 2px no-repeat; color:#C4D98F}
+  .v6 .art2{color:inherit}
+  @media (max-width:900px){ .v5 .grid > span:first-child{display:none} }
   @media (max-width:900px){ .pair{grid-template-columns:1fr} .grid{grid-template-columns:repeat(2, minmax(0, 1fr))} .grid .rl{grid-column:1 / -1; margin-top:4px}
     .c{padding:8px 10px 9px} .c b{font-size:15px} .c span{font-size:11.5px} .khrow{grid-template-columns:96px 1fr} .khrow img{width:96px} }
 </style>
@@ -104,5 +120,6 @@
 </main>
 <footer class="site"><div class="wrap"><span class="logo"><img src="/site/mark.svg" alt="">K14</span><span>© 2026</span></div></footer>
 <script src="art.js"></script>
+<script src="art2.js"></script>
 </body>
 </html>

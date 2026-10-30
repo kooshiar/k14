@@ -4,6 +4,7 @@
 // 3 · lit spheres on dark tiles, like the machines on the homepage
 (() => {
 const V = +(new URLSearchParams(location.search).get('v') || 1);
+if (V > 3) return;   // 4-6: art2.js
 document.body.classList.add('v' + V);
 const INK = '#14161A';
 // seeded random, so the pictures are the same on every load
